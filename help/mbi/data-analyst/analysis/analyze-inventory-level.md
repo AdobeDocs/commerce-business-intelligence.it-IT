@@ -2,16 +2,16 @@
 title: Analisi dei livelli di inventario
 description: Scopri come analizzare i livelli di inventario.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
 
 # Analizzare i livelli di inventario
 
-Questo argomento illustra come impostare un dashboard che fornisca informazioni approfondite sull’inventario corrente. Questo argomento contiene istruzioni per i client sia sull’architettura legacy che sulla nuova architettura. Ti trovi nell’architettura legacy se non hai **[!UICONTROL Data Warehouse Views]** nella sezione **[!UICONTROL Manage Data]** menu). Se utilizzi l’architettura legacy, invia un [nuova richiesta di supporto](../../guide-overview.md) con l&#39;oggetto **[!UICONTROL INVENTORY ANALYSIS]** una volta raggiunta la sezione designata nel _Colonne calcolate_ di seguito.
+Questo argomento illustra come impostare un dashboard che fornisca informazioni approfondite sull’inventario corrente. Questo argomento contiene istruzioni per i client sia sull’architettura legacy che sulla nuova architettura. Ti trovi nell’architettura legacy se non hai **[!UICONTROL Data Warehouse Views]** nella sezione **[!UICONTROL Manage Data]** menu). Se utilizzi l’architettura legacy, invia un [nuova richiesta di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) con l&#39;oggetto **[!UICONTROL INVENTORY ANALYSIS]** una volta raggiunta la sezione designata nel _Colonne calcolate_ di seguito.
 
 ## Colonne da tracciare:
 
@@ -240,4 +240,4 @@ Questo argomento illustra come impostare un dashboard che fornisca informazioni 
       [!UICONTROL Chart type]: `Table`
 
 
-In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il nostro team di servizi professionali, [contattare il supporto](../../guide-overview.md).
+In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il nostro team di servizi professionali, [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

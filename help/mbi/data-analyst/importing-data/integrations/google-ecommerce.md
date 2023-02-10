@@ -2,9 +2,9 @@
 title: Connetti Google ECommerce
 description: Scopri i tuoi canali di riferimento più importanti.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Per identificare un particolare sito web [!DNL Google Analytics] ID profilo:
 ## Correlati:
 
 * [Previsto [!DNL Google ECommerce] dati](../integrations/google-ecommerce-data.md)
-* [Riautenticazione delle integrazioni](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Riautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Configurazione [!DNL Google ECommerce] tracking](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Scopri le fonti e i canali di acquisizione più importanti](../../analysis/most-value-source-channel.md)
 * [Aumenta il ROI delle campagne pubblicitarie](../../analysis/roi-ad-camp.md)

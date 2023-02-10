@@ -2,9 +2,9 @@
 title: Rapporto sulla probabilità dell'ordine di ripetizione
 description: Scopri e comprendi il Rapporto sulla probabilità dell’ordine di ripetizione.
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Se dovessimo aggiungere un filtro che utilizza una dimensione che non è uguale 
 
 In alcuni casi, potremmo essere in grado di trasformare un `order-specific` in una dimensione `user-specific` dimensione da aggiungere come filtro nel `Repeat Order Probability` grafico. In questi casi, restituiremo l’attributo order del primo ordine o dell’ordine più recente di un utente (ad esempio, il nome dell’area del primo ordine dell’utente).
 
-Se desideri creare una nuova dimensione, [contattare il supporto](../../guide-overview.md).
+Se desideri creare una nuova dimensione, [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ## Confronto della probabilità di ripetizione degli ordini con attributi diversi
 

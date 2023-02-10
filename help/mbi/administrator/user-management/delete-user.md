@@ -2,9 +2,9 @@
 title: Eliminare o riattivare un utente
 description: Scopri come eliminare un [!DNL MBI] utente.
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -24,5 +24,5 @@ Puoi riattivare l’utente creando un nuovo utente con lo stesso indirizzo e-mai
 Se hai solo bisogno delle dashboard di quell’utente inviate a un account di un altro utente, procedi come segue:
 
 1. Utilizza l&#39;indirizzo e-mail dell&#39;utente eliminato per creare un nuovo [!DNL MBI] utente.
-1. [Notifica supporto](../../guide-overview.md) dopo aver creato l’utente. Il supporto trasferirà le dashboard nel tuo account.
+1. [Notifica supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) dopo aver creato l’utente. Il supporto trasferirà le dashboard nel tuo account.
 1. Dopo che il supporto vi ha notificato il trasferimento, potete eliminare di nuovo l&#39;utente.

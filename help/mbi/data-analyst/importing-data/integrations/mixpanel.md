@@ -2,9 +2,9 @@
 title: Connetti pannello multiplo
 description: Scopri come analizzare come gli utenti navigano e utilizzano i tuoi siti web e le tue app.
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -59,4 +59,4 @@ Tutto qui! Se la connessione ha esito positivo, un _Successo!_ il messaggio vien
 ### Correlati
 
 * [Previsto [!DNL Mixpanel] dati](../integrations/mixpanel-data.md)
-* [Riautenticazione delle integrazioni](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Riautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

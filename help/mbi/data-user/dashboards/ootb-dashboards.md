@@ -2,9 +2,9 @@
 title: Dashboard inclusi
 description: Scopri come verificare lo stato di salute di metriche essenziali come i ricavi per la vita dell’utente, il numero di acquisti ripetuti e altro ancora, creando in tal modo una solida base per l’esplorazione futura.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 3557e6370fae637cd74550b2806847bebe61d5d3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Come parte dei nostri servizi, offriamo e-commerce e `SaaS` Pacchetti iniziali. 
 >
 >La disponibilità di alcune dashboard dipende dal set di dati.
 
-In caso di domande o se sei interessato ad aggiungere un pacchetto al tuo account, invia un [biglietto di supporto](../../guide-overview.md) per aiuto.
+In caso di domande o se sei interessato ad aggiungere un pacchetto al tuo account, invia un [biglietto di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per aiuto.
 
 ## Panoramica dell&#39;esecutivo
 

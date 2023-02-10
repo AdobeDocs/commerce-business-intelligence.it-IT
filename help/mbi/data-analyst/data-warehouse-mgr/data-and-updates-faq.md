@@ -2,9 +2,9 @@
 title: Informazioni su dati e aggiornamenti
 description: Scopri come controllare lo stato del ciclo di aggiornamento.
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
-source-git-commit: 09b6983c3e06a1f18035542dfa3b9de9ac3ceb38
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,8 @@ Assolutamente! Se è in corso un aggiornamento, sarà presente un collegamento n
 
 ## Perché?[!DNL Google ECommerce]dati diversi dal database? {#ecommdatabase}
 
-Discrepanze tra [!DNL Google Analytics] e il database può sorgere per una serie di motivi. Il tracciamento non è abilitato correttamente, gli utenti che visitano l’incognito e gli eventi clic non funzionano correttamente sono solo alcuni esempi. Se le entrate e gli ordini non sono corretti, [utilizza questo articolo](https://support.magento.com/hc/en-us/articles/360016505232) per diagnosticare il problema.
+Discrepanze tra [!DNL Google Analytics] e il database può sorgere per una serie di motivi. Il tracciamento non è abilitato correttamente, gli utenti che visitano l’incognito e gli eventi clic non funzionano correttamente sono solo alcuni esempi. Se le entrate e gli ordini non sono corretti, [utilizza questo articolo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) per diagnosticare il problema.
 
 ## Come si risolve una discrepanza di dati? {#datadiscrepancy}
 
-Sappiamo che vedere dati incoerenti può essere un&#39;esperienza frustrante. Prova a utilizzare la nostra [Lista di controllo per la discrepanza dei dati](https://support.magento.com/hc/en-us/articles/360016731271) o [Esercitazione sull’esportazione dei dati](https://support.magento.com/hc/en-us/articles/360016730631) per diagnosticare il problema. Se siete ancora imbattuti, [contattare il supporto](../../guide-overview.md).
+Sappiamo che vedere dati incoerenti può essere un&#39;esperienza frustrante. Prova a utilizzare la nostra [Lista di controllo per la discrepanza dei dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=en) o [Esercitazione sull’esportazione dei dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en) per diagnosticare il problema. Se siete ancora imbattuti, [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

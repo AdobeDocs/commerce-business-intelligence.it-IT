@@ -2,7 +2,7 @@
 title: Servizi di migrazione dei dati
 description: Scopri tutto il necessario per inviare una richiesta e iniziare la migrazione.
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Migrazione dei dati
 
-La migrazione a un nuovo schema di database, server o database di reporting non deve essere stressante. Nostro **[!DNL Magento Services - Analytics]** team offre assistenza in materia di migrazione - facciamo tutto il sollevamento pesante in modo che non sia necessario.
+La migrazione a un nuovo schema di database, server o database di reporting non deve essere stressante. Nostro **[!DNL Adobe Commerce Services - Analytics]** team offre assistenza in materia di migrazione - facciamo tutto il sollevamento pesante in modo che non sia necessario.
 
 Per garantire che la transizione avvenga nel modo più semplice possibile, quando invii la richiesta di migrazione ti chiediamo di essere il più dettagliato possibile. In questo articolo troverai tutto il necessario per inviare una richiesta e iniziare la migrazione. Fornire un quadro completo delle vostre esigenze garantirà che il vostro progetto sia delimitato correttamente e che la stima sia accurata.
 

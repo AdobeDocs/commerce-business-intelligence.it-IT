@@ -2,16 +2,16 @@
 title: tabella sales_order_item
 description: Scopri come utilizzare la tabella sales_order_item.
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
-source-git-commit: c0892aa046c80f90561b4a178525ef9ed05b435a
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
 # `sales_order_item` Tabella
 
-La `sales_order_item` tabella (`sales_flat_order_item` su [!DNL Magento] 1) contiene le registrazioni di tutti i prodotti acquistati in un ordine. Ogni riga rappresenta un `sku` incluso in un ordine. Quantità di unità acquistate per uno specifico `sku` è rappresentato più spesso da `qty_ordered` campo .
+La `sales_order_item` tabella (`sales_flat_order_item` su M1 1) contiene le registrazioni di tutti i prodotti acquistati in un ordine. Ogni riga rappresenta un `sku` incluso in un ordine. Quantità di unità acquistate per uno specifico `sku` è rappresentato più spesso da `qty_ordered` campo .
 
 ## Tipi di prodotti
 
@@ -82,7 +82,7 @@ Pertanto è possibile riferire sulle vendite dei prodotti sia a livello semplice
 
 `sales_order_item`
 
-* Iscriviti a `sales_order_item` per creare nuove colonne che associano i dettagli della SKU configurabile o del bundle principale al prodotto semplice. Tieni presente che dovrai [contattare il supporto](../../guide-overview.md) per assistenza nella configurazione di questi calcoli, se la creazione è nel gestore Data Warehouse.
+* Iscriviti a `sales_order_item` per creare nuove colonne che associano i dettagli della SKU configurabile o del bundle principale al prodotto semplice. Tieni presente che dovrai [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per assistenza nella configurazione di questi calcoli, se la creazione è nel gestore Data Warehouse.
    * Percorso: `sales_order_item.parent_item_id` (molti) => `sales_order_item.item_id` 1)
 
 `store`

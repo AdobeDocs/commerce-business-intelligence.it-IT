@@ -2,9 +2,9 @@
 title: tabella sales_order
 description: Scopri come utilizzare la tabella sales_order .
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-source-git-commit: 73373924b7adaffabf643b65bd290ce2d9408574
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Questa tabella include tutti gli ordini dei clienti, indipendentemente dal fatto
 | `customer_group_id` | Chiave esterna associata al `customer_group` tabella. Iscriviti a `customer_group.customer_group_id` per determinare il gruppo di clienti associato all&#39;ordine |
 | `customer_id` | `Foreign key` associato a `customer_entity` se il cliente è registrato. Iscriviti a `customer_entity.entity_id` per determinare gli attributi del cliente associati all’ordine. Se l&#39;ordine è stato effettuato tramite il pagamento per gli ospiti, questo campo sarà `NULL` |
 | `entity_id` (PK) | Identificatore univoco per la tabella e comunemente utilizzato nei join ad altre tabelle all’interno dell’istanza Commerce |
-| `increment_id` | Identificatore univoco per un ordine, comunemente denominato `order_id` nel Magento. La `increment_id` viene utilizzato più spesso per gli join a sorgenti esterne, come [!DNL Google Ecommerce] |
+| `increment_id` | Identificatore univoco per un ordine, comunemente denominato `order_id` in Adobe Commerce. La `increment_id` viene utilizzato più spesso per gli join a sorgenti esterne, come [!DNL Google Ecommerce] |
 | `shipping_address_id` | Chiave esterna associata al `sales_order_address` tabella. Iscriviti a `sales_order_address.entity_id` per determinare i dettagli dell&#39;indirizzo di spedizione associati all&#39;ordine |
 | `status` | Stato dell&#39;ordine. Può restituire valori come &quot;complete&quot;, &quot;elaborazioni&quot;, &quot;annullate&quot;, &quot;rimborsate&quot; ed eventuali stati personalizzati implementati nell’istanza Commerce. Soggetto a modifiche durante l&#39;elaborazione dell&#39;ordine |
 | `store_id` | `Foreign key` associato a `store` tabella. Iscriviti a `store`.`store_id` per determinare quale visualizzazione dell&#39;archivio Commerce è associata all&#39;ordine |

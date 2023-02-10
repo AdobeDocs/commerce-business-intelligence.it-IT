@@ -2,9 +2,9 @@
 title: Utilizzo del Report Builder SQL
 description: Scopri come eseguire il controllo dei dati e delle metriche utilizzando il Report Builder SQL in modo da poter confrontare i risultati con i dati del database locale.
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ Dopo aver salvato il rapporto, accedi a tale dashboard selezionando `Go to Dashb
 
 ### Sei ancora inciampato?
 
-Se trovi una discrepanza dopo aver verificato i tuoi dati, consulta la sezione [Contatta il supporto: Discrepanze dei dati](https://support.magento.com/hc/en-us/articles/360016505312) articolo di supporto per ulteriori informazioni sulle operazioni da eseguire successivamente.
+Se trovi una discrepanza dopo aver verificato i tuoi dati, consulta la sezione [Contatta il supporto: Discrepanze dei dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=en) articolo di supporto per ulteriori informazioni sulle operazioni da eseguire successivamente.

@@ -25,24 +25,24 @@ Queste autorizzazioni consentono agli utenti di eseguire determinate azioni o di
 
 |  | `Admin` | `Standard` | `Read Only` |
 | -----|-----|-----|----|
-| **Creare/gestire utenti** | ↓ |  |  |
-| **Creazione di riepiloghi e-mail** | ↓ | ↓ |  |
-| **Creare/modificare/condividere dashboard** | ↓ | ↓ |  |
-| **Visualizzare le dashboard** | ↓ | ↓ | ↓ |
-| **Creare/modificare/eliminare rapporti visivi** | ↓ | ↓* |  |
-| **Creare/modificare/eliminare rapporti SQL** | ↓ |  |  |
-| **Dashboard duplicati** | ↓ |  |  |
-| **Aggiungi/gestisci integrazioni** | ↓ |  |  |
-| **Accedere a Data Warehouse Manager** | ↓ |  |  |
-| **Tabelle e colonne sincronizzate/non sincronizzate** | ↓ |  |  |
-| **Creare/modificare metriche** | ↓ |  |  |
-| **Creare/modificare set di filtri** | ↓ |  |  |
-| **Creare/modificare colonne calcolate** | ↓ |  |  |
-| **Crea elenco di rapporti dipendenti** | ↓ |  |  |
-| **Riepilogo del sistema di accesso** | ↓ |  |  |
-| **Accedere alle impostazioni del fuso orario** | ↓ |  |  |
-| **Fatturazione degli accessi** | ↓ | ↓** |  |
-| **Contatta il supporto** | ↓ | ↓ | ↓ |
+| **Creare/gestire utenti** | ✔ |  |  |
+| **Creazione di riepiloghi e-mail** | ✔ | ✔ |  |
+| **Creare/modificare/condividere dashboard** | ✔ | ✔ |  |
+| **Visualizzare le dashboard** | ✔ | ✔ | ✔ |
+| **Creare/modificare/eliminare rapporti visivi** | ✔ | ✔* |  |
+| **Creare/modificare/eliminare rapporti SQL** | ✔ |  |  |
+| **Dashboard duplicati** | ✔ |  |  |
+| **Aggiungi/gestisci integrazioni** | ✔ |  |  |
+| **Accedere a Data Warehouse Manager** | ✔ |  |  |
+| **Tabelle e colonne sincronizzate/non sincronizzate** | ✔ |  |  |
+| **Creare/modificare metriche** | ✔ |  |  |
+| **Creare/modificare set di filtri** | ✔ |  |  |
+| **Creare/modificare colonne calcolate** | ✔ |  |  |
+| **Crea elenco di rapporti dipendenti** | ✔ |  |  |
+| **Riepilogo del sistema di accesso** | ✔ |  |  |
+| **Accedere alle impostazioni del fuso orario** | ✔ |  |  |
+| **Fatturazione degli accessi** | ✔ | ✔** |  |
+| **Contatta il supporto** | ✔ | ✔ | ✔ |
 
 {style=&quot;table-layout:auto&quot;}
 

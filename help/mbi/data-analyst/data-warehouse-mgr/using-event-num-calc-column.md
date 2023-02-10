@@ -5,7 +5,7 @@ exl-id: c234621e-2e68-4e63-8b0d-7034d1b5fe1f
 source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -25,11 +25,11 @@ Il caso d’uso più comune di questa colonna è quello di analizzare i nuovi ac
 
 | **`event_id`** | **`owner_id`** | **`timestamp`** | **`Owner's event number`** |
 |--- |--- |--- |--- |
-| **1 | A | 01/01/2015:00:00 | 1 |
-| **2 | B | 01/01/2015:30:00 | 1 |
-| **3 | A | 01/01/2015:00:00 | 2 |
-| **4 | A | 01/01/2015:00:00 | 3 |
-| **5 | B | 01/03/2015:00:00 | 2 |
+| **1 | A | 2015-01-01 00:00:00 | 1 |
+| **2 | B | 2015-01-01 00:30:00 | 1 |
+| **3 | A | 2015-01-01 02:00:00 | 2 |
+| **4 | A | 2015-01-02 13:00:00 | 3 |
+| **5 | B | 2015-01-03 13:00:00 | 2 |
 
 Nell’esempio precedente, la colonna `Owner's event number` è un `Event Number` colonna. Classifica gli eventi del proprietario nell’ordine in cui si sono verificati (in base al `timestamp` ).
 

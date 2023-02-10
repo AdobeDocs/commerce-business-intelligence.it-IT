@@ -2,9 +2,9 @@
 title: Ottimizzazione delle query SQL
 description: Scopri come ottimizzare le query SQL.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Il Report Builder SQL consente di eseguire query e iterazioni su tali query in un dato momento. Questa opzione è utile quando è necessario modificare una query senza dover attendere il completamento di un ciclo di aggiornamento prima di realizzare una colonna o un report creato e occorre aggiornarlo.
 
-Prima dell’esecuzione di una query, [[!DNL MBI] valuta il costo](https://support.magento.com/hc/en-us/articles/360016730391). Il costo prende in considerazione la durata e il numero di risorse necessarie per eseguire una query. Se tale costo è considerato troppo elevato o se il numero di righe restituite supera i limiti, la query non verrà eseguita. Abbiamo messo a punto un elenco di raccomandazioni per eseguire query sul data warehouse, in modo da garantire la scrittura delle query più semplificate possibili.
+Prima dell’esecuzione di una query, [[!DNL MBI] valuta il costo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). Il costo prende in considerazione la durata e il numero di risorse necessarie per eseguire una query. Se tale costo è considerato troppo elevato o se il numero di righe restituite supera i limiti, la query non verrà eseguita. Abbiamo messo a punto un elenco di raccomandazioni per eseguire query sul data warehouse, in modo da garantire la scrittura delle query più semplificate possibili.
 
 ## Utilizzo di SELECT o selezione di tutte le colonne
 

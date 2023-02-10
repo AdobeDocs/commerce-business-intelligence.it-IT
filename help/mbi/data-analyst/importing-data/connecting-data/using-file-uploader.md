@@ -2,9 +2,9 @@
 title: Utilizza File Uploader
 description: Scopri come inserire tutti i tuoi dati in un unico data warehouse.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Usiamo le campagne pubblicitarie come esempio. Se esegui campagne sia online che
 ## Restrizioni e requisiti {#require}
 
 1. **L’unico formato supportato per il caricamento dei file è `CSV` o`comma separated values`**. Se si lavora in Excel, è possibile utilizzare la funzione Salva con nome per salvare il file in `.csv` formato.
-1. **`CSV`i file devono utilizzare`UTF-8 encoding`**. Nella maggior parte dei casi, non si tratta di una questione. Se si verifica questo errore durante il caricamento di un file, [consultare questo articolo sull&#39;assistenza](https://support.magento.com/hc/en-us/articles/360016730591).
+1. **`CSV`i file devono utilizzare`UTF-8 encoding`**. Nella maggior parte dei casi, non si tratta di una questione. Se si verifica questo errore durante il caricamento di un file, [consultare questo articolo sull&#39;assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
 1. **I file non possono superare i 100 MB**. Se il file è più grande di questo, separa la tabella in blocchi e salvala come file singoli. Puoi utilizzare aggiungi i dati dopo il caricamento del file iniziale.
 1. **Tutte le tabelle devono avere un`primary key`**. Nella tabella deve essere presente almeno una colonna che può essere utilizzata come `primary key`o un identificatore univoco per ogni riga della tabella. Qualsiasi colonna designata come `primary key` può *mai* essere null. A `primary key` può essere semplice come aggiungere una colonna che dia un numero a ogni riga o può essere concatenata a due colonne per creare una colonna di valori univoci (ad esempio, `campaign name` e `date`).
 

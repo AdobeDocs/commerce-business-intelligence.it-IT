@@ -2,9 +2,9 @@
 title: Prestazioni coupon
 description: Scopri come analizzare le prestazioni del coupon.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Colonne da creare indipendentemente dai criteri degli ordini dei clienti:
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
-   * [!UICONTROL Datatype]: `String`
+   * [!UICONTROL Datatype]:: `String`
    * [!UICONTROL Calculation]: quando `A` è nullo `No coupon` else `Coupon` end
 
 
@@ -44,7 +44,7 @@ Colonne da creare indipendentemente dai criteri degli ordini dei clienti:
       * `A`: `customer\_id`
       * `B`: `coupon\_code`
    * [!UICONTROL Datatype]: Stringa
-   * [!UICONTROL Calculation]: `concat(A,' - ',B)`
+   * [!UICONTROL Calculation]:: `concat(A,' - ',B)`
 
 
 * **Numero di ordini con questo coupon**
@@ -80,20 +80,20 @@ Colonne aggiuntive da creare se gli ordini guest NON sono supportati:
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-      * [!UICONTROL Datatype]: `String`
+      * [!UICONTROL Datatype]:: `String`
       * [!UICONTROL Calculation]: **caso in cui A=&#39;Coupon&#39; then &#39;Coupon acquisition customer&#39; else &#39;Non coupon acquisition customer&#39; end**
    * **Percentuale degli ordini del cliente con coupon**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `User's lifetime number of coupons used`
          * `B`: `User's lifetime number of orders`
-      * [!UICONTROL Datatype]: `Decimal`
+      * [!UICONTROL Datatype]:: `Decimal`
       * [!UICONTROL Calculation]: **caso in cui A è nullo o B è nullo o B=0 allora null altro A/B end**
    * **Utilizzo del coupon del cliente**
       * [!UICONTROL Column type]: `Same Table => Calculation`
       * [!UICONTROL Inputs]:
          * `A`: `Percent of customer's orders with coupon`
-      * [!UICONTROL Datatype]: `String`
+      * [!UICONTROL Datatype]:: `String`
       * [!UICONTROL Calculation]: **caso in cui A è nullo allora nullo quando A=0 allora &#39;Coupon non utilizzato&#39; quando A&lt;0.5 allora &#39;Prezzo più pieno&#39; quando A=0.5 poi &#39;50/50&#39; quando A=1 poi &#39;Coupon solo&#39; quando A>0.5 poi &#39;Coupon più&#39; altro &#39;Fine indefinita&#39;**
 
 
@@ -127,7 +127,7 @@ Colonne aggiuntive da creare se gli ordini guest NON sono supportati:
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-   * [!UICONTROL Datatype]: `String`
+   * [!UICONTROL Datatype]:: `String`
    * [!UICONTROL Calculation]: **caso in cui A=&#39;Coupon&#39; then &#39;Coupon acquisition customer&#39; else &#39;Non coupon acquisition customer&#39; end**
 
 
@@ -136,7 +136,7 @@ Colonne aggiuntive da creare se gli ordini guest NON sono supportati:
    * [!UICONTROL Inputs]:
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
-   * [!UICONTROL Datatype]: `Decimal`
+   * [!UICONTROL Datatype]:: `Decimal`
    * [!UICONTROL Calculation]: **caso in cui A è nullo o B è nullo o B=0 allora null altro A/B end**
 
 
@@ -144,7 +144,7 @@ Colonne aggiuntive da creare se gli ordini guest NON sono supportati:
    * [!UICONTROL Column type]: `Same Table => Calculation`
    * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
-   * [!UICONTROL Datatype]: `String`
+   * [!UICONTROL Datatype]:: `String`
    * [!UICONTROL Calculation]: **caso in cui A è nullo allora nullo quando A=0 allora &#39;Coupon non utilizzato&#39; quando A&lt;0.5 allora &#39;Prezzo più pieno&#39; quando A=0.5 poi &#39;50/50&#39; quando A=1 poi &#39;Coupon solo&#39; quando A>0.5 poi &#39;Coupon più&#39; altro &#39;Fine indefinita&#39;**
 
 
@@ -512,4 +512,4 @@ Colonne aggiuntive da creare se gli ordini guest NON sono supportati:
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato finale potrebbe assomigliare all’immagine nella parte superiore della pagina.
 
-In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il nostro team di servizi professionali, [contattare il supporto](../../guide-overview.md).
+In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il nostro team di servizi professionali, [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

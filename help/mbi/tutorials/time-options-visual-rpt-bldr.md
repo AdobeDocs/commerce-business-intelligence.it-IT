@@ -2,9 +2,9 @@
 title: Usa opzioni tempo nel Report Builder visivo
 description: Scopri come analizzare i dati nel rapporto per un periodo di tempo specifico.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1278'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Ora possiamo vedere quanto è stato incisivo ogni mese l&#39;anno scorso:
 
 ## Confronto della stessa metrica tra intervalli di tempo diversi {#difftimerange}
 
-In questo esempio viene utilizzata una dimensione personalizzata denominata `Day number of the month`. Se desideri creare questo rapporto e non hai già questa dimensione nella tua Data Warehouse, [contattare il supporto](../guide-overview.md) per assistenza.
+In questo esempio viene utilizzata una dimensione personalizzata denominata `Day number of the month`. Se desideri creare questo rapporto e non hai già questa dimensione nella tua Data Warehouse, [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per assistenza.
 
 I due esempi più comuni in questa categoria sono (1) il confronto tra le metriche di crescita (anno dei ricavi su anno o mese su mese) e (2) la migliore comprensione delle recenti tendenze di vendita di scorte o articoli.
 
@@ -143,4 +143,3 @@ Questo esempio dimostra che i livelli di inventario correnti erano ben posiziona
 
 Poiché i tuoi clienti si comportano in modo diverso nel tempo, puoi aspettarti di vedere varianze di dati durante l’esecuzione delle analisi. L’impostazione di opzioni personalizzate per l’ora consente di creare rapidamente analisi complesse, consentendo decisioni basate sui dati che influenzano le tendenze della cronologia.
 
-Consulta le nostre [video di formazione](https://support.magento.com/hc/en-us/articles/360016730071-Training-Video-Time-Options-in-the-Visual-Report-Builder) per saperne di più.

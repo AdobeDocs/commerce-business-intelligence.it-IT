@@ -2,16 +2,16 @@
 title: Esporta dati non elaborati
 description: Scopri come esportare i record dal tuo [!DNL MBI] Data Warehouse per avere un'occhiata più da vicino a ciò che alimenta il dashboard.
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
 
 # Esporta dati non elaborati
 
-Utilizzando le esportazioni di dati grezzi, puoi esportare i record dal tuo [!DNL MBI] Data Warehouse per avere un&#39;occhiata più da vicino a ciò che alimenta il dashboard. Inoltre, le esportazioni di dati non elaborati possono esserti utili [individuare discrepanze nei dati](https://support.magento.com/hc/en-us/articles/360016730631).
+Utilizzando le esportazioni di dati grezzi, puoi esportare i record dal tuo [!DNL MBI] Data Warehouse per avere un&#39;occhiata più da vicino a ciò che alimenta il dashboard. Inoltre, le esportazioni di dati non elaborati possono esserti utili [individuare discrepanze nei dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
 
 Le esportazioni di dati grezzi consentono di accedere a colonne e dimensioni aggiuntive generate tramite la denormalizzazione e la pre-aggregazione di metriche rilevanti. Ad esempio: `User's first order date` è una dimensione che puoi esportare per ogni utente in [!DNL MBI], ma potrebbe non essere disponibile nel database.
 

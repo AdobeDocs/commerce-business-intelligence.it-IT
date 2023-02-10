@@ -2,9 +2,9 @@
 title: Connetti i tuoi dati
 description: Scopri come sfogliare le tabelle disponibili per la sincronizzazione in Data Warehouse Manager.
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,6 @@ Per aggiungere un’integrazione, fai clic su **[!UICONTROL Manage Data** > **Co
 * [Consolidamento delle tabelle](../../../best-practices/consolidating-your-tables.md)
 * [Limitazione dell’accesso al database](../../../administrator/account-management/restrict-db-access.md)
 
-**Non trovi un&#39;integrazione desiderata?** Per renderle visibili nel tuo account, è necessario attivare alcune integrazioni. Se cerchi qualcosa, ad esempio [!DNL Facebook] - ma non è elencato, [inviare un ticket di supporto](../../../guide-overview.md).
+**Non trovi un&#39;integrazione desiderata?** Per renderle visibili nel tuo account, è necessario attivare alcune integrazioni. Se cerchi qualcosa, ad esempio [!DNL Facebook] - ma non è elencato, [inviare un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 **Se viene visualizzato uno stato di errore per un’integrazione**, non andare nel panico - controlla il [Sezione Risoluzione dei problemi](https://support.magento.com/hc/en-us/sections/360003078151) per aiuto.

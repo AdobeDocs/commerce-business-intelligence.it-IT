@@ -2,10 +2,10 @@
 title: Google Analytics - Panoramica dei dati sorgente di acquisizione degli utenti
 description: Scopri come segmentare i dati per origine di acquisizione utente.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 0%
+source-wordcount: '837'
+ht-degree: 1%
 
 ---
 
@@ -69,11 +69,11 @@ Supponiamo di utilizzare un database SQL e di avere un `users` tabella con la se
 
 | ID | E-MAIL | JOIN_DATE | ACQ_SOURCE | ACQ_MEDIUM |
 |--- |--- |--- |--- |--- |
-| 1 | john@abc.com | 01/01/2012 | google | organico |
-| 2 | jim@abc.com | 01/01/2012 | google | cpc |
-| 3 | joe@def.com | 01/01/2012 | diretto | - |
-| 4 | jess@ghi.com | 01/01/2012 | riferimento | techcrunch.com |
-| 5 | jen@ghi.net | 01/01/2012 | altro | organico |
+| 1 | john@abc.com | 2012-01-24 | google | organico |
+| 2 | jim@abc.com | 2012-01-24 | google | cpc |
+| 3 | joe@def.com | 2012-01-25 | diretto | - |
+| 4 | jess@ghi.com | 2012-01-26 | riferimento | techcrunch.com |
+| 5 | jen@ghi.net | 2012-01-30 | altro | organico |
 | ... | ... | ... | ... | ... |
 
 Per iniziare, possiamo contare il numero di utenti provenienti da ciascun canale di riferimento eseguendo la seguente query sul database:
@@ -93,7 +93,6 @@ Questo è interessante, ma di uso limitato. Quello che vorremmo davvero sapere �
 
 ### Correlati
 
-* **[Tieni traccia dei dati di dispositivi utente, browser e sistemi operativi nel database](https://support.magento.com/hc/en-us/articles/360016732911)**
 * **[Scopri le fonti e i canali di acquisizione più importanti](../analysis/most-value-source-channel.md)**
 * **[Collega il tuo [!DNL Google Adwords] account](../importing-data/integrations/google-adwords.md)**
 * **[Aumenta il ROI delle campagne pubblicitarie](../analysis/roi-ad-camp.md)**

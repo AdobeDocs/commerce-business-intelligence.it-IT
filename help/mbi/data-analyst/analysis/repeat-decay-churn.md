@@ -2,9 +2,9 @@
 title: Analisi del decadimento e abbandono della probabilità di ripetizione
 description: Scopri e capisci come intercorre il tempo tra gli ordini e quando ci si aspetta che i clienti procedano a un abbandono.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Dopo aver creato l’analisi di cui sopra e aver determinato una soglia di abban
 
 Se offri più di un prodotto, probabilmente ti chiedi in che modo i clienti che acquistano un prodotto specifico si comportano in modo diverso nel tempo rispetto ad altri clienti. Vuoi saperne di più? Consulta questa esercitazione per scoprire il comportamento di acquisto delle coorti dei clienti nel corso della vita in base a prodotti specifici acquistati.
 
-Questa best practice è fornita da [!DNL MBI] Data Analysis Services (DAS). Non vediamo l&#39;ora di rispondere a tutte le vostre domande di business specifiche! [Contatta il supporto](../../guide-overview.md) per ulteriori informazioni.
+Questa best practice è fornita da [!DNL MBI] Data Analysis Services (DAS). Non vediamo l&#39;ora di rispondere a tutte le vostre domande di business specifiche! [Contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per ulteriori informazioni.
 
 ### Correlati
 

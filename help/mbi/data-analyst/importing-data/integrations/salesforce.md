@@ -2,9 +2,9 @@
 title: Connetti Salesforce
 description: Scopri in che modo i dati Salesforce consentono una serie di analisi, dal punteggio e l’ottimizzazione portano a raggiungere gli obiettivi per opportunità convertite.
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -36,4 +36,4 @@ Tutto qui! Dopo la convalida delle credenziali, [!DNL Salesforce] la configurazi
 Se siete un po&#39; più esperti di tecnologia, il [[!DNL Salesforce] Documentazione API](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) può essere una risorsa utile per saperne di più sull’integrazione di Salesforce con [!DNL MBI].
 
 * [Previsto [!DNL Salesforce] dati](../integrations/salesforce-data.md)
-* [Riautenticazione delle integrazioni](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Riautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

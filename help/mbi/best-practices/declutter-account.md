@@ -2,9 +2,9 @@
 title: Declutamento del [!DNL MBI] Account
 description: Scopri come ripulire il tuo [!DNL MBI] conto.
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Per farlo, fai clic sul nome della tua azienda nell’angolo in alto a destra de
 
 >[!WARNING]
 >
->La disattivazione di un utente comporta anche la rimozione dei grafici, delle dashboard e di altre risorse create da tale utente. Per conservare queste risorse, contatta l’ [!DNL MBI] [supporto](../guide-overview.md) prima di disattivare l’utente. Il supporto consente di trasferire queste risorse a un altro utente.
+>La disattivazione di un utente comporta anche la rimozione dei grafici, delle dashboard e di altre risorse create da tale utente. Per conservare queste risorse, contatta il [!DNL MBI] [supporto](../guide-overview.md) prima di disattivare l’utente. Il supporto consente di trasferire queste risorse a un altro utente.
 
 ### Riattivare un utente
 

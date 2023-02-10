@@ -2,10 +2,10 @@
 title: Analisi del comportamento di riacquisto del cliente
 description: Scopri come analizzare il comportamento del cliente nel reacquisto.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 0%
+source-wordcount: '876'
+ht-degree: 1%
 
 ---
 
@@ -46,9 +46,9 @@ Tenendo presenti le metriche precedenti, diamo un&#39;occhiata a un esempio che 
 
 | **Nome del prodotto** | **Probabilità ordine di ripetizione** | **Numero medio di ordini nel ciclo di vita** | **Ricavi in media a vita** | **Tempo medio in ordine successivo** |
 |-----|-----|-----|-----|-----|
-| Frigorifero da caffè a tazza singola | 94,98% | 7,92 | $549,82 | 57,01 giorni |
-| Capsule di caffè | 93,82% | 8,68 | $479,98 | 63,48 giorni |
-| Fagioli di caffè | 41,92% | 6,07 | $ 99,82 | 27,31 giorni |
+| Frigorifero da caffè a tazza singola | 94.98% | 7.92 | $549.82 | 57,01 giorni |
+| Capsule di caffè | 93.82% | 8.68 | $479.98 | 63,48 giorni |
+| Fagioli di caffè | 41.92% | 6.07 | $99.82 | 27,31 giorni |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -80,4 +80,4 @@ Oltre ad analizzare il comportamento di riacquisto dei clienti, puoi anche crear
 
 Una volta identificato il motivo per cui si verifica un’abbandono, puoi utilizzare l’analisi per creare un `reactivation` campagna. Utilizzando questi dati, puoi identificare gli utenti che sono diventati inattivi, quanto tempo è trascorso dalla loro ultima visita, qual è stato il loro ultimo acquisto e così via. Questo ti consentirà di prendere decisioni actionable che incoraggeranno i tuoi clienti a tornare.
 
-Per informazioni sull’analisi, [contattare il supporto](../../guide-overview.md).
+Per informazioni sull’analisi, [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

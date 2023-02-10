@@ -2,9 +2,9 @@
 title: Controllo dello stato del ciclo di aggiornamento
 description: Scopri come controllare lo stato del ciclo di aggiornamento.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Quando si accede al [!DNL MBI] dashboard, esistono diversi modi per controllare 
 
 ## Perché dovrei controllare lo stato del ciclo di aggiornamento?
 
-Il controllo del ciclo di aggiornamento dello stato è utile quando si controllano i dati nel [!DNL MBI] conto. Se vedi [risultati che non soddisfano le tue aspettative](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)ad esempio le vendite giornaliere in [!DNL MBI] non corrispondono a ciò che visualizzi nella tua piattaforma di e-commerce o nel tuo [[!DNL Google] Entrate e-commerce](https://support.magento.com/hc/en-us/articles/360016505232) puoi controllare l’ultimo punto dati per vedere se il problema verrà risolto al termine di un aggiornamento.
+Il controllo del ciclo di aggiornamento dello stato è utile quando si controllano i dati nel [!DNL MBI] conto. Se vedi [risultati che non soddisfano le tue aspettative](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)ad esempio le vendite giornaliere in [!DNL MBI] non corrispondono a ciò che visualizzi nella tua piattaforma di e-commerce o nel tuo [[!DNL Google] Entrate e-commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) puoi controllare l’ultimo punto dati per vedere se il problema verrà risolto al termine di un aggiornamento.
 
 ## [!UICONTROL Read-Only] e [!UICONTROL Standard]** Utenti
 

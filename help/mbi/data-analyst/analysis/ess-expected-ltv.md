@@ -2,9 +2,9 @@
 title: Analisi del valore del ciclo di vita previsto (LTV) (base)
 description: Scopri come creare analisi per comprendere il valore del ciclo di vita dei clienti correnti e come prevedere in che modo il valore del ciclo di vita aumenterà con più ordini.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -44,8 +44,6 @@ Una volta creata la metrica, puoi **creare un dashboard** facendo questo:
 * In questo caso creeremo e aggiungeremo tutti i rapporti.
 
 ## Creazione di report
-
-* Se non lo hai già fatto, effettua il check-out [questo video](https://fast.wistia.net/embed/iframe/24zz7wmjrt) informazioni sull’utilizzo di **[!UICONTROL Visual Report Builder] creazione di grafici, tabelle e valori scalari.
 
 >[!NOTE]
 >

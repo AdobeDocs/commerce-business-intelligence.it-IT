@@ -2,9 +2,9 @@
 title: Analisi degli ordini restituiti
 description: Scopri come impostare un dashboard che fornisce un’analisi dettagliata dei rendimenti del tuo negozio.
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -248,4 +248,4 @@ Colonne da creare
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe assomigliare al dashboard di esempio riportato sopra.
 
-In caso di domande durante la creazione di questa analisi o se desideri semplicemente coinvolgere il team Professional Services, [contattare il supporto](../../guide-overview.md).
+In caso di domande durante la creazione di questa analisi o se desideri coinvolgere il team Professional Services, [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

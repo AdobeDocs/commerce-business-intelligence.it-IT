@@ -2,9 +2,9 @@
 title: Connetti Adwords Google
 description: Scopri come misurare il ROI delle campagne sposando il tuo costo pubblicitario e il valore del ciclo di vita del cliente (CLV) degli utenti acquisiti dalle tue campagne.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -53,10 +53,9 @@ Se disponi di più profili e hai bisogno di aiuto per identificare quale sia la 
 
 ## Correlati
 
-* [Riautenticazione delle integrazioni](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Riautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Tracciare l’origine di riferimento dell’ordine tramite [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Tracciare l’origine del riferimento utente nel database](../../analysis/google-track-user-acq.md)
-* [Tieni traccia dei dati di dispositivi utente, browser e sistemi operativi nel database](https://support.magento.com/hc/en-us/articles/360016732911)
 * [Scopri le fonti e i canali di acquisizione più importanti](../../analysis/most-value-source-channel.md)
 * [Aumenta il ROI delle campagne pubblicitarie](../../analysis/roi-ad-camp.md)
 * [Come funziona [!DNL Google Analytics] L’attribuzione UTM funziona?](../../analysis/utm-attributes.md)

@@ -2,9 +2,9 @@
 title: Filtri
 description: Scopri come utilizzare i filtri.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Un rapporto può avere un massimo di 3.500 punti dati. Per ridurre il numero di punti dati, utilizza un filtro per ridurre la quantità di dati utilizzati per generare il rapporto.
 
-MBI include una selezione di filtri che è possibile utilizzare &quot;preconfigurati&quot; o modificare in base alle proprie esigenze. Non esiste un limite al numero di filtri che puoi creare.
+MBI include una selezione di filtri che è possibile utilizzare &quot;out of the box (OOTB)&quot; o modificare in base alle tue esigenze. Non esiste un limite al numero di filtri che puoi creare.
 
 ## Per aggiungere un filtro:
 

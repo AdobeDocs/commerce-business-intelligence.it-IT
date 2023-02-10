@@ -2,9 +2,9 @@
 title: Modificare la tabella operativa di una metrica
 description: Scopri come modificare la tabella di dati utilizzata da una metrica per eseguire il suo funzionamento.
 exl-id: c7a074ca-31f4-43e5-85d9-b64dca95dc23
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,6 @@ In alcuni casi, puoi decidere di modificare la tabella di dati utilizzata da una
 
    ![](../../assets/change-metrics-2.png)
 
-1. Se nella nuova tabella non è presente una colonna corrispondente, è possibile **crearla nella tabella dati** o [contattare il supporto](../../guide-overview.md) se si tratta di una colonna o di una dimensione di calcolo effettuata da [!DNL MBI]) o semplicemente **elimina la dimensione dalla metrica**. Per eliminare una dimensione di cui non hai più bisogno, torna semplicemente all’editor della metrica e seleziona le dimensioni da eliminare in `Dimensions`.
+1. Se nella nuova tabella non è presente una colonna corrispondente, è possibile **crearla nella tabella dati** o [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) se si tratta di una colonna o di una dimensione di calcolo effettuata da [!DNL MBI]) o semplicemente **elimina la dimensione dalla metrica**. Per eliminare una dimensione di cui non hai più bisogno, torna semplicemente all’editor della metrica e seleziona le dimensioni da eliminare in `Dimensions`.
 
    ![](../../assets/change-metrics-3.png)

@@ -2,10 +2,10 @@
 title: MBI Essentials vs Pro
 description: Scopri in che modo MBI Essentials differisce da MBI Pro.
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: 1703e469e245629797bbe08d691d7f8e816a4019
+source-git-commit: dcd02693b3ca060ecdc47cbee189428ce157dd58
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 0%
+source-wordcount: '86'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ La tabella seguente descrive cosa è incluso in Essentials e Pro.
 | `Pre-Defined Reports` | Fino a 100 | Personalizzato |
 | `Pre-Defined Dashboards` | 5-6 | Personalizzato |
 | `New Custom Report Creation` | Sì | Sì |
-| `Magento Commerce Tables` | 4-6 | Senza limiti |
+| `Commerce Tables` | 4-6 | Senza limiti |
 | `Log-ins/User Accounts` | 10 | 20 |
 | `User Permissions` | Sì | Sì |
 | `Data Warehouse Manager` | Non disponibile | Disponibile |
@@ -152,7 +152,3 @@ Elementi in _corsivo_ sono campi calcolati.
    * `store_id`
    * `name`
 
-Per ulteriori informazioni sulle differenze tra [!DNL MBI Essentials] e [!DNL MBI Pro].
-
-* [`Essentials`](https://support.magento.com/hc/en-us/articles/360005305614)
-* [`Pro`](https://support.magento.com/hc/en-us/articles/360005373453)

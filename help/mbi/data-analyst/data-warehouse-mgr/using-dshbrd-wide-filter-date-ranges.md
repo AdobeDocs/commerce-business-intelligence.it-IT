@@ -2,9 +2,9 @@
 title: Filtro ampio dashboard
 description: Scopri come apportare modifiche in blocco a tutti i rapporti su un dashboard specifico.
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Per analizzare le prestazioni di uno specifico archivio, fai clic sull&#39;icona
 
 >[!NOTE]
 >
->Un filtro store è abilitato o disabilitato per un intero [!DNL MBI] conto. Se un dashboard contiene rapporti non interessati dal filtro, ad esempio rapporti non generati su dati Commerce, tali rapporti non vengono aggiornati quando viene applicato il filtro store. È possibile [contattare il supporto](../../guide-overview.md) se ritieni che un rapporto debba essere aggiornato in base alla selezione dell&#39;archivio o se ritieni che il filtro dell&#39;archivio account sia disabilitato erroneamente.
+>Un filtro store è abilitato o disabilitato per un intero [!DNL MBI] conto. Se un dashboard contiene rapporti non interessati dal filtro, ad esempio rapporti non generati su dati Commerce, tali rapporti non vengono aggiornati quando viene applicato il filtro store. È possibile [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) se ritieni che un rapporto debba essere aggiornato in base alla selezione dell&#39;archivio o se ritieni che il filtro dell&#39;archivio account sia disabilitato erroneamente.
 
 Quando si seleziona un archivio dal `Store Filter`, il filtro mantiene la selezione quando ci si sposta tra le dashboard. Mantenere la selezione consente di visualizzare i dati per l&#39;archivio selezionato ovunque fino a quando non si seleziona `All Stores`.
 

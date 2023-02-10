@@ -2,9 +2,9 @@
 title: Rapporti per l'help desk per Zendesk
 description: Scopri i tuoi canali di riferimento più importanti.
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Questa opzione è disponibile solo per i client che si trovano nella `Pro` pianificare e utilizzare la nuova architettura. Sei sul [nuova architettura](https://support.magento.com/hc/en-us/articles/360016503052-New-Architecture-FAQ) se hai `Data Warehouse Views` sezione disponibile dopo la selezione `Manage Data` dalla barra degli strumenti principale.
+>Questa opzione è disponibile solo per i client che si trovano nella `Pro` pianificare e utilizzare la nuova architettura. Se hai la `Data Warehouse Views` sezione disponibile dopo la selezione `Manage Data` dalla barra degli strumenti principale.
 
 Consolidamento del [!DNL Zendesk] i dati con il database sulle transazioni sono un modo eccellente per comprendere meglio come i clienti interagiscono con i team di vendita o di successo dei clienti e che tipo di clienti utilizzano la piattaforma di supporto. In questo articolo viene illustrato come impostare una dashboard per ottenere rapporti granulari sulle [!DNL Zendesk] prestazioni e collegamento nei clienti transazionali.
 
@@ -196,7 +196,7 @@ Prima di iniziare, è necessario collegare il [[!DNL Zendesk]](../integrations/z
 
       * `Calculation` - `to_char(A,'D')||'. '||to_char(A,'Day')`
 
-      *`Datatype` - `String`
+      *`Datatype` – `String`
 
 
 * **`customer_entity`** tabella
@@ -221,7 +221,7 @@ Prima di iniziare, è necessario collegare il [[!DNL Zendesk]](../integrations/z
 
       * `Calculation` - `case when A>0 then 'Yes' else 'No' end`
 
-      * `Datatype` - `String`
+      * `Datatype` – `String`
 
 * **`[Zendesk] Tickets`** tabella
    * Seleziona una definizione: `Joined Column`

@@ -2,9 +2,9 @@
 title: Connetti a strisce
 description: Scopri come gestire e tenere traccia dei dati di pagamento e fattura della tua azienda.
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ Dopo aver fatto clic su **[!UICONTROL Connect with Stripe]**, viene visualizzata
 Se siete un po&#39; più esperti di tecnologia, il [[!DNL Stripe] Documentazione API](https://stripe.com/docs/api) può essere una risorsa utile per saperne di più su come [!DNL Stripe] è integrato con [!DNL MBI].
 
 * [Previsto [!DNL Stripe] dati](../integrations/stripe-data.md)
-* [Riautenticazione delle integrazioni](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Riautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

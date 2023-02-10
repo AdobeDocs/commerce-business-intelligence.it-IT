@@ -2,9 +2,9 @@
 title: Connetti annunci Facebook
 description: Scopri come analizzare i dati sulla spesa pubblicitaria e verificare se i tuoi soldi vengono spesi in modo efficace.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,11 @@ Seguirai una serie di passaggi per consentire [!DNL MBI] per accedere ai dati da
 
 ## cosa succede dopo? {#next}
 
-Assicurati di tenere traccia [!DNL Facebook] campagne [!DNL Google Analytics] come da [tutorial](https://www.facebook.com/business/google-analytics). In tal modo, `utm\_campaign` campo [!DNL Google Analytics] è popolato correttamente per il [!DNL Facebook] campagne.
+Assicurati di tenere traccia [!DNL Facebook] campagne [!DNL Google Analytics]. In tal modo, `utm\_campaign` campo [!DNL Google Analytics] è popolato correttamente per il [!DNL Facebook] campagne.
 
 ## Correlati
 
-* [Riautenticazione delle integrazioni](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Riautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Collega il tuo [!DNL Google Adwords] account](../integrations/google-ecommerce.md)
 * [Tracciare l’origine di riferimento dell’ordine tramite [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Tracciare l’origine del riferimento utente nel database](../../analysis/google-track-user-acq.md)

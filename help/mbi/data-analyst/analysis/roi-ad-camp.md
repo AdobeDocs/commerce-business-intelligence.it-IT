@@ -2,9 +2,9 @@
 title: Incremento del ROI nelle campagne pubblicitarie
 description: Scopri alcuni metodi diversi per valutare le prestazioni della campagna.
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Stai eseguendo annunci pubblicitari specifici per prodotto? In tal caso, è poss
 >
 >Ipotizziamo che tutti i costi della campagna siano stati utilizzati esclusivamente per generare acquisti di prodotti specifici. Supponendo che tutti i costi siano stati spesi per la generazione degli acquisti, il ROI risultante sarà il peggiore scenario (il più alto costo per acquisto), in modo da essere sicuri che il ROI effettivo sia superiore a questo calcolo. Esempio: Presupponendo di aver speso 20 dollari per una campagna che ha generato 10 nuovi utenti e 10 acquisti, il costo effettivo per acquisto è di 1 $, ma partendo dal presupposto che tutti i costi siano andati all&#39;acquisizione di nuovi utenti, il costo per acquisto è di 2 $.)*
 
-Prima di iniziare, [inviare un ticket di supporto](../../guide-overview.md) per aggiungere le dimensioni seguenti alla tabella degli elementi riga (`sales\_flat\_order\_item, order\_item`):
+Prima di iniziare, [inviare un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per aggiungere le dimensioni seguenti alla tabella degli elementi riga (`sales\_flat\_order\_item, order\_item`):
 
 * Origine dell’ordine (se tieni traccia dell’origine del riferimento solo a livello di utente, unisciti all’origine dell’utente)
 * Campagna dell’ordine (se tieni traccia dell’origine del riferimento solo a livello di utente, unisciti alla campagna dell’utente)

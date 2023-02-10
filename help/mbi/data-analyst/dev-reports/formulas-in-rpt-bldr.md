@@ -2,9 +2,9 @@
 title: Formule nel Report Builder
 description: Scopri come utilizzare le formule nel Report Builder.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -63,4 +63,4 @@ Nel nostro esempio, abbiamo utilizzato il `Stacked Columns` prospettiva per visu
 
 Avete notato negli esempi sopra che la formula è `timestamp`, `groupings`, `perspectives`e `filters` sono ereditate dalle relative metriche di input? Tenere presente che le formule possono essere utilizzate `perspectives` e [opzioni di tempo indipendenti](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}, proprio come possono fare le metriche.
 
-Se hai ulteriori domande sull&#39;utilizzo delle formule nel `Report Builder`, [contattare il supporto](../../guide-overview.md).
+Se hai ulteriori domande sull&#39;utilizzo delle formule nel `Report Builder`, [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

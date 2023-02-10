@@ -2,9 +2,9 @@
 title: Creare set di filtri per le metriche
 description: Scopri come creare set di filtri salvati e applicarli alle metriche.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Se hai più metriche in [!DNL MBI] che devono essere filtrati in modo simile (ad esempio, per filtrare gli ordini di test), puoi creare set di filtri salvati e applicarli alle metriche. Questo consente di risparmiare tempo, in quanto non è necessario aggiungere singoli filtri durante la creazione o la modifica di una metrica.
 
-Consulta le nostre [video di formazione](https://support.magento.com/hc/en-us/articles/360016730151) per saperne di più.
+Consulta le nostre [video di formazione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) per saperne di più.
 
 >[!NOTE]
 >

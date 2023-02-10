@@ -2,16 +2,16 @@
 title: tabella quote_item
 description: Scopri come utilizzare la tabella quote_item.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
 
 # tabella quote_item
 
-La `quote_item` tabella (`sales_flat_quote_item` su [!DNL Magento] 1) contiene record su ogni articolo aggiunto al carrello, sia che il carrello sia stato abbandonato o convertito in un acquisto. Ogni riga rappresenta un elemento carrello. A causa delle dimensioni potenziali di questa tabella, ti consigliamo di eliminare periodicamente i record se vengono soddisfatti determinati criteri, ad esempio se sono presenti carrelli non convertiti con età superiore a 60 giorni.
+La `quote_item` tabella (`sales_flat_quote_item` al M1) 1) contiene i record su ogni articolo aggiunto al carrello, sia che il carrello sia stato abbandonato o convertito in un acquisto. Ogni riga rappresenta un elemento carrello. A causa delle dimensioni potenziali di questa tabella, ti consigliamo di eliminare periodicamente i record se vengono soddisfatti determinati criteri, ad esempio se sono presenti carrelli non convertiti con età superiore a 60 giorni.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ La `quote_item` tabella (`sales_flat_quote_item` su [!DNL Magento] 1) contiene 
 
 `quote_item`
 
-* Iscriviti a `quote_item` per creare nuove colonne che associano i dettagli della SKU configurabile o del bundle principale al prodotto semplice. Tieni presente che dovrai [contattare il supporto](../../guide-overview.md) per assistenza nella configurazione di questi calcoli, se la creazione è nel gestore Data Warehouse.
+* Iscriviti a `quote_item` per creare nuove colonne che associano i dettagli della SKU configurabile o del bundle principale al prodotto semplice. Tieni presente che dovrai [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per assistenza nella configurazione di questi calcoli, se la creazione è nel gestore Data Warehouse.
    * Percorso: `quote_item.parent_item_id` (molti) => `quote_item.item_id` 1)
 
 `store`
