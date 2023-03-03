@@ -1,17 +1,17 @@
 ---
-title: Accedi alle [!DNL MBI] Account
-description: Scopri come accedere al tuo [!DNL MBI] conto.
+title: Accedi al tuo [!DNL MBI] Account
+description: Scopri come accedere al tuo [!DNL MBI] account.
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 0%
 
 ---
 
-# Accedi ai tuoi attivati [!DNL MBI] account
+# Accedi al file attivato [!DNL MBI] account
 
-Dopo aver attivato la [!DNL MBI] per [on-premise](../getting-started/onpremise-activation.md) o [cloud](../getting-started/cloud-activation.md) e hai collaborato con il tuo Customer Success Manager per finalizzare i passaggi di configurazione, ora puoi accedere al tuo account.
+Dopo aver attivato il [!DNL MBI] account per [on-premise](../getting-started/onpremise-activation.md) o [cloud](../getting-started/cloud-activation.md) e hai lavorato con il tuo Adobe Account Team per finalizzare i passaggi di configurazione, ora puoi accedere al tuo account.
 
 Puoi accedere con il tuo [!DNL Adobe ID] o utilizzando [!DNL MBI] indirizzo e-mail e password.
 
@@ -19,17 +19,17 @@ Puoi accedere con il tuo [!DNL Adobe ID] o utilizzando [!DNL MBI] indirizzo e-ma
 
 ## Accedi con il tuo [!DNL Adobe ID]
 
-1. Fai clic su **[!UICONTROL Sign in with Adobe ID]**.
+1. Clic **[!UICONTROL Sign in with Adobe ID]**.
 
    ![accesso ad adobe](../assets/sign-in-adobe.png)
 
-1. Immetti l’indirizzo e-mail utilizzato al momento della creazione del tuo [!DNL MBI] conto. Se non disponi già di un account di Adobe, fai clic su **[!UICONTROL Create an account]** e inserire le informazioni. Ricorda di utilizzare l&#39;indirizzo e-mail utilizzato al momento della creazione del tuo [!DNL MBI] conto. L’indirizzo e-mail è la chiave necessaria per accedere al tuo account Adobe.
+1. Immetti l&#39;indirizzo e-mail utilizzato al momento della creazione del [!DNL MBI] account. Se non disponi già di un account Adobe, fai clic su **[!UICONTROL Create an account]** e immettere le informazioni. Ricorda di utilizzare l&#39;indirizzo e-mail utilizzato al momento della creazione del [!DNL MBI] account. L’indirizzo e-mail è la chiave necessaria per accedere all’account di Adobe.
 
 >[!NOTE]
 >
->Se effettui l&#39;accesso utilizzando il [!DNL Adobe ID], non potrai modificare il tuo [!DNL MBI] password del profilo.
+>Se effettui l’accesso utilizzando il [!DNL Adobe ID], non sarà possibile modificare il [!DNL MBI] password del profilo.
 
-## Accedi utilizzando il tuo nome utente e password
+## Accedi con il tuo nome utente e la tua password
 
 Inserisci il tuo indirizzo e-mail e la tua password e fai clic su **[!UICONTROL Sign In]**.
 
