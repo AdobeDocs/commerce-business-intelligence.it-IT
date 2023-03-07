@@ -1,69 +1,69 @@
 ---
-title: Modifica in serie di grafici nelle dashboard
-description: Scopri come utilizzare la funzione di modifica collettiva in [!DNL MBI].
+title: Modifica in serie dei grafici nei dashboard
+description: Scopri come utilizzare la funzione di modifica in serie in [!DNL MBI].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
 
-# Modifica in serie di grafici nelle dashboard
+# Modifica in serie dei grafici nei dashboard
 
-La funzione di modifica collettiva semplifica la modifica dei nomi e delle date dei grafici nelle dashboard. Ad esempio, se desideri che tutti i grafici di un dashboard specifico facciano riferimento a un singolo store e presentino rapporti su base mensile anziché trimestrale, Invece di cambiare tutto manualmente, lascia che `bulk-editing` fai il lavoro. In questo articolo imparerai come utilizzare:
+La funzione di modifica in serie consente di modificare facilmente i nomi dei grafici e le date nei dashboard. Ad esempio, si desidera che tutti i grafici di un dashboard specifico facciano riferimento a un singolo store e a un report su base mensile anziché trimestrale. Invece di modificare tutto manualmente, lasciare che `bulk-editing` funzionalità per eseguire il lavoro. In questo articolo imparerai a utilizzare:
 
-* [La ](#findreplace)
+* [Il ](#findreplace)
 
-* [La ](#prepend)
+* [Il ](#prepend)
 
-* [La ](#dates)
+* [Il ](#dates)
 
-Detto questo, considera questo - *Queste modifiche devono essere permanenti?* In caso contrario, è consigliabile clonare il dashboard e quindi modificare le date nel nuovo dashboard. In questo modo potrai mantenere il dashboard originale mentre apporti le modifiche necessarie.
+Detto questo, considera questo - *Queste modifiche devono essere permanenti?* In caso contrario, è consigliabile clonare il dashboard e quindi modificare le date nel nuovo dashboard. In questo modo è possibile mantenere il dashboard originale senza interrompere le modifiche necessarie.
 
 >[!NOTE]
 >
->Se apporti modifiche a molti rapporti, il processo di aggiornamento potrebbe richiedere un po&#39; di tempo.
+>Se stai modificando numerosi rapporti, il processo di aggiornamento potrebbe richiedere un po’ di tempo.
 
-## Utilizzo `Find/Replace` {#findreplace}
+## Utilizzo di `Find/Replace` {#findreplace}
 
-1. Fai clic sull’ingranaggio (![](../../assets/gear-icon.png)) accanto al nome del dashboard, quindi [!UICONTROL Bulk Edit Reports] finestra.
+1. Fare clic sull&#39;ingranaggio (![](../../assets/gear-icon.png)) accanto al nome del dashboard, quindi il [!UICONTROL Bulk Edit Reports] finestra.
 
-1. Fai clic su **[!UICONTROL Chart Title Find and Replace]** nella finestra a comparsa.
+1. Clic **[!UICONTROL Chart Title Find and Replace]** nella finestra popup.
 
-1. In `Chart Title Find` campo , digitare le parole o i caratteri che si desidera trovare.
+1. In `Chart Title Find` digitare le parole o i caratteri che si desidera trovare.
 
-1. In `Replace With` campo , digitare le parole o i caratteri che devono sostituire ciò che si trova nel campo `Find` campo .
+1. In `Replace With` digitare le parole o i caratteri che devono sostituire i caratteri contenuti nel campo `Find` campo.
 
-1. Fai clic su **[!UICONTROL Update Reports]**.
+1. Clic **[!UICONTROL Update Reports]**.
 
 Esempio:
 
 ![modifica collettiva](../../assets/bulk_edit.gif)
 
-## Preventivo `Chart Names` {#prepend}
+## Anteprima `Chart Names` {#prepend}
 
-1. Fai clic sull’ingranaggio (![](../../assets/gear-icon.png)) accanto al nome del dashboard, quindi [!UICONTROL Bulk Edit Reports] finestra.
+1. Fare clic sull&#39;ingranaggio (![](../../assets/gear-icon.png)) accanto al nome del dashboard, quindi il [!UICONTROL Bulk Edit Reports] finestra.
 
-1. Fai clic su **[!UICONTROL Prepend Report Names]** nella finestra a comparsa.
+1. Clic **[!UICONTROL Prepend Report Names]** nella finestra popup.
 
 1. Digitare le parole o i caratteri con cui si desidera anteporre i grafici.
 
-1. Fai clic su **[!UICONTROL Update Reports]**.
+1. Clic **[!UICONTROL Update Reports]**.
 
 Esempio:
 
-![prepend](../../assets/prepend.gif)
+![anticipare](../../assets/prepend.gif)
 
 ## Modifica `Dates` {#dates}
 
-1. Fai clic sull’ingranaggio (![](../../assets/gear-icon.png)) accanto al nome del dashboard, quindi seleziona la `!UICONTROL Bulk Edit Reports` finestra.
+1. Fare clic sull&#39;ingranaggio (![](../../assets/gear-icon.png)) accanto al nome del dashboard, quindi seleziona la `!UICONTROL Bulk Edit Reports` finestra.
 
-1. Fai clic su **[!UICONTROL Change Dates]** nella finestra a comparsa.
+1. Clic **[!UICONTROL Change Dates]** nella finestra popup.
 
 1. Imposta il nuovo `Start/End Date` e `Time Interval`. È inoltre possibile lasciare invariati questi campi.
 
-1. Fai clic su **[!UICONTROL Update Reports]**.
+1. Clic **[!UICONTROL Update Reports]**.
 
 Esempio:
 

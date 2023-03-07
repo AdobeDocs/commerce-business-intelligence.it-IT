@@ -2,9 +2,9 @@
 title: Attivazione del [!DNL MBI] Account per sottoscrizioni on-premise
 description: Scopri come attivare [!DNL MBI] account per le sottoscrizioni locali.
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---

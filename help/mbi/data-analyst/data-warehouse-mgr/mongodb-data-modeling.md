@@ -2,24 +2,24 @@
 title: Modellazione dati MongoDB
 description: Scopri come evitare pattern di dati che pongono un problema.
 exl-id: 556c854b-5d7c-4f72-8ed7-5bc08d9ee5b9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
 # [!DNL MongoDB] Modellazione dati
 
-Quando [!DNL MBI] tira dentro [!DNL MongoDB] i dati vengono tradotti in un modello relazionale.
+Quando [!DNL MBI] richiama [!DNL MongoDB] dati, questi dati vengono tradotti in un modello relazionale.
 
-La cattiva notizia: Anche se la maggior parte dei pattern di dati non pone un problema, ce ne sono alcuni che, a causa della traduzione in un modello relazionale, [!DNL MBI] non supporta .
+La cattiva notizia: Mentre la maggior parte dei pattern di dati non pongono un problema, ce ne sono alcuni che, a causa della traduzione in un modello relazionale, [!DNL MBI] non supporta.
 
-La buona notizia: Tutti questi modelli possono essere evitati.
+La buona notizia: tutti questi modelli possono essere evitati.
 
-## Array sottonidificati {#subnested}
+## Array subannidati {#subnested}
 
-Se la tua raccolta si presenta come nell’esempio seguente, [!DNL MBI] replicherà i dati solo nella matrice elementi. I dati della matrice dei sottoelementi non verranno estratti.
+Se la tua raccolta è simile all’esempio di seguito, [!DNL MBI] replica solo i dati nell&#39;array items. I dati dell’array dei sottoelementi non vengono estratti.
 
 ```bash
     {
@@ -39,9 +39,9 @@ Se la tua raccolta si presenta come nell’esempio seguente, [!DNL MBI] repliche
     }
 ```
 
-## Tasti oggetto variabili {#varobjectkeys}
+## Chiavi oggetto variabili {#varobjectkeys}
 
-Le raccolte che includono oggetti con chiavi di oggetto variabile non vengono replicate in [!DNL MBI]. Ad esempio:
+Le raccolte che includono oggetti con chiavi di oggetti variabili non vengono replicate in [!DNL MBI]. Ad esempio:
 
 ```bash
     {
@@ -54,7 +54,7 @@ Le raccolte che includono oggetti con chiavi di oggetto variabile non vengono re
     }
 ```
 
-Ciò si verifica in genere quando si utilizza un oggetto e una matrice risulta più appropriata. Ora, rielaboreremo l&#39;esempio precedente:
+Ciò si verifica in genere quando viene utilizzato un oggetto e un array è più appropriato. Ora, rielabora l’esempio precedente:
 
 ```bash
     {

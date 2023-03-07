@@ -1,27 +1,27 @@
 ---
 title: Analisi del valore del ciclo di vita previsto (LTV) per Pro
-description: Scopri come impostare un dashboard che ti aiuterà a comprendere la crescita del valore del ciclo di vita del cliente e il valore del ciclo di vita previsto dei clienti.
+description: Scopri come impostare una dashboard che ti aiuti a comprendere la crescita del valore del ciclo di vita del cliente e il valore atteso del ciclo di vita dei tuoi clienti.
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
 
-# Analisi del valore del ciclo di vita prevista
+# Analisi del valore del ciclo di vita previsto
 
-In questo articolo, mostriamo come impostare un dashboard che ti aiuterà a comprendere la crescita del valore della vita del cliente e il valore della vita previsto dei tuoi clienti.
+Questo articolo illustra come impostare una dashboard che consenta di comprendere la crescita del valore del ciclo di vita del cliente e il valore atteso del ciclo di vita dei clienti.
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
-Questa analisi è disponibile solo per gli account clienti Pro sulla nuova architettura. Se il tuo account ha accesso a `Persistent Views` nella sezione `Manage Data` barra laterale, sei sulla nuova architettura e puoi seguire le istruzioni elencate qui per creare autonomamente questa analisi.
+Questa analisi è disponibile solo per gli account Pro sulla nuova architettura. Se il tuo account ha accesso a `Persistent Views` funzione sotto il `Manage Data` barra laterale, ti trovi sulla nuova architettura e puoi seguire le istruzioni elencate qui per creare autonomamente questa analisi.
 
-Prima di iniziare, vorrai acquisire familiarità con i nostri [generatore di report per coorte.](../dev-reports/cohort-rpt-bldr.md)
+Prima di iniziare, è importante acquisire familiarità con [generatore di rapporti per coorte.](../dev-reports/cohort-rpt-bldr.md)
 
 ## Colonne calcolate
 
-Colonne da creare nel **ordini** tabella se si utilizza **30 giorni**:
+Colonne da creare nel **ordini** tabella se si utilizza **mesi di 30 giorni**:
 
 * [!UICONTROL Column name]: `Months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
@@ -75,30 +75,30 @@ Colonne da creare nel **`orders`** tabella se si utilizza **calendario** mesi:
 
 ## Metriche
 
-### Istruzioni per la metrica
+### Istruzioni sulla metrica
 
 Metriche da creare
 
 * **Clienti distinti per data del primo ordine**
-   * Se abiliti gli ordini degli ospiti, utilizza `customer_email`
+   * Se si abilitano gli ordini degli ospiti, utilizzare `customer_email`
 
 * In **`orders`** tabella
-* Questa metrica esegue un **Conteggio valori distinti**
-* Sulla **`customer_id`** column
-* Ordinato dal **`Customer's first order date`** timestamp
+* Questa metrica esegue una **Conta valori distinti**
+* Il giorno **`customer_id`** colonna
+* Ordinato da **`Customer's first order date`** timestamp
 
 >[!NOTE]
 >
->Assicurati di [aggiungi tutte le nuove colonne come dimensioni alle metriche](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) prima di creare nuovi rapporti.
+>Assicurati di [aggiungere tutte le nuove colonne come dimensioni alle metriche](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) prima di creare nuovi rapporti.
 
 ## Rapporti
 
-### Istruzioni per i rapporti
+### Istruzioni per il rapporto
 
-**Entrate previste per cliente per mese**
+**Ricavi previsti per cliente per mese**
 
 * Metrica `A`: `Revenue (hide)`
-   * `Calendar months between first order and this order` `<= X` (Scegli un numero ragionevole per X, ad esempio, 24 mesi)
+   * `Calendar months between first order and this order` `<= X` (Scegli un numero ragionevole per X, ad esempio 24 mesi)
    * `Is in current month?` = `No`
 
 * 
@@ -124,18 +124,18 @@ Metriche da creare
 
    [!UICONTROL Format]: `Currency`
 
-Altri dettagli del grafico
+Altri dettagli grafico
 
 * [!UICONTROL Time period]: `All time`
 * Intervallo di tempo: `None`
 * [!UICONTROL Group by]: `Calendar months between first order and this order` - mostra tutto
-* Modificare la `group by` per `All time customers` da Indipendente utilizzando l’icona a forma di matita accanto a `group by`
-* Modifica le `Show top/bottom` campi come segue:
+* Modificare il `group by` per `All time customers` metrica Indipendente utilizzando l’icona a forma di matita accanto al simbolo `group by`
+* Modifica il `Show top/bottom` campi come segue:
    * [!UICONTROL Revenue]: `Top 24 sorted by Calendar months between first order and this order`
    * [!UICONTROL All time customers]: `Top 24 sorted by All time customers`
    * [!UICONTROL All time customers by month since first order]: `Top 24 sorted by All time customers by month since first order`
 
-**Entrate medie al mese per coorte**
+**Ricavi medi al mese per coorte**
 
 * Metrica `A`: `Revenue`
 * 
@@ -143,7 +143,7 @@ Altri dettagli del grafico
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Average value per cohort member`
 
-**Ricavi medi cumulativi mensili per coorte**
+**Ricavi medi mensili cumulati per coorte**
 
 * Metrica `A`: `Revenue`
 * 
@@ -151,6 +151,6 @@ Altri dettagli del grafico
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Cumulative average value per cohort member`
 
-Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato finale potrebbe assomigliare all’immagine nella parte superiore della pagina.
+Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile all’immagine nella parte superiore della pagina.
 
-In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il nostro team di servizi professionali, [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il team Professional Services, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

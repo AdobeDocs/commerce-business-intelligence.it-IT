@@ -1,32 +1,32 @@
 ---
 title: Comprendere i risultati tra il database e l'editor SQL
-description: Scopri i risultati tra il database e l'editor SQL.
+description: Scopri come comprendere i risultati tra database ed editor SQL.
 exl-id: f31f3eef-791a-4984-901e-bc10554031bd
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
 
-# Risultati del database e `SQL Editor` Risultati
+# Risultati database e `SQL Editor` Risultati
 
-Puoi essere curioso di sapere cosa `Last successful update began` all&#39;interno del campo `Integrations` pagina:
+Potresti essere curioso di sapere cosa... `Last successful update began` il campo è all&#39;interno del `Integrations` pagina:
 
-![Last_success_update.png](../../../assets/Last_successful_update.png)
+![Ultimo_aggiornamento_riuscito.png](../../../assets/Last_successful_update.png)
 
-## Comprendere il `timestamp` field
+## Comprendere la `timestamp` campo
 
 Mostra l&#39;inizio `timestamp` (nel fuso orario impostato sul tuo account) del _ultimo ciclo di aggiornamento riuscito_ sul tuo account.
 
-- Se una delle tabelle sincronizzate ha riscontrato un problema durante l&#39;ultimo ciclo di aggiornamento, la marca temporale è *non aggiornato*.
-- Di conseguenza, possono verificarsi casi in cui i rapporti sono stati aggiornati con nuovi dati, ma *Ultimo aggiornamento completato* è ancora in ritardo.
+- Se una delle tabelle sincronizzate ha riscontrato un problema durante l’ultimo ciclo di aggiornamento, il timestamp è *non aggiornato*.
+- Di conseguenza, in alcuni casi i report possono essere stati aggiornati con dati aggiornati, ma il *L’ultimo aggiornamento riuscito è iniziato* è ancora in ritardo.
 
-## Identificare l&#39;ultimo punto dati &quot;reale&quot;
+## Identificare l’ultimo punto dati &quot;reale&quot;
 
-L&#39;ultimo punto dati per una particolare integrazione è determinato dal `Last Data Point Received` `timestamp` a destra di ogni integrazione. Tale marca temporale si riferisce all&#39;ultimo punto in cui il data warehouse ha ricevuto correttamente i punti dati da tale origine, che si tratti di un database, API o integrazione di terze parti.
+Il punto dati più recente per una particolare integrazione è determinato da `Last Data Point Received` `timestamp` si trova a destra di ogni integrazione. Tale marca temporale si riferisce all’ultimo punto in cui la tua Data Warehouse ha ricevuto correttamente punti dati da tale origine, che si tratti di un database, di un’API o di un’integrazione di terze parti.
 
-Per verificare la freschezza dei dati da *tabelle specifiche*, si consiglia di creare una [Report SQL](../../dev-reports/sql-rpt-bldr.md) che esegue `MAX(timestamp)` sulla tabella più importante del tuo account. Confronto di questa marca temporale con `Last Data Point` indicherà se il problema ha interessato l&#39;intero conto o un sottoinsieme delle tabelle. Si consiglia di eseguire questa operazione per tre o quattro tabelle importanti di uso comune.
+Per verificare l&#39;aggiornamento dei dati da *tabelle specifiche*, Adobe consiglia di creare un [Report SQL](../../dev-reports/sql-rpt-bldr.md) che esegue un `MAX(timestamp)` nella tabella più importante del tuo account. Confronto di questa marca temporale con `Last Data Point` indica se il problema ha interessato l’intero account o un sottoinsieme delle tabelle. L’Adobe consiglia di eseguire questa operazione per tre o quattro tabelle importanti e di uso comune.
 
-- Se la `MAX(timestamp)` valori più recenti di `Last Data Point Received`Ciò significa che un sottoinsieme delle tabelle è stato interessato, ma il ciclo di aggiornamento complessivo del conto è stabile.
-- Se la `MAX(timestamp)` sono uguali o precedenti a `Last Data Point Received`, significa che il ciclo di aggiornamento dell’account è stato interessato. In tale situazione, [inviare un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+- Se il `MAX(timestamp)` i valori sono più recenti di `Last Data Point Received`Ciò significa che un sottoinsieme delle tabelle è stato interessato, ma il ciclo di aggiornamento del conto complessivo è stabile.
+- Se il `MAX(timestamp)` i valori sono uguali o precedenti a `Last Data Point Received`, significa che il ciclo di aggiornamento dell’account è stato interessato. In questa situazione, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

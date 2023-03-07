@@ -2,78 +2,78 @@
 title: tabella quote_item
 description: Scopri come utilizzare la tabella quote_item.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
 
 # tabella quote_item
 
-La `quote_item` tabella (`sales_flat_quote_item` al M1) 1) contiene i record su ogni articolo aggiunto al carrello, sia che il carrello sia stato abbandonato o convertito in un acquisto. Ogni riga rappresenta un elemento carrello. A causa delle dimensioni potenziali di questa tabella, ti consigliamo di eliminare periodicamente i record se vengono soddisfatti determinati criteri, ad esempio se sono presenti carrelli non convertiti con età superiore a 60 giorni.
+Il `quote_item` tabella (`sales_flat_quote_item` su M1) 1) contiene i record di ogni articolo aggiunto al carrello, indipendentemente dal fatto che il carrello sia stato abbandonato o convertito in acquisto. Ogni riga rappresenta un elemento del carrello. A causa delle dimensioni potenziali di questa tabella, Adobe consiglia di eliminare periodicamente i record se sono soddisfatti determinati criteri, ad esempio se sono presenti carrelli non convertiti di età superiore a 60 giorni.
 
 >[!NOTE]
 >
->L&#39;analisi dei carrelli abbandonati storici è possibile solo se non si eliminano i record dal `quote` e `quote_item` tabella. Se elimini i record, potrai solo vedere i carrelli non ancora rimossi dal tuo database.
+>L’analisi dei carrelli storici abbandonati è possibile solo se non elimini i record dal `quote` e `quote_item` tabella. Se elimini i record, potrai vedere solo i carrelli non ancora rimossi dal database.
 
 ## Colonne native comuni
 
 | **Nome colonna** | **Descrizione** |
 |---|---|
-| `base_price` | Prezzo di una singola unità di un prodotto al momento in cui l&#39;articolo è stato aggiunto a un carrello, dopo [regole sui prezzi di catalogo, sconti su più livelli e prezzi speciali](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) sono applicati e prima che vengano applicate imposte, spedizioni o sconti sul carrello, rappresentati nella valuta di base del negozio |
-| `created_at` | Timestamp di creazione dell&#39;elemento carrello, in genere memorizzato localmente in UTC. A seconda della configurazione in [!DNL MBI], questa marca temporale può essere convertita in un fuso orario per la generazione di rapporti in [!DNL MBI] diverso dal fuso orario del database |
-| `item_id` (PK) | Identificatore univoco della tabella |
-| `name` | Nome del testo dell’elemento dell’ordine |
-| `parent_item_id` | `Foreign key` che collega un prodotto semplice al suo bundle padre o al prodotto configurabile. Iscriviti a `quote_item.item_id` per determinare gli attributi del prodotto padre associati a un prodotto semplice. Per gli elementi del carrello padre (ovvero, i tipi di prodotto raggruppati o configurabili), la `parent_item_id` sarà `NULL` |
-| `product_id` | `Foreign key` associato a `catalog_product_entity` tabella. Iscriviti a `catalog_product_entity.entity_id` per determinare gli attributi di prodotto associati all’articolo dell’ordine |
-| `product_type` | Tipo di prodotto aggiunto al carrello. Potenziale [tipi di prodotto](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) include: semplice, configurabile, raggruppato, virtuale, bundle e scaricabile |
-| `qty` | Quantità di unità incluse nel carrello per il particolare articolo del carrello |
-| `quote_id` | `Foreign key` associato a `quote` tabella. Iscriviti a `quote.entity_id` per determinare gli attributi del carrello associati all’elemento carrello |
-| `sku` | Identificatore univoco per l&#39;elemento carrello |
-| `store_id` | Chiave esterna associata al `store` tabella. Iscriviti a `store.store_id` per determinare quale visualizzazione dell’archivio Commerce è associata all’elemento carrello |
+| `base_price` | Prezzo di una singola unità di un prodotto al momento dell’aggiunta dell’articolo al carrello, dopo [regole di prezzo di catalogo, sconti su più livelli e prezzi speciali](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) vengono applicati e prima di applicare eventuali imposte, spese di spedizione o sconti sul carrello. Viene rappresentata nella valuta di base dell&#39;archivio. |
+| `created_at` | Timestamp di creazione dell’elemento del carrello, memorizzato localmente in UTC. A seconda della configurazione in [!DNL MBI], questa marca temporale può essere convertita in un fuso orario di reporting in [!DNL MBI] diverso dal fuso orario del database |
+| `item_id` PK | Identificatore univoco della tabella |
+| `name` | Nome testo dell&#39;ordine |
+| `parent_item_id` | `Foreign key` che mette in relazione un prodotto semplice con il pacchetto principale o il prodotto configurabile. Partecipa a `quote_item.item_id` per determinare gli attributi del prodotto padre associati al prodotto semplice. Per gli articoli del carrello principale (ovvero, bundle o tipi di prodotto configurabili), il `parent_item_id` è `NULL` |
+| `product_id` | `Foreign key` associato al `catalog_product_entity` tabella. Partecipa a `catalog_product_entity.entity_id` per determinare gli attributi del prodotto associati all&#39;articolo dell&#39;ordine |
+| `product_type` | Tipo di prodotto aggiunto al carrello. Potenziale [tipi di prodotto](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) include: semplice, configurabile, raggruppata, virtuale, bundle e scaricabile |
+| `qty` | Quantità di unità incluse nel carrello per l’articolo del carrello specifico |
+| `quote_id` | `Foreign key` associato al `quote` tabella. Partecipa a `quote.entity_id` per determinare gli attributi del carrello associati all&#39;articolo del carrello |
+| `sku` | Identificatore univoco dell’elemento del carrello |
+| `store_id` | Chiave esterna associata al `store` tabella. Partecipa a `store.store_id` per determinare quale visualizzazione del punto vendita di Commerce è associata all’articolo del carrello |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Colonne calcolate comuni
 
 | **Nome colonna** | **Descrizione** |
 |---|---|
-| `Cart creation date` | Timestamp associato alla data di creazione del carrello. Calcolato mediante unione `quote_item.quote_id` a `quote.entity_id` e restituendo `created_at` timestamp |
-| `Cart is active? (1/0)` | Campo booleano che restituisce &quot;1&quot; se il carrello è stato creato da un cliente e non è ancora stato convertito in un ordine. Restituisce &quot;0&quot; per i carrelli convertiti o i carrelli creati tramite l’amministratore. Calcolato mediante unione `quote_item.quote_id` a `quote.entity_id` e restituendo `is_active` field |
-| `Cart item total value (qty * base_price)` | Valore totale di un articolo al momento dell’aggiunta dell’articolo a un carrello, dopo [regole sui prezzi di catalogo, sconti su più livelli e prezzi speciali](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) sono applicati e prima che vengano applicate tasse, spedizioni o sconti sul carrello. Calcolato moltiplicando il `qty` dal `base_price` |
-| `Seconds since cart creation` | Tempo trascorso tra la data di creazione del carrello e ora. Calcolato mediante unione `quote_item.quote_id` a `quote.entity_id` e restituendo `Seconds since cart creation` field |
-| `Store name` | Nome dell&#39;archivio Commerce associato all&#39;articolo dell&#39;ordine. Calcolato mediante unione `sales_order_item.store_id` a `store.store_id` e restituendo `name` field |
+| `Cart creation date` | Marca temporale associata alla data di creazione del carrello. Calcolato tramite unione `quote_item.quote_id` a `quote.entity_id` e la restituzione del `created_at` timestamp |
+| `Cart is active? (1/0)` | Campo booleano che restituisce &quot;1&quot; se il carrello è stato creato da un cliente e non è ancora stato convertito in un ordine. Restituisce &quot;0&quot; per i carrelli convertiti o creati tramite l’amministratore. Calcolato tramite unione `quote_item.quote_id` a `quote.entity_id` e la restituzione del `is_active` campo |
+| `Cart item total value (qty * base_price)` | Valore totale di un elemento al momento dell’aggiunta dell’elemento al carrello, dopo [regole di prezzo di catalogo, sconti su più livelli e prezzi speciali](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) vengono applicati e prima di applicare eventuali imposte, spese di spedizione o sconti sul carrello. Calcolato moltiplicando il `qty` da `base_price` |
+| `Seconds since cart creation` | Tempo trascorso tra la data di creazione del carrello e ora. Calcolato tramite unione `quote_item.quote_id` a `quote.entity_id` e la restituzione del `Seconds since cart creation` campo |
+| `Store name` | Nome dell’archivio Commerce associato all’articolo ordine. Calcolato tramite unione `sales_order_item.store_id` a `store.store_id` e la restituzione del `name` campo |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Metriche comuni
 
 | **Nome della metrica** | **Descrizione** | **Costruzione** |
 |---|---|---|
-| `Number of abandoned cart items` | Quantità totale di articoli aggiunti ai carrelli che soddisfano specifiche condizioni di &quot;abbandono&quot; | `Operation: Sum`<br/>`Operand: qty`<br/>`Timestamp: Cart creation date`<br>Filtri:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, dove &quot;x&quot; corrisponde al tempo trascorso (in secondi) dalla creazione del carrello oltre il quale un carrello è considerato abbandonato |
-| `Abandoned cart item value` | Somma dei ricavi totali associati ai carrelli che soddisfano specifiche condizioni di &quot;abbandono&quot; | `Operation: Sum`<br>`Operand: Cart item total value (qty * base_price)`<br>`Timestamp:` `Cart creation date`<br>Filtri:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, dove &quot;x&quot; corrisponde al tempo trascorso (in secondi) dalla creazione del carrello oltre il quale un carrello è considerato abbandonato |
+| `Number of abandoned cart items` | Quantità totale di articoli aggiunti ai carrelli che soddisfano specifiche condizioni di &quot;abbandono&quot; | `Operation: Sum`<br/>`Operand: qty`<br/>`Timestamp: Cart creation date`<br>Filtri:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, dove &quot;x&quot; corrisponde al tempo trascorso (in secondi) dalla creazione del carrello oltre il quale un carrello viene considerato abbandonato |
+| `Abandoned cart item value` | Somma dei ricavi totali associati ai carrelli che soddisfano specifiche condizioni di &quot;abbandono&quot; | `Operation: Sum`<br>`Operand: Cart item total value (qty * base_price)`<br>`Timestamp:` `Cart creation date`<br>Filtri:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, dove &quot;x&quot; corrisponde al tempo trascorso (in secondi) dalla creazione del carrello oltre il quale un carrello viene considerato abbandonato |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Percorsi di unione chiave esterna
 
 `catalog_product_entity`
 
-* Iscriviti a `catalog_product_entity` per creare nuove colonne che restituiscono gli attributi di prodotto associati all’elemento carrello.
-   * Percorso: `quote_item.product_id` (molti) => `catalog_product_entity.entity_id` 1)
+* Partecipa a `catalog_product_entity` tabella per creare colonne che restituiscono attributi di prodotto associati all&#39;articolo del carrello.
+   * Percorso: `quote_item.product_id` (molti) => `catalog_product_entity.entity_id` (uno)
 
 `quote`
 
-* Iscriviti a `quote` per creare nuove colonne a livello di carrello associate all’elemento carrello.
-   * Percorso: `quote_item.quote_id` (molti) => `quote.entity_id` 1)
+* Partecipa a `quote` tabella per creare nuove colonne a livello di carrello associate all’articolo del carrello.
+   * Percorso: `quote_item.quote_id` (molti) => `quote.entity_id` (uno)
 
 `quote_item`
 
-* Iscriviti a `quote_item` per creare nuove colonne che associano i dettagli della SKU configurabile o del bundle principale al prodotto semplice. Tieni presente che dovrai [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per assistenza nella configurazione di questi calcoli, se la creazione è nel gestore Data Warehouse.
-   * Percorso: `quote_item.parent_item_id` (molti) => `quote_item.item_id` 1)
+* Partecipa a `quote_item` per creare colonne che associano i dettagli dello SKU configurabile principale o del bundle al prodotto semplice. [Contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per assistenza nella configurazione di questi calcoli, se si crea in Data Warehouse manager.
+   * Percorso: `quote_item.parent_item_id` (molti) => `quote_item.item_id` (uno)
 
 `store`
 
-* Iscriviti a `store` per creare nuove colonne che restituiscono i dettagli relativi all’archivio Commerce associato all’elemento carrello.
-   * Percorso: `quote_item.store_id` (molti) => `store.store_id` 1)
+* Partecipa a `store` tabella per creare colonne che restituiscono i dettagli relativi all’archivio Commerce associato all’articolo del carrello.
+   * Percorso: `quote_item.store_id` (molti) => `store.store_id` (uno)

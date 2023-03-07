@@ -2,9 +2,9 @@
 title: Accedi al tuo [!DNL MBI] Account
 description: Scopri come accedere al tuo [!DNL MBI] account.
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ Puoi accedere con il tuo [!DNL Adobe ID] o utilizzando [!DNL MBI] indirizzo e-ma
 
    ![accesso ad adobe](../assets/sign-in-adobe.png)
 
-1. Immetti l&#39;indirizzo e-mail utilizzato al momento della creazione del [!DNL MBI] account. Se non disponi già di un account Adobe, fai clic su **[!UICONTROL Create an account]** e immettere le informazioni. Ricorda di utilizzare l&#39;indirizzo e-mail utilizzato al momento della creazione del [!DNL MBI] account. L’indirizzo e-mail è la chiave necessaria per accedere all’account di Adobe.
+1. Immetti l&#39;indirizzo e-mail utilizzato al momento della creazione del [!DNL MBI] account. Se non disponi già di un account Adobe, fai clic su **[!UICONTROL Create an account]** e immettere le informazioni. Ricorda di utilizzare l&#39;indirizzo e-mail utilizzato al momento della creazione del [!DNL MBI] account. L’indirizzo e-mail è la chiave di accesso al tuo account di Adobe.
 
 >[!NOTE]
 >
->Se effettui l’accesso utilizzando il [!DNL Adobe ID], non sarà possibile modificare il [!DNL MBI] password del profilo.
+>Se effettui l’accesso utilizzando il [!DNL Adobe ID], non è possibile modificare il [!DNL MBI] password del profilo.
 
 ## Accedi con il tuo nome utente e la tua password
 

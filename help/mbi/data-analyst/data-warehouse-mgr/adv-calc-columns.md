@@ -1,37 +1,37 @@
 ---
 title: Tipi di colonne calcolate avanzate
-description: Scopri le nozioni di base per la maggior parte dei casi di utilizzo delle colonne, ma potresti desiderare una colonna calcolata un po’ più complessa di quella che Data Warehouse Manager può creare.
+description: Scopri le nozioni di base per la maggior parte dei casi di colonna d’uso, ma potresti desiderare una colonna calcolata un po’ più complessa di quella che può essere creata dal gestore della Data Warehouse.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '900'
 ht-degree: 4%
 
 ---
 
 # Tipi di colonne calcolate avanzate
 
-Molte analisi che potresti tentare di creare, implicano l&#39;utilizzo di un **nuova colonna** che vuoi `group by` o `filter by`. La [Creazione di colonne calcolate](../data-warehouse-mgr/creating-calculated-columns.md) Questa esercitazione descrive le nozioni di base per la maggior parte dei casi d’uso, ma potrebbe essere utile utilizzare una colonna calcolata un po’ più complessa di quella che Data Warehouse Manager può creare.
+Molte analisi che potresti tentare di creare comportano l’utilizzo di un **nuova colonna** che desideri `group by` o `filter by`. Il [Creazione di colonne calcolate](../data-warehouse-mgr/creating-calculated-columns.md) Questo tutorial illustra le nozioni di base per la maggior parte dei casi d’uso, ma potresti voler trovare una colonna calcolata un po’ più complessa di quella che può essere creata da Data Warehouse Manager.
 {: #top}
 
-Questi tipi di colonne possono essere creati dal nostro team di analisti di Data Warehouse. Per definire una nuova colonna calcolata, fornisci le seguenti informazioni:
+Questi tipi di colonne possono essere creati dal team Adobe di analisti Data Warehouse. Per definire una nuova colonna calcolata, fornisci le seguenti informazioni:
 
-1. La **`definition`** di questa colonna (compresi input, formule o formattazione)
-1. La **`table`** su cui desideri creare la colonna
-1. Qualsiasi **`example data points`** che descrivono il contenuto della colonna
+1. Il **`definition`** di questa colonna (inclusi input, formule o formattazione)
+1. Il **`table`** su cui desideri creare la colonna
+1. Qualsiasi **`example data points`** che descrivono cosa deve contenere la colonna
 
-Di seguito sono riportati alcuni esempi comuni di colonne calcolate avanzate che gli utenti spesso trovano utili:
+Di seguito sono riportati alcuni esempi comuni di colonne calcolate avanzate che gli utenti spesso ritengono utili:
 
-* [Ordina (o classifica) l’evento in sequenza](#compareevents)
-* [Trova l&#39;intervallo di tempo tra due eventi](#twoevents)
-* [Confrontare i valori degli eventi sequenziali](#sequence)
+* [Ordina (o classifica) evento in sequenza](#compareevents)
+* [Trovare il tempo tra due eventi](#twoevents)
+* [Confrontare i valori di evento sequenziali](#sequence)
 * [Converti valuta](#currency)
-* [Converti timezoni](#timezone)
-* [Altro](#else)
+* [Conversione dei fusi orari](#timezone)
+* [Qualcos&#39;altro](#else)
 
-## Sto cercando di ordinare gli eventi in sequenza {#compareevents}
+## Sto tentando di ordinare gli eventi in sequenza {#compareevents}
 
-Lo chiamiamo un **numero evento** colonna calcolata. Stiamo quindi cercando di trovare la sequenza in cui si sono verificati gli eventi per un particolare proprietario dell’evento, come un cliente o un utente.
+Questo è denominato **numero evento** colonna calcolata. Ciò significa che stai cercando di trovare la sequenza in cui si sono verificati gli eventi per un particolare proprietario dell’evento, ad esempio un cliente o un utente.
 
 Ecco un esempio:
 
@@ -43,25 +43,25 @@ Ecco un esempio:
 | 4 | `A` | 2015-01-02 13:00:00 | 3 |
 | 5 | `B` | 2015-01-03 13:00:00 | 2 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-Una colonna calcolata con un numero di evento può essere utilizzata per osservare le differenze di comportamento tra eventi di prima occorrenza, eventi di ripetizione o nth nei dati.
+Una colonna calcolata relativa al numero di evento può essere utilizzata per osservare le differenze di comportamento tra eventi nuovi, eventi ripetuti o eventi ennesimi nei dati.
 
-Vuoi visualizzare la colonna numero ordine del cliente in azione? Fai clic sull’immagine per visualizzarla utilizzata come dimensione Raggruppa per in un rapporto.
+Desideri visualizzare la colonna del numero di ordine del cliente in azione? Fai clic sull’immagine per visualizzarla utilizzata come dimensione Raggruppa per in un rapporto.
 
-![Utilizzando un numero evento, la colonna viene calcolata in Raggruppa per il numero di ordine del cliente.](../../assets/EventNumber.gif)<!--{: style="max-width: 500px;"}-->
+![Utilizzo di una colonna calcolata del numero evento per il raggruppamento in base al numero di ordine del cliente.](../../assets/EventNumber.gif)<!--{: style="max-width: 500px;"}-->
 
 Per creare questo tipo di colonna calcolata, è necessario conoscere:
 
-* Tabella in cui creare la colonna
-* Il campo che identifica il proprietario degli eventi (`owner\_id` in questo esempio)
-* Il campo in base al quale si desidera ordinare gli eventi (`timestamp` in questo esempio)
+* Tabella in cui si desidera creare la colonna
+* Campo che identifica il proprietario degli eventi (`owner\_id` in questo esempio)
+* Campo in base al quale si desidera ordinare gli eventi (`timestamp` in questo esempio)
 
-[torna all&#39;inizio](#top)
+[Torna all&#39;inizio](#top)
 
 ## Sto cercando di trovare il tempo tra due eventi. {#twoevents}
 
-Lo chiamiamo un `date difference` colonna calcolata. Ciò significa che stiamo cercando di trovare il tempo tra due eventi appartenenti a un singolo record, in base alle marche temporali dell’evento.
+Questo è chiamato `date difference` colonna calcolata. Ciò significa che stai tentando di trovare il tempo tra due eventi appartenenti a un singolo record, in base ai timestamp dell’evento.
 
 Ecco un esempio:
 
@@ -70,22 +70,22 @@ Ecco un esempio:
 | `A` | 2015-01-01 00:00:00 | 2015-01-01 12:30:00 | 45000 |
 | `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-Una colonna calcolata a differenza di data può essere utilizzata per creare una metrica che calcola l’intervallo medio o medio tra due eventi. Fai clic sull’immagine seguente per controllare come `Average time to first order` viene utilizzato in un rapporto.
+Una colonna calcolata sulla differenza di data può essere utilizzata per creare una metrica che calcola il tempo medio o mediano tra due eventi. Fare clic sull&#39;immagine seguente per verificare come `Average time to first order` metrica utilizzata in un rapporto.
 
-![Utilizzando una colonna calcolata a differenza di data per calcolare il tempo medio al primo ordine.](../../assets/DateDifference.gif)<!--{: style="max-width: 500px;"}-->
+![Utilizzo di una colonna calcolata sulla differenza di data per calcolare il tempo medio al primo ordine.](../../assets/DateDifference.gif)<!--{: style="max-width: 500px;"}-->
 
 Per creare questo tipo di colonna calcolata, è necessario conoscere:
 
-* Tabella in cui creare la colonna
-* Due marche temporali tra le quali si desidera conoscere la differenza
+* Tabella in cui si desidera creare la colonna
+* I due timestamp tra i quali desideri conoscere la differenza
 
-[torna all&#39;inizio](#top)
+[Torna all&#39;inizio](#top)
 
-## Sto cercando di confrontare valori di evento sequenziali. {#sequence}
+## Sto tentando di confrontare valori di evento sequenziali. {#sequence}
 
-Lo chiamiamo un **confronto sequenziale degli eventi**. Stiamo quindi cercando di trovare il delta tra un valore (valuta, numero, timestamp) e il valore corrispondente per l’evento precedente del proprietario.
+Questo è chiamato **confronto sequenziale degli eventi**. Ciò significa che stai tentando di trovare il delta tra un valore (valuta, numero, marca temporale) e il valore corrispondente per l’evento precedente del proprietario.
 
 Ecco un esempio:
 
@@ -97,23 +97,23 @@ Ecco un esempio:
 | 4 | `A` | 2015-01-02 13:00:00 | 126000 |
 | 5 | `B` | 2015-01-03 13:00:00 | 217800 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-Un confronto sequenziale degli eventi può essere utilizzato per trovare il tempo medio o mediano tra ciascun evento sequenziale. Fai clic sull’immagine seguente per visualizzare il **Tempo medio e medio tra gli ordini** metriche in azione.
+Un confronto sequenziale degli eventi può essere utilizzato per trovare il tempo medio o mediano tra ciascun evento sequenziale. Fai clic sull&#39;immagine seguente per visualizzare **Tempo medio e medio tra ordini** in azione.
 
-=![Utilizzando un confronto sequenziale degli eventi, la colonna calcolata consente di calcolare il tempo medio e medio tra gli ordini.](../../assets/SeqEventComp.gif)<!--{: style="max-width: 500px;"}-->
+=![Utilizzo di una colonna calcolata per il confronto sequenziale degli eventi per calcolare il tempo medio e mediano tra gli ordini.](../../assets/SeqEventComp.gif)<!--{: style="max-width: 500px;"}-->
 
 Per creare questo tipo di colonna calcolata, è necessario conoscere:
 
-* Tabella in cui creare la colonna
-* Il campo che identifica il proprietario degli eventi (`owner\_id` nell&#39;esempio)
-* Il campo del valore che desideri visualizzare la differenza tra per ogni evento sequenziale (`timestamp` in questo esempio)
+* Tabella in cui si desidera creare la colonna
+* Campo che identifica il proprietario degli eventi (`owner\_id` nell&#39;esempio)
+* Il campo del valore tra cui si desidera visualizzare la differenza per ogni evento sequenziale (`timestamp` in questo esempio)
 
-[torna all&#39;inizio](#top)
+[Torna all&#39;inizio](#top)
 
-## Sto cercando di convertire la valuta. {#currency}
+## Sto provando a convertire la valuta. {#currency}
 
-A **conversione valutaria** la colonna calcolata converte gli importi delle transazioni da una valuta registrata in una divisa di dichiarazione, in base al tasso di cambio al momento dell&#39;evento.
+A **conversione valuta** nella colonna calcolata gli importi delle transazioni vengono convertiti da una valuta registrata a una valuta di dichiarazione, in base al tasso di cambio al momento dell&#39;evento.
 
 Ecco un esempio:
 
@@ -122,20 +122,20 @@ Ecco un esempio:
 | `1` | 2015-01-01 00:00:00 | 30 | 33.57 |
 | `2` | 2015-01-02 00:00:00 | 50 | 55.93 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Per creare questo tipo di colonna calcolata, è necessario conoscere:
 
-* Tabella in cui creare la colonna
-* Colonna dell&#39;importo della transazione che si desidera convertire
+* Tabella in cui si desidera creare la colonna
+* Colonna dell&#39;importo della transazione da convertire
 * Colonna che indica la valuta in cui sono stati registrati i dati (in genere un codice ISO)
-* La valuta preferita per le segnalazioni
+* La valuta di dichiarazione preferita
 
-[torna all&#39;inizio](#top)
+[Torna all&#39;inizio](#top)
 
-## Sto cercando di convertire i fusi orari. {#timezone}
+## Io sto provando a convertire i fusi orari. {#timezone}
 
-A **conversione del fuso orario** la colonna calcolata converte le marche temporali per una particolare origine dati dal relativo fuso orario registrato in un fuso orario per la generazione di rapporti.
+A **conversione del fuso orario** la colonna calcolata converte i timestamp per una particolare origine dati dal fuso orario registrato a quello di reporting.
 
 Ecco un esempio:
 
@@ -144,25 +144,25 @@ Ecco un esempio:
 | `1` | 2015-01-01 00:00:00 | 2014-12-31 19:00:00 |
 | `2` | 2015-01-01 12:00:00 | 2015-01-01 07:00:00 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Per creare questo tipo di colonna calcolata, è necessario conoscere:
 
-* Tabella in cui creare la colonna
-* La colonna timestamp che si desidera convertire
+* Tabella in cui si desidera creare la colonna
+* Colonna timestamp da convertire
 * Fuso orario in cui sono stati registrati i dati
-* Fuso orario di reporting preferito
+* Il fuso orario preferito per la generazione dei rapporti
 
-[torna all&#39;inizio](#top)
+[Torna all&#39;inizio](#top)
 
 ## Sto cercando di fare qualcosa che non è elencato qui. {#else}
 
-Non ti preoccupare. Solo perché non è presente in questa lista non significa che non sia possibile. Il nostro team di analisti della Data Warehouse ti ha coperto.
+Non preoccuparti. Solo perché non è elencato qui non significa che non è possibile. Il team di Adobi degli analisti di Data Warehouse può essere d&#39;aiuto.
 
-Per definire una nuova colonna calcolata, procedere come segue. [inviare un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) con dettagli su cosa desideri creare.
+Per definire una nuova colonna calcolata: [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) con dettagli su ciò che desideri creare.
 
 ## Documentazione correlata
 
 * [Creazione di colonne calcolate](../data-warehouse-mgr/creating-calculated-columns.md)
-* [Tipi di colonne calcolate](../data-warehouse-mgr/calc-column-types.md)
-* [Costruzione [!DNL Google ECommerce] dimensioni con i dati relativi all’ordine e al cliente](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [Tipi di colonna calcolati](../data-warehouse-mgr/calc-column-types.md)
+* [Generazione [!DNL Google ECommerce] dimensioni con dati di ordini e clienti](../data-warehouse-mgr/bldg-google-ecomm-dim.md)

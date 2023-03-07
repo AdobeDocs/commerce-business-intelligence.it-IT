@@ -1,47 +1,47 @@
 ---
 title: Creare visualizzazioni da query SQL
-description: Scopri come acquisire familiarità con la terminologia utilizzata nel Report Builder SQL e come creare le visualizzazioni SQL.
+description: Scopri come acquisire familiarità con la terminologia utilizzata nel Report Builder SQL e come fornire una solida base per la creazione di visualizzazioni SQL.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
 
 # Creare visualizzazioni da query SQL
 
-L’obiettivo di questa esercitazione è quello di acquisire familiarità con la terminologia utilizzata nel `SQL Report Builder` e fornisci solide basi per la creazione `SQL visualizations`.
+L&#39;obiettivo di questo tutorial è quello di acquisire familiarità con la terminologia utilizzata nel `SQL Report Builder` e fornire una solida base per la creazione di `SQL visualizations`.
 
-La [`SQL Report Builder`](../data-analyst/dev-reports/sql-rpt-bldr.md) è un generatore di report con opzioni: è possibile eseguire una query al solo scopo di recuperare una tabella di dati oppure trasformare tali risultati in un rapporto. Questa esercitazione spiega come creare una visualizzazione da una query SQL.
+Il [`SQL Report Builder`](../data-analyst/dev-reports/sql-rpt-bldr.md) è un generatore di rapporti con opzioni: puoi eseguire una query al solo scopo di recuperare una tabella di dati oppure puoi trasformare tali risultati in un rapporto. Questo tutorial spiega come creare una visualizzazione da una query SQL.
 
 ## Terminologia
 
-Prima di iniziare questa esercitazione, fai riferimento alla seguente terminologia utilizzata nella `SQL Report Builder`.
+Prima di iniziare questo tutorial, consulta la terminologia seguente utilizzata nel `SQL Report Builder`.
 
-- `Series`: La colonna che si desidera misurare è definita Serie nel Report Builder SQL. Esempi comuni `revenue`, `items sold`e `marketing spend`. Almeno una colonna deve essere impostata come `Series` per creare una visualizzazione.
+- `Series`: la colonna che desideri misurare è indicata come Serie nel Report Builder SQL. Esempi comuni sono `revenue`, `items sold`, e `marketing spend`. Almeno una colonna deve essere impostata come `Series` per creare una visualizzazione.
 
-- `Category`: La colonna che desideri utilizzare per segmentare i dati è denominata `Category` Questo è proprio come il `Group By` nella [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). Ad esempio, se desideri segmentare i ricavi del ciclo di vita dei clienti per l’origine di acquisizione, la colonna contenente l’origine di acquisizione viene specificata come `Category`. È possibile impostare più colonne come `Category`.
+- `Category`: la colonna che desideri utilizzare per segmentare i dati è denominata `Category` Questo è proprio come `Group By` funzionalità in [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). Ad esempio, se desideri segmentare i ricavi del ciclo di vita dei clienti in base all&#39;origine di acquisizione, la colonna che contiene l&#39;origine di acquisizione viene specificata come `Category`. È possibile impostare più colonne come `Category`.
 
 >[!NOTE]
 >
->Le date e le marche temporali possono essere utilizzate anche come `Categories`. Sono solo un’altra colonna di dati nella query e devono essere formattati e ordinati come desiderato nella query stessa.
+>Date e marche temporali possono essere utilizzate anche come `Categories`. Si tratta solo di un’altra colonna di dati nella query e deve essere formattata e ordinata come desiderato nella query stessa.
 
-- `Labels`: Vengono applicate come etichette dell&#39;asse x. Quando si analizzano le tendenze dei dati nel tempo, le colonne anno e mese sono generalmente specificate come etichette. È possibile impostare più colonne su Etichetta.
+- `Labels`: vengono applicate come etichette dell’asse x. Quando si analizzano i dati con tendenze nel tempo, le colonne anno e mese vengono specificate come etichette. È possibile impostare più colonne come Etichetta.
 
-## Passaggio 1: Scrivere la query
+## Passaggio 1: scrivere la query
 
-Tieni presente quanto segue:
+Considera quanto segue:
 
-- La `SQL Report Builder` utilizza [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
+- Il `SQL Report Builder` utilizza [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
 
-- Se crei un rapporto con una serie temporale, assicurati di `ORDER BY` le colonne di marca temporale. In questo modo le marche temporali verranno tracciate nell’ordine corretto del rapporto.
+- Se stai creando un rapporto con una serie temporale, assicurati di `ORDER BY` le colonne timestamp. In questo modo le marche temporali vengono tracciate nell’ordine corretto sul rapporto.
 
-- La `EXTRACT` è utile per analizzare il giorno, la settimana, il mese o l’anno della marca temporale. Questa funzione è utile quando `time interval` desideri utilizzare nel rapporto `daily`, `weekly`, `monthly`oppure `yearly`.
+- Il `EXTRACT` è utile per analizzare il giorno, la settimana, il mese o l’anno della marca temporale. Questa funzione è utile quando `time interval` che desideri utilizzare per il report è `daily`, `weekly`, `monthly`, o `yearly`.
 
-Per iniziare, apri le `SQL Report Builder` facendo clic su **[!UICONTROL Report Builder** > **SQL Report Builder]**.
+Per iniziare, apri `SQL Report Builder` facendo clic su **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
-Ad esempio, considera questa query che restituisce il numero totale mensile di articoli venduti per ogni prodotto:
+Ad esempio, considera questa query che restituisce il numero totale mensile di articoli venduti per ciascun prodotto:
 
 ```sql
     SELECT SUM("qty") AS "Items Sold", "products's name" AS "product name",
@@ -58,42 +58,42 @@ Questa query restituisce questa tabella di risultati:
 
 ![](../assets/SQL_results_table.png)
 
-## Passaggio 2: Creare la visualizzazione
+## Passaggio 2: creare la visualizzazione
 
-Con questi risultati, *come si crea la visualizzazione?* Per iniziare, fai clic sul pulsante **[!UICONTROL Chart]** nella scheda `Results` riquadro. Verrà visualizzata la `Chart settings` scheda .
+Con questi risultati, *come si crea la visualizzazione?* Per iniziare, fai clic su **[!UICONTROL Chart]** scheda in `Results` riquadro. Viene visualizzata la `Chart settings` scheda.
 
-Quando una query viene eseguita per la prima volta, il report potrebbe apparire inscrutabile perché tutte le colonne della query sono tracciate come serie:
+Quando si esegue una query per la prima volta, il report potrebbe risultare imperscrutabile perché tutte le colonne della query vengono tracciate come una serie:
 
 ![](../assets/SQL_initial_report_results.png)
 
-Per questo esempio, vogliamo che sia un grafico a linee con tendenze nel tempo. Per crearlo, utilizza le seguenti impostazioni:
+In questo esempio, vuoi che sia un grafico a linee con tendenze nel tempo. Per crearlo, usa le seguenti impostazioni:
 
-- `Series`: Seleziona la `Items sold` come colonna `Series` dal momento che vogliamo misurarlo. Dopo aver definito un `Series` viene visualizzata una singola riga tracciata nel rapporto.
+- `Series`: seleziona la `Items sold` colonna come `Series` perché desideri misurarla. Dopo aver definito un `Series` nella colonna viene visualizzata una singola riga tracciata nel rapporto.
 
-- `Category`: In questo esempio, vogliamo visualizzare ogni prodotto come riga diversa nel rapporto. Per farlo, ci siamo messi `Product name` come `Category`.
+- `Category`: per questo esempio, vuoi visualizzare ogni prodotto come una riga diversa nel rapporto. A questo scopo, imposta `Product name` come `Category`.
 
-- `Labels`: Utilizzare le colonne `year` e `month` come etichette sull&#39;asse x per visualizzare `Items Sold` come tendenza nel tempo.
+- `Labels`: utilizza le colonne `year` e `month` come etichette sull’asse x per poter visualizzare `Items Sold` come tendenza nel tempo.
 
 >[!NOTE]
 >
->La query deve contenere un `ORDER BY` sulle etichette, se sono `date`/`time` colonne.
+>La query deve contenere un `ORDER BY` sulle etichette se sono `date`/`time` colonne.
 
-Di seguito è riportato un rapido sguardo su come abbiamo creato questa visualizzazione, dall’esecuzione della query alla configurazione del rapporto:
+Di seguito è riportato un rapido riepilogo su come hai creato questa visualizzazione, dall’esecuzione della query alla configurazione del rapporto:
 
 ![](../assets/SQL_report_settings.gif)
 
-## Passaggio 3: Seleziona una `Chart Type`
+## Passaggio 3: selezionare un `Chart Type`
 
 In questo esempio viene utilizzato `Line` tipo di grafico. Per utilizzare un `chart type`, fai clic sulle icone sopra la sezione delle opzioni del grafico per modificarla:
 
 ![](../assets/Chart_types.png)
 
-## Passaggio 4: Salvare la visualizzazione
+## Passaggio 4: salvare la visualizzazione
 
-Se desideri utilizzare nuovamente il rapporto, assegna un nome al rapporto e fai clic su **[!UICONTROL Save]** nell&#39;angolo in alto a destra.
+Se desideri utilizzare di nuovo questo rapporto, assegna un nome al rapporto e fai clic su **[!UICONTROL Save]** in alto a destra.
 
-Nel menu a discesa , seleziona `Chart` come `Type` e quindi un dashboard in cui salvare il rapporto.
+Nel menu a discesa, seleziona `Chart` come `Type` e quindi una dashboard in cui salvare il rapporto.
 
-## Congratulazioni! Ha finito.
+## Congratulazioni! Hai finito.
 
-Vuoi fare un passo avanti? Consulta la sezione [best practice per l’ottimizzazione delle query](../best-practices/optimizing-your-sql-queries.md).
+Vuoi fare un passo avanti? Consulta la sezione [best practice di ottimizzazione delle query](../best-practices/optimizing-your-sql-queries.md).

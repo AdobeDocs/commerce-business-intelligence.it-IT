@@ -2,32 +2,32 @@
 title: Eliminare definitivamente un grafico
 description: Scopri come eliminare definitivamente un grafico.
 exl-id: 34234ff6-b258-4369-9774-946d8423d4da
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
 
 # Eliminare definitivamente un grafico
 
-Anche se [rimuovere un grafico dal dashboard](../../data-user/dashboards/remove-charts-dashboard.md), esiste ancora nel tuo [!DNL MBI] conto.
+Anche se [rimuovere un grafico dal dashboard](../../data-user/dashboards/remove-charts-dashboard.md), esiste ancora nel tuo [!DNL MBI] account.
 
 Per eliminare definitivamente un grafico:
 
-1. Fai clic su **[!UICONTROL Account Setting]** nella barra laterale.
+1. Clic **[!UICONTROL Account Setting]** nella barra laterale.
 
-1. Fai clic su **[!UICONTROL Charts]**.
+1. Clic **[!UICONTROL Charts]**.
 
-1. I grafici che è possibile eliminare (in base alle autorizzazioni utente e alla proprietà del grafico) verranno visualizzati sul lato destro dello schermo.
+1. I grafici che puoi eliminare (in base alle autorizzazioni dell’utente e alla proprietà) vengono visualizzati sul lato destro dello schermo.
 
-1. Fare clic sulla casella di controllo accanto alla riga del grafico che si desidera eliminare.
+1. Fare clic sulla casella di controllo accanto alla linea del grafico che si desidera eliminare.
 
-1. Fai clic su **[!UICONTROL Delete Selected]**.
+1. Clic **[!UICONTROL Delete Selected]**.
 
    >[!NOTE]
    >
-   >Se il grafico viene utilizzato in un dashboard o in un riepilogo e-mail, verrà visualizzata una notifica. Per continuare, è necessario confermare l’eliminazione e quindi fare clic su **[!UICONTROL Force Deletion]**.
+   >Se il grafico viene utilizzato in un dashboard o in un riepilogo e-mail, viene visualizzata una notifica. Per continuare, confermare l&#39;eliminazione, quindi fare clic su **[!UICONTROL Force Deletion]**.
 
 Esempio:
 

@@ -2,26 +2,26 @@
 title: Filtri
 description: Scopri come utilizzare i filtri.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
 
 # Filtri
 
-È possibile aggiungere uno o più filtri per limitare i dati utilizzati per creare un rapporto. Ogni filtro è un’espressione che include una colonna della tabella associata, un operatore e un valore. Ad esempio, per includere solo i clienti ripetuti, puoi creare un filtro che includa solo i clienti che hanno effettuato più di un ordine. È possibile utilizzare più filtri con logica `AND/OR` per aggiungere logica al rapporto.
+È possibile aggiungere uno o più filtri per limitare i dati utilizzati per produrre un rapporto. Ogni filtro è un&#39;espressione che include una colonna della tabella associata, un operatore e un valore. Ad esempio, per includere solo i clienti frequenti, puoi creare un filtro che includa solo i clienti che hanno effettuato più ordini. È possibile utilizzare più filtri con `AND/OR` per aggiungere una logica al report.
 
 >[!TIP]
 >
 >Un rapporto può avere un massimo di 3.500 punti dati. Per ridurre il numero di punti dati, utilizza un filtro per ridurre la quantità di dati utilizzati per generare il rapporto.
 
-MBI include una selezione di filtri che è possibile utilizzare &quot;out of the box (OOTB)&quot; o modificare in base alle tue esigenze. Non esiste un limite al numero di filtri che puoi creare.
+MBI include una selezione di filtri che è possibile utilizzare &quot;preconfigurati&quot; o modificare in base alle proprie esigenze. Non esiste alcun limite al numero di filtri che è possibile creare.
 
 ## Per aggiungere un filtro:
 
-1. Nel grafico, passa il puntatore del mouse su ciascun punto dati.
+1. Nel grafico, passa il cursore su ogni punto dati.
 
    In questo rapporto, ogni punto dati mostra il numero totale di clienti per il mese.
 
@@ -29,27 +29,27 @@ MBI include una selezione di filtri che è possibile utilizzare &quot;out of the
 
    ![Aggiungi filtro](../../assets/magento-bi-report-builder-filter-add.png)
 
-1. Fai clic su **[!UICONTROL Add Filter]**.
+1. Clic **[!UICONTROL Add Filter]**.
 
    I filtri sono numerati alfabeticamente e il primo è `[A]`. Le prime due parti del filtro sono opzioni a discesa e la terza parte è un valore.
 
    ![](../../assets/magento-bi-report-builder-filter-add-a.png)
 
-   * Fai clic sulla prima parte del filtro e scegli la colonna che desideri utilizzare come oggetto dell’espressione.
+   * Fare clic sulla prima parte del filtro e scegliere la colonna da utilizzare come oggetto dell&#39;espressione.
 
       ![Scegli la prima parte del filtro](../../assets/magento-bi-report-builder-filter-part1.png)
 
-   * Fai clic sulla seconda parte del filtro e scegli l’operatore .
+   * Fai clic sulla seconda parte del filtro e scegli l’operatore.
 
       ![Scegli l’operatore](../../assets/magento-bi-report-builder-filter-part2.png)
 
-   * Nella terza parte del filtro, immetti il valore necessario per completare l’espressione.
+   * Nella terza parte del filtro immettere il valore necessario per completare l&#39;espressione.
 
-      ![Immetti il valore](../../assets/magento-bi-report-builder-filter-part3.png)
+      ![Inserisci il valore](../../assets/magento-bi-report-builder-filter-part3.png)
 
-   * Al termine del filtro, fai clic su **[!UICONTROL Apply]**.
+   * Una volta completato il filtro, fai clic su **[!UICONTROL Apply]**.
 
-      Il rapporto ora include solo i clienti ripetuti e il numero di record dei clienti recuperati per il rapporto è stato ridotto da 33K a 12,6k.
+      Il rapporto ora include solo i clienti frequenti e il numero di record dei clienti recuperati per il rapporto è stato ridotto da 33.000 a 12.600.
 
       ![Rapporto filtrato](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
@@ -61,8 +61,8 @@ MBI include una selezione di filtri che è possibile utilizzare &quot;out of the
 
    ![Prospettiva cumulativa](../../assets/magento-bi-report-builder-filter-perspective-cumulative.png)
 
-   La `Cumulative` La prospettiva distribuisce il cambiamento nel tempo, anziché mostrare i dati frastagliati su e giù per ogni mese.
+   Il `Cumulative` La prospettiva distribuisce la modifica nel tempo, anziché mostrare le modifiche su e giù per ogni mese.
 
-1. Inserisci un `Title` per il rapporto e fai clic su **[!UICONTROL Save]** come `Chart` al dashboard.
+1. Immetti un `Title` per il rapporto e fai clic su **[!UICONTROL Save]** come `Chart` alla dashboard.
 
    ![Salva nel dashboard](../../assets/magento-bi-report-builder-filter-perspective-cumulative-save.png)

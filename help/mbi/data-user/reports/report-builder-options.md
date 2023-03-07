@@ -1,35 +1,33 @@
 ---
-title: Scegliere un generatore di report
-description: Scopri come scegliere il generatore di report.
+title: Scegli un generatore di report
+description: Scopri come scegliere il Report Builder.
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
 
-# Scegliere un generatore di report
+# Scegli un generatore di report
 
 >[!NOTE]
 >>Richiede [Autorizzazioni amministratore](../../administrator/user-management/user-management.md).
 
 
-A tutti piace avere delle opzioni. Ma, quando ci si confronta con delle scelte, alcuni di noi potrebbero rifiutare e congelare l&#39;idea di dover impegnarsi in una decisione. Le opzioni sono fantastiche, ma possono anche essere schiaccianti e confuse.
+Ora che hai più opzioni per la creazione di analisi, a volte può essere difficile sapere esattamente quale sapore del Report Builder soddisfa le tue esigenze. Questo articolo ti guida attraverso la scelta del modo migliore per generare la tua analisi.
 
-Ora che disponi di più opzioni per la creazione delle analisi, a volte potrebbe essere difficile sapere esattamente quale sapore del generatore di report soddisferà le tue esigenze. Se ti servono indicazioni sulla scelta del modo migliore per creare la tua analisi, questo articolo è per te.
+## Quando dovrei usare `SQL Report Builder`? {#whensql}
 
-## Quando dovrei usare il `SQL Report Builder`? {#whensql}
-
-Dai un&#39;occhiata ad alcuni dei motivi più comuni per cui utilizzeresti il Report Builder SQL rispetto al Report Builder tradizionale.
+Osservare alcuni dei motivi più comuni per cui si utilizza il Report Builder SQL rispetto al Report Builder tradizionale.
 
 ### Se si desidera utilizzare funzioni specifiche di SQL...
 
-Parte della bellezza del `SQL Report Builder` consente di utilizzare funzioni non attualmente disponibili in Data Warehouse Manager. In passato, un analista potrebbe aver dovuto intervenire per aiutarti a realizzare pienamente la tua visione.
+Parte della bellezza del `SQL Report Builder` consente di utilizzare funzioni non attualmente disponibili in Gestione Date Warehouse. In passato, un analista potrebbe aver dovuto intervenire per aiutarti a realizzare appieno la tua visione.
 
-Il Report Builder SQL supporta funzioni come [`LISTAGG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LISTAGG.html) e [`GETDATE`](https://docs.aws.amazon.com/redshift/latest/dg/r_GETDATE.html), che non era possibile utilizzare in precedenza. Puoi accedere al [`full list`](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html), ma alcune altre funzioni specifiche di SQL includono:
+Il Report Builder SQL supporta funzioni quali [`LISTAGG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LISTAGG.html) e [`GETDATE`](https://docs.aws.amazon.com/redshift/latest/dg/r_GETDATE.html), che in precedenza non era possibile utilizzare. È possibile accedere a [`full list`](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html), ma alcune altre funzioni specifiche di SQL includono:
 
-* [`Bitwise aggregate` Funzioni](https://docs.aws.amazon.com/redshift/latest/dg/c_bitwise_aggregate_functions.html)
+* [`Bitwise aggregate` funzioni](https://docs.aws.amazon.com/redshift/latest/dg/c_bitwise_aggregate_functions.html)
 * [`CASE expression`](https://docs.aws.amazon.com/redshift/latest/dg/r_CASE_function.html)
 * [`JSON_EXTRACT_PATH_TEXT`](https://docs.aws.amazon.com/redshift/latest/dg/JSON_EXTRACT_PATH_TEXT.html)
 * [`LOG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LOG.html)
@@ -38,38 +36,38 @@ Il Report Builder SQL supporta funzioni come [`LISTAGG`](https://docs.aws.amazon
 * [`SQRT`](https://docs.aws.amazon.com/redshift/latest/dg/r_SQRT.html)
 * [`concatenation` operatore](https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html)
 
-### Se vuoi fare dei test...
+### Se desideri eseguire alcuni test...
 
-Se desideri provare diverse tecniche e strategie per capire cosa funziona meglio per l’analisi, puoi utilizzare la funzione `SQL Report Builder`. La creazione di colonne in Data Warehouse Manager richiede tempo e le colonne create con DWM dipendono dai cicli di aggiornamento.
+Se desideri provare diverse tecniche e strategie per capire cosa funziona meglio per l’analisi, puoi utilizzare `SQL Report Builder`. La creazione di colonne in Gestione Date Warehouse richiede tempo e le colonne create utilizzando Gestione finestre desktop dipendono dai cicli di aggiornamento.
 
-Al massimo, è necessario attendere un ciclo di aggiornamento prima di poter utilizzare la colonna. Se ti rendi conto di aver commesso un errore nella costruzione della colonna, dovrai aspettare attraverso *due* cicli: uno per compilare inizialmente la colonna e un altro ciclo per le revisioni da propagare.
+Nella migliore delle ipotesi, è necessario attendere l’intero ciclo di aggiornamento prima di poter utilizzare la colonna. Se ti rendi conto di aver sbagliato a costruire la colonna, devi aspettare *due* cicli: uno per compilare inizialmente la colonna e un altro ciclo per la propagazione delle revisioni.
 
-### Se si utilizza una nuova colonna solo una volta...
+### Se utilizzi una nuova colonna una sola volta...
 
-Come accennato nella sezione precedente, la creazione di una nuova colonna in Data Warehouse Manager richiede tempo. Se prevedi di utilizzare solo una colonna creata in un rapporto, ti consigliamo di utilizzare il `SQL Report Builder`. In questo modo si elimina la necessità di attendere il completamento di un ciclo di aggiornamento, per tornare a lavorare più rapidamente.
+Come indicato nella sezione precedente, la creazione di una colonna in Gestione Date Warehouse richiede tempo. Se prevedi di utilizzare solo una colonna creata in un rapporto, l’Adobe suggerisce di utilizzare `SQL Report Builder`. In questo modo non è più necessario attendere il completamento di un ciclo di aggiornamento e tornare al lavoro più rapidamente.
 
-### Se lavori con dati che hanno una relazione uno-a-molti...
+### Se si utilizzano dati con una relazione uno-a-molti...
 
-In alcuni casi, la struttura dei dati potrebbe rendere il `SQL Report Builder` una scelta più efficiente e logica per generare le analisi. Creare colonne per relazioni uno-a-uno è abbastanza semplice in Data Warehouse Manager, ma le cose possono diventare un po&#39; confuse quando si tratta di relazioni uno-a-molti.
+A volte, la struttura dei dati potrebbe rendere `SQL Report Builder` una scelta più efficiente e logica per creare l’analisi. La creazione di colonne per le relazioni uno-a-uno è semplice in Gestione Date Warehouse, ma le cose possono creare un po&#39; di confusione quando si tratta di relazioni uno-a-molti.
 
-Supponiamo che un singolo prodotto sia considerato parte di più categorie di prodotti e desideri visualizzare i ricavi associati a ciascuna categoria di ciascun prodotto. Provare a creare questa relazione utilizzando il DWM può essere noioso e difficile, ma scrivere una query SQL potrebbe essere un po&#39; più semplice:
+Supponiamo che un singolo prodotto sia considerato parte di più categorie di prodotti e vorresti visualizzare i ricavi associati a ciascuna categoria di ciascun prodotto. Il tentativo di creare questa relazione utilizzando DWM può essere noioso e difficile, ma la scrittura di una query SQL può essere un po&#39; più semplice:
 
 ![](../../assets/When_should_I_use_the_RB_2.png)
 
 ## Quando dovrei usare il Report Builder tradizionale? {#whentraditionalrb}
 
-Mentre il `SQL Report Builder` offre maggiore controllo e accesso alle funzionalità precedentemente non disponibili, ma potrebbe non essere sempre la scelta giusta. Si consiglia inoltre di considerare quanto segue quando si decide quale sapore del generatore di report utilizzare.
+Mentre il `SQL Report Builder` offre maggiore controllo e accesso a funzionalità precedentemente non disponibili; è possibile che non sia sempre la scelta giusta. L’Adobe suggerisce di considerare anche quanto segue quando si decide quale sapore del report builder utilizzare.
 
-### Se stai creando un report semplice..
+### Se stai creando un rapporto semplice...
 
-Se ciò che si desidera creare è semplice, l&#39;utilizzo del Report Builder tradizionale può essere molto più veloce della scrittura di una query SQL completa. Sarà utile anche se eventuali colonne necessarie per creare l’analisi sono già presenti in Data Warehouse Manager.
+Se la creazione è semplice, l&#39;utilizzo del Report Builder tradizionale può essere molto più rapido rispetto alla scrittura di una query SQL completa. È utile se le colonne necessarie per creare l&#39;analisi sono già presenti in Gestione Date Warehouse.
 
 ### Se condividi il tuo lavoro con altri utenti...
 
-Gli utenti della tua organizzazione utilizzeranno/visualizzeranno questa analisi? A seconda di chi condividi il tuo lavoro con, in alcuni casi potrebbe essere meglio attenersi al Report Builder visivo. Gli utenti possono esaminare rapidamente la definizione nel Report Builder visivo anziché leggere una query SQL potenzialmente lunga.
+Gli utenti della tua organizzazione utilizzano/visualizzano questa analisi? A seconda della persona con cui condividi il lavoro, a volte può essere meglio mantenere il Report Builder visivo. Gli utenti possono esaminare rapidamente la definizione nel Report Builder visivo anziché leggere una query SQL potenzialmente lunga.
 
-Se alcune persone hanno bisogno del rapporto ma non hanno familiarità con SQL, si consiglia di utilizzare il sapore originale del Report Builder. Rende le cose più facili su di loro.
+Se alcuni utenti necessitano del report ma non hanno familiarità con SQL, l’Adobe suggerisce di utilizzare il gusto originale del Report Builder. Rende le cose più facili con loro.
 
 ## Ritorno a capo {#wrapup}
 
-Entrambi i `SQL Report Builder` e `Visual Report Builder` sono adatti a una vasta gamma di casi d&#39;uso. In genere questo dipende da quali sono le tue esigenze analitiche e da chi utilizzerà l’analisi.
+Entrambe `SQL Report Builder` e `Visual Report Builder` sono adatti per un’ampia varietà di casi d’uso. In genere, questo dipende da quali sono le tue esigenze analitiche e da chi consuma l’analisi.

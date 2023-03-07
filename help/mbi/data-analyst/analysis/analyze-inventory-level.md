@@ -1,21 +1,21 @@
 ---
-title: Analisi dei livelli di inventario
+title: Analisi dei livelli di magazzino
 description: Scopri come analizzare i livelli di inventario.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
 
-# Analizzare i livelli di inventario
+# Analizza livelli scorte
 
-Questo argomento illustra come impostare un dashboard che fornisca informazioni approfondite sull’inventario corrente. Questo argomento contiene istruzioni per i client sia sull’architettura legacy che sulla nuova architettura. Ti trovi nell’architettura legacy se non hai **[!UICONTROL Data Warehouse Views]** nella sezione **[!UICONTROL Manage Data]** menu). Se utilizzi l’architettura legacy, invia un [nuova richiesta di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) con l&#39;oggetto **[!UICONTROL INVENTORY ANALYSIS]** una volta raggiunta la sezione designata nel _Colonne calcolate_ di seguito.
+In questo argomento viene illustrato come impostare un dashboard che fornisca informazioni approfondite sull&#39;inventario corrente. Questo argomento contiene istruzioni per i client sia sull&#39;architettura legacy che sulla nuova architettura. Se non disponi della funzionalità **[!UICONTROL Data Warehouse Views]** opzione sotto **[!UICONTROL Manage Data]** menu). Se ti trovi nell’architettura legacy, invia una [nuova richiesta di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) con l&#39;oggetto **[!UICONTROL INVENTORY ANALYSIS]** una volta raggiunta la sezione designata nel _Colonne calcolate_ istruzioni di seguito.
 
 ## Colonne da tracciare:
 
-### Colonne per seguire le istruzioni
+### Colonne per tenere traccia delle istruzioni
 
 * **[!UICONTROL cataloginventory_stock_item]** tabella:
    * **`item_id`**
@@ -37,7 +37,7 @@ Questo argomento illustra come impostare un dashboard che fornisca informazioni 
       * 
          [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * Seleziona una [!UICONTROL column]: `created_at`
+      * Seleziona un [!UICONTROL column]: `created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Product's first order date`**
@@ -45,7 +45,7 @@ Questo argomento illustra come impostare un dashboard che fornisca informazioni 
       * 
          [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * Seleziona una [!UICONTROL column]: `created_at`
+      * Seleziona un [!UICONTROL column]: `created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Seconds since product's most recent order date`**
@@ -58,7 +58,7 @@ Questo argomento illustra come impostare un dashboard che fornisca informazioni 
       * 
          [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * Seleziona una [!UICONTROL column]: `qty_ordered`
+      * Seleziona un [!UICONTROL column]: `qty_ordered`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Avg products sold per week (all time)`**
@@ -71,7 +71,7 @@ Questo argomento illustra come impostare un dashboard che fornisca informazioni 
       * 
          [!UICONTROL Datatype]: `Decimal`
       * Definizione:
-         * caso in cui A è nullo o B è nullo, allora null else round(A::decimal/(extract(epoch from (current_timestamp - B))::decimal/604800.0),2) end
+         * caso in cui A è nullo o B è nullo allora null altro round(A::decimal/(extract(epoch from (current_timestamp - B))::decimal/604800.0),2) end
 
 
 
@@ -83,25 +83,25 @@ Questo argomento illustra come impostare un dashboard che fornisca informazioni 
       * 
          [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * Seleziona una [!UICONTROL column]: `sku`
+      * Seleziona un [!UICONTROL column]: `sku`
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
       * 
          [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * Seleziona una [!UICONTROL column]: `Product's lifetime number of items sold`
+      * Seleziona un [!UICONTROL column]: `Product's lifetime number of items sold`
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
       * 
          [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * Seleziona una [!UICONTROL column]: `Seconds since product's most recent order date`
+      * Seleziona un [!UICONTROL column]: `Seconds since product's most recent order date`
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
       * 
          [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * Seleziona una [!UICONTROL column]: `Avg products sold per week (all time)`
+      * Seleziona un [!UICONTROL column]: `Avg products sold per week (all time)`
    * **`Weeks on hand`**
       * [!UICONTROL Column type]: `Same Table`
       * 
@@ -112,7 +112,7 @@ Questo argomento illustra come impostare un dashboard che fornisca informazioni 
       * 
          [!UICONTROL Datatype]: `Decimal`
       * Definizione:
-         * caso in cui A è nullo o B è nullo o B = 0,0 then null else round (A::decimale/B,2) end
+         * caso in cui A è null o B è null o B = 0.0, quindi null altro round(A::decimal/B,2) end
 
 
 
@@ -126,7 +126,7 @@ Questo argomento illustra come impostare un dashboard che fornisca informazioni 
       * 
          [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * Seleziona una [!UICONTROL column]: `created_at`
+      * Seleziona un [!UICONTROL column]: `created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Product's first order date`**
@@ -134,7 +134,7 @@ Questo argomento illustra come impostare un dashboard che fornisca informazioni 
       * 
          [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * Seleziona una [!UICONTROL column]: `created_at`
+      * Seleziona un [!UICONTROL column]: `created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Seconds since product's most recent order date`**
@@ -147,11 +147,11 @@ Questo argomento illustra come impostare un dashboard che fornisca informazioni 
       * 
          [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: **`sales_order_item.product_id => catalog_product_entity.entity_id`**
-      * Seleziona una [!UICONTROL column]: **`qty_ordered`**
+      * Seleziona un [!UICONTROL column]: **`qty_ordered`**
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Avg products sold per week (all time)`**
-      * Verrà creato da un analista al momento dell’invio del file **[ANALISI DELL&#39;INVENTARIO]** richiesta di supporto
+      * Creato da un analista quando si invia il file **[ANALISI INVENTARIO]** richiesta di supporto
 
 
 
@@ -163,27 +163,27 @@ Questo argomento illustra come impostare un dashboard che fornisca informazioni 
       * 
          [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * Seleziona una [!UICONTROL column]: `sku`
+      * Seleziona un [!UICONTROL column]: `sku`
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
       * 
          [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * Seleziona una [!UICONTROL column]: `Product's lifetime number of items sold`
+      * Seleziona un [!UICONTROL column]: `Product's lifetime number of items sold`
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
       * 
          [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * Seleziona una [!UICONTROL column]: `Seconds since product's most recent order date`
+      * Seleziona un [!UICONTROL column]: `Seconds since product's most recent order date`
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
       * 
          [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * Seleziona una [!UICONTROL column]: `Avg products sold per week (all time)`
+      * Seleziona un [!UICONTROL column]: `Avg products sold per week (all time)`
    * **`Weeks on hand`**
-      * Verrà creato da un analista al momento dell’invio del file **[!UICONTROL INVENTORY ANALYSIS]** richiesta di supporto
+      * Creato da un analista quando si invia il file **[!UICONTROL INVENTORY ANALYSIS]** richiesta di supporto
 
 
 
@@ -191,17 +191,17 @@ Questo argomento illustra come impostare un dashboard che fornisca informazioni 
 
 ## Metriche
 
-### Istruzioni per le metriche
+### Istruzioni sulle metriche
 
 * **[!UICONTROL cataloginventory_stock_item]** tabella:
-   * **`Inventory on hand`**: questa metrica esegue un
-      * **Somma** sulla
-      * **`qty`** colonna ordinata dal
-      * [Nessuno] column
+   * **`Inventory on hand`**: questa metrica esegue una
+      * **Somma** il
+      * **`qty`** colonna ordinata da
+      * [Nessuno] colonna
 
 ## Rapporti
 
-### Istruzioni per i rapporti
+### Istruzioni per il rapporto
 
 * **`Inventory on hand by sku`**
    * [!UICONTROL Metric]: `Inventory on hand`
@@ -221,7 +221,7 @@ Questo argomento illustra come impostare un dashboard che fornisca informazioni 
    * [!UICONTROL Time period]: `All time`
    * Intervallo di tempo: `None`
    * 
-      [!UICONTROL Group by]: `Sku`
+      [!UICONTROL Raggruppa per]: `Sku`
    * 
 
       [!UICONTROL Chart type]: `Table`
@@ -234,10 +234,10 @@ Questo argomento illustra come impostare un dashboard che fornisca informazioni 
    * [!UICONTROL Time period]: `All time`
    * Intervallo di tempo: `None`
    * 
-      [!UICONTROL Group by]: `Sku`
+      [!UICONTROL Raggruppa per]: `Sku`
    * 
 
       [!UICONTROL Chart type]: `Table`
 
 
-In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il nostro team di servizi professionali, [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il team Professional Services, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

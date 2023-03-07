@@ -1,106 +1,106 @@
 ---
-title: Analisi dell’attività del sito web e dei tassi di conversione dei clienti
-description: Scopri come impostare un dashboard per monitorare l’attività del sito web, incluse le visualizzazioni di pagina, le sessioni e gli utenti, nonché il tasso di conversione del cliente nel tempo.
+title: Analisi dell'attività del sito Web e dei tassi di conversione dei clienti
+description: Scopri come impostare una dashboard per monitorare l’attività del sito web (incluse visualizzazioni di pagina, sessioni e utenti) e il tasso di conversione dei clienti nel tempo.
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
 
-# Analisi dell’attività del sito web
+# Analisi dell&#39;attività del sito Web
 
-[!DNL MBI] consente di integrare facilmente i dati sui costi pubblicitari con il resto dei dati. Questo consente non solo di comprendere l’attività del sito web, ma anche di derivare la percentuale di visitatori del sito web che diventano utenti registrati o effettuano un acquisto.
+[!DNL MBI] consente di integrare facilmente i dati sui costi pubblicitari con il resto dei dati. Questo non solo ti consente di comprendere l’attività del sito web, ma ti consente anche di derivare la percentuale di visitatori del sito web che diventano un utente registrato o effettuano un acquisto.
 
-In questo articolo, mostriamo come impostare un dashboard per monitorare l’attività del sito web, incluse le visualizzazioni di pagina, le sessioni e gli utenti, nonché il tasso di conversione del cliente nel tempo.
+Questo articolo illustra come impostare una dashboard che tenga traccia dell’attività sul sito web, incluse visualizzazioni di pagina, sessioni e utenti, e del tasso di conversione dei clienti nel tempo.
 
 ## Prerequisiti
 
-**Importare i dati dei costi pubblicitari** - Connetti [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) a [!DNL MBI] - sincronizzerà automaticamente il tuo [!DNL AdWords] spesa in BI.
+**Importa i dati sui costi della pubblicità** - Connetti [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) a [!DNL MBI] - questo sincronizza automaticamente [!DNL AdWords] spesa in MBI.
 
-**Tracciare i dati del canale di acquisizione utente** - Per collegare il tuo [!DNL Google AdWords] dati a specifici ordini nel database, [tracciare l&#39;acquisizione degli utenti](../analysis/google-track-user-acq.md) tramite [!DNL Google Analytics E-commerce], che ci consente di collegare ogni ordine con una sorgente utm e un supporto.
+**Tracciare i dati del canale di acquisizione dell&#39;utente** - Per legare [!DNL Google AdWords] dati a ordini specifici nel database, è necessario [tracciare l’acquisizione degli utenti](../analysis/google-track-user-acq.md) tramite [!DNL Google Analytics E-commerce]. Questo consente di collegare ogni ordine con una sorgente UTM e un supporto.
 
 ## Campagne di acquisizione utente
 
 Questa raccolta di rapporti viene creata utilizzando quanto segue:
 
-* Metriche generate automaticamente al momento della connessione [!DNL Google AdWords] dati
-* Metriche di base già disponibili sul tuo account, come `Number of orders` e `New users`
-* Dimension creati al momento dell&#39;unione [!DNL Google Analytics Ecommerce] dati al database, come origine utm dell&#39;ordine e supporto utm dell&#39;ordine. Contatta il nostro team di supporto se questi campi non sono attualmente disponibili nel tuo account
+* Metriche generate automaticamente quando connetti il tuo [!DNL Google AdWords] dati
+* Metriche di base che dovrebbero essere già disponibili sul tuo account, come `Number of orders` e `New users`
+* Dimension creati quando si accede al [!DNL Google Analytics Ecommerce] dati nel database, come origine utm dell&#39;ordine e supporto utm dell&#39;ordine. Contatta il team di supporto se questi campi non sono attualmente disponibili nel tuo account
 
-## Creazione dei report
+## Creazione dei rapporti
 
-**Inizia creando un rapporto che mostra il numero di visualizzazioni di pagina, sessioni e utenti nel tempo:**
+**Per iniziare, crea un rapporto che mostra il numero di visualizzazioni di pagina, sessioni e utenti nel tempo:**
 
-1. Crea un nuovo rapporto.
-1. Fai clic su **[!UICONTROL Add Metric]**, quindi passate il puntatore del mouse [!DNL Google Analytics] nella parte inferiore del menu a discesa e seleziona `Page Views`.
-1. Aggiungi un’altra metrica, muovendo di nuovo sopra il [!DNL Google Analytics] questa volta, seleziona `Sessions`.
-1. Aggiungi una terza metrica, nuovamente posizionata sopra il [!DNL Google Analytics] questa volta, seleziona `Users`.
-1. Ora cambia il tuo periodo di tempo in un intervallo mobile, da 31 giorni fa a 1 giorno fa, e regola l&#39;intervallo di tempo a `by day`.
+1. Crea un rapporto.
+1. Clic **[!UICONTROL Add Metric]**, quindi passare il puntatore del mouse sulla [!DNL Google Analytics] nella parte inferiore del menu a discesa e seleziona `Page Views`.
+1. Aggiungi un’altra metrica, muovendo di nuovo [!DNL Google Analytics] , questa volta selezionando `Sessions`.
+1. Aggiungi una terza metrica, muovendo di nuovo sul [!DNL Google Analytics] , questa volta selezionando `Users`.
+1. Ora puoi impostare un intervallo di tempo mobile, da 31 giorni fa a 1 giorno fa, e regolare l’intervallo di tempo in base a `by day`.
 1. Assegna un nome al report (ad esempio, `Page views, sessions and users by day`) e fai clic su **[!UICONTROL Save]**.
 
-**Il nostro secondo rapporto esamina il numero di visualizzazioni di pagina nell’ultimo anno:**
+**Il secondo rapporto esamina il numero di visualizzazioni di pagina nell’ultimo anno:**
 
-1. Crea un nuovo rapporto.
-1. Fai clic su **[!UICONTROL Add Metric]**, passa il mouse [!DNL Google Analytics] nella parte inferiore del menu a discesa e seleziona _Visualizzazioni pagina_.
-1. Cambia il tuo periodo di tempo in un intervallo mobile, da 13 mesi fa a 1 mese fa, e regola l&#39;intervallo di tempo a `by month`.
-1. Assegna un nome al tuo report, come `Page views by month,` e fai clic su **[!UICONTROL Save]**.
+1. Crea un rapporto.
+1. Clic **[!UICONTROL Add Metric]**, passare il puntatore del mouse [!DNL Google Analytics] nella parte inferiore del menu a discesa e seleziona _Visualizzazioni pagina_.
+1. Modifica il periodo di tempo in un intervallo mobile, da 13 mesi fa a 1 mese fa, e regola l’intervallo di tempo in base a `by month`.
+1. Assegna un nome al report, ad esempio `Page views by month,` e fai clic su **[!UICONTROL Save]**.
 
 **Il terzo grafico esamina il tasso di mancato recapito nell’ultimo anno:**
 
-1. Crea un nuovo rapporto.
-1. Fai clic su **[!UICONTROL Add Metric]**, passa il mouse [!DNL Google Analytics] nella parte inferiore del menu a discesa e seleziona _Frequenza di rimbalzo_.
-1. Cambia il tuo periodo di tempo in un intervallo mobile, da 13 mesi fa a 1 mese fa, e regola l&#39;intervallo di tempo a `by month`.
-1. Assegna un nome al tuo report, come `Bounce rate by month`e fai clic su **[!UICONTROL Save]**.
+1. Crea un rapporto.
+1. Clic **[!UICONTROL Add Metric]**, passare il puntatore del mouse [!DNL Google Analytics] nella parte inferiore del menu a discesa e seleziona _Percentuale non recapitate_.
+1. Modifica il periodo di tempo in un intervallo mobile, da 13 mesi fa a 1 mese fa, e regola l’intervallo di tempo in base a `by month`.
+1. Assegna un nome al report, ad esempio `Bounce rate by month`, e fai clic su **[!UICONTROL Save]**.
 
-**Ora, osserva la lunghezza media della sessione dei nuovi visitatori rispetto ai visitatori di ritorno:**
+**Ora, osserva la durata media delle sessioni per i nuovi visitatori rispetto ai visitatori di ritorno:**
 
-1. Crea un nuovo rapporto.
-1. Fai clic su **UICONTROL Aggiungi metrica**, passa il mouse [!DNL Google Analytics] nella parte inferiore del menu a discesa e seleziona `Average Session Length`.
-1. Cambia il tuo periodo di tempo in un intervallo mobile, da 13 mesi fa a 1 mese fa, e regola l&#39;intervallo di tempo a `by month`?
-1. Aggiungi un `Group by` e seleziona `New or returning visitor`.  Controlla la `Show All` box; quindi fai clic su **[!UICONTROL Apply]**.
-1. Assegna un nome al tuo report, come `Average session length`e fai clic su **[!UICONTROL Save]**.
+1. Crea un rapporto.
+1. Clic **UICONTROL Add Metric**, passare il puntatore del mouse [!DNL Google Analytics] nella parte inferiore del menu a discesa e seleziona `Average Session Length`.
+1. Modifica il periodo di tempo in un intervallo mobile, da 13 mesi fa a 1 mese fa, e regola l’intervallo di tempo in base a `by month`?
+1. Aggiungi un `Group by` e seleziona `New or returning visitor`.  Controlla la `Show All` ; quindi fare clic su **[!UICONTROL Apply]**.
+1. Assegna un nome al report, ad esempio `Average session length`, e fai clic su **[!UICONTROL Save]**.
 
-**Successivamente, dai un&#39;occhiata ai tuoi principali domini di riferimento negli ultimi 30 giorni:**
+**Quindi, osserva i tuoi domini di riferimento principali negli ultimi 30 giorni:**
 
-1. Crea un nuovo rapporto.
-1. Fai clic su **[!UICONTROL Add Metric]**, passa il mouse [!DNL Google Analytics] nella parte inferiore del menu a discesa e seleziona `Sessions`.
-1. Cambia il tuo periodo di tempo in un intervallo mobile, da 31 giorni fa a 1 giorno fa, e regola l&#39;intervallo di tempo a `none`.
-1. Aggiungi un `Group by` e seleziona `ga:source`.  Controlla la _Mostra tutto_ box; quindi fai clic su **[!UICONTROL Apply]**.
-1. Aggiungi un altro `group by` e seleziona `ga:medium`. Di nuovo, controlla la `Show All` box; quindi fai clic su **[!UICONTROL Apply]**.
-1. Assegna un nome al tuo report, come `Top 20 Referring Domains, 30 Days`e fai clic su **[!UICONTROL Save]**.
+1. Crea un rapporto.
+1. Clic **[!UICONTROL Add Metric]**, passare il puntatore del mouse [!DNL Google Analytics] nella parte inferiore del menu a discesa e seleziona `Sessions`.
+1. Modifica il periodo di tempo in un intervallo mobile, da 31 giorni fa a 1 giorno fa, e regola l’intervallo di tempo in `none`.
+1. Aggiungi un `Group by` e seleziona `ga:source`.  Controlla la _Mostra tutto_ ; quindi fare clic su **[!UICONTROL Apply]**.
+1. Aggiungi un altro `group by` e seleziona `ga:medium`. Di nuovo, controlla `Show All` ; quindi fare clic su **[!UICONTROL Apply]**.
+1. Assegna un nome al report, ad esempio `Top 20 Referring Domains, 30 Days`e fai clic su **[!UICONTROL Save]**.
 
-**Infine, dai un&#39;occhiata alla conversione:**
+**Infine, considera la conversione:**
 
-1. Crea un nuovo rapporto.
+1. Crea un rapporto.
 1. Aggiungi le metriche seguenti:
 
 * `New users`
-   * Fai clic su **[!UICONTROL Hide]** sotto il nome della metrica
+   * Clic **[!UICONTROL Hide]** sotto il nome della metrica
 
 * `Number of orders`
-   * Aggiungi un filtro per `Customer's order number` = 1 e fai clic su **[!UICONTROL Apply]**
-   * Rinomina la metrica facendo clic sul nome della metrica, chiamandola `Number of first orders`,quindi fai clic su **[!UICONTROL Hide]**
+   * Aggiungi un filtro per `Customer's order number` = 1 e fare clic su **[!UICONTROL Apply]**
+   * Rinominare la metrica facendo clic sul nome della metrica, chiamandola `Number of first orders`, quindi fai clic su **[!UICONTROL Hide]**
 
 * `Number of orders`
    * **[!UICONTROL Hide]** la metrica
 
 * `Users`
    * **[!UICONTROL Hide]** la metrica
-   * Modifica il periodo di tempo in `24 months ago to now`e regola l&#39;intervallo di tempo in `by month`.
-   * Aggiungi le formule seguenti facendo clic su **[!UICONTROL Formula]**.
+   * Modifica il periodo di tempo in `24 months ago to now`, e regola l&#39;intervallo di tempo su `by month`.
+   * Aggiungere le formule seguenti facendo clic su **[!UICONTROL Formula]**.
    * A/D, quindi fai clic su **[!UICONTROL Apply]**
    * Rinomina la formula `Registration conversion`
-   * B/D, quindi fai clic su **[!UICONTROL Apply]**
+   * B/D, quindi fare clic su **[!UICONTROL Apply]**
    * Rinomina la formula `First order conversion`
-   * C/D, quindi fai clic su **[!UICONTROL Apply]**
+   * C/D, quindi fare clic su **[!UICONTROL Apply]**
    * Rinomina la formula `Any order conversion`
 
-* Ora dai un nome al tuo rapporto, come `Conversion by month`, quindi fai clic su **[!UICONTROL Save]**.
+* Ora assegna un nome al rapporto, ad esempio `Conversion by month`e quindi fare clic su **[!UICONTROL Save]**.
 
 ## Passaggi successivi
 
-Ora che hai accesso ai dati sul tuo traffico web e sui tassi di conversione, puoi iniziare a estrarre questo per guidare le decisioni aziendali. Quali sono i siti migliori per indirizzare il traffico verso il sito?  Quale delle tue campagne è più efficace nell&#39;acquisire clienti con un lifetime value elevato?
+Ora che hai accesso ai dati sul traffico web e ai tassi di conversione, puoi iniziare a estrarre questo per promuovere le decisioni di business, ad esempio quali siti sono più adatti a indirizzare il traffico verso il tuo sito? o Quale delle tue campagne è più efficace nell’acquisire clienti con l’elevato valore del ciclo di vita?
 
-Man mano che modifichi la spesa pubblicitaria e la strategia di marketing, puoi continuare a tenere traccia dei risultati in [!DNL MBI], iterazione su questo dashboard per soddisfare le priorità in evoluzione della tua azienda.
+Quando modifichi la spesa pubblicitaria e la strategia di marketing, puoi continuare a tenere traccia dei risultati in [!DNL MBI], iterando su questa dashboard per soddisfare le priorità in evoluzione della tua azienda.

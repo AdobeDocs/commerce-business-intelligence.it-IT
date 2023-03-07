@@ -1,25 +1,25 @@
 ---
 title: Colonna calcolata numero evento
-description: Scopri lo scopo e gli usi della colonna calcolata Numero evento .
+description: Scopri lo scopo e gli utilizzi della colonna calcolata Numero evento.
 exl-id: c234621e-2e68-4e63-8b0d-7034d1b5fe1f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '382'
 ht-degree: 3%
 
 ---
 
 # Colonna calcolata numero evento
 
-In questo argomento vengono illustrati lo scopo e gli usi `Event Number` colonna calcolata disponibile nella colonna **[!DNL Manage Data > Data Warehouse]** pagina. Di seguito è riportata una spiegazione di ciò che fa, seguita da un esempio, e la meccanica della sua creazione.
+Questo argomento illustra lo scopo e gli utilizzi del `Event Number` colonna calcolata disponibile nella **[!DNL Manage Data > Data Warehouse]** pagina. Di seguito è riportata una spiegazione di ciò che fa, seguito da un esempio, e la meccanica della sua creazione.
 
 **Spiegazione**
 
-La `Event Number` tipo di colonna: identifica la sequenza in cui si sono verificati gli eventi per una particolare **proprietario dell&#39;evento**, come `customer` o `user`. Se si ha familiarità con SQL, questo tipo di colonna è identico al `RANK` funzione . Può essere utilizzato per osservare le differenze di comportamento tra gli eventi della prima volta, gli eventi di ripetizione o i nth eventi nei dati.
+Il `Event Number` column type (tipo di colonna): identifica la sequenza in cui si sono verificati gli eventi per un particolare **proprietario evento**, come un `customer` o `user`. Se si ha familiarità con SQL, questo tipo di colonna è identico al `RANK` funzione. Può essere utilizzato per osservare le differenze di comportamento tra eventi nuovi, eventi ripetuti o eventi ennesimi nei dati.
 
-In caso di legami, questa colonna contiene lo stesso **rango** per gli eventi associati e ignora i numeri successivi. Ad esempio, se classificasse i numeri 5,8,10,10,12, i numeri sarebbero 1,2,3,3,5.
+In caso di parità, questa colonna contiene lo stesso **rango** per gli eventi associati e ignora i numeri successivi. Ad esempio, se si classificasse i numeri 5,8,10,10,12, i ranghi sarebbero 1,2,3,3,5.
 
-Il caso d’uso più comune di questa colonna è quello di analizzare i nuovi acquirenti e gli acquirenti ripetuti. La prima volta che gli acquirenti vengono identificati aggiungendo un filtro (a una metrica o a un report) in `Customer's order number` 1. `Customer's order number` è una colonna del tipo `Event Number`.
+Il caso d’uso più comune di questa colonna è quello di analizzare i nuovi acquirenti e gli acquirenti ripetuti. Gli acquirenti vengono identificati per la prima volta aggiungendo un filtro (a una metrica o a un rapporto) il `Customer's order number` = 1. `Customer's order number` è una colonna del tipo `Event Number`.
 
 **Esempio**
 
@@ -31,19 +31,19 @@ Il caso d’uso più comune di questa colonna è quello di analizzare i nuovi ac
 | **4 | A | 2015-01-02 13:00:00 | 3 |
 | **5 | B | 2015-01-03 13:00:00 | 2 |
 
-Nell’esempio precedente, la colonna `Owner's event number` è un `Event Number` colonna. Classifica gli eventi del proprietario nell’ordine in cui si sono verificati (in base al `timestamp` ).
+Nell’esempio precedente, la colonna `Owner's event number` è un `Event Number` colonna. Classifica gli eventi del proprietario nell&#39;ordine in cui si sono verificati (in base al `timestamp` colonna).
 
-Ad esempio, considera tutte le righe in cui `owner_id = A`. La prima riga della tabella è la marca temporale più recente per questo proprietario, seguita dalla terza riga della tabella, seguita dalla quarta riga della tabella.
+Ad esempio, considera tutte le righe in cui `owner_id = A`. La prima riga della tabella è la prima marca temporale per questo proprietario, seguita dalla terza riga della tabella, seguita dalla quarta riga della tabella.
 
 **Meccanica**
 
-Di seguito sono riportate alcune istruzioni sulla creazione di un `Event Number` colonna:
+Di seguito sono riportate alcune istruzioni sulla creazione di un’ `Event Number` colonna:
 
-1. Passa a **[!UICONTROL Manage Data > Data Warehouse]** pagina.
-1. Passa alla tabella in cui desideri creare la colonna.
-1. Fai clic su **[!UICONTROL Create a Column]** e scegli la `EVENT_NUMBER (…)` tipo di colonna: in `Same Table` sezione .
-1. Il primo menu a discesa `Event Owner` specifica l’entità per la quale deve essere determinata la classificazione. Nel caso di `Customer's order number`, un identificatore del cliente come `customer_id` o `customer_email` sarebbe `Event Owner`.
-1. Il secondo menu a discesa `Event Rank` specifica la colonna che applica la sequenza che determina il rango della riga. Nel caso di `Customer's order number`, `created_at` la marca temporale è `Event Rank`.
-1. Sotto la `Options` a discesa, puoi aggiungere filtri per escludere le righe dalla considerazione. Le righe escluse avranno un `NULL` per questa colonna.
-1. Immetti un nome alla colonna e fai clic su **[!UICONTROL Save]**.
-1. La colonna sarà disponibile per l’utilizzo _immediatamente._
+1. Accedi a **[!UICONTROL Manage Data > Data Warehouse]** pagina.
+1. Passare alla tabella in cui si desidera creare la colonna.
+1. Clic **[!UICONTROL Create a Column]** e scegli la `EVENT_NUMBER (…)` tipo di colonna: sotto `Same Table` sezione.
+1. Il primo elenco a discesa `Event Owner` specifica l&#39;entità per la quale deve essere determinata la classificazione. Se un `Customer's order number`, un identificativo del cliente come `customer_id` o `customer_email` sarebbe il `Event Owner`.
+1. Secondo elenco a discesa `Event Rank` specifica la colonna che applica la sequenza che determina la classificazione della riga. Se un `Customer's order number`, il `created_at` timestamp sarebbe il `Event Rank`.
+1. Sotto `Options` a discesa, puoi aggiungere filtri per escludere le righe dalla considerazione. Le righe escluse presentano `NULL` per questa colonna.
+1. Assegna un nome alla colonna e fai clic su **[!UICONTROL Save]**.
+1. È possibile utilizzare la colonna _immediatamente._

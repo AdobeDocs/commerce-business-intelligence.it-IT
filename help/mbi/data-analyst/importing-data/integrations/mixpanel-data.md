@@ -1,33 +1,33 @@
 ---
-title: Dati previsti del pannello multiplo
-description: Esplorare le tabelle di dati principali che è possibile importare da Mixpanel nel [!DNL MBI] conto.
+title: Dati Mixpanel previsti
+description: Esplora le tabelle di dati principali che puoi importare da Mixpanel nel tuo [!DNL MBI] account.
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---
 
 # Previsto [!DNL Mixpanel] dati
 
-Dopo [hai connesso il tuo [!DNL Mixpanel] account](../integrations/mixpanel.md), puoi utilizzare la [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) per tenere traccia facilmente dei campi dati rilevanti ai fini dell’analisi.
+Dopo [hai connesso il tuo [!DNL Mixpanel] account](../integrations/mixpanel.md), è possibile utilizzare [Gestione Date Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) per tracciare facilmente i campi di dati rilevanti per l’analisi.
 
-In questo articolo, esploriamo le tabelle di dati principali da cui è possibile importare [!DNL Mixpanel] nella [!DNL MBI] conto. Le tabelle seguenti verranno create nel data warehouse dopo la connessione di Mixpanel. Per visualizzare tutti i campi disponibili per il tracciamento, fai clic sui collegamenti nella colonna del nome della tabella.
+Questo articolo esplora le tabelle di dati principali da cui è possibile importare [!DNL Mixpanel] nel tuo [!DNL MBI] account. Dopo aver connesso Mixpanel, nella Data Warehouse verranno create le tabelle seguenti. Per visualizzare tutti i campi disponibili per il tracciamento, fai clic sui collegamenti nella colonna nome tabella.
 
 >[!NOTE]
 >
->A causa delle limitazioni del [!DNL Mixpanel] API, dati storici - dati più vecchi di sette (7) giorni dalla data di connessione a [!DNL MBI] - non verrà replicato.
+>A causa dei limiti del [!DNL Mixpanel] API, dati storici: dati risalenti a più di sette (7) giorni prima della data di connessione a [!DNL MBI] - non viene replicato.
 
 | **Nome tabella** | **Descrizione** |
 |-----|-----|
-| [`mixpanel\_export`](https://mixpanel.com/docs/api-documentation/exporting-raw-data-you-inserted-into-mixpanel#datafeed) | Questa tabella contiene dati evento non elaborati, inclusi evento, date evento e bucket della piattaforma. |
-| [`mixpanel\_funnels`](https://mixpanel.com/docs/api-documentation/data-export-api#funnels-default) | Questa tabella contiene i dati sui funnel, tra cui l’ID funnel, la lunghezza dell’imbuto (# giorni per cui l’utente deve completare l’imbuto) e le date di inizio e fine dell’imbuto. |
-| [`mixpanel\_engage`](https://mixpanel.com/docs/api-documentation/data-export-api#engage-default) | Contiene i dati di People Analytics, inclusi gli ID sessione, le informazioni sulla pagina e sull’utente, e la data/ora dell’ultima visualizzazione dell’utente. |
+| [`mixpanel\_export`](https://developer.mixpanel.com/reference/raw-data-export-api#datafeed) | Questa tabella contiene dati evento non elaborati, tra cui l’evento, le date dell’evento e il bucket della piattaforma. |
+| [`mixpanel\_funnels`](https://developer.mixpanel.com/reference/raw-data-export-api#funnels-default) | Questa tabella contiene dati sui funnel, tra cui l’ID funnel, la lunghezza del funnel (numero di giorni necessari all’utente per completare l’funnel) e le date di inizio e fine del funnel. |
+| [`mixpanel\_engage`](https://developer.mixpanel.com/reference/raw-data-export-api#engage-default) | Contiene dati provenienti da People Analytics, inclusi ID sessione, informazioni sulla pagina e sull’utente e la data/ora dell’ultima visualizzazione dell’utente. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Documentazione correlata
 
-* [Collegamento [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Riautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Connessione [!DNL Mixpanel]](../integrations/mixpanel.md)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

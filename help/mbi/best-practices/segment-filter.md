@@ -1,76 +1,76 @@
 ---
-title: Dimension di dati consigliati per segmentazione e filtraggio
-description: Scopri le best practice per segmentazione e filtro.
+title: Dimension di dati consigliati per segmentazione e filtro
+description: Scopri le best practice per la segmentazione e il filtraggio.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
 
-# Segmentazione e filtraggio
+# Segmentazione e filtro
 
-Una buona segmentazione è ciò che trasforma una statistica superficiale in una metrica aziendale che guida le decisioni.
+Una buona segmentazione è ciò che trasforma una statistica superficiale in una metrica di business che guida le decisioni.
 
-Vuoi sapere chi sono i tuoi clienti più importanti? Quali sono i tuoi canali di marketing più importanti? Quale dei vostri prodotti si muove più velocemente e perché? Per arrivare a una qualsiasi di queste risposte, devi iniziare segmentando i tuoi dati.
+Vuoi sapere chi sono i tuoi clienti più importanti? Quali sono i tuoi canali di marketing più importanti? Quali prodotti sono più veloci e perché? Per ottenere una di queste risposte, devi iniziare segmentando i tuoi dati.
 
-In questo articolo, condividiamo alcuni segmenti critici che spesso consigliamo ai nostri clienti. Inoltre, approfondiamo le domande a cui questi segmenti possono aiutarti a rispondere. Tecnicamente, i segmenti sono colonne di dati nel database. In [!DNL MBI], le chiamiamo dimensioni.
+Questo articolo tratta i segmenti critici che sono spesso consigliati ai clienti. Inoltre, illustra in dettaglio le domande che questi segmenti possono aiutarti a rispondere. Tecnicamente, i segmenti sono colonne di dati nel database. In entrata [!DNL MBI], sono denominate dimensioni.
 
 ![](../../mbi/assets/mbi-critical-segments.png)
 
 
 ## Segmenti utente
 
-I segmenti di utenti consentono di comprendere chi sono i tuoi utenti e come si comportano.
+I segmenti utente consentono di comprendere chi sono gli utenti e come si comportano.
 
-* **Età / Anno di nascita**: Quanti anni hanno i tuoi utenti? Quanti anni hanno gli utenti più attivi? In genere ha senso raggruppare i valori in intervalli per eseguire analisi più efficaci.
-* **Genere**: Gli uomini e le donne interagiscono con il tuo sito web in modo diverso?
-* **Indirizzo**: Da dove vengono i tuoi utenti? Devi concentrare le tue attività di marketing su una determinata regione? Le campagne pubblicitarie recenti sono state eseguite come previsto nelle aree di destinazione?
-* **Origine acquisizione cliente**\: Sai da quale canale di marketing provengono i tuoi utenti? Hanno cliccato su un annuncio o vi hanno trovato tramite ricerca? [Segmentazione dei dati per origine di acquisizione utente](../data-analyst/analysis/google-track-user-acq.md) è il primo passo per ottimizzare la nuova acquisizione da parte del cliente. Il secondo passo è spendere più soldi in ciò che funziona e uccidere ciò che non è.
-* **Dispositivo di registrazione**: Gli utenti si sono registrati tramite la tua app mobile o il tuo sito web? iOS o Android? La base di utenti per dispositivi mobili è abbastanza grande da allocare più risorse per sviluppare il prodotto mobile? (Se non stai ancora tenendo traccia di questo argomento, consulta questo argomento [informazioni sul dispositivo utente di tracciamento](../data-analyst/analysis/track-usr-dev-browser.md).
-* **A cui fa riferimento**: Chi sono i vostri più influenti? Quanti utenti sono stati indirizzati direttamente da altri?
-* **Industria**: Se sei un&#39;azienda B2B, in quali settori lavorano i tuoi utenti? Quali organizzazioni commerciali vale la pena di aderire?
-* **Risposte al sondaggio**: Se esegui sondaggi sui clienti, utilizza le risposte come segmenti per un livello di profilazione più profondo. Puoi porre domande complementari a quanto già sai sugli utenti o confermare le tue ipotesi.
-* **Importo del primo ordine e categoria di prodotti**: Esiste una correlazione tra il primo ordine di un utente e i futuri modelli di acquisto?
+* **Età / Anno di nascita**: quanti anni hanno gli utenti? Quanti anni hanno gli utenti più attivi? Di solito è utile inserire i valori negli intervalli per un’analisi più efficace.
+* **Genere**: i diversi generi interagiscono in modo diverso con il sito web?
+* **Indirizzo**: Da dove provengono gli utenti? Dovresti concentrare le tue attività di marketing su una particolare area geografica? Le campagne pubblicitarie recenti sono state eseguite come previsto nelle aree di destinazione?
+* **Origine acquisizione cliente**\: Sapete da quale canale di marketing provengono i vostri utenti? Hanno fatto clic su un annuncio o vi hanno trovato tramite una ricerca? [Segmentazione dei dati per origine di acquisizione dell&#39;utente](../data-analyst/analysis/google-track-user-acq.md) è il primo passo per ottimizzare la nuova acquisizione di clienti. Il secondo passo è spendere più soldi in ciò che funziona e uccidere ciò che non funziona.
+* **Dispositivo di registrazione**: gli utenti si sono registrati tramite la tua app mobile o il tuo sito web? iOS o Android™? La base di utenti di dispositivi mobili è abbastanza grande da allocare più risorse per sviluppare il prodotto mobile? (Se non tieni traccia di questo, consulta questo argomento [informazioni sul tracciamento del dispositivo utente](../data-analyst/analysis/track-usr-dev-browser.md).
+* **Referrer da**: Chi sono i tuoi influencer più influenti? Quanti utenti sono stati segnalati direttamente da altri?
+* **Settore**: se sei un’azienda B2B, in quali settori lavorano i tuoi utenti? A quali organizzazioni professionali vale la pena aderire?
+* **Risposte al sondaggio**: se esegui indagini sui clienti, utilizza le risposte come segmenti per un livello di profilatura più profondo. Puoi porre domande che integrano ciò che già sai sugli utenti o confermare le tue ipotesi.
+* **Importo primo ordine e categoria prodotto**: esiste una correlazione tra il primo ordine di un utente e i modelli di acquisto futuri?
 
-## Segmenti Ordini / Eventi
+## Segmenti di ordini/eventi
 
-I segmenti di ordine ed evento consentono di analizzare il comportamento e il coinvolgimento degli utenti nel tempo.
+I segmenti di ordini ed eventi consentono di analizzare il comportamento degli utenti e il loro coinvolgimento nel tempo.
 
-* **[!UICONTROL Billing / Shipping Address]**: Da dove vengono la maggior parte dei vostri ordini? C&#39;è una differenza tra gli indirizzi di fatturazione e di spedizione?
-* **[!UICONTROL Status]**: Quanti dei tuoi ordini non sono stati completati? Qual è il rapporto tra gli ordini in sospeso negli ultimi sette giorni?
-* **[!UICONTROL Customer acquisition source]**: Oltre a monitorare i dati di acquisizione degli utenti a livello di utente, puoi anche [tracciarlo a livello di ordine o evento](../data-analyst/analysis/google-track-user-acq.md). Un utente che si è registrato tramite una fonte potrebbe benissimo continuare ad accedere al tuo sito tramite altre fonti.
-* **[!UICONTROL Device]**: Il numero di ordini di telefonia mobile sta aumentando? Quanti dei vostri ricavi vengono attualmente generati tramite acquisti mobili? (Se non stai ancora tenendo traccia di questo argomento, consulta questo argomento [informazioni sui dati dei dispositivi dell’ordine di tracciamento](../data-analyst/analysis/track-usr-dev-browser.md).
-* **[!UICONTROL Fulfillment Center]**: Quale dei centri di realizzazione genera il maggior fatturato? Se stai analizzando la differenza tra il tempo di ordine e il tempo di spedizione, quale centro di evasione è più reattivo?
-* **[!UICONTROL Delivery Carrier]**: Qual è il vettore più popolare? Quale vettore ha il minor numero di articoli restituiti?
-* **[!UICONTROL Discount / Coupon Codes]**: Le tue promozioni generano davvero un&#39;attività extra? Quanti articoli extra hanno acquistato i tuoi clienti oltre all&#39;articolo in vendita? In che modo i coupon influiscono sul valore medio dell&#39;ordine? Qual è il margine medio sugli articoli scontati rispetto a quelli non scontati?
-* **[!UICONTROL Satisfaction / Rating]**: Quanto sono soddisfatti i vostri clienti con i loro ordini? È probabile che i clienti ti contengano?
+* **[!UICONTROL Billing / Shipping Address]**: Da dove proviene la maggior parte degli ordini? C&#39;è una differenza tra gli indirizzi di fatturazione e di spedizione?
+* **[!UICONTROL Status]**: quanti ordini non sono stati completati? Qual è il rapporto tra ordini in sospeso negli ultimi sette giorni?
+* **[!UICONTROL Customer acquisition source]**: oltre al tracciamento dei dati di acquisizione degli utenti a livello di utente, puoi anche [tracciarlo a livello di ordine o evento](../data-analyst/analysis/google-track-user-acq.md). Un utente che ha effettuato la registrazione tramite un’origine potrebbe continuare ad accedere al sito tramite altre origini.
+* **[!UICONTROL Device]**: il numero di ordini da dispositivi mobili è in aumento? Quanti ricavi vengono generati dagli acquisti su dispositivi mobili? (Se non tieni traccia di questo, consulta questo argomento [informazioni sul tracciamento dei dati del dispositivo dell&#39;ordine](../data-analyst/analysis/track-usr-dev-browser.md).
+* **[!UICONTROL Fulfillment Center]**: quale dei vostri centri di realizzazione genera il maggior fatturato? Se si analizza la differenza tra l&#39;ora dell&#39;ordine e l&#39;ora di spedizione, quale centro di evasione è più reattivo?
+* **[!UICONTROL Delivery Carrier]**: qual è il vettore più popolare? Quale vettore ha il minor numero di articoli restituiti?
+* **[!UICONTROL Discount / Coupon Codes]**: Le vostre promozioni stanno generando nuovi profitti? Quanti oggetti in più hanno acquistato i tuoi clienti oltre all&#39;oggetto in vendita? In che modo i coupon influiscono sul valore medio dell’ordine? Qual è il tuo margine medio sugli elementi scontati rispetto a quelli non scontati?
+* **[!UICONTROL Satisfaction / Rating]**: Qual è il livello di soddisfazione dei clienti rispetto agli ordini ricevuti? È probabile che i tuoi clienti ti indirizzino la tua attività?
 
 ## Segmenti di prodotto
 
-I segmenti di prodotto ti aiutano a prendere decisioni sul merchandising.
+I segmenti di prodotto consentono di prendere decisioni sul merchandising.
 
-* **[!UICONTROL Merchant / Brand]**: Un marchio specifico vende più velocemente del resto? Quali marchi hanno prestazioni inferiori?
-* **[!UICONTROL Type / Category]**: I diversi segmenti di utenti godono di diversi tipi di prodotti? Quali categorie di prodotti generano il business più ripetuto?
-* **[!UICONTROL Discount / Coupon Codes]**: Le promozioni danneggiano le vendite di prodotti non scontati? In che modo i coupon influiscono sul valore percepito dei tuoi prodotti?
-* **[!UICONTROL Social Activity]**: Esiste una correlazione tra il ronzio generato sui social media e la quantità venduta per un prodotto?
-* **[!UICONTROL Size / Variant]**: Qual è il rapporto di inventario necessario per ogni variante? Quali varianti possono essere vendute ai tassi di sconto?
+* **[!UICONTROL Merchant / Brand]**: una marca specifica vende più velocemente del resto? Quali marchi hanno prestazioni insoddisfacenti?
+* **[!UICONTROL Type / Category]**: i diversi segmenti di utenti utilizzano diversi tipi di prodotti? Quali categorie di prodotti generano il business più ripetuto?
+* **[!UICONTROL Discount / Coupon Codes]**: le promozioni danneggiano le vendite di prodotti non scontati? In che modo i coupon influiscono sul valore percepito dei prodotti?
+* **[!UICONTROL Social Activity]**: C&#39;è una correlazione tra il fermento generato sui social media e la quantità venduta per un prodotto?
+* **[!UICONTROL Size / Variant]**: qual è il rapporto di inventario necessario per ogni variante? Quali varianti possono essere vendute a tassi di sconto?
 
-Se sei interessato al merchandising, controlla un post di blog dove esploriamo [come utilizzare i segmenti di prodotto per promuovere la ripetizione dell&#39;attività](../data-analyst/analysis/most-value-source-channel.md).
+Se sei interessato al merchandising, vedi [come utilizzare i segmenti di prodotto per promuovere il business](../data-analyst/analysis/most-value-source-channel.md).
 
-## Stabilire profili cliente
+## Definizione dei profili cliente
 
-Gli esperti di segmentazione possono voler andare oltre le sezioni unidimensionali e iniziare a stabilire profili reali dei clienti. Ad esempio, le persone di età compresa tra i 13 e i 24 anni registrate tramite un dispositivo mobile inseriscono un gruppo &quot;Young &amp; Mobile&quot;. Come si confronta il comportamento di questo gruppo con il resto della base utenti?
+Gli esperti di segmentazione potrebbero voler superare le sezioni unidimensionali e iniziare a stabilire profili cliente reali. Ad esempio, le persone di età compresa tra i 13 e i 24 anni che si sono registrate tramite un dispositivo mobile hanno inserito in un gruppo &quot;Giovani e mobili&quot;. Come si comporta questo gruppo rispetto al resto della tua base di utenti?
 
-Questo tipo di analisi è ciò che fanno gli esperti di marketing delle aziende Fortune 1000 tutto il giorno. Prima dell&#39;avvento di piattaforme di business intelligence basate su cloud come [!DNL MBI]Era in gran parte fuori portata per tutti noi. Fortunatamente non è più così.
+Questo tipo di analisi è ciò che gli esperti di marketing delle aziende Fortune 1000 fanno tutto il giorno. Prima dell&#39;avvento delle piattaforme di business intelligence basate sul cloud, come [!DNL MBI]Ma era in gran parte fuori dalla portata di tutti noi. Fortunatamente non è più così.
 
-## Tracciamento dei nuovi segmenti
+## Tracciamento di nuovi segmenti
 
-Il primo passo per segmentare le metriche in base alle dimensioni di cui sopra è assicurarti di tenere traccia di questi dati nel database. Se non viene tracciato, incontra il tuo team tecnico e trova un modo per iniziare a tracciare questi dati.
+Il primo passaggio per segmentare le metriche in base alle dimensioni di cui sopra consiste nell’assicurarsi di tenere traccia di questi dati nel database. Se non viene tracciato, incontra il tuo team tecnico e trova un modo per iniziare a tracciare questi dati.
 
-Una volta confermato che i dati sono tracciati nel database, [contatta il nostro team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per spingere le dimensioni al [!DNL MBI] metriche e grafici o semplicemente utilizza il nostro strumento di gestione dei campi per tenere traccia di questi campi in [!DNL MBI].
+Dopo aver confermato la registrazione dei dati nel database, [contatta il team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per inviare le dimensioni al [!DNL MBI] metriche e grafici. È inoltre possibile utilizzare *Gestione dei campi* strumento per tenere traccia di questi campi in [!DNL MBI].
 
-## Correlati
+## Correlato
 
-* [Ottimizzazione del database per l’analisi](../best-practices/opt-db-analysis.md)
+* [Ottimizzazione del database per l&#39;analisi](../best-practices/opt-db-analysis.md)

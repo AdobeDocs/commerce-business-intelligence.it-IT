@@ -1,54 +1,54 @@
 ---
-title: Replica dei canali di Google Analytics tramite origini di acquisizione
-description: Scopri come replicare i canali di Google Analytics utilizzando le origini di acquisizione.
+title: Replica dei canali Google Analytics tramite origini di acquisizione
+description: Scopri come replicare i canali Google Analytics utilizzando le origini di acquisizione.
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
 
-# Google Analytics che utilizzano origini di acquisizione
+# Google Analytics con origini di acquisizione
 
 ## Cosa sono i canali? {#channels}
 
-Creazione di segmenti personalizzati per vedere le prestazioni di traffico diverso e osservare le tendenze (nel bene o nel male) è uno degli usi più potenti per  [!DNL Google Analytics ]. Una classe di segmenti esistente per impostazione predefinita in [!DNL Google Analytics ] sono `Channels`. I canali sono un raggruppamento di modi comuni in cui le persone arrivano al tuo sito.  [!DNL Google Analytics ] ordina automaticamente i molti modi in cui acquisisci un utente - che si tratti di social media, pay-per-click, e-mail o collegamenti di riferimento - e li raggruppa in un bucket o in un canale.
+La creazione di segmenti personalizzati per vedere le prestazioni di diversi tipi di traffico e osservare le tendenze è uno degli utilizzi più potenti per  [!DNL Google Analytics ]. Una classe di segmenti esistente per impostazione predefinita in [!DNL Google Analytics ] sono `Channels`. I canali sono un raggruppamento di modi comuni in cui le persone accedono al tuo sito.  [!DNL Google Analytics ] ordina automaticamente i diversi modi in cui si acquisisce un utente (tramite social media, pay-per-click, e-mail o collegamenti di riferimento) e li raggruppa in un bucket, o Canale.
 
-## Perché non visualizzo il mio `channels` in MBI? {#nochannels}
+## Perché non vedo il mio `channels` in MBI? {#nochannels}
 
-`Channels` sono blocchi di dati semplici e aggregati. Per ordinare le acquisizioni nei bucket Canale, Google imposta regole e definizioni distinte utilizzando parametri specifici: una combinazione di acquisizione [Origine](https://support.google.com/analytics/answer/1033173?hl=en) (origine del traffico) e acquisizione [Media](https://support.google.com/analytics/answer/6099206?hl=en) (la categoria generale della fonte).
+`Channels` sono contenitori di dati semplici e aggregati. Per ordinare le acquisizioni in bucket di canale, Google imposta regole e definizioni distinte utilizzando parametri specifici: una combinazione di acquisizione [Sorgente](https://support.google.com/analytics/answer/1033173?hl=en) (origine del traffico) e acquisizione [Medio](https://support.google.com/analytics/answer/6099206?hl=en) (la categoria generale della sorgente).
 
-Anche se questi blocchi possono aiutarti a capire da dove proviene il traffico, questi dati non vengono effettivamente taggati per canale, ma da una combinazione di Origine e Media. Poiché Google invia informazioni sul canale come due punti di dati separati, i raggruppamenti di canali non vengono visualizzati automaticamente in [!DNL MBI].
+Anche se l’utilizzo di questi bucket può aiutarti a capire da dove proviene il traffico, questi dati non vengono taggati per canale, ma da una combinazione di Origine e Media. Poiché Google invia le informazioni sul canale come due punti dati separati, i raggruppamenti di canali non vengono visualizzati automaticamente in [!DNL MBI].
 
-## Quali sono i raggruppamenti di canali predefiniti? Come vengono creati?
+## Quali sono i raggruppamenti di canali predefiniti? Come vengono create?
 
-Per impostazione predefinita, Google ti imposta con 8 canali diversi. Diamo un&#39;occhiata alle regole che determinano come vengono create:
+Per impostazione predefinita, Google consente di impostare otto canali diversi. Osserva le regole che determinano come vengono create:
 
 | Canale | Che cos&#39;è? | Come viene creato? |
 |---|---|---|
-| Diretta | Chiunque venga direttamente nel tuo sito. | Origine = `Direct`<br>AND Medium = `(not set); OR Medium = (none)` |
-| Ricerca organica | Traffico classificato organicamente nei motori di ricerca non pagati. | Media = `organic` |
-| Riferimento | Traffico proveniente da un collegamento esterno che non è Ricerca organica o da siti web che non sono social network. | Media = `referral` |
-| Ricerca a pagamento | Traffico con un codice di tracciamento UTM in cui il supporto è &quot;cpc&quot;, &quot;ppc&quot; o &quot;paidsearch&quot; E è una rete di distribuzione di annunci che non corrisponde a &quot;Content&quot;. | Media = `^(cpc|ppc|paidsearch)$`<br>E Rete di distribuzione degli annunci `Content` |
-| Social | Traffico di riferimento proveniente da uno qualsiasi dei [400 reti sociali](https://www.annielytics.com/blog/analytics/sites-google-analytics-includes-in-social-reports/) e non sono taggati come annunci. | Riferimento origine social = `Yes`<br>O Media = `^(social|social-network|social-media|sm|social network|social media)$` |
-| E-mail | Traffico da sessioni a cui viene applicato un tag tramite un &quot;e-mail&quot;. | Codice di tracciamento UTM di Medium = `email` |
-| Visualizzazione | Traffico con un codice di tracciamento UTM in cui il supporto è visualizzato o cpm. Include anche l’interazione AdWords in cui la rete di distribuzione degli annunci corrisponde a &quot;Content&quot; | Media = `^(display|cpm|banner)$`<br>Rete di distribuzione degli annunci OR = `Content`<br>AND Formato annuncio `Text` |
-| Altro | Sessioni da altri canali pubblicitari, esclusa la ricerca a pagamento, con tag su un supporto di &quot;cpc&quot;, &quot;ppc&quot;, &quot;cpm, &quot;cpv&quot;, &quot;cpa&quot;, &quot;cpp&quot;, &quot;affiliate&quot;. | Media = `^(cpv|cpa|cpp|content-text)$` |
+| Diretto | Chiunque entri direttamente nel tuo sito. | Origine = `Direct`<br>AND Medio = `(not set); OR Medium = (none)` |
+| Ricerca organica | Traffico che è stato classificato in modo organico nei motori di ricerca non pagati. | Media = `organic` |
+| Referral | Traffico proveniente da un collegamento esterno che non è Ricerca organica o da siti web che non sono social network. | Media = `referral` |
+| Ricerca a pagamento | Traffico con un codice di tracciamento UTM in cui il mezzo è &quot;cpc&quot;, &quot;ppc&quot; o &quot;paidsearch&quot; e è una rete di distribuzione di annunci che non corrisponde a &quot;Content&quot; (Contenuto). | Media = `^(cpc|ppc|paidsearch)$`<br>E ≠ di rete per la distribuzione di annunci `Content` |
+| Social | Traffico di riferimento proveniente da uno dei seguenti elementi: [400 social network](https://www.annielytics.com/blog/analytics/sites-google-analytics-includes-in-social-reports/) e non vengono taggati come annunci. | Referral origine social = `Yes`<br>OR Medio = `^(social|social-network|social-media|sm|social network|social media)$` |
+| E-mail | Traffico proveniente da sessioni a cui viene applicato un tag &quot;e-mail&quot;. | Codice di tracciamento UTM di Medium = `email` |
+| Visualizzazione | Traffico con codice di tracciamento UTM in cui il supporto è display o cpm. Include anche l’interazione AdWords in cui la rete di distribuzione degli annunci corrisponde a &quot;Content&quot; (Contenuto) | Media = `^(display|cpm|banner)$`<br>O Rete di distribuzione di annunci = `Content`<br>≠ del formato dell’annuncio AND `Text` |
+| Altro | Sessioni da altri canali pubblicitari (esclusa la Ricerca a pagamento) contrassegnate con un supporto di &quot;cpc&quot;, &quot;ppc&quot;, &quot;cpm, &quot;cpv&quot;, &quot;cpa&quot;, &quot;cpp&quot;, &quot;affiliate&quot;. | Media = `^(cpv|cpa|cpp|content-text)$` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Come posso ricreare questi raggruppamenti di canali nella mia Data Warehouse? {#recreate}
 
-Ora che sapete che i canali sono solo combinazioni di sorgenti e mezzi, è un processo semplice in 3 fasi per ricreare questi raggruppamenti nella vostra Data Warehouse.
+Ora che sai che i canali sono solo combinazioni di sorgenti e media, è facile ricreare questi raggruppamenti nella tua Data Warehouse in tre fasi.
 
-1. **Abilita la tua[!DNL Google ECommerce]integrazione**
+1. **Abilita[!DNL Google ECommerce]integrazione**
 
-   [Una volta attivato](../importing-data/integrations/google-ecommerce.md), assicurati di [Sincronizzazione](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) la **medium** e **source** campi nella tua Data Warehouse. Una volta completato questo processo, i dati di acquisizione di origine e media verranno inseriti nella tua Data Warehouse.
+   [Una volta abilitato](../importing-data/integrations/google-ecommerce.md), assicurati di [sincronizzazione](.../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) il **media** e **sorgente** campi nella Data Warehouse. Al termine dell&#39;operazione, i dati di acquisizione di origine e di supporto verranno inseriti nella Data Warehouse.
 
-1. **Caricare una mappatura dei raggruppamenti di canali Google**
+1. **Carica una mappatura dei raggruppamenti di canali di Google**
 
-   Per risparmiare tempo, Commerce ha già creato una tabella con i raggruppamenti predefiniti mappati come file che è possibile [scaricare](../../assets/ga-channel-mapping.csv).
+   Per risparmiare tempo, Commerce ha già creato una tabella con i raggruppamenti predefiniti mappati come file che puoi [scaricare](../../assets/ga-channel-mapping.csv).
 
    Se sei un professionista di Google Analytics e hai creato i tuoi canali, vuoi aggiungere le tue regole specifiche alla tabella di mappatura prima di caricare il file in [!DNL MBI].
 
@@ -56,19 +56,19 @@ Ora che sapete che i canali sono solo combinazioni di sorgenti e mezzi, è un pr
 
    ![](../../assets/Setting_Primary_Keys.png)
 
-1. **Stabilire una relazione tra[!DNL Google ECommerce]Caricamento file e mappature**
+1. **Stabilire una relazione tra[!DNL Google ECommerce]Caricamento di file di mappature e**
 
-   Per stabilire una relazione tra[!DNL Google ECommerce]e la tabella di mappatura, [inviare una richiesta di assistenza](../../guide-overview.md) al nostro team di Data Analyst e fai riferimento a questo articolo. L’analista creerà una nuova colonna calcolata denominata **Canale** nella tabella ECommerce. **Dopo un ciclo completo di aggiornamento**, questa colonna sarà pronta per essere utilizzata in un Filtro o Raggruppa per.
+   Per stabilire una relazione tra[!DNL Google ECommerce]e la tabella di mappatura, [invia una richiesta di assistenza](../../guide-overview.md) rivolgiti al team di Data Analyst e fai riferimento a questo articolo. L’analista crea una nuova colonna calcolata denominata **Canale** nella tabella ECommerce. **Dopo un ciclo di aggiornamento completo**, questa colonna sarà pronta per essere utilizzata in un filtro o un raggruppamento.
 
-Congratulazioni! Ora hai dei raggruppamenti di canali Google Analytics nella tua Data Warehouse, il che significa che puoi analizzare i dati da una nuova prospettiva:
+Congratulazioni! Ora nella tua Data Warehouse sono presenti raggruppamenti di canali di Google Analytics, il che significa che puoi analizzare i dati da una nuova prospettiva:
 
 ![Segmentazione della metrica Numero di ordini per canale](../../assets/GA_Channel_Gif.gif)
 
-In questo esempio, abbiamo iniziato con la segmentazione semplice **Numero di ordini** metrica per **Canale**. Ora tocca a te - vai a testare la tua nuova colonna e vedi quali tendenze puoi identificare nei tuoi dati del canale Google Analytics!
+In questo esempio, hai iniziato a utilizzare la funzione semplice, ovvero segmentare il **Numero di ordini** metrica per **Canale**. Ora tocca a te: prova la nuova colonna e scopri le tendenze da identificare nei dati del canale Google Analytics.
 
 ## Documentazione correlata
 
 * [Utilizzo del Report Builder](../../tutorials/using-visual-report-builder.md)
 * [Previsto[!DNL Google ECommerce]dati](../importing-data/integrations/google-ecommerce-data.md)
-* [Costruzione[!DNL Google ECommerce]dimensioni con i dati relativi all’ordine e al cliente](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [Generazione[!DNL Google ECommerce]dimensioni con dati di ordini e clienti](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
 * [Quali sono le fonti e i canali di acquisizione più importanti?](../analysis/most-value-source-channel.md)

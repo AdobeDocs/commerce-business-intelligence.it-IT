@@ -1,29 +1,29 @@
 ---
-title: Aggiungere grafici alle dashboard
-description: Scopri come aggiungere grafici alle dashboard utilizzando la funzione Aggiungi rapporto .
+title: Aggiungere grafici ai dashboard
+description: Scopri come aggiungere grafici alle dashboard utilizzando la funzione Add Report (Aggiungi rapporto).
 exl-id: 4a4f14c3-a6ab-4abc-9451-2a0f2fcf06a2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '120'
 ht-degree: 0%
 
 ---
 
-# Aggiungere grafici alle dashboard
+# Aggiungere grafici ai dashboard
 
-È possibile aggiungere grafici esistenti alle dashboard utilizzando `Add Report` situato nell&#39;area in alto a destra dello schermo. Lo stesso grafico può essere aggiunto a più dashboard, il che significa che se il grafico viene modificato, tutte le dashboard con questo grafico rifletteranno la modifica.
+I grafici esistenti possono essere aggiunti alle dashboard utilizzando `Add Report` , situata nell&#39;area superiore destra dello schermo. Lo stesso grafico può essere aggiunto a più dashboard, il che significa che se il grafico viene modificato, tutte le dashboard con questo grafico riflettono la modifica.
 
 >[!NOTE]
 >
->Clic **[!UICONTROL Add Report]** non equivale a fare clic **[!UICONTROL Save As]** nell’editor grafico. `Add Report` aggiunge semplicemente il grafico al quadro comandi, mentre `Save As` crea una nuova versione di un grafico esistente.
+>Clic **[!UICONTROL Add Report]** non equivale a fare clic su **[!UICONTROL Save As]** nell’editor grafico. `Add Report` si limita ad aggiungere il grafico al dashboard, mentre, `Save As` crea una versione di un grafico esistente.
 
 ## Aggiungi un grafico
 
-1. Fai clic su **[!UICONTROL Add Report]**. Verrà visualizzato un elenco dei grafici esistenti.
+1. Clic **[!UICONTROL Add Report]**. Viene visualizzato un elenco dei grafici esistenti.
 
-1. Cerca o fai clic sul nome del grafico da aggiungere.
+1. Cercare o fare clic sul nome del grafico da aggiungere.
 
-1. Il grafico verrà aggiunto al dashboard.
+1. Il grafico viene aggiunto al dashboard.
 
 Esempio:
 

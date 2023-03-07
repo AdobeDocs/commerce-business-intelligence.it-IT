@@ -1,121 +1,121 @@
 ---
-title: Identificazione delle origini e dei canali di marketing più importanti
-description: Scopri alcuni rapporti che puoi utilizzare per scoprire i tuoi canali di marketing più importanti.
+title: Identificazione delle fonti e dei canali di marketing più importanti
+description: Scopri alcuni rapporti che puoi utilizzare per scoprire i canali di marketing più importanti.
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
 
-# Identificare le origini di marketing di successo
+# Identificare le origini di marketing corrette
 
-Hai fatto ricerche sul pubblico, hai creato la campagna, hai investito in alcuni canali di marketing. Ora che è passato un po&#39; di tempo, come stanno funzionando quei canali? Quale canale ha portato il maggior numero di nuovi utenti? Quale fonte ha contribuito di più al vostro fatturato totale?
+Hai ricercato il tuo pubblico, creato la tua campagna, investito in alcuni canali di marketing. Ora che è passato un po&#39; di tempo, come stanno andando quei canali? Quale canale ha attirato il maggior numero di nuovi utenti? Qual è la fonte che ha contribuito maggiormente al fatturato totale?
 
-Con [!DNL MBI], puoi segmentare facilmente i ricavi e gli utenti per origine di riferimento, indipendentemente dal fatto che corrisponda a [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) o campi dati personalizzati. Questa segmentazione ti consentirà di trovare i canali con le prestazioni migliori e di investire meglio il tuo budget di marketing.
+Con [!DNL MBI], puoi segmentare facilmente i ricavi e gli utenti per origine di riferimento, a seconda che corrisponda a [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) o campi dati personalizzati. Questa segmentazione ti consente di trovare i canali con le prestazioni migliori e di investire meglio nel budget di marketing.
 
-In questo articolo, esaminiamo alcuni rapporti che puoi utilizzare per scoprire i tuoi canali di marketing più importanti:
+Questo articolo esplora alcuni rapporti che puoi utilizzare per scoprire i tuoi canali di marketing più importanti:
 
 * [Nuovi utenti per origini](#newusersbysource)
-* [Ricavi medi per ciclo di vita per origine utente](#avglifetimerev)
-* [Valore medio dell&#39;ordine per origine utente](#avgorderval)
-* [Entrate per data di registrazione utente e origini](#revbyregdateandsource)
+* [Ricavi medi nel ciclo di vita per origine utente](#avglifetimerev)
+* [Valore medio ordine per origine utente](#avgorderval)
+* [Ricavi per data di registrazione utente e origini](#revbyregdateandsource)
 * [Ripeti ordini per origine utente](#repeatordersbysource)
 
 ## Prerequisiti {#prereqs}
 
-Per creare le analisi in questo articolo, devi accedere ai dati di origine di acquisizione di marketing o di riferimento. Se non lo stai già tracciando, dovrai portare [ordinare dati di origine del riferimento da [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) in [!DNL MBI] prima di continuare. Inoltre, l’aggiunta di informazioni sul dispositivo utente alle analisi consente di vedere quale tecnologia vengono utilizzati i riferimenti.
+Per generare le analisi in questo articolo, devi accedere ai dati di origine di acquisizione marketing/riferimento. Se non lo stai già tracciando, devi portare [ordina dati origine riferimento da [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) in [!DNL MBI] prima di continuare. Inoltre, l’aggiunta di informazioni sul dispositivo utente alle analisi ti consente di vedere quale tecnologia vengono utilizzati i tuoi riferimenti.
 
 ## Nuovi utenti per origine {#newusersbysource}
 
-Valutare le prestazioni delle fonti di riferimento è fondamentale per determinare i canali più preziosi. Questo rapporto mostra il numero di utenti appena registrati, per fonte di acquisizione, nel tempo, consentendo di tenere traccia delle prestazioni delle fonti di riferimento nell’acquisizione di nuovi utenti registrati.
+La valutazione delle prestazioni delle origini di riferimento è fondamentale per determinare i canali più importanti. Questo rapporto mostra il numero di utenti appena registrati, per origine di acquisizione, nel tempo, consentendo in tal modo di tenere traccia delle prestazioni delle origini di riferimento nell’acquisizione di nuovi utenti registrati.
 
-Per creare questo rapporto nel [Report Builder](../../tutorials/using-visual-report-builder.md), aggiungi **Nuovi utenti** metrica (o metrica equivalente che conta il numero di nuovi utenti nel tempo) al rapporto. Quindi procedi come segue:
+Per creare questo report in [Report Builder](../../tutorials/using-visual-report-builder.md), aggiungi **Nuovi utenti** metrica (o una metrica equivalente che conta il numero di nuovi utenti nel tempo) per il rapporto. Quindi, effettua le seguenti operazioni:
 
-1. Imposta la [!UICONTROL Time Period] al periodo di registrazione che si desidera analizzare.
-1. Imposta la [!UICONTROL Interval] mensile.
-1. Imposta [!UICONTROL Group By] per acquisire (o referral) la sorgente e selezionare le sorgenti da includere.
-1. Per questo esempio, abbiamo utilizzato il `stacked columns` [!UICONTROL chart type].
+1. Imposta il [!UICONTROL Time Period] al periodo di registrazione che desideri analizzare.
+1. Imposta il [!UICONTROL Interval] a mensile.
+1. Imposta [!UICONTROL Group By] all&#39;origine di acquisizione (o riferimento) e selezionare le origini che si desidera includere.
+1. In questo esempio viene utilizzato `stacked columns` [!UICONTROL chart type].
 
-Ecco una passeggiata visiva:
+Di seguito è riportata una procedura dettagliata:
 
 ![Creazione di un rapporto Nuovi utenti per origine.](../../assets/New_Users_by_source.gif)
 
-## Ricavi medi per ciclo di vita per origine utente {#avglifetimerev}
+## Ricavi medi nel ciclo di vita per origine utente {#avglifetimerev}
 
-Trovare i canali che portano nuovi utenti è importante, ma quanto sono preziosi complessivamente questi riferimenti? Questo rapporto mostra il ricavo medio del ciclo di vita degli utenti provenienti da specifiche sorgenti di acquisizione nel tempo. In altre parole, questo ti consente di vedere se gli utenti acquisiti da una particolare fonte spendono con te più di un gruppo di utenti acquisiti da una fonte diversa nel corso della loro vita.
+Individuare i canali che portano nuovi utenti è importante, ma quanto sono importanti in generale queste referenze? Questo rapporto mostra i ricavi medi nel corso della vita degli utenti da fonti di acquisizione specifiche nel tempo. In altre parole, questo consente di vedere se gli utenti acquisiti da una particolare origine spendono di più con te nel corso della loro vita rispetto a un gruppo di utenti acquisiti da un’origine diversa.
 
-Per creare questo rapporto nel Report Builder, aggiungi il **Ricavi a vita media** al rapporto. Quindi procedi come segue:
+Per creare questo rapporto nel Report Builder, aggiungi **Ricavi medi nel ciclo di vita** metrica al rapporto. Quindi, effettua le seguenti operazioni:
 
-1. Imposta la [!UICONTROL Time Period] al periodo di tempo da analizzare.
-1. Imposta la [!UICONTROL Interval] mensile.
-   [!UICONTROL Group By] per acquisire (o referral) la sorgente e selezionare le sorgenti da includere.
-1. Per questo esempio, abbiamo utilizzato il `line chart` digitare.
+1. Imposta il [!UICONTROL Time Period] al periodo di tempo che si desidera analizzare.
+1. Imposta il [!UICONTROL Interval] a mensile.
+   [!UICONTROL Group By] all&#39;origine di acquisizione (o riferimento) e selezionare le origini che si desidera includere.
+1. In questo esempio viene utilizzato `line chart` tipo.
 
-Ecco una procedura dettagliata visiva:
+Di seguito è riportata una procedura dettagliata:
 
-![Creazione di un ricavo medio a vita per origine utente](../../assets/Lifetime_revenue_by_user_source.gif).
+![Creazione di un ricavo medio lungo tutto l’arco della vita per origine utente](../../assets/Lifetime_revenue_by_user_source.gif).
 
-In questo esempio vengono esaminati solo i ricavi del ciclo di vita, ma puoi anche replicare questa analisi per esaminare [!UICONTROL Number of orders] o [!UICONTROL Distinct buyers] per origine di riferimento.
+Questo esempio considera solo i ricavi relativi al ciclo di vita, ma puoi anche replicare questa analisi per esaminare [!UICONTROL Number of orders] o [!UICONTROL Distinct buyers] per origine di riferimento.
 
-## Valore medio dell&#39;ordine per origine utente {#avgorderval}
+## Valore medio ordine per origine utente {#avgorderval}
 
-Per ottenere una migliore idea di quanto denaro spendono gli utenti di una specifica fonte di acquisizione, puoi creare un rapporto che esamina il loro valore medio dell&#39;ordine. In questo modo potrai verificare se gli utenti acquisiti da una particolare origine spendono più per ordine rispetto agli utenti di un’altra origine.
+Per avere un’idea migliore di quanto denaro spendono gli utenti da una specifica origine di acquisizione, puoi creare un rapporto che considera il loro valore medio dell’ordine. Questo consente di monitorare se gli utenti acquisiti da una particolare origine spendono di più per ordine rispetto agli utenti di un’altra origine.
 
-Per creare questo rapporto nel Report Builder, aggiungi il **Valore medio dell&#39;ordine** e quindi procedi come segue:
+Per creare questo rapporto nel Report Builder, aggiungi **Valore medio dell’ordine** ed effettuare le seguenti operazioni:
 
-1. Imposta la [!UICONTROL Time Period] al periodo di registrazione che si desidera analizzare.
-1. Imposta la [!UICONTROL Time Interval] mensile.
-1. Imposta [!UICONTROL Group By] per acquisire (o referral) la sorgente e selezionare le sorgenti da includere.
-1. Per questo esempio, abbiamo utilizzato il **colonne sovrapposte** tipo di grafico.
+1. Imposta il [!UICONTROL Time Period] al periodo di registrazione che desideri analizzare.
+1. Imposta il [!UICONTROL Time Interval] a mensile.
+1. Imposta [!UICONTROL Group By] all&#39;origine di acquisizione (o riferimento) e selezionare le origini che si desidera includere.
+1. In questo esempio viene utilizzato **colonne sovrapposte** tipo di grafico.
 
-Ecco una procedura dettagliata visiva:
+Di seguito è riportata una procedura dettagliata:
 
-![Creazione di un valore dell&#39;ordine medio per report origine utente.](../../assets/Average_order_value_by_source.gif)
+![Creazione di un report Valore medio ordine per origine utente.](../../assets/Average_order_value_by_source.gif)
 
-## Entrate totali per data di registrazione utente e origine {#revbyregdateandsource}
+## Ricavi totali per data e origine di registrazione utente {#revbyregdateandsource}
 
-L’analisi dei ricavi per tutta la durata di vita di cui ci siamo occupati prima ti consente di esaminare i ricavi medi per tutta la vita degli utenti acquisiti da diverse fonti, ma cosa dire dei ricavi per tutta la vita? Questo rapporto ti consente di identificare il volume complessivo dei ricavi generati dagli utenti registrati in un momento specifico e da un’origine specifica.
+L’analisi dei ricavi nel ciclo di vita che è stata trattata in precedenza consente di esaminare i ricavi medi nel ciclo di vita degli utenti acquisiti da origini diverse. Ma cosa succede per i ricavi totali nel ciclo di vita? Questo rapporto ti consente di identificare la quantità complessiva di ricavi generati dagli utenti registrati durante un periodo di tempo specifico e da un’origine specifica.
 
-Per creare questo rapporto nel Report Builder, aggiungi il `Revenue by user registration date` metrica. Se non [creato questa metrica](../../data-user/reports/ess-manage-data-metrics.md) puoi già eseguire questa operazione replicando il `Revenue` e modifica della metrica `time stamp` a `creation date`. Dopo aver aggiunto la metrica, procedi come segue:
+Per creare questo rapporto nel Report Builder, aggiungi `Revenue by user registration date` metrica. Se non è stato [ha creato questa metrica](../../data-user/reports/ess-manage-data-metrics.md) già, è possibile farlo replicando il `Revenue` metrica e modifica della `time stamp` a dell&#39;utente `creation date`. Dopo aver aggiunto la metrica, effettua le seguenti operazioni:
 
-1. Imposta la [!UICONTROL Time Period] al periodo di registrazione che si desidera analizzare.
-1. Imposta la [!UICONTROL Time Interval] mensile.
-1. Imposta [!UICONTROL Group By] per acquisire (o referral) la sorgente e selezionare le sorgenti da includere.
-1. Per questo esempio, abbiamo utilizzato il `stacked columns` tipo di grafico.
+1. Imposta il [!UICONTROL Time Period] al periodo di registrazione che desideri analizzare.
+1. Imposta il [!UICONTROL Time Interval] a mensile.
+1. Imposta [!UICONTROL Group By] all&#39;origine di acquisizione (o riferimento) e selezionare le origini che si desidera includere.
+1. In questo esempio viene utilizzato `stacked columns` tipo di grafico.
 
-Ecco una procedura dettagliata visiva:
+Di seguito è riportata una procedura dettagliata:
 
-![Creazione di un totale di ricavi per data di registrazione utente e rapporto origine.](../../assets/Revenue_by_user_registration_date_and_source.gif)
+![Creazione di un rapporto Ricavi totali per data di registrazione utente e origine.](../../assets/Revenue_by_user_registration_date_and_source.gif)
 
 ## Ripeti ordini per origine utente {#repeatordersbysource}
 
-Il rapporto Valore ordine medio mostra in media la spesa degli utenti acquisiti da una particolare origine durante l&#39;esecuzione di un ordine. Questo rapporto, tuttavia, non mostra se gli stessi utenti sono clienti ripetuti. Ma con gli ordini di ripetizione per le origini degli utenti, puoi vedere se gli utenti di una particolare origine effettuano acquisti ripetuti più o meno.
+Il rapporto Valore medio ordine mostra, in media, quanti utenti acquisiti da una determinata origine spendono quando si effettua un ordine. Questo rapporto, tuttavia, non mostra se gli stessi utenti sono clienti frequenti. Tuttavia, con la funzione Ripeti ordini da parte delle origini utenti, è possibile verificare se gli utenti di una determinata origine effettuano acquisti più o meno ripetuti.
 
-Per creare questo rapporto nel [Report Builder](../../tutorials/using-visual-report-builder.md), aggiungi **Numero di ordini** e quindi procedi come segue:
+Per creare questo report in [Report Builder](../../tutorials/using-visual-report-builder.md), aggiungi **Numero di ordini** ed effettuare le seguenti operazioni:
 
-1. Imposta la [!UICONTROL Time Period] al periodo di registrazione che si desidera analizzare.
-1. Imposta la [!UICONTROL Time Interval] mensile.
-1. Aggiungi un [!UICONTROL filter] in modo che siano inclusi solo gli utenti con ordini di ripetizione:
+1. Imposta il [!UICONTROL Time Period] al periodo di registrazione che desideri analizzare.
+1. Imposta il [!UICONTROL Time Interval] a mensile.
+1. Aggiungi un [!UICONTROL filter] in modo che siano inclusi solo gli utenti con ordini ripetuti:
 
-   Numero ordine dell&#39;utente maggiore di 1
+   Numero ordine utente maggiore di 1
 
-1. Imposta [!UICONTROL Group By] per acquisire (o referral) la sorgente e selezionare le sorgenti da includere.
-1. Per questo esempio, abbiamo utilizzato il `stacked columns` tipo di grafico.
+1. Imposta [!UICONTROL Group By] all&#39;origine di acquisizione (o riferimento) e selezionare le origini che si desidera includere.
+1. In questo esempio viene utilizzato `stacked columns` tipo di grafico.
 
-Ecco una procedura dettagliata visiva:
+Di seguito è riportata una procedura dettagliata:
 
-![Creazione di un report di ripetizione ordini per origine utente.](../../assets/Repeat_orders_by_user_source.gif)
+![Creazione di un rapporto Ordini ripetuti per origine utente.](../../assets/Repeat_orders_by_user_source.gif)
 
 
 ## Ritorno a capo {#wrapup}
 
-In questo articolo, abbiamo trattato solo alcune analisi che puoi utilizzare per analizzare il valore dei tuoi canali di acquisizione e marketing, ma questa è solo la punta dell&#39;iceberg. Se avete creato un&#39;analisi potente che non abbiamo trattato qui, fateci capire cosa state facendo nei commenti.
+Questo articolo ha toccato solo alcune analisi che puoi utilizzare per analizzare il valore dei tuoi canali di acquisizione e marketing, ma questa è solo la punta dell&#39;iceberg.
 
-## Correlati {#related}
+## Correlato {#related}
 
 * [Tracciamento dell’origine di riferimento dell’ordine tramite [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md)
-* [Collegamento del [!DNL Google Adwords] account](../importing-data/integrations/google-adwords.md)
-* [Costruzione [!DNL Google ECommerce] dimensioni con ordini e dati cliente](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [Collegamento [!DNL Google Adwords] account](../importing-data/integrations/google-adwords.md)
+* [Generazione [!DNL Google ECommerce] dimensioni con ordini e dati cliente](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
 * [Best practice per l’assegnazione di tag UTM in [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

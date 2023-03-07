@@ -1,38 +1,38 @@
 ---
-title: Importare altri dati di spesa degli annunci
-description: Scopri come importare dati offline o di altra spesa pubblicitaria in [!DNL MBI].
+title: Importare altri dati sulla spesa pubblicitaria
+description: Scopri come importare i dati offline o di altri annunci in [!DNL MBI].
 exl-id: 6f12a397-0927-4e87-95ff-3a55ccc9e14b
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
-# Importare altri dati di spesa degli annunci
+# Importare altri dati sulla spesa pubblicitaria
 
-Il caricamento dei dati di spesa pubblicitaria consente di misurare il ROI della campagna sposando i costi pubblicitari e il cliente `lifetime value (CLV)` degli utenti acquisiti dalle campagne.
+Il caricamento dei dati sulla spesa pubblicitaria consente di misurare il ROI della campagna sposando il costo pubblicitario e il cliente `lifetime value (CLV)` degli utenti acquisiti dalle campagne.
 
-## Caricamento dei dati dei costi pubblicitari
+## Caricamento dei dati sui costi della pubblicità
 
-Il primo passo nell’analisi dei dati di spesa degli annunci consiste nell’ottenere i dati. Poiché la maggior parte delle piattaforme pubblicitarie consente di esportare i rapporti, ti consigliamo di esportare i dati non elaborati dalla piattaforma di annunci e di caricarli direttamente in [!DNL MBI] senza alcuna manipolazione. È possibile eseguire operazioni sui dati nel data warehouse, in modo da non dover raddoppiare gli sforzi.
+Il primo passaggio nell’analisi dei dati relativi ad annunci spesi è ottenere i dati. Poiché la maggior parte delle piattaforme pubblicitarie ti consentono di esportare rapporti, Adobe consiglia di esportare i dati non elaborati dalla piattaforma di annunci e caricarli direttamente in [!DNL MBI] senza alcuna manipolazione. Puoi eseguire operazioni sui dati presenti nella Data Warehouse, quindi non è necessario raddoppiare gli sforzi.
 
-Dopo aver esportato i dati di spesa dell’annuncio, utilizza il [`File Upload` caratteristica](../connecting-data/using-file-uploader.md) per inserire i dati nel data warehouse. Puoi caricare nuovi dati sullo stesso [!DNL MBI] tabella nel tempo.
+Dopo aver esportato i dati sulla spesa pubblicitaria, utilizza [`File Upload` funzionalità](../connecting-data/using-file-uploader.md) per inserire i dati nella Data Warehouse. Puoi caricare nuovi dati nello stesso [!DNL MBI] tabella nel tempo.
 
 ## Origini offline
 
-Oltre alle tue campagne online, potresti avere anche annunci offline, come alla radio o su un cartellone. Per tenere conto di questi casi, puoi caricare manualmente un foglio di calcolo con i dati dei costi in [!DNL MBI].
+Oltre alle campagne online, è possibile che siano presenti anche annunci non in linea, ad esempio alla radio o su un cartellone pubblicitario. Per tenere conto di questi casi, puoi caricare manualmente un foglio di calcolo con i dati dei costi in [!DNL MBI].
 
-La struttura della tabella illustrata di seguito è consigliata durante la creazione di un `.csv` per registrare e spendere i dati. Un file modello viene allegato anche nella parte inferiore di questo articolo per fungere da esempio. Le colonne consigliate sono:
+La struttura della tabella illustrata di seguito è consigliata per la creazione di un `.csv` file per registrare i dati relativi alle spese pubblicitarie. Nella parte inferiore di questo articolo viene inoltre allegato un file modello da utilizzare come esempio. Le colonne consigliate sono:
 
-* `ID` - Identificatore univoco per ogni riga di dati utilizzata dal database come chiave primaria. Questo deve essere diverso per ogni riga.
-* `Date` - Data di esecuzione della campagna, in formato aaaa-mm-gg.
-* `Amount` - Importo speso per la campagna.
-* `campaign` - Nome della campagna. Se utilizzi [!DNL Google Analytics] per tenere traccia degli altri dati di spesa degli annunci, deve corrispondere al nome utm\_campaign.
-* `source` - Nome di origine. Se utilizzi [!DNL Google Analytics], dovrebbe corrispondere a `utm_source` nome.
-* `other` (Facoltativo) - Puoi anche incorporare colonne aggiuntive che ti aiuteranno a segmentare campagne e costi. Può anche essere un modo per riassumere diversi nomi di campagne UTM diversi in un’unica campagna coerente a scopo di tracciamento. Anziché impostarlo manualmente, potrebbe essere utile utilizzare una ricerca V in un secondo foglio per far corrispondere ogni Nome campagna all’Altro Nome e generare qui rapporti dinamici.
+* `ID` : identificatore univoco per ogni riga di dati utilizzata dal database come chiave primaria. Deve essere diverso per ogni riga.
+* `Date` : data di esecuzione della campagna, in formato aaaa-mm-gg.
+* `Amount` - Questo è l&#39;importo speso per la campagna.
+* `campaign` - Nome della campagna. Se sta usando [!DNL Google Analytics] per tenere traccia degli altri dati sulla spesa pubblicitaria, questi devono corrispondere al nome utm\_campaign.
+* `source` - Nome di origine. Se sta usando [!DNL Google Analytics], deve corrispondere al `utm_source` nome.
+* `other` (Facoltativo) - Puoi anche incorporare colonne aggiuntive che ti aiutano a segmentare campagne e costi. Può anche essere un modo per riepilogare diversi nomi di campagne UTM diversi in un’unica campagna coerente a scopo di tracciamento. Invece di impostarlo manualmente, potrebbe essere utile utilizzare una ricerca V in un secondo foglio per far corrispondere ogni nome della campagna all’altro nome e segnalarlo qui in modo dinamico.
 
-## Correlati
+## Correlato
 
 * [Connetti [!DNL AdWords] dati](../integrations/google-adwords.md)
-* [Aumentare il ROI delle campagne pubblicitarie](../../analysis/roi-ad-camp.md)
+* [Aumentare il ROI nelle campagne pubblicitarie](../../analysis/roi-ad-camp.md)

@@ -1,132 +1,132 @@
 ---
-title: Crea[!DNL Google ECommerce]dimensioni
-description: Scopri come creare dimensioni per collegare i dati di eCommerce con i tuoi ordini e i dati dei clienti.
+title: Genera[!DNL Google ECommerce]dimensioni
+description: Scopri come creare dimensioni che collegano i dati di eCommerce con i tuoi ordini e i dati dei clienti.
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
 
-# Crea [!DNL Google ECommerce] Dimension
+# Genera [!DNL Google ECommerce] Dimension
 
 >[!NOTE]
 >
 >Richiede [Autorizzazioni amministratore](../../administrator/user-management/user-management.md).
 
-Ora che hai finito [collegamento[!DNL Google ECommerce]account](../../data-analyst/importing-data/integrations/google-ecommerce.md), cosa puoi fare con quei dati in [!DNL MBI]? In questo articolo, presentiamo le dimensioni di creazione che collegano i dati di e-commerce ai tuoi ordini e ai dati dei clienti.
+Ora che hai terminato [connessione[!DNL Google ECommerce]account](../../data-analyst/importing-data/integrations/google-ecommerce.md), cosa puoi fare con tali dati in [!DNL MBI]? Questo articolo illustra come creare dimensioni che collegano i dati di eCommerce con i tuoi ordini e i dati dei clienti.
 
-Le dimensioni che copriremo ti daranno la possibilità di creare analisi che [rispondere a domande fondamentali sui canali e sulle campagne di marketing](../../data-analyst/analysis/most-value-source-channel.md). Qual è la percentuale dei ricavi provenienti da ogni fonte? Come si confronta il valore del ciclo di vita dei clienti acquisiti da Facebook con quello di [!DNL Google]?
+Le dimensioni coperte consentono di creare analisi che [rispondi alle domande vitali sui canali e sulle campagne di marketing](../../data-analyst/analysis/most-value-source-channel.md). Quale percentuale di reddito proviene da ciascuna origine? In che modo il valore del ciclo di vita dei clienti acquisiti da Facebook è paragonabile a quello di [!DNL Google]?
 
 ## Prerequisiti e panoramica
 
-Per creare le dimensioni in questo articolo, è necessario un [!DNL Google ECommerce] tabella `orders` tabella e `customers` tabella. Queste tabelle devono essere [sincronizzato con il data warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) prima della creazione di dimensioni. Le tabelle sincronizzate vengono visualizzate nel `Synced Tables` della sezione `Data Warehouse Manager`.
+Per creare le dimensioni in questo articolo, è necessario un [!DNL Google ECommerce] tabella, un `orders` tabella e un `customers` tabella. Tali tabelle devono essere [sincronizzato nella tua Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) prima che le dimensioni possano essere create. Le tabelle sincronizzate vengono visualizzate in `Synced Tables` sezione del `Data Warehouse Manager`.
 
-Di seguito è riportato un rapido sguardo alla sincronizzazione di tabelle e colonne se hai bisogno di un aggiornamento:
+Di seguito è riportato un rapido esempio di sincronizzazione di tabelle e colonne, se è necessario un aggiornamento:
 
 ![](../../assets/Syncing_New_Columns.gif)
 
-Dopo aver creato un join dal `orders` della tabella [!DNL Google eCommerce] Le prime tre dimensioni vengono create nell’elenco seguente. Quindi, utilizziamo queste dimensioni per creare tre dimensioni utente/cliente nel `customers` tabella. Per finire, uniamo quelle colonne al `orders` tabella.
+Dopo aver creato un join da `orders` tabella al [!DNL Google eCommerce] nella tabella seguente vengono create le prime tre dimensioni nell&#39;elenco. Quindi, puoi utilizzare queste dimensioni per creare tre dimensioni utente/cliente nel `customers` tabella. Per terminare, unisci queste colonne al `orders` tabella.
 
-Di seguito sono riportate le dimensioni da noi coperte:
+Di seguito sono elencate le dimensioni coperte:
 
-* **Tabella ordini**
+* **Tabella Ordini**
 
-* Ordine [!DNL Google Analytics] source
-* Ordine [!DNL Google Analytics] medium
-* Ordine [!DNL Google Analytics]Una campagna
-* Il primo ordine del cliente [!DNL Google Analytics] source
-* Il primo ordine del cliente [!DNL Google Analytics] medium
+* Dell&#39;ordine [!DNL Google Analytics] sorgente
+* Dell&#39;ordine [!DNL Google Analytics] media
+* Dell&#39;ordine [!DNL Google Analytics]Una campagna
+* Il primo ordine del cliente [!DNL Google Analytics] sorgente
+* Il primo ordine del cliente [!DNL Google Analytics] media
 * Il primo ordine del cliente [!DNL Google Analytics] campagna
 
-* **Tabella clienti**
+* **Tabella Clienti**
 
-* Il primo ordine del cliente [!DNL Google Analytics] source
-* Il primo ordine del cliente [!DNL Google Analytics] medium
+* Il primo ordine del cliente [!DNL Google Analytics] sorgente
+* Il primo ordine del cliente [!DNL Google Analytics] media
 * Il primo ordine del cliente [!DNL Google Analytics] campagna
 
-## Creazione di dimensioni
+## Creazione delle dimensioni
 
-Per creare dimensioni, apri la [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) facendo clic su **[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]**.
+Per creare le quote, aprite [Gestione Date Warehouse](../data-warehouse-mgr/tour-dwm.md) facendo clic su **[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]**.
 
-### Tabella ordini, arrotondato 1
+### Tabella Ordini, arrotondamento 1
 
-In questo esempio, creiamo il **Ordine [!DNL Google Analytics] Origine** dimensione.
+Questo esempio crea **Dell&#39;ordine [!DNL Google Analytics] Sorgente** dimensione.
 
-1. Nell&#39;elenco delle tabelle della Data Warehouse, fai clic sulla tabella (nel nostro caso, `orders`) che contiene le informazioni sull&#39;ordine.
-1. Fai clic su **[!UICONTROL Create a Column]**.
+1. Nell&#39;elenco delle tabelle della Data Warehouse, fare clic sulla tabella (in questo caso, `orders`) che contiene le informazioni sull&#39;ordine.
+1. Clic **[!UICONTROL Create a Column]**.
 1. Denomina la colonna.
-1. Seleziona `Joined Column` dal [elenco a discesa delle definizioni](../data-warehouse-mgr/calc-column-types.md). In questo esempio, stiamo lavorando con un [rapporto uno-a-uno](../data-warehouse-mgr/table-relationships.md), che corrispondono `eCommerce.transactionID` a una riga esatta del `orders` tabella.
-1. Successivamente, è necessario definire il percorso o il modo in cui la tabella e la colonna in uso sono collegate. Fai clic sul pulsante `Select a table and column` a discesa.
-1. Il percorso di cui abbiamo bisogno non è disponibile, quindi dobbiamo crearne uno nuovo. Fai clic su **[!UICONTROL Create new Path]**.
-1. Nella finestra visualizzata, imposta la `Many` lato `orders.order\_id`o la colonna nel `orders` che contiene l’ID ordine.
-1. Sulla `One` lato, trova `Google ECommerce` quindi impostare la colonna su `transactionID`.
+1. Seleziona `Joined Column` dal [elenco a discesa delle definizioni](../data-warehouse-mgr/calc-column-types.md). Questo esempio funziona con un [relazione uno-a-uno](../data-warehouse-mgr/table-relationships.md), corrispondente al `eCommerce.transactionID` a una sola riga della `orders` tabella.
+1. Successivamente, è necessario definire il percorso o la modalità di connessione della tabella e della colonna utilizzate. Fai clic su `Select a table and column` a discesa.
+1. Il percorso necessario non è disponibile, quindi devi crearne uno nuovo. Clic **[!UICONTROL Create new Path]**.
+1. Nella finestra visualizzata, imposta `Many` lato a `orders.order\_id`o la colonna nella `orders` tabella che contiene l’ID dell’ordine.
+1. Il giorno `One` lato, trova il `Google ECommerce` , quindi impostare la colonna su `transactionID`.
 
    ![](../../assets/google-ecommerce-table.png)
 
-1. Fai clic su **[!UICONTROL Save]** per creare il percorso.
-1. Dopo aver aggiunto il percorso, fai clic sul pulsante **[!UICONTROL Select table and column]** di nuovo a discesa.
-1. Individua il `ECommerce` quindi fai clic sulla tabella `Source` colonna. Questo collega gli ordini alle informazioni di origine.
-1. Una volta tornato nello schema della tabella, fai clic su **[!UICONTROL Save]** per creare nuovamente la quota.
+1. Clic **[!UICONTROL Save]** per creare il percorso.
+1. Dopo aver aggiunto il percorso, fai clic su **[!UICONTROL Select table and column]** a discesa.
+1. Individua il `ECommerce` e quindi fare clic sul pulsante `Source` colonna. In questo modo gli ordini vengono associati alle informazioni di origine.
+1. Una volta tornato nello schema della tabella, fai clic su **[!UICONTROL Save]** di nuovo per creare la quota.
 
-Ecco un&#39;occhiata all&#39;intero processo:
+Di seguito viene illustrato l&#39;intero processo:
 
 ![](../../assets/help_center.gif)
 
-Quindi, prova a creare **Ordine [!DNL Google Analytics] medium** e `campaign`. Non cambierà molto per queste dimensioni, quindi provateci. Ma se ti imbatti, puoi controllare [la fine del presente articolo](#stuck) per vedere cosa è diverso.
+Quindi, prova a creare **Dell&#39;ordine [!DNL Google Analytics] media** e `campaign`. Non sono state apportate molte modifiche a queste dimensioni, quindi prova. Ma se vi bloccate, potete controllare [fine dell&#39;articolo](#stuck) per vedere cosa è diverso.
 
-### Tabella clienti {#customers}
+### Tabella Clienti {#customers}
 
-In questo esempio, creiamo il **Il primo ordine del cliente [!DNL Google Analytics] source** dimensione.
+Questo esempio crea **Il primo ordine del cliente [!DNL Google Analytics] sorgente** dimensione.
 
-1. Nell&#39;elenco delle tabelle della Data Warehouse, fai clic sulla tabella (nel nostro caso, `customers`) che contiene le informazioni sul cliente.
-1. Fai clic su **[!UICONTROL Create a Column]**.
+1. Nell&#39;elenco delle tabelle della Data Warehouse, fare clic sulla tabella (in questo caso, `customers`) che contiene le informazioni del cliente.
+1. Clic **[!UICONTROL Create a Column]**.
 1. Denomina la colonna.
-1. Per questo esempio, selezioniamo il `is MAX` la definizione di [elenco a discesa delle definizioni](../../data-analyst/data-warehouse-mgr/calc-column-types.md). La `is MIN` La definizione può funzionare anche se applicata a una colonna di testo con un solo valore possibile. La parte importante è garantire l&#39;impostazione di filtri adeguati, come facciamo in seguito.
-1. Fai clic sul pulsante **[!UICONTROL Select a table and column]** e seleziona il menu a discesa `orders` tabella, quindi `Order's [!DNL Google Analytics] source` colonna.
-1. Fai clic su **[!UICONTROL Save]**.
+1. Per questo esempio, seleziona la `is MAX` definizione dal [elenco a discesa delle definizioni](../../data-analyst/data-warehouse-mgr/calc-column-types.md). Il `is MIN` La definizione potrebbe anche funzionare se applicata a una colonna di testo con un solo valore possibile. È importante assicurarsi che vengano impostati i filtri corretti, operazione che si effettua in seguito.
+1. Fai clic su **[!UICONTROL Select a table and column]** e seleziona la `orders` tabella, quindi `Order's [!DNL Google Analytics] source` colonna.
+1. Clic **[!UICONTROL Save]**.
 1. Una volta tornato nello schema della tabella, fai clic su `Options` a discesa, quindi `Filters`.
-1. Fai clic su **[!UICONTROL Add Filter Set]** quindi seleziona la `Orders we count` impostato. Vogliamo includere solo gli ordini inclusi negli ordini per i quali contiamo il set di filtri, pertanto è importante che questo set di filtri sia selezionato.
-1. Fai clic su **[!UICONTROL Add Filter]**. Vogliamo trovare il primo ordine del cliente [!DNL Google Analytics] sorgente, quindi è necessario aggiungere un filtro:
+1. Clic **[!UICONTROL Add Filter Set]** e quindi selezionare `Orders we count` impostata. Si desidera includere solo gli ordini inclusi nella serie di filtri di conteggio, pertanto è importante che questa serie di filtri sia selezionata.
+1. Clic **[!UICONTROL Add Filter]**. Si desidera trovare il primo ordine del cliente [!DNL Google Analytics] quindi è necessario aggiungere un filtro:
 
-   _orders.Numero dell&#39;ordine del cliente = 1
+   _orders.Numero ordine cliente = 1
 
    _
-1. Fai clic su **[!UICONTROL Save]** per creare la dimensione.
+1. Clic **[!UICONTROL Save]** per creare la quota.
 
-Quindi, prova a creare **Il primo ordine del cliente [!DNL Google Analytics] medium** e `campaign`. Non cambierà molto per queste dimensioni, quindi provateci. Ma se ti imbatti, puoi controllare [la fine del presente articolo](#stuck) per vedere cosa è diverso.
+Quindi, prova a creare **Il primo ordine del cliente [!DNL Google Analytics] media** e `campaign`. Non sono state apportate molte modifiche a queste dimensioni, quindi prova. Ma se vi bloccate, potete controllare [fine dell&#39;articolo](#stuck) per vedere cosa è diverso.
 
-### Bonus: Tabella ordini, round 2
+### Bonus: tabella Ordini, turno 2
 
-Puoi fermarti qui, se lo desideri, ma questa sezione consente ulteriori analisi portando la **Il primo ordine del cliente [!DNL Google Analytics] dimensioni** abbiamo creato [ultima sezione](#customers) nel `orders` tabella. La creazione delle dimensioni in questa sezione ti consente di analizzare tutte le metriche create sul tuo `orders` tabella - `Revenue`, `Number of orders`, `Distinct buyers`, e così via - utilizzando [!DNL Google Analytics] attributi del primo ordine del cliente.
+Puoi fermarti qui se lo desideri, ma questa sezione abilita ulteriori analisi portando il **Il primo ordine del cliente [!DNL Google Analytics] dimensioni** creato in [ultima sezione](#customers) in `orders` tabella. La creazione delle dimensioni in questa sezione ti consente di analizzare tutte le metriche basate sulle `orders` tabella - `Revenue`, `Number of orders`, `Distinct buyers`, e così via - utilizzando [!DNL Google Analytics] attributi del primo ordine di un cliente.
 
-In questo esempio, ci uniamo al `Customer's first order's [!DNL Google Analytics] source` alla dimensione `orders` tabella.
+Questo esempio si aggiunge a `Customer's first order's [!DNL Google Analytics] source` dimensione al `orders` tabella.
 
-1. Nell&#39;elenco delle tabelle della Data Warehouse, fai clic sulla tabella (nel nostro caso, `orders`) che contiene le informazioni sull&#39;ordine.
-1. Fai clic su **[!UICONTROL Create a Column]**.
+1. Nell&#39;elenco delle tabelle della Data Warehouse, fare clic sulla tabella (in questo caso, `orders`) che contiene le informazioni sull&#39;ordine.
+1. Clic **[!UICONTROL Create a Column]**.
 1. Denomina la colonna.
-1. Seleziona `Joined Column` dal menu a discesa definizione . In questo modo le dimensioni del cliente create nella sezione precedente verranno unite al `orders` tabella.
-1. Fai clic sul pulsante **[!UICONTROL Select a table and column]** , quindi seleziona il `customers` la tabella e `Customer's first order's [!DNL Google Analytics] source` colonna.
-1. Se un percorso non viene compilato automaticamente, selezionare il percorso che meglio connette i clienti e le tabelle degli ordini.
-1. Fai clic su **[!UICONTROL Save]** per creare la dimensione.
+1. Seleziona `Joined Column` dal menu a discesa definizione. In questo modo le dimensioni cliente create nella sezione precedente vengono unite al `orders` tabella.
+1. Fai clic su **[!UICONTROL Select a table and column]** , quindi seleziona la `customers` tabella e `Customer's first order's [!DNL Google Analytics] source` colonna.
+1. Se un percorso non viene popolato automaticamente, selezionare il percorso che meglio connette le tabelle clienti e ordini.
+1. Clic **[!UICONTROL Save]** per creare la quota.
 
-Ecco un&#39;occhiata all&#39;intero processo:
+Di seguito viene illustrato l&#39;intero processo:
 
 ![](../../assets/help_center2.gif)
 
-Completare unendo i `Customer's first order's` media e `campaign` le dimensioni `orders` tabella. Fai un tentativo, e come abbiamo detto prima, controlla [la fine dell&#39;articolo](#stuck) se hai bisogno di aiuto.
+Completa unendo il `Customer's first order's` media e `campaign` dimensioni per `orders` tabella. Unire le dimensioni e, in caso di problemi, estrarre [fine dell&#39;articolo](#stuck) se ha bisogno di aiuto.
 
 ### Ritorno a capo
 
-Abbiamo finito di creare le dimensioni, il che significa che ora possiamo creare analisi potenti che monitorano le prestazioni dei nostri vari canali e campagne. Sappiamo che non vede l&#39;ora di iniziare, ma ricorda **le nuove colonne saranno disponibili solo al completamento dell&#39;aggiornamento successivo**.
+Hai terminato di creare le dimensioni, il che significa che ora puoi creare potenti analisi che tengono traccia delle prestazioni dei vari canali e campagne. Ricorda che il **le nuove colonne saranno disponibili solo al termine del prossimo aggiornamento**.
 
-Abbiamo coperto alcune delle dimensioni più popolari in questo articolo, ma il cielo è il limite - prova a creare il tuo o sentire libero di ping a noi se si desidera aiuto esplorare altre opzioni. 
+Alcune delle dimensioni più popolari sono coperte in questo articolo, ma il cielo è il limite - provare a creare il proprio o sentirsi liberi di ping noi se si desidera aiuto con l&#39;esplorazione di altre opzioni. 
 
-### Sono bloccato! cosa è diverso? {#stuck}
+### Sono bloccato! Cos&#39;è diverso? {#stuck}
 
-**`Orders`tabella n. 1:** Durante la creazione del `Order's [!DNL Google Analytics]` media e `campaign` dimensioni, la differenza sarà rappresentata dalle colonne selezionate al passaggio 12. Nel nostro esempio, la colonna era `Source`.
+**`Orders`#1 tabella:** Durante la creazione di `Order's [!DNL Google Analytics]` media e `campaign` dimensioni, la differenza è rappresentata dalle colonne selezionate nel passaggio 12. In questo esempio, la colonna era `Source`.
 
-**`Customers`tabella:** Durante la creazione del `Customer's first order's [!DNL Google Analytics]` media e `campaign` dimensioni, la differenza sarà rappresentata dalle colonne selezionate al passaggio 5. Nel nostro esempio, la colonna era `Order's [!DNL Google Analytics]` sorgente.
+**`Customers`tabella:** Durante la creazione di `Customer's first order's [!DNL Google Analytics]` media e `campaign` dimensioni, la differenza è rappresentata dalle colonne selezionate nel passaggio 5. In questo esempio, la colonna era `Order's [!DNL Google Analytics]` sorgente.
 
-**`Orders`tabella n. 2:** Quando si unisce `Customer's first order's [!DNL Google Analytics]` media e `campaign` alle colonne `orders` tabella, la differenza sarà rappresentata dalle colonne selezionate al passaggio 5. Nel nostro esempio, la colonna era `Customer's first order's [!DNL Google Analytics]` sorgente.
+**`Orders`#2 tabella:** Quando si unisce al `Customer's first order's [!DNL Google Analytics]` media e `campaign` colonne a `orders` tabella, la differenza è rappresentata dalle colonne selezionate nel passaggio 5. In questo esempio, la colonna era `Customer's first order's [!DNL Google Analytics]` sorgente.

@@ -2,24 +2,24 @@
 title: Dati Google Analytics previsti
 description: Scopri come interagire con le metriche Google Analytics.
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
 # Previsto [!DNL Google Analytics] dati
 
-Dopo aver connesso un [!DNL Google Analytics] integrazione, è possibile interagire con [!DNL Google Analytics] metriche *immediatamente nel`Visual Report Builder`*. Quando si immette la variabile `Visual Report Builder`, se fai clic su **[!UICONTROL Add a Metric]**, una serie di metriche dal [!DNL Google Analytics] i profili verranno visualizzati in un elenco a discesa immediatamente sotto le metriche nel data warehouse.
+Dopo aver connesso un [!DNL Google Analytics] integrazione, puoi interagire con il tuo [!DNL Google Analytics] metriche *immediatamente nella`Visual Report Builder`*. Quando si immette `Visual Report Builder`, se si fa clic su **[!UICONTROL Add a Metric]**, una serie di metriche dalla [!DNL Google Analytics] Il profilo viene visualizzato in un menu a discesa immediatamente sotto le metriche nella Data Warehouse.
 
-La [!DNL Google Analytics] integrazione *live* — questo significa che `Report Builder` richiede dati da [!DNL Google Analytics] *immediatamente* quando aggiungi una metrica al rapporto. Significa anche che le metriche a cui puoi accedere sono definite esattamente come sono in [!DNL Google Analytics]e che tali valori non sono *immagazzinato* nel tuo [!DNL MBI] account — visualizzato solo visivamente nei rapporti.
+Il [!DNL Google Analytics] l’integrazione è *live* — ciò significa che `Report Builder` richiede dati da [!DNL Google Analytics] *immediatamente* quando aggiungi una metrica al rapporto. Significa anche che le metriche a cui puoi accedere sono definite esattamente come sono in [!DNL Google Analytics]e che questi valori non sono *immagazzinato* nel tuo [!DNL MBI] account — viene visualizzato solo visivamente nei rapporti.
 
-[!DNL Google Analytics] integrazioni in [!DNL MBI] utilizzare [!DNL Google Analytics] [API di reportistica di base](https://developers.google.com/analytics/devguides/reporting/core/v3/)e supportano le metriche e le dimensioni seguenti.
+[!DNL Google Analytics] integrazioni in [!DNL MBI] utilizzare il [!DNL Google Analytics] [API di reporting di base](https://developers.google.com/analytics/devguides/reporting/core/v3/)e supportano le metriche e le dimensioni seguenti.
 
 >[!NOTE]
 >
->Per evitare risultati imprevisti o insensati, verifica che tutte le dimensioni utilizzate siano compatibili con le metriche utilizzate nella `Report Builder`. Puoi controllare [qui](https://developers.google.com/analytics/devguides/reporting/core/dimsmets).
+>Per evitare risultati imprevisti o senza senso, verifica che tutte le dimensioni utilizzate siano compatibili con una o più metriche utilizzate in `Report Builder`. Puoi controllare [qui](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## Metriche supportate
 
@@ -73,11 +73,11 @@ La [!DNL Google Analytics] integrazione *live* — questo significa che `Report 
 | `All Goals Conversion Rate` | `ga:goalConversionRateAll` |
 | `Total Goal Value` | `ga:goal1ValueAll` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Dimension supportati
 
-| [!DNL MBI] Nome visualizzato | [!DNL Google Analytics] Nome/Formula | Raggruppabile? |
+| [!DNL MBI] Nome visualizzato | [!DNL Google Analytics] Nome/Formula | Raggruppabili? |
 | --- | --- | --- |
 | `Ad Content` | `ga:adContent` | `Yes` |
 | `Ad Group` | `ga:adGroup` | `Yes` |
@@ -142,4 +142,4 @@ La [!DNL Google Analytics] integrazione *live* — questo significa che `Report 
 | `Custom (User Defined) Value` | `ga:userDefinedValue` | `Yes` |
 | `Year` | `ga:year` | `No` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

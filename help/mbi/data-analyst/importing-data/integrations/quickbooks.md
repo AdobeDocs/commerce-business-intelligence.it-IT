@@ -1,10 +1,10 @@
 ---
-title: Connetti QuickBooks
-description: Scopri come le tue finanze aziendali possono ora vivere insieme ai tuoi dati di vendita e marketing, consentendoti di tenere sotto controllo in modo rapido e semplice le spese, identificare le spese eccessive e altro ancora.
+title: Collega QuickBooks
+description: Scopri come le finanze della tua azienda possono ora vivere insieme ai dati di vendita e marketing, consentendoti di tenere sotto controllo in modo rapido e semplice le spese, identificare le spese eccessive e altro ancora.
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
@@ -17,25 +17,25 @@ ht-degree: 0%
 
 ![](../../../assets/Quickbooks.png)
 
-Con la [!DNL QuickBooks] integrazione, le finanze aziendali possono ora vivere insieme ai dati di vendita e marketing, consentendoti di tenere sotto controllo in modo rapido e semplice le spese, identificare le spese eccessive e altro ancora.
+Con il [!DNL QuickBooks] integrazione, le finanze aziendali possono ora vivere insieme ai dati di vendita e marketing, consentendo di tenere sotto controllo in modo rapido e semplice le spese, identificare le spese eccessive e altro ancora.
 
 ## Aggiungi [!DNL QuickBooks] come origine dati in [!DNL MBI]
 
-1. Vai a `Integrations` pagina sotto **[!UICONTROL Manage Data** > **Data Sources]**.
-1. Fai clic su **[!UICONTROL Add Integration]**, situato sul lato destro dello schermo sopra il `Data Sources` tabella.
-1. Fai clic sul pulsante `QuickBooks` icona.
-1. Fai clic su **[!UICONTROL Connect to Quickbooks]**.
+1. Vai a `Integrations` pagina in **[!UICONTROL Manage Data** > **Data Sources]**.
+1. Clic **[!UICONTROL Add Integration]**, situato sul lato destro dello schermo sopra la `Data Sources` tabella.
+1. Fai clic su `QuickBooks` icona.
+1. Clic **[!UICONTROL Connect to Quickbooks]**.
 
-## Concessione [!DNL MBI] accesso al [!DNL QuickBooks] dati
+## Concedi [!DNL MBI] accesso al tuo [!DNL QuickBooks] dati
 
-Dopo aver fatto clic su **[!UICONTROL Connect to Quickbooks]**, accedi al [!DNL Intuit] e autorizzare la connessione:
+Dopo aver fatto clic su **[!UICONTROL Connect to Quickbooks]**, accedi al [!DNL Intuit] account e autorizzare la connessione:
 
 ![](../../../assets/QuickBooks_App_Store_1.jpg)
 
-1. In `Search for a company` seleziona l’azienda dal menu a discesa.
-1. Fai clic su **[!UICONTROL Next]**. Viene reindirizzato a [!DNL MBI] e *Connessione riuscita.* il messaggio viene visualizzato nella parte superiore dello schermo.
+1. In `Search for a company` a discesa, seleziona la tua azienda.
+1. Clic **[!UICONTROL Next]**. Sei stato reindirizzato a [!DNL MBI] e un *Connessione riuscita* Il messaggio viene visualizzato nella parte superiore dello schermo.
 
-## Correlati
+## Correlato
 
 * [Previsto [!DNL QuickBooks] dati](../integrations/quickbooks-data.md)
-* [Riautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

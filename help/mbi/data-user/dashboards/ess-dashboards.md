@@ -1,106 +1,106 @@
 ---
 title: Dashboard
-description: Scopri come creare e utilizzare un dashboard.
+description: Scopri come creare e utilizzare una dashboard.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
 
 # Dashboard
 
-[!DNL MBI] Le dashboard ti offrono una panoramica rapida delle prestazioni e delle attività di vendita del tuo negozio. Le singole dashboard possono essere condivise con altri utenti e organizzate in gruppi logici. Puoi anche impostare diversi livelli di autorizzazione per altri utenti.
+[!DNL MBI] Le dashboard offrono una rapida panoramica delle prestazioni del negozio e dell&#39;attività di vendita. I singoli dashboard possono essere condivisi con altri utenti e organizzati in gruppi logici. È inoltre possibile impostare diversi livelli di autorizzazione per altri utenti.
 
-È facile creare un nuovo rapporto, aggiungerlo a un dashboard ed esportare i dati in Excel. I grafici e i rapporti possono essere ridimensionati e trascinati in posizione sul dashboard.
+È facile creare un rapporto, aggiungerlo a una dashboard ed esportare i dati in Excel. Grafici e report possono essere ridimensionati e trascinati nella posizione desiderata nel dashboard.
 
 ![Dashboard](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
 ## Creazione di dashboard {#createdash}
 
-Le dashboard sono essenzialmente bucket a tema condivisibili per le analisi create nei Report Builder. Questo è il modo in cui puoi incoraggiare il tuo team a collaborare e mantenere un&#39;unica fonte di verità in tutta la tua organizzazione.
+Le dashboard sono contenitori condivisibili a tema per le analisi create nei Report Builder. In questo modo puoi incoraggiare il tuo team a collaborare e mantenere un’unica fonte di verità in tutta l’organizzazione.
 
-*Se sei un amministratore o un utente Standard*, puoi creare un dashboard facendo clic sul pulsante `Dashboard Options` menu a discesa e scelta `Create New dashboard`.
+*Se sei un amministratore o un utente Standard*, è possibile creare un dashboard facendo clic sul pulsante `Dashboard Options` menu a discesa e scelta `Create New dashboard`.
 
-L’aspetto delle dashboard create dipende interamente dall’utente. Puoi disporre e ridimensionare gli elementi nel dashboard in base alle tue esigenze e al flusso di lavoro.
+Sta a te definire l’aspetto delle dashboard create. Puoi disporre e ridimensionare gli elementi nel dashboard in qualsiasi modo desideri in base alle tue esigenze e al tuo flusso di lavoro.
 
 ![disporre l&#39;elemento del dashboard di ridimensionamento](../../assets/arrange_resize_dashboard_element.gif)
 
-### Crea un nuovo dashboard
+### Creare un dashboard
 
-1. Scegliere **[!UICONTROL Dashboards]**.
+1. Scegliere dal menu **[!UICONTROL Dashboards]**.
 
-1. Il nome del dashboard predefinito viene visualizzato nell&#39;angolo superiore sinistro dell&#39;intestazione del dashboard. Fai clic sulla freccia giù (![](../../assets/magento-bi-btn-down.png)) per visualizzare le opzioni disponibili.
+1. Il nome del dashboard di default viene visualizzato nell&#39;angolo superiore sinistro dell&#39;intestazione del dashboard. Fare clic sulla freccia giù (![](../../assets/magento-bi-btn-down.png)) per visualizzare le opzioni disponibili.
 
    ![Crea dashboard](../../assets/magento-bi-dashboard-create.png)
 
-1. Fai clic su **[!UICONTROL Create Dashboard]**. Quindi, procedi come segue:
+1. Clic **[!UICONTROL Create Dashboard]**. Quindi, effettua le seguenti operazioni:
 
-   * Inserisci un `Name` per il dashboard.
+   * Immetti un `Name` per il tuo dashboard.
 
-   * Per creare una nuova `Group` per il dashboard, immetti il nome del gruppo.
+   * Per creare un `Group` per il dashboard, immettere il nome del gruppo.
 
-      Ad esempio, se l’installazione Commerce dispone di più viste Store, puoi creare un gruppo per ogni visualizzazione Store.
+      Ad esempio, se nell’installazione di Commerce sono presenti più visualizzazioni dello store, puoi creare un Gruppo per ogni visualizzazione dello store.
 
-   * Fai clic su **[!UICONTROL Create]**.
+   * Clic **[!UICONTROL Create]**.
 
-   ![nome del dashboard](../../assets/magento-bi-dashboard-create-name.png)
+   ![nome dashboard](../../assets/magento-bi-dashboard-create-name.png)
 
-   * Il nome del nuovo dashboard viene visualizzato nell&#39;angolo in alto a sinistra. Fai clic sulla freccia giù (![](../../assets/magento-bi-btn-down.png)) per visualizzare le opzioni. Se hai creato un gruppo, il nuovo dashboard viene visualizzato sotto il gruppo nell’elenco.
+   * Il nome del nuovo dashboard viene visualizzato nell&#39;angolo superiore sinistro. Fare clic sulla freccia giù (![](../../assets/magento-bi-btn-down.png)) per visualizzare le opzioni. Se avete creato un gruppo, il nuovo quadro comandi viene visualizzato sotto il gruppo nell&#39;elenco.
 
 
 ### Aggiungere un rapporto
 
 1. Per aggiungere un rapporto, effettuare una delle seguenti operazioni:
 
-   * Fai clic sul pulsante **[!UICONTROL Add a report]** nella pagina.
+   * Fai clic su **[!UICONTROL Add a report]** nella pagina.
 
-   * Nell’intestazione del dashboard, fai clic su **[!UICONTROL Add Report]**.
+   * Nell’intestazione della dashboard, fai clic su **[!UICONTROL Add Report]**.
 
-      ![Aggiungi rapporto](../../assets/magento-bi-dashboard-create-add-report.png)
+      ![Aggiungi report](../../assets/magento-bi-dashboard-create-add-report.png)
 
-1. Fai clic su **[!UICONTROL Create Report]** per mostrare **[!UICONTROL Report Builder Options]**.
+1. Clic **[!UICONTROL Create Report]** per visualizzare **[!UICONTROL Report Builder Options]**.
 
    ![Opzioni Report Builder](../../assets/magento-bi-report-builder.png)
 
 ## Disporre gli elementi su un dashboard
 
-* Per ridimensionare un grafico o un rapporto, trascinare l&#39;angolo inferiore destro sulla nuova dimensione.
+* Per ridimensionare un grafico o un report, trascinare l&#39;angolo inferiore destro sulla nuova dimensione.
 
-* Per spostare un grafico o un rapporto, passa il cursore sul titolo o sull’intestazione fino a quando il cursore non assume la forma di una croce. Quindi, trascinalo in posizione.
+* Per spostare un grafico o un report, posizionare il cursore del mouse sul titolo o sull&#39;intestazione fino a quando il cursore non assume la forma di una croce. Quindi trascinarlo nella posizione desiderata.
 
 ## Gestione delle dashboard {#managedash}
 
-In **[!DNL Manage Data** > **Dashboards]**, puoi gestire le autorizzazioni utente per le dashboard di tua proprietà, eliminare le dashboard di cui non hai più bisogno e impostare un dashboard predefinito.
+In entrata **[!DNL Manage Data** > **Dashboards]**, è possibile gestire le autorizzazioni utente per i dashboard di tua proprietà, eliminare i dashboard non più necessari e impostare un dashboard predefinito.
 
 ### Condivisione delle dashboard {#sharingdash}
 
-Scalabilità reale [!DNL MBI] in tutta l’organizzazione e per ottenere informazioni utili, ti invitiamo a condividere le dashboard create con altri membri del team. *Puoi condividere le dashboard di tua proprietà* facendo clic sul pulsante `Share Dashboard` nella parte superiore della pagina.
+Per scalare veramente [!DNL MBI] Adobe ti incoraggia a condividere con altri membri del team le dashboard che hai creato e a fornire informazioni preziose. *Puoi condividere dashboard di tua proprietà* facendo clic su `Share Dashboard` nella parte superiore della pagina.
 
-Quando condividi un dashboard, puoi assegnare autorizzazioni in tutta l’organizzazione OPPURE su base individuale, ovvero decidere chi può visualizzare e modificare i rapporti.
+Quando condividi una dashboard, puoi assegnare le autorizzazioni in tutta l’organizzazione OPPURE su base individuale, il che significa che puoi decidere chi può visualizzare e modificare i rapporti.
 
 >[!NOTE]
 >
->`Read-Only` gli utenti possono accedere solo alle dashboard che sono direttamente condivise con loro; non possono cercare e aggiungere dashboard da soli. Non dimenticate di tenerli in loop!
+>`Read-Only` gli utenti possono accedere solo alle dashboard condivise direttamente con loro, ma non possono cercare e aggiungere dashboard autonomamente. Non dimenticate di tenerli in loop!
 
-### Accesso alle dashboard condivise {#accessshared}
+### Accesso ai dashboard condivisi {#accessshared}
 
-*Se sei un utente amministratore o Standard* e desideri aggiungere un dashboard condiviso al tuo account, fai clic su **[!UICONTROL Dashboard Options]** e quindi facendo clic su **[!UICONTROL Find]** nel menu a discesa .
+*Se sei un utente amministratore o standard* e desideri aggiungere un dashboard condiviso al tuo account, puoi farlo facendo clic su **[!UICONTROL Dashboard Options]** e quindi clic su **[!UICONTROL Find]** nel menu a discesa.
 
 ![trova dashboard](../../assets/find_dashboard.png)<!--{: width="1000" height="535"}-->
 
-### Gestione delle impostazioni del dashboard
+### Gestire le impostazioni del dashboard
 
-1. Scegliere **[!DNL Manage Data** > **Dashboards]**.
+1. Scegliere dal menu **[!DNL Manage Data** > **Dashboards]**.
 
-1. Se applicabile, immetti un nuovo `Dashboard Name`.
+1. Se applicabile, immettere un nuovo `Dashboard Name`.
 
-1. Per assegnare il dashboard a uno specifico `Dashboard Group`, scegli dall’elenco dei gruppi.
+1. Per assegnare il dashboard a un `Dashboard Group`, scegli dall’elenco dei gruppi.
 
    **`Permissions`**
 
-   Per assegnare a tutti gli utenti lo stesso livello di accesso al dashboard, procedi come segue:
+   Per concedere a tutti gli utenti lo stesso livello di accesso al dashboard, effettua le seguenti operazioni:
 
    1. Sotto **`Shared with`**, scegli una delle seguenti opzioni:
 
@@ -109,11 +109,11 @@ Quando condividi un dashboard, puoi assegnare autorizzazioni in tutta l’organi
       * `None`
    1. Quando viene richiesto di confermare, fai clic su **[!UICONTROL OK]** per aggiornare il livello di autorizzazioni per ogni utente.
 
-   1. Per modificare il livello di autorizzazione di un individuo, individua l’utente nell’elenco che modifica il livello di autorizzazione. La modifica viene salvata automaticamente.
+   1. Per modificare il livello di autorizzazione di una persona, individuare l&#39;utente nell&#39;elenco e modificare il livello di autorizzazione. La modifica viene salvata automaticamente.
 
    **`Default`**
 
-   1. Per impostare questa dashboard come predefinita [!DNL MBI] account, fai clic su **[!UICONTROL Make Default]**.
+   1. Per impostare questa dashboard come predefinita per [!DNL MBI] account, fai clic su **[!UICONTROL Make Default]**.
 
    **`Remove`**
 

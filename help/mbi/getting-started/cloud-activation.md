@@ -2,20 +2,20 @@
 title: Attiva [!DNL MBI] Account per abbonamenti a Cloud Starter
 description: Scopri come attivare [!DNL MBI] per progetti Cloud Starter.
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
 
 # Attiva [!DNL MBI] Account per `Cloud Starter` Iscrizioni
 
-Per attivare [!DNL MBI] per `Cloud Starter` progetti, crea prima un [!DNL MBI] , quindi crea un `SSH` , quindi connettersi al database Commerce. Consulta [attivazione di abbonamenti on-premise](../getting-started/onpremise-activation.md).
+Per attivare [!DNL MBI] per `Cloud Starter` progetti, per prima cosa crea un’ [!DNL MBI] , quindi crea un `SSH` , quindi connettersi al database Commerce. Consulta [attivazione di abbonamenti on-premise](../getting-started/onpremise-activation.md).
 
 >[!NOTE]
 >
->Per assistenza nell’attivazione [!DNL MBI] per `Cloud Pro` progetti, contatta il team dell’account Adobe o il consulente tecnico del cliente.
+>Per assistenza sull&#39;attivazione [!DNL MBI] per `Cloud Pro` progetti, contatta il team dell’account Adobe o il consulente tecnico del cliente.
 
 1. Crea [!DNL MBI] Account.
 
@@ -25,7 +25,7 @@ Per attivare [!DNL MBI] per `Cloud Starter` progetti, crea prima un [!DNL MBI] ,
 
    - Clic **[!UICONTROL Create Instance]**. Se non trovi questo pulsante, contatta il team dell’account di Adobe o il consulente tecnico del cliente.
 
-   - Seleziona il `Cloud Starter` abbonamento. Se si dispone solo di `cloud starter` abbonamento questo verrà selezionato automaticamente.
+   - Seleziona il `Cloud Starter` abbonamento. Se si dispone solo di `cloud starter` abbonamento, questa è la selezione predefinita.
 
    - Clic **[!UICONTROL Continue]**.
 
@@ -41,7 +41,7 @@ Per attivare [!DNL MBI] per `Cloud Starter` progetti, crea prima un [!DNL MBI] ,
 
    ![](../assets/create-account-4.png)
 
-   - Dopo aver creato l’account, avrai la possibilità di aggiungere utenti al nuovo account. È ora possibile aggiungere gli amministratori tecnici per eseguire i seguenti passaggi.
+   - Dopo aver creato l’account, puoi aggiungere utenti al nuovo account. È ora possibile aggiungere gli amministratori tecnici per eseguire i seguenti passaggi.
 
    ![](../assets/create-account-5.png)
 
@@ -49,13 +49,13 @@ Per attivare [!DNL MBI] per `Cloud Starter` progetti, crea prima un [!DNL MBI] ,
 
    ![](../assets/create-account-6.png)
 
-   Prima di collegare il database per il terzo passaggio del flusso di onboarding è necessario raccogliere alcune informazioni. Verrà compilato il `Connect your database` al passaggio 9.
+   Raccogli alcune informazioni prima di collegare il database per il terzo passaggio nel flusso di onboarding. Hai completato la `Connect your database` al passaggio 9.
 
 1. Crea dedicato [!DNL MBI] Utente.
 
-   - Crea un nuovo utente nel tuo [Account Adobe Commerce](https://accounts.magento.com).
+   - Crea un utente nel tuo [Account Adobe Commerce](https://account.magento.com/customer/account/login).
 
-   - _Perché un nuovo utente?_ [!DNL MBI] ha bisogno che un utente aggiunto al progetto recuperi continuamente nuovi dati da trasferire nel [!DNL MBI] data warehouse. Questo utente fungerà da connessione. L’aggiunta di questo utente al progetto avverrà nel passaggio 4.
+   - _Perché un nuovo utente?_ [!DNL MBI] ha bisogno che un utente aggiunto al progetto recuperi continuamente nuovi dati da trasferire nel [!DNL MBI] Data Warehouse. Questo utente funge da connessione. L’aggiunta di questo utente al progetto è descritta nel passaggio 4.
 
    - Il motivo per cui è necessario disporre di un [!DNL MBI] L&#39;utente deve impedire che l&#39;utente aggiunto venga inavvertitamente disattivato o eliminato e che venga arrestato [!DNL MBI] connessione.
 
@@ -75,7 +75,7 @@ Per attivare [!DNL MBI] per `Cloud Starter` progetti, crea prima un [!DNL MBI] ,
 
 1. Aggiungi il nuovo [!DNL MBI] `Public key` al [!DNL MBI] creato nel passaggio 5.
 
-   - Vai a [il tuo account cloud Adobe Commerce](https://accounts.magento.cloud/). Accedi con le informazioni di accesso del tuo account per il nuovo [!DNL MBI] utente creato. Quindi vai al `Account Settings` scheda.
+   - Vai a [il tuo account cloud Adobe Commerce](https://account.magento.com/cloud/customer/login/). Accedi con le informazioni di accesso del tuo account per il nuovo [!DNL MBI] utente creato. Quindi vai al `Account Settings` scheda.
 
    - Scorrere la pagina ed espandere il menu a discesa per `SSH` tasti. Quindi fai clic su **[!UICONTROL Add a public key]**.
 

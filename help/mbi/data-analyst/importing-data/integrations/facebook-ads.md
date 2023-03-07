@@ -1,10 +1,10 @@
 ---
-title: Connetti annunci Facebook
-description: Scopri come analizzare i dati sulla spesa pubblicitaria e verificare se i tuoi soldi vengono spesi in modo efficace.
+title: Connetti Facebook Ads
+description: Scopri come analizzare i dati di spesa degli annunci e vedere se i tuoi soldi vengono spesi in modo efficace.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
@@ -17,50 +17,50 @@ ht-degree: 0%
 
 ![](../../../assets/Facebook_Logo.png)
 
-Hai fatto la tua ricerca, hai creato i tuoi annunci, hai lanciato la tua campagna su [!DNL Facebook]. Ora è il momento di analizzare i dati sulla spesa pubblicitaria e vedere se i vostri soldi vengono spesi in modo efficace. Utilizzando i dati di spesa pubblicitaria, puoi [misurare il ROI delle campagne sposando i costi pubblicitari e il valore del ciclo di vita del cliente (CLV)](../../../data-analyst/analysis/roi-ad-camp.md) degli utenti acquisiti dalle campagne.
+Hai fatto la tua ricerca, creato i tuoi annunci, lanciato la tua campagna su [!DNL Facebook]. Ora è il momento di analizzare i dati di spesa degli annunci e verificare se i soldi vengono spesi in modo efficace. Utilizzando i dati sulla spesa pubblicitaria, puoi [misurare il ROI delle campagne sposando i costi pubblicitari e il valore del ciclo di vita del cliente (CLV)](../../../data-analyst/analysis/roi-ad-camp.md) degli utenti acquisiti dalle campagne.
 
 Collegamento dei dati degli annunci Facebook a [!DNL MBI] è un semplice processo in tre fasi:
 
 1. [Aggiungi [!DNL Facebook] come origine dati in [!DNL MBI]](#stepone)
-1. [Consenti [!DNL MBI] accesso al [!DNL Facebook Ads] dati](#steptwo)
-1. [Seleziona [!DNL Facebook Ads] Account per l’estrazione dei dati](#stepthree)
+1. [Consenti [!DNL MBI] accesso al tuo [!DNL Facebook Ads] dati](#steptwo)
+1. [Seleziona [!DNL Facebook Ads] Account per il richiamo dei dati](#stepthree)
 
 ## Aggiungi [!DNL Facebook] come origine dati in [!DNL MBI] {#stepone}
 
-1. Per aggiungere la [!DNL Facebook] integrazione con il tuo account, passa alla `Connections` pagina sotto **[!UICONTROL Manage Data** > **Integrations]**.
-1. Fai clic su **[!UICONTROL Add Integration]**, situato sul lato destro dello schermo sopra i dati `Sources` tabella.
-1. Fai clic sul pulsante [!DNL Facebook] icona. Verrà visualizzata la [!DNL Facebook] pagina di autorizzazione.
-1. Fai clic su **[!UICONTROL Authorize]**.
+1. Per aggiungere [!DNL Facebook] al tuo account, passa alla pagina `Connections` pagina in **[!UICONTROL Manage Data** > **Integrations]**.
+1. Clic **[!UICONTROL Add Integration]**, situato sul lato destro della schermata sopra i Dati `Sources` tabella.
+1. Fai clic su [!DNL Facebook] icona. Viene visualizzata la [!DNL Facebook] pagina di autorizzazione.
+1. Clic **[!UICONTROL Authorize]**.
 
-## Consenti [!DNL MBI] accesso al [!DNL Facebook Ads] dati {#steptwo}
+## Consenti [!DNL MBI] accesso al tuo [!DNL Facebook Ads] dati {#steptwo}
 
 Dopo aver fatto clic su **[!DNL Facebook Authorize]**, viene visualizzata una piccola finestra a comparsa:
 
 ![](../../../assets/Facebook_Access_Popup.png)
 
-Seguirai una serie di passaggi per consentire [!DNL MBI] per accedere ai dati dal tuo profilo pubblico, [!DNL Facebook Ads] e statistiche correlate. Fai clic su **[!UICONTROL OK]** su questi passaggi per continuare.
+Segui una serie di passaggi per consentire [!DNL MBI] per accedere ai dati dal tuo profilo pubblico, [!DNL Facebook Ads] e, statistiche correlate. Clic **[!UICONTROL OK]** su questi passaggi per continuare.
 
-## Seleziona [!DNL Facebook Ads] Account per l’estrazione dei dati {#stepthree}
+## Seleziona [!DNL Facebook Ads] Account per il richiamo dei dati {#stepthree}
 
-1. Al termine dell&#39;autenticazione, ti verrà richiesto di selezionare il [!DNL Facebook Ads] Account da cui si desidera estrarre i dati. Seleziona gli account desiderati facendo clic sulla casella di controllo nel `Connect` colonna.
+1. Al termine dell’autenticazione, ti verrà richiesto di selezionare [!DNL Facebook Ads] Account da cui desideri estrarre i dati. Seleziona gli account desiderati facendo clic sulla casella di controllo in `Connect` colonna.
 
    ![](../../../assets/Facebook_Ad_Accounts.png)
 
-1. Fai clic su **[!UICONTROL Save Connections]**.
+1. Clic **[!UICONTROL Save Connections]**.
 
-   Se la connessione ha esito positivo, un *Connessione riuscita.* il messaggio viene visualizzato nella parte superiore della pagina.
+   Se la connessione ha esito positivo, viene visualizzata una *Connessione riuscita* viene visualizzato nella parte superiore della pagina.
 
-## cosa succede dopo? {#next}
+## Cosa succede dopo? {#next}
 
-Assicurati di tenere traccia [!DNL Facebook] campagne [!DNL Google Analytics]. In tal modo, `utm\_campaign` campo [!DNL Google Analytics] è popolato correttamente per il [!DNL Facebook] campagne.
+Assicurati di tenere traccia di [!DNL Facebook] campagne in [!DNL Google Analytics]. Ciò garantisce che `utm\_campaign` campo in [!DNL Google Analytics] è compilato correttamente per il tuo [!DNL Facebook] campagne.
 
-## Correlati
+## Correlato
 
-* [Riautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
-* [Collega il tuo [!DNL Google Adwords] account](../integrations/google-ecommerce.md)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Connetti [!DNL Google Adwords] account](../integrations/google-ecommerce.md)
 * [Tracciare l’origine di riferimento dell’ordine tramite [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
-* [Tracciare l’origine del riferimento utente nel database](../../analysis/google-track-user-acq.md)
-* [Tieni traccia dei dati di dispositivi utente, browser e sistemi operativi nel database](../../analysis/track-usr-dev-browser.md)
+* [Tracciare l&#39;origine di riferimento dell&#39;utente nel database](../../analysis/google-track-user-acq.md)
+* [Tenere traccia dei dati relativi a dispositivi utente, browser e sistema operativo nel database](../../analysis/track-usr-dev-browser.md)
 * [Scopri le fonti e i canali di acquisizione più importanti](../../analysis/most-value-source-channel.md)
-* [Aumenta il ROI delle campagne pubblicitarie](../../analysis/roi-ad-camp.md)
-* [Come funziona [!DNL Google Analytics] L’attribuzione UTM funziona?](../../analysis/utm-attributes.md)
+* [Aumentare il ROI nelle campagne pubblicitarie](../../analysis/roi-ad-camp.md)
+* [In che modo [!DNL Google Analytics] Lavoro di attribuzione UTM?](../../analysis/utm-attributes.md)

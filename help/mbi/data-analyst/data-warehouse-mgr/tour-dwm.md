@@ -1,124 +1,124 @@
 ---
-title: Data Warehouse Manager
-description: Scopri come gestire le impostazioni di sincronizzazione di tabelle e colonne, approfondire lo schema di una tabella e creare colonne calcolate da utilizzare nei rapporti.
+title: Gestione Date Warehouse
+description: Scopri come gestire le impostazioni di sincronizzazione di tabelle e colonne, analizzare in profondità lo schema di una tabella e creare colonne calcolate da utilizzare nei rapporti.
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
 
-# Data Warehouse Manager
+# Gestione Date Warehouse
 
 >[!NOTE]
 >
 >Richiede [Autorizzazioni amministratore](../../administrator/user-management/user-management.md)
 
-Gestione Date Warehouse, a cui si accede facendo clic su **[!UICONTROL Manage Data > Data Warehouse]** nella barra laterale è il portale della [!DNL MBI] Data Warehouse. Utilizzando Data Warehouse Manager, puoi gestire le impostazioni di sincronizzazione di tabelle e colonne, approfondire lo schema di una tabella e creare colonne calcolate da utilizzare nei rapporti.
+Gestione Date Warehouse, accessibile facendo clic su **[!UICONTROL Manage Data > Data Warehouse]** nella barra laterale, è il portale del tuo [!DNL MBI] Data Warehouse. Tramite Gestione Date Warehouse è possibile gestire le impostazioni di sincronizzazione di tabelle e colonne, analizzare in profondità lo schema di una tabella e creare colonne calcolate da utilizzare nei report.
 
-In questo articolo tratteremo:
+Questo articolo riguarda:
 
-* [Apprendimento del percorso](#learning)
+* [Imparare a spostarti](#learning)
 * [Sincronizzazione di tabelle e colonne](#syncing)
 * [Creazione di colonne calcolate](#calculated)
 * [Eliminazione di tabelle e rimozione di colonne](#delete)
 * [Sincronizzazione di nuove tabelle in background](#syncnew)
-* [Quindi, quando posso usare le mie nuove colonne?](#when)
+* [Quando è possibile utilizzare le nuove colonne?](#when)
 
-## Apprendimento del percorso {#learning}
+## Imparare a spostarti {#learning}
 
-Il lato sinistro del `Data Warehouse Manager` la pagina contiene l’elenco delle tabelle, che consente di passare facilmente da una tabella all’altra. Quando si seleziona una tabella dall’elenco, l’area di gestione delle tabelle viene compilata con lo schema della tabella in cui è possibile apportare modifiche alla tabella selezionata.
+Il lato sinistro di `Data Warehouse Manager` contiene l’elenco delle tabelle, che consente di passare facilmente da una tabella all’altra. Quando si seleziona una tabella dall&#39;elenco, l&#39;area di gestione tabella viene compilata con lo schema della tabella in cui è possibile modificare la tabella selezionata.
 
-Nell’elenco delle tabelle, le tabelle sono raggruppate in base all’origine della connessione. Queste fonti vengono aggiunte in [!UICONTROL Manage Data > Integrations] e può essere una banca dati [API](https://developer.adobe.com/commerce/services/reporting/)o un connettore di terze parti. Nella parte superiore dell’elenco delle tabelle è presente una casella di ricerca che consente di trovare facilmente le tabelle desiderate.
+All&#39;interno dell&#39;elenco delle tabelle, le tabelle sono raggruppate in base all&#39;origine di connessione. Queste sorgenti vengono aggiunte in [!UICONTROL Manage Data > Integrations] e può essere una banca dati, [API](https://developer.adobe.com/commerce/services/reporting/)o un connettore di terze parti. Nella parte superiore dell&#39;elenco delle tabelle è presente una casella di ricerca che consente di trovare facilmente le tabelle desiderate.
 
-Sotto la casella di ricerca sono visualizzate due opzioni: `All Tables` e `Synced Tables`. La `All Tables` elenca tutte le tabelle rese disponibili per la Data Warehouse, incluse le tabelle sincronizzate e non sincronizzate.
+Sotto la casella di ricerca sono disponibili due opzioni: `All Tables` e `Synced Tables`. Il `All Tables` opzione elenca tutte le tabelle rese disponibili per la Data Warehouse, incluse quelle sincronizzate e non sincronizzate.
 
-La `Synced Tables` mostra tutte le tabelle che sono già state aggiunte alla Data Warehouse e i cui dati vengono replicati dalle colonne selezionate.
+Il `Synced Tables` Questa opzione mostra tutte le tabelle che sono già state aggiunte alla Data Warehouse e che contengono dati replicati dalle colonne selezionate.
 
-Non visualizzare la tabella che stai cercando nel `All Tables` elenco? Ci sono alcuni possibili motivi per questo:
+Non visualizzare la tabella che si sta cercando in `All Tables` elenco? Questo può essere dovuto ad alcuni motivi:
 
-* L&#39;origine dati non è ancora stata aggiunta
-* L&#39;origine dati è un database e [!DNL MBI] l&#39;utente creato non dispone dell&#39;accesso. In questo caso, l&#39;utente o l&#39;amministratore del database dovrà concedere l&#39;accesso.
+* L’origine dati non è stata ancora aggiunta
+* L&#39;origine dati è un database e [!DNL MBI] L&#39;utente creato non dispone dell&#39;accesso. In questo caso, l&#39;utente o l&#39;amministratore del database deve concedere l&#39;accesso.
 * L’origine dati o la tabella è stata aggiunta di recente e non è ancora stata sincronizzata
 
 ## Sincronizzazione di tabelle e colonne {#syncing}
 
 ### Sincronizzazione di nuove tabelle e colonne native
 
-Data Warehouse Manager consente non solo di visualizzare e gestire facilmente le origini dati, ma anche di selezionare le singole tabelle e colonne da sincronizzare.
+Gestione Date Warehouse consente non solo di visualizzare e gestire facilmente le origini dati, ma anche di selezionare le singole tabelle e colonne da sincronizzare.
 
-1. Fai clic sul pulsante `All Tables` e individuare la tabella da sincronizzare.
-1. Fare clic sul nome della tabella per visualizzare l&#39;anteprima dello schema. Se la tabella è nuova, tutte le colonne verranno visualizzate come `Unsynced`.
-1. Seleziona le colonne da sincronizzare.
+1. Fai clic su `All Tables` e individuare la tabella da sincronizzare.
+1. Fai clic sul nome della tabella per visualizzare in anteprima lo schema. Se la tabella è nuova, tutte le colonne vengono visualizzate come `Unsynced`.
+1. Selezionare le colonne da sincronizzare.
 
    >[!NOTE]
    >
-   >Le colonne native di una tabella avranno dal database in `Location` colonna.
+   >Le colonne native di una tabella hanno From Your Database (Dal database) in `Location` colonna.
 
-1. Controlla la `Primary Key` colonne : accanto al nome della colonna è presente un simbolo di chiave. A `Primary Key` è necessario per sincronizzare correttamente i dati nella Data Warehouse.
+1. Assicurati di controllare il `Primary Key` colonne: queste colonne presentano un simbolo di chiave accanto al nome della colonna. A `Primary Key` per sincronizzare correttamente i dati nella Data Warehouse.
 
-   Se si sincronizza una tabella proveniente direttamente dal database, è possibile che `Primary Keys` possono non essere identificate. In questo caso, contatta l’amministratore del database per richiedere l’aggiunta di una o più chiavi primarie alla tabella.
-1. Al termine, fai clic sul pulsante ![pulsante](../../assets/button.png) pulsante .
+   Se si sta sincronizzando una tabella proveniente direttamente dal database, è possibile che `Primary Keys` non possono essere identificati. In questo caso, contattare l&#39;amministratore del database per richiedere l&#39;aggiunta di una o più chiavi primarie alla tabella.
+1. Al termine, fai clic su ![pulsante](../../assets/button.png) pulsante.
 
-A *Successo!* verrà visualizzato il messaggio e lo stato cambierà in `Pending` per le colonne selezionate. Al termine del prossimo aggiornamento completo, le nuove tabelle e colonne sincronizzate saranno disponibili per l’uso nei rapporti; è inoltre possibile impostare nuove [metodi di replica](./cfg-replication-methods.md) dopo la sincronizzazione iniziale.
+A *Operazione completata.* viene visualizzato e lo stato cambia in `Pending` per le colonne selezionate. Al termine del prossimo aggiornamento completo, le tabelle e le colonne appena sincronizzate saranno disponibili per l&#39;utilizzo nei rapporti; è inoltre possibile impostare nuove [metodi di replica](./cfg-replication-methods.md) dopo la sincronizzazione iniziale.
 
-Ecco un rapido sguardo sull&#39;intero processo:
+Ecco una breve panoramica dell&#39;intero processo:
 
 ![Aggiunta di colonne al data warehouse](../../assets/DW_sync.gif)
 
 ### Sincronizzazione di nuove tabelle in background {#syncnew}
 
-Quando si sincronizza per la prima volta una nuova tabella di grandi dimensioni, il data warehouse deve acquisire retroattivamente tutti i punti dati della tabella prima di acquisire continuamente nuovi dati. Se la tabella è particolarmente grande, potrebbe non essere necessario eseguire la sincronizzazione iniziale in sequenza con il **ciclo di aggiornamento** — in una situazione, desideri che la sincronizzazione iniziale si verifichi in background, in *parallelo* con eventuali aggiornamenti in esecuzione.
+Quando sincronizzi una tabella di grandi dimensioni per la prima volta, la Data Warehouse deve acquisire retroattivamente tutti i punti dati della tabella prima di acquisire nuovi dati su base continuativa. Se la tabella è di grandi dimensioni, potrebbe non essere necessario eseguire la sincronizzazione iniziale in sequenza con **ciclo di aggiornamento**. In questo caso, si desidera che la sincronizzazione iniziale venga eseguita in background, in *parallelo* con qualsiasi aggiornamento attualmente in esecuzione.
 
-Per assicurarti che ciò si verifichi, seleziona la `Save and Sync Data Immediately` sincronizzazione della tabella per la prima volta.
+Per fare in modo che ciò accada, seleziona la `Save and Sync Data Immediately` opzione che sincronizza la tabella per la prima volta.
 
-### Verifica di nuove tabelle e colonne {#forceupdate}
+### Ricerca di nuove tabelle e colonne {#forceupdate}
 
-La Data Warehouse non rileva automaticamente nuove origini, tabelle o colonne nel momento in cui vengono aggiunte. Un processo di sincronizzazione viene eseguito durante la settimana per trovare nuove aggiunte e renderle disponibili, ma è possibile forzare una sincronizzazione della struttura se si desidera accedere a nuove tabelle e colonne aggiunte prima dell&#39;esecuzione del processo.
+La Data Warehouse non rileva automaticamente nuove origini, tabelle o colonne nel momento in cui vengono aggiunte. Un processo di sincronizzazione viene eseguito nel corso della settimana per trovare nuove aggiunte e renderle disponibili, ma è possibile forzare una sincronizzazione della struttura se si desidera accedere alle nuove tabelle e colonne aggiunte prima dell&#39;esecuzione del processo.
 
-Sotto la barra di ricerca nell’elenco delle tabelle è `Check for new tables and columns` link. Facendo clic su questo collegamento si avvia il processo di sincronizzazione della struttura; le nuove aggiunte sono generalmente disponibili dopo 10 minuti. Aggiorna la pagina per visualizzare la nuova origine, tabella o colonna.
+Sotto la barra di ricerca nell&#39;elenco della tabella è presente una `Check for new tables and columns` collegamento. Facendo clic su questo collegamento viene forzato l&#39;avvio del processo di sincronizzazione della struttura; le nuove aggiunte sono generalmente disponibili dopo 10 minuti. Aggiorna la pagina per visualizzare la nuova origine, tabella o colonna.
 
 ## Creazione di colonne calcolate {#calculated}
 
-La semplice possibilità di visualizzare e gestire i dati provenienti da tutte le fonti semplifica notevolmente l&#39;acquisizione di informazioni sulla tua attività. Tuttavia, in Data Warehouse Manager è possibile fare un ulteriore passo avanti creando colonne calcolate all’interno delle tabelle. `Calculated` le colonne derivano nuove informazioni dai dati esistenti.
+La semplice possibilità di visualizzare e gestire i dati provenienti da tutte le origini semplifica notevolmente la raccolta di informazioni sul business. In Gestione Date Warehouse, tuttavia, è possibile fare un ulteriore passo avanti creando colonne calcolate all&#39;interno delle tabelle. `Calculated` Le colonne derivano nuove informazioni dai dati esistenti.
 
-Diciamo che desideri aggiungere `user's lifetime revenue` al tuo `users` tabella per trovare utenti di alto valore. Oppure, se desideri segmentare le entrate per genere, puoi aggiungere `customer's gender` al tuo `orders` tabella.
+Dì che vuoi aggiungere `user's lifetime revenue` al tuo `users` per trovare utenti di valore elevato. Oppure, se desideri segmentare i ricavi per sesso, puoi aggiungere `customer's gender` al tuo `orders` tabella.
 
-Per padroneggiare la creazione di queste colonne, [abbiamo creato un tutorial](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md) per attraversarla.
+Per ulteriori informazioni, consulta [esercitazione](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 ## Eliminazione di tabelle e rimozione di colonne {#delete}
 
-Così come puoi selezionare tabelle e colonne da sincronizzare con la tua Data Warehouse, puoi anche eliminarle o rimuoverle.
+È inoltre possibile eliminare o rimuovere tabelle e colonne da sincronizzare con la Data Warehouse.
 
 >[!NOTE]
 >
->Se si rilascia una tabella o si rimuovono colonne, verranno eliminati tutti i rapporti, le metriche, i set di filtri e le colonne dipendenti una volta confermata l’eliminazione. Assicurati di volerlo fare - **questa azione non può essere annullata.**
+>Se si rilascia una tabella o si rimuovono colonne, dopo aver confermato l’eliminazione verranno eliminati tutti i rapporti, le metriche, i set di filtri e le colonne dipendenti. Assicurati di voler fare questo - **questa azione non può essere annullata.**
 
-Non preoccuparti se fai clic su **[!UICONTROL Delete]** per caso. Un controllo della dipendenza viene eseguito prima dell’eliminazione di qualsiasi elemento, pertanto potrai esaminare tutti gli elementi prima di confermare.
+Non preoccuparti se fai clic su **[!UICONTROL Delete]** per caso. Un controllo delle dipendenze viene eseguito prima dell’eliminazione di qualsiasi elemento, quindi hai la possibilità di rivedere tutto prima di confermare.
 
-Per rimuovere le colonne, fare clic sulla tabella a cui appartiene la colonna. Seleziona le colonne da rimuovere e fai clic sul pulsante ![button\_1.png](../../assets/button_1.png) pulsante .
+Per rimuovere le colonne, fare clic sulla tabella a cui appartiene la colonna. Seleziona le colonne da rimuovere e fai clic su ![button\_1.png](../../assets/button_1.png) pulsante.
 
-Per rimuovere una tabella sincronizzata, selezionare tutte le colonne della tabella e fare nuovamente clic sul pulsante ![pulsante](../../assets/button_1.png) pulsante . Verranno rimosse tutte le colonne native e calcolate che utilizzano questa tabella dal data warehouse.
+Per rimuovere una tabella sincronizzata, selezionare tutte le colonne della tabella e fare di nuovo clic sul pulsante ![pulsante](../../assets/button_1.png) pulsante. Verranno rimosse dalla Data Warehouse tutte le colonne native e calcolate che utilizzano questa tabella.
 
 ### Conferma delle modifiche
 
-Se si rilascia una tabella o si rimuovono le colonne, prima del completamento del processo di eliminazione verrà eseguito un controllo di dipendenza. Le dipendenze sono colonne calcolate, metriche, set di filtri e rapporti che utilizzano la tabella o le colonne da rimuovere. Verranno visualizzate tutte le dipendenze rilevate. A questo punto, è possibile annullare il processo o fare clic su **[!UICONTROL Confirm Changes]** per eliminare la tabella o rimuovere le colonne.
+Se si elimina una tabella o si rimuovono colonne, viene eseguito un controllo di dipendenza prima del completamento del processo di eliminazione. Le dipendenze sono colonne calcolate, metriche, set di filtri e rapporti che utilizzano la tabella o le colonne da rimuovere. Vengono visualizzate tutte le dipendenze individuate. A questo punto, è possibile annullare il processo o fare clic su **[!UICONTROL Confirm Changes]** per eliminare la tabella o rimuovere le colonne.
 
-Sebbene non sia possibile ripristinare le dipendenze eliminate, le tabelle e le colonne saranno comunque disponibili se in futuro sarà necessario risincronizzare le colonne native.
+Anche se le dipendenze eliminate non possono essere ripristinate, le tabelle e le colonne rimarranno disponibili se in futuro sarà necessario risincronizzare le colonne native.
 
-Ecco un rapido sguardo sulla rimozione di una colonna:
+Di seguito è riportato un rapido esempio di rimozione di una colonna:
 
 ![Rimozione di una colonna dal data warehouse](../../assets/DW_delete.gif)
 
-## Quindi, quando posso usare le mie nuove colonne? {#when}
+## Quando è possibile utilizzare le nuove colonne? {#when}
 
-Le nuove colonne sincronizzate e le colonne calcolate nuove/aggiornate saranno pronte per l’uso al termine del prossimo aggiornamento completo. Se un aggiornamento non è già in corso, è possibile forzare un aggiornamento facendo clic su **[!UICONTROL Force update]** mostrato nella parte superiore della `Data Warehouse` o `Integrations` pagina. Puoi anche pianificare una notifica e-mail al termine dell’aggiornamento facendo clic su **[!UICONTROL Email me when complete]**.
+Le nuove colonne sincronizzate e le colonne calcolate nuove/aggiornate saranno pronte per l’uso al termine del prossimo aggiornamento completo. Se un aggiornamento non è già in corso, puoi forzarlo facendo clic su **[!UICONTROL Force update]** visualizzato nella parte superiore della sezione `Data Warehouse` o `Integrations` pagina. Puoi anche pianificare una notifica e-mail al completamento dell’aggiornamento facendo clic su **[!UICONTROL Email me when complete]**.
 
-Quando sei pronto a utilizzare le nuove colonne nei rapporti, [devi prima aggiungerli alle metriche](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Anche se i dati non saranno disponibili fino al completamento di un aggiornamento, puoi comunque utilizzare nuove colonne nei rapporti. I dati all’interno del rapporto vengono visualizzati al termine dell’aggiornamento.
+Quando sei pronto a utilizzare le nuove colonne nei rapporti, [devi prima aggiungerli alle metriche](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Anche se i dati non sono disponibili fino al completamento di un aggiornamento, è comunque possibile utilizzare nuove colonne nei rapporti. I dati all’interno del rapporto vengono visualizzati al termine dell’aggiornamento.
 
-## Tutto qui - siamo alla fine!
+## Ritorno a capo
 
-Abbiamo trattato molto materiale in questo tutorial. A questo punto, è necessario avere una conoscenza approfondita di ciò che è un database, del modo in cui i dati vengono organizzati, del modo in cui le tabelle si relazionano tra loro e delle operazioni che è possibile eseguire con Gestione Date Warehouse.
+Questo tutorial ha trattato molto materiale. A questo punto è necessario avere una solida conoscenza di cosa è un database, come sono organizzati i dati, come le tabelle si relazionano tra loro e cosa è possibile fare con Data Warehouse Manager.
 
-Eccellente! Esegui il test della tua nuova conoscenza [creazione di una colonna calcolata](../data-warehouse-mgr/creating-calculated-columns.md) o [creazione di report interessanti](../../tutorials/using-visual-report-builder.md).
+Eccellente! Prova le tue nuove conoscenze [creazione di una colonna calcolata](../data-warehouse-mgr/creating-calculated-columns.md) o [creazione di rapporti interessanti](../../tutorials/using-visual-report-builder.md).

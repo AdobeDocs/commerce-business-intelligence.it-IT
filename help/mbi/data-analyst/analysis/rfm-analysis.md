@@ -1,31 +1,35 @@
 ---
-title: Recency, Frequenza, Analisi monetaria (RFM)
-description: Scopri come impostare un dashboard che ti consenta di segmentare i clienti in base alla loro frequenza, recency e classificazione monetaria.
+title: Recency, frequenza, analisi monetaria (RFM)
+description: Scopri come impostare una dashboard che consenta di segmentare i clienti in base all’attualità, alla frequenza e alle classificazioni monetarie.
 exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
 
 # Analisi RFM
 
-In questo articolo, mostriamo come impostare un dashboard che ti consenta di segmentare i clienti in base alla loro recency, frequenza e classificazione monetaria. L’analisi RFM è una tecnica di marketing che prende in considerazione i comportamenti dei clienti per aiutarti a determinare la segmentazione per l’attività. Esso tiene conto di tre aspetti: Recente in quanto recentemente un cliente ha acquistato dal tuo negozio, frequenza in quanto spesso acquista da te, e monetario in quanto il cliente spende.
+Questo articolo illustra come impostare una dashboard che consenta di segmentare i clienti in base all’attualità, alla frequenza e alle classificazioni monetarie. L’analisi RFM è una tecnica di marketing che prende in considerazione i comportamenti dei clienti per aiutarti a determinare la segmentazione per l’estensione. Essa tiene conto di tre aspetti:
+
+* Recency in quanto recentemente un cliente ha acquistato dal tuo negozio
+* Frequenza di acquisto
+* Quante spese spende il cliente
 
 ![](../../assets/blobid0.png)
 
-L’analisi RFM può essere configurata solo se disponi della [!DNL MBI] Pianifica Pro sulla nuova architettura (ad esempio, se disponi dell’opzione &quot;Data Warehouse viste&quot; nel menu &quot;Gestisci dati&quot;). Queste colonne possono essere create dalla pagina &quot;Gestisci dati > Data Warehouse&quot;. Istruzioni dettagliate sono fornite di seguito.
+L&#39;analisi RFM può essere configurata solo se si dispone di [!DNL MBI] Pianifica la nuova architettura (ad esempio, se disponi dell’opzione &quot;Data Warehouse visualizzazioni&quot; nel menu &quot;Gestisci dati&quot;). Queste colonne possono essere create dalla pagina &quot;Gestisci dati > Data Warehouse&quot;. Di seguito sono riportate istruzioni dettagliate.
 
-## Introduzione
+## Guida introduttiva
 
-Devi prima caricare un file contenente solo una chiave primaria con il valore di uno. In questo modo sarà possibile creare alcune colonne calcolate necessarie per l’analisi.
+Devi innanzitutto caricare un file contenente solo una chiave primaria con il valore di una. Ciò consente di creare alcune colonne calcolate necessarie per l’analisi.
 
-Puoi sfruttare questo [articolo del centro di assistenza](../importing-data/connecting-data/using-file-uploader.md) e l&#39;immagine seguente per formattare il file.
+Puoi utilizzare questo [articolo del centro risorse](../importing-data/connecting-data/using-file-uploader.md) e l&#39;immagine seguente per formattare il file.
 
 ## Colonne calcolate
 
-Un&#39;ulteriore distinzione viene fatta se la vostra azienda permette gli ordini dei clienti. In tal caso, puoi ignorare tutti i passaggi della `customer_entity` tabella. Se gli ordini degli ospiti non sono consentiti, ignora tutti i passaggi per `sales_flat_order` tabella.
+Un&#39;ulteriore distinzione viene fatta se la vostra azienda consente gli ordini degli ospiti. In tal caso, puoi ignorare tutti i passaggi per `customer_entity` tabella. Se gli ordini degli ospiti non sono consentiti, ignora tutti i passaggi per `sales_flat_order` tabella.
 
 Colonne da creare
 
@@ -33,124 +37,124 @@ Colonne da creare
 * `Customer's last order date`
 * [!UICONTROL Column type]: `Many to one > Max`
 * [!UICONTROL Pat]: `sales_flat_order.customer_id > customer_entity.entity_id`
-* Selezionati [!UICONTROL column]: `created_at`
+* Selezionato [!UICONTROL column]: `created_at`
 * [!UICONTROL Filter]: `Orders we count`
 
 * 
 
-       Secondi dall’ultima data dell’ordine del cliente
+       Secondi trascorsi dall&#39;ultima data dell&#39;ordine del cliente
    * [!UICONTROL Column type]: - &quot;Stessa tabella > Età
-* Selezionati [!UICONTROL column]: `Customer's last order date`
+* Selezionato [!UICONTROL column]: `Customer's last order date`
 
-* (input) Riferimento al conteggio
+* (input) Riferimento conteggio
 * [!UICONTROL Column type]: `Same table > Calculation`
 * 
-   [!UICONTROL Ingressi]: `entity_id`
+   [!UICONTROL Input]: `entity_id`
 * [!UICONTROL Calculation]: `**case when A is null then null else 1 end**`
 * 
 
-   [!UICONTROL Tipo di dati]: `Integer`
+   [!UICONTROL Datatype]: `Integer`
 
-* **Riferimento conteggio** tabella (questo è il file appena caricato con il numero &quot;1&quot;)
+* **Riferimento conteggio** tabella (file caricato con il numero &quot;1&quot;)
 * Numero di clienti
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
-* [!UICONTROL Path]: `ales_flat_order.(input) reference > Count reference.Primary Key` O `customer_entity.(input)reference > Count Reference`. `Primary Key`
-* Selezionati [!UICONTROL column]: `sales_flat_order.customer_email` O `customer_entity.entity_id`
+* [!UICONTROL Path]: `ales_flat_order.(input) reference > Count reference.Primary Key` OPPURE `customer_entity.(input)reference > Count Reference`. `Primary Key`
+* Selezionato [!UICONTROL column]: `sales_flat_order.customer_email` OPPURE `customer_entity.entity_id`
 
-* **Entità_cliente** tabella
+* **Customer_entity** tabella
 * Numero di clienti
 * [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
-* [!UICONTROL Path]: `customer_entity`.(input) riferimento > Concentrazione del cliente. `Primary Key`
-* Selezionati [!UICONTROL column]: `Number of customers`
+* [!UICONTROL Path]: `customer_entity`.(input) reference > Customer Concentration (Concentrazione cliente). `Primary Key`
+* Selezionato [!UICONTROL column]: `Number of customers`
 
 * (ingresso) `Ranking by customer lifetime revenue`
 * [!UICONTROL Column type]: `Same table > Event Number`
 * [!UICONTROL Event owner]: `(input) reference for count`
 * [!UICONTROL Event rank]: `Customer's lifetime revenue`
 
-* Classificazione in base ai ricavi della vita del cliente
+* Classificazione per ricavi ciclo di vita cliente
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
 * 
 
-   [!UICONTROL Tipo di dati]: `Integer`
+   [!UICONTROL Datatype]: `Integer`
 
-* Punteggio monetario del cliente (in percentuale)
+* Punteggio monetario del cliente (in percentili)
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime revenue`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
 * 
 
-   [!UICONTROL Tipo di dati]: `Integer`
+   [!UICONTROL Datatype]: `Integer`
 
-* (input) Classificazione per numero di ordini della durata del cliente
+* (input) Classificazione per numero di ordini del ciclo di vita del cliente
 * [!UICONTROL Column type]: `Same table > Event Number`
 * [!UICONTROL Event owner]: `(input) reference for count`
 * [!UICONTROL Event rank]: `Customer's lifetime number of orders`
 
-* Classificazione per numero di ordini della durata del cliente
+* Classificazione in base al numero di ordini del ciclo di vita del cliente
 * 
    [!UICONTROL Tipo di colonna]: – "Stessa tabella > Calcolo"
-* [!UICONTROL Inputs]: - **(input) Classificazione per numero di ordini della durata del cliente**, **Numero di clienti**
-* [!UICONTROL Calculation]: - **caso in cui A è nullo, null altro (B-(A-1)) end**
+* [!UICONTROL Inputs]: - **(input) Classificazione per numero di ordini del ciclo di vita del cliente**, **Numero di clienti**
+* [!UICONTROL Calculation]: - **caso in cui A è nullo e quindi nullo; altrimenti (B-(A-1))**
 * [!UICONTROL Datatype]: - Intero
 
-* Punteggio di frequenza del cliente (in percentuale)
+* Punteggio di frequenza del cliente (in percentili)
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when round((B-A+1)*100/B,0) <= 20 then 5 when round((B-A+1)*100/B,0) <= 40 then 4 when round((B-A+1)*100/B,0) <= 60 then 3 when round((B-A+1)*100/B,0) <= 80 then 2 when round((B-A+1)*100/B,0) <= 100 then 1 else 0 end`
 * 
 
-   [!UICONTROL Tipo di dati]: `Integer`
+   [!UICONTROL Datatype]: `Integer`
 
-* Classificazione in secondi dalla data dell’ultimo ordine del cliente
+* Classificazione per secondi dalla data dell&#39;ultimo ordine del cliente
 * [!UICONTROL Column type]: `Same table > Event Number`
 * [!UICONTROL Event owner]: `(input) reference for count`
 * [!UICONTROL Event rank]: `Seconds since customer's last order date`
 
-* Punteggio di aggiornamento del cliente (in percentuale)
+* Punteggio di recency del cliente (in percentili)
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `(input) Ranking by customer lifetime number of orders`, `Number of customers`
 * [!UICONTROL Calculation]: `Case when (A * 100/B,0) <= 20 then 5 when (A * 100/B,0) <= 40 then 4 when (A * 100/B,0) <= 60 then 3 when (A * 100/B,0) <= 80 then 2 when (A * 100/B,0) <= 100 then 1 else 0 end`
 * 
 
-   [!UICONTROL Tipo di dati]: `Integer`
+   [!UICONTROL Datatype]: `Integer`
 
-* Punteggio di aggiornamento del cliente (in percentuale)
+* Punteggio di recency del cliente (in percentili)
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else concat(A,B,C) end`
 * 
 
-   [!UICONTROL Tipo di dati]: String
+   [!UICONTROL Datatype]: String
 
 * **Riferimento conteggio** tabella
 * [!UICONTROL Number of customers]: `(RFM > 0)`
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
-* [!UICONTROL Path]: `sales_flat_order.(input) reference > Customer Concentration. Primary Key` O `customer_entity.(input)reference > Customer Concentration.Primary Key`
-* Selezionati [!UICONTROL column]: `sales_flat_order.customer_email` O `customer_entity.entity_id`
-* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` Uguale A 000
+* [!UICONTROL Path]: `sales_flat_order.(input) reference > Customer Concentration. Primary Key` OPPURE `customer_entity.(input)reference > Customer Concentration.Primary Key`
+* Selezionato [!UICONTROL column]: `sales_flat_order.customer_email` OPPURE `customer_entity.entity_id`
+* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` Diverso da 000
 
-* **Entità_cliente** tabella
+* **Customer_entity** tabella
 * [!UICONTROL Number of customers]: `(RFM > 0)`
 * [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
 * [!UICONTROL Path]: `customer_entity.(input) reference > Customer Concentration.Primary Key`
-* Selezionati [!UICONTROL column]: - `Number of customers`
+* Selezionato [!UICONTROL column]: - `Number of customers`
 
-* Punteggio di aggiornamento del cliente `(R+F+M)`
+* Punteggio di recency del cliente `(R+F+M)`
 * [!UICONTROL Column type]: `Same table > Calculation`
 * [!UICONTROL Inputs]: – `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
 * 
 
-   [!UICONTROL Tipo di dati]: `Integer`
+   [!UICONTROL Datatype]: `Integer`
 
-* (input) Classificazione in base al punteggio RFM complessivo del cliente
+* (input) Classificazione per punteggio RFM complessivo del cliente
 * [!UICONTROL Column type]: `Same table > Event Number`
 * [!UICONTROL Event owner]: `(input) reference for count`
 * [!UICONTROL Event rank]: `Customer's recency score (R+F+M)`
-* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` Uguale A 000
+* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` Diverso da 000
 
 * Classificazione in base al punteggio RFM complessivo del cliente
 * [!UICONTROL Column type]: `Same table > Calculation`
@@ -158,7 +162,7 @@ Colonne da creare
 * [!UICONTROL Calculation]: `case when A is null then null else (B-(A-1)) end`
 * 
 
-   [!UICONTROL Tipo di dati]: `Integer`
+   [!UICONTROL Datatype]: `Integer`
 
 * Gruppo RFM del cliente
 * [!UICONTROL Column type]: `Same table > Calculation`
@@ -166,17 +170,17 @@ Colonne da creare
 * [!UICONTROL Calculation]: `Case when round(A * 100/B,0) <= 20 then '5. copper' when round(A * 100/B,0) <= 40 then '4. bronze' when round(A * 100/B,0) <= 60 then '3. silver' when round(A * 100/B,0)<= 80 then '2. gold' else '1. Platinum' end`
 * 
 
-   [!UICONTROL Tipo di dati]: `Integer`
+   [!UICONTROL Datatype]: `Integer`
 
 >[!NOTE]
 >
->I percentili utilizzati sono anche suddivisioni di clienti (ad esempio, 20% di bucket per restituire 1-5). Se hai un modo personalizzato per ponderarli, fai sapere all&#39;analista quando invii il biglietto.
+>I percentili utilizzati sono anche frazionamenti di clienti (ad esempio, 20% bucket per restituire 1-5). Se desideri ponderare questi elementi in modo personalizzato, informa l’analista quando invii il ticket.
 
 ## Metriche
 
-Nessuna nuova metrica!
+Nessuna nuova metrica.
 
-**Nota**: Assicurati di [aggiungi tutte le nuove colonne come dimensioni alle metriche](../data-warehouse-mgr/manage-data-dimensions-metrics.md) prima di creare nuovi rapporti.
+**Nota**: assicurati di [aggiungere tutte le nuove colonne come dimensioni alle metriche](../data-warehouse-mgr/manage-data-dimensions-metrics.md) prima di creare nuovi rapporti.
 
 ## Rapporti
 
@@ -191,12 +195,12 @@ Nessuna nuova metrica!
 * Nascondi grafico
 * [!UICONTROL Group by]: `Customer's RFM group`
 * 
-   [!UICONTROL Group by]: `Email`
+   [!UICONTROL Raggruppa per]: `Email`
 * 
 
    [!UICONTROL Chart type]: `Table`
 
-* **Clienti con 5 punteggi recenti**
+* **Clienti con cinque punteggi di attualità**
 * Metrica `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 5`
@@ -208,13 +212,13 @@ Nessuna nuova metrica!
    [!UICONTROL Chart Type]: `Scalar`
 * Nascondi grafico
 * 
-   [!UICONTROL Group by]: `Email`
+   [!UICONTROL Raggruppa per]: `Email`
 * [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
 * 
 
    [!UICONTROL Chart type]: `Table`
 
-* **Clienti con 1 punteggio recente**
+* **Clienti con un punteggio di recency**
 * Metrica `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 1`
@@ -226,10 +230,10 @@ Nessuna nuova metrica!
    [!UICONTROL Chart Type]: `Scalar`
 * Nascondi grafico
 * 
-   [!UICONTROL Group by]: `Email`
+   [!UICONTROL Raggruppa per]: `Email`
 * [!UICONTROL Group by]: `Customer's RFM score (R+F+M)`
 * 
 
    [!UICONTROL Chart type]: `Table`
 
-Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato finale potrebbe assomigliare al dashboard di esempio riportato sopra, ma le tre tabelle generate sono solo esempi dei tipi di segmentazione del cliente che puoi eseguire.
+Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile al dashboard di esempio riportato sopra, ma le tre tabelle generate sono solo esempi dei tipi di segmentazione dei clienti che è possibile eseguire.

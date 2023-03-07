@@ -1,86 +1,86 @@
 ---
-title: Standardizzazione dei dati con le tabelle di mappatura
+title: Standardizzare i dati con le tabelle di mappatura
 description: Scopri come utilizzare le tabelle di mappatura.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
 
 # Standardizzare i dati con le tabelle di mappatura
 
-Immagine: sei nel `Report Builder`, la costruzione di un `Revenue by State` rapporto. Lei è nella zona. Tutto sta andando a nuoto finché non vai ad aggiungere un `billing state` effettua il raggruppamento al rapporto per visualizzare quanto segue:
+Immagina: sei nel `Report Builder`, creazione di un `Revenue by State` rapporto. Sei nella zona. Andrà tutto bene finché non aggiungi un `billing state` Il raggruppamento nel report mostra quanto segue:
 
 ![](../../assets/Messy_State_Segments.png)
 
 ## Com&#39;è potuto succedere?
 
-Purtroppo, la mancanza di standardizzazione può talvolta causare problemi ai dati e problemi durante la creazione dei rapporti. Nel nostro esempio, potrebbe non esserci stato un menu a discesa o un modo standardizzato per consentire ai nostri clienti di inserire le loro informazioni sullo stato di fatturazione. Questo porta a una varietà di valori - `pa`, `PA`, `penna`, `pennsylvania`e `Pennsylvania` - tutto per lo stesso stato, che certamente porterà a qualche strano risultato nella `Report Builder`.
+Sfortunatamente, la mancanza di standardizzazione può a volte causare confusione nei dati e problemi durante la creazione dei rapporti. In questo esempio, potrebbe non essere disponibile un menu a discesa o un metodo standardizzato per consentire ai clienti di immettere le informazioni sullo stato di fatturazione. Questo porta a diversi valori: `pa`, `PA`, `penna`, `pennsylvania`, e `Pennsylvania` - il tutto per lo stesso stato, il che porta ad alcuni strani risultati nel `Report Builder`.
 
-È possibile che ci sia una risorsa tecnica che può aiutarti a pulire i dati o inserire le colonne necessarie direttamente nel tuo database, ma in caso contrario, abbiamo un&#39;altra soluzione: **la tabella di mappatura**. Una tabella di mappatura consente di pulire e standardizzare in modo rapido e semplice qualsiasi dato problematico mappando i dati a un singolo output.
+È possibile che esista una risorsa tecnica che possa aiutarti a pulire i dati o a inserire le colonne necessarie direttamente nel database. In caso contrario, esiste un&#39;altra soluzione: **tabella di mappatura**. Una tabella di mappatura consente di pulire e standardizzare in modo rapido e semplice qualsiasi dato disordinato mappando i dati su un singolo output.
 
 >[!NOTE]
 >
->Non è possibile creare una tabella di mappatura per tabelle consolidate senza l&#39;aiuto del team di supporto. Contattateci per ulteriori informazioni.
+>Non è possibile creare una tabella di mapping per le tabelle consolidate senza l&#39;assistenza del team di supporto Adobe.
 
-## Come la creo? {#how}
+## Come si crea? {#how}
 
-**Aggiornamento per la formattazione dei dati:**
+**Aggiornamento formattazione dati:**
 
-* Assicurati che il foglio di calcolo contenga una riga di intestazione.
-* Evita di usare le virgole! Ciò causerà problemi quando carichi il file.
-* Utilizzare il formato data standard `(YYYY-MM-DD HH:MM:SS)` per le date.
-* Le percentuali devono essere indicate come decimali.
-* Assicurati che tutti gli zeri iniziali o finali siano mantenuti correttamente.
+* Assicurati che il foglio di calcolo abbia una riga di intestazione.
+* Evita di usare le virgole. Questo causa problemi quando carichi il file.
+* Utilizza il formato data standard `(YYYY-MM-DD HH:MM:SS)` per le date.
+* Le percentuali devono essere immesse come decimali.
+* Assicurati che eventuali zeri iniziali o finali siano correttamente conservati.
 
-Prima di immergerti, ti consigliamo di: [esportare i dati della tabella non elaborati](../../tutorials/export-raw-data.md). Osservare prima i dati non elaborati significa poter esplorare tutte le possibili combinazioni per i dati da pulire, garantendo in tal modo che la tabella di mappatura copra tutto.
+Prima di iniziare, Adobe consiglia di: [esportare i dati della tabella non elaborati](../../tutorials/export-raw-data.md). Osservare prima i dati non elaborati significa poter esplorare tutte le possibili combinazioni per i dati da pulire, garantendo in tal modo che la tabella di mappatura copra tutto.
 
-Per creare una tabella di mappatura, è necessario creare un foglio di calcolo a due colonne che segua la tabella [regole di formattazione per il caricamento dei file](../../data-analyst/importing-data/connecting-data/using-file-uploader.md).
+Per creare una tabella di mappatura, è necessario creare un foglio di calcolo a due colonne che segua [regole di formattazione per i caricamenti di file](../../data-analyst/importing-data/connecting-data/using-file-uploader.md).
 
-Nella prima colonna, immetti i valori memorizzati nel database con **un solo valore in ogni riga**. Ad esempio: `pa` e `PA` non può trovarsi sulla stessa riga: ogni input deve avere una propria riga. Di seguito è riportato un esempio.
+Nella prima colonna immettere i valori memorizzati nel database con **un solo valore in ogni riga**. Ad esempio: `pa` e `PA` non può essere sulla stessa riga: ogni input deve avere una propria riga. Vedi di seguito per un esempio.
 
-Nella seconda colonna, immetti i valori seguenti **devono**. Continuando con il nostro esempio di stato di fatturazione, se vogliamo `pa`, `PA`, `Pennsylvania`e `pennsylvania` essere `PA`, entravamo `PA` in questa colonna per ogni valore immesso.
+Nella seconda colonna immettere i valori **dovrebbe essere**. Continuando con l&#39;esempio di stato di fatturazione, se si desidera `pa`, `PA`, `Pennsylvania`, e `pennsylvania` per essere `PA`, si immette `PA` in questa colonna per ogni valore di input.
 
 ![](../../assets/Mapping_table_examples.jpg)
 
 ## Cosa devo fare in [!DNL MBI] per usarlo? {#use}
 
-Dopo aver creato la tabella di mappatura, è necessario [caricare il file](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) in [!DNL MBI] e [creare una colonna unita](../../data-analyst/data-warehouse-mgr/calc-column-types.md) che trasferisce il nuovo campo nella tabella desiderata. È possibile eseguire questa operazione dopo la sincronizzazione del file con il data warehouse.
+Al termine della creazione della tabella di mappatura, dovrai [carica il file](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) in [!DNL MBI] e [creare una colonna unita in join](../../data-analyst/data-warehouse-mgr/calc-column-types.md) che riposiziona il nuovo campo nella tabella desiderata. Puoi eseguire questa operazione dopo che il file è stato sincronizzato con la Data Warehouse.
 
-Nel nostro esempio, sposteremo la colonna creata nel `mapping_state` tabella (`state_input`) al `customer_address` tabella utilizzando una colonna unita. Questo ci permetterà di raggrupparci per la pulizia `state_input` nei nostri report invece del `state` colonna.
+In questo esempio viene spostata la colonna creata in `mapping_state` tabella (`state_input`) al `customer_address` utilizzando una colonna unita in join. Questo ci permette di raggruppare in base al pulito `state_input` nei rapporti anziché nella `state` colonna.
 
-Per creare `joined` , passare alla tabella a cui verrà reindirizzato il campo in Data Warehouse Manager. Nel nostro esempio, questo sarebbe il `customer_address` tabella.
+Per creare `joined` , passare alla tabella in cui il campo verrà spostato in Gestione Date Warehouse. In questo esempio, il valore `customer_address` tabella.
 
-1. Fai clic su **[!UICONTROL Create a Column]**.
+1. Clic **[!UICONTROL Create a Column]**.
 1. Seleziona `Joined Column` dal `Definition` a discesa.
-1. Assegna alla colonna un nome che la distingue dal `state` nel database. Noi andremo con noi `billing state (mapped)` possiamo quindi individuare la colonna da utilizzare per la segmentazione nel generatore di report.
-1. Il percorso necessario per collegare le tabelle non esiste, quindi dobbiamo crearne uno nuovo. Fai clic su **[!UICONTROL Create new path]**  in `Select a table and column` a discesa.
+1. Assegna alla colonna un nome che la differenzi dalla `state` nel database. Denomina la colonna `billing state (mapped)` in modo da poter individuare la colonna da utilizzare durante la segmentazione nel report builder.
+1. Il percorso necessario per connettere le tabelle non esiste, pertanto è necessario crearne uno. Clic **[!UICONTROL Create new path]**  nel `Select a table and column` a discesa.
 
-   Se non si è sicuri di cosa sia la relazione di tabella o come definire correttamente le chiavi primarie ed esterne, estrarre [esercitazione](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md) per un po&#39; di aiuto.
+   Se non si è sicuri della relazione tra tabelle o di come definire correttamente le chiavi primarie ed esterne, estrarre [esercitazione](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md) per un po&#39; di aiuto.
 
-   * Sulla `Many` lato, selezionare la tabella a cui si sta spostando il campo (di nuovo, per noi è `customer_address`) e `Foreign Key` colonna o `state` nel nostro esempio.
-   * Sulla `One` lato, seleziona `mapping` la tabella e `Primary key` colonna. In questo caso, selezioniamo il `state_input` dalla colonna `mapping_state` tabella.
-   * Ecco come si presenta il nostro percorso:
+   * Il giorno `Many` selezionare la tabella in cui si sta spostando il campo (di nuovo, per noi è `customer_address`) e `Foreign Key` colonna, oppure `state` nell’esempio.
+   * Il giorno `One` , selezionare il `mapping` tabella e `Primary key` colonna. In questo caso, seleziona il `state_input` colonna da `mapping_state` tabella.
+   * Ecco un’anteprima del percorso:
 
       ![](../../assets/State_Mapping_Path.png)
 
 1. Al termine, fai clic su **[!UICONTROL Save]** per creare il percorso.
-1. Il percorso potrebbe non essere compilato immediatamente dopo il salvataggio. In questo caso, fai clic sul pulsante `Path` e seleziona il percorso appena creato.
-1. Fai clic su **[!UICONTROL Save]** per creare la colonna.
+1. Il percorso potrebbe non essere popolato immediatamente dopo il salvataggio - in questo caso, fai clic su `Path` e selezionare il percorso creato.
+1. Clic **[!UICONTROL Save]** per creare la colonna.
 
 Tutto qui!
 
 ## Cosa faccio ora? {#wrapup}
 
-Al termine di un ciclo di aggiornamento, potrai utilizzare la nuova colonna unita per segmentare correttamente i dati invece della colonna disordinata dal database. Dai un&#39;occhiata alle nostre opzioni di raggruppamento ora - non più stress casino:
+Al termine di un ciclo di aggiornamento, potrai utilizzare la nuova colonna unita per segmentare correttamente i dati anziché la colonna confusa dal database. Esaminare le opzioni di raggruppamento ora, senza ulteriori problemi di stress:
 
 ![](../../assets/Clean_State_Segments.png)
 
-Le tabelle di mappatura sono utili per qualsiasi momento in cui si desidera pulire alcuni dati potenzialmente problematici nel data warehouse. Tuttavia, le tabelle di mappatura possono essere utilizzate anche per altri casi d’uso interessanti, come [replica dei canali Google Analytics in MBI](../data-warehouse-mgr/rep-google-analytics-channels.md).
+Le tabelle di mappatura sono utili per ogni momento in cui si desidera eliminare alcuni dati potenzialmente confusi nella Data Warehouse. Tuttavia, le tabelle di mappatura possono essere utilizzate anche per altri casi d’uso interessanti, come [replica dei canali Google Analytics in MBI](../data-warehouse-mgr/rep-google-analytics-channels.md).
 
-### Correlati
+### Correlato
 
 * [Informazioni e valutazione delle relazioni tra tabelle](../data-warehouse-mgr/table-relationships.md)
-* [Creazione/eliminazione di percorsi per le colonne calcolate](../data-warehouse-mgr/create-paths-calc-columns.md)
+* [Creazione/eliminazione di percorsi per colonne calcolate](../data-warehouse-mgr/create-paths-calc-columns.md)

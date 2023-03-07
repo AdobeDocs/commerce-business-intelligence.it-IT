@@ -1,54 +1,54 @@
 ---
-title: Filtro ampio dashboard
+title: Filtro a livello di dashboard
 description: Scopri come apportare modifiche in blocco a tutti i rapporti su un dashboard specifico.
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
 
-# Filtro ampio dashboard
+# Filtro a livello di dashboard
 
-Grazie al filtro a livello di dashboard, puoi apportare modifiche in blocco a tutti i report su un dashboard specifico. Puoi visualizzare rapidamente la stessa analisi per diversi periodi di tempo o per diversi store. Puoi confrontare facilmente le prestazioni di un anno, mese o settimana precedenti per negozio. Inoltre, è possibile aggiornare un intero dashboard per accogliere una campagna appena avviata.
+Con il filtro a livello di dashboard, puoi apportare modifiche in blocco a tutti i rapporti su un dashboard specifico. Puoi visualizzare rapidamente la stessa analisi per diversi periodi di tempo o per diversi store. Puoi confrontare facilmente le prestazioni di un anno, mese o settimana precedente per negozio. Inoltre, puoi aggiornare un’intera dashboard per adattarla a una nuova campagna avviata.
 
-## Filtri data
+## Filtri per data
 
-Per modificare l’intervallo di date o l’intervallo dei rapporti in un dashboard, fai clic sull’icona del calendario nell’angolo in alto a destra (![calendario](../../assets/calendar-button.png)).
+Per modificare l’intervallo di date o l’intervallo di rapporti su un dashboard, fai clic sull’icona del calendario nell’angolo in alto a destra (![calendario](../../assets/calendar-button.png)).
 
-Puoi scegliere di visualizzare i dati utilizzando un `Fixed Date Range` o una varietà di `Moving Date Ranges`:
+È possibile scegliere di visualizzare i dati utilizzando un `Fixed Date Range` o vari pre-calcolati `Moving Date Ranges`:
 
 ![spostamento di intervalli di date](../../assets/moving_date_ranges.png)
 
-La `Last Full...` le opzioni della gamma mobile rappresentano l&#39;intervallo completato più di recente, mentre `This...` sarà l&#39;intervallo corrente in corso. Ad esempio, se è al momento di giugno, la `Last Full Month` è _1 maggio - 31 maggio_, mentre `This Month` è _1° giugno - Ora_.
+Il `Last Full...` le opzioni di spostamento rappresentano l&#39;ultimo intervallo completato, mentre `This...` è l&#39;intervallo corrente in corso. Ad esempio, se è Giugno, il `Last Full Month` è _1 maggio - 31 maggio_, mentre `This Month` è _1 giugno - Ora_.
 
 Oppure crea il tuo `Custom Moving Range`\:
 
-![campo mobile personalizzato](../../assets/custom-moving-range.png)
+![intervallo di spostamento personalizzato](../../assets/custom-moving-range.png)
 
-Scegliere di modificare anche l&#39;intervallo. Selezione del pulsante predefinito (![intervallo di tempo predefinito](../../assets/time_interval_default.png)) indica che verrà modificato solo l’intervallo di date:
+Scegli di modificare anche l’intervallo. Selezione del pulsante predefinito (![intervallo di tempo predefinito](../../assets/time_interval_default.png)) significa che cambia solo l’intervallo di date:
 
 ![intervallo di tempo](../../assets/time_interval.png)
 
-Per ripristinare tutti i rapporti nel loro intervallo di date e intervallo iniziale, fai clic su **[!UICONTROL Restore Defaults]** o fai clic su **[!UICONTROL Cancel]**.
+Per ripristinare l’intervallo e l’intervallo di date iniziali di tutti i rapporti, fai clic su **[!UICONTROL Restore Defaults]** o fai clic su **[!UICONTROL Cancel]**.
 
-Quando specifichi un filtro data per un dashboard, questo viene applicato solo a quel dashboard. Non viene applicata quando si passa ad altre dashboard.
-
->[!NOTE]
->
->Al momento, `Cohort Reports` e `SQL Reports` non sono inclusi quando si applicano modifiche a livello di dashboard.
-
-## Filtri per archivio
-
-Per analizzare le prestazioni di uno specifico archivio, fai clic sull&#39;icona Store nell&#39;angolo in alto a destra (![Filtro store](../../assets/store-filter.png)). Per impostazione predefinita, `Store Filter` è impostato su `All Stores`, che visualizza i dati di tutti [viste store](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) disponibile nel sito Commerce.
+Quando si specifica un filtro data per un dashboard, tale filtro viene applicato solo a tale dashboard. Non viene applicato quando si passa ad altre dashboard.
 
 >[!NOTE]
 >
->Un filtro store è abilitato o disabilitato per un intero [!DNL MBI] conto. Se un dashboard contiene rapporti non interessati dal filtro, ad esempio rapporti non generati su dati Commerce, tali rapporti non vengono aggiornati quando viene applicato il filtro store. È possibile [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) se ritieni che un rapporto debba essere aggiornato in base alla selezione dell&#39;archivio o se ritieni che il filtro dell&#39;archivio account sia disabilitato erroneamente.
+>Attualmente, `Cohort Reports` e `SQL Reports` non sono inclusi quando si applicano modifiche a livello di dashboard.
 
-Quando si seleziona un archivio dal `Store Filter`, il filtro mantiene la selezione quando ci si sposta tra le dashboard. Mantenere la selezione consente di visualizzare i dati per l&#39;archivio selezionato ovunque fino a quando non si seleziona `All Stores`.
+## Filtri store
 
-## Filtri per le dashboard condivise
+Per analizzare le prestazioni di un negozio specifico, fai clic sull’icona dei negozi nell’angolo in alto a destra (![Filtro store](../../assets/store-filter.png)). Per impostazione predefinita, `Store Filter` è impostato su `All Stores`, che visualizza i dati di tutti [visualizzazioni store](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) disponibili nel sito Commerce.
 
-Per le dashboard condivise, se un utente configura il filtro data, gli altri utenti con accesso al dashboard vedranno applicato lo stesso filtro. Tuttavia, il filtro store non si applica in questo caso. Se il proprietario del dashboard configura il filtro store e condivide il dashboard, il filtro store configurato non persisterà per un altro utente. Un utente deve avere [modifica accesso](../../data-user/dashboards/share-dashboard-with-users.md) su un dashboard per regolare i filtri del dashboard.
+>[!NOTE]
+>
+>Un filtro store è abilitato o disabilitato per un intero [!DNL MBI] account. Se un dashboard contiene rapporti che non sono interessati dal filtro (ad esempio rapporti che non sono generati su dati di Commerce), tali rapporti non vengono aggiornati quando viene applicato il filtro archivio. È possibile [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) se ritieni che un rapporto debba essere aggiornato in base alla selezione dello store o se ritieni che il filtro dello store dell’account sia disabilitato per errore.
+
+Quando selezioni uno store da `Store Filter`, il filtro mantiene la selezione quando ci si sposta tra le dashboard. Mantenere la selezione consente di visualizzare ovunque i dati per lo store selezionato fino a quando non si seleziona `All Stores`.
+
+## Filtri per dashboard condivisi
+
+Per le dashboard condivise, se un utente configura il filtro data, gli altri utenti con accesso al dashboard visualizzano lo stesso filtro applicato. Tuttavia, il filtro store non si applica in questo caso. Se il proprietario del dashboard configura il filtro store e condivide il dashboard, il filtro store configurato non persiste per un altro utente. Un utente deve avere [modifica accesso](../../data-user/dashboards/share-dashboard-with-users.md) a un dashboard per regolare i filtri del dashboard.

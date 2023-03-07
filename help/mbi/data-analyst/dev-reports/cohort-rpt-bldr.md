@@ -1,97 +1,97 @@
 ---
 title: Report Builder coorte
-description: Scopri l’analisi dei gruppi di utenti che condividono caratteristiche simili nel corso del loro ciclo di vita.
+description: Scopri l’analisi dei gruppi di utenti che condividono caratteristiche simili nel corso dei loro cicli di vita.
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1556'
 ht-degree: 0%
 
 ---
 
 # Report Builder coorte
 
-Hai mai voluto studiare come si comportano nel tempo diversi sottoinsiemi degli utenti? Ad esempio, si è mai chiesto se gli utenti che si registrano durante un periodo promozionale hanno un fatturato medio a vita più alto rispetto a quelli che non lo hanno? Se la risposta è `Yes`, quindi `Cohort Report Builder` è lo strumento perfetto per te. [!DNL MBI] è ottimizzata in modo specifico per eseguire questa analisi e renderla pertinente alla tua attività.
+Hai mai desiderato studiare il comportamento nel tempo di diversi sottoinsiemi di utenti? Ad esempio, ti sei mai chiesto se gli utenti che si registrano durante un periodo promozionale hanno un ricavo medio sulla vita più alto rispetto a quelli che non lo fanno? Se la risposta è `Yes`, quindi `Cohort Report Builder` è lo strumento perfetto per te. [!DNL MBI] è ottimizzato per eseguire questa analisi e renderla rilevante per la tua azienda.
 
-## Cos’è un’analisi per coorte? {#what}
+## L’analisi per coorte {#what}
 
-`Cohort` L&#39;analisi può essere definita in senso ampio come l&#39;analisi dei gruppi di utenti che condividono caratteristiche simili nel corso del loro ciclo di vita. Ti consente di identificare le tendenze comportamentali tra diversi gruppi di utenti.
+`Cohort` l’analisi può essere definita in senso lato come l’analisi di gruppi di utenti che condividono caratteristiche simili nel corso dei loro cicli di vita. Consente di identificare le tendenze comportamentali tra diversi gruppi di utenti.
 
-Per un primer più approfondito su `cohort` analisi, [dai un&#39;occhiata qui](https://www.cohortanalysis.com/) - ci abbiamo scritto il sito!
+Per un primer più approfondito su `cohort` analisi, [guarda qui](https://www.cohortanalysis.com/).
 
-Nel tuo [!DNL MBI] dashboard, è facile creare l&#39;utente `cohorts` basato su `cohort` data e metrica nel tuo account.
+Nel tuo [!DNL MBI] dashboard, è facile creare un utente `cohorts` in base a `cohort` data e una metrica nel tuo account.
 
-## Perché l&#39;analisi per coorte è importante? {#important}
+## Perché è importante l&#39;analisi per coorte? {#important}
 
-Come indicato sopra, `cohort` l’analisi ti consente di identificare le tendenze comportamentali tra diversi gruppi di utenti. Con una solida comprensione del comportamento di alcuni gruppi, è possibile adattare le proprie decisioni e le proprie spese per massimizzare le vendite. Prendiamo, ad esempio, un fatturato a vita `cohort` analisi - anche se questo tipo di analisi è utile per molti motivi, quella immediata è una migliore acquisizione delle decisioni dei clienti.
+Come indicato in precedenza, `cohort` L’analisi ti consente di identificare le tendenze comportamentali tra diversi gruppi di utenti. Grazie alla solida conoscenza del comportamento di alcuni gruppi, puoi adattare le tue decisioni di acquisto per massimizzare le vendite. Prendiamo, ad esempio, i ricavi generati nel corso del ciclo di vita `cohort` analisi: anche se questo tipo di analisi è utile per molte ragioni, quella più immediata è quella di prendere decisioni migliori in materia di acquisizione di clienti.
 
-## Come creo il mio `cohort` analisi?
+## Come posso creare il mio `cohort` analisi?
 
 ### Nuova architettura
 
-Queste sono le istruzioni per l&#39;utilizzo del `Cohort Report Builder` sulla [Nuova architettura](../../administrator/account-management/new-architecture.md).
+Queste sono le istruzioni per l&#39;utilizzo di `Cohort Report Builder` il [Nuova architettura](../../administrator/account-management/new-architecture.md).
 
-1. Fai clic su **[!UICONTROL Report Builder]** nella scheda a sinistra o **[!UICONTROL Add Report** > **Create Report]** in qualsiasi dashboard.
+1. Clic **[!UICONTROL Report Builder]** nella scheda sinistra o **[!UICONTROL Add Report** > **Create Report]** in qualsiasi dashboard.
 
-1. In `Report Builder` schermata di selezione, fai clic su **[!UICONTROL Create Report]** accanto al `Visual Report Builder` opzione .
+1. In `Report Builder` selezione, fare clic su **[!UICONTROL Create Report]** accanto al `Visual Report Builder` opzione.
 
 **Aggiunta di una metrica**
 
-Ora che siamo nel `Report Builder`, aggiungiamo la metrica su cui desideri eseguire l’analisi (ad esempio: `Revenue` o `Orders`).
+Ora che sei nel `Report Builder`, aggiungi la metrica su cui desideri eseguire l’analisi (ad esempio: `Revenue` o `Orders`).
 
 >[!NOTE]
 >
->Nativo [!DNL Google Analytics] le metriche non sono compatibili con `Cohort Report Builder`.
+>Nativa [!DNL Google Analytics] le metriche non sono compatibili con `Cohort Report Builder`.
 
-**Attiva/disattiva la visualizzazione metrica in`Cohort`**
+**Attiva/disattiva la visualizzazione della metrica su`Cohort`**
 
 ![](../../assets/visual-report-builder-cohort-toggle.png)
 
-Viene visualizzata una nuova finestra in cui è possibile configurare i dettagli `Cohort` Rapporto.
+Viene visualizzata una nuova finestra per configurare i dettagli della `Cohort` Rapporto.
 
-### Sono necessarie cinque specifiche per costruire un `Cohort` rapporto:
+### Per realizzare un’ `Cohort` rapporto:
 
-1. Raggruppare i `cohorts`
-1. La `cohort` periodo
-1. Numero di `cohorts` per visualizzare
-1. Quantità minima di dati per ciascuna `cohort` deve contenere
+1. Come raggruppare i `cohorts`
+1. Il `cohort` periodo temporale
+1. Il numero di `cohorts` per visualizzare
+1. Quantità minima di dati per ogni `cohort` deve contenere
 1. Intervallo di tempo dopo `cohort` occorrenza
 
 #### 1. Raggruppamento `cohorts`
 
-`Cohorts` sono raggruppati per una marca temporale, come **data di registrazione** o **data del primo ordine**.
+`Cohorts` sono raggruppati per marca temporale, come **data di registrazione** o **data primo ordine**.
 
 >[!NOTE]
 >
->Non puoi utilizzare la stessa marca temporale su cui è basata la metrica per `cohort` data. Per un’analisi che richiede questa operazione, puoi utilizzare la funzione `Standard report builder` invece.
+>Non puoi utilizzare la stessa marca temporale su cui è basata la metrica per `cohort` data. Per un’analisi che lo richieda, puoi utilizzare `Standard report builder` invece.
 
-#### 2. `Cohort` periodo
+#### 2. `Cohort` periodo temporale
 
-Scegliere il periodo di tempo da raggruppare `cohorts` di. In altre parole, quale parte della marca temporale selezionata sopra è più importante; la `week`, `month`, `quarter`oppure `year`?  Il report mostrerà i dati in qualsiasi intervallo selezionato qui
+Scegli il periodo di tempo da raggruppare `cohorts` di. In altre parole, quale parte della marca temporale selezionata in precedenza è più importante; la `week`, `month`, `quarter`, o `year`? Il rapporto visualizza i dati in qualsiasi intervallo selezionato qui
 
-#### 3. e 4. Imposta il numero di `cohorts` per visualizzare e quanti dati ciascuno `cohort` devono
+#### 3. e 4. Imposta il numero di `cohorts` per visualizzare e quanti dati ciascuno `cohort` deve avere
 
-Questi parametri consentono di visualizzare solo i `cohorts` che ti interessa, e la comodità `Preview` nella casella in fondo alla finestra è indicato esattamente quali coorti verranno visualizzati nel rapporto.
+Questi parametri consentono di visualizzare solo `cohorts` che ti interessa e la praticità `Preview` nella parte inferiore della finestra mostra esattamente le coorti visualizzate nel rapporto.
 
-Per impostazione predefinita, la `cohort` non saranno inclusi a meno che non si modifichi la quantità minima di dati richiesta per ogni `cohort` a `0`. In questo caso, il `cohort` per il periodo di tempo corrente includeranno solo dati parziali.
+Per impostazione predefinita, l&#39;attuale `cohort` non è incluso a meno che non si modifichi la quantità minima di dati richiesti per `cohort` a `0`. In questo caso, il `cohort` per il periodo di tempo corrente include solo dati parziali.
 
 #### 5. Intervallo di tempo dopo `Cohort` Occorrenza
 
-Questa funzione consente di impostare l’intervallo di tempo dei dati visualizzati per il `cohorts`. Ad esempio, se desideri visualizzare 24 mesi `cohorts` basato su `customer's first order date`, ma sei interessato solo ai primi 3 mesi di dati per ciascuno `cohort`, puoi impostare la `number of cohorts to view` a `24` e `time range after cohort occurrence` a `3`.
+Questa funzione ti consente di impostare l’intervallo di tempo dei dati visualizzati per il `cohorts`. Ad esempio, per visualizzare 24 pagine al mese `cohorts` in base a `customer's first order date`, ma sei interessato solo ai primi 3 mesi di dati per ogni `cohort`, è possibile impostare `number of cohorts to view` a `24` e `time range after cohort occurrence` a `3`.
 
-L&#39;intervallo per questo valore cambia con ciò che hai selezionato nel `cohort time period` e il valore è impostato su `12` per impostazione predefinita; il valore non viene modificato a meno che non si faccia clic sull&#39;icona del calendario per modificarlo.
+L&#39;intervallo per questo valore cambia con qualsiasi elemento selezionato nella `cohort time period` e il valore è impostato su `12` per impostazione predefinita, il valore non cambia a meno che non fai clic sull’icona del calendario per modificarlo.
 
 ![](../../assets/cohort-time-range.png)
 
 #### Altre note
 
-* [!UICONTROL Filters]: applicati alle metriche rimangono intatti quando si passa da `Standard` e `Cohort` visualizzazioni.
+* [!UICONTROL Filters]: applicato alle metriche, rimane intatto quando passi da una metrica all’altra `Standard` e `Cohort` visualizzazioni.
 
-* Vedi [`Perspectives`](#perspectives).
+* Consulta [`Perspectives`](#perspectives).
 
 #### Esempio
 
-Ecco un esempio per mettere tutto insieme. In questo esempio, desidero verificare il comportamento dell’ordine dopo un `cohort`Il suo primo acquisto per verificare se la coorte ritorna per effettuare acquisti ripetuti nei prossimi 6 mesi.
+Ecco un esempio per mettere tutto insieme. In questo esempio, desidero estrarre il comportamento dell&#39;ordine dopo un `cohort`Il primo acquisto per verificare se la coorte torna a effettuare acquisti ripetuti nei prossimi sei mesi.
 
 ![Coorte Ordini](../../assets/crb_example.gif)
 
@@ -99,116 +99,116 @@ Ecco un esempio per mettere tutto insieme. In questo esempio, desidero verificar
 
 #### Architettura legacy {#personalinfo}
 
-Di seguito sono riportate le istruzioni specifiche per la versione precedente di `Cohort Report Builder`. Se ti interessa utilizzare la nuova versione, consulta [Nuova architettura](../../administrator/account-management/new-architecture.md) per ulteriori informazioni sulla migrazione a un [!DNL MBI] Nuovo account di architettura.
+Di seguito sono riportate le istruzioni specifiche della versione legacy di `Cohort Report Builder`. Se ti interessa utilizzare la nuova versione, consulta [Nuova architettura](../../administrator/account-management/new-architecture.md) per ulteriori informazioni sulla migrazione a [!DNL MBI] Nuovo account dell’architettura.
 
-#### Come creo il mio `cohort` analisi? {#create}
+#### Come posso creare il mio `cohort` analisi? {#create}
 
 ![](../../assets/create-cohort-analysis.png)
 
-`Cohort` analisi in azione! In questo caso, i ricavi aumentano nel tempo cumulativamente e per utente.
+`Cohort` analisi in azione! In questo caso, puoi vedere i ricavi crescere nel tempo sia cumulativamente che per utente.
 
-In questa sezione ti guidiamo attraverso la creazione di un tuo `cohort` analisi. Per esempi (e GIF animati che dimostrano il processo), consulta la sezione [Sezione Esempi](#examples) del presente articolo.
+Questa sezione illustra come creare `cohort` analisi. Per esempi (e GIF animati che illustrano il processo), osservate [Sezione Esempi](#examples) del presente articolo.
 
-1. Fai clic su **[!UICONTROL Report Builder]** nella scheda a sinistra o **[!UICONTROL Add Report** > **Create Report]** in qualsiasi dashboard.
+1. Clic **[!UICONTROL Report Builder]** nella scheda sinistra o **[!UICONTROL Add Report** > **Create Report]** in qualsiasi dashboard.
 
-1. In `Report Builder Selection` schermata, fai clic su **[!UICONTROL Create Report]** accanto al `Cohort Analysis` opzione .
+1. In `Report Builder Selection` schermata, fai clic su **[!UICONTROL Create Report]** accanto al `Cohort Analysis` opzione.
 
 #### Aggiunta di una metrica
 
-Ora che siamo nel `Cohort Report Builder`Aggiungiamo la metrica (ad esempio: `Revenue` o `Number of orders`) su cui desideri eseguire l’analisi.
+Ora che sei nel `Cohort Report Builder`, aggiungi la metrica (esempio: `Revenue` o `Number of orders`) su cui si desidera eseguire l&#39;analisi.
 
 >[!NOTE]
 >
->Nativo [!DNL Google Analytics] le metriche non sono compatibili con `Cohort Report Builder`.
+>Nativa [!DNL Google Analytics] le metriche non sono compatibili con `Cohort Report Builder`.
 
 #### Selezione della data della coorte {#date}
 
-Il passaggio successivo consiste nel specificare il `cohort date`. È la data in cui gli utenti verranno raggruppati. Ad esempio, potrebbe essere `User's first order date` o `User's registration date`.
+Il passaggio successivo consiste nello specificare `cohort date`. Questa è la data entro la quale gli utenti sono raggruppati. Ad esempio, potrebbe essere `User's first order date` o `User's registration date`.
 
 >[!NOTE]
 >
->Non puoi utilizzare la stessa data in cui viene creata la metrica (ad esempio: `created at`) come `cohort date`.
+>Non è possibile utilizzare la stessa data in cui la metrica è stata generata (ad esempio: `created at`) come `cohort date`.
 
-#### Impostazione dell’intervallo e del periodo di tempo
+#### Impostazione dell&#39;intervallo e del periodo di tempo
 
-Quindi, impostiamo il `Interval` e `Time Period`.
+Quindi, imposta `Interval` e `Time Period`.
 
 `Interval`
-La `Interval` consente di impostare `length` del tuo `cohorts`. Ad esempio, se è impostato su `Month`, il rapporto verrà misurato in mesi.
+Il `Interval` consente di impostare `length` del tuo `cohorts`. Ad esempio, se è impostato su `Month`, il rapporto viene misurato in mesi.
 
 È possibile modificare la modalità di visualizzazione di questi intervalli sull&#39;asse x utilizzando **Durata** menu.
 
 `Time Period`
-Utilizza la `Time Period` menu per scegliere l&#39;utente specifico `cohorts` da analizzare. Puoi mostrare ogni `cohort`, scegli da un elenco, specifica un intervallo di tempo o definisci un intervallo di tempo continuo di `cohorts` da includere. Ad esempio, se abbiamo utilizzato il `Specific Cohorts` è possibile selezionare mesi specifici da includere nell’analisi:
+Utilizza il `Time Period` menu per scegliere l’utente specifico `cohorts` da analizzare. Puoi mostrare ogni `cohort`, scegliere da un elenco, specificare un intervallo di tempo o definire un intervallo di tempo continuo di `cohorts` da includere. Ad esempio, se utilizzi il `Specific Cohorts` , è possibile selezionare mesi specifici da includere nell’analisi:
 
-![Utilizzo della `Time Period` menu per aggiungere specifiche `Cohorts`](../../assets/Cohort_Time_Period.gif)
+![Utilizzo di `Time Period` menu per aggiungere specifiche `Cohorts`](../../assets/Cohort_Time_Period.gif)
 
-Se stavamo raggruppando il nostro `cohorts` per data di registrazione e quindi selezionato aprile, maggio e giugno `Specific Cohorts` elenco, tutti gli utenti che si sono registrati in questi mesi saranno inclusi.
+Se stai raggruppando `cohorts` per data di registrazione e quindi selezionati aprile, maggio e giugno nel `Specific Cohorts` saranno inclusi tutti gli utenti registrati in tali mesi.
 
 #### Definizione dell’asse X
 
-Sotto `duration`, puoi definire le impostazioni dell’asse X del grafico. Cioè, quanti periodi di tempo ogni punto dati rappresenta e quanti punti dati includere nell’analisi.
+Sotto `duration`, è possibile definire le impostazioni dell&#39;asse X del grafico. In altre parole, quanti periodi di tempo ogni punto dati rappresenta e quanti punti dati includere nell’analisi.
 
-#### Selezione della `counting members` tabella
+#### Selezione del `counting members` tabella
 
-Se hai scelto di raggruppare gli utenti in base a un `cohort date` è stato unito da un&#39;altra tabella, è possibile che venga visualizzata una `counting members in the … table` opzione .
+Se si è scelto di raggruppare gli utenti in base a `cohort date` che è stato aggiunto da un&#39;altra tabella, è possibile che venga visualizzato un `counting members in the … table` opzione.
 
 ![](../../assets/Cohort_Counting_Members_option.png)
 
-Vediamo un esempio per comprendere questa impostazione. Supponi di creare una coorte di rapporti `Revenue` metrica per `Customer's registration date`. Desideri anche utilizzare la prospettiva `Average value per cohort member` per visualizzare i ricavi per acquirente nel tempo. Per trovare il valore medio per acquirente, dobbiamo decidere il numero di acquirenti per cui dividere. È il numero di clienti registrati nel tuo `customers` o è il numero di acquirenti distinti nel tuo `orders table` per lo stesso periodo di tempo?
+Guarda un esempio per comprendere questa impostazione. Supponiamo che tu abbia creato un rapporto che coordina un `Revenue` metrica per `Customer's registration date`. Volevi anche usare la prospettiva. `Average value per cohort member` per visualizzare i ricavi per buyer nel tempo. Per trovare il valore medio per acquirente, devi decidere il numero di acquirenti da dividere. È il numero di clienti registrati nel tuo `customers` tabella, o è il numero di acquirenti distinti nel tuo `orders table` per lo stesso periodo?
 
-Questa impostazione risponde a quella domanda. Conteggio dei membri nel `customers` La tabella include tutti i clienti (che abbiano effettuato o meno un acquisto) nella media. Conteggio dei membri nel `orders` La tabella include solo i clienti che hanno effettuato un acquisto.
+Questa impostazione risponde a tale domanda. Membri di conteggio in `customers` La tabella include in media tutti i clienti (sia che abbiano effettuato un acquisto, sia che lo abbiano fatto). Membri di conteggio in `orders` La tabella include solo i clienti che hanno effettuato un acquisto.
 
 #### Selezione di una prospettiva {#perspective}
 
-Dopo aver definito la metrica e come desideri analizzarla, puoi selezionare la `perspective` volete usare.
+Dopo aver definito la metrica e come desideri analizzarla, puoi selezionare `perspective` che desideri utilizzare.
 
-Appena sopra la visualizzazione del rapporto è presente un elenco a discesa di `perspective` impostazioni.
+Appena sopra la visualizzazione del rapporto si trova un elenco a discesa di `perspective` impostazioni.
 
-Vedi [Prospettive](#perspectives).
+Consulta [Prospettive](#perspectives).
 
 ![](../../assets/Cohort_Perspective_Menu.png)
 
 ## Esempi di analisi per coorte {#examples}
 
-Ora che abbiamo capito come creare un `cohort` analizziamo alcuni esempi.
+Ora che hai descritto come creare un’ `cohort` analisi, guardate alcuni esempi.
 
-### Voglio sapere come funziona il mio utente `cohorts` stanno crescendo nel tempo.
+### Voglio sapere come il mio utente `cohorts` crescono nel tempo.
 
 ![Utente `cohorts` crescita nel tempo](../../assets/cohort1.gif)
 
-In questo esempio, abbiamo analizzato il `Revenue` metrica, raggruppate le coorti per `customer's first order date`, e ha selezionato gli 8 ultimi `cohorts` (definito in `Time Period` da includere nell’analisi. Per vedere come le coorti sono cresciute nel tempo, abbiamo usato il `Cumulative Average Value per Cohort Member` `perspective`.
+In questo esempio hai analizzato `Revenue` metrica, ha raggruppato le coorti per `customer's first order date`, e ha selezionato gli 8 più recenti `cohorts` (definito nella `Time Period` da includere nell&#39;analisi. Per vedere come le coorti sono cresciute nel tempo, hai utilizzato il `Cumulative Average Value per Cohort Member` `perspective`.
 
-### Voglio sapere, in media, quanti ordini effettua un utente in momenti diversi della sua vita.
+### Voglio sapere, in media, quanti ordini un utente fa in momenti diversi della sua vita.
 
-!![Average number of orders users make at different points in their lifetimes](../../assets/cohort2.gif)
+!![Average number of orders users make at different points in their lifetimes](../../assets/cohort2.gif
 
-Per questo esempio, abbiamo analizzato il `Number of orders` metrica, raggruppate le coorti per `customer's first order date`, e includeva le 8 coorti più recenti (definite nel `Time Period` ) nell&#39;analisi. Per visualizzare il numero medio di ordini per ogni coorte, abbiamo modificato il `perspective` a `Average Value per Cohort Member`.
+In questo esempio, hai analizzato `Number of orders` metrica, ha raggruppato le coorti per `customer's first order date`, e includevano le otto coorti più recenti (definite nella `Time Period` nell&#39;analisi. Per visualizzare il numero medio di ordini per ogni coorte, hai modificato il `perspective` a `Average Value per Cohort Member`.
 
-### Voglio capire in che modo le future attività di acquisto di un utente si confrontano con l&#39;attività del primo mese con l&#39;azienda.
+### Voglio capire come si confronta l&#39;attività di acquisto futura di un utente con l&#39;attività del primo mese con l&#39;azienda.
 
-![Confronto tra le future attività di acquisto di un utente e il primo mese di attività](../../assets/cohort3.gif)
+![Confrontare le attività di acquisto future di un utente con il primo mese di attività](../../assets/cohort3.gif)
 
 ## `Perspectives` {#perspectives}
 
 `Standard`
-Questo mostra il contributo incrementale di un determinato gruppo di coorti in qualsiasi momento del loro ciclo di vita. (esempio: Il punto &quot;Settimana 6&quot; mostra tutti i punti dati effettuati dagli utenti nella loro sesta settimana.)
+Mostra il contributo incrementale di un dato gruppo di coorti in un dato momento del loro ciclo di vita. Ad esempio, il punto &quot;Settimana 6&quot; mostra tutte le coordinate effettuate dagli utenti nella sesta settimana.
 
 `Average Value per Cohort Member`
-Questo divide il `Standard cohort` analisi in (1) per il numero di utenti in ogni `cohort` gruppo. Questo può essere utile per confrontare le prestazioni della coorte su base &quot;dalle mele alle mele&quot;, in quanto non tutti i gruppi di coorti possono includere lo stesso numero di utenti. Ad esempio, la media dei ricavi della settimana 6 per utente da un determinato `cohort`.
+Questo divide il `Standard cohort` analisi in (1) in base al numero di utenti in ciascun `cohort` gruppo. Ciò può essere utile per confrontare le prestazioni delle coorti in base al confronto tra mele, in quanto non tutti i gruppi di coorte possono includere lo stesso numero di utenti. Ad esempio, il ricavo medio settimanale 6 per utente da un determinato `cohort`.
 
 `Cumulative`
-Questo `perspective` mostra il tradizionale `cohort` analisi su `cumulative` base. In altre parole, mostra il contributo totale di una determinata coorte fino ad oggi in qualsiasi momento del loro ciclo di vita. Ad esempio, i ricavi cumulativi dopo 6 settimane di utenti da una determinata coorte.
+Questo `perspective` mostra il tradizionale `cohort` analisi su una `cumulative` base. In altre parole, mostra il contributo totale di una determinata coorte fino ad oggi in un dato momento del loro ciclo di vita. Ad esempio, i ricavi cumulativi dopo sei settimane di utilizzo da una determinata coorte.
 
 `Cumulative Average Value per Cohort Member`
-Questo divide il `Cumulative` analisi in (3) per il numero di utenti in ciascun `cohort` gruppo. Mostra il contributo medio del ciclo di vita (spesso ricavi medi del ciclo di vita) per `cohort` membro per ogni periodo `cohort's` la vita. Ad esempio, il ricavo medio del ciclo di vita dopo 6 mesi di utenti che hanno aderito a giugno.
+Questo divide il `Cumulative` analisi in (3) in base al numero di utenti in ciascun `cohort` gruppo. Mostra il contributo medio per tutta la vita (spesso ricavi medi per tutta la vita) per `cohort` membro a ogni periodo nel `cohort's` la vita. Ad esempio, i ricavi medi del ciclo di vita dopo sei mesi di utenti che hanno aderito a giugno.
 
 `Percent of First Value (show first value)`
-Questo analizza l’aggregato `cohort` contributo in un momento specifico `cohort's` ciclo di vita in percentuale del loro contributo nel primo periodo. Ad esempio, i ricavi del mese 6 suddivisi per i ricavi del mese 1 degli utenti che hanno aderito a giugno.
+Questo analizza l&#39;aggregato `cohort` contributo in un momento specifico in un `cohort's` ciclo di vita come percentuale del loro contributo nel primo periodo. Ad esempio, i ricavi del mese 6 divisi per i ricavi del mese 1 degli utenti che hanno aderito a giugno.
 
 `Percent of First Value (hide first value)`
-È lo stesso del `perspective` precedente, con la differenza che il valore del primo periodo di tempo pari al 100% è nascosto.
+È lo stesso della `perspective` sopra, tranne per il fatto che il valore del primo periodo di tempo del 100% è nascosto.
 
 ## Ritorno a capo {#finish}
 
-La `Cohort Report Builder` è attualmente ottimizzato per raggruppare gli utenti in base a una comune `cohort date`. Potresti essere interessato a raggruppare gli utenti con un’attività o un attributo simile - se questo è il caso, ci piacerebbe aiutare! Consigliamo di effettuare il check-out [questa esercitazione sulle coorti qualitative](../dev-reports/create-qual-cohort-analysis.md) per iniziare.
+Il `Cohort Report Builder` è ottimizzato per il raggruppamento degli utenti in base a `cohort date`. Potrebbe essere utile raggruppare gli utenti per un&#39;attività o un attributo simile. L&#39;Adobe consiglia di eseguire il check-out [questo tutorial sulle coorti qualitative](../dev-reports/create-qual-cohort-analysis.md) per iniziare.
