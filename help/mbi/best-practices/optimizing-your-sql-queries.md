@@ -2,18 +2,18 @@
 title: Ottimizzazione delle query SQL
 description: Scopri come ottimizzare le query SQL.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
 
 # Ottimizzare le query SQL
 
-Il Report Builder SQL consente di eseguire query e iterazioni su tali query in qualsiasi momento. Questa opzione è utile quando è necessario modificare una query senza dover attendere il completamento di un ciclo di aggiornamento prima di realizzare che è necessario aggiornare una colonna o un report creato.
+Il [!DNL SQL Report Builder] consente di eseguire query e iterazioni su tali query in qualsiasi momento. Questa opzione è utile quando è necessario modificare una query senza dover attendere il completamento di un ciclo di aggiornamento prima di realizzare che è necessario aggiornare una colonna o un report creato.
 
-Prima dell’esecuzione di una query [[!DNL MBI] stima il costo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). Il costo considera il tempo e il numero di risorse necessari per eseguire una query. Se il costo è ritenuto troppo elevato o se il numero di righe restituite supera i limiti MBI, la query non riesce. Per eseguire query sulla Data Warehouse, in modo da garantire la scrittura delle query più semplici possibile, l’Adobe consiglia quanto segue.
+Prima dell’esecuzione di una query [[!DNL Commerce Intelligence] stima il costo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Il costo considera il tempo e il numero di risorse necessari per eseguire una query. Se il costo è ritenuto troppo elevato o se il numero di righe restituite supera [!DNL Commerce Intelligence] limiti, la query non riesce. Per eseguire query su [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), che consente di scrivere query il più possibile semplificate, l’Adobe consiglia quanto segue.
 
 ## Utilizzo di SELECT o selezione di tutte le colonne
 

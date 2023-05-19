@@ -2,9 +2,9 @@
 title: tabella customer_entity
 description: Scopri come accedere ai record di tutti gli account registrati.
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Il `customer_entity` la tabella contiene i record di tutti gli account registrati. Un account viene considerato registrato se si iscrive a un account, indipendentemente dal fatto che abbia completato o meno un acquisto. Ogni riga corrisponde a un account registrato univoco, identificato dall&#39;account `entity_id`.
 
-Questa tabella non contiene i record dei clienti che effettuano un ordine tramite il pagamento come ospite. Se il tuo negozio accetta il pagamento come ospite, [scopri come rendere conto](../data-warehouse-mgr/guest-orders.md) per quei clienti.
+Questa tabella non contiene i record dei clienti che effettuano un ordine tramite il pagamento come ospite. Se il tuo negozio accetta il pagamento, consulta [come registrare gli ordini degli ospiti](../data-warehouse-mgr/guest-orders.md) per quegli ordini.
 
 ## Colonne comuni
 
 | **Nome colonna** | **Descrizione** |
 |---|---|
-| `created_at` | Marca temporale corrispondente alla data di registrazione dell’account, memorizzata localmente in UTC. A seconda della configurazione in [!DNL MBI], questa marca temporale può essere convertita in un fuso orario di reporting in [!DNL MBI] diverso dal fuso orario del database |
+| `created_at` | Marca temporale corrispondente alla data di registrazione dell’account, memorizzata localmente in UTC. A seconda della configurazione in [!DNL Commerce Intelligence], questa marca temporale può essere convertita in un fuso orario di reporting in [!DNL Commerce Intelligence] diverso dal fuso orario del database |
 | `email` | Indirizzo e-mail associato all’account |
 | `entity_id` PK | Identificatore univoco della tabella, di solito utilizzato nei join di `customer_id` in altre tabelle nell’istanza |
 | `group_id` | Chiave esterna associata al `customer_group` tabella. Partecipa a `customer_group.customer_group_id` per determinare il gruppo di clienti associato all&#39;account registrato |

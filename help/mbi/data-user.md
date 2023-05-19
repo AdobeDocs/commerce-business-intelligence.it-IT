@@ -2,7 +2,7 @@
 title: Utente dati
 description: Utente dati
 exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 I dati vengono utilizzati per prendere decisioni aziendali. Potresti ricevere report e dashboard da un analista di dati del tuo team, ma desideri anche imparare a creare tali report e dashboard.
 
 In questa sezione viene illustrato come:
-* acquisire e visualizzare dati in [!DNL MBI] utilizzo di report e dashboard
+* acquisire e visualizzare dati in [!DNL Commerce Intelligence] utilizzo di report e dashboard
 * condividere tali dati con le parti interessate tramite e-mail e `.csv` file
 
 ## Correlato

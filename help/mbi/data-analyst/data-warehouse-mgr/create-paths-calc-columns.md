@@ -2,9 +2,9 @@
 title: Creare o eliminare percorsi per colonne calcolate
 description: Scopri come definire un percorso che descriva il modo in cui la tabella su cui stai creando una colonna è correlata alla tabella da cui stai estraendo le informazioni.
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Quando [creazione di colonne calcolate](../data-warehouse-mgr/creating-calculate
 1. Correlazione tra le tabelle dei database
 1. Chiavi primarie ed esterne che definiscono questa relazione
 
-Se conosci queste informazioni, puoi creare facilmente un percorso seguendo le istruzioni riportate in questo articolo. Una panoramica di questi concetti se ti senti in dubbio, ma potresti voler chiedere a un esperto tecnico della tua organizzazione o contattare il team di supporto Adobe.
+Se si conoscono queste informazioni, è possibile creare facilmente un percorso seguendo le istruzioni riportate in questo argomento. Potresti chiedere a un esperto tecnico della tua organizzazione o contattare il [Team Professional Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Aggiornamenti relativi alle relazioni tra tabelle e ai tipi di chiave {#refresher}
 
@@ -36,7 +36,7 @@ Le tabelle possono essere correlate tra loro in uno dei tre modi seguenti:
 
 {style="table-layout:auto"}
 
-Una volta compresa una relazione tra due tabelle, è possibile utilizzarla per determinare quale percorso deve essere creato per portare le informazioni da una tabella all’altra. Per questo passaggio successivo è necessario conoscere le chiavi primarie ed esterne che facilitano una relazione tra tabelle.
+Una relazione tra due tabelle può essere utilizzata per determinare il percorso da creare per trasferire le informazioni da una tabella all&#39;altra. Per questo passaggio successivo è necessario conoscere le chiavi primarie ed esterne che facilitano una relazione tra tabelle.
 
 ### Chiavi primarie ed esterne {#keys}
 
@@ -75,20 +75,23 @@ Ora puoi creare il percorso.
 
 ### Limitazioni della creazione di percorsi {#limits}
 
-* **[!DNL MBI]impossibile indovinare le relazioni chiave primaria/esterna**. Non desideri introdurre dati errati nell’account, pertanto la creazione dei percorsi deve essere eseguita manualmente.
-* **Attualmente è possibile specificare percorsi solo tra due tabelle diverse**. La logica che si sta tentando di ricreare coinvolge più di due tabelle? Potrebbe quindi essere utile (1) unire le colonne a una tabella intermedia, quindi alla tabella di &quot;destinazione finale&quot;, oppure (2) consultare il team di Adobi per trovare l’approccio migliore ai tuoi obiettivi.
+* **[!DNL Commerce Intelligence]impossibile indovinare le relazioni chiave primaria/esterna**. Non desideri introdurre dati errati nell’account, pertanto la creazione dei percorsi deve essere eseguita manualmente.
+
+* **Attualmente è possibile specificare percorsi solo tra due tabelle diverse**. La logica che si sta tentando di ricreare coinvolge più di due tabelle? Potrebbe quindi essere utile (1) unire le colonne a una tabella intermedia, quindi alla tabella di &quot;destinazione finale&quot;, oppure (2) consultare la [Team Professional Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per trovare il miglior approccio ai tuoi obiettivi.
+
 * **Una colonna può essere solo il riferimento di chiave esterna per UN percorso alla volta**. Ad esempio, se `order_items.order_id` punta a `orders.id`, quindi `order_items.order_id` non può indicare altro.
+
 * **`Many-to-many`tecnicamente è possibile creare percorsi, ma spesso producono dati non validi perché nessuno dei due lati è un vero `one-to-many` chiave esterna**. Il modo migliore per approcciare questi percorsi dipende sempre dall’analisi specifica desiderata. Consulta il team di analisti di RJ per scoprire la soluzione migliore.
 
 Se non riesci a creare una colonna calcolata a causa di una o più delle limitazioni di cui sopra, contatta il supporto tecnico fornendo una descrizione della colonna che stai utilizzando
 
 ## Eliminare un percorso di colonna calcolato {#delete}
 
-Hai creato un percorso errato nella tua Data Warehouse? O forse stai facendo una piccola pulizia di primavera e vuoi riordinare? Se devi eliminare un percorso dal tuo account, puoi [invia una segnalazione agli analisti del supporto Adobe](../../guide-overview.md). **Assicurarsi di includere il nome del percorso.**
+Hai creato un percorso errato nella tua Data Warehouse? O forse stai facendo una piccola pulizia di primavera e vuoi riordinare? Se devi eliminare un percorso dal tuo account, puoi [invia una segnalazione agli analisti del supporto Adobe](../../guide-overview.md#Submitting-a-Support-Ticket). **Assicurarsi di includere il nome del percorso.**
 
 ## Ritorno a capo {#wrapup}
 
-Ora che hai familiarità con la creazione di percorsi per le colonne calcolate nella Data Warehouse. Se non sei ancora sicuro di un particolare percorso, ricorda che puoi sempre fare clic su **[!UICONTROL Support]** nel tuo [!DNL MBI] per ottenere assistenza.
+Ora che hai familiarità con la creazione di percorsi per le colonne calcolate nella Data Warehouse. Se non sei ancora sicuro di un particolare percorso, ricorda che puoi sempre fare clic su **[!UICONTROL Support]** nel tuo [!DNL Commerce Intelligence] per ottenere assistenza.
 
 ## Correlato
 

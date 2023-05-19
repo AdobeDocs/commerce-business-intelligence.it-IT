@@ -1,10 +1,10 @@
 ---
 title: Previsto Spree data
-description: Esplora le tabelle di dati principali che puoi importare da Sprea in [!DNL MBI] account.
+description: Esplora le tabelle di dati principali che puoi importare da Sprea in [!DNL Commerce Intelligence] account.
 exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Dopo aver [ha connesso [!DNL Spree] archiviare](../../../data-analyst/importing-data/integrations/spree.md), è possibile utilizzare [Gestione Date Warehouse](../../data-warehouse-mgr/tour-dwm.md) per tracciare facilmente i campi di dati rilevanti dal [!DNL Spree] piattaforma di analisi.
 
-Questo articolo esplora le tabelle di dati principali da cui è possibile importare [!DNL Spree] nel tuo [!DNL MBI] account, inclusi i collegamenti a [documentazione aggiuntiva](https://guides.spreecommerce.org/developer/addresses.html#address) informazioni su [!DNL Spree] dati.
+Questo argomento descrive le tabelle dati principali da cui è possibile importare [!DNL Spree] nel tuo [!DNL Commerce Intelligence] account, inclusi i collegamenti a [documentazione aggiuntiva](https://guides.spreecommerce.org/developer/addresses.html#address) informazioni su [!DNL Spree] dati.
 
 | **Nome tabella** | **Descrizione** |
 |-----|-----|
@@ -28,4 +28,4 @@ Questo articolo esplora le tabelle di dati principali da cui è possibile import
 ## Correlato:
 
 * [Connessione [!DNL Spree]](../integrations/spree.md)
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

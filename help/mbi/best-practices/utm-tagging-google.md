@@ -2,16 +2,16 @@
 title: Tracciamento UTM nelle Google Analytics
 description: Scopri le best practice per il tracciamento UTM (assegnazione tag) nelle Google Analytics.
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
 
 # Tracciamento UTM
 
-`UTM` il tracciamento è una convenzione di assegnazione tag per gli URL che consente di analizzare da dove provengono gli utenti. Se osservi gli URL su cui fai clic nella maggior parte delle e-mail di marketing o dei banner pubblicitari, visualizzi l’assegnazione tag UTM. Sono quei lunghi collegamenti che terminano con cose come `utm\_source` e `utm\_medium`.
+`UTM` il tracciamento è una convenzione di assegnazione tag per gli URL che consente di analizzare la provenienza degli utenti. Se osservi gli URL su cui fai clic nella maggior parte delle e-mail di marketing o dei banner pubblicitari, visualizzi l’assegnazione tag UTM. Sono quei lunghi collegamenti che terminano con cose come `utm\_source` e `utm\_medium`.
 
 [!DNL Google Analytics] utilizza `UTM` assegnare tag per sapere da dove proviene il traffico. Alcune di queste informazioni provengono da [referrer HTTP](https://en.wikipedia.org/wiki/HTTP_referer) ma il resto devi fornirti... `UTM` parametri. Quando vedi `google adwords` o `email marketing`, significa che `UTM` i parametri registrati dal clic del collegamento originale vengono quindi memorizzati nei cookie degli utenti. Da lì, [!DNL Google Analytics] utilizza tali dati per [attribuire comportamenti interessanti](../data-analyst/analysis/google-track-user-acq.md) sul tuo sito. Comprendere a cosa servono questi parametri consente di comprendere il modo migliore per impostare e utilizzare l’assegnazione tag UTM.
 

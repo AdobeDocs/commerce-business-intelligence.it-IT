@@ -2,20 +2,20 @@
 title: Report Builder di coorti per coorti non basate sulla data
 description: Scopri come raggruppare gli utenti in base a un’attività o un attributo simile.
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
-# `Cohort Report Builder for Non-Date-Based Cohorts`
+# [!DNL Cohort Report Builder] per coorti non basate su data
 
-Il [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) è stato grande nell’aiutare i commercianti a studiare il comportamento nel tempo di diversi sottoinsiemi di utenti. In passato, il `Cohort Report Builder` è stato ottimizzato per il raggruppamento degli utenti da un `cohort date` (ad esempio, il set di tutti i clienti che hanno effettuato il primo acquisto in un dato mese). Il `Non-Date Based Cohort` Questa funzione ora consente di raggruppare gli utenti in base a un’attività o a un attributo simile. Osserva alcuni casi d’uso per questa funzione.
+Il [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) è utile per aiutare i commercianti a studiare il comportamento nel tempo di diversi sottoinsiemi di utenti. In passato, il `Cohort Report Builder` è stato ottimizzato per il raggruppamento degli utenti da un `cohort date` (ad esempio, il set di tutti i clienti che hanno effettuato il primo acquisto in un dato mese). Il `Non-Date Based Cohort` Questa funzione ora consente di raggruppare gli utenti in base a un’attività o a un attributo simile. Osserva alcuni casi d’uso per questa funzione.
 
 ## Casi d’uso
 
-Questo non è un elenco completo, ma ecco alcune potenziali analisi che possono essere eseguite con questa funzione:
+Questo non è un elenco completo, ma ecco alcune potenziali analisi che possono essere eseguite con questa funzione.
 
 * Esame dei ricavi dei clienti acquisiti da [!DNL Google] rispetto a [!DNL Facebook]
 * Analisi dei clienti il cui primo acquisto è stato effettuato negli Stati Uniti rispetto al Canada
@@ -33,7 +33,7 @@ Ora che sei nel `Report Builder`, aggiungi la metrica su cui desideri eseguire l
 
 >[!NOTE]
 >
->Nativa [!DNL Google Analytics] le metriche non sono compatibili con `Cohort Report Builder`. L’obiettivo di questo esempio è quello di esaminare i ricavi nel tempo per i clienti di primo ordine acquisiti tramite diverse origini GA.
+>Nativa [!DNL Google Analytics] le metriche non sono compatibili con `Cohort Report Builder`. L’obiettivo di questo esempio è quello di esaminare i ricavi nel tempo per i clienti di primo ordine acquisiti tramite diversi [!DNL Google Analytics] origini.
 
 ### Attiva/Disattiva `Metric View` a `Cohort`
 
@@ -49,9 +49,9 @@ Per creare un rapporto per coorte sono necessarie cinque specifiche:
 1. Intervallo di tempo della prima azione della coorte
 1. Intervallo di tempo dopo l’occorrenza della coorte
 
-![gruppi di coorte](../../assets/2-cohort-groups.png){: width=&quot;200&quot; height=&quot;224&quot;}
+![gruppi di coorte](../../assets/2-cohort-groups.png)<!--{: width="200" height="224"}-->
 
-![coorte-prima azione-intervallo di tempo](../../assets/3-cohort-first-action-time-range.png){: width=&quot;400&quot; height=&quot;554&quot;}
+!![cohort-first-action-time-range]<!--(../../assets/3-cohort-first-action-time-range.png){: width="400" height="554"}-->
 
 #### 1. Raggruppamento `cohorts`
 
@@ -77,7 +77,10 @@ Visualizzare il `cohorts` nel tempo per mese, settimana o anno? Le selezioni ven
 
 ![coorte-prima azione-intervallo di tempo](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 
-### Altre note
+>[!NOTE]
+>
+>[!UICONTROL Filters] applicate alle metriche rimangano intatte quando si passa da una `Standard` e `Cohort` visualizzazioni.
 
-* [!UICONTROL Filters]: applicato alle metriche, rimane intatto quando passi da una metrica all’altra `Standard` e `Cohort` visualizzazioni
-* Consulta [`Perspectives`](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
+### Correlato
+
+Consulta [`Perspectives`](../../data-analyst/dev-reports/cohort-rpt-bldr.md).

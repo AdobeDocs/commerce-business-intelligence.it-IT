@@ -2,16 +2,16 @@
 title: Tipi di colonne calcolate avanzate
 description: Scopri le nozioni di base per la maggior parte dei casi di colonna d’uso, ma potresti desiderare una colonna calcolata un po’ più complessa di quella che può essere creata dal gestore della Data Warehouse.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 4%
 
 ---
 
 # Tipi di colonne calcolate avanzate
 
-Molte analisi che potresti tentare di creare comportano l’utilizzo di un **nuova colonna** che desideri `group by` o `filter by`. Il [Creazione di colonne calcolate](../data-warehouse-mgr/creating-calculated-columns.md) Questo tutorial illustra le nozioni di base per la maggior parte dei casi d’uso, ma potresti voler trovare una colonna calcolata un po’ più complessa di quella che può essere creata da Data Warehouse Manager.
+Molte analisi che potresti voler creare comportano l’utilizzo di un **nuova colonna** che desideri `group by` o `filter by`. Il [Creazione di colonne calcolate](../data-warehouse-mgr/creating-calculated-columns.md) Questo tutorial illustra le nozioni di base per la maggior parte dei casi d’uso, ma potresti voler trovare una colonna calcolata un po’ più complessa di quella che può essere creata da Data Warehouse Manager.
 {: #top}
 
 Questi tipi di colonne possono essere creati dal team Adobe di analisti Data Warehouse. Per definire una nuova colonna calcolata, fornisci le seguenti informazioni:
@@ -159,7 +159,7 @@ Per creare questo tipo di colonna calcolata, è necessario conoscere:
 
 Non preoccuparti. Solo perché non è elencato qui non significa che non è possibile. Il team di Adobi degli analisti di Data Warehouse può essere d&#39;aiuto.
 
-Per definire una nuova colonna calcolata: [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) con dettagli su ciò che desideri creare.
+Per definire una nuova colonna calcolata: [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) con dettagli su ciò che desideri creare.
 
 ## Documentazione correlata
 

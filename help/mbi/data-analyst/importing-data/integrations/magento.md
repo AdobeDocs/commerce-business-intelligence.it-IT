@@ -1,23 +1,23 @@
 ---
-title: Connetti a Commerce
+title: Connettere Adobe Commerce
 description: Scopri come trovare le sorgenti e i canali di acquisizione più importanti.
 exl-id: c20e7673-9aa3-4e5e-979c-6adaa4164793
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
 
-# Connetti a Commerce
+# Connetti [!DNL Adobe Commerce]
 
 >[!NOTE]
 >
 >Richiede [Autorizzazioni amministratore](../../../administrator/user-management/user-management.md).
 
-Vuoi vedere le prestazioni della tua azienda o trovare le tue fonti e i tuoi canali di acquisizione più preziosi? Collegamento dei dati Commerce a [!DNL MBI] consente di rispondere a queste domande e altro ancora.
+Vuoi vedere le prestazioni della tua azienda o trovare le fonti e i canali di acquisizione più importanti? Collegamento [!DNL Adobe Commerce] dati a [!DNL Commerce Intelligence] consente di rispondere a queste e altre domande.
 
-Poiché il database Commerce è basato su MySQL, è possibile connettersi a [!DNL MBI] attraverso [connessione diretta](../integrations/mysql-via-a-direct-connection.md), [cPanel](../integrations/mysql-via-cpanel.md)oppure [tramite un tunnel SSH](../integrations/mysql-via-ssh-tunnel.md). Il metodo SSH è consigliato perché è il più sicuro.
+Come [!DNL Adobe Commerce] database basato su MySQL, è possibile connettersi a [!DNL Commerce Intelligence] attraverso un [connessione diretta](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md), o [tramite un tunnel SSH](../integrations/mysql-via-ssh-tunnel.md). Il metodo SSH è consigliato perché è il più sicuro.
 
 ## Informazioni correlate
 

@@ -2,7 +2,7 @@
 title: Analisi del decadimento e dell'abbandono delle probabilità di ripetizione
 description: Scopri e comprendi come si verificano gli intervalli tra gli ordini e quando si prevede un abbandono dei clienti.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Comprendere la percentuale di clienti che si prevede effettueranno acquisti ripe
 
 ## L&#39;esempio di oggi
 
-Osserva il decadimento della probabilità di ripetizione per una tipica attività di eCommerce.
+Osserva il decadimento della probabilità di ripetizione per una tipica attività di e-commerce.
 
 ![Probabilità di ripetizione ordine iniziale probabilità di ripetizione ordine dati mesi dall&#39;ordine.](../../assets/Order_probability_reports.png)
 
@@ -76,7 +76,7 @@ Dopo aver creato l’analisi di cui sopra e aver determinato una soglia di abban
 
 Se offri più di un prodotto, probabilmente ti chiedi in che modo i clienti che acquistano un prodotto specifico si comportano in modo diverso nel tempo rispetto ad altri clienti. Vuoi saperne di più? Consulta questa esercitazione per esplorare il comportamento di acquisto nel corso del ciclo di vita delle coorti di clienti in base a prodotti specifici acquistati.
 
-Questa best practice è fornita da [!DNL MBI] Data Analysis Services (DAS). [Contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per ulteriori informazioni.
+Questa best practice è fornita da [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per ulteriori informazioni.
 
 ### Correlato
 

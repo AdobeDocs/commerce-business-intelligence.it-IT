@@ -2,7 +2,7 @@
 title: Operatori filtro speciali
 description: Scopri alcuni operatori speciali utilizzati nei filtri durante la creazione di un rapporto o di una metrica.
 exl-id: 12837490-b9ca-4040-bb71-8988b5dde485
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Opzioni filtro
 
-Questo articolo esplora alcuni aspetti speciali `operators` utilizzato in `filters` quando [creazione di un rapporto](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} o [creazione di una metrica](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;}.
+In questo argomento vengono illustrati alcuni aspetti speciali `operators` utilizzato in `filters` quando [creazione di un rapporto](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} o [creazione di una metrica](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;}.
 
 ## `Filter Operators`
 

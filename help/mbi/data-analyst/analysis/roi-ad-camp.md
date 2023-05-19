@@ -2,7 +2,7 @@
 title: Aumento del ROI nelle campagne pubblicitarie
 description: Scopri alcuni metodi diversi per valutare le prestazioni della campagna.
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 0%
@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # Campagne pubblicitarie e ROI
 
-MBI consente di [combinare i dati relativi ai costi pubblicitari e ai ricavi](../../data-analyst/importing-data/integrations/google-adwords.md) dal database. Questo consente di identificare quali campagne hanno il ROI più alto. Questo articolo esplora alcuni metodi diversi per valutare le prestazioni della campagna.
+[!DNL Adobe Commerce Intelligence] consente di [combinare i dati relativi ai costi pubblicitari e ai ricavi](../../data-analyst/importing-data/integrations/google-adwords.md) dal database. Questo consente di identificare quali campagne hanno il maggiore ritorno sull’investimento (ROI). In questo argomento vengono illustrati alcuni metodi diversi per valutare le prestazioni della campagna.
 
 ## Prerequisiti
 
 * Importa i dati sui costi pubblicitari:
-   * [Connetti [!DNL Google AdWords] a [!DNL MBI]](../importing-data/integrations/google-adwords.md): questo sincronizza il tuo [!DNL Adwords] spendere in [!DNL MBI]
-   * [Carica altri dati sui costi della pubblicità](../importing-data/connecting-data/import-offline-ad-data.md): consigliato per i canali senza connettore diretto a [!DNL MBI]
-   * Se si importano dati sui costi da più origini, è possibile [consolidare](../../best-practices/consolidating-your-tables.md) i dati in [!DNL MBI]. Semplicemente [invia un ticket di supporto](../../guide-overview.md).
+   * [Connetti [!DNL Google AdWords] a [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): questo sincronizza il tuo [!DNL Adwords] spendere in [!DNL Commerce Intelligence]
+   * [Carica altri dati sui costi della pubblicità](../importing-data/connecting-data/import-offline-ad-data.md): consigliato per i canali senza connettore diretto a [!DNL Commerce Intelligence]
+   * Se si importano dati sui costi da più origini, è possibile [consolidare](../../best-practices/consolidating-your-tables.md) i dati in [!DNL Commerce Intelligence]. Semplicemente [invia un ticket di supporto](../../guide-overview.md#Submitting-a-Support-Ticket).
 * [Tracciare i dati del canale di acquisizione dell&#39;utente](../analysis/google-track-user-acq.md)
 
 ## Campagne di acquisizione utente
@@ -35,7 +35,7 @@ Le analisi (1) e (2) di cui sopra sono esaminate in un tutorial separato su [ide
 >
 >Questo esempio presuppone che tutti i costi della campagna siano stati utilizzati esclusivamente per acquisire nuovi utenti. In realtà, il costo della campagna viene condiviso anche con l’acquisizione di visite non convertite, acquirenti ripetuti e così via. Supponendo che tutti i costi vengano utilizzati per acquisire nuovi utenti registrati, il ROI risultante rappresenta lo scenario peggiore (costo per acquisizione più alto). Puoi essere sicuro che il ROI effettivo sia superiore ai calcoli.
 >
->Esempio: supponendo di aver speso 20 $ per una campagna che ha generato 10 nuovi utenti e 10 acquirenti ripetuti, il costo effettivo per nuovo utente è di 1 $. Tuttavia, partendo dal presupposto che tutti i costi sono stati sostenuti per l&#39;acquisizione di nuovi utenti, il costo per l&#39;acquisizione è pari a 2 dollari).
+>Esempio: supponendo di aver speso 20 $ per una campagna che ha generato 10 nuovi utenti e 10 acquirenti ripetuti, il costo effettivo per nuovo utente è di 1 $. Ma, partendo dal presupposto che tutti i costi sono andati ad acquisire nuovi utenti, il costo per acquisizione è di 2 dollari.
 
 **1. Per iniziare, crea un grafico che segmenta il costo dell’annuncio in base alle campagne:**
 
@@ -95,9 +95,9 @@ Stai eseguendo annunci pubblicitari specifici per il prodotto? In tal caso, puoi
 
 >[!NOTE]
 >
->Questo esempio presuppone che tutti i costi della campagna siano stati utilizzati esclusivamente per generare acquisti di prodotti specifici. Supponendo che tutti i costi siano stati spesi per la generazione di acquisti, il ROI risultante rappresenta lo scenario peggiore (costo più alto per acquisto). Puoi essere sicuro che il ROI effettivo sia superiore a questo calcolo. Esempio: supponendo di aver speso 20 $ per una campagna che ha generato 10 nuovi utenti e 10 acquisti, il costo effettivo per acquisto è di 1 $. Presumendo che tutti i costi siano andati all&#39;acquisizione di nuovi utenti, il costo per acquisto è pari a 2 $).*
+>Questo esempio presuppone che tutti i costi della campagna siano stati utilizzati esclusivamente per generare acquisti di prodotti specifici. Supponendo che tutti i costi siano stati spesi per la generazione di acquisti, il ROI risultante rappresenta lo scenario peggiore (costo più alto per acquisto). Puoi essere sicuro che il ROI effettivo sia superiore a questo calcolo. Esempio: supponendo di aver speso 20 $ per una campagna che ha generato 10 nuovi utenti e 10 acquisti, il costo effettivo per acquisto è di 1 $. Presumendo che tutti i costi siano andati ad acquisire nuovi utenti, il costo per acquisto è di 2 $.
 
-Prima di iniziare, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per unire le dimensioni seguenti alla tabella degli elementi di riga (`sales\_flat\_order\_item, order\_item`):
+Prima di iniziare, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per unire le dimensioni seguenti alla tabella degli elementi di riga (`sales\_flat\_order\_item, order\_item`):
 
 * Origine dell’ordine (se tieni traccia solo dell’origine di riferimento a livello di utente, quindi unisci all’origine dell’utente)
 * Campagna dell’ordine (se tieni traccia solo dell’origine di riferimento a livello di utente, quindi partecipa alla campagna dell’utente)

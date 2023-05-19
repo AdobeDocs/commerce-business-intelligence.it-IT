@@ -2,9 +2,9 @@
 title: Gestione delle impostazioni dell'account
 description: Scopri come personalizzare le impostazioni dell’account per la tua Data Warehouse.
 exl-id: 847d51b1-287e-4c14-b64e-0bd9bfcccedc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Richiede [Autorizzazioni di amministrazione.](../../administrator/user-management/user-management.md)
 
-Nel tuo [!DNL MBI] dell&#39;account, è possibile personalizzare le impostazioni dell&#39;account per la Data Warehouse. Per accedervi, seleziona il nome della tua organizzazione nell’angolo in alto a destra di qualsiasi schermata, quindi scegli **[!UICONTROL Account Settings]** dal menu a discesa.
+Nel tuo [!DNL Commerce Intelligence] account, puoi personalizzare le impostazioni dell’account per la tua Data Warehouse. Per accedervi, seleziona il nome della tua organizzazione nell’angolo in alto a destra di qualsiasi schermata, quindi scegli **[!UICONTROL Account Settings]** dal menu a discesa.
 
 * **[!UICONTROL Client Name:]** Questa impostazione viene visualizzata nell’angolo in alto a destra di tutte le dashboard e altrove nell’account. Se desideri modificare **[!UICONTROL "Vandelay Industries Co., Ltd]** a semplicemente **[!UICONTROL "Vandelay]**, ecco dove farlo.
 

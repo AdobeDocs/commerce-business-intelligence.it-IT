@@ -2,7 +2,7 @@
 title: Usa Caricamento File
 description: Scopri come inserire tutti i dati in un’unica Data Warehouse.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%
@@ -15,14 +15,14 @@ ht-degree: 0%
 >
 >Richiede [Autorizzazioni amministratore](../../../administrator/user-management/user-management.md).
 
-[!DNL MBI] è potente non solo per le sue funzioni di visualizzazione, ma perché consente di inserire tutti i dati in una singola Data Warehouse. Anche i dati che risiedono al di fuori dei database e delle integrazioni possono essere inseriti in [!DNL MBI] utilizzando lo strumento Caricamento file in Gestione Date Warehouse.
+[!DNL Adobe Commerce Intelligence] è potente non solo per le sue funzioni di visualizzazione, ma perché consente di inserire tutti i dati in una singola Data Warehouse. Anche i dati che risiedono al di fuori dei database e delle integrazioni possono essere inseriti in [!DNL Commerce Intelligence] utilizzando lo strumento Caricamento file in Gestione Date Warehouse.
 
 Utilizza le campagne pubblicitarie come esempio. Se esegui campagne online e offline, non puoi ottenere l’intera immagine se stai analizzando solo i dati di un’integrazione online. Il caricamento di un foglio di calcolo con i dati della campagna offline consente di analizzare entrambi i set di dati e ottenere una comprensione più solida delle prestazioni della campagna.
 
 ## Restrizioni e requisiti {#require}
 
 1. **L’unico formato supportato per i caricamenti di file è `CSV` o`comma separated values`**. Se si utilizza Excel, è possibile utilizzare la funzione Salva con nome per salvare il file in `.csv` formato.
-1. **`CSV`i file devono utilizzare`UTF-8 encoding`**. Nella maggior parte dei casi, questo non è un problema. Se si verifica questo errore durante il caricamento di un file, [consulta questo articolo di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
+1. **`CSV`i file devono utilizzare`UTF-8 encoding`**. Nella maggior parte dei casi, questo non è un problema. Se si verifica questo errore durante il caricamento di un file, [consulta questo articolo di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **Le dimensioni dei file non possono superare i 100 MB**. Se il file è più grande, separare la tabella in blocchi e salvarli come file singoli. È possibile aggiungere i dati dopo il caricamento del file iniziale.
 1. **Tutte le tabelle devono avere`primary key`**. Nella tabella deve essere presente almeno una colonna che può essere utilizzata come `primary key`o un identificatore univoco per ogni riga della tabella. Qualsiasi colonna designata come `primary key` può *mai* essere nulle. A `primary key` può essere semplice come aggiungere una colonna che dia un numero a ogni riga, oppure può essere costituita da due colonne concatenate per creare una colonna di valori univoci (ad esempio, `campaign name` e `date`).
 
@@ -30,7 +30,7 @@ Utilizza le campagne pubblicitarie come esempio. Se esegui campagne online e off
 
 ## Formattazione dei dati per il caricamento {#formatting}
 
-Prima di caricare i dati in [!DNL MBI], verifica che sia formattato in base alle linee guida illustrate in questa sezione.
+Prima di caricare i dati in [!DNL Commerce Intelligence], verifica che sia formattato in base alle linee guida illustrate in questa sezione.
 
 ### Riga di intestazione {#header}
 
@@ -77,7 +77,7 @@ Per [!DNL Google Docs] e [!DNL Apple Numbers] risorse, fai riferimento alla [Cor
 
 ## Caricamento dei dati {#uploading}
 
-Ora che il foglio di calcolo è formattato correttamente e [!DNL MBI]-friendly, aggiungilo alla tua Data Warehouse.
+Ora che il foglio di calcolo è formattato correttamente e [!DNL Commerce Intelligence]-friendly, aggiungilo alla tua Data Warehouse.
 
 1. Per iniziare, vai a **[!UICONTROL Data** > **File Uploads]**.
 
@@ -85,7 +85,7 @@ Ora che il foglio di calcolo è formattato correttamente e [!DNL MBI]-friendly, 
 
 1. Clic **[!UICONTROL Choose File]** e seleziona il file. Clic **[!UICONTROL Open]** per avviare il caricamento.
 
-   Al termine del caricamento, un elenco delle colonne [!DNL MBI] presente nel file.
+   Al termine del caricamento, un elenco delle colonne [!DNL Commerce Intelligence] presente nel file.
 
 1. Verificare che i nomi delle colonne e i tipi di dati siano corretti. In particolare, verifica che tutte le colonne di data vengano lette come date e non come numeri.
 
@@ -111,7 +111,7 @@ Le tabelle caricate vengono visualizzate in **Caricamenti di file** nell&#39;ele
 
 ## Aggiornamento o aggiunta di dati a una tabella esistente {#appending}
 
-Hai dei nuovi dati da aggiungere a un file che hai già caricato? Nessun problema: puoi aggiornare e aggiungere facilmente i dati in [!DNL MBI].
+Hai dei nuovi dati da aggiungere a un file che hai già caricato? Nessun problema: puoi aggiornare e aggiungere facilmente i dati in [!DNL Commerce Intelligence].
 
 1. Per iniziare, vai a **[!UICONTROL Manage Data** > **File Uploads]**.
 
@@ -121,7 +121,7 @@ Hai dei nuovi dati da aggiungere a un file che hai già caricato? Nessun problem
 
 1. Utilizza il menu a discesa per selezionare l’opzione per la gestione delle righe duplicate:
 
-   |  |  |
+   | Opzione | Descrizione |
    |---|---|
    | `Overwrite old row with new row` | In questo modo i dati esistenti vengono sovrascritti con i nuovi dati se una riga ha la stessa chiave primaria sia nella tabella esistente che nel nuovo file. Questo è il metodo da utilizzare per le colonne con valori che cambiano nel tempo, ad esempio una colonna Stato. I dati esistenti vengono sovrascritti e aggiornati con i nuovi dati. Le righe con chiavi primarie non presenti nella tabella esistente vengono aggiunte come nuove righe. |
    | `Retain old row; discard new row` | In questo modo i nuovi dati vengono ignorati se una riga ha la stessa chiave primaria sia nella tabella esistente che nel nuovo file. |
@@ -131,7 +131,7 @@ Hai dei nuovi dati da aggiungere a un file che hai già caricato? Nessun problem
 
 1. Clic **[!UICONTROL Open]** per avviare il caricamento.
 
-   Al termine del caricamento, [!DNL MBI] convalida la struttura dati nel file. A *Operazione completata.* viene visualizzato nella parte superiore dello schermo dopo il salvataggio della tabella.
+   Al termine del caricamento, [!DNL Commerce Intelligence] convalida la struttura dati nel file. A *Operazione completata.* viene visualizzato nella parte superiore dello schermo dopo il salvataggio della tabella.
 
 ## Disponibilità dei dati {#availability}
 
@@ -139,9 +139,9 @@ Proprio come le colonne calcolate, i dati provenienti dai caricamenti di file so
 
 ## Ritorno a capo {#wrapup}
 
-Questo articolo tratta solo le nozioni di base sull’utilizzo dell’importazione dei dati, ma potresti voler fare qualcosa di più avanzato. Consulta gli articoli correlati per informazioni sulla formattazione e l’importazione di dati finanziari, di e-commerce, di spesa pubblicitaria e di altri tipi di dati.
+In questo argomento sono state trattate solo le nozioni di base sull&#39;utilizzo dell&#39;importazione dei dati, ma è possibile eseguire operazioni più avanzate. Consulta gli articoli correlati per informazioni sulla formattazione e l’importazione di dati finanziari, di e-commerce, di spesa pubblicitaria e di altri tipi di dati.
 
-Inoltre, il caricamento dei file non è l’unico modo per inserire i dati in [!DNL MBI]. Il [API di importazione dati](https://developer.adobe.com/commerce/services/reporting/import-api/) consente di inserire dati arbitrari nel [!DNL MBI] Data Warehouse.
+Inoltre, il caricamento dei file non è l’unico modo per inserire i dati in [!DNL Commerce Intelligence]. Il [API di importazione dati](https://developer.adobe.com/commerce/services/reporting/import-api/) consente di inserire dati arbitrari nel [!DNL Commerce Intelligence] Data Warehouse.
 
 ## Correlato {#related}
 

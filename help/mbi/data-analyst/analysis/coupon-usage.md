@@ -2,24 +2,22 @@
 title: Analisi dell’utilizzo dei coupon
 description: Scopri come analizzare l’utilizzo dei coupon per l’acquisizione e la fidelizzazione dei clienti.
 exl-id: d4d1393f-1695-43f2-980a-84525f84031e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1141'
 ht-degree: 2%
 
 ---
 
 # Utilizzo coupon
 
-Vi siete mai chiesti in che modo l&#39;offerta di coupon influisce sulla vostra attività? Vuoi sapere quali coupon aiutano o danneggiano le prestazioni? Questo articolo esplora le analisi che ti forniscono un buon quadro dell&#39;utilizzo dei coupon dei tuoi clienti rispondendo a queste domande:
+Vi siete mai chiesti in che modo l&#39;offerta di coupon influisce sulla vostra attività? Vuoi sapere quali coupon aiutano o danneggiano le prestazioni? Questo argomento illustra le analisi che consentono di ottenere un quadro completo dell&#39;utilizzo dei coupon da parte dei clienti, rispondendo alle seguenti domande:
 
 * Quanti clienti utilizzano i coupon?
 * Quanti coupon vengono utilizzati?
 * Qual è il vostro fatturato prima e dopo l&#39;applicazione dei coupon?
 * Qual è il valore medio dell&#39;ordine prima e dopo l&#39;applicazione dei coupon?
 * Che tipo di clienti ti attrae con i coupon?
-
-Iniziamo!
 
 ## Metriche consigliate {#metrics}
 
@@ -109,7 +107,7 @@ Per i ricavi medi nel ciclo di vita, puoi notare che i ricavi medi nel ciclo di 
 
 ## Che altro posso analizzare? {#otheranalyses}
 
-Le analisi menzionate in questo articolo possono fornirti informazioni utili su come i tuoi clienti utilizzano i coupon, ma ci sono una moltitudine di altre analisi che ti consentono di approfondire un po’.
+Le analisi menzionate in questo argomento possono fornirti informazioni utili su come i tuoi clienti utilizzano i coupon, ma sono disponibili molte altre analisi che ti consentono di approfondire un po’.
 
 **Puoi analizzare le acquisizioni dei clienti dai coupon.**
 

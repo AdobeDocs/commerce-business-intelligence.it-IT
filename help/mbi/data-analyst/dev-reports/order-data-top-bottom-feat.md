@@ -2,9 +2,9 @@
 title: Ordinare i dati utilizzando la funzione Mostra superiore/inferiore
 description: Scopri come ordinare i dati utilizzando la funzione Mostra superiore/inferiore.
 exl-id: d47119f4-cdc5-4fa7-a606-d4b8555a8843
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Questo tipo di ordinamento dei dati può essere eseguito nei rapporti che utiliz
 
 ## Come si utilizza? {#how}
 
-Dopo aver fatto clic su **[!UICONTROL Show Top/Bottom link]**, viene visualizzata una finestra in cui è possibile impostare i parametri di visualizzazione e ordinamento. Il numero nella casella di testo può essere un numero intero, ad esempio `5`) o `ALL`. Successivamente, puoi scegliere di ordinare il rapporto in base alla metrica OPPURE in base al raggruppamento.
+Fai clic su **[!UICONTROL Show Top/Bottom link]** per impostare i parametri di visualizzazione e ordinamento. Il numero nella casella di testo può essere un numero intero, ad esempio `5`) o `ALL`. Successivamente, puoi scegliere di ordinare il rapporto in base alla metrica OPPURE in base al raggruppamento.
 
 Ad esempio, per visualizzare le cinque origini di riferimento che hanno generato il maggior numero di ricavi, effettua le seguenti operazioni:
 

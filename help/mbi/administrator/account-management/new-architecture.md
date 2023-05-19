@@ -2,16 +2,16 @@
 title: Nuova architettura
 description: Scopri i vantaggi del passaggio a una nuova architettura.
 exl-id: cbb10673-5704-4a90-9574-5ac114f389b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
 
 # Nuova architettura
 
-I team tecnici e di prodotto di MBI si sono concentrati per rendere possibili i miglioramenti più radicali e richiesti per l&#39;ultimo anno. L&#39;Adobe è entusiasta di annunciare la disponibilità di un nuovo [!DNL MBI] che rende questi miglioramenti una realtà.
+[!DNL Adobe Commerce Intelligence] Nell&#39;ultimo anno, i team tecnici e di prodotto si sono concentrati sulla realizzazione dei miglioramenti più complessi e richiesti. L&#39;Adobe è entusiasta di annunciare la disponibilità di un nuovo [!DNL Commerce Intelligence] che rende questi miglioramenti una realtà.
 
 ## Vantaggi della nuova architettura
 
@@ -33,7 +33,7 @@ Nessun costo aggiuntivo. Adobe creerà questo nuovo account per iniziare la reim
 
 ### Tempo necessario per reimplementare l’account nella nuova architettura
 
-I tempi di reimplementazione variano a seconda di ciò che si desidera ricostruire. L’Adobe consiglia di eseguire i seguenti passaggi nell’account esistente per avere un’idea di cosa sarebbe coinvolto nella reimplementazione:
+I tempi di reimplementazione variano a seconda di cosa desideri ricostruire. L’Adobe consiglia di eseguire i seguenti passaggi nell’account esistente per avere un’idea di cosa sarebbe coinvolto nella reimplementazione:
 
 * Identifica un set principale di rapporti/dashboard.
 * Identifica le metriche e le dimensioni necessarie per creare tali rapporti.
@@ -43,7 +43,7 @@ Una volta completato, sai quali dati devi sincronizzare con la nuova Data Wareho
 
 ### Ottenimento della Guida
 
-Il [!DNL MBI] Il team dei servizi può eseguire la reimplementazione a un costo aggiuntivo. Contatta il tuo [Adobe team account](../../guide-overview.md) e preparati a fornire un elenco di dashboard/report da creare con priorità nel nuovo account
+Il [!DNL Adobe Commerce Intelligence] [Team di servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) può eseguire la reimplementazione a un costo aggiuntivo. Contatta il tuo [Adobe team account](../../guide-overview.md#Submitting-a-Support-Ticket) e preparati a fornire un elenco di dashboard/report da creare con priorità nel nuovo account
 
 ### Mantenere l&#39;architettura esistente
 

@@ -1,10 +1,10 @@
 ---
 title: Ordini degli ospiti
-description: Scopri l’impatto degli ordini degli ospiti sui tuoi dati e quali opzioni hai per tenere adeguatamente conto degli ordini degli ospiti nel tuo [!DNL MBI] Data Warehouse.
+description: Scopri l’impatto degli ordini degli ospiti sui tuoi dati e quali opzioni hai per tenere adeguatamente conto degli ordini degli ospiti nel tuo [!DNL Commerce Intelligence] Data Warehouse.
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Durante la revisione degli ordini, se noti che molti `customer\_id` i valori sono nulli o non hanno un valore per eseguire il join al `customers` tabella, questo è indicativo del fatto che il tuo negozio consente gli ordini degli ospiti. Ciò significa che `customers` La tabella non include probabilmente tutti i clienti.
 
-In questo argomento viene illustrato l&#39;impatto degli ordini degli ospiti sui dati e le opzioni disponibili per tenere in debito conto gli ordini degli ospiti nel [!DNL MBI] Data Warehouse.
+In questo argomento viene illustrato l&#39;impatto degli ordini degli ospiti sui dati e le opzioni disponibili per tenere in debito conto gli ordini degli ospiti nel [!DNL Commerce Intelligence] Data Warehouse.
 
 ## Impatto degli ordini dei clienti sui dati
 
 Nel database di Commerce tipico, è presente un `orders` tabella che si unisce a una `customers` tabella. Ogni riga del `orders` la tabella ha un `customer\_id` una colonna univoca di una riga `customers` tabella.
 
-* **Se tutti i clienti sono registrati** e gli ordini degli ospiti non sono consentiti, il che significa che ogni record nel `orders` la tabella contiene un valore in `customer\_id` colonna. Di conseguenza, ogni ordine torna al `customers` tabella. È visibile nell’immagine seguente.
+* **Se tutti i clienti sono registrati** e gli ordini degli ospiti non sono consentiti, il che significa che ogni record nel `orders` la tabella contiene un valore in `customer\_id` colonna. Di conseguenza, ogni ordine torna al `customers` tabella.
 
    ![](../../assets/guest-orders-4.png)
 
@@ -35,7 +35,7 @@ In genere, il Sales Engineer che implementa l&#39;account prende in considerazio
 
 Il modo migliore per tenere conto degli ordini dei clienti è basare tutte le metriche a livello di cliente sul `orders` tabella. Questa configurazione utilizza un ID cliente univoco di tutti i clienti, inclusi gli ospiti (di solito viene utilizzata l’e-mail del cliente). I dati di registrazione provenienti dal `customers` tabella. Con questa opzione, solo i clienti che hanno effettuato almeno un acquisto vengono inclusi nei rapporti a livello di cliente. Gli utenti registrati che non hanno ancora effettuato un acquisto non sono inclusi. Con questa opzione, `New customer` metrica basata sulla data del primo ordine del cliente in `orders` tabella.
 
-È possibile notare che il `Customers we count` il filtro impostato in questo tipo di impostazione ha un filtro per `Customer's order number = 1`. Pensate al perché.
+È possibile notare che il `Customers we count` il filtro impostato in questo tipo di impostazione ha un filtro per `Customer's order number = 1`.
 
 ![](../../assets/guest-orders-filter-set.png)
 
@@ -43,7 +43,7 @@ In una situazione senza ordini, ogni cliente esiste come riga univoca nella tabe
 
 In una configurazione di ordini guest in cui tutte le metriche del cliente sono basate su `orders` tabella per gli ordini degli ospiti, è necessario assicurarsi di essere `not counting customers twice`. Se si conta l&#39;ID della tabella ordini, si conta ogni ordine. Se invece conti l’ID sul `orders` tabella e utilizzare un filtro, `Customer's order number = 1`, quindi conteggerai ogni cliente univoco `only one time`. Questo è applicabile a tutte le metriche a livello di cliente come `Customer's lifetime revenue` o `Customer's lifetime number of orders`.
 
-Nell’immagine 2 precedente, puoi vedere che sono presenti valori nulli `customer\_ids` nel `orders` tabella. Se si utilizza `customer\_email` per identificare clienti univoci, puoi vedere che `erin@test.com` ha effettuato tre (3) ordini. Pertanto, puoi creare un’ `New customers` metrica sul tuo `orders` tabella basata sulle seguenti condizioni:
+Si può vedere sopra che ci sono null `customer\_ids` nel `orders` tabella. Se si utilizza `customer\_email` per identificare clienti univoci, puoi vedere che `erin@test.com` ha effettuato tre (3) ordini. Pertanto, puoi creare un’ `New customers` metrica sul tuo `orders` tabella basata sulle seguenti condizioni:
 
 * `Operation table = orders`
 * `Operation column = id`

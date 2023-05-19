@@ -2,16 +2,16 @@
 title: Utilizzare il Report Builder visivo
 description: Scopri come analizzare i dati nel rapporto per un periodo di tempo specifico.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
 
 ---
 
-# Utilizza il `Visual Report Builder`
+# Utilizza il [!DNL Visual Report Builder]
 
-Il [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) consente di esplorare visivamente i dati per trarre informazioni approfondite e favorire le decisioni aziendali. Questo tutorial illustra il processo di creazione di un rapporto di base.
+Il [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) consente di esplorare visivamente i dati per trarre informazioni approfondite e favorire le decisioni aziendali. Questo tutorial illustra il processo di creazione di un rapporto di base.
 
 >[!NOTE]
 >
@@ -19,9 +19,9 @@ Il [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) conse
 
 ## Passaggio 1: creazione di un rapporto
 
-Per iniziare a creare un rapporto, fai clic su **[!UICONTROL Report Builder]** sulla barra laterale o **[!UICONTROL Add Report]** nella parte superiore di qualsiasi dashboard. Quando `Report Builder` viene visualizzata la pagina di selezione, fare clic sul pulsante **[!UICONTROL Visual Report Builder]** opzione.
+Per iniziare a creare un rapporto, fai clic su **[!UICONTROL Report Builder]** sulla barra laterale o **[!UICONTROL Add Report]** nella parte superiore di qualsiasi dashboard. Quando `Report Builder` , fare clic sul pulsante **[!UICONTROL Visual Report Builder]** opzione.
 
-Per modificare un report creato in `Visual Report Builder`, fai clic sull’icona a forma di ingranaggio (opzioni) nell’angolo in alto a destra di qualsiasi grafico, quindi fai clic su **[!UICONTROL Edit]**.
+Per modificare un report creato in [!DNL Visual Report Builder], fai clic sull’icona a forma di ingranaggio (opzioni) nell’angolo superiore destro di qualsiasi grafico, quindi fai clic su **[!UICONTROL Edit]**.
 
 ## Passaggio 2: aggiunta di metriche
 
@@ -45,7 +45,7 @@ Per azzerare in un particolare intervallo di tempo, potete impostare il periodo 
 
 Quando imposti un intervallo di date specifico per il periodo di tempo, assicurati che la data di inizio sia all’inizio dell’intervallo e la data di fine sia alla fine dell’intervallo.
 
-Ad esempio, impostando un periodo di tempo da `January 1st to March 1st` e la scelta di un `monthly` mostra intervalli `March` come punto di dati, ma viene ignorato ogni giorno in `March` eccetto `March 1`. In tal caso, dovresti rendere `Time Period` da `January 1 to March 31`.
+Ad esempio, impostando un periodo di tempo da `January 1st` a `March 1st` e la scelta di un `monthly` mostra intervalli `March` come punto di dati, ma viene ignorato ogni giorno in `March` eccetto `March 1`. In tal caso, dovresti rendere `Time Period` da `January 1 to March 31`.
 
 ## Passaggio 5: `Group by` / `Segmenting the Analysis` {#groupby}
 

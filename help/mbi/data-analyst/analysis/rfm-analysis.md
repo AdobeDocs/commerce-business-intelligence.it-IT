@@ -2,30 +2,30 @@
 title: Recency, frequenza, analisi monetaria (RFM)
 description: Scopri come impostare una dashboard che consenta di segmentare i clienti in base all’attualità, alla frequenza e alle classificazioni monetarie.
 exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
 # Analisi RFM
 
-Questo articolo illustra come impostare una dashboard che consenta di segmentare i clienti in base all’attualità, alla frequenza e alle classificazioni monetarie. L’analisi RFM è una tecnica di marketing che prende in considerazione i comportamenti dei clienti per aiutarti a determinare la segmentazione per l’estensione. Essa tiene conto di tre aspetti:
+Questo argomento illustra come impostare una dashboard che consenta di segmentare i clienti in base all’attualità, alla frequenza e alle classificazioni monetarie. L’analisi RFM è una tecnica di marketing che prende in considerazione i comportamenti dei clienti per aiutarti a determinare la segmentazione per l’estensione. Essa tiene conto di tre aspetti:
 
-* Recency in quanto recentemente un cliente ha acquistato dal tuo negozio
-* Frequenza di acquisto
-* Quante spese spende il cliente
+1. Recency in quanto recentemente un cliente ha acquistato dal tuo negozio
+1. Frequenza di acquisto
+1. Quante spese spende il cliente
 
 ![](../../assets/blobid0.png)
 
-L&#39;analisi RFM può essere configurata solo se si dispone di [!DNL MBI] Pianifica la nuova architettura (ad esempio, se disponi dell’opzione &quot;Data Warehouse visualizzazioni&quot; nel menu &quot;Gestisci dati&quot;). Queste colonne possono essere create dalla pagina &quot;Gestisci dati > Data Warehouse&quot;. Di seguito sono riportate istruzioni dettagliate.
+L&#39;analisi RFM può essere configurata solo se si dispone di [!DNL Adobe Commerce Intelligence] Pro pianifica la nuova architettura (ad esempio, se disponi del `Data Warehouse Views` opzione sotto `Manage Data` menu). Queste colonne possono essere create da **[!DNL Manage Data > Data Warehouse]** pagina. Istruzioni dettagliate sono fornite di seguito.
 
 ## Guida introduttiva
 
 Devi innanzitutto caricare un file contenente solo una chiave primaria con il valore di una. Ciò consente di creare alcune colonne calcolate necessarie per l’analisi.
 
-Puoi utilizzare questo [articolo del centro risorse](../importing-data/connecting-data/using-file-uploader.md) e l&#39;immagine seguente per formattare il file.
+Puoi utilizzare questo [articolo](../importing-data/connecting-data/using-file-uploader.md) e l&#39;immagine seguente per formattare il file.
 
 ## Colonne calcolate
 
@@ -174,13 +174,15 @@ Colonne da creare
 
 >[!NOTE]
 >
->I percentili utilizzati sono anche frazionamenti di clienti (ad esempio, 20% bucket per restituire 1-5). Se desideri ponderare questi elementi in modo personalizzato, informa l’analista quando invii il ticket.
+>I percentili utilizzati sono anche frazioni di clienti (ad esempio, 20% di bucket per restituire 1-5). Se desideri ponderare questi elementi in modo personalizzato, informa l’analista quando invii il ticket.
 
 ## Metriche
 
 Nessuna nuova metrica.
 
-**Nota**: assicurati di [aggiungere tutte le nuove colonne come dimensioni alle metriche](../data-warehouse-mgr/manage-data-dimensions-metrics.md) prima di creare nuovi rapporti.
+>[!NOTE]
+>
+>Assicurati di [aggiungere tutte le nuove colonne come dimensioni alle metriche](../data-warehouse-mgr/manage-data-dimensions-metrics.md) prima di creare nuovi rapporti.
 
 ## Rapporti
 

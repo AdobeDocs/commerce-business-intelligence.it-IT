@@ -1,25 +1,25 @@
 ---
-title: Memorizzazione dei dati in Commerce
-description: Scopri come vengono generati i dati, cosa causa l’inserimento di una nuova riga e come vengono registrate le azioni nel database di Commerce.
+title: Memorizzazione dei dati in Adobe Commerce
+description: Scopri come vengono generati i dati, cosa causa l’inserimento di una nuova riga e come vengono registrate le azioni nel database di Adobe Commerce.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '928'
 ht-degree: 3%
 
 ---
 
 # Memorizzazione dei dati in [!DNL Adobe Commerce]
 
-La piattaforma Adobe Commerce registra e organizza un’ampia varietà di dati di e-commerce importanti su centinaia di tabelle. Questo argomento descrive:
+Il [!DNL Adobe Commerce] platform registra e organizza un’ampia varietà di preziosi dati di e-commerce su centinaia di tabelle. Questo argomento descrive:
 
 * come vengono generati i dati
-* che cosa determina esattamente l’inserimento di una nuova riga in una delle [Tabelle Commerce Core](../data-warehouse-mgr/common-mage-tables.md)
-* come vengono registrate nel database di Commerce azioni quali l’acquisto o la creazione di un account
+* che cosa causa l’inserimento di una nuova riga in una delle [Tabelle Commerce Core](../data-warehouse-mgr/common-mage-tables.md)
+* in che modo azioni quali l’acquisto o la creazione di un account vengono registrate in [!DNL Adobe Commerce] database
 
-Per spiegare questi concetti, consulta l’esempio seguente:
+Per discutere di questi concetti, consulta l’esempio seguente:
 
-`Clothes4U` è un rivenditore di abbigliamento con una presenza sia online che in mattoni. Utilizza il Magento Open Source dietro il suo sito web per raccogliere e organizzare i dati.
+`Clothes4U` è un rivenditore di abbigliamento con presenze sia online che in mattoni e malta. Utilizza [!DNL Magento Open Source] per raccogliere e organizzare i dati.
 
 ## `catalog\_product\_entity`
 
@@ -57,7 +57,7 @@ Poco dopo l&#39;aggiunta dei tre nuovi prodotti, un nuovo cliente, `Sammy Custom
 * `email` : questo campo viene compilato dall’e-mail che un nuovo cliente inserisce quando crea il proprio account
 * `created_at` - Questa colonna restituisce la marca temporale per l’iscrizione di ogni utente
 
-## `sales\_flat\_order (or Sales\_order` se si dispone di Commerce 2.0 o versione successiva)
+## `sales\_flat\_order (or Sales\_order` se ha [!DNL Adobe Commerce 2.x]
 
 Al termine della creazione dell’account, `Sammy Customer` è pronto per iniziare a effettuare un acquisto. Sul sito web, il cliente aggiunge due coppie di `Throwback Bellbottoms` e uno `V-Neck T-Shirt` al carrello. Soddisfatto delle selezioni, il cliente passa al pagamento e invia l&#39;ordine, creando la seguente voce nella [tabella ordini vendite a tariffa fissa](../data-warehouse-mgr/sales-flat-order-table.md):
 
@@ -73,7 +73,9 @@ Al termine della creazione dell’account, `Sammy Customer` è pronto per inizia
    * Le due coppie di &quot;Throwback Bellbottoms&quot; e &quot;V-Neck T-Shirt&quot; costarono in totale 94,85 dollari
 * `created_at` - Questa colonna restituisce la marca temporale per la creazione di ciascun ordine
 
-## `sales\_flat\_order\_item ( or Sales\_order\_item` se si dispone di Commerce 2.0 o versione successiva)
+## `sales\_flat\_order\_item ( or Sales\_order\_item`
+
+(se hai Commerce 2.0 o versione successiva)
 
 Oltre alla riga singola sulla `Sales\_flat\_order` tabella, quando `Sammy Customer` invia l&#39;ordine, viene inserita una riga per ogni elemento univoco in tale ordine [`sales\_flat\_order\_item` tabella](../data-warehouse-mgr/sales-flat-order-item-table.md):
 

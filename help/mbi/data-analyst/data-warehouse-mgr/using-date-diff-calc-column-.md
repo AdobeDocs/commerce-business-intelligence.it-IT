@@ -2,7 +2,7 @@
 title: Utilizzo della colonna Differenza data calcolata
 description: Scopri lo scopo e gli utilizzi della colonna calcolata Differenza data.
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 2%
@@ -15,7 +15,7 @@ Questo argomento illustra lo scopo e gli utilizzi del `Date Difference` colonna 
 
 **Spiegazione**
 
-Il `Date Difference` tipo di colonna: trova il tempo tra due eventi appartenenti a un singolo record, in base ai timestamp dell’evento. Il valore non elaborato calcolato in questa colonna è in secondi, ma viene convertito automaticamente in minuti, ore, giorni e così via, per la visualizzazione nei rapporti. Tuttavia, se utilizzato come filtro/gruppo da, desideri utilizzare il valore in secondi.
+Il `Date Difference` tipo di colonna calcola il tempo tra due eventi appartenenti a un singolo record, in base ai timestamp dell’evento. Il valore non elaborato calcolato in questa colonna è in secondi, ma viene convertito automaticamente in minuti, ore, giorni e così via, per la visualizzazione nei rapporti. Tuttavia, se utilizzato come filtro/gruppo da, desideri utilizzare il valore in secondi.
 
 A `date difference` la colonna calcolata può essere utilizzata per creare una metrica che calcola il tempo medio o mediano tra due eventi, ad esempio il tempo medio tra la registrazione del cliente e i suoi primi ordini.
 

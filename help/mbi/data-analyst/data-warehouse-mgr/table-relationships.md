@@ -2,7 +2,7 @@
 title: Comprendere e valutare le relazioni tra tabelle
 description: Scopri come comprendere quante possibili occorrenze in una tabella potrebbero appartenere a un’entità in un’altra.
 exl-id: e7256f46-879a-41da-9919-b700f2691013
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -19,9 +19,9 @@ La comprensione delle relazioni è fondamentale per mantenere l’integrità dei
 
 Esistono tre tipi di relazioni tra due tabelle:
 
-* [&quot;one-to-one&quot;](#onetoone)
-* [&quot;one-to-many&quot;](#onetomany)
-* [&quot;many-to-many&quot;](#manytomany)
+1. [&quot;one-to-one&quot;](#onetoone)
+1. [&quot;one-to-many&quot;](#onetomany)
+1. [&quot;many-to-many&quot;](#manytomany)
 
 ### `One-to-One` {#onetoone}
 
@@ -60,6 +60,7 @@ Ad esempio, quando pensi a utenti e ordini, considera tutto ciò che è possibil
 Per utilizzare questo metodo:
 
 1. Identifica l’entità descritta in ciascuna tabella. **Suggerimento: di solito è un sostantivo**. Ad esempio, il `user` e `orders` Le tabelle descrivono in modo esplicito utenti e ordini.
+
 1. Identifica uno o più verbi che descrivono il modo in cui queste entità interagiscono. Ad esempio, quando si confrontano gli utenti con gli ordini, gli utenti &quot;inseriscono&quot; gli ordini. Nell&#39;altra direzione, gli ordini &quot;appartengono&quot; agli utenti.
 
 Questo tipo di framework può essere applicato a qualsiasi coppia di tabelle nella Data Warehouse. Questo consente di identificare facilmente il tipo di relazione, la tabella che rappresenta un lato e la tabella che rappresenta un lato molti.

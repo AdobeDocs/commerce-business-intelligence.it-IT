@@ -2,9 +2,9 @@
 title: Gestione dashboard
 description: Scopri come gestire le autorizzazioni utente per i dashboard di tua proprietà, eliminare i dashboard non più necessari e impostare un dashboard predefinito.
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Richiede [Autorizzazioni amministratore](../../administrator/user-management/user-management.md).
 
-In entrata **[!DNL Manage Data** > **Dashboards]**, è possibile gestire le autorizzazioni utente per i dashboard di tua proprietà, eliminare i dashboard non più necessari e impostare un dashboard predefinito. Coperto in questo articolo:
+In entrata **[!DNL Manage Data** > **Dashboards]**, è possibile gestire le autorizzazioni utente per i dashboard di tua proprietà, eliminare i dashboard non più necessari e impostare un dashboard predefinito. Questo argomento riguarda:
 
 1. [Ridenominazione delle dashboard](#rename)
 
@@ -35,7 +35,7 @@ Per rinominare un dashboard:
 
 ## Gestione autorizzazioni utente {#userperm}
 
-Esistono tre livelli di accesso in [!DNL MBI] per dashboard - `View`, `Edit`, e `None`.
+Esistono tre livelli di accesso in [!DNL Commerce Intelligence] per dashboard - `View`, `Edit`, e `None`.
 
 * `View` consente agli utenti selezionati di visualizzare il dashboard ma non di modificarlo. Gli utenti possono inoltre ridimensionare i grafici, esportare i dati e copiarli nei propri dashboard utilizzando la funzione Salva con nome se dispongono delle autorizzazioni Standard o Admin.
 

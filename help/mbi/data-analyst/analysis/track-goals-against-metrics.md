@@ -2,26 +2,26 @@
 title: Tracciamento degli obiettivi rispetto alle metriche
 description: Scopri come impostare una dashboard che ti aiuti a tenere traccia degli obiettivi aziendali in base ai dati effettivi, inclusi ricavi, nuovi utenti registrati e ordini nel tempo.
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
 
 # Tracciamento degli obiettivi rispetto alle metriche delle prestazioni
 
-La maggior parte dei clienti desidera tenere traccia delle proprie **obiettivi aziendali**, ma non capire che questo è possibile in [!DNL MBI]. Questo articolo illustra come impostare una dashboard che ti aiuterà a tenere traccia degli obiettivi aziendali in base ai dati effettivi, inclusi ricavi, nuovi utenti registrati e ordini nel tempo. Scopri anche come confrontare le prestazioni anno su anno, il tutto in una dashboard come questa:
+La maggior parte dei clienti desidera tenere traccia delle proprie **obiettivi aziendali**, ma non capire che questo è possibile in [!DNL Adobe Commerce Intelligence]. In questo argomento viene illustrato come impostare una dashboard che consenta di tenere traccia degli obiettivi aziendali in base ai dati effettivi, inclusi ricavi, nuovi utenti registrati e ordini nel tempo. Scopri anche come confrontare le prestazioni anno su anno, il tutto in una dashboard come questa:
 
 ![](../../assets/Goals-_dashboard_2.png)
 
-Prima di iniziare, è importante acquisire familiarità con [caricatore di file](../importing-data/connecting-data/using-file-uploader.md) e assicurati di aver definito gli obiettivi aziendali per un dato periodo.
+Prima di iniziare, è necessario rivedere [caricatore di file](../importing-data/connecting-data/using-file-uploader.md) e assicurati di aver definito gli obiettivi aziendali per un dato periodo.
 
 ## Guida introduttiva
 
 Devi innanzitutto caricare un file contenente i target giornalieri/mensili/trimestrali specifici per la tua azienda.
 
-È possibile utilizzare [caricatore di file](../importing-data/connecting-data/using-file-uploader.md) e l&#39;immagine seguente per formattare il file. I target più comuni tracciati dai client [!DNL MBI] includono Ordini, Ricavi e Nuovi conti registrati.
+È possibile utilizzare [caricatore di file](../importing-data/connecting-data/using-file-uploader.md) e l&#39;immagine seguente per formattare il file. I target più comuni tracciati dai client [!DNL Commerce Intelligence] includono Ordini, Ricavi e Nuovi conti registrati.
 
 ![](../../assets/Goals-_Excel.png)
 
@@ -49,7 +49,7 @@ Crea una nuova metrica per ogni destinazione. Ad esempio, se carichi gli obietti
 
 ## Rapporti
 
-Come sempre, è utile disporre di una combinazione di valori statici e grafici visivi durante l’analisi dei target. Di seguito sono riportati tre rapporti di esempio per iniziare a monitorare le prestazioni dei ricavi.
+Nell’analisi dei target, è utile disporre di una combinazione di valori statici e grafici visivi. Di seguito sono riportati tre rapporti di esempio per iniziare a monitorare le prestazioni dei ricavi.
 
 * **Ricavi rimasti per raggiungere l&#39;obiettivo**
 * Metrica `A`: `Revenue`

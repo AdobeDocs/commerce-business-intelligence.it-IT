@@ -2,18 +2,18 @@
 title: Creare set di filtri per le metriche
 description: Scopri come creare set di filtri salvati e applicarli alle metriche.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
 
 # Creare set di filtri
 
-Se hai più metriche in [!DNL MBI] che devono essere filtrati in modo simile (ad esempio, escludendo gli ordini di test), puoi creare set di filtri salvati e applicarli alle metriche. In questo modo si risparmia tempo, poiché non è necessario aggiungere singoli filtri durante la creazione o la modifica di una metrica.
+Se hai più metriche in [!DNL Commerce Intelligence] che devono essere filtrati in modo simile (ad esempio, escludendo gli ordini di test), puoi creare set di filtri salvati e applicarli alle metriche. In questo modo si risparmia tempo, poiché non è necessario aggiungere singoli filtri durante la creazione o la modifica di una metrica.
 
-Consulta la [video di formazione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) per ulteriori informazioni.
+Consulta la [video di formazione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) per ulteriori informazioni.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Consulta la [video di formazione](https://experienceleague.adobe.com/docs/commer
 
 1. Verifica la logica del filtro e che le parentesi e gli operatori siano posizionati correttamente: ad esempio, `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
 
-   Un filtro errato è spesso la causa di discrepanze di dati tra [!DNL MBI] report e i risultati previsti.
+   Un filtro errato è spesso la causa di discrepanze di dati tra [!DNL Commerce Intelligence] report e i risultati previsti.
 
 1. Salva il `Filter Set`.
 
@@ -45,7 +45,7 @@ Dopo aver salvato un set di filtri, puoi applicarlo a qualsiasi metrica che util
 
 >[!NOTE]
 >
->`Filter Sets` può essere applicato anche alle colonne calcolate in [!DNL MBI]. È possibile richiedere di applicare un set di filtri a una dimensione dati creata in [!DNL MBI] tramite contattando l’assistenza.
+>`Filter Sets` può essere applicato anche alle colonne calcolate in [!DNL Commerce Intelligence]. È possibile richiedere di applicare un set di filtri a una dimensione dati creata in [!DNL Commerce Intelligence] tramite contattando l’assistenza.
 
 ## Correlato
 

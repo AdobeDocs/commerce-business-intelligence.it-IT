@@ -2,7 +2,7 @@
 title: Utilizzare un rapporto
 description: Scopri come utilizzare i dati del rapporto.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Utilizzare un rapporto
 
-Utilizzare i rapporti in [!DNL MBI] per aiutarti a rispondere alle domande di business: vuoi semplicemente visualizzare i ricavi di questo mese rispetto all&#39;anno precedente o capire i costi di acquisizione per il tuo ultimo [!DNL Google AdWords] campagna.
+Utilizzare i rapporti in [!DNL Adobe Commerce Intelligence] per aiutarti a rispondere alle domande di business: vuoi semplicemente visualizzare i ricavi di questo mese rispetto all&#39;anno precedente o capire i costi di acquisizione per il tuo ultimo [!DNL Google AdWords] campagna.
 
 Come si presenta esattamente il percorso da domanda a risposta?
 
@@ -62,7 +62,7 @@ Viene quindi utilizzato per creare:
 
 Entrambi questi campi devono essere creati a livello di utente (ad esempio, sul `user` tabella). Ciò consente all’analisi media di essere normalizzata dagli utenti (in altre parole, il denominatore in questo calcolo medio è il numero di utenti).
 
-Qui è dove [!DNL MBI] entra! Puoi utilizzare il tuo [!DNL MBI] Data Warehouse per creare le colonne precedenti. Contatta il team di analisti Adobe e fornisci la definizione specifica delle nuove colonne da creare. È inoltre possibile utilizzare [Editor colonne](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+Qui è dove [!DNL Commerce Intelligence] entra! Puoi utilizzare il tuo [!DNL Commerce Intelligence] Data Warehouse per creare le colonne precedenti. Contatta il team di analisti Adobe e fornisci la definizione specifica delle nuove colonne da creare. È inoltre possibile utilizzare [Editor colonne](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 È consigliabile evitare di creare direttamente questi campi di dati calcolati nel database, in quanto ciò rappresenta un onere inutile per i server di produzione.
 
@@ -75,7 +75,7 @@ A questo punto si desidera eseguire il seguente calcolo:
 
 _[SOMMA di `Time between a customer's registration date and first purchase date`] / [Numero totale di clienti che hanno effettuato la registrazione e l&#39;acquisto]_
 
-E vuoi vedere questo calcolo tracciato nel tempo, o tendenza, in base alla data di registrazione di un cliente. Ed ecco come [crea questa metrica](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL MBI]:
+E vuoi vedere questo calcolo tracciato nel tempo, o tendenza, in base alla data di registrazione di un cliente. Ed ecco come [crea questa metrica](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
 
 1. Vai a **[!UICONTROL Data]** e seleziona la `Metrics` scheda.
 1. Clic **[!UICONTROL Add New Metric]** e seleziona la `user` tabella (dove sono state create le quote precedenti).

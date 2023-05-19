@@ -1,19 +1,19 @@
 ---
 title: Tabelle Commerce comuni
-description: Scopri alcune delle tabelle più comuni che [!DNL MBI] i clienti utilizzano.
+description: Scopri alcune delle tabelle più comuni che [!DNL Commerce Intelligence] i clienti utilizzano.
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
 # Tabelle Commerce comuni
 
-La prima volta che connetti un’istanza di Commerce a [[!DNL MBI]](../importing-data/integrations/magento.md), [!DNL MBI] replica automaticamente i dati da alcune tabelle commerce (in genere 4-6 tabelle) per configurare il set iniziale di dashboard e rapporti. Anche se questo offre un ottimo punto di partenza, la maggior parte delle istanze dello store genera decine se non centinaia di tabelle aggiuntive che possono fornire informazioni critiche sulle prestazioni della tua azienda.
+La prima volta che si collega una [!DNL Adobe Commerce] istanza a [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md), [!DNL Commerce Intelligence] replica automaticamente i dati da alcune tabelle commerce (in genere 4-6 tabelle) per configurare il set iniziale di dashboard e rapporti. Anche se questo offre un ottimo punto di partenza, la maggior parte delle istanze dello store genera decine se non centinaia di tabelle aggiuntive che possono fornire informazioni critiche sulle prestazioni della tua azienda.
 
-Di seguito è riportato un elenco di alcune delle tabelle più comuni [!DNL MBI] i clienti utilizzano. Dopo di te [connettere l’istanza Commerce a MBI](../../data-analyst/importing-data/integrations/magento.md), è possibile utilizzare [Gestione Date Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) per tenere traccia dei campi di dati rilevanti.
+Di seguito è riportato un elenco di alcune delle tabelle più comuni [!DNL Commerce Intelligence] i clienti utilizzano. Dopo di te [collegare la tua istanza Commerce a Commerce Intelligence](../../data-analyst/importing-data/integrations/magento.md), è possibile utilizzare [Gestione Date Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md) per tenere traccia dei campi di dati rilevanti.
 
 | Nome tabella | Descrizione |
 |---|---|

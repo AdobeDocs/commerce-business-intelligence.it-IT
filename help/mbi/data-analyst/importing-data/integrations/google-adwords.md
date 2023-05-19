@@ -2,9 +2,9 @@
 title: Connetti Google Adwords
 description: Scopri come misurare il ROI delle campagne sposando i costi pubblicitari e il valore del ciclo di vita del cliente (Customer Lifetime Value, CLV) degli utenti acquisiti dalle campagne.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -17,15 +17,15 @@ ht-degree: 0%
 
 ![](../../../assets/Google_Adwords_logo.png)
 
-Avete fatto la vostra ricerca, creato i vostri annunci, lanciato la vostra campagna. Ora è il momento di analizzare i dati di spesa degli annunci e verificare se i soldi vengono spesi in modo efficace. Utilizzando i dati sulla spesa pubblicitaria, puoi [misurare il ROI delle campagne sposando i costi pubblicitari e il valore del ciclo di vita del cliente (CLV)](../../analysis/roi-ad-camp.md) degli utenti acquisiti dalle campagne.
+Avete fatto la vostra ricerca, creato i vostri annunci, lanciato il vostro [!DNL Google] campagna. Ora è il momento di analizzare i dati di spesa degli annunci e verificare se i soldi vengono spesi in modo efficace. Utilizzando i dati sulla spesa pubblicitaria, puoi [misurare il ROI delle campagne sposando i costi pubblicitari e il valore del ciclo di vita del cliente (CLV)](../../analysis/roi-ad-camp.md) degli utenti acquisiti dalle campagne.
 
-Per iniziare, immetti il [!DNL Google Adwords] credenziali in [!DNL MBI]:
+Per iniziare, immetti il [!DNL Google Adwords] credenziali in [!DNL Commerce Intelligence].
 
-1. Vai alla pagina Connessioni in **Gestisci dati > Integrazioni**.
+1. Vai a `Connections` pagina in **Gestisci dati > Integrazioni**.
 1. Clic **Aggiungi integrazione**, situato nella parte superiore destra dello schermo.
 1. Fai clic su **[!DNL Google Adwords]** icona. Verrà aperto il [!DNL Google Adwords] pagina delle credenziali.
-1. Immetti il [!DNL Google Analytics] credenziali. Al termine del processo di autorizzazione, verrai reindirizzato nuovamente a [!DNL MBI].
-1. Viene visualizzato un elenco di ID profilo. Controlla i profili a cui desideri connetterti [!DNL MBI].
+1. Immetti il [!DNL Google Analytics] credenziali. Al termine del processo di autorizzazione, verrai reindirizzato nuovamente a [!DNL Commerce Intelligence].
+1. Viene visualizzato un elenco di ID profilo. Controlla i profili a cui desideri connetterti [!DNL Commerce Intelligence].
 
    ![](../../../assets/cnnct-profile.png)
 
@@ -33,9 +33,9 @@ Per iniziare, immetti il [!DNL Google Adwords] credenziali in [!DNL MBI]:
 
 Se disponi di più profili e hai bisogno di aiuto per identificare quale sia, fai riferimento alla `Connecting Multiple Google Analytics profiles` sezione successiva.
 
-## `Connecting multiple Google Analytics profiles`
+## Collegamento di più [!DNL Google Analytics] profili
 
-È possibile che più siti Web siano connessi a un unico [!DNL Google Analytics] account, identificato dal proprio [!DNL Google Analytics] ID profilo. In questo caso, puoi includere tutti gli ID profilo in [!DNL MBI]. Controlla gli ID profilo che vuoi includere durante il passaggio di selezione del profilo.
+È possibile che più siti Web siano connessi a un unico [!DNL Google Analytics] account, identificato dal proprio [!DNL Google Analytics] ID profilo. In questo caso, puoi includere tutti gli ID profilo in [!DNL Commerce Intelligence]. Controlla gli ID profilo che vuoi includere durante il passaggio di selezione del profilo.
 
 **Per identificare l&#39;ID profilo Google Analytics di un particolare sito Web:**
 
@@ -48,12 +48,12 @@ Se disponi di più profili e hai bisogno di aiuto per identificare quale sia, fa
 ## Disconnessione [!DNL Google Adwords]
 
 1. Visita il [!DNL Google] [impostazioni account](https://www.google.com/account/about/?hl=en) pagina.
-1. Sotto `Security` e fai clic su **[!UICONTROL edit]** accanto a `Authorizing` applicazioni e siti.
-1. Clic **[!UICONTROL revoke access]** accanto a [!DNL MBI].
+1. Sotto `Security` , fare clic su **[!UICONTROL edit]** accanto a `Authorizing` applicazioni e siti.
+1. Clic **[!UICONTROL revoke access]**.
 
 ## Correlato
 
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Tracciare l’origine di riferimento dell’ordine tramite [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Tracciare l&#39;origine di riferimento dell&#39;utente nel database](../../analysis/google-track-user-acq.md)
 * [Scopri le fonti e i canali di acquisizione più importanti](../../analysis/most-value-source-channel.md)

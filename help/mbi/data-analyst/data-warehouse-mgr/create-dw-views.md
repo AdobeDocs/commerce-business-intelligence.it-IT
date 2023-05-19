@@ -2,9 +2,9 @@
 title: Creazione e utilizzo di visualizzazioni Data Warehouse
 description: Scopri come creare nuove tabelle warehouse modificando una tabella esistente o unendo o consolidando più tabelle utilizzando SQL.
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1071'
 ht-degree: 9%
 
 ---
@@ -36,6 +36,7 @@ Da qui è possibile creare una visualizzazione seguendo le istruzioni di esempio
 1. Se si osserva una vista esistente, fare clic su **[!UICONTROL New Data Warehouse View]** per aprire una finestra di query vuota. Se è già aperta una finestra di query vuota, procedere al passaggio successivo.
 1. Assegnare un nome alla visualizzazione digitando nella `View Name` campo. Il nome fornito determina il nome visualizzato per la visualizzazione nella Data Warehouse. `View names` sono limitati a lettere minuscole, numeri e trattini bassi (_). Tutti gli altri caratteri sono vietati.
 1. Inserire la query nella finestra con titolo `Select Query`, utilizzando la sintassi PostgreSQL standard.
+
    >[!NOTE]
    >
    >La query deve fare riferimento a nomi di colonna specifici. L&#39;uso del `*`non è consentito selezionare tutte le colonne.
@@ -76,7 +77,7 @@ Esaminiamo più da vicino uno degli esempi citati in precedenza in questo artico
 | 4 | aaa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
 | 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1.2 |
 
-Per creare una singola tabella di spesa pubblicitaria contenente entrambi [!DNL Facebook] e [!DNL AdWords] campagne, è necessario scrivere una query SQL e utilizzare `UNION ALL` funzione. A `UNION ALL` L&#39;istruzione viene spesso utilizzata per combinare più query SQL distinte aggiungendo i risultati di ogni query a un unico output.
+Per creare una singola tabella di spesa pubblicitaria contenente entrambi [!DNL Facebook] e [!DNL Google AdWords] campagne, è necessario scrivere una query SQL e utilizzare `UNION ALL` funzione. A `UNION ALL` L&#39;istruzione viene spesso utilizzata per combinare più query SQL distinte aggiungendo i risultati di ogni query a un unico output.
 
 Esistono alcuni requisiti di un `UNION` istruzione da citare, come descritto in PostgreSQL [documentazione](https://www.postgresql.org/docs/8.3/queries-union.html):
 
@@ -129,11 +130,11 @@ Salvataggio della query in alto come `Data Warehouse View` crea una tabella con 
 | **5** | [!DNL Facebook] | 2017-07-06 00:00:00 | ccc | 1.2 | 300 | 5 |
 | **5** | [!DNL Google AdWords] | 2017-07-10 00:00:00 | fff | 28.5 | 10200 | 280 |
 
-Invece di creare un set separato di metriche di marketing per ogni origine di annuncio, ora puoi creare un singolo set di metriche utilizzando la tabella precedente per acquisire tutti gli annunci.
+Invece di creare un set separato di metriche di marketing per ogni origine di annuncio, puoi creare un singolo set di metriche utilizzando la tabella precedente per acquisire tutti gli annunci.
 
 **Cerchi ulteriori informazioni?**
 
-Scrittura di istruzioni SQL e creazione `Data Warehouse Views` non è incluso nel supporto tecnico. Tuttavia, il team Servizi offre assistenza nella creazione di visualizzazioni. Il team di supporto può fornire assistenza in tutti gli aspetti, dalla migrazione di un database legacy con un nuovo database alla creazione di una singola visualizzazione Data Warehouse ai fini di un’analisi specifica.
+Scrittura di istruzioni SQL e creazione `Data Warehouse Views` non è incluso nel supporto tecnico. Tuttavia, il [Team di servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) offre assistenza nella creazione di punti di vista. Il team di supporto può fornire assistenza in tutti gli aspetti, dalla migrazione di un database legacy con un nuovo database alla creazione di una singola visualizzazione Data Warehouse ai fini di un’analisi specifica.
 
 Di solito, la creazione di un nuovo `Data Warehouse View` ai fini del consolidamento di 2-3 tabelle strutturate in modo simile, sono necessarie cinque ore di tempo di servizio, il che si traduce in circa $ 1.250 di lavoro. Tuttavia, di seguito sono riportati alcuni fattori comuni che possono aumentare gli investimenti previsti necessari:
 

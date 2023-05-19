@@ -2,16 +2,16 @@
 title: Definire l’abbandono dei clienti
 description: Scopri come impostare una dashboard che ti aiuti a definire l’abbandono per i clienti transazionali.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
 
 # Abbandono dei clienti transazionali
 
-Questo articolo illustra come impostare una dashboard che ti aiuti a definire l’abbandono per i clienti transazionali.
+Questo argomento illustra come impostare una dashboard che ti aiuti a definire l’abbandono per i clienti transazionali.
 
 ![](../../assets/churn-deashboard.png)
 
@@ -136,4 +136,4 @@ Una volta creato il dashboard, la domanda più comune è: come si utilizza quest
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile all’immagine nella parte superiore della pagina
 
-In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il team Professional Services, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il team Professional Services, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

@@ -1,27 +1,27 @@
 ---
 title: Generazione di rapporti su un calendario di vendita al dettaglio
-description: Scopri come impostare la struttura per utilizzare un calendario 4-5-4 per la vendita al dettaglio all’interno del [!DNL MBI] account.
+description: Scopri come impostare la struttura per utilizzare un calendario 4-5-4 per la vendita al dettaglio all’interno del [!DNL Commerce Intelligence] account.
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
 
 # Generazione di rapporti su un calendario di vendita al dettaglio
 
-Questo articolo illustra come impostare la struttura per utilizzare un [4-5-4 calendario vendite al dettaglio](https://nrf.com/resources/4-5-4-calendar) all&#39;interno del [!DNL MBI] account. Il generatore di rapporti visivi fornisce intervalli di tempo, intervalli e impostazioni indipendenti incredibilmente flessibili. Tuttavia, tutte queste impostazioni funzionano con il calendario mensile tradizionale attivo.
+In questo argomento viene illustrato come impostare la struttura per l&#39;utilizzo di [4-5-4 calendario vendite al dettaglio](https://nrf.com/resources/4-5-4-calendar) all&#39;interno del [!DNL Adobe Commerce Intelligence] account. Il generatore di rapporti visivi fornisce intervalli di tempo, intervalli e impostazioni indipendenti incredibilmente flessibili. Tuttavia, tutte queste impostazioni funzionano con il calendario mensile tradizionale attivo.
 
 Poiché molti clienti modificano il calendario per utilizzare date di vendita al dettaglio o contabili, i passaggi seguenti illustrano come lavorare con i dati e creare rapporti utilizzando date di vendita al dettaglio. Anche se le istruzioni seguenti fanno riferimento al calendario 4-5-4 Retail, è possibile modificarle per qualsiasi calendario specifico utilizzato dal team, che si tratti di calendario finanziario o semplicemente di un intervallo di tempo personalizzato.
 
-Prima di iniziare, è necessario acquisire familiarità con [Caricamento file](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) e assicurarsi di aver allungato la `.csv` file. In questo modo le date coprono tutti i dati storici e li spingono nel futuro.
+Prima di iniziare, rivedi [Caricamento file](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) e assicurarsi di aver allungato la `.csv` file. In questo modo le date coprono tutti i dati storici e li spingono nel futuro.
 
 Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Guida introduttiva
 
-È possibile [scaricare](../../assets/454-calendar.csv) a `.csv` versione del calendario 4-5-4 delle vendite al dettaglio per gli anni dal 2014 al 2017. Potrebbe essere necessario regolare questo file in base al calendario interno della vendita al dettaglio ed estendere l’intervallo di date per supportare l’intervallo di tempo storico e corrente. Dopo aver scaricato il file, utilizza lo strumento di caricamento file per creare una tabella del calendario di vendita al dettaglio nel tuo [!DNL MBI] Data Warehouse. Se utilizzi una versione inalterata del calendario 4-5-4 per la vendita al dettaglio, assicurati che la struttura e i tipi di dati dei campi in questa tabella corrispondano ai seguenti:
+È possibile [scaricare](../../assets/454-calendar.csv) a `.csv` versione del calendario 4-5-4 delle vendite al dettaglio per gli anni dal 2014 al 2017. Potrebbe essere necessario regolare questo file in base al calendario interno della vendita al dettaglio ed estendere l’intervallo di date per supportare l’intervallo di tempo storico e corrente. Dopo aver scaricato il file, utilizza lo strumento di caricamento file per creare una tabella del calendario di vendita al dettaglio nel tuo [!DNL Commerce Intelligence] Data Warehouse. Se utilizzi una versione inalterata del calendario 4-5-4 per la vendita al dettaglio, assicurati che la struttura e i tipi di dati dei campi in questa tabella corrispondano ai seguenti:
 
 | Nome colonna | Tipo di dati colonna | Chiave primaria |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-c
 
          >[!NOTE]
          >
-         >Il `now()` La funzione precedente è specifica di PostgreSQL. Anche se la maggior parte [!DNL MBI] I data warehouse sono ospitati su PostgreSQL, alcuni possono essere ospitati su Redshift. Se il calcolo precedente restituisce un errore, potrebbe essere necessario utilizzare la funzione Redshift `getdate()` invece di `now()`.
+         >Il `now()` La funzione precedente è specifica di PostgreSQL. Anche se la maggior parte [!DNL Commerce Intelligence] I data warehouse sono ospitati su PostgreSQL, alcuni possono essere ospitati su Redshift. Se il calcolo precedente restituisce un errore, potrebbe essere necessario utilizzare la funzione Redshift `getdate()` invece di `now()`.
    * **Anno corrente di vendita al dettaglio** (Deve essere creato dall’analista del supporto tecnico)
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
@@ -201,6 +201,6 @@ Nota: non sono necessarie nuove metriche per questa analisi. Tuttavia, assicurat
 
 Quanto riportato sopra descrive come configurare un calendario per la vendita al dettaglio in modo che sia compatibile con qualsiasi metrica generata sul `sales\_order` tabella (ad esempio `Revenue` o `Orders`). Puoi anche estendere questo periodo per supportare il calendario delle vendite al dettaglio per le metriche basate su qualsiasi tabella. L&#39;unico requisito è che questa tabella abbia un campo datetime valido che possa essere utilizzato per il join alla tabella Retail Calendar (Calendario vendite al dettaglio).
 
-Ad esempio, per visualizzare le metriche a livello di cliente in un calendario 4-5-4 per la vendita al dettaglio, crea un `Same Table` calcolo in `customer\_entity` tabella, simile a `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` descritto in precedenza. È quindi possibile utilizzare questa colonna per riprodurre `One to Many` Calcoli JOIN\_COLUMN (come `Created_at (retail year)` e `Include in previous retail year? (Yes/No)` unendo `customer\_entity` tabella al `Retail Calendar` tabella.
+Ad esempio, per visualizzare le metriche a livello di cliente in un calendario 4-5-4 per la vendita al dettaglio, crea un `Same Table` calcolo in `customer\_entity` tabella, simile a `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` descritto in precedenza. È quindi possibile utilizzare questa colonna per riprodurre `One to Many` Calcoli JOIN\_COLUMN (come `Created_at (retail year)`) e `Include in previous retail year? (Yes/No)` unendo `customer\_entity` tabella al `Retail Calendar` tabella.
 
 Non dimenticare di [aggiungere tutte le nuove colonne come dimensioni alle metriche](../data-warehouse-mgr/manage-data-dimensions-metrics.md) prima di creare nuovi rapporti.

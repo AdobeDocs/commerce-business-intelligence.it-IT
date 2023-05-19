@@ -1,15 +1,15 @@
 ---
-title: Onboarding
-description: Scopri l’onboarding.
+title: Onboarding di Adobe Commerce Intelligence
+description: Scopri come effettuare l’onboarding di Adobe Commerce Intelligence.
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
-# Onboarding
+# Onboarding [!DNL Adobe Commerce Intelligence]
 
 Domande sull’onboarding relative a `store` e `database` Le impostazioni consentono di configurare correttamente la generazione rapporti. Con queste risposte, Adobe distribuisce i report personalizzati in base alla configurazione del negozio.
 
@@ -29,6 +29,6 @@ Domande sull’onboarding relative a `store` e `database` Le impostazioni consen
 
 ## Impostazioni del database
 
-- `Database name` - Che cos&#39;è *nome del database MySQL* dove risiedono i dati transazionali di Commerce?
+- `Database name` - Che cos&#39;è *nome del [!DNL MySQL] database* dove risiedono i dati transazionali di Commerce?
 
 - `Table prefix (optional)` : le tabelle contenute nel database Commerce sono precedute da un elemento (ad esempio, `store_`)? Questo non avviene normalmente, ma si tratta di una personalizzazione che può essere effettuata.

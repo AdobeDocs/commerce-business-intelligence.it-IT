@@ -1,10 +1,10 @@
 ---
 title: Dati Mixpanel previsti
-description: Esplora le tabelle di dati principali che puoi importare da Mixpanel nel tuo [!DNL MBI] account.
+description: Esplora le tabelle di dati principali che puoi importare da Mixpanel nel tuo [!DNL Commerce Intelligence] account.
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Dopo [hai connesso il tuo [!DNL Mixpanel] account](../integrations/mixpanel.md), è possibile utilizzare [Gestione Date Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) per tracciare facilmente i campi di dati rilevanti per l’analisi.
 
-Questo articolo esplora le tabelle di dati principali da cui è possibile importare [!DNL Mixpanel] nel tuo [!DNL MBI] account. Dopo aver connesso Mixpanel, nella Data Warehouse verranno create le tabelle seguenti. Per visualizzare tutti i campi disponibili per il tracciamento, fai clic sui collegamenti nella colonna nome tabella.
+Questo argomento descrive le tabelle dati principali da cui è possibile importare [!DNL Mixpanel] nel tuo [!DNL Commerce Intelligence] account. Dopo la connessione verranno create le tabelle seguenti nella Data Warehouse [!DNL Mixpanel]. Per visualizzare tutti i campi disponibili per il tracciamento, fai clic sui collegamenti nella colonna nome tabella.
 
 >[!NOTE]
 >
->A causa dei limiti del [!DNL Mixpanel] API, dati storici: dati risalenti a più di sette (7) giorni prima della data di connessione a [!DNL MBI] - non viene replicato.
+>A causa dei limiti del [!DNL Mixpanel] API, dati storici: dati risalenti a più di sette (7) giorni prima della data di connessione a [!DNL Commerce Intelligence] - non viene replicato.
 
 | **Nome tabella** | **Descrizione** |
 |-----|-----|
@@ -30,4 +30,4 @@ Questo articolo esplora le tabelle di dati principali da cui è possibile import
 ## Documentazione correlata
 
 * [Connessione [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -2,7 +2,7 @@
 title: Dashboard
 description: Scopri come creare e utilizzare una dashboard.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Dashboard
 
-[!DNL MBI] Le dashboard offrono una rapida panoramica delle prestazioni del negozio e dell&#39;attività di vendita. I singoli dashboard possono essere condivisi con altri utenti e organizzati in gruppi logici. È inoltre possibile impostare diversi livelli di autorizzazione per altri utenti.
+[!DNL Adobe Commerce Intelligence] Le dashboard offrono una rapida panoramica delle prestazioni del negozio e dell&#39;attività di vendita. I singoli dashboard possono essere condivisi con altri utenti e organizzati in gruppi logici. È inoltre possibile impostare diversi livelli di autorizzazione per altri utenti.
 
 È facile creare un rapporto, aggiungerlo a una dashboard ed esportare i dati in Excel. Grafici e report possono essere ridimensionati e trascinati nella posizione desiderata nel dashboard.
 
@@ -76,7 +76,7 @@ In entrata **[!DNL Manage Data** > **Dashboards]**, è possibile gestire le auto
 
 ### Condivisione delle dashboard {#sharingdash}
 
-Per scalare veramente [!DNL MBI] Adobe ti incoraggia a condividere con altri membri del team le dashboard che hai creato e a fornire informazioni preziose. *Puoi condividere dashboard di tua proprietà* facendo clic su `Share Dashboard` nella parte superiore della pagina.
+Per scalare veramente [!DNL Commerce Intelligence] Adobe ti incoraggia a condividere con altri membri del team le dashboard che hai creato e a fornire informazioni preziose. *Puoi condividere dashboard di tua proprietà* facendo clic su `Share Dashboard` nella parte superiore della pagina.
 
 Quando condividi una dashboard, puoi assegnare le autorizzazioni in tutta l’organizzazione OPPURE su base individuale, il che significa che puoi decidere chi può visualizzare e modificare i rapporti.
 
@@ -113,7 +113,7 @@ Quando condividi una dashboard, puoi assegnare le autorizzazioni in tutta l’or
 
    **`Default`**
 
-   1. Per impostare questa dashboard come predefinita per [!DNL MBI] account, fai clic su **[!UICONTROL Make Default]**.
+   1. Per impostare questa dashboard come predefinita per [!DNL Commerce Intelligence] account, fai clic su **[!UICONTROL Make Default]**.
 
    **`Remove`**
 

@@ -2,9 +2,9 @@
 title: Soglia spedizione gratuita
 description: Scopri come impostare una dashboard che tenga traccia delle prestazioni della soglia di spedizione gratuita.
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Questo articolo contiene istruzioni per i client che utilizzano l’architettura originale e la nuova architettura. Ti trovi nella nuova architettura se è disponibile la sezione &quot;Data Warehouse visualizzazioni&quot; dopo aver selezionato &quot;Gestisci dati&quot; nella barra degli strumenti principale.
+>Questo argomento contiene istruzioni per i client che utilizzano l&#39;architettura originale e la nuova architettura. Sei sulla nuova architettura se disponi di `Data Warehouse Views` sezione disponibile dopo la selezione `Manage Data` dalla barra degli strumenti principale.
 
-Questo articolo illustra come impostare una dashboard che tenga traccia delle prestazioni della soglia di spedizione gratuita. Questa dashboard, mostrata di seguito, è un ottimo modo per testare A/B due soglie di spedizione gratuite. Ad esempio, la tua azienda potrebbe non essere sicura di dover offrire la spedizione gratuita a $50 o $100. È necessario eseguire un test A/B di due sottoinsiemi casuali dei clienti ed eseguire l’analisi in [!DNL MBI].
+In questo argomento viene illustrato come impostare un dashboard che tenga traccia delle prestazioni della soglia di spedizione gratuita. Questa dashboard, mostrata di seguito, è un ottimo modo per testare A/B due soglie di spedizione gratuite. Ad esempio, la tua azienda potrebbe non essere sicura di dover offrire la spedizione gratuita a $50 o $100. È necessario eseguire un test A/B di due sottoinsiemi casuali dei clienti ed eseguire l’analisi in [!DNL Commerce Intelligence].
 
 Prima di iniziare, si desidera identificare due periodi di tempo separati in cui si sono avuti valori diversi per la soglia di spedizione gratuita del negozio.
 

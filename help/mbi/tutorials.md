@@ -1,7 +1,7 @@
 ---
 title: Tutorials
 description: Tutorials
-source-git-commit: 28976ea30c73f8caa2efbd9f52a194c993035275
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '12'
 ht-degree: 0%
@@ -10,4 +10,4 @@ ht-degree: 0%
 
 # Tutorials
 
-Segui questi tutorial auto-guidati per imparare la potenza di [!DNL MBI].
+Segui questi tutorial guidati per scoprire la potenza di [!DNL Adobe Commerce Intelligence].

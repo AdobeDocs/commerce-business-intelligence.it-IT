@@ -2,7 +2,7 @@
 title: Visualizzazione di dashboard su più schermi
 description: Scopri come visualizzare le dashboard in tutto l’ufficio.
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Visualizza dashboard in ufficio
 
-Per [!DNL MBI] gli utenti interessati a visualizzare dashboard e report sugli schermi di tutto l&#39;ufficio dispongono di varie opzioni hardware che consentono di abilitare facilmente questa configurazione.
+Per [!DNL Commerce Intelligence] gli utenti interessati a visualizzare dashboard e report sugli schermi di tutto l&#39;ufficio dispongono di varie opzioni hardware che consentono di abilitare facilmente questa configurazione.
 
 Di seguito è riportato l’elenco consigliato di elementi necessari per l’opzione:
 

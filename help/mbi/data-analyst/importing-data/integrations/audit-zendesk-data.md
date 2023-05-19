@@ -2,9 +2,9 @@
 title: Controlla dati Zendesk
 description: Scopri come esportare i dati Zendesk.
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Ho trovato qualcosa di strano nel tuo [[!DNL Zendesk] dati](../integrations/exp-
 
 ## Abilitazione dell’esportazione dei dati
 
-L’esportazione dei dati non è attualmente abilitata per tutti [!DNL Zendesk] account. Per attivare questa funzione: [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en), menzionando il [!DNL Zendesk] nome del sottodominio.
+L’esportazione dei dati non è attualmente abilitata per tutti [!DNL Zendesk] account. Per attivare questa funzione: [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), menzionando il [!DNL Zendesk] nome del sottodominio.
 
 >[!NOTE]
 >
@@ -36,6 +36,6 @@ Dopo l’abilitazione dell’esportazione dei dati, solo gli amministratori in u
 
    Questo link di download è valido per almeno tre giorni.
 
-Questo processo crea un file XML contenente tutte le informazioni memorizzate nel file [!DNL Zendesk] account, inclusi i dati dei ticket (con commenti), i dati utente e i dati account. A questo punto è possibile: [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) (assicurati di allegare questo file!) in modo da poter esaminare più da vicino i dati. Se il file è troppo grande, condividilo con [!DNL MBI] team tramite [!DNL Dropbox] o [!DNL Google Drive].
+Questo processo crea un file XML contenente tutte le informazioni memorizzate nel file [!DNL Zendesk] account, inclusi i dati dei ticket (con commenti), i dati utente e i dati account. A questo punto è possibile: [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (assicurati di allegare questo file!) in modo da poter esaminare più da vicino i dati. Se il file è troppo grande, condividilo con [!DNL Commerce Intelligence] team tramite [!DNL Dropbox] o [!DNL Google Drive].
 
 Per ulteriori informazioni su [!DNL Zendesk] esportazioni di file, fare riferimento al [[!DNL Zendesk] esportare la documentazione](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).

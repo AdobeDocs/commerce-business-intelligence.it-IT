@@ -2,16 +2,16 @@
 title: Colonna calcolata confronto sequenziale
 description: Scopri lo scopo e gli utilizzi della colonna calcolata Confronto sequenziale.
 exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 1%
+source-wordcount: '397'
+ht-degree: 2%
 
 ---
 
 # Colonna calcolata confronto sequenziale
 
-Questo argomento illustra lo scopo e gli utilizzi del `Sequential Comparison` colonna calcolata disponibile nella **[!DNL Manage Data > Data Warehouse]** pagina. Di seguito è riportata una spiegazione di ciò che fa, seguito da un esempio, e la meccanica della sua creazione.
+Questo argomento illustra lo scopo e gli utilizzi del `Sequential Comparison` colonna calcolata disponibile nella **[!DNL Manage Data > Data Warehouse]** pagina. Di seguito è riportata una spiegazione di ciò che fa, seguito da un esempio e dalla meccanica della sua creazione.
 
 **Spiegazione**
 
@@ -39,17 +39,25 @@ Per questo tipo di colonna calcolata, la riga corrispondente al primo evento del
 
 Per creare un **Numero evento** colonna:
 
-1. Accedi a **[!DNL Manage Data** > **Data Warehouse]** pagina.
+1. Accedi a **[!DNL Manage Data > Data Warehouse]** pagina.
+
 1. Passare alla tabella in cui si desidera creare la colonna.
-1. Clic **[!UICONTROL Create New Column]** in alto a destra.
+
+1. Clic **[!UICONTROL Create New Column]** nell’angolo superiore destro.
+
 1. Seleziona `Same Table` come `Definition Type` (se le colonne che desideri confrontare non si trovano nella stessa tabella, potrebbe essere necessario riposizionarle).
+
 1. Seleziona `SEQUENTIAL_COMPARISON` come `Column Definition Equation`.
+
 1. Scegli gli input, come spiegato in precedenza:
    - `Event Owner`
    - `Event Date`
    - `Value to Compare`
-1. È inoltre possibile aggiungere filtri per escludere le righe dalla considerazione. Le righe escluse hanno un valore NULL per questa colonna.
+
+1. È inoltre possibile aggiungere filtri per escludere le righe dalla considerazione. Le righe escluse presentano `NULL` per questa colonna.
+
 1. Immetti un nome per la colonna nella parte superiore della pagina e fai clic su **[!UICONTROL Save]**.
+
 1. È possibile utilizzare la colonna *immediatamente*.
 
 ![SEC](../../assets/SEC_new.png)

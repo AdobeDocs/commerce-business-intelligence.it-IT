@@ -1,30 +1,30 @@
 ---
 title: Importazione dei dati di condivisione dei collegamenti
-description: Scopri come importare i dati di condivisione dei collegamenti in [!DNL MBI].
+description: Scopri come importare i dati di condivisione dei collegamenti in [!DNL Commerce Intelligence].
 exl-id: 1c2025a6-746c-4929-bbb1-62af1afcbc49
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
 
 ---
 
-# Importa `Linkshare` dati
+# Importa [!DNL Linkshare] dati
 
-Per portare `Linkshare` dati in [!DNL MBI], è necessario eseguire due operazioni:
+Per portare [!DNL Linkshare] dati in [!DNL Adobe Commerce Intelligence], è necessario eseguire due operazioni:
 
 1. [Esportare i dati di condivisione dei collegamenti in ](#export)
-1. [Carica il foglio di calcolo in [!DNL MBI]](../connecting-data/using-file-uploader.md)
+1. [Carica il foglio di calcolo in [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## Esporta dati da condivisione collegamenti {#export}
 
-1. Nel tuo `Linkshare` account, vai a **[!UICONTROL Reports** > **Run Reports].**
+1. Nel tuo [!DNL Linkshare] account, vai a **[!UICONTROL Reports** > **Run Reports].**
 
 1. In `Report` a discesa, seleziona **[!UICONTROL Sales & Activity Report]**.
 
 1. Lascia tutte le altre opzioni a discesa come selezione predefinita.
 
-1. In `Date Range` a discesa, seleziona l’opzione (`Sun - Sat`, `Mon - Sun`) corrisponde al tuo `Start of Week` impostazioni in [!DNL MBI].
+1. In `Date Range` a discesa, seleziona l’opzione (`Sun - Sat`, `Mon - Sun`) corrisponde al tuo `Start of Week` impostazioni in [!DNL Commerce Intelligence].
 
 1. Cancella `Compare Year-Over-Year Data` casella di controllo.
 
@@ -38,4 +38,4 @@ Per portare `Linkshare` dati in [!DNL MBI], è necessario eseguire due operazion
 
    A questo punto, un `.csv` e scaricato.
 
-Dopo il download, puoi caricarlo in [!DNL MBI] utilizzando [`File Upload` funzionalità](../connecting-data/using-file-uploader.md).
+Dopo il download, puoi caricarlo in [!DNL Commerce Intelligence] utilizzando [`File Upload` funzionalità](../connecting-data/using-file-uploader.md).

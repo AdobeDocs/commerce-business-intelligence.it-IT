@@ -1,17 +1,17 @@
 ---
 title: Analisi per coorte dei ricavi del ciclo di vita
-description: Scopri la potenza di [!DNL MBI] analisi per coorte.
+description: Esplora la potenza dell’analisi per coorte di Commerce Intelligence.
 exl-id: f2b55745-d364-4ba6-9857-ce9cee05c3ae
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
 
-# `Lifetime Revenue Cohort` Analisi
+# [!DNL Lifetime Revenue Cohort] Analisi
 
-Esistono diversi modi per esaminare i dati in [!DNL MBI]e sai che l&#39;interpretazione e la comprensione sono importanti quanto il calcolo e la visualizzazione. Questo articolo esplora il potere di [!DNL MBI] `cohort` analisi.
+Esistono diversi modi per esaminare i dati in [!DNL Adobe Commerce Intelligence]e sai che l&#39;interpretazione e la comprensione sono importanti quanto il calcolo e la visualizzazione. Questo argomento esplora la potenza di [!DNL Commerce Intelligence] `cohort` analisi.
 
 ## Che cosa fa `lifetime revenue cohort` l&#39;analisi?
 

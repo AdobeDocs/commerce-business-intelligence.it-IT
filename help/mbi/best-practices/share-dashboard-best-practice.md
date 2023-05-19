@@ -2,7 +2,7 @@
 title: Condivisione di dashboard
 description: Scopri come utilizzare e condividere le dashboard.
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Condividere un dashboard
 
-Condividere dashboard significa che tu e il tuo team possiedete le stesse informazioni in qualsiasi momento, il che consente collaborazione e discussione. Di seguito sono riportati alcuni consigli per la condivisione delle dashboard e la conservazione dei [!DNL MBI] account ordinato.
+Condividere dashboard significa che tu e il tuo team possiedete le stesse informazioni in qualsiasi momento, il che consente collaborazione e discussione. Di seguito sono riportati alcuni consigli per la condivisione delle dashboard e la conservazione dei [!DNL Adobe Commerce Intelligence] account ordinato.
 
 ## Evita dashboard duplicati
 
 Talvolta è possibile che siano presenti più dashboard con lo stesso nome, in genere perché altri utenti hanno creato e condiviso con te dashboard simili. Questi dashboard potrebbero essere duplicati di una copia primaria. In questo caso, l’Adobe consiglia di far condividere a un utente la copia principale del dashboard e quindi di rimuovere tutti i dashboard duplicati.
 
-Per visualizzare il proprietario di un dashboard, fai clic sul menu a discesa del dashboard in alto a sinistra. Tutte le dashboard che non hanno un nome sotto di loro appartengono a te.
+Per visualizzare il proprietario di un dashboard, fai clic sul menu a discesa del dashboard nell’angolo in alto a sinistra. Tutte le dashboard che non hanno un nome sotto di loro appartengono a te.
 
 ![](../../mbi/assets/Dash_ownership.gif)
 
@@ -30,7 +30,7 @@ Per rimuovere tutti i dashboard duplicati:
 
 ## Creare un set principale di dashboard
 
-Quando vengono creati nuovi utenti, questi non dispongono di dashboard o grafici. Al primo accesso, tuttavia, visualizzeranno un elenco delle dashboard più popolari nell’organizzazione (con diritti di visualizzazione o modifica per l’intero team). Assicurati che le dashboard siano sempre in questo elenco, in modo che possano essere inclusi nuovi utenti.
+Quando vengono creati nuovi utenti, questi non dispongono di dashboard o grafici. Tuttavia, al primo accesso visualizzeranno un elenco delle dashboard più popolari nell’organizzazione (con diritti di visualizzazione o modifica per l’intero team). Assicurati che le dashboard siano sempre in questo elenco, in modo che possano essere inclusi nuovi utenti.
 
 ## Condividere dashboard con i nuovi utenti
 

@@ -2,16 +2,16 @@
 title: Analisi dell’impatto dei coupon
 description: Scopri come analizzare l’impatto dei coupon sull’acquisizione e la fidelizzazione dei clienti.
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1359'
 ht-degree: 2%
 
 ---
 
 # Impatto coupon
 
-L’analisi del modo in cui i clienti utilizzano i coupon può fornire informazioni significative sulla tua attività. In particolare, analizzando come acquisire e fidelizzare i clienti tramite coupon. Questo articolo esplora le analisi che possono aiutarti a rispondere ai seguenti tipi di domande:
+L’analisi del modo in cui i clienti utilizzano i coupon può fornire informazioni significative sulla tua attività. In particolare, analizzando come acquisire e fidelizzare i clienti tramite coupon. In questo argomento vengono illustrate le analisi che consentono di rispondere ai seguenti tipi di domande:
 
 * Quanti clienti acquisisci tramite coupon?
 * I clienti acquisiti con coupon hanno più probabilità di effettuare acquisti ripetuti rispetto ai clienti non acquisiti con coupon?
@@ -69,7 +69,7 @@ Il numero di ordini ripetuti per le acquisizioni senza cedola è molto più elev
 
 Analogamente, il numero di ordini ripetuti con una cedola è più elevato per le acquisizioni non cedolare.
 
-## #Percent di ordini ripetuti con coupon
+## Percentuale di ordini ripetuti con coupon
 
 I clienti acquisiti senza cedola hanno una percentuale molto inferiore di ordini ripetuti con una cedola applicata rispetto ai clienti acquisiti con cedola. Pertanto, per i clienti acquisiti con coupon, quasi la metà degli ordini ripetuti ha un coupon applicato. In questo esempio, i clienti con coupon acquistati tendono a effettuare acquisti ripetuti con coupon.
 
@@ -149,4 +149,4 @@ Il maggior numero di clienti è stato acquisito attraverso il coupon &quot;20% d
 
 ## Ritorno a capo {#wrapup}
 
-Sono disponibili numerose analisi che puoi creare per comprendere meglio come i tuoi clienti utilizzano i coupon. Hai mai pensato di analizzare in che modo i tuoi clienti utilizzano i coupon o il tempo necessario per utilizzarli? E per quanto riguarda la ricerca dell&#39;importo di sconto ottimale: quale importo incoraggia gli acquirenti ripetuti, un valore medio più alto dell&#39;ordine e maggiori ricavi nel corso della vita? Per assistenza su questi tipi di domande, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Sono disponibili numerose analisi che puoi creare per comprendere meglio come i tuoi clienti utilizzano i coupon. Hai mai pensato di analizzare in che modo i tuoi clienti utilizzano i coupon o il tempo necessario per utilizzarli? E per quanto riguarda la ricerca dell&#39;importo di sconto ottimale: quale importo incoraggia gli acquirenti ripetuti, un valore medio più alto dell&#39;ordine e maggiori ricavi nel corso della vita? Per assistenza su questi tipi di domande, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

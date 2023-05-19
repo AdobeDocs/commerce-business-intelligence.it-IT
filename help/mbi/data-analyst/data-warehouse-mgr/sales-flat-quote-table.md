@@ -2,7 +2,7 @@
 title: Tabella preventivo
 description: Scopri come utilizzare la tabella delle offerte.
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Il `quote` tabella (`sales_flat_quote` su M1) contiene i record di ogni carrello
 | `base_currency_code` | Valuta per tutti i valori acquisiti in `base_*` campi (ovvero `base_grand_total`, `base_subtotal`e così via). Questo in genere riflette la valuta predefinita dell’archivio Commerce |
 | `base_grand_total` | Prezzo finale offerto al cliente per il carrello, dopo l&#39;applicazione di tutte le imposte, spedizione e sconti. Anche se il calcolo preciso è personalizzabile, in generale il `base_grand_total` viene calcolato come `base_subtotal` + `base_tax_amount` + `base_shipping_amount` + `base_discount_amount` - `base_gift_cards_amount` - `base_customer_balance_amount` |
 | `base_subtotal` | Valore lordo della merce di tutti gli articoli inclusi nel carrello. Non sono inclusi imposte, spedizione, sconti e così via |
-| `created_at` | Timestamp di creazione del carrello, memorizzato localmente in UTC. A seconda della configurazione in [!DNL MBI], questa marca temporale può essere convertita in un fuso orario di reporting in [!DNL MBI] diverso dal fuso orario del database |
+| `created_at` | Timestamp di creazione del carrello, memorizzato localmente in UTC. A seconda della configurazione in [!DNL Commerce Intelligence], questa marca temporale può essere convertita in un fuso orario di reporting in [!DNL Commerce Intelligence] diverso dal fuso orario del database |
 | `customer_email` | Indirizzo e-mail del cliente che ha creato il carrello |
 | `customer_id` | `Foreign key` associato al `customer_entity` tabella, se il cliente è registrato. Partecipa a `customer_entity.entity_id` per determinare gli attributi del cliente associati all&#39;utente che ha creato il carrello. Se il carrello è stato creato tramite il pagamento degli ospiti, questo campo è `NULL` |
 | `entity_id` PK | Identificatore univoco della tabella, di solito utilizzato nei join ad altre tabelle all’interno dell’istanza Commerce |

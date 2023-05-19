@@ -2,9 +2,9 @@
 title: Importa grafici da un altro utente
 description: Scopri come modificare un grafico di proprietà di un altro utente o creare un grafico simile.
 exl-id: defcb72d-6027-4ae7-b974-e2f39773fe32
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---

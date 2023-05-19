@@ -1,17 +1,17 @@
 ---
-title: Comprendere il [!DNL MBI] Ambiente
-description: Scopri come utilizzare e migliorare i [!DNL MBI] ambiente.
+title: Comprendere il [!DNL Commerce Intelligence] Ambiente
+description: Scopri come utilizzare e migliorare i [!DNL Commerce Intelligence] ambiente.
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
 
-# Il tuo [!DNL MBI] Ambiente
+# Il tuo [!DNL Adobe Commerce Intelligence] Ambiente
 
-Mentre analizzi i dati di e-commerce, presta attenzione a questi fattori e ai pregiudizi più comuni. Se hai bisogno di assistenza per assicurarti di utilizzare correttamente lo schema Commerce, non esitare a [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Mentre analizzi i dati di e-commerce, presta attenzione a questi fattori e ai pregiudizi più comuni. Se hai bisogno di assistenza per assicurarti di utilizzare correttamente lo schema Commerce, non esitare a [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## [!DNL entity\_id]
 

@@ -2,16 +2,16 @@
 title: Comprendere e creare analisi di base
 description: Scopri come comprendere e creare analisi di base.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3113'
 ht-degree: 0%
 
 ---
 
 # Analisi di base
 
-Una volta acquisita familiarità con [!DNL MBI] piattaforma e avere una conoscenza di base dello strumento, è necessario iniziare a creare rapporti. Una delle domande più comuni che potreste avere è &quot;Cosa dovrei guardare?&quot;
+Una volta acquisita familiarità con [!DNL Adobe Commerce Intelligence] piattaforma e avere una conoscenza di base dello strumento, è necessario iniziare a creare rapporti. Una delle domande più comuni che potreste avere è &quot;Cosa dovrei guardare?&quot;
 
 Le informazioni seguenti descrivono alcune delle metriche e dei rapporti più comuni che potresti trovare utili. Alcuni di questi rapporti sono presenti nel tuo account, quindi accertati di rivedere le metriche e i rapporti esistenti nel tuo account per evitare la creazione di duplicati.
 
@@ -44,7 +44,7 @@ Se alcuni di questi calcoli non sono attualmente presenti nel database, qualsias
 
 **Accetti gli ordini degli ospiti?**
 
-*In tal caso, questa tabella potrebbe non contenere tutti i clienti. Contatta il [team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per garantire che le analisi dei clienti includano tutti i clienti.*
+*In tal caso, questa tabella potrebbe non contenere tutti i clienti. Contatta il [team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per garantire che le analisi dei clienti includano tutti i clienti.*
 
 *Non sei sicuro di accettare gli ordini degli ospiti? Fai riferimento a [questo argomento](../data-warehouse-mgr/guest-orders.md) per saperne di più.*
 
@@ -58,7 +58,7 @@ In questa tabella, ogni riga rappresenta un ordine. Le colonne di questa tabella
 * **[!UICONTROL Created_at]**: data in cui l’ordine è stato creato o inserito.
 * **[!UICONTROL Customer_email]**: indirizzo e-mail del cliente che ha effettuato l’ordine. Può anche essere l’identificatore univoco del cliente.
 * **[!UICONTROL Customer's lifetime number of orders]**: copia della colonna con lo stesso nome sul `Customers` tabella.
-* **[!UICONTROL Customer's order number]**: numero d’ordine sequenziale del cliente associato all’ordine. Ad esempio, se la riga che stai esaminando è il primo ordine di un cliente, questa colonna è &quot;1&quot;; ma, se si tratta del quindicesimo ordine del cliente, questa colonna mostra &quot;15&quot; per questo ordine. Se questa dimensione non esiste nel tuo `Customers` tabella, chiedi al [team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per aiutarti a costruirlo.
+* **[!UICONTROL Customer's order number]**: numero d’ordine sequenziale del cliente associato all’ordine. Ad esempio, se la riga che stai esaminando è il primo ordine di un cliente, questa colonna è &quot;1&quot;; ma, se si tratta del quindicesimo ordine del cliente, questa colonna mostra &quot;15&quot; per questo ordine. Se questa dimensione non esiste nel tuo `Customers` tabella, chiedi al [team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per aiutarti a costruirlo.
 * **[!UICONTROL Customer's order number (previous-current)]**: concatenazione di due valori nel **[!UICONTROL Customer's order number]** colonna. Viene utilizzato in un report di esempio riportato di seguito per visualizzare il tempo trascorso tra due ordini. Ad esempio, con questo calcolo il tempo tra la data del primo ordine di un cliente e la data del secondo ordine è rappresentato da &quot;1-2&quot;.
 * **[!UICONTROL Coupon_code]**: mostra quali coupon sono stati utilizzati su ciascun ordine.
 * **[!UICONTROL Seconds since previous order]**: tempo (in secondi) tra gli ordini di un cliente.

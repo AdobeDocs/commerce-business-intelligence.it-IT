@@ -1,25 +1,25 @@
 ---
 title: Analisi degli ordini restituiti
-description: Scopri come impostare un dashboard che fornisce un’analisi dettagliata dei rendimenti del tuo negozio.
+description: Scopri come impostare una dashboard che fornisca un’analisi dettagliata dei resi del tuo negozio.
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
 # Ordini restituiti
 
-In questo articolo, scopri come impostare un dashboard che fornisce un’analisi dettagliata dei rendimenti del tuo negozio.
+In questo argomento viene illustrato come impostare una dashboard che fornisca un&#39;analisi dettagliata dei resi del negozio.
 
 ![](../../assets/detailed-returns-dboard.png)
 
-Prima di iniziare, devi essere un [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) cliente e assicurati che la tua azienda utilizzi `enterprise\_rma` tabella dei resi.
+Prima di iniziare, devi essere un [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) e devono assicurarsi che la tua azienda utilizzi il `enterprise\_rma` tabella per i resi.
 
 Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-calc-columns.md).
 
-## Introduzione
+## Guida introduttiva
 
 Colonne da tracciare
 
@@ -39,17 +39,17 @@ Colonne da tracciare
 * **`product_name`**
 * **`product_sku`**
 
-Filtrare i set da creare
+Set di filtri da creare
 
 * **`enterprise_rma`** tabella
 * Nome set di filtri: `Returns we count`
-* Logica set filtro:
-   * Segnaposto - inserisci la logica personalizzata qui
+* Logica set di filtri:
+   * Segnaposto: immetti qui la logica personalizzata
 
 * **`enterprise_rma_item_entity`** tabella
 * Nome set di filtri: `Returns items we count`
-* Logica set filtro:
-   * Segnaposto - inserisci la logica personalizzata qui
+* Logica set di filtri:
+   * Segnaposto: immetti qui la logica personalizzata
 
 ### Colonne calcolate
 
@@ -65,17 +65,17 @@ Colonne da creare
 
    [!UICONTROL One]: `sales_flat_order.entity_id`
 
-* Seleziona una [!UICONTROL table]: `sales_flat_order`
-* Seleziona una [!UICONTROL column]: `created_at`
+* Seleziona un [!UICONTROL table]: `sales_flat_order`
+* Seleziona un [!UICONTROL column]: `created_at`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
 * **`Customer's order number`**
 * Seleziona una definizione: `Joined Column`
-* Seleziona una [!UICONTROL table]: `sales_flat_order`
-* Seleziona una [!UICONTROL column]: `Customer's order number`
+* Seleziona un [!UICONTROL table]: `sales_flat_order`
+* Seleziona un [!UICONTROL column]: `Customer's order number`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* **`Time between order's created_at and date_requested`** viene creato da un analista come parte del `[RETURNS ANALYSIS]` biglietto
+* **`Time between order's created_at and date_requested`** viene creato da un analista come parte del `[RETURNS ANALYSIS]` ticket
 
 * **`enterprise_rma_item_entity`** tabella
 * **`return_date_requested`**
@@ -87,62 +87,62 @@ Colonne da creare
 
       [!UICONTROL One]: `enterprise_rma.entity_id`
 
-* Seleziona una [!UICONTROL table]: `enterprise_rma`
-* Seleziona una [!UICONTROL column]: `date_requested`
+* Seleziona un [!UICONTROL table]: `enterprise_rma`
+* Seleziona un [!UICONTROL column]: `date_requested`
    * `enterprise_rma_item_entity.rma_entity_id = enterprise_rma.entity_id`
 
-* **`Return item total value (qty_returned * price)`** viene creato da un analista come parte del `[RETURNS ANALYSIS]` biglietto
+* **`Return item total value (qty_returned * price)`** viene creato da un analista come parte del `[RETURNS ANALYSIS]` ticket
 
 * **`sales_flat_order`** tabella
 * **`Order contains a return? (1=yes/0=No)`**
 * Seleziona una definizione: `Exists`
-* Seleziona una [!UICONTROL table]: `enterprise_rma`
+* Seleziona un [!UICONTROL table]: `enterprise_rma`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* **`Customer's previous order number`** viene creato da un analista come parte del `[RETURNS ANALYSIS]` biglietto
-* **`Customer's previous order contains return? (1=yes/0=no)`** viene creato da un analista come parte del `[RETURNS ANALYSIS]` biglietto
+* **`Customer's previous order number`** viene creato da un analista come parte del `[RETURNS ANALYSIS]` ticket
+* **`Customer's previous order contains return? (1=yes/0=no)`** viene creato da un analista come parte del `[RETURNS ANALYSIS]` ticket
 
 >[!NOTE]
 >
->Se sei interessato ad analizzare solo le ore lavorative per secondi alla risoluzione o secondi alla prima risposta, informa l&#39;analista al momento della richiesta del ticket.
+>Se ti interessa analizzare solo l’orario di lavoro per i secondi di risoluzione o i secondi di prima risposta, informa l’analista quando richiedi il ticket.
 
 ### Metriche
 
 * **Restituisce**
 * In **`enterprise_rma`** tabella
-* Questa metrica esegue un **Conteggio**
-* Sulla **`entity_id`** column
-* Ordinato dal **`date_requested`**
+* Questa metrica esegue una **Conteggio**
+* Il giorno **`entity_id`** colonna
+* Ordinato da **`date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
-* **Articoli restituiti**
+* **Elementi restituiti**
 * In **`enterprise_rma_item_entity`** tabella
-* Questa metrica esegue un **Somma**
-* Sulla **`qty_approved`** column
-* Ordinato dal **`return date_requested`**
+* Questa metrica esegue una **Somma**
+* Il giorno **`qty_approved`** colonna
+* Ordinato da **`return date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
-* **Valore totale articolo restituito**
+* **Valore totale dell&#39;articolo restituito**
 * In **`enterprise_rma_item_entity`** tabella
-* Questa metrica esegue un **Somma**
-* Sulla **`Returned item total value (qty_returned * price)`** column
-* Ordinato dal **`return date_requested`**
+* Questa metrica esegue una **Somma**
+* Il giorno **`Returned item total value (qty_returned * price)`** colonna
+* Ordinato da **`return date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
-* **Tempo medio tra ordine e reso**
+* **Tempo medio tra ordine e restituzione**
 * In **`enterprise_rma`** tabella
 * Questa metrica esegue un **Media**
-* Sulla **`Time between order's created_at and date_requested`** column
-* Ordinato dal **`date_requested`**
+* Il giorno **`Time between order's created_at and date_requested`** colonna
+* Ordinato da **`date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 >[!NOTE]
 >
->Assicurati di [aggiungi tutte le nuove colonne come dimensioni alle metriche](../data-warehouse-mgr/manage-data-dimensions-metrics.md) prima di creare nuovi rapporti.
+>Assicurati di [aggiungere tutte le nuove colonne come dimensioni alle metriche](../data-warehouse-mgr/manage-data-dimensions-metrics.md) prima di creare nuovi rapporti.
 
 ### Rapporti
 
-* **Ripeti la probabilità dell&#39;ordine dopo un ritorno**
+* **Probabilità di ripetizione ordine dopo aver effettuato un reso**
 * Metrica `A`: `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
@@ -155,7 +155,7 @@ Colonne da creare
    * `Is customer's last order? (1=yes/0=no) = 0`
    * `Order contains a return? (1=yes/0=No) = 1`
 
-* Formula: Probabilità ordine di ripetizione
+* Formula: probabilità ordine ripetuto
 * [!UICONTROL Formula]: `B / A`
 * 
 
@@ -163,23 +163,23 @@ Colonne da creare
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL intervallo]: `None`
+   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * 
-   [!UICONTROL Tipo di grafico]: `Bar`
+   [!UICONTROL Chart Type]: `Bar`
 
-* **Tempo medio di ritorno (tutto l&#39;ora)**
+* **Tempo medio di ritorno (tutto il tempo)**
 * Metrica `A`: `Avg time between order and return`
 * [!UICONTROL Metric]: `Avg time between order and return`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL intervallo]: `None`
+   [!UICONTROL Interval]: `None`
 * 
 
-   [!UICONTROL Tipo di grafico]: `Number`
+   [!UICONTROL Chart Type]: `Number`
 
-* **Percentuale di ordini con un rendimento**
+* **Percentuale di ordini con una restituzione**
 * Metrica `A`: `Number of orders`
 * [!UICONTROL Metric]: `Number of orders`
 
@@ -188,7 +188,7 @@ Colonne da creare
 * [!UICONTROL Filter]:
    * `Order contains a return? (1=yes/0=No) = 1`
 
-* Formula: % degli ordini con restituzione
+* Formula: % di ordini con restituzione
 * [!UICONTROL Formula]: `B / A`
 * 
 
@@ -196,10 +196,10 @@ Colonne da creare
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL intervallo]: `None`
+   [!UICONTROL Interval]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
-* **Ricavi restituiti dal mese**
+* **Ricavi restituiti per mese**
 * Metrica `A`: `Returned item total value`
 * [!UICONTROL Metric]: `Returned item total value`
 
@@ -207,9 +207,9 @@ Colonne da creare
 * [!UICONTROL Interval]: `By month`
 * 
 
-   [!UICONTROL Tipo di grafico]: `Line`
+   [!UICONTROL Chart Type]: `Line`
 
-* **Clienti che hanno effettuato un ritorno e non hanno acquistato di nuovo**
+* **Clienti che hanno effettuato una restituzione e non hanno acquistato nuovamente**
 * Metrica `A`: `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
@@ -218,16 +218,16 @@ Colonne da creare
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL intervallo]: `None`
+   [!UICONTROL Interval]: `None`
 * 
-   [!UICONTROL Group by]: `Customer_email`
+   [!UICONTROL Raggruppa per]: `Customer_email`
 * 
 
-   [!UICONTROL Tipo di grafico]: `Table`
+   [!UICONTROL Chart Type]: `Table`
 
-* **Tasso di restituzione per articolo**
+* **Tasso di rendimento per articolo**
 * Metrica `A`: `Returned items` (Nascondi)
-* [!UICONTROL Metric]: Articoli restituiti
+* [!UICONTROL Metric]: elementi restituiti
 
 * Metrica `B`: `Items sold` (Nascondi)
 * [!UICONTROL Metric]: `Number of orders`
@@ -241,11 +241,11 @@ Colonne da creare
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL intervallo]: `None`
+   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
 * 
-   [!UICONTROL Tipo di grafico]: `Table`
+   [!UICONTROL Chart Type]: `Table`
 
-Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe assomigliare al dashboard di esempio riportato sopra.
+Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile al dashboard di esempio riportato sopra.
 
-In caso di domande durante la creazione di questa analisi o se desideri coinvolgere il team Professional Services, [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+In caso di domande durante la creazione di questa analisi o se desideri coinvolgere il team Professional Services, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

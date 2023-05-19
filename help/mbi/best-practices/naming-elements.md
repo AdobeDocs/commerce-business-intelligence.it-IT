@@ -1,25 +1,25 @@
 ---
-title: Assegnare un nome ai report e agli elementi in MBI
-description: Scopri le best practice per la denominazione di rapporti ed elementi in [!DNL MBI].
+title: Assegnare un nome ai rapporti e agli elementi in Commerce Intelligence
+description: Scopri le best practice per la denominazione di rapporti ed elementi in [!DNL Commerce Intelligence].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
 # Assegnare un nome ai rapporti e agli elementi
 
-Prima di iniziare a creare in[!DNL MBI], Adobe vuole condividere alcuni segreti per il successo. Sapere come creare metriche, filtri e così via è importante, ma tutto il tuo lavoro potrebbe essere inutile se non riesci a trovare ciò di cui hai bisogno o se c&#39;è ambiguità.
+Prima di iniziare a creare in[!DNL Adobe Commerce Intelligence], Adobe vuole condividere alcuni segreti per il successo. Sapere come creare metriche, filtri e così via è importante, ma tutto il tuo lavoro potrebbe essere inutile se non riesci a trovare ciò di cui hai bisogno o se c&#39;è ambiguità.
 
 ## Perché la nomenclatura è importante? {#why}
 
-Il modo in cui denominate le colonne calcolate, le metriche e i rapporti determina la facilità con cui diversi utenti possono navigare attraverso [!DNL MBI] account. Quando denominate queste funzioni, tenete presente le tre C:
+Il modo in cui denominate le colonne calcolate, le metriche e i rapporti determina la facilità con cui diversi utenti possono navigare attraverso [!DNL Commerce Intelligence] account. Quando denominate queste funzioni, tenete presente le tre C:
 
 * **CHIAREZZA** - In questo modo è possibile vedere immediatamente cosa mostra un rapporto, cosa fa una metrica e così via.
 * **COERENZA** - In modo che tu (e il team di supporto Adobe) possiate trovare e comprendere facilmente gli elementi e i rapporti del vostro account.
-* **CREDIBILITÀ** - Per ispirare e potenziare altri sistemi basati sui dati [!DNL MBI] utenti, è necessario infondere fiducia nel modo in cui comprendono e utilizzano i dati.
+* **CREDIBILITÀ** - Per ispirare e potenziare altri sistemi basati sui dati [!DNL Commerce Intelligence] utenti, è necessario infondere fiducia nel modo in cui comprendono e utilizzano i dati.
 
 Continua a leggere per suggerimenti sulla nomenclatura comprovati e veri!
 
@@ -41,7 +41,7 @@ Questi esempi sono specifici e riducono il rischio di confusione.
 
 ### Essere coerente con l&#39;utilizzo delle maiuscole {#capitalize}
 
-L&#39;Adobe consiglia di utilizzare lettere maiuscole con il resto dei caratteri minuscole, a meno che non venga utilizzato lo stile appropriato per le lettere maiuscole. Ad esempio: **Numero ordine utente** anziché **Numero ordine utente.**
+[!DNL Adobe] consiglia di utilizzare la prima lettera in maiuscolo con il resto dei caratteri in minuscolo, a meno che non venga utilizzato lo stile di maiuscolo appropriato. Ad esempio: **Numero ordine utente** anziché **Numero ordine utente.**
 
 Si tratta di una vera e propria questione di preferenza, ma è importante ricordare che bisogna essere coerenti con qualsiasi scelta.
 
@@ -55,7 +55,7 @@ Probabilmente hai già una nomenclatura in vigore nella tua azienda. Mantieni le
 
 ### Controllo ortografia e grammatica {#spelling}
 
-Assicurati di controllare due volte l&#39;ortografia e non dimenticare quei possessivi fastidiosi!
+Assicurati di controllare nuovamente l&#39;ortografia e non dimenticare quei possessivi fastidiosi!
 
 ## Grafici {#charts}
 
@@ -101,4 +101,4 @@ Ricavi (spediti\_at) Ricavi (creati\_at)
 
 ## Ritorno a capo {#wrapup}
 
-Stabilire anticipatamente le convenzioni di stile e denominazione ti aiuta a prepararti per il successo nel tuo [!DNL MBI] account. Ricorda le tre C: chiarezza, coerenza e credibilità.
+Stabilire anticipatamente le convenzioni di stile e denominazione ti aiuta a prepararti per il successo nel tuo [!DNL Commerce Intelligence] account. Ricorda le tre C: chiarezza, coerenza e credibilità.

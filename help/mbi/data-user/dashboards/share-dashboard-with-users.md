@@ -2,16 +2,16 @@
 title: Condividere dashboard con altri utenti
 description: Scopri come condividere le dashboard con altri utenti.
 exl-id: 6279b049-d1b2-4d40-b30b-ee8772e990f4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
 # Condividere dashboard con altri utenti
 
-La condivisione di dashboard è un ottimo modo per mantenere il team in loop e incoraggiare la discussione collaborativa. Creando e condividendo una dashboard centrale, puoi fornire al team le informazioni necessarie mantenendo il controllo. [Adobe di consigli](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} che hai concesso `Edit` diritti su alcuni per ridurre al minimo le modifiche accidentali.
+La condivisione di dashboard è un ottimo modo per mantenere il team in loop e incoraggiare la discussione collaborativa. Creando e condividendo una dashboard centrale, puoi fornire al team le informazioni necessarie mantenendo il controllo. [[!DNL Adobe] consiglia](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} che hai concesso `Edit` diritti su alcuni per ridurre al minimo le modifiche accidentali.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ La condivisione di dashboard è un ottimo modo per mantenere il team in loop e i
 
 1. Clic **[!UICONTROL Share Dashboard]** nella parte superiore dello schermo.
 
-   Un elenco di tutti gli utenti nel [!DNL MBI] verrà visualizzato l’account.
+   Un elenco di tutti gli utenti nel [!DNL Commerce Intelligence] verrà visualizzato l’account.
 
 1. Per selezionare un utente con cui condividere il dashboard, seleziona la casella a sinistra del nome.
 

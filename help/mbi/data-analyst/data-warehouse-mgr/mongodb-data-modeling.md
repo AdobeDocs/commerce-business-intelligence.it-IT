@@ -2,24 +2,24 @@
 title: Modellazione dati MongoDB
 description: Scopri come evitare pattern di dati che pongono un problema.
 exl-id: 556c854b-5d7c-4f72-8ed7-5bc08d9ee5b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
 
 # [!DNL MongoDB] Modellazione dati
 
-Quando [!DNL MBI] richiama [!DNL MongoDB] dati, questi dati vengono tradotti in un modello relazionale.
+Quando [!DNL Adobe Commerce Intelligence] richiama [!DNL MongoDB] dati, questi dati vengono tradotti in un modello relazionale.
 
-La cattiva notizia: Mentre la maggior parte dei pattern di dati non pongono un problema, ce ne sono alcuni che, a causa della traduzione in un modello relazionale, [!DNL MBI] non supporta.
+La cattiva notizia: anche se la maggior parte dei pattern di dati non pone alcun problema, ce ne sono alcuni che non sono supportati da [!DNL Commerce Intelligence], a causa della traduzione in un modello relazionale.
 
 La buona notizia: tutti questi modelli possono essere evitati.
 
 ## Array subannidati {#subnested}
 
-Se la tua raccolta è simile all’esempio di seguito, [!DNL MBI] replica solo i dati nell&#39;array items. I dati dell’array dei sottoelementi non vengono estratti.
+Se la tua raccolta è simile all’esempio di seguito, [!DNL Commerce Intelligence] replica solo i dati nell&#39;array items. I dati dell’array dei sottoelementi non vengono estratti.
 
 ```bash
     {
@@ -41,7 +41,7 @@ Se la tua raccolta è simile all’esempio di seguito, [!DNL MBI] replica solo i
 
 ## Chiavi oggetto variabili {#varobjectkeys}
 
-Le raccolte che includono oggetti con chiavi di oggetti variabili non vengono replicate in [!DNL MBI]. Ad esempio:
+Le raccolte che includono oggetti con chiavi di oggetti variabili non vengono replicate in [!DNL Commerce Intelligence]. Ad esempio:
 
 ```bash
     {

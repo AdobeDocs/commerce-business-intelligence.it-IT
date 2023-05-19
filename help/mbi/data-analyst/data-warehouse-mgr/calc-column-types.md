@@ -2,9 +2,9 @@
 title: Tipi di colonne calcolate
 description: Scopri come creare colonne per migliorare e ottimizzare i dati per l’analisi.
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 All&#39;interno del [Gestione Date Warehouse](../data-warehouse-mgr/tour-dwm.md), puoi creare colonne per migliorare e ottimizzare i dati per l’analisi. [Questa funzionalità](../data-warehouse-mgr/creating-calculated-columns.md) è accessibile selezionando qualsiasi tabella in Gestione Date Warehouse e facendo clic su **[!UICONTROL Create New Column]**.
 
-In questo articolo vengono descritti i tipi di colonne che è possibile creare con Gestione Date Warehouse. Include inoltre la descrizione, una descrizione visiva della colonna e una descrizione [mappa di riferimento](#map) di tutti gli input necessari per creare una colonna. Sono disponibili tre modi per creare colonne calcolate:
+In questo argomento vengono descritti i tipi di colonne che è possibile creare con Gestione Date Warehouse. Include inoltre la descrizione, una descrizione visiva della colonna e una descrizione [mappa di riferimento](#map) di tutti gli input necessari per creare una colonna. Sono disponibili tre modi per creare colonne calcolate:
 
-* [Stesse colonne calcolate della tabella](#sametable)
-* [Colonne calcolate uno-a-molti](#onetomany)
-* [Colonne calcolate &quot;molti a uno&quot;](#manytoone)
+1. [Stesse colonne calcolate della tabella](#sametable)
+1. [Colonne calcolate uno-a-molti](#onetomany)
+1. [Colonne calcolate &quot;molti a uno&quot;](#manytoone)
 
 ## Stesse colonne calcolate della tabella {#sametable}
 
@@ -85,13 +85,13 @@ Può essere utilizzato per creare dimensioni a livello di cliente come `Customer
 
 ### Esiste {#exists}
 
-Una colonna calcolata esistente è un test binario che determina la presenza di un record sul lato molti. In altre parole, la nuova colonna restituisce un `1` se il tracciato collega almeno una riga in ciascuna tabella, e `0` se non è possibile effettuare alcuna connessione.
+Una colonna calcolata è un test binario che determina la presenza di un record sul lato molti. In altre parole, la nuova colonna restituisce un `1` se il tracciato collega almeno una riga in ciascuna tabella, e `0` se non è possibile effettuare alcuna connessione.
 
 Questo tipo di dimensione potrebbe determinare, ad esempio, se un cliente ha mai acquistato un particolare prodotto. Utilizzo di un join tra `customers` tabella e `orders` tabella, filtro per un prodotto specifico, dimensione `Customer has purchased Product X?` possono essere create.
 
 ## Mappa di riferimento utile {#map}
 
-Se non riesci a ricordare quali sono tutti gli input durante la creazione di una colonna calcolata, prova a tenere a portata di mano questa mappa di riferimento durante la creazione di:
+Se non riesci a ricordare quali sono tutti gli input durante la creazione di una colonna calcolata, tieni a portata di mano questa mappa di riferimento durante la creazione di:
 
 ![](../../assets/merged_reference_map.png)
 
@@ -99,7 +99,7 @@ Se non riesci a ricordare quali sono tutti gli input durante la creazione di una
 
 Nella tua ricerca per analizzare e rispondere a domande sulla tua attività, potresti incontrare una situazione in cui non sei in grado di creare la colonna esatta che desideri.
 
-Per garantire una rapida risposta, Adobe consiglia di controllare il [Tipi di colonne calcolate avanzate](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) per vedere che tipo di colonne può creare il team di supporto Adobe. L’articolo contiene anche le informazioni necessarie per creare la colonna, includendole nella richiesta.
+Per garantire una rapida risposta, Adobe consiglia di controllare il [Tipi di colonne calcolate avanzate](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) per vedere che tipo di colonne può creare il team di supporto Adobe. In questo argomento vengono inoltre trattate le informazioni necessarie per creare la colonna, includendole nella richiesta.
 
 ## Documentazione correlata
 

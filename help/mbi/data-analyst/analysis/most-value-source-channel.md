@@ -2,9 +2,9 @@
 title: Identificazione delle fonti e dei canali di marketing più importanti
 description: Scopri alcuni rapporti che puoi utilizzare per scoprire i canali di marketing più importanti.
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Hai ricercato il tuo pubblico, creato la tua campagna, investito in alcuni canali di marketing. Ora che è passato un po&#39; di tempo, come stanno andando quei canali? Quale canale ha attirato il maggior numero di nuovi utenti? Qual è la fonte che ha contribuito maggiormente al fatturato totale?
 
-Con [!DNL MBI], puoi segmentare facilmente i ricavi e gli utenti per origine di riferimento, a seconda che corrisponda a [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) o campi dati personalizzati. Questa segmentazione ti consente di trovare i canali con le prestazioni migliori e di investire meglio nel budget di marketing.
+Con [!DNL Adobe Commerce Intelligence], puoi segmentare facilmente i ricavi e gli utenti per origine di riferimento, a seconda che corrisponda a [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) o campi dati personalizzati. Questa segmentazione ti consente di trovare i canali con le prestazioni migliori e di investire meglio nel budget di marketing.
 
-Questo articolo esplora alcuni rapporti che puoi utilizzare per scoprire i tuoi canali di marketing più importanti:
+Questo argomento esplora alcuni rapporti che puoi utilizzare per scoprire i tuoi canali di marketing più importanti:
 
 * [Nuovi utenti per origini](#newusersbysource)
 * [Ricavi medi nel ciclo di vita per origine utente](#avglifetimerev)
@@ -25,7 +25,7 @@ Questo articolo esplora alcuni rapporti che puoi utilizzare per scoprire i tuoi 
 
 ## Prerequisiti {#prereqs}
 
-Per generare le analisi in questo articolo, devi accedere ai dati di origine di acquisizione marketing/riferimento. Se non lo stai già tracciando, devi portare [ordina dati origine riferimento da [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) in [!DNL MBI] prima di continuare. Inoltre, l’aggiunta di informazioni sul dispositivo utente alle analisi ti consente di vedere quale tecnologia vengono utilizzati i tuoi riferimenti.
+Per generare le analisi in questo argomento, devi accedere ai dati di origine di acquisizione marketing/riferimento. Se non lo stai già tracciando, devi portare [ordina dati origine riferimento da [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) in [!DNL Adobe Commerce Intelligence] prima di continuare. Inoltre, l’aggiunta di informazioni sul dispositivo utente alle analisi ti consente di vedere quale tecnologia vengono utilizzati i tuoi riferimenti.
 
 ## Nuovi utenti per origine {#newusersbysource}
 
@@ -111,7 +111,7 @@ Di seguito è riportata una procedura dettagliata:
 
 ## Ritorno a capo {#wrapup}
 
-Questo articolo ha toccato solo alcune analisi che puoi utilizzare per analizzare il valore dei tuoi canali di acquisizione e marketing, ma questa è solo la punta dell&#39;iceberg.
+Questo argomento ha toccato solo alcune analisi che puoi utilizzare per analizzare il valore dei tuoi canali di acquisizione e marketing, ma questa è solo la punta dell&#39;iceberg.
 
 ## Correlato {#related}
 

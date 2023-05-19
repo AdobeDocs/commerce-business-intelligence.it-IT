@@ -2,16 +2,16 @@
 title: Definire la concentrazione del cliente
 description: Scopri come impostare una dashboard che ti aiuti a misurare come vengono distribuiti i ricavi totali nella base clienti.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
 
 # Concentrazione dei clienti
 
-Questo articolo illustra come impostare una dashboard che ti aiuti a misurare come vengono distribuiti i ricavi totali nella base clienti. Scopri la percentuale di clienti che contribuisce al fatturato e crea elenchi segmentati per ottimizzare il mercato e mantenere i clienti con un contributo elevato.
+In questo argomento viene illustrato come impostare una dashboard che consenta di misurare la distribuzione dei ricavi totali nella base clienti. Scopri la percentuale di clienti che contribuisce al fatturato e crea elenchi segmentati per ottimizzare il mercato e mantenere i clienti con un contributo elevato.
 
 Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -158,4 +158,4 @@ Colonne da creare
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile al dashboard di esempio riportato sopra.
 
-In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il team Professional Services, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il team Professional Services, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

@@ -2,16 +2,16 @@
 title: tabella quote_item
 description: Scopri come utilizzare la tabella quote_item.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
 # tabella quote_item
 
-Il `quote_item` tabella (`sales_flat_quote_item` su M1) 1) contiene i record di ogni articolo aggiunto al carrello, indipendentemente dal fatto che il carrello sia stato abbandonato o convertito in acquisto. Ogni riga rappresenta un elemento del carrello. A causa delle dimensioni potenziali di questa tabella, Adobe consiglia di eliminare periodicamente i record se sono soddisfatti determinati criteri, ad esempio se sono presenti carrelli non convertiti di età superiore a 60 giorni.
+Il `quote_item` tabella (`sales_flat_quote_item` su M1) contiene i record di ogni articolo aggiunto al carrello, indipendentemente dal fatto che il carrello sia stato abbandonato o convertito in acquisto. Ogni riga rappresenta un elemento del carrello. A causa delle dimensioni potenziali di questa tabella, Adobe consiglia di eliminare periodicamente i record se sono soddisfatti determinati criteri, ad esempio se sono presenti carrelli non convertiti di età superiore a 60 giorni.
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ Il `quote_item` tabella (`sales_flat_quote_item` su M1) 1) contiene i record di
 | **Nome colonna** | **Descrizione** |
 |---|---|
 | `base_price` | Prezzo di una singola unità di un prodotto al momento dell’aggiunta dell’articolo al carrello, dopo [regole di prezzo di catalogo, sconti su più livelli e prezzi speciali](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) vengono applicati e prima di applicare eventuali imposte, spese di spedizione o sconti sul carrello. Viene rappresentata nella valuta di base dell&#39;archivio. |
-| `created_at` | Timestamp di creazione dell’elemento del carrello, memorizzato localmente in UTC. A seconda della configurazione in [!DNL MBI], questa marca temporale può essere convertita in un fuso orario di reporting in [!DNL MBI] diverso dal fuso orario del database |
+| `created_at` | Timestamp di creazione dell’elemento del carrello, memorizzato localmente in UTC. A seconda della configurazione in [!DNL Commerce Intelligence], questa marca temporale può essere convertita in un fuso orario di reporting in [!DNL Commerce Intelligence] diverso dal fuso orario del database |
 | `item_id` PK | Identificatore univoco della tabella |
 | `name` | Nome testo dell&#39;ordine |
 | `parent_item_id` | `Foreign key` che mette in relazione un prodotto semplice con il pacchetto principale o il prodotto configurabile. Partecipa a `quote_item.item_id` per determinare gli attributi del prodotto padre associati al prodotto semplice. Per gli articoli del carrello principale (ovvero, bundle o tipi di prodotto configurabili), il `parent_item_id` è `NULL` |
@@ -70,7 +70,7 @@ Il `quote_item` tabella (`sales_flat_quote_item` su M1) 1) contiene i record di
 
 `quote_item`
 
-* Partecipa a `quote_item` per creare colonne che associano i dettagli dello SKU configurabile principale o del bundle al prodotto semplice. [Contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per assistenza nella configurazione di questi calcoli, se si crea in Data Warehouse manager.
+* Partecipa a `quote_item` per creare colonne che associano i dettagli dello SKU configurabile principale o del bundle al prodotto semplice. [Contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per assistenza nella configurazione di questi calcoli, se si crea in Data Warehouse manager.
    * Percorso: `quote_item.parent_item_id` (molti) => `quote_item.item_id` (uno)
 
 `store`

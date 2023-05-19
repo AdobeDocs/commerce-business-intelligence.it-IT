@@ -2,9 +2,9 @@
 title: Rapporti annuali, mensili e settimanali
 description: Scopri come visualizzare facilmente le tendenze nel tempo e cambiare la prospettiva per i periodi di tempo che potresti voler confrontare.
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Questo articolo contiene istruzioni per i client che utilizzano l’architettura originale e la nuova architettura. Sei sul [nuova architettura](../../administrator/account-management/new-architecture.md) se ha la _Data Warehouse visualizzazioni_ sezione disponibile dopo la selezione `Manage Data` dalla barra degli strumenti principale.
+>Questo argomento contiene istruzioni per i client che utilizzano l&#39;architettura originale e la nuova architettura. Sei sul [nuova architettura](../../administrator/account-management/new-architecture.md) se ha la [!DNL _Data Warehouse visualizzazioni_] sezione disponibile dopo la selezione [!DNL Manage Data] dalla barra degli strumenti principale.
 
-Il generatore di rapporti consente di visualizzare facilmente le tendenze nel tempo e di cambiare la prospettiva per i periodi di tempo che potrebbe essere utile confrontare. Questo articolo illustra come impostare una dashboard per andare a un livello più approfondito e consentire di creare rapporti per l’analisi settimana per settimana, mese per mese e anno per anno.
+Il generatore di rapporti consente di visualizzare facilmente le tendenze nel tempo e di cambiare la prospettiva per i periodi di tempo che potrebbe essere utile confrontare. Questo argomento illustra come impostare una dashboard per andare a un livello più approfondito e consentire di creare rapporti per l’analisi settimana per settimana, mese per mese e anno per anno.
 
 ![](../../assets/Wow__mom__yoy.png)
 
-Prima di iniziare, vuoi acquisire familiarità con le prospettive di esplorazione in modo più dettagliato [qui](../../tutorials/using-visual-report-builder.md) e opzioni di tempo indipendenti [qui](../../tutorials/time-options-visual-rpt-bldr.md).
+Prima di iniziare, è necessario rivedere le prospettive in modo più dettagliato [qui](../../tutorials/using-visual-report-builder.md) e opzioni di tempo indipendenti [qui](../../tutorials/time-options-visual-rpt-bldr.md).
 
 Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-calc-columns.md).
 

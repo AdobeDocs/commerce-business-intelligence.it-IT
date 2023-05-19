@@ -2,16 +2,16 @@
 title: Prestazioni coupon
 description: Scopri come analizzare le prestazioni del coupon.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
 
 # Analisi avanzata del codice coupon
 
-Comprendere le prestazioni dei coupon della vostra azienda è un modo interessante per segmentare gli ordini e anche meglio comprendere i vostri clienti. Questo articolo illustra i passaggi necessari per creare analisi per capire quali clienti acquisisci utilizzando i coupon, come eseguono e monitorare l’utilizzo generale dei coupon.
+Comprendere le prestazioni dei coupon della vostra azienda è un modo interessante per segmentare gli ordini e anche meglio comprendere i vostri clienti. Questo argomento illustra i passaggi necessari per creare analisi che consentano di individuare i clienti acquisiti utilizzando i coupon, le relative prestazioni e tenere traccia dell’utilizzo generale dei coupon.
 
 ![](../../assets/coupon_analysis_-_analysis_library.png)<!--{: width="800" height="375"}-->
 
@@ -19,7 +19,7 @@ Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-c
 
 ## Guida introduttiva
 
-Come primo passo, devi assicurarti che le seguenti colonne siano sincronizzate con la tua Data Warehouse. In caso contrario, procedere con il tracciamento passando a &quot;Gestisci dati&quot; > &quot;Data Warehouse&quot; e sincronizzando quanto segue:
+Come primo passo, devi assicurarti che le seguenti colonne siano sincronizzate con la tua Data Warehouse. In caso contrario, procedi e tienili traccia, navigando su `Manage Data` > `Data Warehouse`, e la sincronizzazione dei seguenti elementi:
 
 * **sales\_flat\_order** tabella
 * **coupon\_code**
@@ -519,4 +519,4 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile all’immagine nella parte superiore della pagina.
 
-In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il team Professional Services, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il team Professional Services, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

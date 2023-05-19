@@ -2,9 +2,9 @@
 title: Analisi codice coupon (base)
 description: Scopri le prestazioni dei coupon nel tuo business, un modo interessante per segmentare gli ordini e comprendere meglio le abitudini dei clienti.
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Comprendere le prestazioni dei coupon della tua azienda è un modo interessante per segmentare gli ordini e comprendere meglio le abitudini dei clienti.
 
-Questo articolo illustra i passaggi necessari per creare questa analisi per comprendere le prestazioni dei clienti acquisiti con coupon, visualizzare le tendenze e tenere traccia dell’utilizzo del codice coupon individuale.
+In questo argomento vengono documentati i passaggi necessari per creare questa analisi per comprendere le prestazioni dei clienti acquisiti con coupon, visualizzare le tendenze e tenere traccia dell’utilizzo del codice coupon individuale.
 
 ![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
@@ -21,7 +21,7 @@ Questo articolo illustra i passaggi necessari per creare questa analisi per comp
 
 Innanzitutto, una nota su come viene tenuta traccia dei codici coupon. Se un cliente ha applicato un coupon a un ordine, possono verificarsi tre situazioni:
 
-* Uno sconto si riflette nel `base_grand_total` importo (il tuo `Revenue` in MBI)
+* Uno sconto si riflette nel `base_grand_total` importo (il tuo `Revenue` in Commerce Intelligence)
 * Il codice coupon viene memorizzato in `coupon_code` campo. Se questo campo è NULL (vuoto), all&#39;ordine non è associato alcun coupon.
 * L&#39;importo scontato è memorizzato in `base_discount_amount`. A seconda della configurazione, questo valore può apparire negativo o positivo.
 

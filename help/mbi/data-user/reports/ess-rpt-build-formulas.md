@@ -2,9 +2,9 @@
 title: Formule
 description: Scopri come utilizzare le formule.
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Una formula combina più metriche e logica matematica per rispondere a una doman
 
    Effettua le seguenti operazioni:
 
-   * In `Enter your Formul` casella di input, immetti `A/B`.
+   * In `Enter your Formula` casella di input, immetti `A/B`.
 
       Questo divide i ricavi per prodotti ordinati per il numero di nuovi clienti.
 
@@ -71,7 +71,7 @@ Una formula combina più metriche e logica matematica per rispondere a una doman
 
    * Scegliere l&#39;intervallo di date nei calendari.
 
-      Per questo esempio, la stagione delle festività va dal 1° novembre al 31 dicembre.
+      Per questo esempio, la stagione festiva è da `November 1` da a `December 31`.
 
    * Sotto `Select Time Interval`, scegli `Day`.
 

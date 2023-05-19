@@ -2,7 +2,7 @@
 title: Gestisci dati
 description: Scopri come utilizzare Gestisci dati.
 exl-id: 6274eda4-d3ff-47b6-81d9-06ad4f150ef7
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Gestisci dati consente di accedere a vari strumenti per gestire integrazioni, dati di report e grafici, dashboard ed esportazioni.
 
-## Per accedere `Manage Data`:
+## Per accedere [!DNL Manage Data]:
 
 1. Nel menu, fai clic su **[!DNL Manage Data]**.
 

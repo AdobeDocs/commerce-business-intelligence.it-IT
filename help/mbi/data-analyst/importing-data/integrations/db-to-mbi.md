@@ -1,14 +1,14 @@
 ---
-title: Connetti database MySQL
-description: Controllare come collegare i database MySQL con [!DNL MBI].
+title: Connetti [!DNL MySQL] Database
+description: Scopri come collegare il [!DNL MySQL] database con [!DNL Commerce Intelligence].
 exl-id: 22632cab-3c44-4a1b-8809-ac6cba5f655a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '18'
+source-wordcount: '15'
 ht-degree: 0%
 
 ---
 
-# Collega `MySQL` Database
+# Connetti `MySQL` Database
 
 Informazioni in arrivo.

@@ -2,9 +2,9 @@
 title: Informazioni su dati e aggiornamenti
 description: Scopri come controllare lo stato del ciclo di aggiornamento.
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## Perché i miei dati sono cambiati? {#datachange}
 
-I valori del grafico possono cambiare nel corso della giornata a causa della sincronizzazione dei nuovi dati con la Data Warehouse. Inoltre, i valori delle colonne di dati esistenti possono cambiare a causa di [ricontrolli](../data-warehouse-mgr/cfg-data-rechecks.md). Un nuovo controllo è un processo che cerca i valori modificati nelle colonne di dati, ad esempio uno stato dell&#39;ordine che si sposta da `open` a `shipped`.
+I valori del grafico possono cambiare nel corso della giornata a causa della sincronizzazione dei nuovi dati con la Data Warehouse. Inoltre, i valori delle colonne di dati esistenti possono cambiare a causa di [ricontrolli](../data-warehouse-mgr/cfg-data-rechecks.md). Un nuovo controllo è un processo che cerca i valori modificati nelle colonne di dati, ad esempio lo stato di un ordine da cui si passa `open` a `shipped`.
 
-Ci sono alcuni modi diversi [per controllare lo stato del ciclo di aggiornamento](../../best-practices/check-update-cycle.md), a seconda del tipo di autorizzazioni utente di cui disponi.
+Ci sono alcuni modi diversi [per controllare lo stato del ciclo di aggiornamento](../../best-practices/check-update-cycle.md), a seconda delle impostazioni delle autorizzazioni dell&#39;utente.
 
 ## Qual è la differenza tra un aggiornamento regolare e un aggiornamento forzato? {#regularforcedupdates}
 
-Gli aggiornamenti regolari sono **pianificato** processi mentre gli aggiornamenti forzati sono **processi manuali avviati da te**. Se sono presenti ore di sospensione attività o un periodo di tempo in cui [!DNL MBI] non deve aggiornare i dati: forzare un aggiornamento avvia un ciclo che non rispetta le limitazioni del periodo di sospensione attività.
+Gli aggiornamenti regolari sono **pianificato** processi mentre gli aggiornamenti forzati sono **processi manuali avviati da te**. Se sono presenti ore di sospensione attività (o un periodo di tempo in cui [!DNL Commerce Intelligence] non aggiornare i dati), forzando un aggiornamento si avvia un ciclo che non rispetta le limitazioni del periodo di sospensione attività.
 
 ## Perché il ciclo di aggiornamento richiede molto tempo? {#updatecycletime}
 
@@ -38,8 +38,8 @@ Se è in corso un aggiornamento, è disponibile un collegamento `Connections` pa
 
 ## Perché è[!DNL Google ECommerce]dati diversi dal database? {#ecommdatabase}
 
-Discrepanze tra [!DNL Google Analytics] e il database può sorgere per vari motivi. Il tracciamento non è abilitato correttamente, gli utenti che visitano in incognito e gli eventi di clic non funzionano correttamente sono solo alcuni esempi. Se i ricavi e gli ordini non sembrano corretti, [usa questo articolo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) per diagnosticare il problema.
+Discrepanze tra [!DNL Google Analytics] e il database può sorgere per vari motivi. Il tracciamento non è abilitato correttamente, gli utenti che visitano in incognito e gli eventi di clic non funzionano correttamente sono solo alcuni esempi. Se i ricavi e gli ordini non sembrano corretti, [consulta questo argomento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) per diagnosticare un problema.
 
 ## Come si risolve una discrepanza di dati? {#datadiscrepancy}
 
-Adobe sa che la visualizzazione di dati non coerenti può essere un’esperienza frustrante. Prova a utilizzare il [Elenco di controllo per la discrepanza dei dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=en) o [Tutorial sull’esportazione dei dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en) per diagnosticare il problema. Se sei ancora perplesso, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Adobe sa che la visualizzazione di dati non coerenti può essere un’esperienza frustrante. Prova a utilizzare il [Elenco di controllo per la discrepanza dei dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html) o [Tutorial sull’esportazione dei dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html) per diagnosticare il problema. Se sei ancora perplesso, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

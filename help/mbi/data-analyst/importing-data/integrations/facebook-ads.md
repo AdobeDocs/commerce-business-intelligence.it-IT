@@ -2,9 +2,9 @@
 title: Connetti Facebook Ads
 description: Scopri come analizzare i dati di spesa degli annunci e vedere se i tuoi soldi vengono spesi in modo efficace.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -15,30 +15,30 @@ ht-degree: 0%
 >
 >Richiede [Autorizzazioni amministratore](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/Facebook_Logo.png)
+![](../../../assets/facebook-ads-logo.png)
 
 Hai fatto la tua ricerca, creato i tuoi annunci, lanciato la tua campagna su [!DNL Facebook]. Ora è il momento di analizzare i dati di spesa degli annunci e verificare se i soldi vengono spesi in modo efficace. Utilizzando i dati sulla spesa pubblicitaria, puoi [misurare il ROI delle campagne sposando i costi pubblicitari e il valore del ciclo di vita del cliente (CLV)](../../../data-analyst/analysis/roi-ad-camp.md) degli utenti acquisiti dalle campagne.
 
-Collegamento dei dati degli annunci Facebook a [!DNL MBI] è un semplice processo in tre fasi:
+Collegamento [!DNL Facebook Ad] dati a [!DNL Commerce Intelligence] è un semplice processo in tre fasi:
 
-1. [Aggiungi [!DNL Facebook] come origine dati in [!DNL MBI]](#stepone)
-1. [Consenti [!DNL MBI] accesso al tuo [!DNL Facebook Ads] dati](#steptwo)
+1. [Aggiungi [!DNL Facebook] come origine dati in [!DNL Commerce Intelligence]](#stepone)
+1. [Consenti [!DNL Commerce Intelligence] accesso al tuo [!DNL Facebook Ads] dati](#steptwo)
 1. [Seleziona [!DNL Facebook Ads] Account per il richiamo dei dati](#stepthree)
 
-## Aggiungi [!DNL Facebook] come origine dati in [!DNL MBI] {#stepone}
+## Aggiungi [!DNL Facebook] come origine dati in [!DNL Commerce Intelligence] {#stepone}
 
-1. Per aggiungere [!DNL Facebook] al tuo account, passa alla pagina `Connections` pagina in **[!UICONTROL Manage Data** > **Integrations]**.
-1. Clic **[!UICONTROL Add Integration]**, situato sul lato destro della schermata sopra i Dati `Sources` tabella.
+1. Per aggiungere [!DNL Facebook] integrazione al tuo [!DNL Commerce Intelligence]account, passa a `Connections` pagina in **[!UICONTROL Manage Data** > **Integrations]**.
+1. Clic **[!UICONTROL Add Integration]**, a destra.
 1. Fai clic su [!DNL Facebook] icona. Viene visualizzata la [!DNL Facebook] pagina di autorizzazione.
 1. Clic **[!UICONTROL Authorize]**.
 
-## Consenti [!DNL MBI] accesso al tuo [!DNL Facebook Ads] dati {#steptwo}
+## Consenti [!DNL Commerce Intelligence] accesso al tuo [!DNL Facebook Ads] dati {#steptwo}
 
 Dopo aver fatto clic su **[!DNL Facebook Authorize]**, viene visualizzata una piccola finestra a comparsa:
 
 ![](../../../assets/Facebook_Access_Popup.png)
 
-Segui una serie di passaggi per consentire [!DNL MBI] per accedere ai dati dal tuo profilo pubblico, [!DNL Facebook Ads] e, statistiche correlate. Clic **[!UICONTROL OK]** su questi passaggi per continuare.
+Segui una serie di passaggi per consentire [!DNL Commerce Intelligence] per accedere ai dati dal tuo profilo pubblico, [!DNL Facebook Ads] e, statistiche correlate. Clic **[!UICONTROL OK]** su questi passaggi per continuare.
 
 ## Seleziona [!DNL Facebook Ads] Account per il richiamo dei dati {#stepthree}
 
@@ -56,7 +56,7 @@ Assicurati di tenere traccia di [!DNL Facebook] campagne in [!DNL Google Analyti
 
 ## Correlato
 
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Connetti [!DNL Google Adwords] account](../integrations/google-ecommerce.md)
 * [Tracciare l’origine di riferimento dell’ordine tramite [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Tracciare l&#39;origine di riferimento dell&#39;utente nel database](../../analysis/google-track-user-acq.md)

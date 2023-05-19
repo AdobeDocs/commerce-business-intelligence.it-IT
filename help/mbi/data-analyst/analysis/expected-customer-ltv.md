@@ -2,16 +2,16 @@
 title: Analisi del valore del ciclo di vita previsto (LTV) per Pro
 description: Scopri come impostare una dashboard che ti aiuti a comprendere la crescita del valore del ciclo di vita del cliente e il valore atteso del ciclo di vita dei tuoi clienti.
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
 # Analisi del valore del ciclo di vita previsto
 
-Questo articolo illustra come impostare una dashboard che consenta di comprendere la crescita del valore del ciclo di vita del cliente e il valore atteso del ciclo di vita dei clienti.
+In questo argomento viene illustrato come impostare una dashboard che consenta di comprendere la crescita del valore del ciclo di vita del cliente e il valore atteso del ciclo di vita dei clienti.
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
@@ -153,4 +153,4 @@ Altri dettagli grafico
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile all’immagine nella parte superiore della pagina.
 
-In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il team Professional Services, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il team Professional Services, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

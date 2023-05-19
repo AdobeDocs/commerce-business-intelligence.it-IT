@@ -2,16 +2,16 @@
 title: Analisi del comportamento di riacquisto del cliente
 description: Scopri come analizzare il comportamento di riacquisto dei clienti.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '851'
 ht-degree: 1%
 
 ---
 
 # Comportamento di riacquisto del cliente
 
-Se offri più di un prodotto, probabilmente ti chiedi in che modo i clienti che acquistano un prodotto specifico si comportano in modo diverso nel tempo rispetto ad altri clienti. Questo articolo esplora le analisi che possono aiutarti a rispondere alle seguenti domande:
+Se offri più di un prodotto, probabilmente ti chiedi in che modo i clienti che acquistano un prodotto specifico si comportano in modo diverso nel tempo rispetto ad altri clienti. Questo argomento illustra le analisi che possono aiutarti a rispondere alle seguenti domande.
 
 Tra i clienti che acquistano un *elemento specifico*,
 
@@ -52,7 +52,7 @@ Tenendo conto delle metriche di cui sopra, osserva un esempio che coinvolge prod
 
 {style="table-layout:auto"}
 
-Ora che disponi dei tuoi dati, osserva cosa potrebbe significare per ciascuna metrica.
+Ora che disponi dei tuoi dati, cosa significa questo per ciascuna delle tue metriche?
 
 ### Probabilità di ripetizione ordine
 
@@ -66,7 +66,7 @@ Sulla base dei dati di cui sopra, puoi vedere che le persone che acquistano il p
 
 ### Ricavi medi del ciclo di vita del cliente
 
-I clienti che acquistano il produttore di birra ottengono i maggiori ricavi medi nel corso della vita; ciò è logico, dato che il costo del produttore di birra è incluso in questa misura. Al contrario, i clienti che acquistano chicchi di caffè in genere acquistano solo articoli a basso costo.
+I clienti che acquistano il produttore di birra ottengono i maggiori ricavi medi nel corso della vita, il che è logico, dato che il costo del produttore è incluso in questa misura. Al contrario, i clienti che acquistano chicchi di caffè in genere acquistano solo articoli a basso costo.
 
 ### Tempo all&#39;ordine successivo
 
@@ -74,10 +74,10 @@ Tra i clienti che hanno acquistato capsule di caffè, la metà fare un ordine ri
 
 ## Quali altre analisi posso creare?
 
-Utilizzando le metriche descritte in questo articolo, puoi anche creare altre utili analisi di riacquisto. Ad esempio, puoi anche vedere come i clienti riacquistano **lo stesso elemento** - ad esempio, se acquistano le ricariche regolarmente. Le capsule e i chicchi di caffè possono essere riacquistati regolarmente, ma sarebbe inaspettato vedere i clienti fare acquisti ripetuti della caffettiera. Questa analisi è utile se l&#39;azienda si concentra sulla ricarica o sul ripopolamento.
+Utilizzando le metriche descritte in questo argomento, puoi anche creare altre utili analisi di riacquisto. Ad esempio, puoi anche vedere come i clienti riacquistano **lo stesso elemento** - ad esempio, se acquistano le ricariche regolarmente. Le capsule e i chicchi di caffè possono essere riacquistati regolarmente, ma sarebbe inaspettato vedere i clienti fare acquisti ripetuti della caffettiera. Questa analisi è utile se l&#39;azienda si concentra sulla ricarica o sul ripopolamento.
 
 Oltre ad analizzare il comportamento di riacquisto dei clienti, puoi anche creare analisi che considerano la loro fedeltà. Valuta l’analisi dei pattern di customer churn: dove sono i clienti che lasciano il tuo sito e non tornano? A che velocità si verifica?
 
 Una volta identificata la causa dell’abbandono, puoi utilizzare l’analisi per generare un `reactivation` campagna. Utilizzando questi dati, puoi identificare gli utenti che non sono più attivi, il periodo di tempo trascorso dall’ultima visita, l’ultimo acquisto e così via. Questo consente di prendere decisioni fruibili che incitano i clienti a tornare.
 
-Per assistenza nell’analisi, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Per assistenza nell’analisi, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

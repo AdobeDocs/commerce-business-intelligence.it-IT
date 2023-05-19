@@ -2,16 +2,16 @@
 title: Attribuzione Google Analytics e UTM
 description: Scopri il processo di attribuzione dell’origine Google Analytics.
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Attribuzione Google Analytics e UTM
+# [!DNL Google Analytics] e UTM Attribution
 
-È fondamentale per [tracciare l’origine dell’acquisizione utente](../../data-analyst/analysis/google-track-user-acq.md) a [identificare le campagne pubblicitarie con le prestazioni migliori](../../data-analyst/analysis/most-value-source-channel.md). Questo articolo esplora il processo di attribuzione dell’origine Google Analytics. In altre parole, quale informazione viene registrata quando.
+È fondamentale per [tracciare l’origine dell’acquisizione utente](../../data-analyst/analysis/google-track-user-acq.md) a [identificare le campagne pubblicitarie con le prestazioni migliori](../../data-analyst/analysis/most-value-source-channel.md). Questo argomento esplora [!DNL Google Analytics] processo di attribuzione della sorgente. In altre parole, quale informazione viene registrata quando.
 
 ## Cos’è l’attribuzione?
 
@@ -31,11 +31,11 @@ Quando i parametri UTM vengono specificati nell’URL, vengono analizzati e inse
 
 L’attribuzione ultimo clic è il modello di attribuzione più comune utilizzato da [!DNL Google Analytics]. In questo caso, il [!DNL Google Analytics] cookie rappresenta i parametri UTM per l’origine più recente prima dell’evento di conversione, ovvero [registrati nel database](../../data-analyst/analysis/google-track-user-acq.md). Il [!DNL Google Analytics] Il cookie sovrascrive i parametri UTM precedenti solo se l’utente fa clic su un nuovo URL che contiene un nuovo set di parametri UTM.
 
-Ad esempio, considera un utente che visita per la prima volta un sito web tramite [!DNL Google Analytics][!DNL Google Analytics][!DNL Google Analytics] *ricerca a pagamento*, quindi restituisce tramite *ricerca organica* e infine torna al *direttamente sul sito web* o tramite un *collegamento e-mail* **senza parametri UTM** prima dell’evento di conversione. In questo esempio, la proprietà [!DNL Google Analytics] cookie indica che l’origine dell’utente è organica, poiché rappresenta l’ultima origine prima della conversione. Il *percorso* dell’utente prima che l’evento di conversione finale venga ignorato. Se invece l’utente ha visitato il sito web da un collegamento e-mail con UTM, allora il [!DNL Google Analytics] Il cookie potrebbe indicare che l’origine è &quot;e-mail&quot;. Pertanto, se nel cookie sono presenti parametri UTM esistenti e l’utente arriva direttamente tramite, il [!DNL Google Analytics] Il cookie mostra i parametri UTM anziché &quot;direct&quot;.
+Ad esempio, considera un utente che visita per la prima volta un sito web tramite [!DNL Google Analytics] *ricerca a pagamento*, quindi restituisce tramite *ricerca organica* e infine torna al *direttamente sul sito web* o tramite un *collegamento e-mail* **senza parametri UTM** prima dell’evento di conversione. In questo esempio, la proprietà [!DNL Google Analytics] cookie indica che l’origine dell’utente è organica, poiché rappresenta l’ultima origine prima della conversione. Il *percorso* dell’utente prima che l’evento di conversione finale venga ignorato. Se invece l’utente ha visitato il sito web da un collegamento e-mail con UTM, allora il [!DNL Google Analytics] Il cookie potrebbe indicare che l’origine è &quot;e-mail&quot;. Pertanto, se nel cookie sono presenti parametri UTM esistenti e l’utente arriva direttamente tramite, il [!DNL Google Analytics] Il cookie mostra i parametri UTM anziché &quot;direct&quot;.
 
 >[!NOTE]
 >
->Di un utente specifico [!DNL Google Analytics] i parametri dei cookie vengono cancellati quando il cookie [scade](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)o quando un utente cancella i suoi cookie nel browser.*)
+>Di un utente specifico [!DNL Google Analytics] i parametri dei cookie vengono cancellati quando il cookie [scade](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)o quando un utente cancella i suoi cookie nel browser.*
 
 ### Attribuzione con primo clic
 
@@ -45,10 +45,10 @@ Alcuni strumenti di attribuzione a pagamento consentono di acquisire &quot;lo st
 
 [!DNL Google Analytics] dispone di alcune solide funzionalità nell’interfaccia web che consentono di eseguire quattro diversi modelli di attribuzione:
 
-* primo clic
-* ultimo clic
-* lineare (dividi i ricavi equamente tra tutte le origini nel percorso)
-* ponderato (attribuzione personalizzata)
+1. primo clic
+1. ultimo clic
+1. lineare (dividi i ricavi equamente tra tutte le origini nel percorso)
+1. ponderato (attribuzione personalizzata)
 
 Ora che conosci il modello di attribuzione per ogni micro o macro-conversione, la domanda diventa: &quot;Cosa fai con la totalità delle conversioni di un utente?&quot;.  Ad esempio, osserva gli UTM registrati in base alla logica dell’ultimo clic GA:
 

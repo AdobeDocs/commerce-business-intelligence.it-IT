@@ -2,9 +2,9 @@
 title: Creare metriche
 description: Scopri come utilizzare le metriche per creare i grafici.
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >Richiede [Autorizzazioni amministratore](../../administrator/user-management/user-management.md).
 
-In altre parole, una metrica è una misurazione. Nelle strutture di SQL e database, una metrica è simile a una query memorizzata su un periodo di variabile.
+Una metrica è una misurazione. Nelle strutture di SQL e database, una metrica è simile a una query memorizzata su un periodo di variabile.
 
-In entrata [!DNL MBI], è possibile utilizzare le metriche per [creare grafici](../../data-user/reports/ess-rpt-build-visual.md). Ad esempio, la metrica `revenue` è il numero totale di ordini. La metrica `average customer revenue per order` è la spesa media del cliente per ordine.
+In entrata [!DNL Commerce Intelligence], è possibile utilizzare le metriche per [creare grafici](../../data-user/reports/ess-rpt-build-visual.md). Ad esempio, la metrica `revenue` è il numero totale di ordini. La metrica `average customer revenue per order` è la spesa media del cliente per ordine.
 
 Se utilizzate nei rapporti, le metriche possono essere analizzate in un determinato periodo di tempo e [filtrato o segmentato](../../best-practices/segment-filter.md) per diverse categorie. Valuta l’analisi dei ricavi medi dei clienti raggruppati per genere (in questo caso, `average customer revenue per order` è la metrica e il genere è il raggruppamento.
 
@@ -68,7 +68,7 @@ Il `Filter Logic` è la sezione in cui puoi definire ulteriormente il comportame
 
 Il [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) Questa sezione mostra tutte le dimensioni dati disponibili per il filtraggio o il raggruppamento. Per impostazione predefinita, tutte le colonne dati disponibili sono elencate come dimensioni. Continuando l’esempio, se desideri segmentare i ricavi per origine di riferimento, puoi farlo qui.
 
-Oltre a elencare tutte le colonne di dati disponibili come dimensioni, [!DNL MBI] indovina le colonne raggruppabili. *Per segmentare o raggruppare i dati nei rapporti*, le colonne devono essere contrassegnate come raggruppabili.
+Oltre a elencare tutte le colonne di dati disponibili come dimensioni, [!DNL Commerce Intelligence] indovina le colonne raggruppabili. *Per segmentare o raggruppare i dati nei rapporti*, le colonne devono essere contrassegnate come raggruppabili.
 
 ## Completamento {#finish}
 

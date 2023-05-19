@@ -2,16 +2,16 @@
 title: Filtro a livello di dashboard
 description: Scopri come apportare modifiche in blocco a tutti i rapporti su un dashboard specifico.
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # Filtro a livello di dashboard
 
-Con il filtro a livello di dashboard, puoi apportare modifiche in blocco a tutti i rapporti su un dashboard specifico. Puoi visualizzare rapidamente la stessa analisi per diversi periodi di tempo o per diversi store. Puoi confrontare facilmente le prestazioni di un anno, mese o settimana precedente per negozio. Inoltre, puoi aggiornare un’intera dashboard per adattarla a una nuova campagna avviata.
+Con il filtro a livello di dashboard, puoi apportare modifiche in blocco a tutti i rapporti su un dashboard specifico. Puoi visualizzare rapidamente la stessa analisi per diversi periodi di tempo o per diversi store. Puoi confrontare facilmente le prestazioni di un anno, mese o settimana precedente per negozio. Puoi aggiornare un’intera dashboard per adattarla a una nuova campagna avviata.
 
 ## Filtri per data
 
@@ -45,7 +45,7 @@ Per analizzare le prestazioni di un negozio specifico, fai clic sull’icona dei
 
 >[!NOTE]
 >
->Un filtro store è abilitato o disabilitato per un intero [!DNL MBI] account. Se un dashboard contiene rapporti che non sono interessati dal filtro (ad esempio rapporti che non sono generati su dati di Commerce), tali rapporti non vengono aggiornati quando viene applicato il filtro archivio. È possibile [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) se ritieni che un rapporto debba essere aggiornato in base alla selezione dello store o se ritieni che il filtro dello store dell’account sia disabilitato per errore.
+>Un filtro store è abilitato o disabilitato per un intero [!DNL Commerce Intelligence] account. Se un dashboard contiene rapporti che non sono interessati dal filtro (ad esempio rapporti che non sono generati su [!DNL Adobe Commerce] ), questi rapporti non vengono aggiornati quando viene applicato il filtro store. È possibile [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) se ritieni che un rapporto debba essere aggiornato in base alla selezione dello store o se ritieni che il filtro dello store dell’account sia disabilitato per errore.
 
 Quando selezioni uno store da `Store Filter`, il filtro mantiene la selezione quando ci si sposta tra le dashboard. Mantenere la selezione consente di visualizzare ovunque i dati per lo store selezionato fino a quando non si seleziona `All Stores`.
 

@@ -2,16 +2,16 @@
 title: Ottimizzazione del database per l'analisi
 description: Scopri come ottimizzare il database per l’analisi.
 exl-id: e73e1a1e-c933-476d-97bc-bd8f52bb2fa1
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
 
 # Ottimizzazione del database
 
-Il vantaggio principale dell&#39;utilizzo di un database operativo per le funzionalità di business intelligence consiste nel fatto che non è necessario creare o modificare elementi per la raccolta dei dati. Le informazioni importanti sono già disponibili, tutto ciò che devi fare è sbloccarle.
+Il vantaggio principale di utilizzare un database operativo per [!DNL Adobe Commerce Intelligence] è che non è necessario creare o modificare nulla per raccogliere i dati. Le informazioni importanti sono già disponibili, è sufficiente sbloccarle.
 
 Questo argomento contiene alcuni consigli utili per ottimizzare il database per l’analisi e trarre informazioni fruibili dai dati non elaborati.
 
@@ -51,16 +51,16 @@ Troppe aziende si concentrano esclusivamente sulla ricerca di canali che offrano
 
 ### Impostare una chiave primaria
 
-A [chiave primaria](https://en.wikipedia.org/wiki/Unique_key) è una colonna (o un insieme di colonne) che non cambia e produce valori univoci all’interno di una tabella. Le chiavi primarie sono estremamente importanti, in quanto garantiscono la corretta replica delle tabelle in [!DNL MBI].
+A [chiave primaria](https://en.wikipedia.org/wiki/Unique_key) è una colonna (o un insieme di colonne) che non cambia e produce valori univoci all’interno di una tabella. Le chiavi primarie sono estremamente importanti, in quanto garantiscono la corretta replica delle tabelle in [!DNL Commerce Intelligence].
 
 Quando crei le chiavi primarie, utilizza un tipo di dati integer per la colonna che aumenta automaticamente. L’Adobe consiglia di evitare di utilizzare più chiavi primarie di colonna, ove possibile.
 
-Se la tabella è una vista SQL, aggiungere una colonna che possa fungere da chiave primaria. [!DNL MBI] è in grado di identificare automaticamente questa colonna come chiave primaria.
+Se la tabella è una vista SQL, aggiungere una colonna che possa fungere da chiave primaria. [!DNL Commerce Intelligence] è in grado di identificare automaticamente questa colonna come chiave primaria.
 
 ### Assegnare un tipo di dati alla colonna di dati
 
-Se a una colonna di dati non è assegnato un [tipo di dati](https://en.wikipedia.org/wiki/Data_type), [!DNL MBI] indovina il tipo di dati da utilizzare. Se il sistema non indovina correttamente, potresti non essere in grado di eseguire le analisi pertinenti fino a quando il team di supporto Adobe non regolerà la colonna in base al tipo di dati corretto. Ad esempio, se una colonna data è considerata un tipo di dati numerico, puoi generare tendenze nel tempo utilizzando tale dimensione data.
+Se a una colonna di dati non è assegnato un [tipo di dati](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] indovina il tipo di dati da utilizzare. Se il sistema non indovina correttamente, potresti non essere in grado di eseguire le analisi pertinenti fino a quando il team di supporto Adobe non regolerà la colonna in base al tipo di dati corretto. Ad esempio, se una colonna data è considerata un tipo di dati numerico, puoi generare tendenze nel tempo utilizzando tale dimensione data.
 
 ### Aggiungere prefissi alle tabelle dati se si dispone di più database
 
-Se sono connessi più database a [!DNL MBI], Adobe consiglia di aggiungere prefissi alle tabelle per evitare confusione. I prefissi consentono di ricordare da dove provengono le metriche o le dimensioni dati.
+Se sono connessi più database a [!DNL Commerce Intelligence], Adobe consiglia di aggiungere prefissi alle tabelle per evitare confusione. I prefissi consentono di ricordare da dove provengono le metriche o le dimensioni dati.

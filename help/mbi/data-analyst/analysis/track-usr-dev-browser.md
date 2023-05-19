@@ -2,16 +2,16 @@
 title: 'Google Analytics: tieni traccia dei dati del browser e del dispositivo utente nel database'
 description: Scopri quanti utenti accedono effettivamente tramite dispositivi mobili e come questo influisce sul loro valore nel ciclo di vita.
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Google Analytics] Tracciamento
 
-Con [!UICONTROL Google Analytics] è possibile [salva informazioni origine riferimento](../analysis/google-track-user-acq.md) per capire da dove provengono gli utenti più importanti. In questo argomento, scoprirai la piattaforma (ad esempio, dispositivo o browser) su cui stanno lavorando gli utenti. In questo modo, potrai capire quanti utenti accedono effettivamente tramite dispositivi mobili e in che modo questo influisce sul valore del ciclo di vita di tali utenti.
+Con [!UICONTROL Google Analytics] è possibile [salva informazioni origine riferimento](../analysis/google-track-user-acq.md) per capire da dove provengono gli utenti più importanti. In questo argomento viene illustrata la piattaforma, ad esempio il dispositivo o il browser, su cui gli utenti stanno lavorando. In questo modo, potrai capire quanti utenti accedono effettivamente tramite dispositivi mobili e in che modo questo influisce sul valore del ciclo di vita di tali utenti.
 
 ## Salvataggio dei dati del dispositivo utente e del browser
 
@@ -30,7 +30,7 @@ Se osservi attentamente, vedrai che la stringa contiene informazioni sul sistema
 
 ### Quando registrare i dati?
 
-L’Adobe consiglia di aggiungere un nuovo campo denominato `Platform` o `User-Agent` al tuo `Customers` e `Orders` tabelle di database per memorizzare queste informazioni ogni volta che viene creato un utente o che viene effettuato un ordine. Se si utilizza un database SQL, questo campo deve essere `VARCHAR(255)`. 
+[!DNL Adobe] consiglia di aggiungere un nuovo campo denominato `Platform` o `User-Agent` al tuo `Customers` e `Orders` tabelle di database per memorizzare queste informazioni ogni volta che viene creato un utente o che viene effettuato un ordine. Se si utilizza un database SQL, questo campo deve essere `VARCHAR(255)`. 
 
 >[!NOTE]
 >

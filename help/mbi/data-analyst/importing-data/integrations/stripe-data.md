@@ -1,8 +1,8 @@
 ---
 title: Dati stripe previsti
-description: Esplora le tabelle di dati principali che è possibile importare da Stripe in [!DNL MBI].
+description: Esplora le tabelle di dati principali che puoi importare da Stripe in Commerce Intelligence.
 exl-id: 694577b2-48f9-4376-850d-acae1776afe3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Dopo [hai connesso il tuo [!DNL Stripe] account](../integrations/stripe.md), è possibile utilizzare [Gestione Date Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) per tracciare facilmente i campi di dati rilevanti per l’analisi.
 
-Questo articolo esplora le tabelle di dati principali da cui è possibile importare [!DNL Stripe] in [!DNL MBI]. Al termine dell’installazione, nella Data Warehouse verranno create le seguenti tabelle. Fare clic sui collegamenti nella colonna Nome tabella per ulteriori informazioni sugli attributi di ogni tabella.
+Questo argomento descrive le tabelle dati principali da cui è possibile importare [!DNL Stripe] in [!DNL Commerce Intelligence]. Al termine dell’installazione, nella Data Warehouse verranno create le seguenti tabelle. Fare clic sui collegamenti nella colonna Nome tabella per ulteriori informazioni sugli attributi di ogni tabella.
 
 | **Nome tabella** | **Descrizione** |
 |-----|-----|
@@ -34,4 +34,4 @@ Questo articolo esplora le tabelle di dati principali da cui è possibile import
 ## Correlato:
 
 * [Connessione [!DNL Stripe]](../integrations/stripe.md)
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

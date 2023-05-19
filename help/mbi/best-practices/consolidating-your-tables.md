@@ -2,7 +2,7 @@
 title: Consolidare le tabelle
 description: Scopri come consolidare le tabelle e i database.
 exl-id: 6065bed3-fb84-4147-a223-92dc3e1b15a5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Consolidare le tabelle
 
-Se si gestiscono più punti vendita o mercati, è possibile che database simili siano archiviati separatamente. In entrata [!DNL MBI], è facile consolidare tabelle simili provenienti da database diversi.
+Se si gestiscono più punti vendita o mercati, è possibile che database simili siano archiviati separatamente. In entrata [!DNL Adobe Commerce Intelligence], è facile consolidare tabelle simili provenienti da database diversi.
 
-Ad esempio, è possibile che `orders` tabella per `Market A`, e una simile `orders` tabella per `Market B`. [!DNL MBI] può consolidare entrambe le tabelle e consentire di esaminare i dati aggregati dell&#39;ordine da entrambe `Market A` e `B`, oltre a segmentarla per mercato specifico.
+Ad esempio, è possibile che `orders` tabella per `Market A`, e una simile `orders` tabella per `Market B`. [!DNL Commerce Intelligence] può consolidare entrambe le tabelle e consentire di esaminare i dati aggregati dell&#39;ordine da entrambe `Market A` e `B`, oltre a segmentarla per mercato specifico.
 
 Affinché il consolidamento delle tabelle funzioni, le tabelle di input devono essere **con struttura simile**. In altre parole, tutte le tabelle di input devono contenere le colonne di dati richieste nella tabella consolidata.
 
@@ -43,8 +43,8 @@ Come per tutte le altre tabelle della Data Warehouse, è possibile aggiungere co
 
 ## Creazione, visualizzazione o aggiornamento di una tabella consolidata
 
-Per aggiungere una tabella consolidata alla Data Warehouse, contattare [!DNL MBI] [supporto](../guide-overview.md).
+Per aggiungere una tabella consolidata alla Data Warehouse, contattare [!DNL Commerce Intelligence] [supporto](../guide-overview.md#Submitting-a-Support-Ticket).
 
 >[!NOTE]
 >
->Perché le tabelle consolidate non sono visualizzabili in `Data Warehouse Manager`, la visualizzazione e l&#39;aggiornamento di queste tabelle possono essere eseguiti solo da [!DNL MBI] supporto.
+>Perché le tabelle consolidate non sono visualizzabili in `Data Warehouse Manager`, la visualizzazione e l&#39;aggiornamento di queste tabelle possono essere eseguiti solo da [!DNL Commerce Intelligence] supporto.

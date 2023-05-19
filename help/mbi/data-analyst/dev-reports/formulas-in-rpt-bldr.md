@@ -2,16 +2,16 @@
 title: Formule nel Report Builder
 description: Scopri come utilizzare le formule nel Report Builder.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
 # Formule in `Report Builder`
 
-In [`Report Builder`](../../tutorials/using-visual-report-builder.md), puoi creare visualizzazioni efficaci utilizzando [metriche definite](../../data-user/reports/ess-manage-data-metrics.md) nel tuo account. La combinazione di queste metriche in una formula consente di ottenere ulteriori informazioni dai dati. Questo articolo illustra come le formule possono essere utilizzate nel `Report Builder` - saltiamo dentro!
+In [`Report Builder`](../../tutorials/using-visual-report-builder.md), puoi creare visualizzazioni efficaci utilizzando [metriche definite](../../data-user/reports/ess-manage-data-metrics.md) nel tuo account. La combinazione di queste metriche in una formula consente di ottenere ulteriori informazioni dai dati. Questo argomento descrive come utilizzare le formule nel `Report Builder` - saltiamo dentro!
 
 ## Cos’è un `formula`? {#what}
 
@@ -63,4 +63,4 @@ In questo esempio hai utilizzato `Stacked Columns` per visualizzare i risultati 
 
 Hai notato negli esempi precedenti che la formula è `timestamp`, `groupings`, `perspectives`, e `filters` vengono ereditati dalle relative metriche di input? È possibile utilizzare le formule `perspectives` e [opzioni di tempo indipendenti](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}, proprio come le metriche.
 
-Per ulteriori domande sull&#39;utilizzo delle formule in `Report Builder`, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Per ulteriori domande sull&#39;utilizzo delle formule in `Report Builder`, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

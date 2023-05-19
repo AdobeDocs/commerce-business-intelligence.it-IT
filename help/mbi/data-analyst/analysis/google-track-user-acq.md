@@ -2,9 +2,9 @@
 title: 'Google Analytics: panoramica di Tracciamento dei dati di origine dell’acquisizione da parte degli utenti'
 description: Scopri come segmentare i dati per origine di acquisizione utente.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: ad95a03193853eebf2b695cd6f5c3cb5a9837f93
+source-git-commit: af1e3839839b4c419beabb0cc666c996ea2179d4
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '791'
 ht-degree: 1%
 
 ---
@@ -13,27 +13,27 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Il processo seguente non supporta [!DNL GoogleUniversal Analytics].
+>Il processo seguente non supporta [!DNL Google Universal Analytics].
 
 La capacità di segmentare i dati per origine di acquisizione utente è fondamentale per gestire efficacemente il piano di marketing. Conoscere la fonte di acquisizione dei nuovi utenti mostra quali canali producono i maggiori rendimenti e consente al team di allocare fondi di marketing in modo sicuro.
 
-Se non tieni traccia delle origini di acquisizione utente nel database, [!DNL MBI] può aiutarti a iniziare:
+Se non tieni traccia delle origini di acquisizione utente nel database, [!DNL Adobe Commerce Intelligence] può aiutarti a iniziare:
 
 ## Tracciamento dell&#39;origine di acquisizione dell&#39;utente
 
-L’Adobe consiglia due metodi per tenere traccia dei dati di origine dei riferimenti in base alla configurazione:
+[!DNL Adobe] consiglia due metodi per tenere traccia dei dati di origine dei riferimenti in base alla configurazione:
 
 ### (Opzione 1) Tracciare i dati di origine dei riferimenti dell&#39;ordine tramite [!DNL Google Analytics E-Commerce] (incluso [!DNL Shopify] Store)
 
-Se usa [!DNL Google Analytics E-Commerce] per tenere traccia dei dati relativi a ordini e vendite, è possibile utilizzare [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) per sincronizzare i dati di origine di riferimento di ogni ordine. Questo consente di segmentare i ricavi e gli ordini per origine di riferimento (ad esempio, `utm_source` o `utm_medium`). Inoltre, è possibile ottenere un&#39;idea delle origini di acquisizione del cliente tramite [!DNL MBI] dimensioni personalizzate come `User's first order source`.
+Se usa [!DNL Google Analytics E-Commerce] per tenere traccia dei dati relativi a ordini e vendite, è possibile utilizzare [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) per sincronizzare i dati di origine di riferimento di ogni ordine. Questo consente di segmentare i ricavi e gli ordini per origine di riferimento (ad esempio, `utm_source` o `utm_medium`). Inoltre, è possibile ottenere un&#39;idea delle origini di acquisizione del cliente tramite [!DNL Commerce Intelligence] dimensioni personalizzate come `User's first order source`.
 
 >[!NOTE]
 >
->Per gli utenti Shopify**: attivare [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) prima di collegare [!DNL Google Analytics E-Commerce] account a [!DNL MBI].
+>**Per gli utenti di Shopify**: Attiva [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) prima di collegare [!DNL Google Analytics E-Commerce] account a [!DNL Commerce Intelligence].
 
 ### (Opzione 2) Salvataggio [!DNL Google Analytics]&#39; dati di origine di acquisizione nel database
 
-Questo articolo spiega come salvare [!DNL Google Analytics] acquisire le informazioni sul canale nel proprio database, ovvero `source`, `medium`, `term`, `content`, `campaign`, e `gclid` parametri presenti durante la prima visita di un utente al sito web. Per una spiegazione di questi parametri, vedi [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). Poi, esplori alcune delle potenti analisi di marketing che possono essere eseguite con queste informazioni in [!DNL MBI].
+Questo argomento spiega come salvare [!DNL Google Analytics] acquisire le informazioni sul canale nel proprio database, ovvero `source`, `medium`, `term`, `content`, `campaign`, e `gclid` parametri presenti durante la prima visita di un utente al sito web. Per una spiegazione di questi parametri, vedi [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). Poi, esplori alcune delle potenti analisi di marketing che possono essere eseguite con queste informazioni in [!DNL Commerce Intelligence].
 
 #### Perché?
 
@@ -51,7 +51,7 @@ Cosa succede se vuoi inviare un&#39;e-mail di follow-up a tutti i clienti acquis
 
 > `100000000.12345678.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=rj metrics`
 
-È chiaro che alcuni dati di origine di acquisizione sono codificati nella stringa. Viene testato per confermare che si tratta dell’origine di acquisizione più recente del visitatore e dei dati della campagna associati. Ora devi sapere come estrarre i dati. Fortunatamente, Justin Cutroni ha descritto in precedenza il funzionamento di questa codifica e ha condiviso del codice JavaScript per estrarre i bit chiave delle informazioni.
+È chiaro che alcuni dati di origine di acquisizione sono codificati nella stringa. Viene testato per confermare che si tratta dell’origine di acquisizione più recente del visitatore e dei dati della campagna associati. Ora devi sapere come estrarre i dati.
 
 Questo codice è stato tradotto in [Libreria PHP ospitata su github](https://github.com/RJMetrics/referral-grabber-php). Per utilizzare la libreria: `include` un riferimento a `ReferralGrabber.php` e quindi chiama
 
@@ -59,7 +59,7 @@ Questo codice è stato tradotto in [Libreria PHP ospitata su github](https://git
 
 Il restituito `$data` array è una mappa delle chiavi `source`, `medium`, `term`, `content`, `campaign`, `gclid`e i rispettivi valori.
 
-L’Adobe consiglia di aggiungere al database una tabella denominata, ad esempio: `user_referral`, con colonne del tipo: `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. Ogni volta che un utente si iscrive, prendi le informazioni di riferimento e memorizzale in questa tabella.
+[!DNL Adobe] consiglia di aggiungere al database una tabella denominata, ad esempio, `user_referral`, con colonne del tipo: `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. Ogni volta che un utente si connette, prendi le informazioni di riferimento e memorizzale in questa tabella.
 
 #### Come utilizzare questi dati
 

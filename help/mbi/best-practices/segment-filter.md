@@ -2,9 +2,9 @@
 title: Dimension di dati consigliati per segmentazione e filtro
 description: Scopri le best practice per la segmentazione e il filtraggio.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Una buona segmentazione è ciò che trasforma una statistica superficiale in una
 
 Vuoi sapere chi sono i tuoi clienti più importanti? Quali sono i tuoi canali di marketing più importanti? Quali prodotti sono più veloci e perché? Per ottenere una di queste risposte, devi iniziare segmentando i tuoi dati.
 
-Questo articolo tratta i segmenti critici che sono spesso consigliati ai clienti. Inoltre, illustra in dettaglio le domande che questi segmenti possono aiutarti a rispondere. Tecnicamente, i segmenti sono colonne di dati nel database. In entrata [!DNL MBI], sono denominate dimensioni.
+Questo argomento tratta i segmenti critici che sono spesso consigliati ai clienti. Inoltre, illustra in dettaglio le domande che questi segmenti possono aiutarti a rispondere. Tecnicamente, i segmenti sono colonne di dati nel database. In entrata [!DNL Adobe Commerce Intelligence], sono denominate dimensioni.
 
 ![](../../mbi/assets/mbi-critical-segments.png)
 
@@ -28,7 +28,7 @@ I segmenti utente consentono di comprendere chi sono gli utenti e come si compor
 * **Genere**: i diversi generi interagiscono in modo diverso con il sito web?
 * **Indirizzo**: Da dove provengono gli utenti? Dovresti concentrare le tue attività di marketing su una particolare area geografica? Le campagne pubblicitarie recenti sono state eseguite come previsto nelle aree di destinazione?
 * **Origine acquisizione cliente**\: Sapete da quale canale di marketing provengono i vostri utenti? Hanno fatto clic su un annuncio o vi hanno trovato tramite una ricerca? [Segmentazione dei dati per origine di acquisizione dell&#39;utente](../data-analyst/analysis/google-track-user-acq.md) è il primo passo per ottimizzare la nuova acquisizione di clienti. Il secondo passo è spendere più soldi in ciò che funziona e uccidere ciò che non funziona.
-* **Dispositivo di registrazione**: gli utenti si sono registrati tramite la tua app mobile o il tuo sito web? iOS o Android™? La base di utenti di dispositivi mobili è abbastanza grande da allocare più risorse per sviluppare il prodotto mobile? (Se non tieni traccia di questo, consulta questo argomento [informazioni sul tracciamento del dispositivo utente](../data-analyst/analysis/track-usr-dev-browser.md).
+* **Dispositivo di registrazione**: gli utenti si sono registrati tramite la tua app mobile o il tuo sito web? iOS o Android™? La base di utenti di dispositivi mobili è abbastanza grande da allocare più risorse per sviluppare il prodotto mobile? Se non tieni ancora traccia di questo, consulta questo argomento [informazioni sul tracciamento del dispositivo utente](../data-analyst/analysis/track-usr-dev-browser.md).
 * **Referrer da**: Chi sono i tuoi influencer più influenti? Quanti utenti sono stati segnalati direttamente da altri?
 * **Settore**: se sei un’azienda B2B, in quali settori lavorano i tuoi utenti? A quali organizzazioni professionali vale la pena aderire?
 * **Risposte al sondaggio**: se esegui indagini sui clienti, utilizza le risposte come segmenti per un livello di profilatura più profondo. Puoi porre domande che integrano ciò che già sai sugli utenti o confermare le tue ipotesi.
@@ -63,13 +63,13 @@ Se sei interessato al merchandising, vedi [come utilizzare i segmenti di prodott
 
 Gli esperti di segmentazione potrebbero voler superare le sezioni unidimensionali e iniziare a stabilire profili cliente reali. Ad esempio, le persone di età compresa tra i 13 e i 24 anni che si sono registrate tramite un dispositivo mobile hanno inserito in un gruppo &quot;Giovani e mobili&quot;. Come si comporta questo gruppo rispetto al resto della tua base di utenti?
 
-Questo tipo di analisi è ciò che gli esperti di marketing delle aziende Fortune 1000 fanno tutto il giorno. Prima dell&#39;avvento delle piattaforme di business intelligence basate sul cloud, come [!DNL MBI]Ma era in gran parte fuori dalla portata di tutti noi. Fortunatamente non è più così.
+Questo tipo di analisi è ciò che gli esperti di marketing delle aziende Fortune 1000 fanno tutto il giorno. Prima dell&#39;avvento delle piattaforme di business intelligence basate sul cloud, come [!DNL Commerce Intelligence]Ma era in gran parte fuori dalla portata di tutti noi. Fortunatamente non è più così.
 
 ## Tracciamento di nuovi segmenti
 
 Il primo passaggio per segmentare le metriche in base alle dimensioni di cui sopra consiste nell’assicurarsi di tenere traccia di questi dati nel database. Se non viene tracciato, incontra il tuo team tecnico e trova un modo per iniziare a tracciare questi dati.
 
-Dopo aver confermato la registrazione dei dati nel database, [contatta il team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per inviare le dimensioni al [!DNL MBI] metriche e grafici. È inoltre possibile utilizzare *Gestione dei campi* strumento per tenere traccia di questi campi in [!DNL MBI].
+Dopo aver confermato la registrazione dei dati nel database, [contatta il team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per inviare le dimensioni al [!DNL Commerce Intelligence] metriche e grafici. È inoltre possibile utilizzare *Gestione dei campi* strumento per tenere traccia di questi campi in [!DNL Commerce Intelligence].
 
 ## Correlato
 

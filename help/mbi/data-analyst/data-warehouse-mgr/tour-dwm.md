@@ -2,9 +2,9 @@
 title: Gestione Date Warehouse
 description: Scopri come gestire le impostazioni di sincronizzazione di tabelle e colonne, analizzare in profondità lo schema di una tabella e creare colonne calcolate da utilizzare nei rapporti.
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c4094e780f83255846520d18f4d0806b1dd9a9ef
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >Richiede [Autorizzazioni amministratore](../../administrator/user-management/user-management.md)
 
-Gestione Date Warehouse, accessibile facendo clic su **[!UICONTROL Manage Data > Data Warehouse]** nella barra laterale, è il portale del tuo [!DNL MBI] Data Warehouse. Tramite Gestione Date Warehouse è possibile gestire le impostazioni di sincronizzazione di tabelle e colonne, analizzare in profondità lo schema di una tabella e creare colonne calcolate da utilizzare nei report.
+Gestione Date Warehouse, accessibile facendo clic su **[!UICONTROL Manage Data > Data Warehouse]**, è il portale per il tuo [!DNL Adobe Commerce Intelligence] Data Warehouse. Tramite Gestione Date Warehouse è possibile gestire le impostazioni di sincronizzazione di tabelle e colonne, analizzare in profondità lo schema di una tabella e creare colonne calcolate da utilizzare nei report.
 
-Questo articolo riguarda:
+Questo argomento riguarda:
 
 * [Imparare a spostarti](#learning)
 * [Sincronizzazione di tabelle e colonne](#syncing)
@@ -39,7 +39,7 @@ Il `Synced Tables` Questa opzione mostra tutte le tabelle che sono già state ag
 Non visualizzare la tabella che si sta cercando in `All Tables` elenco? Questo può essere dovuto ad alcuni motivi:
 
 * L’origine dati non è stata ancora aggiunta
-* L&#39;origine dati è un database e [!DNL MBI] L&#39;utente creato non dispone dell&#39;accesso. In questo caso, l&#39;utente o l&#39;amministratore del database deve concedere l&#39;accesso.
+* L&#39;origine dati è un database e [!DNL Commerce Intelligence] L&#39;utente creato non dispone dell&#39;accesso. In questo caso, l&#39;utente o l&#39;amministratore del database deve concedere l&#39;accesso.
 * L’origine dati o la tabella è stata aggiunta di recente e non è ancora stata sincronizzata
 
 ## Sincronizzazione di tabelle e colonne {#syncing}
@@ -61,7 +61,7 @@ Gestione Date Warehouse consente non solo di visualizzare e gestire facilmente l
    Se si sta sincronizzando una tabella proveniente direttamente dal database, è possibile che `Primary Keys` non possono essere identificati. In questo caso, contattare l&#39;amministratore del database per richiedere l&#39;aggiunta di una o più chiavi primarie alla tabella.
 1. Al termine, fai clic su ![pulsante](../../assets/button.png) pulsante.
 
-A *Operazione completata.* viene visualizzato e lo stato cambia in `Pending` per le colonne selezionate. Al termine del prossimo aggiornamento completo, le tabelle e le colonne appena sincronizzate saranno disponibili per l&#39;utilizzo nei rapporti; è inoltre possibile impostare nuove [metodi di replica](./cfg-replication-methods.md) dopo la sincronizzazione iniziale.
+A *Operazione completata.* viene visualizzato un messaggio e lo stato cambia in `Pending` per le colonne selezionate. Al termine del prossimo aggiornamento completo, le tabelle e le colonne appena sincronizzate saranno disponibili per l’utilizzo nei rapporti. È inoltre possibile impostare [metodi di replica](./cfg-replication-methods.md) dopo la sincronizzazione iniziale.
 
 Ecco una breve panoramica dell&#39;intero processo:
 
@@ -119,6 +119,6 @@ Quando sei pronto a utilizzare le nuove colonne nei rapporti, [devi prima aggiun
 
 ## Ritorno a capo
 
-Questo tutorial ha trattato molto materiale. A questo punto è necessario avere una solida conoscenza di cosa è un database, come sono organizzati i dati, come le tabelle si relazionano tra loro e cosa è possibile fare con Data Warehouse Manager.
+Questo articolo copriva molto materiale. A questo punto è necessario avere una solida conoscenza di cosa è un database, come sono organizzati i dati, come le tabelle si relazionano tra loro e cosa è possibile fare con Data Warehouse Manager.
 
-Eccellente! Prova le tue nuove conoscenze [creazione di una colonna calcolata](../data-warehouse-mgr/creating-calculated-columns.md) o [creazione di rapporti interessanti](../../tutorials/using-visual-report-builder.md).
+Verifica le tue conoscenze tramite [creazione di una colonna calcolata](../data-warehouse-mgr/creating-calculated-columns.md) o [creazione di rapporti interessanti](../../tutorials/using-visual-report-builder.md).

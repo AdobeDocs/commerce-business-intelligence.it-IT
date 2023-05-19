@@ -1,19 +1,19 @@
 ---
 title: Esporta dati non elaborati
-description: Scopri come esportare i record dal tuo [!DNL MBI] Data Warehouse per avere una visione più dettagliata di ciò che alimenta il dashboard.
+description: Scopri come esportare i record dal tuo [!DNL Commerce Intelligence] Data Warehouse per avere una visione più dettagliata di ciò che alimenta il dashboard.
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
 # Esporta dati non elaborati
 
-Utilizzando esportazioni di dati non elaborati, puoi esportare i record dal tuo [!DNL MBI] Data Warehouse per avere una visione più dettagliata di ciò che alimenta il dashboard. Inoltre, le esportazioni di dati non elaborati possono esserti utili [individuare le discrepanze nei dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=en).
+Utilizzando le esportazioni di dati non elaborati, puoi esportare i record dalla Data Warehouse per ottenere una visione più dettagliata di ciò che alimenta il dashboard. Inoltre, le esportazioni di dati non elaborati possono esserti utili [individuare le discrepanze nei dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
 
-Le esportazioni di dati non elaborati consentono di accedere a colonne e dimensioni aggiuntive generate tramite la denormalizzazione e la preaggregazione di metriche rilevanti. Ad esempio: `User's first order date` è una dimensione che puoi esportare per ogni utente in [!DNL MBI], anche se potrebbe non essere disponibile nel database.
+Le esportazioni di dati non elaborati consentono di accedere a colonne e dimensioni aggiuntive generate tramite la denormalizzazione e la preaggregazione di metriche rilevanti. Ad esempio: `User's first order date` è una dimensione che puoi esportare per ogni utente in [!DNL Commerce Intelligence], anche se potrebbe non essere disponibile nel database.
 
 Questo tutorial tratta i seguenti argomenti:
 
@@ -23,13 +23,16 @@ Questo tutorial tratta i seguenti argomenti:
 
 ## Passaggio 1: selezione dei dati da esportare {#select}
 
-Esistono due modi per esportare i dati non elaborati in [!DNL MBI]: a livello di grafico o di tabella.
+Esistono due modi per esportare i dati non elaborati in [!DNL Commerce Intelligence]:
 
-### Esportazione a livello di tabella nel `Manage Data` Linguetta
+1. a livello di grafico
+1. a livello di tabella
 
-Per esportare la tabella da `Manage Data` scheda, è necessario [Amministratore](../administrator/user-management/user-management.md) autorizzazioni.
+### Esportazione a livello di tabella nel [!UICONTROL Manage Data] Linguetta
 
-1. Clic **[!UICONTROL Manage Data** > ** Esporta dati **> **Esportazione di dati non elaborati]** per iniziare.
+Per esportare la tabella da [!UICONTROL Manage Data] scheda, è necessario [Amministratore](../administrator/user-management/user-management.md) autorizzazioni.
+
+1. Clic **[!UICONTROL Manage Data** > ** Esporta dati **> **Esportazione di dati non elaborati]**.
 1. Viene visualizzata una `Export List` di esportazioni di dati create di recente, se presenti. Clic **[!UICONTROL Add Export]** per creare un’esportazione.
 1. Il `New Raw Data Export` viene visualizzata una finestra di dialogo. In questo caso, puoi personalizzare l’esportazione selezionando o deselezionando colonne e filtri:
 
@@ -43,8 +46,11 @@ Per esportare la tabella da `Manage Data` scheda, è necessario [Amministratore]
 ### Esportazione a livello di grafico dal dashboard
 
 1. Fai clic sull’icona a forma di ingranaggio nell’angolo in alto a destra di qualsiasi grafico.
+
 1. Seleziona `Raw Export` dal menu a discesa per visualizzare `Raw Export` .
+
 1. Personalizzare l’esportazione scegliendo `table`, `columns`, e `filters` per includere o escludere. Per informazioni più dettagliate sui campi di questo modulo, consulta la sezione precedente.
+
    >[!NOTE]
    >
    >La tabella visualizzata in `Table` è, per impostazione predefinita, la tabella che attiva il grafico.
@@ -65,6 +71,4 @@ Per verificare se l’esportazione è pronta, fai clic su **[!UICONTROL Raw Data
 
 ## Passaggio 3: Accesso alle esportazioni storiche {#historical}
 
-Per visualizzare le esportazioni precedenti, fai clic su **[!UICONTROL Raw Data Export]** nell’angolo in alto a destra dello schermo. È possibile accedere ai report in sospeso e completati per un massimo di sette giorni.
-
-Congratulazioni! Hai finito.
+Per visualizzare le esportazioni precedenti, fai clic su **[!UICONTROL Raw Data Export]** nell&#39;angolo superiore destro dello schermo. È possibile accedere ai report in sospeso e completati per un massimo di sette giorni.

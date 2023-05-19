@@ -1,29 +1,29 @@
 ---
 title: Importare altri dati sulla spesa pubblicitaria
-description: Scopri come importare i dati offline o di altri annunci in [!DNL MBI].
+description: Scopri come importare i dati offline o di altri annunci in [!DNL Commerce Intelligence].
 exl-id: 6f12a397-0927-4e87-95ff-3a55ccc9e14b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
 # Importare altri dati sulla spesa pubblicitaria
 
-Il caricamento dei dati sulla spesa pubblicitaria consente di misurare il ROI della campagna sposando il costo pubblicitario e il cliente `lifetime value (CLV)` degli utenti acquisiti dalle campagne.
+Il caricamento dei dati sulla spesa pubblicitaria consente di misurare il ROI della campagna sposando i costi pubblicitari e `customer lifetime value (CLV)` degli utenti acquisiti dalle campagne.
 
 ## Caricamento dei dati sui costi della pubblicità
 
-Il primo passaggio nell’analisi dei dati relativi ad annunci spesi è ottenere i dati. Poiché la maggior parte delle piattaforme pubblicitarie ti consentono di esportare rapporti, Adobe consiglia di esportare i dati non elaborati dalla piattaforma di annunci e caricarli direttamente in [!DNL MBI] senza alcuna manipolazione. Puoi eseguire operazioni sui dati presenti nella Data Warehouse, quindi non è necessario raddoppiare gli sforzi.
+Il primo passaggio nell’analisi dei dati relativi ad annunci spesi è ottenere i dati. Poiché la maggior parte delle piattaforme pubblicitarie ti consentono di esportare rapporti, Adobe consiglia di esportare i dati non elaborati dalla piattaforma di annunci e caricarli direttamente in [!DNL Commerce Intelligence] senza alcuna manipolazione. Puoi eseguire operazioni sui dati presenti nella Data Warehouse, quindi non è necessario raddoppiare gli sforzi.
 
-Dopo aver esportato i dati sulla spesa pubblicitaria, utilizza [`File Upload` funzionalità](../connecting-data/using-file-uploader.md) per inserire i dati nella Data Warehouse. Puoi caricare nuovi dati nello stesso [!DNL MBI] tabella nel tempo.
+Dopo aver esportato i dati sulla spesa pubblicitaria, utilizza [`File Upload` funzionalità](../connecting-data/using-file-uploader.md) per inserire i dati nella Data Warehouse. Puoi caricare nuovi dati nello stesso [!DNL Commerce Intelligence] tabella nel tempo.
 
 ## Origini offline
 
-Oltre alle campagne online, è possibile che siano presenti anche annunci non in linea, ad esempio alla radio o su un cartellone pubblicitario. Per tenere conto di questi casi, puoi caricare manualmente un foglio di calcolo con i dati dei costi in [!DNL MBI].
+Oltre alle campagne online, è possibile che siano presenti anche annunci non in linea, ad esempio alla radio o su un cartellone pubblicitario. Per tenere conto di questi casi, puoi caricare manualmente un foglio di calcolo con i dati dei costi in [!DNL Commerce Intelligence].
 
-La struttura della tabella illustrata di seguito è consigliata per la creazione di un `.csv` file per registrare i dati relativi alle spese pubblicitarie. Nella parte inferiore di questo articolo viene inoltre allegato un file modello da utilizzare come esempio. Le colonne consigliate sono:
+La struttura della tabella illustrata di seguito è consigliata per la creazione di un `.csv` file per registrare i dati relativi alle spese pubblicitarie. Nella parte inferiore di questo argomento viene inoltre allegato un file modello da utilizzare come esempio. Le colonne consigliate sono:
 
 * `ID` : identificatore univoco per ogni riga di dati utilizzata dal database come chiave primaria. Deve essere diverso per ogni riga.
 * `Date` : data di esecuzione della campagna, in formato aaaa-mm-gg.

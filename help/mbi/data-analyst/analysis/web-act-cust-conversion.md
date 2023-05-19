@@ -2,22 +2,22 @@
 title: Analisi dell'attività del sito Web e dei tassi di conversione dei clienti
 description: Scopri come impostare una dashboard per monitorare l’attività del sito web (incluse visualizzazioni di pagina, sessioni e utenti) e il tasso di conversione dei clienti nel tempo.
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
 
 # Analisi dell&#39;attività del sito Web
 
-[!DNL MBI] consente di integrare facilmente i dati sui costi pubblicitari con il resto dei dati. Questo non solo ti consente di comprendere l’attività del sito web, ma ti consente anche di derivare la percentuale di visitatori del sito web che diventano un utente registrato o effettuano un acquisto.
+[!DNL Adobe Commerce Intelligence] consente di integrare facilmente i dati sui costi pubblicitari con il resto dei dati. Questo non solo ti consente di comprendere l’attività del sito web, ma ti consente anche di derivare la percentuale di visitatori del sito web che diventano un utente registrato o effettuano un acquisto.
 
-Questo articolo illustra come impostare una dashboard che tenga traccia dell’attività sul sito web, incluse visualizzazioni di pagina, sessioni e utenti, e del tasso di conversione dei clienti nel tempo.
+Questo argomento illustra come impostare una dashboard che tenga traccia dell’attività sul sito web, incluse visualizzazioni di pagina, sessioni e utenti, e del tasso di conversione dei clienti nel tempo.
 
 ## Prerequisiti
 
-**Importa i dati sui costi della pubblicità** - Connetti [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) a [!DNL MBI] - questo sincronizza automaticamente [!DNL AdWords] spesa in MBI.
+**Importa i dati sui costi della pubblicità** - Connetti [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) a [!DNL Adobe Commerce Intelligence] - questo sincronizza automaticamente [!DNL AdWords] spese in Commerce Intelligence.
 
 **Tracciare i dati del canale di acquisizione dell&#39;utente** - Per legare [!DNL Google AdWords] dati a ordini specifici nel database, è necessario [tracciare l’acquisizione degli utenti](../analysis/google-track-user-acq.md) tramite [!DNL Google Analytics E-commerce]. Questo consente di collegare ogni ordine con una sorgente UTM e un supporto.
 
@@ -103,4 +103,4 @@ Questa raccolta di rapporti viene creata utilizzando quanto segue:
 
 Ora che hai accesso ai dati sul traffico web e ai tassi di conversione, puoi iniziare a estrarre questo per promuovere le decisioni di business, ad esempio quali siti sono più adatti a indirizzare il traffico verso il tuo sito? o Quale delle tue campagne è più efficace nell’acquisire clienti con l’elevato valore del ciclo di vita?
 
-Quando modifichi la spesa pubblicitaria e la strategia di marketing, puoi continuare a tenere traccia dei risultati in [!DNL MBI], iterando su questa dashboard per soddisfare le priorità in evoluzione della tua azienda.
+Quando modifichi la spesa pubblicitaria e la strategia di marketing, puoi continuare a tenere traccia dei risultati in [!DNL Commerce Intelligence], iterando su questa dashboard per soddisfare le priorità in evoluzione della tua azienda.

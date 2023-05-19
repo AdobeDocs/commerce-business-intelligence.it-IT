@@ -2,20 +2,18 @@
 title: Dati previsti di Facebook Ads
 description: Breve panoramica delle tabelle che si consiglia di sincronizzare con la Data Warehouse
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
 
 # Previsto [!DNL Facebook Ads] dati
 
-![](../../../assets/Facebook_Logo.png)
-
 Dopo aver [ha connesso [!DNL Facebook Ads] account](../integrations/facebook-ads.md), è possibile utilizzare [Gestione Date Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) per tracciare facilmente i campi di dati rilevanti per l’analisi.
 
-Questo Adobe offre una breve panoramica delle tabelle e consiglia di eseguire la sincronizzazione con la Data Warehouse. Questo non è un elenco completo, in quanto sono presenti alcune sottotabelle. Evidenzia solo le tabelle principali.
+Questo argomento offre una breve panoramica delle tabelle. L&#39;Adobe consiglia di eseguire la sincronizzazione con la Data Warehouse. Questo evidenzia solo le tabelle principali, in quanto sono presenti alcune sottotabelle.
 
 ## Tabelle core per campagne pubblicitarie
 
@@ -60,4 +58,4 @@ Questa tabella include le stesse informazioni del `facebook_ads_insights_{accoun
 ## Correlato
 
 * [Connessione [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

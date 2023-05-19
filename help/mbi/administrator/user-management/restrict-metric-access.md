@@ -2,9 +2,9 @@
 title: Limitare l’accesso alle metriche
 description: Scopri come utilizzare l’accesso alle metriche e le relative restrizioni.
 exl-id: 88f5ca7a-8073-4968-9685-95f141b2a87f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Dopo aver impostato il livello di autorizzazione, puoi selezionare le metriche a
 1. Vai a **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**.
 1. Seleziona l’account utente desiderato.
 1. Il **[!UICONTROL Metrics]** Questa scheda mostra un elenco delle metriche disponibili. Controlla le metriche a cui desideri che l’utente abbia accesso e deseleziona quelle a cui l’utente non deve avere accesso.
-1. [!DNL MBI] salva le modifiche automaticamente. Se la modifica ha esito positivo, [!DNL MBI] display **[!UICONTROL Saved!]** nella parte superiore della pagina.
+1. [!DNL Adobe Commerce Intelligence] salva le modifiche automaticamente. Se la modifica ha esito positivo, [!DNL Commerce Intelligence] display **[!UICONTROL Saved!]** nella parte superiore della pagina.
 
 >[!NOTE]
 >
@@ -30,4 +30,4 @@ Puoi anche limitare l’accesso a una metrica modificando la metrica e **[!UICON
 
 >[!NOTE]
 >
->Se duplichi una metrica, [!DNL MBI] copia le autorizzazioni utente impostate nella metrica originale.
+>Se duplichi una metrica, [!DNL Commerce Intelligence] copia le autorizzazioni utente impostate nella metrica originale.

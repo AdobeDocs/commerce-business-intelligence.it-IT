@@ -2,24 +2,24 @@
 title: Utilizzare le opzioni di tempo nel Report Builder visivo
 description: Scopri come analizzare i dati nel rapporto per un periodo di tempo specifico.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
 
-# Utilizzare `Time` Opzioni in `Visual Report Builder`
+# Utilizzare [!DNL Time] Opzioni in [!DNL Visual Report Builder]
 
-Una delle caratteristiche della `Visual Report Builder` è il valore globale `Time Range` e `Interval` impostazioni. Queste impostazioni consentono di analizzare i dati nel rapporto per un periodo di tempo specifico.
+Una delle caratteristiche della [!DNL Visual Report Builder] è il valore globale `Time Range` e `Interval` impostazioni. Queste impostazioni consentono di analizzare i dati nel rapporto per un periodo di tempo specifico.
 
-Tuttavia, per alcune analisi, potrebbe essere necessario considerare diversi intervalli di tempo o intervalli di tempo nello stesso rapporto. È qui che `Time` Le opzioni entrano. Per darti un&#39;idea migliore di come usare `Time` Opzioni nei rapporti, questa esercitazione tratta i seguenti casi d’uso:
+Tuttavia, per alcune analisi, potrebbe essere necessario considerare diversi intervalli di tempo o intervalli di tempo nello stesso rapporto. È qui che `Time` Le opzioni entrano. Per darti un&#39;idea migliore di come usare `Time` opzioni nei rapporti, questo tutorial descrive i seguenti casi d’uso:
 
 * [Analisi delle metriche senza marca temporale](#notimestamp)
 * [Assegnare a una metrica un intervallo di tempo indipendente](#independenttimeinterval)
 * [Confronto della stessa metrica tra intervalli di tempo diversi](#difftimerange)
 
-Se desideri seguire alcuni dei rapporti di esempio discussi in questo argomento, apri la sezione [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) prima di continuare.
+Se desideri seguire alcuni dei rapporti di esempio discussi in questo argomento, apri la sezione [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) prima di continuare.
 
 ## Analisi delle metriche senza marca temporale {#notimestamp}
 
@@ -64,7 +64,7 @@ Ora puoi vedere quanto ha avuto un impatto ogni mese lo scorso anno:
 
 ## Confronto della stessa metrica tra intervalli di tempo diversi {#difftimerange}
 
-In questo esempio viene utilizzata una dimensione personalizzata denominata `Day number of the month`. Se desideri creare questo rapporto e non hai già questa dimensione nella tua Data Warehouse, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per assistenza.
+In questo esempio viene utilizzata una dimensione personalizzata denominata `Day number of the month`. Se desideri creare questo rapporto e non hai già questa dimensione nella tua Data Warehouse, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per assistenza.
 
 I due esempi più comuni in questa categoria sono (1) il confronto delle metriche di crescita (ricavi su base annua o mese sul mese) e (2) una migliore comprensione delle recenti tendenze delle scorte o delle vendite di articoli.
 

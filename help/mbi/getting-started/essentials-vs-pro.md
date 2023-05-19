@@ -1,19 +1,19 @@
 ---
-title: MBI Essentials vs Pro
-description: Scopri in che modo MBI Essentials differisce da MBI Pro.
+title: Caratteristiche principali di Commerce Intelligence e Pro
+description: Scopri le differenze tra Commerce Intelligence Essentials e Commerce Intelligence Pro.
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: c403d28392d781f0e897b937d00dfe0cfe35ea4d
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '74'
 ht-degree: 5%
 
 ---
 
-# [!DNL MBI Essentials] vs [!DNL MBI Pro]
+# [!DNL Commerce Intelligence Essentials] vs [!DNL Commerce Intelligence Pro]
 
-Nella tabella seguente sono descritti gli elementi inclusi in una versione precedente `Essentials` un account rispetto a un account MBI corrente. Adobe non più offerte `Essentials`.
+La tabella seguente descrive gli elementi inclusi in un `Essentials` rispetto a un account corrente di Commerce Intelligence. Adobe non offre più `Essentials`.
 
-|  | **`MBI Essentials`** | **`MBI Pro`** |
+|  | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
 | `Pre-Defined Reports` | Fino a 100 | Personalizzato |
 | `Pre-Defined Dashboards` | 5-6 | Personalizzato |
@@ -34,7 +34,7 @@ Nella tabella seguente sono descritti gli elementi inclusi in una versione prece
 
 >[!NOTE]
 >
->Il numero di tabelle dipende dal pagamento degli ospiti.
+>Il numero di tabelle dipende dal pagamento guest.
 
 **Tabelle incluse**
 

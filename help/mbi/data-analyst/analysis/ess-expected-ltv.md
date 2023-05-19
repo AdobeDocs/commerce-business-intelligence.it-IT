@@ -2,7 +2,7 @@
 title: Analisi del valore del ciclo di vita previsto (LTV) (base)
 description: Scopri come creare analisi per comprendere il valore del ciclo di vita dei clienti attuali e prevedere in che modo il valore del ciclo di vita aumenta con un numero maggiore di ordini.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Prevedere il valore del ciclo di vita dei clienti quando effettuano più ordini è uno degli aspetti più importanti di qualsiasi azienda di qualsiasi dimensione.
 
-Di seguito sono riportati i passaggi per creare analisi per comprendere il valore del ciclo di vita dei clienti attuali e prevedere in che modo il valore del ciclo di vita aumenta con un numero maggiore di ordini:
+Di seguito sono riportati i passaggi per creare analisi che consentano di comprendere il valore del ciclo di vita dei clienti attuali e prevedere in che modo il valore del ciclo di vita aumenta con un numero maggiore di ordini.
 
 ![valore del ciclo di vita previsto](../../assets/expected_ltv_720.png)
 

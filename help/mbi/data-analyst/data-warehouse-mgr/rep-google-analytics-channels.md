@@ -2,30 +2,30 @@
 title: Replica dei canali Google Analytics tramite origini di acquisizione
 description: Scopri come replicare i canali Google Analytics utilizzando le origini di acquisizione.
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
 
-# Google Analytics con origini di acquisizione
+# [!DNL Google Analytics] utilizzo di origini di acquisizione
 
 ## Cosa sono i canali? {#channels}
 
-La creazione di segmenti personalizzati per vedere le prestazioni di diversi tipi di traffico e osservare le tendenze è uno degli utilizzi più potenti per  [!DNL Google Analytics ]. Una classe di segmenti esistente per impostazione predefinita in [!DNL Google Analytics ] sono `Channels`. I canali sono un raggruppamento di modi comuni in cui le persone accedono al tuo sito.  [!DNL Google Analytics ] ordina automaticamente i diversi modi in cui si acquisisce un utente (tramite social media, pay-per-click, e-mail o collegamenti di riferimento) e li raggruppa in un bucket, o Canale.
+La creazione di segmenti personalizzati per vedere le prestazioni di diversi tipi di traffico e osservare le tendenze è uno degli utilizzi più potenti per [!DNL Google Analytics]. Una classe di segmenti esistente per impostazione predefinita in [!DNL Google Analytics] sono `Channels`. I canali sono un raggruppamento di modi comuni in cui le persone accedono al tuo sito.  [!DNL Google Analytics] ordina automaticamente i diversi modi in cui si acquisisce un utente (tramite social media, pay-per-click, e-mail o collegamenti di riferimento) e li raggruppa in un bucket, o Canale.
 
-## Perché non vedo il mio `channels` in MBI? {#nochannels}
+## Perché non vedo il mio `channels` in Commerce Intelligence? {#nochannels}
 
-`Channels` sono contenitori di dati semplici e aggregati. Per ordinare le acquisizioni in bucket di canale, Google imposta regole e definizioni distinte utilizzando parametri specifici: una combinazione di acquisizione [Sorgente](https://support.google.com/analytics/answer/1033173?hl=en) (origine del traffico) e acquisizione [Medio](https://support.google.com/analytics/answer/6099206?hl=en) (la categoria generale della sorgente).
+`Channels` sono contenitori di dati semplici e aggregati. Per ordinare le acquisizioni in blocchi di canale: [!DNL Google] stabilisce regole e definizioni distinte utilizzando parametri specifici: una combinazione di acquisizione [Sorgente](https://support.google.com/analytics/answer/1033173?hl=en) (origine del traffico) e acquisizione [Medio](https://support.google.com/analytics/answer/6099206?hl=en) (la categoria generale della sorgente).
 
-Anche se l’utilizzo di questi bucket può aiutarti a capire da dove proviene il traffico, questi dati non vengono taggati per canale, ma da una combinazione di Origine e Media. Poiché Google invia le informazioni sul canale come due punti dati separati, i raggruppamenti di canali non vengono visualizzati automaticamente in [!DNL MBI].
+Anche se l’utilizzo di questi bucket può aiutarti a capire da dove proviene il traffico, questi dati non vengono taggati per canale, ma da una combinazione di Origine e Media. Perché [!DNL Google] invia informazioni sul canale come due punti dati separati; i raggruppamenti di canali non vengono visualizzati automaticamente in [!DNL Commerce Intelligence].
 
 ## Quali sono i raggruppamenti di canali predefiniti? Come vengono create?
 
-Per impostazione predefinita, Google consente di impostare otto canali diversi. Osserva le regole che determinano come vengono create:
+Per impostazione predefinita, [!DNL Google] imposta otto canali diversi. Di seguito sono riportate le regole che determinano la modalità di creazione dei canali.
 
-| Canale | Che cos&#39;è? | Come viene creato? |
+| **Canale** | **Che cos&#39;è?** | **Come viene creato?** |
 |---|---|---|
 | Diretto | Chiunque entri direttamente nel tuo sito. | Origine = `Direct`<br>AND Medio = `(not set); OR Medium = (none)` |
 | Ricerca organica | Traffico che è stato classificato in modo organico nei motori di ricerca non pagati. | Media = `organic` |
@@ -44,13 +44,13 @@ Ora che sai che i canali sono solo combinazioni di sorgenti e media, è facile r
 
 1. **Abilita[!DNL Google ECommerce]integrazione**
 
-   [Una volta abilitato](../importing-data/integrations/google-ecommerce.md), assicurati di [sincronizzazione](.../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) il **media** e **sorgente** campi nella Data Warehouse. Al termine dell&#39;operazione, i dati di acquisizione di origine e di supporto verranno inseriti nella Data Warehouse.
+   [Quando abilitato](../importing-data/integrations/google-ecommerce.md), assicurati di [sincronizzazione](.../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) il **media** e **sorgente** campi nella Data Warehouse. Al termine dell&#39;operazione, i dati di acquisizione di origine e di supporto verranno inseriti nella Data Warehouse.
 
 1. **Carica una mappatura dei raggruppamenti di canali di Google**
 
-   Per risparmiare tempo, Commerce ha già creato una tabella con i raggruppamenti predefiniti mappati come file che puoi [scaricare](../../assets/ga-channel-mapping.csv).
+   Adobe Commerce crea una tabella con i raggruppamenti predefiniti mappati come file che puoi [scaricare](../../assets/ga-channel-mapping.csv).
 
-   Se sei un professionista di Google Analytics e hai creato i tuoi canali, vuoi aggiungere le tue regole specifiche alla tabella di mappatura prima di caricare il file in [!DNL MBI].
+   Se sei un [!DNL Google Analytics] e creato i tuoi canali, desideri aggiungere le tue regole specifiche alla tabella di mappatura prima di caricare il file in [!DNL Commerce Intelligence].
 
    Portalo nella tua Data Warehouse come [Caricamento file](../importing-data/connecting-data/using-file-uploader.md).
 
@@ -58,13 +58,13 @@ Ora che sai che i canali sono solo combinazioni di sorgenti e media, è facile r
 
 1. **Stabilire una relazione tra[!DNL Google ECommerce]Caricamento di file di mappature e**
 
-   Per stabilire una relazione tra[!DNL Google ECommerce]e la tabella di mappatura, [invia una richiesta di assistenza](../../guide-overview.md) rivolgiti al team di Data Analyst e fai riferimento a questo articolo. L’analista crea una nuova colonna calcolata denominata **Canale** nella tabella ECommerce. **Dopo un ciclo di aggiornamento completo**, questa colonna sarà pronta per essere utilizzata in un filtro o un raggruppamento.
+   Per stabilire una relazione tra[!DNL Google ECommerce] e la tabella di mappatura, [invia una richiesta di assistenza](../../guide-overview.md#Submitting-a-Support-Ticket) rivolgiti al tuo team di analista dati e fai riferimento a questo argomento. L’analista crea una nuova colonna calcolata denominata **Canale** nella tabella ECommerce. **Dopo un ciclo di aggiornamento completo**, questa colonna sarà pronta per essere utilizzata in una `Filter` o `Group by`.
 
-Congratulazioni! Ora nella tua Data Warehouse sono presenti raggruppamenti di canali di Google Analytics, il che significa che puoi analizzare i dati da una nuova prospettiva:
+Ora hai [!DNL Google Analytics Channel] raggruppamenti nella tua Data Warehouse, il che significa che puoi analizzare i dati da una nuova prospettiva:
 
 ![Segmentazione della metrica Numero di ordini per canale](../../assets/GA_Channel_Gif.gif)
 
-In questo esempio, hai iniziato a utilizzare la funzione semplice, ovvero segmentare il **Numero di ordini** metrica per **Canale**. Ora tocca a te: prova la nuova colonna e scopri le tendenze da identificare nei dati del canale Google Analytics.
+In questo esempio, hai iniziato con la segmentazione del **Numero di ordini** metrica per **Canale**. Prova la nuova colonna e scopri le tendenze che puoi identificare nel [!DNL Google Analytics Channel] dati!
 
 ## Documentazione correlata
 

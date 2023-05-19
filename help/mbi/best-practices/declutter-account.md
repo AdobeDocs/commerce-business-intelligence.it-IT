@@ -1,25 +1,25 @@
 ---
-title: Decluttering [!DNL MBI] Account
-description: Scopri come pulire [!DNL MBI] account.
+title: Decluttering [!DNL Commerce Intelligence] Account
+description: Scopri come pulire [!DNL Commerce Intelligence] account.
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# Pulisci [!DNL MBI] Account
+# Pulisci [!DNL Adobe Commerce Intelligence] Account
 
-Se sei stato con [!DNL MBI] per sei mesi o sei anni, mantenere un account ordinato è fondamentale per ottenere il massimo dalla piattaforma. Nel tempo, è naturale che ci siano utenti, dashboard, rapporti, metriche e colonne che non sono più necessari. Forse hai creato un rapporto per un utilizzo una tantum e te ne sei dimenticato, oppure un utente che ha lasciato la tua azienda non ha mai avuto il suo account disattivato.
+Se sei stato con [!DNL Commerce Intelligence] per sei mesi o sei anni, mantenere un account ordinato è fondamentale per ottenere il massimo dalla piattaforma. Nel tempo, è naturale che ci siano utenti, dashboard, rapporti, metriche e colonne che non sono più necessari. Forse hai creato un rapporto per un utilizzo una tantum e te ne sei dimenticato, oppure un utente che ha lasciato la tua azienda non ha mai avuto il suo account disattivato.
 
-Con [denominazione standard e chiara per tutti gli elementi](../best-practices/naming-elements.md)) del tuo [!DNL MBI] account, i passaggi di controllo dell’account riportati di seguito consentono di ridurre l’ingombro e le analisi non necessarie per gli utenti. Un ulteriore vantaggio include [cicli di aggiornamento potenzialmente più rapidi](../best-practices/reduce-update-cycle-time.md).
+Con [denominazione standard e chiara per tutti gli elementi](../best-practices/naming-elements.md)) del tuo [!DNL Commerce Intelligence] account, i passaggi di controllo dell’account riportati di seguito consentono di ridurre l’ingombro e le analisi non necessarie per gli utenti. Un ulteriore vantaggio include [cicli di aggiornamento potenzialmente più rapidi](../best-practices/reduce-update-cycle-time.md).
 
 ## Passaggio 1: identificare gli utenti non attivi
 
-Il primo passaggio per la pulizia dell’account consiste nel disattivare gli account degli utenti non attivi, ad esempio le persone che hanno lasciato l’azienda o che non utilizzano più [!DNL MBI] nei ruoli correnti.
+Il primo passaggio per la pulizia dell’account consiste nel disattivare gli account degli utenti non attivi, ad esempio le persone che hanno lasciato l’azienda o che non utilizzano più [!DNL Commerce Intelligence] nei ruoli correnti.
 
-Per farlo, fai clic sul nome della tua azienda nell’angolo in alto a destra della barra di navigazione superiore, quindi seleziona **[!UICONTROL Manage Users]**. Quindi, seleziona l’utente da disattivare e fai clic su **[!UICONTROL Deactivate User]**.
+A tale scopo, fai clic sul nome della tua azienda nella barra di navigazione in alto a destra, quindi seleziona **[!UICONTROL Manage Users]**. Quindi, seleziona l’utente da disattivare e fai clic su **[!UICONTROL Deactivate User]**.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Per farlo, fai clic sul nome della tua azienda nell’angolo in alto a destra de
 
 >[!WARNING]
 >
->La disattivazione di un utente comporta la rimozione di grafici, dashboard e altre risorse create dall’utente. Se desideri conservare queste risorse, contatta il [!DNL MBI] [supporto](../guide-overview.md) prima di disattivare l&#39;utente. Il supporto può essere utile per trasferire queste risorse a un altro utente.
+>La disattivazione di un utente comporta la rimozione di grafici, dashboard e altre risorse create dall’utente. Se desideri conservare queste risorse, contatta il [!DNL Commerce Intelligence] [supporto](../guide-overview.md#Submitting-a-Support-Ticket) prima di disattivare l&#39;utente. Il supporto può essere utile per trasferire queste risorse a un altro utente.
 
 ### Riattivare un utente
 
@@ -89,7 +89,7 @@ Dopo aver ripulito l’elenco degli utenti, le dashboard e i rapporti, puoi pass
 1. Per generare un elenco di rapporti dipendenti per una metrica, vai a **[!DNL Manage Data]**, quindi seleziona Fai clic su **[!UICONTROL Metrics]**.
 1. Clic **[!UICONTROL Edit]** accanto a una metrica.
 1. Nella parte inferiore della pagina è disponibile una sezione denominata **[!UICONTROL Dependent Charts]**. Fai clic sul collegamento per generare un elenco di rapporti dipendenti per questa metrica.
-1. Dopo che il sistema ha completato il controllo, [!DNL MBI] visualizza un elenco di dashboard, report e utenti che utilizzano questa metrica.
+1. Dopo che il sistema ha completato il controllo, [!DNL Commerce Intelligence] visualizza un elenco di dashboard, report e utenti che utilizzano questa metrica.
 
 ![](../../mbi/assets/report_dependecies.png)
 
@@ -99,7 +99,7 @@ Se decidi che la metrica non è più necessaria, torna alla **[!UICONTROL Metric
 
 L’ultimo passaggio consiste nel valutare le colonne attualmente sincronizzate nella Data Warehouse. L’annullamento della sincronizzazione delle colonne può danneggiare l’account e ridurre potenzialmente il tempo di aggiornamento.
 
-Se desideri continuare, contatta il [!DNL MBI] [Supporto](../guide-overview.md). Il team di supporto può creare un report che include tutte le colonne che non vengono utilizzate in alcun dashboard per alcun utente e che non vengono utilizzate nei riepiloghi e-mail, esclusi i report SQL. Puoi quindi utilizzare questo rapporto come guida per selezionare le colonne da desincronizzare tramite Gestione Date Warehouse.
+Se desideri continuare, contatta il [!DNL Commerce Intelligence] [Supporto](../guide-overview.md#Submitting-a-Support-Ticket). Il team di supporto può creare un report che include tutte le colonne che non vengono utilizzate in alcun dashboard per alcun utente e che non vengono utilizzate nei riepiloghi e-mail, esclusi i report SQL. Puoi quindi utilizzare questo rapporto come guida per selezionare le colonne da desincronizzare tramite Gestione Date Warehouse.
 
 >[!NOTE]
 >
@@ -122,4 +122,4 @@ Di seguito viene illustrato l&#39;intero processo:
 
 ## Ritorno a capo
 
-Tutto qui! Il tuo [!DNL MBI] L’account dovrebbe essere più graduale e facile da navigare per te e il tuo team.
+Il tuo [!DNL Commerce Intelligence] L’account dovrebbe essere più graduale e facile da navigare per te e il tuo team.

@@ -1,19 +1,19 @@
 ---
-title: Traduzione di query SQL in [!DNL MBI] rapporti
-description: Scopri come le query SQL vengono convertite nelle colonne calcolate e le metriche utilizzate in [!DNL MBI].
+title: Traduzione di query SQL in report di Commerce Intelligence
+description: Scopri come le query SQL vengono convertite nelle colonne calcolate e nelle metriche utilizzate in Commerce Intelligence.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
 
 ---
 
-# Traduzione delle query SQL in MBI
+# Traduzione di query SQL in Commerce Intelligence
 
-Ti sei mai chiesto come le query SQL vengano tradotte in [colonne calcolate](../data-warehouse-mgr/creating-calculated-columns.md), [metriche](../../data-user/reports/ess-manage-data-metrics.md), e [rapporti](../../tutorials/using-visual-report-builder.md) utilizzi in [!DNL MBI]? Se l&#39;utente è un utente SQL con un numero elevato di richieste, informazioni su come SQL viene tradotto [!DNL MBI] consente di lavorare in modo più intelligente in [Gestione Date Warehouse](../data-warehouse-mgr/tour-dwm.md) e ottenere il massimo dal [!DNL MBI] piattaforma.
+Ti sei mai chiesto come le query SQL vengano tradotte in [colonne calcolate](../data-warehouse-mgr/creating-calculated-columns.md), [metriche](../../data-user/reports/ess-manage-data-metrics.md), e [rapporti](../../tutorials/using-visual-report-builder.md) utilizzi in [!DNL Commerce Intelligence]? Se l&#39;utente è un utente SQL con un numero elevato di richieste, informazioni su come SQL viene tradotto [!DNL Commerce Intelligence] consente di lavorare in modo più intelligente in [Gestione Date Warehouse](../data-warehouse-mgr/tour-dwm.md) e ottenere il massimo dal [!DNL Commerce Intelligence] piattaforma.
 
-Alla fine di questo articolo, troverai un **matrice di traduzione** per le clausole di query SQL e [!DNL MBI] elementi.
+Alla fine di questo argomento, troverai **matrice di traduzione** per le clausole di query SQL e [!DNL Commerce Intelligence] elementi.
 
 Inizia guardando una query generale:
 
@@ -32,7 +32,7 @@ Questo esempio copre la maggior parte dei casi di traduzione, ma con alcune ecce
 
 ## Aggregare funzioni
 
-Funzioni di aggregazione (ad esempio, `count`, `sum`, `average`, `max`, `min`) nelle query assumono la forma di **aggregazioni di metriche** o **aggregazioni di colonne** in [!DNL MBI]. Il fattore di differenziazione è se è necessario un join per eseguire l&#39;aggregazione.
+Funzioni di aggregazione (ad esempio, `count`, `sum`, `average`, `max`, `min`) nelle query assumono la forma di **aggregazioni di metriche** o **aggregazioni di colonne** in [!DNL Commerce Intelligence]. Il fattore di differenziazione è se è necessario un join per eseguire l&#39;aggregazione.
 
 Osserva un esempio per ciascuno dei precedenti.
 
@@ -40,7 +40,7 @@ Osserva un esempio per ciascuno dei precedenti.
 
 È necessaria una metrica durante l’aggregazione `within a single table`. Ad esempio, il `SUM(b)` la funzione di aggregazione dalla query precedente verrebbe probabilmente rappresentata da una metrica che somma la colonna `B`. 
 
-Osserva un esempio specifico di come un `Total Revenue` la metrica potrebbe essere definita in [!DNL MBI]. Osserva la query seguente che tenti di tradurre:
+Osserva un esempio specifico di come un `Total Revenue` la metrica potrebbe essere definita in [!DNL Commerce Intelligence]. Osserva la query seguente che tenti di tradurre:
 
 |  |  |
 |--- |--- |
@@ -51,7 +51,7 @@ Osserva un esempio specifico di come un `Total Revenue` la metrica potrebbe esse
 | `email NOT LIKE '%@magento.com'` | Metrica `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | Metrica `timestamp` (e reporting `time range`) |
 
-Navigazione al generatore di metriche facendo clic su **[!UICONTROL Manage Data** > ** Metriche **> **Crea nuova metrica]**, devi innanzitutto selezionare il `source` tabella, che in questo caso è il `orders` tabella. La metrica viene quindi impostata come mostrato di seguito:
+Passa al generatore di metriche facendo clic su **[!UICONTROL Manage Data** > ** Metriche **> **Crea nuova metrica]**, devi innanzitutto selezionare il `source` tabella, che in questo caso è il `orders` tabella. La metrica viene quindi impostata come mostrato di seguito:
 
 ![Aggregazione delle metriche](../../assets/Metric_aggregation.png)
 
@@ -71,7 +71,7 @@ La query per questa aggregazione potrebbe essere simile alla seguente:
 | `ON c.customer_id = o.customer_id` | Percorso |
 | `WHERE o.status = 'success'` | Aggregate filter |
 
-Configurazione in [!DNL MBI] richiede l&#39;utilizzo del gestore della Data Warehouse, in cui si crea un percorso tra `orders` e `customers` quindi creare una colonna denominata `Customer LTV` nel tavolo del cliente.
+Configurazione in [!DNL Commerce Intelligence] richiede l&#39;utilizzo del gestore della Data Warehouse, in cui si crea un percorso tra `orders` e `customers` quindi creare una colonna denominata `Customer LTV` nel tavolo del cliente.
 
 Scopri come stabilire un nuovo percorso tra `customers` e `orders`. L’obiettivo finale è quello di creare una nuova colonna aggregata nel `customers` nella tabella, quindi passare alla `customers` nella Data Warehouse, quindi fai clic su **[!UICONTROL Create a Column** > ** Seleziona una definizione **> **SOMMA]**.
 
@@ -83,9 +83,9 @@ In questo caso è necessario considerare attentamente la relazione tra le due ta
 
 >[!NOTE]
 >
->In entrata [!DNL MBI], a *percorso* equivale a un `Join` in SQL.
+>In entrata [!DNL Commerce Intelligence], a `path` equivale a un `Join` in SQL.
 
-Una volta salvato il percorso, è possibile creare `Customer LTV` colonna! Osserva quanto segue:
+Una volta salvato il percorso, puoi creare `Customer LTV` colonna! Vedi di seguito:
 
 ![](../../assets/Customer_LTV.gif)
 
@@ -99,7 +99,7 @@ Consulta [creazione di colonne calcolate](../data-warehouse-mgr/creating-calcula
 
 ## `Group By` clausole
 
-`Group By` le funzioni nelle query sono spesso rappresentate in [!DNL MBI] come colonna utilizzata per segmentare o filtrare un rapporto visivo. Ad esempio, ripercorriamo il `Total Revenue` che hai esplorato in precedenza, ma questa volta segmenta i ricavi in base al `coupon\_code` per capire meglio quali coupon generano maggior fatturato.
+`Group By` le funzioni nelle query sono spesso rappresentate in [!DNL Commerce Intelligence] come colonna utilizzata per segmentare o filtrare un rapporto visivo. Ad esempio, ripercorriamo il `Total Revenue` che hai esplorato in precedenza, ma questa volta segmenta i ricavi in base al `coupon\_code` per capire meglio quali coupon generano maggior fatturato.
 
 Inizia con la query seguente:
 
@@ -149,10 +149,10 @@ Ora supponiamo che tu disponga già di metriche configurate per calcolare `Total
 
 ## Ritorno a capo
 
-Se sei un utente SQL esperto, pensare a come le query si traducono in [!DNL MBI] consente di creare colonne calcolate, metriche e rapporti.
+Se sei un utente SQL esperto, pensare a come le query si traducono in [!DNL Commerce Intelligence] consente di creare colonne calcolate, metriche e rapporti.
 
-Per un riferimento rapido, consulta la matrice seguente. Mostra l&#39;equivalente di una clausola SQL [!DNL MBI] e come può essere mappato a più elementi, a seconda di come viene utilizzato nella query.
+Per un riferimento rapido, consulta la matrice seguente. Mostra l&#39;equivalente di una clausola SQL [!DNL Commerce Intelligence] e come può essere mappato a più elementi, a seconda di come viene utilizzato nella query.
 
-## Elementi MBI
+## Elementi di Commerce Intelligence
 
 |**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—|—|—|—| |`SELECT`|X|-|X|-|X|-| |`FROM`|-|-|-|-|-|X| |`WHERE`|-|X|-|-|-|-| |`WHERE` (con elementi temporali)|-|-|-|X|-|-|-| |`JOIN...ON`X X |`GROUP BY`|-|-|X|-|-|-|

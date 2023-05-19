@@ -2,27 +2,30 @@
 title: Previsti dati di Google Adwords
 description: Scopri come utilizzare Data Warehouse Manager per tracciare facilmente i campi di dati rilevanti per l’analisi.
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
 
-# Previsti dati di Google Adwords
+# Previsto [!DNL Google Adwords] dati
 
 Dopo [hai connesso il tuo [!DNL Google Adwords] account](../integrations/google-adwords.md), è possibile utilizzare [Gestione Date Warehouse](../../data-warehouse-mgr/tour-dwm.md) per tracciare facilmente i campi di dati rilevanti per l’analisi.
 
-In questa pagina sono disponibili due tabelle per la replica nella Data Warehouse: `campaigns[account-id]` e `adwords[account-id]`.
+In questa pagina sono disponibili due tabelle per la replica nella Data Warehouse:
+
+* `campaigns[account-id]`
+* `adwords[account-id]`
 
 Il `campaigns` tabella *deve essere utilizzato per impostazione predefinita*, in modo da poter iniziare sincronizzando tutti i campi rilevanti da quella tabella.
 
 Il `adwords` la tabella contiene quattro colonne che non sono `campaigns` tabella:
 
-* `keyword`
-* `adContent`
-* `adDestinationUrl`
-* `adGroup`
+1. `keyword`
+1. `adContent`
+1. `adDestinationUrl`
+1. `adGroup`
 
 Quando ti interessa eseguire un’analisi che considera questi attributi, devi utilizzare `adwords` tabella.
 
@@ -30,9 +33,9 @@ Quando ti interessa eseguire un’analisi che considera questi attributi, devi u
 >
 >Questa tabella esclude le righe in cui tutte e quattro queste colonne sono `null`.
 
-Ecco uno schema previsto per entrambe le tabelle:
+Di seguito è riportato uno schema previsto per entrambe le tabelle.
 
-## `Campaigns` tabella
+## [!DNL Campaigns] tabella
 
 Il `campaigns` la tabella contiene le colonne seguenti:
 
@@ -52,7 +55,7 @@ Il `campaigns` la tabella contiene le colonne seguenti:
 
 {style="table-layout:auto"}
 
-## Tabella AdWords
+## [!DNL AdWords] tabella
 
 Il `adwords` la tabella contiene le colonne seguenti:
 
@@ -76,12 +79,12 @@ Il `adwords` la tabella contiene le colonne seguenti:
 
 {style="table-layout:auto"}
 
-Utilizzando questi dati, puoi iniziare a creare [metriche ](../../../data-user/reports/ess-manage-data-metrics.md) e [rapporti](../../../tutorials/using-visual-report-builder.md) in base ai dati di spesa e [uniscilo ai ricavi del tuo ciclo di vita per calcolare il ROI](../../analysis/roi-ad-camp.md).
+Utilizzando questi dati, puoi iniziare a creare [metriche](../../../data-user/reports/ess-manage-data-metrics.md) e [rapporti](../../../tutorials/using-visual-report-builder.md) in base ai dati di spesa e [uniscilo ai ricavi del tuo ciclo di vita per calcolare il ROI](../../analysis/roi-ad-camp.md).
 
 ## Tabelle consolidate
 
-L’Adobe consiglia di creare un `consolidated ad spend` tabella per combinare i dati provenienti da tutte le diverse origini pubblicitarie in un’unica tabella. Questo consente di utilizzare un singolo set di metriche per l’analisi pubblicitaria.
+[!DNL Adobe] consiglia di creare un `consolidated ad spend` tabella per combinare i dati provenienti da tutte le diverse origini pubblicitarie in un’unica tabella. Questo consente di utilizzare un singolo set di metriche per l’analisi pubblicitaria.
 
-Senza una tabella consolidata, se crei una dashboard bella sul `adwords` tabella, devi replicare il reporting o creare metriche duplicate per confrontare tali dati con il tuo [!DNL Facebook Ads] dati. L’utilizzo di una tabella consolidata consente di incorporare facilmente [!DNL Facebook Ads] con i dati esistenti [!DNL Adwords] rapporti. Puoi anche segmentare per piattaforma di annunci.
+Se non disponi di una tabella consolidata e costruisci una bella dashboard sul `adwords` tabella, devi replicare il reporting o creare metriche duplicate per confrontare tali dati con il tuo [!DNL Facebook Ads] dati. L’utilizzo di una tabella consolidata consente di incorporare facilmente [!DNL Facebook Ads] con i dati esistenti [!DNL Adwords] rapporti. Puoi anche segmentare per piattaforma di annunci.
 
-Se hai già sincronizzato i campi di cui sopra, contattaci per consolidare la spesa pubblicitaria.
+Se hai già sincronizzato i campi qui sopra, [contattaci](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per consolidare la spesa pubblicitaria.

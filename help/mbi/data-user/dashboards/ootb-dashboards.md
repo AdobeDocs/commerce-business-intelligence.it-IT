@@ -2,22 +2,22 @@
 title: Dashboard inclusi
 description: Scopri come verificare lo stato di metriche essenziali come i ricavi dal ciclo di vita dell’utente, il numero di acquisti ripetuti e altro ancora, creando in tal modo una solida base per le esplorazioni future.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
 
 # Dashboard inclusi
 
-Adobe offre e-commerce e `SaaS` Pacchetti iniziali. Questi pacchetti, creati da analisti Adobe, contengono un set personalizzato di dashboard e rapporti per il set di dati. Le analisi contenute in questi pacchetti consentono di verificare lo stato di metriche essenziali quali i ricavi derivanti dal ciclo di vita dell’utente, il numero di acquisti ripetuti e altro ancora, creando in tal modo una solida base per le esplorazioni future.
+[!DNL Adobe] offerte `eCommerce` e `SaaS` Pacchetti iniziali. Questi pacchetti, creati da analisti Adobe, contengono un set personalizzato di dashboard e rapporti per il set di dati. Le analisi contenute in questi pacchetti consentono di verificare lo stato di metriche essenziali quali i ricavi derivanti dal ciclo di vita dell’utente, il numero di acquisti ripetuti e altro ancora, creando in tal modo una solida base per le esplorazioni future.
 
 >[!NOTE]
 >
 >La disponibilità di alcune dashboard dipende dal set di dati.
 
-In caso di domande o se sei interessato ad aggiungere un pacchetto al tuo account, invia una [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) per assistenza.
+In caso di domande o se sei interessato ad aggiungere un pacchetto al tuo account, invia una [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per assistenza.
 
 ## Panoramica esecutiva
 

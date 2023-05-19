@@ -1,21 +1,21 @@
 ---
 title: Importa dati MailChimp
-description: Scopri come importare dati MailChimp in [!DNL MBI].
+description: Scopri come importare dati MailChimp in [!DNL Commerce Intelligence].
 exl-id: 5595c6a6-5476-4a0e-a493-ddc32161894e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
 
-# Importa `MailChimp` dati
+# Importa [!DNL Mailchimp] dati
 
-Per avere un quadro completo delle tue attività di campagna, puoi importare il tuo `MailChimp` inviare i dati della campagna e-mail a [!DNL MBI]. Per completare l&#39;importazione, è necessario eseguire le operazioni seguenti per ogni `MailChimp` campagna di cui disponi:
+Per avere un quadro completo delle tue attività di campagna, puoi importare il tuo [!DNL Mailchimp] inviare i dati della campagna e-mail a [!DNL Commerce Intelligence]. Per completare l&#39;importazione, è necessario eseguire le operazioni seguenti per ogni [!DNL Mailchimp] campagna di cui disponi:
 
 ## Esporta dati di apertura {#opens}
 
-1. Dopo l’accesso a `MailChimp`, passare alla `Campaigns` scheda.
+1. Dopo l’accesso a [!DNL Mailchimp], passare alla `Campaigns` scheda.
 
    ![importa mailchimp 1](../../../assets/import-mailchimp-1.png)
 
@@ -55,7 +55,7 @@ Per avere un quadro completo delle tue attività di campagna, puoi importare il 
 
 ## Esporta dati inviati {#sent}
 
-1. Accedi a `Campaigns` di MailChimp.
+1. Accedi a `Campaigns` scheda di [!DNL Mailchimp].
 
 1. Clic **[!UICONTROL View Report]** accanto al nome della campagna.
 
@@ -69,8 +69,8 @@ Per avere un quadro completo delle tue attività di campagna, puoi importare il 
 
    ![importa mailchimp 9](../../../assets/import-mailchimp-9.png)
 
-## Prepara i file per il caricamento in [!DNL MBI] {#upload}
+## Prepara i file per il caricamento in [!DNL Commerce Intelligence] {#upload}
 
-Ogni file - `Opens`, `Clicks`, e `Sent` - deve essere caricato in [!DNL MBI] come file separato. L’Adobe consiglia di denominare i file utilizzando questa convenzione di denominazione: `MailChimp\_ACTION\_DATE`. Sostituisci `ACTION` con `Open`, `Click`, o `Sent`, e sostituisci `DATE` con la data di esportazione.
+Ogni file - `Opens`, `Clicks`, e `Sent` - deve essere caricato in [!DNL Commerce Intelligence] come file separato. L’Adobe consiglia di denominare i file utilizzando questa convenzione di denominazione: `MailChimp\_ACTION\_DATE`. Sostituisci `ACTION` con `Open`, `Click`, o `Sent`, e sostituisci `DATE` con la data di esportazione.
 
 Quando sei pronto a caricare i file, utilizza [`File Upload` funzionalità](../connecting-data/using-file-uploader.md) per inserire i dati nella Data Warehouse.

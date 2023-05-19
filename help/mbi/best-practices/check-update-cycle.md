@@ -2,22 +2,22 @@
 title: Controllo dello stato del ciclo di aggiornamento
 description: Scopri come controllare lo stato del ciclo di aggiornamento.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
 
 # Avanzamento ciclo di aggiornamento
 
-Quando accedi a [!DNL MBI] sono disponibili diversi modi per controllare lo stato dell’ultimo ciclo di aggiornamento. Dipende tutto dal tipo di [autorizzazioni utente](../administrator/user-management/user-management.md) che hai.
+Quando accedi a [!DNL Adobe Commerce Intelligence] sono disponibili diversi modi per controllare lo stato dell’ultimo ciclo di aggiornamento. Dipende tutto dal tipo di [autorizzazioni utente](../administrator/user-management/user-management.md) che hai.
 
 ## Perché devo controllare lo stato del ciclo di aggiornamento?
 
-La verifica del ciclo di aggiornamento dello stato è utile quando si controllano i dati nel [!DNL MBI] account. Se vedi [risultati che non soddisfano le tue aspettative](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)ad esempio le vendite giornaliere in [!DNL MBI] non corrispondono a ciò che visualizzi nella tua piattaforma di e-commerce o nel tuo [[!DNL Google] ricavi da e-commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) puoi controllare l’ultimo punto dati per vedere se il problema è risolto al termine di un aggiornamento.
+La verifica del ciclo di aggiornamento dello stato è utile quando si controllano i dati nel [!DNL Commerce Intelligence] account. Se vedi [risultati che non soddisfano le tue aspettative](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)ad esempio le vendite giornaliere in [!DNL Commerce Intelligence] non corrispondono a ciò che visualizzi nella tua piattaforma di e-commerce o nel tuo [[!DNL Google] ricavi da e-commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) puoi controllare l’ultimo punto dati per vedere se il problema è risolto al termine di un aggiornamento.
 
-## [!UICONTROL Read-Only] e [!UICONTROL Standard]Utenti **
+## [!UICONTROL Read-Only] e [!UICONTROL Standard] Utenti
 
 `Read-only` gli utenti possono accedere al proprio dashboard e vedere quanto recentemente i dati sono stati aggiornati passando con il mouse sull’icona in alto a destra della pagina. Questo mostra quando è stato estratto l’ultimo punto dati.
 
@@ -39,4 +39,4 @@ Se un aggiornamento non è in corso, viene visualizzato un collegamento per forz
 
 >[!NOTE]
 >
->Se si dispone di ore di sospensione attività (orario non desiderato) [!DNL MBI] per aggiornare i dati) impostata, forzare un aggiornamento avvia un ciclo di aggiornamento che non rispetta le limitazioni di tali ore di sospensione attività.
+>Se si dispone di ore di sospensione attività (orario non desiderato) [!DNL Commerce Intelligence] per aggiornare i dati) impostata, forzare un aggiornamento avvia un ciclo di aggiornamento che non rispetta le limitazioni di tali ore di sospensione attività.

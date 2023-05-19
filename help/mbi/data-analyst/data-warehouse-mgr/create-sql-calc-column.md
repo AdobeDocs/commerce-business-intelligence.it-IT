@@ -1,23 +1,23 @@
 ---
 title: Creazione e utilizzo di una colonna calcolata SQL
-description: Scopri come creare colonne avanzate sotto forma di colonne di calcolo SQL nella nuova architettura di MBI.
+description: Scopri come creare colonne avanzate sotto forma di colonne di calcolo SQL nella nuova architettura di Adobe Commerce Intelligence.
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
 
 # Creare una colonna calcolata SQL
 
-Questo argomento illustra lo scopo e gli utilizzi del `Calculation` tipo di colonna: che può essere aggiunto alle tabelle utilizzando [Gestione Date Warehouse](../data-warehouse-mgr/tour-dwm.md). Di seguito viene fornita una spiegazione di ciò che fanno i calcoli SQL, del motivo per cui vengono utilizzati, del processo di creazione di un calcolo SQL e di due esempi.
+Questo argomento illustra lo scopo e gli utilizzi del `Calculation` tipo di colonna, che può essere aggiunto alle tabelle utilizzando [Gestione Date Warehouse](../data-warehouse-mgr/tour-dwm.md). Di seguito vengono illustrate le operazioni dei calcoli SQL, il motivo per cui vengono utilizzati e il processo per la creazione di un calcolo SQL. Sono inclusi due esempi.
 
 **Spiegazione**
 
-In passato, le colonne considerate `advanced` può essere eseguito solo da un analista del team Customer Success, qui [!DNL MBI]. Ora tutto il potere è nelle mani dell&#39;utente finale, e colonne avanzate possono essere create sotto forma di `SQL Calculation` colonne sul nuovo [!DNL MBI] architettura.
+In passato, le colonne considerate `advanced` può essere eseguito solo da un analista del team Customer Success, qui [!DNL Adobe Commerce Intelligence]. Ora tutto il potere è nelle mani dell&#39;utente finale, e colonne avanzate possono essere create sotto forma di `SQL Calculation` colonne sul nuovo [!DNL Commerce Intelligence] architettura.
 
-Il `Calculation` Il tipo di colonna, ora disponibile come opzione in Gestione Date Warehouse, è la stessa operazione di tabella che consente di trasformare le colonne in una tabella utilizzando la logica PostgreSQL. Documentazione sulle funzioni e sugli operatori che possono essere utilizzati nel `Calculatio`Nel sito Web PostgreSQL è possibile trovare un tipo di colonna [qui](https://www.postgresql.org/docs/9.6/functions.html).
+Il `Calculation` Il tipo di colonna, ora disponibile come opzione in Gestione Date Warehouse, è la stessa operazione di tabella che consente di trasformare le colonne in una tabella utilizzando la logica PostgreSQL. Documentazione sulle funzioni e sugli operatori che possono essere utilizzati nel `Calculation` Il tipo di colonna si trova sul sito Web PostgreSQL [qui](https://www.postgresql.org/docs/9.6/functions.html).
 
 Le diverse colonne che possono essere create con `Calculation` Le colonne sono quasi illimitate, ma la maggior parte delle colonne può essere creata utilizzando le istruzioni IF-THEN e l&#39;aritmetica di base, utilizzata negli esempi seguenti.
 
@@ -73,4 +73,5 @@ Da qui puoi creare una `Calculation` seguendo i passaggi seguenti:
    * `Datetime` dd/MM/yyyy hh:mm:formato ss
 
 1. Clic **[!UICONTROL test column]**. In questo modo viene generato un elenco di cinque valori di test per ogni input e viene visualizzato il risultato della logica del passaggio 6 per ogni set di valori di test. Se una parte qualsiasi dell&#39;istruzione SQL genera un errore, viene restituito il messaggio di errore appropriato. I risultati di esempio possono essere generati solo se tutte le colonne di input sono campi nativi. Se una delle colonne di input è una colonna calcolata, devi convalidarne i risultati aggiungendo la colonna a una metrica e visualizzandola nel Report Builder visivo
+
 1. Quando si è soddisfatti dei risultati, fare clic su **[!UICONTROL Save]**. La colonna è abilitata per l’uso.

@@ -2,16 +2,16 @@
 title: Analisi dei livelli di magazzino
 description: Scopri come analizzare i livelli di inventario.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # Analizza livelli scorte
 
-In questo argomento viene illustrato come impostare un dashboard che fornisca informazioni approfondite sull&#39;inventario corrente. Questo argomento contiene istruzioni per i client sia sull&#39;architettura legacy che sulla nuova architettura. Se non disponi della funzionalità **[!UICONTROL Data Warehouse Views]** opzione sotto **[!UICONTROL Manage Data]** menu). Se ti trovi nell’architettura legacy, invia una [nuova richiesta di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) con l&#39;oggetto **[!UICONTROL INVENTORY ANALYSIS]** una volta raggiunta la sezione designata nel _Colonne calcolate_ istruzioni di seguito.
+In questo argomento viene illustrato come impostare un dashboard che fornisca informazioni approfondite sull&#39;inventario corrente e contenga istruzioni per i client sia sull&#39;architettura legacy che sulla nuova architettura. Se non disponi della funzionalità **[!UICONTROL Data Warehouse Views]** opzione sotto **[!UICONTROL Manage Data]** menu. Se ti trovi nell’architettura legacy, invia una [nuova richiesta di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) con l&#39;oggetto **[!UICONTROL INVENTORY ANALYSIS]** una volta raggiunta la sezione designata nel _Colonne calcolate_ istruzioni di seguito.
 
 ## Colonne da tracciare:
 
@@ -29,7 +29,7 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
 
 ## Colonne calcolate:
 
-### Nuova architettura
++++ Nuova architettura
 
 * **[!UICONTROL catalog_product_entity]** tabella:
    * **`Product's most recent order date`**
@@ -118,7 +118,8 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
 
 
 
-### Architettura legacy
++++
++++ Architettura legacy
 
 * **[!UICONTROL catalog_product_entity]** tabella:
    * **`Product's most recent order date`**
@@ -189,6 +190,8 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
 
 
 
++++
+
 ## Metriche
 
 ### Istruzioni sulle metriche
@@ -240,4 +243,4 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
       [!UICONTROL Chart type]: `Table`
 
 
-In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il team Professional Services, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il team Professional Services, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

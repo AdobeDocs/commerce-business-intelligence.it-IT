@@ -2,7 +2,7 @@
 title: Abbandono e Commerce
 description: Scopri come generare e analizzare il tasso di abbandono di Commerce.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 2%
@@ -15,7 +15,7 @@ In questo argomento viene illustrato come calcolare un **frequenza di abbandono*
 
 ![](../../assets/Churn_rate_image.png)
 
-Molti clienti desiderano assistenza per iniziare a concettualizzare ciò che **arco temporale** devono utilizzare in base ai loro dati. Se desideri utilizzare il comportamento storico del cliente per definire questo **intervallo di abbandono**, potrebbe essere utile acquisire familiarità con [definizione dell’abbandono](../analysis/define-cust-churn.md) articolo. Quindi, puoi utilizzare i risultati nella formula per il tasso di abbandono nelle istruzioni seguenti.
+Molti clienti desiderano assistenza per iniziare a concettualizzare ciò che **arco temporale** devono utilizzare in base ai loro dati. Se desideri utilizzare il comportamento storico del cliente per definire questo **intervallo di abbandono**, potrebbe essere utile acquisire familiarità con [definizione dell’abbandono](../analysis/define-cust-churn.md) argomento. Quindi, puoi utilizzare i risultati nella formula per il tasso di abbandono nelle istruzioni seguenti.
 
 ## Colonne calcolate
 
@@ -55,9 +55,9 @@ Colonne da creare
 * **Nuovi clienti (per data ultimo ordine)**
    * Clienti conteggiati
 
->[!NOTE]
->
->Questa metrica potrebbe esistere sul tuo account.
+   >[!NOTE]
+   >
+   >Questa metrica potrebbe esistere sul tuo account.
 
 * In **`customer_entity`** tabella
 * Questa metrica esegue una **Conteggio**

@@ -2,7 +2,7 @@
 title: Rapporto Probabilità di ripetizione ordine
 description: Scopri e comprendi il rapporto Probabilità di ordine di ripetizione.
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Quando è `Incremental Event Probability` prospettiva disponibile?
 
-Il `incremental event probability` la prospettiva è disponibile solo quando i filtri utilizzano dimensioni uguali per tutti gli ordini (ad esempio, `gender`, dell&#39;utente `age` o dell&#39;utente `source`)
+Il `incremental event probability` la prospettiva è disponibile solo quando i filtri utilizzano dimensioni uguali per tutti gli ordini (ad esempio, `gender`, dell&#39;utente `age` o dell&#39;utente `source`).
 
 Questo perché questa prospettiva si basa su una dimensione denominata `User's order number` per la segmentazione, che indica la quantità di acquisti di un utente (ad esempio, primo, secondo e terzo ordine di John).
 
@@ -23,7 +23,7 @@ Se hai aggiunto un filtro che utilizza una dimensione non uguale per tutti gli o
 
 In alcuni casi, può essere possibile trasformare un `order-specific` dimensione in un `user-specific` dimensione da aggiungere come filtro nel `Repeat Order Probability` grafico. In questi casi, viene restituito l&#39;attributo order del primo ordine o dell&#39;ultimo ordine di un utente, ad esempio il nome dell&#39;area di primo ordine dell&#39;utente.
 
-Se desiderate creare una nuova quota, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Se desiderate creare una nuova quota, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Confronto della probabilità di ripetizione degli ordini con attributi diversi
 
@@ -33,7 +33,7 @@ I numeri che compongono tale grafico possono quindi essere esportati in Excel pe
 
 ### Esempio:
 
-|  |  |
+| Categoria | Valore |
 |---|---|
 | Numero di clienti che hanno effettuato 1 acquisto nel corso della loro vita | `90` |
 | Numero di clienti che hanno effettuato 2 acquisti nel corso della loro vita | `30` |

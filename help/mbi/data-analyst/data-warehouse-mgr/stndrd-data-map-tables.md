@@ -2,16 +2,16 @@
 title: Standardizzare i dati con le tabelle di mappatura
 description: Scopri come utilizzare le tabelle di mappatura.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
 
 # Standardizzare i dati con le tabelle di mappatura
 
-Immagina: sei nel `Report Builder`, creazione di un `Revenue by State` rapporto. Sei nella zona. Andrà tutto bene finché non aggiungi un `billing state` Il raggruppamento nel report mostra quanto segue:
+Immagina di essere nel `Report Builder` creazione di un `Revenue by State` rapporto. Tutto sta andando bene finché non provi ad aggiungere un `billing state` Il raggruppamento nel report mostra quanto segue:
 
 ![](../../assets/Messy_State_Segments.png)
 
@@ -45,9 +45,9 @@ Nella seconda colonna immettere i valori **dovrebbe essere**. Continuando con l&
 
 ![](../../assets/Mapping_table_examples.jpg)
 
-## Cosa devo fare in [!DNL MBI] per usarlo? {#use}
+## Cosa devo fare in [!DNL Commerce Intelligence] per usarlo? {#use}
 
-Al termine della creazione della tabella di mappatura, dovrai [carica il file](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) in [!DNL MBI] e [creare una colonna unita in join](../../data-analyst/data-warehouse-mgr/calc-column-types.md) che riposiziona il nuovo campo nella tabella desiderata. Puoi eseguire questa operazione dopo che il file è stato sincronizzato con la Data Warehouse.
+Al termine della creazione della tabella di mappatura, è necessario [carica il file](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) in [!DNL Commerce Intelligence] e [creare una colonna unita in join](../../data-analyst/data-warehouse-mgr/calc-column-types.md) che riposiziona il nuovo campo nella tabella desiderata. Puoi eseguire questa operazione dopo che il file è stato sincronizzato con la Data Warehouse.
 
 In questo esempio viene spostata la colonna creata in `mapping_state` tabella (`state_input`) al `customer_address` utilizzando una colonna unita in join. Questo ci permette di raggruppare in base al pulito `state_input` nei rapporti anziché nella `state` colonna.
 
@@ -70,15 +70,13 @@ Per creare `joined` , passare alla tabella in cui il campo verrà spostato in Ge
 1. Il percorso potrebbe non essere popolato immediatamente dopo il salvataggio - in questo caso, fai clic su `Path` e selezionare il percorso creato.
 1. Clic **[!UICONTROL Save]** per creare la colonna.
 
-Tutto qui!
-
 ## Cosa faccio ora? {#wrapup}
 
 Al termine di un ciclo di aggiornamento, potrai utilizzare la nuova colonna unita per segmentare correttamente i dati anziché la colonna confusa dal database. Esaminare le opzioni di raggruppamento ora, senza ulteriori problemi di stress:
 
 ![](../../assets/Clean_State_Segments.png)
 
-Le tabelle di mappatura sono utili per ogni momento in cui si desidera eliminare alcuni dati potenzialmente confusi nella Data Warehouse. Tuttavia, le tabelle di mappatura possono essere utilizzate anche per altri casi d’uso interessanti, come [replica dei canali Google Analytics in MBI](../data-warehouse-mgr/rep-google-analytics-channels.md).
+Le tabelle di mappatura sono utili per ogni momento in cui si desidera eliminare alcuni dati potenzialmente confusi nella Data Warehouse. Tuttavia, le tabelle di mappatura possono essere utilizzate anche per altri casi d’uso interessanti, come [replica di [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 
 ### Correlato
 
