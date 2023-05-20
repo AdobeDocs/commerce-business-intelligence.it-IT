@@ -11,4 +11,4 @@ ht-degree: 0%
 
 # Esporta i risultati della query
 
-Fai clic su **[!UICONTROL Export Data]** in `Results` per esportare i risultati in un `.csv` file.
+Clic **[!UICONTROL Export Data]** nel `Results` per esportare i risultati in una `.csv` file.

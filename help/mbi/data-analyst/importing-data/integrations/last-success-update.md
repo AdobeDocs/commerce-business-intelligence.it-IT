@@ -20,7 +20,7 @@ Potresti essere curioso di sapere cosa... `Last successful update began` il camp
 Mostra l&#39;inizio `timestamp` (nel fuso orario impostato sul tuo account) del _ultimo ciclo di aggiornamento riuscito_ sul tuo account.
 
 - Se una delle tabelle sincronizzate ha riscontrato un problema durante l’ultimo ciclo di aggiornamento, il timestamp è *non aggiornato*.
-- Di conseguenza, in alcuni casi i report possono essere stati aggiornati con nuovi dati, ma il *L’ultimo aggiornamento riuscito è iniziato* è ancora in ritardo.
+- Di conseguenza, in alcuni casi i report possono essere stati aggiornati con dati aggiornati, ma il *L’ultimo aggiornamento riuscito è iniziato* è ancora in ritardo.
 
 ## Identificare l’ultimo punto dati &quot;reale&quot;
 
