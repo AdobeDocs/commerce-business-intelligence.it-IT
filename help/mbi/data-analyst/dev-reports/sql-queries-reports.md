@@ -2,7 +2,7 @@
 title: Traduzione di query SQL in report di Commerce Intelligence
 description: Scopri come le query SQL vengono convertite nelle colonne calcolate e nelle metriche utilizzate in Commerce Intelligence.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+source-git-commit: fa65bd909495d4d73cabbc264e9a47b3e0a0da3b
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Alla fine di questo argomento, troverai **matrice di traduzione** per le clausol
 
 Inizia guardando una query generale:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `a,` | Report `group by` |
@@ -42,7 +42,7 @@ Osserva un esempio per ciascuno dei precedenti.
 
 Osserva un esempio specifico di come un `Total Revenue` la metrica potrebbe essere definita in [!DNL Commerce Intelligence]. Osserva la query seguente che tenti di tradurre:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation` (colonna) |
@@ -63,7 +63,7 @@ La query per questa aggregazione potrebbe essere simile alla seguente:
 
 |  |  |
 |--- |--- |
-| `Select` |  |
+| `Select` | |
 | `c.customer_id` | Proprietario aggregato |
 | `SUM(o.order_total) as "Customer LTV"` | Operazione di aggregazione (colonna) |
 | `FROM customers c` | Tabella del proprietario aggregato |
@@ -103,7 +103,7 @@ Consulta [creazione di colonne calcolate](../data-warehouse-mgr/creating-calcula
 
 Inizia con la query seguente:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT coupon_code,` | Report `group by` |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation`(colonna) |
@@ -132,7 +132,7 @@ Il primo metodo implicherebbe la creazione di una nuova metrica che esegue una m
 
 Fai un passo indietro e osserva la query complessiva per `Average order value`:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | Metrica `operation` (colonna) |
@@ -155,4 +155,11 @@ Per un riferimento rapido, consulta la matrice seguente. Mostra l&#39;equivalent
 
 ## Elementi di Commerce Intelligence
 
-|**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—|—|—|—| |`SELECT`|X|-|X|-|X|-| |`FROM`|-|-|-|-|-|X| |`WHERE`|-|X|-|-|-|-| |`WHERE` (con elementi temporali)|-|-|-|X|-|-|-| |`JOIN...ON`X X |`GROUP BY`|-|-|X|-|-|-|
+| **`SQL Clause`** | **`Metric`** | **`Filter`** | **`Report group by`** | **`Report time frame`** | **`Path`** | **`Calculated column inputs`** | **`Source table`** |
+|---|---|---|---|---|---|---|---|
+| `SELECT` | X | - | X | - | - | X | - |
+| `FROM` | - | - | - | - | - | - | X |
+| `WHERE` | - | X | - | - | - | - | - |
+| `WHERE` (con elementi temporali) | - | - | - | X | - | - | - |
+| `JOIN...ON` | - | X | - | - | X | X | - |
+| `GROUP BY` | - | - | X | - | - | - | - |
