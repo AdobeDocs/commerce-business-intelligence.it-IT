@@ -2,7 +2,9 @@
 title: Ordini degli ospiti
 description: Scopri l’impatto degli ordini degli ospiti sui tuoi dati e quali opzioni hai per tenere adeguatamente conto degli ordini degli ospiti nel tuo [!DNL Commerce Intelligence] Data Warehouse.
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -21,13 +23,13 @@ Nel database di Commerce tipico, è presente un `orders` tabella che si unisce a
 
 * **Se tutti i clienti sono registrati** e gli ordini degli ospiti non sono consentiti, il che significa che ogni record nel `orders` la tabella contiene un valore in `customer\_id` colonna. Di conseguenza, ogni ordine torna al `customers` tabella.
 
-   ![](../../assets/guest-orders-4.png)
+  ![](../../assets/guest-orders-4.png)
 
 * **Se gli ordini degli ospiti sono consentiti**, ciò significa che alcuni ordini non hanno un valore in `customer\_id` colonna. Solo i clienti registrati ricevono un valore per `customer\_id` colonna sulla `orders` tabella. I clienti non registrati ricevono un `NULL` o vuoto per questa colonna. Di conseguenza, non tutti i record degli ordini hanno record corrispondenti nel `customers` tabella.
 
-   >[!NOTE]
-   >
-   >Per identificare l’individuo univoco che ha effettuato l’ordine, accanto a deve essere presente un altro attributo utente univoco `customer\_id` allegato a un ordine. In genere, viene utilizzato l’indirizzo e-mail del cliente.
+  >[!NOTE]
+  >
+  >Per identificare l’individuo univoco che ha effettuato l’ordine, accanto a deve essere presente un altro attributo utente univoco `customer\_id` allegato a un ordine. In genere, viene utilizzato l’indirizzo e-mail del cliente.
 
 ## Come contabilizzare gli ordini degli ospiti nella configurazione Data Warehouse
 

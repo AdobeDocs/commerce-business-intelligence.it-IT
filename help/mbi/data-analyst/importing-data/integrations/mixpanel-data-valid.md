@@ -2,7 +2,7 @@
 title: Convalida dei dati in Mixpanel
 description: Scopri come verificare di aver sincronizzato tutti gli stessi dati disponibili direttamente in Mixpanel.
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Quando [!DNL Adobe Commerce Intelligence] prima si connette al tuo [!DNL Mixpanel] dati, il tuo Account Manager o analista potrebbe richiedere di fornire esportazioni di dati da [!DNL Mixpanel] a scopo di convalida. Ciò ti consente di confermare di aver sincronizzato tutti gli stessi dati disponibili direttamente in [!DNL Mixpanel].
 
-## Processo di esportazione dei dati: `Events`
+## Processo di esportazione dei dati: `Events`
 
 1. Visita il `Segmentation` sezione e visualizzazione `Your Top Events`.
 

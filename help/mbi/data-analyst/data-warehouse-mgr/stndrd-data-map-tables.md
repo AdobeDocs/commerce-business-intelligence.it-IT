@@ -2,7 +2,9 @@
 title: Standardizzare i dati con le tabelle di mappatura
 description: Scopri come utilizzare le tabelle di mappatura.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -64,7 +66,7 @@ Per creare `joined` , passare alla tabella in cui il campo verrà spostato in Ge
    * Il giorno `One` , selezionare il `mapping` tabella e `Primary key` colonna. In questo caso, seleziona il `state_input` colonna da `mapping_state` tabella.
    * Ecco un’anteprima del percorso:
 
-      ![](../../assets/State_Mapping_Path.png)
+     ![](../../assets/State_Mapping_Path.png)
 
 1. Al termine, fai clic su **[!UICONTROL Save]** per creare il percorso.
 1. Il percorso potrebbe non essere popolato immediatamente dopo il salvataggio - in questo caso, fai clic su `Path` e selezionare il percorso creato.

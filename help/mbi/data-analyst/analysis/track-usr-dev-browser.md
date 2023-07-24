@@ -2,7 +2,9 @@
 title: 'Google Analytics: tieni traccia dei dati del browser e del dispositivo utente nel database'
 description: Scopri quanti utenti accedono effettivamente tramite dispositivi mobili e come questo influisce sul loro valore nel ciclo di vita.
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -20,8 +22,7 @@ Ogni volta che viene effettuata una richiesta al sito web, il browser dell’ute
 1. `Mozilla/5.0 (Macintosh; Intel Mac OS X 10\_8\_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36`
 1. `Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/17.0 Firefox/17.0`
 1. `Mozilla/5.0 (iPhone; U; CPU iPhone OS 4\_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8A293 Safari/6531.22.7`
-1.
-` Mozilla/5.0 (iPad; CPU OS 5\_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3`
+1.` Mozilla/5.0 (iPad; CPU OS 5\_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3`
 1. `Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1`
 
 Se osservi attentamente, vedrai che la stringa contiene informazioni sul sistema operativo dell’utente, sul browser e sul nome del dispositivo che sta utilizzando (se ha un nome). Anche se le stringhe dell’agente utente variano notevolmente tra le piattaforme e persino tra le versioni della stessa piattaforma, è generalmente vero che il nome della piattaforma esisterà da qualche parte all’interno di. Ad esempio, #1 precedente è un Mac con il browser Chrome, #2 precedente è un computer Windows con il browser Firefox, #3 è un iPhone, #4 è un iPad e #5 è un dispositivo Android.

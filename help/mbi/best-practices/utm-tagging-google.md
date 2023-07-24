@@ -2,7 +2,9 @@
 title: Tracciamento UTM nelle Google Analytics
 description: Scopri le best practice per il tracciamento UTM (assegnazione tag) nelle Google Analytics.
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
-source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Integration, Data Import/Export, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: Analisi del valore del ciclo di vita previsto (LTV) (base)
 description: Scopri come creare analisi per comprendere il valore del ciclo di vita dei clienti attuali e prevedere in che modo il valore del ciclo di vita aumenta con un numero maggiore di ordini.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -23,17 +25,16 @@ Il primo passaggio consiste nel creare una nuova metrica con i passaggi seguenti
 * Accedi a **[!UICONTROL Manage Data > Metrics]**
    * Visualizza il **[!UICONTROL Avg lifetime revenue]**.
 
-   >[!NOTE]
-   >
-   >La tabella su cui è costruita questa metrica (probabilmente `customer_entity` o `sales_order` a seconda della capacità del tuo negozio di accettare il pagamento come ospite.).
+  >[!NOTE]
+  >
+  >La tabella su cui è costruita questa metrica (probabilmente `customer_entity` o `sales_order` a seconda della capacità del tuo negozio di accettare il pagamento come ospite.).
 
    * Clic **[!UICONTROL Create New Metric]** e seleziona la tabella dall’alto.
    * Questa metrica esegue una **Mediana** il `Customer's lifetime revenue` colonna, ordinata per `created_at`.
       * [!UICONTROL Filters]:
          * Aggiungi il `Customers we count (Saved Filter Set)` (o `Registered accounts we count`)
+
    * Assegna un nome alla metrica, ad esempio `Median lifetime revenue`.
-
-
 
 ## Creazione del dashboard
 
@@ -53,7 +54,7 @@ Una volta creata la metrica, puoi **creare un dashboard** in questo modo:
    * [!UICONTROL Metric]: `Avg lifetime revenue`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
@@ -61,11 +62,11 @@ Una volta creata la metrica, puoi **creare un dashboard** in questo modo:
       * Aggiungi [!UICONTROL filters]:
          * [`A`] `Customer's group code` **Diverso da** `Not Logged In`
          * [`B`] `Customer's lifetime number of orders` **Maggiore di**`0`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
-
 
 * **[!UICONTROL Average and Median LTV]**
    * Metrica `1`: `Avg lifetime revenue`
@@ -73,7 +74,7 @@ Una volta creata la metrica, puoi **creare un dashboard** in questo modo:
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
    * 
-      [!UICONTROL Chart Type]: `Line`
+     [!UICONTROL Chart Type]: `Line`
    * Deseleziona `Multiple Y-Axes`
 
 * **LTV per numero di ordini a vita**
@@ -81,14 +82,14 @@ Una volta creata la metrica, puoi **creare un dashboard** in questo modo:
    * Metrica `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * [!UICONTROL Group by]: `Customer's lifetime number of orders`
    * 
+     [!UICONTROL Chart Type]: `Line`
 
-      [!UICONTROL Chart Type]: `Line`
-   >[!NOTE]
-   >
-   >Non aggiungere tutti i valori per `Customer's lifetime number of orders`. Osservare invece un punto in cui il numero di nuovi clienti raggiunge un numero limitato e aggiungere manualmente il numero di ordini del ciclo di vita di ogni cliente a tale punto. Ad esempio, se ci sono 200 clienti in un ordine, 75 in due, 15 in tre e 3 in quattro, aggiungi *1, 2 e 3*.
+  >[!NOTE]
+  >
+  >Non aggiungere tutti i valori per `Customer's lifetime number of orders`. Osservare invece un punto in cui il numero di nuovi clienti raggiunge un numero limitato e aggiungere manualmente il numero di ordini del ciclo di vita di ogni cliente a tale punto. Ad esempio, se ci sono 200 clienti in un ordine, 75 in due, 15 in tre e 3 in quattro, aggiungi *1, 2 e 3*.
 
 * Aggiungi il [!UICONTROL Avg customer lifetime revenue by cohort] rapporto.
 

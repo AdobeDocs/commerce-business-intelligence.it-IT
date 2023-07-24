@@ -2,7 +2,9 @@
 title: Tracciamento degli obiettivi rispetto alle metriche
 description: Scopri come impostare una dashboard che ti aiuti a tenere traccia degli obiettivi aziendali in base ai dati effettivi, inclusi ricavi, nuovi utenti registrati e ordini nel tempo.
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
@@ -54,51 +56,46 @@ Nell’analisi dei target, è utile disporre di una combinazione di valori stati
 * **Ricavi rimasti per raggiungere l&#39;obiettivo**
 * Metrica `A`: `Revenue`
 * 
-
-   [!UICONTROL Metric]: `Revenue`
+  [!UICONTROL Metric]: `Revenue`
 
 * Metrica `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
 * 
-   [!UICONTROL Formula]: `(B-A)`
+  [!UICONTROL Formula]: `(B-A)`
 * 
-
-   [!UICONTROL Format]: `Number`
+  [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: (qualunque sia il periodo di tempo rilevante desiderato)
 * 
-   [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]: `Month`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **Obiettivi di ricavo**
 * Metrica `A`: `Revenue`
 * 
-
-   [!UICONTROL Metric]: `Revenue`
+  [!UICONTROL Metric]: `Revenue`
 
 * Metrica `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * Metrica `C`: `Revenue (amount change since previous year)` (nascondi)
 * 
-   [!UICONTROL Metric]: `Revenue`
+  [!UICONTROL Metric]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (questo mese, ultimo anno)
 * 
-   [!UICONTROL Formula]: `(A-C)`
+  [!UICONTROL Formula]: `(A-C)`
 * 
-
-   [!UICONTROL Format]: `Currency`
+  [!UICONTROL Format]: `Currency`
 
 * Disattiva `Multiple Y-Axes`
 * [!UICONTROL Time period]: (qualunque sia il periodo di tempo rilevante desiderato)*
 * 
-   [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 
 Una volta completati i rapporti di cui sopra per gli obiettivi di ricavo, puoi creare rapporti identici per gli obiettivi in base agli ordini, ai conti registrati o a qualsiasi altro valore incluso nel caricamento del file degli obiettivi.

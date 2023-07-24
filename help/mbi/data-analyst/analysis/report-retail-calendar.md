@@ -2,7 +2,9 @@
 title: Generazione di rapporti su un calendario di vendita al dettaglio
 description: Scopri come impostare la struttura per utilizzare un calendario 4-5-4 per la vendita al dettaglio all’interno del [!DNL Commerce Intelligence] account.
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -49,18 +51,19 @@ Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-c
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]: `Date Retail`
       * 
-         [!UICONTROL Datatype]: `Datetime`
+        [!UICONTROL Datatype]: `Datetime`
       * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
-         >[!NOTE]
-         >
-         >Il `now()` La funzione precedente è specifica di PostgreSQL. Anche se la maggior parte [!DNL Commerce Intelligence] I data warehouse sono ospitati su PostgreSQL, alcuni possono essere ospitati su Redshift. Se il calcolo precedente restituisce un errore, potrebbe essere necessario utilizzare la funzione Redshift `getdate()` invece di `now()`.
+        >[!NOTE]
+        >
+        >Il `now()` La funzione precedente è specifica di PostgreSQL. Anche se la maggior parte [!DNL Commerce Intelligence] I data warehouse sono ospitati su PostgreSQL, alcuni possono essere ospitati su Redshift. Se il calcolo precedente restituisce un errore, potrebbe essere necessario utilizzare la funzione Redshift `getdate()` invece di `now()`.
+
    * **Anno corrente di vendita al dettaglio** (Deve essere creato dall’analista del supporto tecnico)
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
       * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
       * 
-         [!UICONTROL Operation]: `Max`
+        [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]: `Year Retail`
    * **Incluso nell&#39;anno corrente di vendita al dettaglio? (Sì/No)**
       * [!UICONTROL Column type]: `Same table > Calculation`
@@ -68,7 +71,7 @@ Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-c
          * `A` - `Year Retail`
          * `B` - `Current retail year`
       * 
-         [!UICONTROL Datatype]: `String`
+        [!UICONTROL Datatype]: `String`
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **Incluso nell&#39;anno precedente? (Sì/No)**
       * [!UICONTROL Column type]: `Same table > Calculation`
@@ -76,9 +79,8 @@ Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-c
          * `A` - `Year Retail`
          * `B` - `Current retail year`
       * 
-         [!UICONTROL Datatype]: String
+        [!UICONTROL Datatype]: String
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
-
 
 * **sales\_order** tabella
    * **Creato\_at (anno vendita al dettaglio)**
@@ -138,64 +140,62 @@ Nota: non sono necessarie nuove metriche per questa analisi. Tuttavia, assicurat
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * 
-      [!UICONTROL Group by]: `Created\_at` (retail week)
+     [!UICONTROL Group by]: `Created\_at` (retail week)
    * 
-      [!UICONTROL Chart type]: `Line`
+     [!UICONTROL Chart type]: `Line`
       * Disattiva `multiple Y-axes`
 
 * **Panoramica calendario vendita al dettaglio (anno vendita al dettaglio corrente per mese)**
    * Metrica `A`: `Revenue`
       * 
-         [!UICONTROL Metric]: `Revenue`
+        [!UICONTROL Metric]: `Revenue`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * Metrica `B`: `Orders`
       * [!UICONTROL Metric]: `Number of orders`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * Metrica `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * 
-      [!UICONTROL Group by]: `Created\_at` (retail month)
+     [!UICONTROL Group by]: `Created\_at` (retail month)
    * 
-
-      [!UICONTROL Chart type]: `Line`
+     [!UICONTROL Chart type]: `Line`
 
 * **Panoramica calendario vendite al dettaglio (anno precedente vendite al dettaglio per mese)**
    * Metrica `A`: `Revenue`
       * 
-         [!UICONTROL Metric]: `Revenue`
+        [!UICONTROL Metric]: `Revenue`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * Metrica `B`: `Orders`
       * [!UICONTROL Metric]: numero di ordini
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * Metrica `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
          * 
-            [!UICONTROL Include current retail year?]: `Yes`
+           [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * 
-      [!UICONTROL Group by]: `Created\_at` (retail month)
+     [!UICONTROL Group by]: `Created\_at` (retail month)
    * 
-
-      [!UICONTROL Chart type]: `Line`
+     [!UICONTROL Chart type]: `Line`
 
 ## Passaggi successivi
 

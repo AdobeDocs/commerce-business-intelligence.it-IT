@@ -2,7 +2,9 @@
 title: Analisi codice coupon (base)
 description: Scopri le prestazioni dei coupon nel tuo business, un modo interessante per segmentare gli ordini e comprendere meglio le abitudini dei clienti.
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -57,142 +59,140 @@ Il primo passaggio consiste nel creare una nuova metrica con i passaggi seguenti
 
 * **Ordini con coupon**
    * 
-      [!UICONTROL Metric]: `Orders`
+     [!UICONTROL Metric]: `Orders`
       * Aggiungi filtro:
          * [`A`] `coupon_code` **NON È** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
-
 
 * **Ordini senza coupon**
    * 
-      [!UICONTROL Metric]: `Orders`
+     [!UICONTROL Metric]: `Orders`
       * Aggiungi filtro:
          * [`A`] `coupon_code` **È** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
-
 
 * **Ricavi netti da ordini con cedole**
    * 
-      [!UICONTROL Metric]: `Revenue`
+     [!UICONTROL Metric]: `Revenue`
       * Aggiungi filtro:
          * [`A`] `coupon_code` **NON È** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
-
 
 * **Sconti dai coupon**
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **Ricavi medi ciclo di vita: clienti con coupon acquisiti**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Aggiungi filtro:
          * [`A`] `Customer's first order's coupon_code` **NON È** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
-
 
 * **Ricavi medi nel ciclo di vita: clienti acquisiti senza cedola**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Aggiungi filtro:
          * [A] `Customer's first order's coupon_code` **È**`[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
-
 
 * **Dettagli sull’utilizzo del coupon (primi ordini)**
    * Metrica `1`: `Orders`
       * Aggiungi filtro:
          * [`A`] `coupon_code` **NON È**`[NULL]`
          * [`B`] `Customer's order number` **Uguale** `1`
+
    * Metrica `2`: `Revenue`
       * Aggiungi filtro:
          * [`A`] `coupon_code` **NON È**`[NULL]`
          * [`B`] `Customer's order number` **Uguale** `1`
+
       * Rinomina:  `Net revenue`
+
    * Metrica `3`: `Coupon discount amount`
       * Aggiungi filtro:
          * [`A`] `coupon_code` **NON È**`[NULL]`
          * [`B`] `Customer's order number` **Uguale** `1`
+
    * Crea formula: `Gross revenue`
       * [!UICONTROL Formula]: `(B – C)`
       * 
-         [!UICONTROL Format]: `Currency`
+        [!UICONTROL Format]: `Currency`
+
    * Crea formula:**% scontato**
       * Formula: `(C / (B - C))`
       * 
-         [!UICONTROL Format]: `Percentage`
+        [!UICONTROL Format]: `Percentage`
+
    * Crea formula: `Average order discount`
       * [!UICONTROL Formula]: `(C / A)`
       * 
-         [!UICONTROL Format]: `Percentage`
+        [!UICONTROL Format]: `Percentage`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * 
-
-      [!UICONTROL Tipo di grafico]: `Table`
-
-
-
-
-
-
-
+     [!UICONTROL Tipo di grafico]: `Table`
 
 * **Ricavi medi ciclo di vita per cedola primo ordine**
    * [!UICONTROL Metric]:**Ricavi medi nel ciclo di vita**
       * Aggiungi filtro:
          * [`A`] `coupon_code` **È**`[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
-
 
 * **Dettagli sull’utilizzo del coupon (primi ordini)**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Aggiungi filtro:
          * [`A`] `Customer's first order's coupon_code` **NON È** `[NULL]`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Interval]: `None`
+     [!UICONTROL Interval]: `None`
    * [!UICONTROL Group by]: `Customer's first order's coupon_code`
    * 
-
-      [!UICONTROL Tipo di grafico]: **Column**
-
+     [!UICONTROL Tipo di grafico]: **Column**
 
 * **Nuovi clienti per acquisizione coupon/non coupon**
    * Metrica `1`: `New customers`
       * Aggiungi filtro:
          * [`A`] `Customer's first order's coupon_code` **NON È** `[NULL]`
+
       * [!UICONTROL Rename]: `Coupon acquisition customer`
+
    * Metrica `2`: `New customers`
       * Aggiungi filtro:
          * [`A`] `coupon_code` **È**`[NULL]`
+
       * [!UICONTROL Rename]: `Non-coupon acquisition customer`
+
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
    * [!UICONTROL Chart type]: `Stacked Column`
-
-
-
-
 
 Dopo aver generato i rapporti, consulta l’immagine nella parte superiore di questo argomento per informazioni su come organizzare i rapporti sul dashboard.

@@ -2,7 +2,9 @@
 title: Memorizzazione dei dati in Adobe Commerce
 description: Scopri come vengono generati i dati, cosa causa l’inserimento di una nuova riga e come vengono registrate le azioni nel database di Adobe Commerce.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 3%
@@ -61,7 +63,7 @@ Poco dopo l&#39;aggiunta dei tre nuovi prodotti, un nuovo cliente, `Sammy Custom
 
 Al termine della creazione dell’account, `Sammy Customer` è pronto per iniziare a effettuare un acquisto. Sul sito web, il cliente aggiunge due coppie di `Throwback Bellbottoms` e uno `V-Neck T-Shirt` al carrello. Soddisfatto delle selezioni, il cliente passa al pagamento e invia l&#39;ordine, creando la seguente voce nella [tabella ordini vendite a tariffa fissa](../data-warehouse-mgr/sales-flat-order-table.md):
 
-| **`entity id`** | **`customer id**`**`subtotal`****`created at`** |
+| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 

@@ -2,7 +2,9 @@
 title: 'Google Analytics: panoramica di Tracciamento dei dati di origine dell’acquisizione da parte degli utenti'
 description: Scopri come segmentare i dati per origine di acquisizione utente.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: af1e3839839b4c419beabb0cc666c996ea2179d4
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 1%
@@ -59,7 +61,7 @@ Questo codice è stato tradotto in [Libreria PHP ospitata su github](https://git
 
 Il restituito `$data` array è una mappa delle chiavi `source`, `medium`, `term`, `content`, `campaign`, `gclid`e i rispettivi valori.
 
-[!DNL Adobe] consiglia di aggiungere al database una tabella denominata, ad esempio, `user_referral`, con colonne del tipo: `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. Ogni volta che un utente si connette, prendi le informazioni di riferimento e memorizzale in questa tabella.
+[!DNL Adobe] consiglia di aggiungere al database una tabella denominata, ad esempio, `user_referral`, con colonne del tipo: `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. Ogni volta che un utente si iscrive, prendi le informazioni di riferimento e memorizzale in questa tabella.
 
 #### Come utilizzare questi dati
 

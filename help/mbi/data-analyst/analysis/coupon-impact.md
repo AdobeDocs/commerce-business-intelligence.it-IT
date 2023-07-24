@@ -2,7 +2,9 @@
 title: Analisi dell’impatto dei coupon
 description: Scopri come analizzare l’impatto dei coupon sull’acquisizione e la fidelizzazione dei clienti.
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 2%
@@ -122,10 +124,10 @@ Cosa si può ricavare da questo? In primo luogo, il coupon &quot;20% off&quot; h
 * l’ora del giorno/settimana/mese/anno in cui sono stati offerti i coupon.
 * la stagione in cui sono stati offerti i coupon, a seconda dell&#39;azienda.
 
-   **Esempio:** il coupon &quot;20% off&quot; è stato offerto durante i mesi estivi, ma l&#39;azienda vende abbigliamento invernale.
+  **Esempio:** il coupon &quot;20% off&quot; è stato offerto durante i mesi estivi, ma l&#39;azienda vende abbigliamento invernale.
 * le restrizioni sulle cedole.
 
-   **Esempio:** il coupon &quot;10% di sconto&quot; è offerto solo ai clienti che acquistano un cappotto invernale nello stesso ordine.
+  **Esempio:** il coupon &quot;10% di sconto&quot; è offerto solo ai clienti che acquistano un cappotto invernale nello stesso ordine.
 
 Il **reddito lordo** per la cedola &quot;25% off $100 o più&quot; è molto più alto del ricavo lordo per la cedola &quot;$10 off&quot;. Tuttavia, il coupon &quot;$10 off&quot; ha un molto più grande **numero di ordini**. Analisi del **valore medio dell’ordine** fornisce informazioni approfondite su queste differenze. Anche se il coupon &quot;25% off $100 o più&quot; aveva un numero inferiore di ordini, il valore medio dell&#39;ordine è più del triplo rispetto al coupon &quot;off$10&quot;. Pertanto, un maggiore ricavo lordo è attribuito alla cedola &quot;25% off $100 o più&quot;.
 

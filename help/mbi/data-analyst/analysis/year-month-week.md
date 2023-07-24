@@ -2,7 +2,9 @@
 title: Rapporti annuali, mensili e settimanali
 description: Scopri come visualizzare facilmente le tendenze nel tempo e cambiare la prospettiva per i periodi di tempo che potresti voler confrontare.
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, Data Architect, Data Engineer, Leader, User
+feature: Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -39,8 +41,7 @@ Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-c
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;gg&#39;)**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
    * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
-
-      ![](../../assets/new-arch-create-calc.png)
+     ![](../../assets/new-arch-create-calc.png)
 
 ## Metriche
 
@@ -64,10 +65,10 @@ Nessuno.
 * Metrica `B`: `Last year`
 * [!UICONTROL Time period]: `1 year ago to 0 years ago`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (month-day)`
 * 
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 * **Grafico MoM**
    * [!UICONTROL Metric]: `Number of orders`
@@ -81,10 +82,10 @@ Nessuno.
 * Metrica `B`: ultimo mese*
 * [!UICONTROL Time period]: da un mese fa a 0 mesi fa
 * 
-   [!UICONTROL Interval]: None
+  [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
 * 
-   [!UICONTROL Chart Type]: Line
+  [!UICONTROL Chart Type]: Line
 
 * **Grafico a W**
    * [!UICONTROL Metric]: `Number of orders`
@@ -98,10 +99,10 @@ Nessuno.
 * Metrica `B`: `Last week`
 * [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (day of week)`
 * 
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 * **Grafico DoD**
    * [!UICONTROL Metric]: `Number of orders`
@@ -115,9 +116,9 @@ Nessuno.
 * Metrica B: `Yesterday`
 * [!UICONTROL Time period]: `1 day ago to 0 days ago`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (hour of day)`
 * 
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile all’immagine nella parte superiore della pagina.

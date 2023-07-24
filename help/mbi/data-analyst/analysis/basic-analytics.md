@@ -2,7 +2,9 @@
 title: Comprendere e creare analisi di base
 description: Scopri come comprendere e creare analisi di base.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Dashboards, Data Integration
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '3113'
 ht-degree: 0%
@@ -153,7 +155,7 @@ Di seguito sono riportati alcuni esempi comuni di rapporti e metriche che potreb
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Group By]**: `Customer's Order Number`, quindi seleziona `2` e `3`
 
-   ![](../../assets/2nd_and_3rd_purchases_last_year.png)
+  ![](../../assets/2nd_and_3rd_purchases_last_year.png)
 
 * **Esempio di rapporto 2**: numero di clienti frequenti negli ultimi anni
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -161,7 +163,7 @@ Di seguito sono riportati alcuni esempi comuni di rapporti e metriche che potreb
    * **[!UICONTROL Time Range]**: `Moving range > Last Year`
    * **[!UICONTROL Time Interval]**: `By Month`
 
-   ![Clienti ripetuti l&#39;anno scorso](../../assets/Repeat_customers_last_year.png)<!--{: width="929"}-->
+  ![Clienti ripetuti l&#39;anno scorso](../../assets/Repeat_customers_last_year.png)<!--{: width="929"}-->
 
 ### Clienti principali per numero di ordini a vita
 
@@ -174,7 +176,7 @@ Di seguito sono riportati alcuni esempi comuni di rapporti e metriche che potreb
    * **[!UICONTROL Group By]**: `customer_email`
    * **[!UICONTROL Show Top/Bottom]**: i primi 25 in base agli ordini
 
-   ![Primi 25 clienti per ordine](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->
+  ![Primi 25 clienti per ordine](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->
 
 ### Principali clienti per fatturato a vita
 
@@ -187,7 +189,7 @@ Di seguito sono riportati alcuni esempi comuni di rapporti e metriche che potreb
    * **[!UICONTROL Group By]**: `customer_email`
    * **[!UICONTROL Show Top Bottom]**: i primi 25 in base ai ricavi del ciclo di vita
 
-   ![Primi 25 clienti per ricavo](../../assets/top_25_customers_by_lifetime_revneue.png)<!--{: width="929"}-->
+  ![Primi 25 clienti per ricavo](../../assets/top_25_customers_by_lifetime_revneue.png)<!--{: width="929"}-->
 
 ### Ricavi medi nel ciclo di vita per coorte
 
@@ -202,7 +204,7 @@ Di seguito sono riportati alcuni esempi comuni di rapporti e metriche che potreb
    * **[!UICONTROL Table]**: `Customer_entity`
    * **[!UICONTROL Perspective]**: Valore Medio Cumulativo Per Membro Della Coorte
 
-   ![Ricavi ciclo di vita cliente per coorte](../../assets/Avg_customer_lifetime_revenue_by_cohort.png)<!--{: width="929"}-->
+  ![Ricavi ciclo di vita cliente per coorte](../../assets/Avg_customer_lifetime_revenue_by_cohort.png)<!--{: width="929"}-->
 
 ### Clienti per utilizzo coupon
 
@@ -218,7 +220,7 @@ Di seguito sono riportati alcuni esempi comuni di rapporti e metriche che potreb
    * **[!UICONTROL Time range]**: `All Time`
    * **[!UICONTROL Time interval]**: `By Month`
 
-   ![Clienti per utilizzo coupon](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
+  ![Clienti per utilizzo coupon](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
 
 * **Esempio di rapporto 2**: percentuale di clienti con e senza cedola per mese
    * **[!UICONTROL Metric A]**: `Non coupon customers` (nascondi metrica)
@@ -300,7 +302,7 @@ Di seguito sono riportati alcuni esempi comuni di rapporti e metriche che potreb
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
    * **[!UICONTROL Time Interval]**: `By Month`
 
-   ![Prodotti ordinati](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
+  ![Prodotti ordinati](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
 
 * Combina questa metrica con la metrica del numero di ordini per calcolare il numero di articoli per ordine. Quindi, aggiungi i codici coupon al rapporto per determinare in che modo le promozioni influiscono sulle dimensioni del carrello o segmentano in base a nuovi ordini o a ordini ripetuti, per comprendere meglio il comportamento dei clienti.
 * **Esempio di rapporto**: Prodotti per ordine: primo ordine e ordini ripetuti
@@ -337,7 +339,7 @@ Di seguito sono riportati alcuni esempi comuni di rapporti e metriche che potreb
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Perspective]**: `Amount Change vs Previous Year`
 
-   ![AOV](../../assets/aov_pic.png)<!--{: width="929"}-->
+  ![AOV](../../assets/aov_pic.png)<!--{: width="929"}-->
 
 ### Prodotti più acquistati con coupon
 
@@ -351,7 +353,7 @@ Di seguito sono riportati alcuni esempi comuni di rapporti e metriche che potreb
    * **[!UICONTROL Group By**]: `name` (o `SKU`, o qualsiasi altro identificatore del prodotto)
    * **[!UICONTROL Show top/bottom]**: i primi 25 in base ai prodotti ordinati
 
-   ![Prodotti con coupon](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
+  ![Prodotti con coupon](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
 
 ### Tempo tra gli ordini
 
@@ -398,7 +400,7 @@ Di seguito sono riportati alcuni esempi comuni di rapporti e metriche che potreb
    * **[!UICONTROL Time Range]**: `1 Year Ago to 3 Months Ago`
    * **[!UICONTROL Time Interval]**: `By Day`
 
-   ![Impression annuncio](../../assets/ad_impressions.png)<!--{: width="929"}-->
+  ![Impression annuncio](../../assets/ad_impressions.png)<!--{: width="929"}-->
 
 ### Tasso di click-through (CTR)
 
@@ -482,7 +484,7 @@ Di seguito sono riportati alcuni esempi comuni di rapporti e metriche che potreb
       * Per la metrica `A`, seleziona `Customer's first order's campaign`
       * Per la metrica `B`, seleziona `campaign`
 
-   ![Nuovi utenti.](../../assets/New_Users_Last_Month.png)
+  ![Nuovi utenti.](../../assets/New_Users_Last_Month.png)
 
 >[!NOTE]
 >

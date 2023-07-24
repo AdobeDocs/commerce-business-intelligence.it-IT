@@ -2,7 +2,9 @@
 title: Assegnare un nome ai rapporti e agli elementi in Commerce Intelligence
 description: Scopri le best practice per la denominazione di rapporti ed elementi in [!DNL Commerce Intelligence].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -11,7 +13,7 @@ ht-degree: 0%
 
 # Assegnare un nome ai rapporti e agli elementi
 
-Prima di iniziare a creare in[!DNL Adobe Commerce Intelligence], Adobe vuole condividere alcuni segreti per il successo. Sapere come creare metriche, filtri e così via è importante, ma tutto il tuo lavoro potrebbe essere inutile se non riesci a trovare ciò di cui hai bisogno o se c&#39;è ambiguità.
+Prima di iniziare a creare in [!DNL Adobe Commerce Intelligence], Adobe vuole condividere alcuni segreti per il successo. Sapere come creare metriche, filtri e così via è importante, ma tutto il tuo lavoro potrebbe essere inutile se non riesci a trovare ciò di cui hai bisogno o se c&#39;è ambiguità.
 
 ## Perché la nomenclatura è importante? {#why}
 

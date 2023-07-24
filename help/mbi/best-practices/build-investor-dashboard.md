@@ -2,7 +2,9 @@
 title: Creazione di un dashboard per gli investitori
 description: Scopri come creare un dashboard per gli investitori.
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+role: Admin, Data Architect, Data Engineer, User
+feature: Dashboards, Data Integration
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
@@ -45,7 +47,7 @@ Di seguito è riportato ciò che è necessario creare rapporti per il dashboard 
    * Metrica - Ricavi
    * Raggruppa per cliente `utm_source`
 * **[!UICONTROL Revenue from top 10 products]**
-   * Metrica - Entrate da prodotti
+   * Metrica: ricavi da prodotti
       * Nascondi il grafico
       * Raggruppa per nome del prodotto. Seleziona tutti i prodotti.
       * Imposta l&#39;intervallo di tempo su All-Time

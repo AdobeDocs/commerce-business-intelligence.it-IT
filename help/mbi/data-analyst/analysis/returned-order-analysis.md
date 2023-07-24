@@ -2,7 +2,9 @@
 title: Analisi degli ordini restituiti
 description: Scopri come impostare una dashboard che fornisca un’analisi dettagliata dei resi del tuo negozio.
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -60,10 +62,9 @@ Colonne da creare
 * Seleziona una definizione: `Joined Column`
 * [!UICONTROL Create Path]:
 * 
-   [!UICONTROL Many]: `enterprise_rma.order_id`
+  [!UICONTROL Many]: `enterprise_rma.order_id`
 * 
-
-   [!UICONTROL One]: `sales_flat_order.entity_id`
+  [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * Seleziona un [!UICONTROL table]: `sales_flat_order`
 * Seleziona un [!UICONTROL column]: `created_at`
@@ -82,10 +83,9 @@ Colonne da creare
 * Seleziona una definizione: `Joined Column`
 * [!UICONTROL Create Path]:
    * 
-      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
+     [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
    * 
-
-      [!UICONTROL One]: `enterprise_rma.entity_id`
+     [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * Seleziona un [!UICONTROL table]: `enterprise_rma`
 * Seleziona un [!UICONTROL column]: `date_requested`
@@ -158,15 +158,14 @@ Colonne da creare
 * Formula: probabilità ordine ripetuto
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * 
-   [!UICONTROL Chart Type]: `Bar`
+  [!UICONTROL Chart Type]: `Bar`
 
 * **Tempo medio di ritorno (tutto il tempo)**
 * Metrica `A`: `Avg time between order and return`
@@ -174,10 +173,9 @@ Colonne da creare
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Number`
+  [!UICONTROL Chart Type]: `Number`
 
 * **Percentuale di ordini con una restituzione**
 * Metrica `A`: `Number of orders`
@@ -191,12 +189,11 @@ Colonne da creare
 * Formula: % di ordini con restituzione
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
 * **Ricavi restituiti per mese**
@@ -206,8 +203,7 @@ Colonne da creare
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
 * 
-
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 * **Clienti che hanno effettuato una restituzione e non hanno acquistato nuovamente**
 * Metrica `A`: `Number of orders with returns`
@@ -218,12 +214,11 @@ Colonne da creare
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-   [!UICONTROL Raggruppa per]: `Customer_email`
+  [!UICONTROL Raggruppa per]: `Customer_email`
 * 
-
-   [!UICONTROL Chart Type]: `Table`
+  [!UICONTROL Chart Type]: `Table`
 
 * **Tasso di rendimento per articolo**
 * Metrica `A`: `Returned items` (Nascondi)
@@ -236,15 +231,14 @@ Colonne da creare
 * [!UICONTROL Formula]: `Return %`
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
 * 
-   [!UICONTROL Chart Type]: `Table`
+  [!UICONTROL Chart Type]: `Table`
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile al dashboard di esempio riportato sopra.
 

@@ -2,9 +2,11 @@
 title: Soglia spedizione gratuita
 description: Scopri come impostare una dashboard che tenga traccia delle prestazioni della soglia di spedizione gratuita.
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin,  User
+feature: Data Warehouse Manager, Dashboards, Reports
+source-git-commit: 6bdbdbcc652d476fa2a22589ac99678d5855e6fe
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -33,9 +35,10 @@ Se utilizzi l’architettura originale (ad esempio, se non disponi del `Data War
 * **`Order subtotal (buckets)`** Architettura originale: creata da un analista come parte della `[FREE SHIPPING ANALYSIS]` ticket
 * **`Order subtotal (buckets)`** Nuova architettura:
    * Come accennato in precedenza, questo calcolo crea periodi fissi con incrementi relativi alle dimensioni tipiche del carrello. Se disponi di una colonna del subtotale nativa come `base_subtotal`, che può essere utilizzato come base di questa nuova colonna. In caso contrario, può essere una colonna calcolata che esclude la spedizione e gli sconti dai ricavi.
-   >[!NOTE]
-   >
-   >Le dimensioni del &quot;bucket&quot; dipendono da ciò che è appropriato per te come client. Puoi iniziare con `average order value` e creare alcuni bucket inferiori e superiori a tale importo. Osservando il calcolo riportato di seguito, è possibile copiare facilmente una parte della query, modificarla e creare contenitori aggiuntivi. L&#39;esempio viene eseguito con incrementi di 50.
+
+  >[!NOTE]
+  >
+  >Le dimensioni del &quot;bucket&quot; dipendono da ciò che è appropriato per te come client. Puoi iniziare con `average order value` e creare alcuni bucket inferiori e superiori a tale importo. Osservando il calcolo riportato di seguito, è possibile copiare facilmente una parte della query, modificarla e creare contenitori aggiuntivi. L&#39;esempio viene eseguito con incrementi di 50.
 
    * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal`, o `calculated column`, `Datatype`: `Integer`
    * [!UICONTROL Calculation]: `case when A >= 0 and A<=200 then 0 - 200`
@@ -45,7 +48,6 @@ quando `A<301` e `A<= 350` allora `301 - 350`
 quando `A<351` e `A<=400` allora `351 - 400`
 quando `A<401` e `A<=450` allora `401 - 450`
 altro &#39;oltre 450&#39; fine
-
 
 
 ## Metriche
@@ -64,75 +66,67 @@ Nessuna nuova metrica!!!
 * Metrica `A`: `Average Order Value`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-
-   [!UICONTROL Chart Type]: `Scalar`
+  [!UICONTROL Chart Type]: `Scalar`
 
 * **Numero di ordini per periodi fissi di subtotale con regola di spedizione A**
    * [!UICONTROL Metric]: `Number of orders`
 
-   >[!NOTE]
-   >
-   >È possibile tagliare l&#39;estremità finale mostrando la parte superiore `X` `sorted by` `Order subtotal` (bucket) in `Show top/bottom`.
+  >[!NOTE]
+  >
+  >È possibile tagliare l&#39;estremità finale mostrando la parte superiore `X` `sorted by` `Order subtotal` (bucket) in `Show top/bottom`.
 
 * Metrica `A`: `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
 * 
-
-   [!UICONTROL Chart Type]: `Column`
+  [!UICONTROL Chart Type]: `Column`
 
 * **Percentuale di ordini per subtotale con regola di spedizione A**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
    * 
-      [!UICONTROL Raggruppa per]: `Independent`
+     [!UICONTROL Raggruppa per]: `Independent`
    * [!UICONTROL Formula]: `(A / B)`
    * 
-
-      [!UICONTROL Format]: `%`
+     [!UICONTROL Format]: `%`
 
 * Metrica `A`: `Number of orders by subtotal (hide)`
 * Metrica `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
 * 
-
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 * **Percentuale di ordini con subtotale superiore alla regola di spedizione A**
    * [!UICONTROL Metric]: `Number of orders`
    * 
-
-      [!UICONTROL Perspective]: `Cumulative`
+     [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric]: `Number of orders`
    * 
-
-      [!UICONTROL Raggruppa per]: `Independent`
+     [!UICONTROL Raggruppa per]: `Independent`
 
    * [!UICONTROL Formula]: `1- (A / B)`
    * 
-
-      [!UICONTROL Format]: `%`
+     [!UICONTROL Format]: `%`
 
 * Metrica `A`: `Number of orders by subtotal`
 * Metrica `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
 * 
-
-   [!UICONTROL Chart Type]: `Line`
+  [!UICONTROL Chart Type]: `Line`
 
 
 Ripetere i passaggi e i rapporti sopra indicati per la spedizione B e il periodo di tempo con la regola di spedizione B.

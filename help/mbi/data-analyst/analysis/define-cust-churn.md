@@ -2,7 +2,9 @@
 title: Definire l’abbandono dei clienti
 description: Scopri come impostare una dashboard che ti aiuti a definire l’abbandono per i clienti transazionali.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -68,29 +70,27 @@ Nessuna nuova metrica.
 
 * [!UICONTROL Formula]: probabilità ordine di ripetizione iniziale
 * 
-   [!UICONTROL Formula]: `A/B`
+  [!UICONTROL Formula]: `A/B`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-
-   [!UICONTROL Chart type]: `Scalar`
+  [!UICONTROL Chart type]: `Scalar`
 
 * **Probabilità di ripetizione ordine specificata mesi dopo l&#39;ordine**
 * Metrica A: ripetere gli ordini per mesi dall’ordine precedente (nascondere)
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * Metrica B: Ultimi ordini per mesi dall’ordine (nascondi)
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * Metrica C: Ordini ripetuti in qualsiasi momento (nascondi)
@@ -98,33 +98,29 @@ Nessuna nuova metrica.
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 
-
-   [!UICONTROL Raggruppa per]: `Independent`
+  [!UICONTROL Raggruppa per]: `Independent`
 
 * Metrica D: Ultimi ordini in qualsiasi momento (nascondi)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 
-
-   [!UICONTROL Raggruppa per]: `Independent`
+  [!UICONTROL Raggruppa per]: `Independent`
 
 * [!UICONTROL Formula]: probabilità ordine di ripetizione iniziale
 * 
-   [!UICONTROL Formula]: `(C-A)/(C+D-A-B)`
+  [!UICONTROL Formula]: `(C-A)/(C+D-A-B)`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * Mostra top.bottom: prime 24 categorie, ordinate per nome di categoria
 
 * 
-
-   [!UICONTROL Chart type]: `Line`
+  [!UICONTROL Chart type]: `Line`
 
 Il rapporto probabilità ordine ripetuto iniziale rappresenta il totale ordini ripetuti / totale ordini. Ogni ordine è un&#39;opportunità per fare un ordine ripetuto; il numero di ordini ripetuti è il sottoinsieme di quelli che effettivamente lo fanno.
 
