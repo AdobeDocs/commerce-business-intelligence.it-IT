@@ -2,7 +2,9 @@
 title: Utilizzare le opzioni di tempo nel Report Builder visivo
 description: Scopri come analizzare i dati nel rapporto per un periodo di tempo specifico.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 0%
@@ -82,6 +84,7 @@ Per dimostrare questo caso d’uso, osserva le entrate giornaliere del mese prec
    * `Time Interval`: imposta su `None`.
 
    * `Time Range`: imposta su `From 14 Months Ago To 13 Months Ago` facendo clic su **[!UICONTROL Custom]** allora **[!UICONTROL Moving Range]**. Utilizza i campi e i menu a discesa nella parte superiore del menu per impostare l’intervallo. Questa impostazione consente di visualizzare i ricavi del mese precedente, ma dell’anno precedente.
+
    Non preoccuparti se la metrica scompare dal rapporto: l’impostazione di un’opzione di tempo indipendente nasconde automaticamente la metrica dal rapporto. Per visualizzarlo di nuovo, fai clic su **[!UICONTROL Show]** accanto alla metrica.
 
    ![](../assets/Different_Time_Ranges.gif)
@@ -95,8 +98,6 @@ Per dimostrare questo caso d’uso, osserva le entrate giornaliere del mese prec
    ![](../assets/TO4.png)
 
    * Rinominare le metriche. Nell’esempio, la prima metrica è `Revenue - 2015` e la seconda è `Revenue - 2014`.
-
-
 
 Un altro uso comune di `Time Options` è quello di determinare le settimane di fornitura. Soprattutto durante le feste o un periodo promozionale speciale, puoi prendere in considerazione gli articoli venduti nell&#39;ultima settimana, nell&#39;ultimo mese e nel periodo promozionale precedente per prendere decisioni di acquisto informate.
 
@@ -129,13 +130,13 @@ Per creare le formule, fare clic su **[!UICONTROL Add Formula]**. Immetti le for
 * Per `last 7 days time period`, immetti `D / A` nel `Formula` campo.
 * Per `last 28 days time period`, immetti `D / (B/4)` nel `Formula` campo.
 
-   >[!NOTE]
-   >
-   >È importante normalizzare qui gli intervalli di tempo selezionati. In questo esempio, suddividi 28 giorni in quattro settimane. Potrebbe essere necessario applicare una logica diversa alla formula.
+  >[!NOTE]
+  >
+  >È importante normalizzare qui gli intervalli di tempo selezionati. In questo esempio, suddividi 28 giorni in quattro settimane. Potrebbe essere necessario applicare una logica diversa alla formula.
 
 * Per `last promo period`, immetti `D / C` nel `Formula` campo.
 
-   ![](../assets/Different_Time_Ranges_2.png)
+  ![](../assets/Different_Time_Ranges_2.png)
 
 * Infine, personalizza il rapporto nascondendo le metriche e aggiungendo una `SKU` o una dimensione simile al rapporto come `Group By`.
 

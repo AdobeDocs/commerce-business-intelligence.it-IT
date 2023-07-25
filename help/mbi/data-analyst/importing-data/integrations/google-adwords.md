@@ -2,7 +2,9 @@
 title: Connetti Google Adwords
 description: Scopri come misurare il ROI delle campagne sposando i costi pubblicitari e il valore del ciclo di vita del cliente (Customer Lifetime Value, CLV) degli utenti acquisiti dalle campagne.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%

@@ -2,7 +2,9 @@
 title: Analisi per coorte dei ricavi del ciclo di vita
 description: Esplora la potenza dell’analisi per coorte di Commerce Intelligence.
 exl-id: f2b55745-d364-4ba6-9857-ce9cee05c3ae
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 0%
@@ -17,7 +19,7 @@ Esistono diversi modi per esaminare i dati in [!DNL Adobe Commerce Intelligence]
 
 Il grafico seguente mostra la spesa cumulativa per utente per un periodo di tempo dopo la sua acquisizione. `Cohorts` degli utenti vengono suddivisi in base al mese di acquisizione.
 
-Ad esempio, la riga arancione precedente mostra la media per gli utenti acquisiti a novembre 2011. Il primo punto dati indica che nel primo mese, gli utenti acquisiti a novembre hanno trascorso in media circa `$200`. Il secondo punto di dati indica che alla fine del secondo mese, questi utenti avevano speso in media circa `$240`. La loro spesa media nel mese due è stata di circa `$40 (240 - 200)`. Le diverse linee rappresentano diverse coorti di utenti. La linea verde rappresenta gli utenti che sono stati acquisiti in dicembre, mentre la linea blu rappresenta gli utenti che sono stati acquisiti in ottobre.
+Ad esempio, la riga arancione precedente mostra la media per gli utenti acquisiti a novembre 2011. Il primo punto dati indica che nel primo mese, gli utenti acquisiti a novembre hanno trascorso in media circa `$200`. Il secondo punto dati indica che alla fine del secondo mese, questi utenti avevano speso in media circa `$240`. La loro spesa media nel mese due è stata di circa `$40 (240 - 200)`. Le diverse linee rappresentano diverse coorti di utenti. La linea verde rappresenta gli utenti che sono stati acquisiti in dicembre, mentre la linea blu rappresenta gli utenti che sono stati acquisiti in ottobre.
 
 ## Perché è importante?
 

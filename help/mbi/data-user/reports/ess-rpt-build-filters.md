@@ -2,7 +2,9 @@
 title: Filtri
 description: Scopri come utilizzare i filtri.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -37,21 +39,21 @@ ht-degree: 0%
 
    * Fare clic sulla prima parte del filtro e scegliere la colonna da utilizzare come oggetto dell&#39;espressione.
 
-      ![Scegli la prima parte del filtro](../../assets/magento-bi-report-builder-filter-part1.png)
+     ![Scegli la prima parte del filtro](../../assets/magento-bi-report-builder-filter-part1.png)
 
    * Fai clic sulla seconda parte del filtro e scegli l’operatore.
 
-      ![Scegli l’operatore](../../assets/magento-bi-report-builder-filter-part2.png)
+     ![Scegli l’operatore](../../assets/magento-bi-report-builder-filter-part2.png)
 
    * Nella terza parte del filtro immettere il valore necessario per completare l&#39;espressione.
 
-      ![Inserisci il valore](../../assets/magento-bi-report-builder-filter-part3.png)
+     ![Inserisci il valore](../../assets/magento-bi-report-builder-filter-part3.png)
 
    * Una volta completato il filtro, fai clic su **[!UICONTROL Apply]**.
 
-      Il rapporto ora include solo i clienti frequenti e il numero di record dei clienti recuperati per il rapporto è stato ridotto da 33.000 a 12.600.
+     Il rapporto ora include solo i clienti frequenti e il numero di record dei clienti recuperati per il rapporto è stato ridotto da 33.000 a 12.600.
 
-      ![Rapporto filtrato](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
+     ![Rapporto filtrato](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
 1. Nella barra laterale, fai clic sulla prospettiva ( ![](../../assets/magento-bi-btn-perspective.png)).
 

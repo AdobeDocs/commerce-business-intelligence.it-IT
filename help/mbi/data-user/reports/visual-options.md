@@ -2,7 +2,9 @@
 title: Opzioni di visualizzazione nel Report Builder visivo
 description: Scopri come utilizzare le opzioni di visualizzazione nel Report Builder visivo.
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1533'
 ht-degree: 0%
@@ -145,7 +147,7 @@ Per salvare un rapporto come colonna sovrapposta, impostare il rapporto `Type` a
 
 ## `Pie`
 
-`Pie` i grafici sono ideali per visualizzare una singola metrica con una o più metriche di gruppo oppure più metriche senza intervalli di gruppo. In entrambi i casi, l&#39;intervallo di tempo deve essere impostato su none per visualizzare i dati in un grafico a torta. Nell’esempio seguente, una singola metrica di ordini è raggruppata per nome del negozio per mostrare la suddivisione degli ordini per negozio:
+`Pie` i grafici sono ideali per visualizzare una singola metrica con una o più metriche di gruppo oppure più metriche senza intervalli di gruppo. In entrambi i casi, l&#39;intervallo di tempo deve essere impostato su Nessuno per visualizzare i dati in un grafico a torta. Nell’esempio seguente, una singola metrica di ordini è raggruppata per nome del negozio per mostrare la suddivisione degli ordini per negozio:
 
 ![](../../assets/blobid10.png)
 

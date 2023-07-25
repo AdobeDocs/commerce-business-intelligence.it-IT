@@ -2,7 +2,9 @@
 title: Connessione di MySQL tramite una connessione diretta
 description: Scopri come connetterti [!DNL MongoDB] tramite connessione diretta.
 exl-id: 53765844-c9bb-4a16-b00c-ce9672f87415
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -58,7 +60,7 @@ Immetti le seguenti informazioni in questa pagina, iniziando da `Database Connec
 * `Port`: porta MySQL sul server (`3306` per impostazione predefinita)
 * `Host`: per impostazione predefinita, è localhost. In generale, è il valore bind-address per il [!DNL MySQL] , che per impostazione predefinita è `127.0.0.1 (localhost)`, ma potrebbe anche essere un indirizzo di rete locale (ad esempio, `192.168.0.1`) o l&#39;indirizzo IP pubblico del server.
 
-   Il valore si trova nella `my.cnf` file (che si trova in `/etc/my.cnf`) sotto la riga che recita `\[mysqld\]`. Se la riga dell&#39;indirizzo di associazione viene inserita come commento in tale file, il server viene protetto dai tentativi di connessione esterni.
+  Il valore si trova nella `my.cnf` file (che si trova in `/etc/my.cnf`) sotto la riga che recita `\[mysqld\]`. Se la riga dell&#39;indirizzo di associazione viene inserita come commento in tale file, il server viene protetto dai tentativi di connessione esterni.
 
 Al termine, fai clic su **[!UICONTROL Save & Test]** per completare la configurazione.
 

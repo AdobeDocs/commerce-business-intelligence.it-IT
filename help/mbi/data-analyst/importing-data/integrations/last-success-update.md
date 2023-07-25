@@ -2,7 +2,9 @@
 title: Comprendere i risultati tra il database e l'editor SQL
 description: Scopri come comprendere i risultati tra database ed editor SQL.
 exl-id: f31f3eef-791a-4984-901e-bc10554031bd
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -20,7 +22,7 @@ Potresti essere curioso di sapere cosa... `Last successful update began` il camp
 Mostra l&#39;inizio `timestamp` (nel fuso orario impostato sul tuo account) del _ultimo ciclo di aggiornamento riuscito_ sul tuo account.
 
 - Se una delle tabelle sincronizzate ha riscontrato un problema durante l’ultimo ciclo di aggiornamento, il timestamp è *non aggiornato*.
-- Di conseguenza, in alcuni casi i report possono essere stati aggiornati con dati aggiornati, ma il *L’ultimo aggiornamento riuscito è iniziato* è ancora in ritardo.
+- Di conseguenza, in alcuni casi i report possono essere stati aggiornati con nuovi dati, ma il *L’ultimo aggiornamento riuscito è iniziato* è ancora in ritardo.
 
 ## Identificare l’ultimo punto dati &quot;reale&quot;
 

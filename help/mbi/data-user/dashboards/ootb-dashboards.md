@@ -2,7 +2,9 @@
 title: Dashboard inclusi
 description: Scopri come verificare lo stato di metriche essenziali come i ricavi dal ciclo di vita dell’utente, il numero di acquisti ripetuti e altro ancora, creando in tal modo una solida base per le esplorazioni future.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 0%

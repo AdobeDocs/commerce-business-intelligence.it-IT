@@ -2,7 +2,9 @@
 title: Creare metriche
 description: Scopri come utilizzare le metriche per creare i grafici.
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -45,12 +47,12 @@ Se utilizzate nei rapporti, le metriche possono essere analizzate in un determin
       * `Median` - Questa operazione calcola la mediana dei valori delle colonne di dati
       * `First and Third Quartiles` - Queste operazioni calcolano rispettivamente il 25° e il 75° percentile dei valori della colonna di dati
       * `Tenth and Ninetieth Percentiles` - Queste operazioni calcolano rispettivamente il 10° e il 90° percentile dei valori della colonna di dati
+
    * Scegliere una colonna su cui eseguire l&#39;operazione. Ad esempio, per trovare i ricavi totali, è necessario eseguire un&#39;operazione di somma sul `order total` colonna.
 
-      Se stai modificando una metrica esistente, puoi anche [modificare la tabella operativa della metrica](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) in questa sezione.
+     Se stai modificando una metrica esistente, puoi anche [modificare la tabella operativa della metrica](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) in questa sezione.
 
    * Scegli una dimensione di data che può essere utilizzata per generare la tendenza della metrica. Ad esempio: `order date`.
-
 
 ## Aggiunta di filtri {#filters}
 

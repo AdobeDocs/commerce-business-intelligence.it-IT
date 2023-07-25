@@ -2,7 +2,9 @@
 title: Dashboard
 description: Scopri come creare e utilizzare una dashboard.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -41,14 +43,13 @@ Sta a te definire l’aspetto delle dashboard create. Puoi disporre e ridimensio
 
    * Per creare un `Group` per il dashboard, immettere il nome del gruppo.
 
-      Ad esempio, se nell’installazione di Commerce sono presenti più visualizzazioni dello store, puoi creare un Gruppo per ogni visualizzazione dello store.
+     Ad esempio, se nell’installazione di Commerce sono presenti più visualizzazioni dello store, puoi creare un Gruppo per ogni visualizzazione dello store.
 
    * Clic **[!UICONTROL Create]**.
 
    ![nome dashboard](../../assets/magento-bi-dashboard-create-name.png)
 
    * Il nome del nuovo dashboard viene visualizzato nell&#39;angolo superiore sinistro. Fare clic sulla freccia giù (![](../../assets/magento-bi-btn-down.png)) per visualizzare le opzioni. Se avete creato un gruppo, il nuovo quadro comandi viene visualizzato sotto il gruppo nell&#39;elenco.
-
 
 ### Aggiungere un rapporto
 
@@ -58,7 +59,7 @@ Sta a te definire l’aspetto delle dashboard create. Puoi disporre e ridimensio
 
    * Nell’intestazione della dashboard, fai clic su **[!UICONTROL Add Report]**.
 
-      ![Aggiungi report](../../assets/magento-bi-dashboard-create-add-report.png)
+     ![Aggiungi report](../../assets/magento-bi-dashboard-create-add-report.png)
 
 1. Clic **[!UICONTROL Create Report]** per visualizzare **[!UICONTROL Report Builder Options]**.
 
@@ -107,6 +108,7 @@ Quando condividi una dashboard, puoi assegnare le autorizzazioni in tutta l’or
       * `View`
       * `Edit`
       * `None`
+
    1. Quando viene richiesto di confermare, fai clic su **[!UICONTROL OK]** per aggiornare il livello di autorizzazioni per ogni utente.
 
    1. Per modificare il livello di autorizzazione di una persona, individuare l&#39;utente nell&#39;elenco e modificare il livello di autorizzazione. La modifica viene salvata automaticamente.

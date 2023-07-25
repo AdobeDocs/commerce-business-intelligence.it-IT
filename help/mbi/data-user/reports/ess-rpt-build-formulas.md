@@ -2,7 +2,9 @@
 title: Formule
 description: Scopri come utilizzare le formule.
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -49,7 +51,7 @@ Una formula combina più metriche e logica matematica per rispondere a una doman
 
    * In `Enter your Formula` casella di input, immetti `A/B`.
 
-      Questo divide i ricavi per prodotti ordinati per il numero di nuovi clienti.
+     Questo divide i ricavi per prodotti ordinati per il numero di nuovi clienti.
 
    * Imposta `Select format` a `123Number`.
 
@@ -71,11 +73,11 @@ Una formula combina più metriche e logica matematica per rispondere a una doman
 
    * Scegliere l&#39;intervallo di date nei calendari.
 
-      Per questo esempio, la stagione festiva è da `November 1` da a `December 31`.
+     Per questo esempio, la stagione festiva è da `November 1` da a `December 31`.
 
    * Sotto `Select Time Interval`, scegli `Day`.
 
-      ![Intervallo date fisso](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
+     ![Intervallo date fisso](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
 
    * Al termine, fai clic su **[!UICONTROL Apply]**.
 
