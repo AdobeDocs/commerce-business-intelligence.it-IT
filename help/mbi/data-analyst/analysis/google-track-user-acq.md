@@ -4,9 +4,9 @@ description: Scopri come segmentare i dati per origine di acquisizione utente.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 3098909fdccb726108c24f2424e4ba4c1db9d1c2
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
@@ -25,17 +25,13 @@ Se non tieni traccia delle origini di acquisizione utente nel database, [!DNL Ad
 
 [!DNL Adobe] consiglia due metodi per tenere traccia dei dati di origine dei riferimenti in base alla configurazione:
 
-### (Opzione 1) Tracciare i dati di origine dei riferimenti dell&#39;ordine tramite [!DNL Google Analytics E-Commerce] (incluso [!DNL Shopify] Store)
+### (Opzione 1) Tracciare i dati di origine dei riferimenti dell&#39;ordine tramite [!DNL Google Analytics E-Commerce]
 
 Se usa [!DNL Google Analytics E-Commerce] per tenere traccia dei dati relativi a ordini e vendite, è possibile utilizzare [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) per sincronizzare i dati di origine di riferimento di ogni ordine. Questo consente di segmentare i ricavi e gli ordini per origine di riferimento (ad esempio, `utm_source` o `utm_medium`). Inoltre, è possibile ottenere un&#39;idea delle origini di acquisizione del cliente tramite [!DNL Commerce Intelligence] dimensioni personalizzate come `User's first order source`.
 
->[!NOTE]
->
->**Per gli utenti di Shopify**: Attiva [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) prima di collegare [!DNL Google Analytics E-Commerce] account a [!DNL Commerce Intelligence].
-
 ### (Opzione 2) Salvataggio [!DNL Google Analytics]&#39; dati di origine di acquisizione nel database
 
-Questo argomento spiega come salvare [!DNL Google Analytics] acquisire le informazioni sul canale nel proprio database, ovvero `source`, `medium`, `term`, `content`, `campaign`, e `gclid` parametri presenti durante la prima visita di un utente al sito web. Per una spiegazione di questi parametri, vedi [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). Poi, esplori alcune delle potenti analisi di marketing che possono essere eseguite con queste informazioni in [!DNL Commerce Intelligence].
+Questo argomento spiega come salvare [!DNL Google Analytics] acquisire le informazioni sul canale nel proprio database, ovvero `source`, `medium`, `term`, `content`, `campaign`, e `gclid` parametri presenti durante la prima visita di un utente al sito web. Per una spiegazione di questi parametri, consulta [[!DNL Google Analytics] documentazione](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). Poi, esplori alcune delle potenti analisi di marketing che possono essere eseguite con queste informazioni in [!DNL Commerce Intelligence].
 
 #### Perché?
 
@@ -43,7 +39,7 @@ Se stai solo osservando il valore predefinito [!DNL Google Analytics] metriche d
 
 >[!NOTE]
 >
->[!DNL [Google Analytics eCommerce Tracking]](https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingEcommerce) attenua il problema memorizzando i dati delle transazioni in [!DNL Google Analytics], ma questa soluzione non funziona per i siti non di eCommerce. Inoltre, alcuni strumenti come l’analisi per coorte non sono facili da usare nel [!DNL Google Analytics] di rete.
+>[[!DNL Google Analytics eCommerce Tracking]](https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingEcommerce) attenua il problema memorizzando i dati delle transazioni in [!DNL Google Analytics], ma questa soluzione non funziona per i siti non di eCommerce. Inoltre, alcuni strumenti come l’analisi per coorte non sono facili da usare nel [!DNL Google Analytics] di rete.
 
 Cosa succede se vuoi inviare un&#39;e-mail di follow-up a tutti i clienti acquisiti da una determinata campagna e-mail? Oppure integrare i dati di acquisizione con il sistema CRM? Questo è impossibile in [!DNL Google Analytics] - infatti, è contrario alle Condizioni di utilizzo per [!DNL Google Analytics] per memorizzare i dati che identificano un individuo. Tuttavia, puoi archiviare questi dati da solo.
 
@@ -51,17 +47,17 @@ Cosa succede se vuoi inviare un&#39;e-mail di follow-up a tutti i clienti acquis
 
 [!DNL Google Analytics] memorizza le informazioni di riferimento del visitatore in un cookie denominato `__utmz`. Dopo aver impostato questo cookie (da [!DNL Google Analytics] codice di tracciamento), il suo contenuto verrà inviato con ogni richiesta successiva al dominio da parte di tale utente. Quindi in PHP, per esempio, si può controllare il contenuto di `$_COOKIE['__utmz']` e vedreste una stringa che ha un aspetto simile a questo:
 
-> `100000000.12345678.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=rj metrics`
+`100000000.12345678.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=rj metrics`
 
 È chiaro che alcuni dati di origine di acquisizione sono codificati nella stringa. Viene testato per confermare che si tratta dell’origine di acquisizione più recente del visitatore e dei dati della campagna associati. Ora devi sapere come estrarre i dati.
 
 Questo codice è stato tradotto in [Libreria PHP ospitata su github](https://github.com/RJMetrics/referral-grabber-php). Per utilizzare la libreria: `include` un riferimento a `ReferralGrabber.php` e quindi chiama
 
-> `$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);`
+`$data = ReferralGrabber::parseGoogleCookie($_COOKIE['__utmz']);`
 
 Il restituito `$data` array è una mappa delle chiavi `source`, `medium`, `term`, `content`, `campaign`, `gclid`e i rispettivi valori.
 
-[!DNL Adobe] consiglia di aggiungere al database una tabella denominata, ad esempio, `user_referral`, con colonne del tipo: `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. Ogni volta che un utente si iscrive, prendi le informazioni di riferimento e memorizzale in questa tabella.
+L’Adobe consiglia di aggiungere al database una tabella denominata, ad esempio: `user_referral`, con colonne del tipo: `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. Ogni volta che un utente si iscrive, prendi le informazioni di riferimento e memorizzale in questa tabella.
 
 #### Come utilizzare questi dati
 
@@ -80,7 +76,7 @@ Si supponga di utilizzare un database SQL e di disporre di `users` tabella con l
 
 Per iniziare, puoi contare il numero di utenti provenienti da ciascun canale di riferimento eseguendo la seguente query sul database:
 
-> `SELECT acq_source, COUNT(id) as user_count FROM users GROUP BY acq_source;`
+`SELECT acq_source, COUNT(id) as user_count FROM users GROUP BY acq_source;`
 
 Il risultato è simile al seguente:
 
@@ -93,10 +89,10 @@ Il risultato è simile al seguente:
 
 Questo è interessante, ma di uso limitato. Quello che vorresti sapere è:
 
-* il tasso di crescita di questi numeri nel tempo
-* l&#39;importo dei ricavi generati da ciascuna origine di acquisizione
-* a [analisi per coorte](https://en.wikipedia.org/wiki/Cohort_analysis) di utenti provenienti da ogni origine
-* la probabilità che un utente proveniente da uno di questi canali ritorni come cliente in futuro.
+* Tasso di crescita di questi numeri nel tempo
+* La quantità di ricavi generati da ogni origine di acquisizione
+* A [analisi per coorte](https://en.wikipedia.org/wiki/Cohort_analysis) di utenti provenienti da ogni origine
+* La probabilità che un utente proveniente da uno di questi canali ritorni come cliente in futuro
 
 Le query necessarie per eseguire queste analisi sono complesse. Sulla base di queste informazioni, potrai determinare i canali di acquisizione più redditizi e concentrare di conseguenza i tempi e i soldi del marketing.
 
