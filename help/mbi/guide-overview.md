@@ -8,7 +8,7 @@ exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -53,9 +53,9 @@ Hai bisogno di assistenza per creare una colonna calcolata avanzata? Si è verif
 
 | Risorsa documentazione | Descrizione |
 |----------------------- | ----------- |
-| [Documentazione di Adobe Commerce 2.4 per esercenti](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Documentazione incentrata sui commercianti per Adobe Commerce e Magenti Open Source |
+| [Documentazione di Adobe Commerce 2.4 per esercenti](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Documentazione incentrata sui commercianti per Adobe Commerce e Magento Open Source |
 | [Documentazione dei servizi per Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) | Documentazione per supportare una raccolta di servizi che consentono ai commercianti di integrare i componenti chiave della propria attività con il negozio. |
 | [Guide operative di Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html) | Documentazione di sistema su concetti, processi, strumenti e best practice per sviluppare, distribuire e gestire progetti implementati su piattaforme Adobe Commerce e di Magento Open Source. |
-| [Documentazione per gli sviluppatori di Adobe Commerce 2.4](https://developer.adobe.com/commerce/) | Documentazione incentrata sugli sviluppatori utilizzata per creare e personalizzare Adobe Commerce o Magenti Open Source |
+| [Documentazione per gli sviluppatori di Adobe Commerce 2.4](https://developer.adobe.com/commerce/) | Documentazione incentrata sugli sviluppatori utilizzata per creare e personalizzare Adobe Commerce o Magento Open Source |
 
 {style="table-layout:auto"}

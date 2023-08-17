@@ -53,7 +53,7 @@ Viene visualizzata una nuova finestra per configurare i dettagli della `Cohort` 
 
 ### Per realizzare un’ `Cohort` rapporto:
 
-1. Come raggruppare `cohorts`
+1. Come raggruppare i `cohorts`
 1. Il `cohort` periodo temporale
 1. Il numero di `cohorts` per visualizzare
 1. Quantità minima di dati per ogni `cohort` deve contenere

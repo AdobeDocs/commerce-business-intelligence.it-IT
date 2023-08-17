@@ -122,7 +122,7 @@ Osservare l&#39;intero processo:
 
 ## Ritorno a capo
 
-Per finire, avete creato questa tabella che confronta i vari metodi di replica. È molto utile quando si seleziona un metodo per le tabelle della Data Warehouse.
+Per terminare, avete creato questa tabella che confronta i vari metodi di replica. È molto utile quando si seleziona un metodo per le tabelle della Data Warehouse.
 
 | **`Method`** | **`Syncing New Data`** | **`Processing Rechecks on Large Data Sets`** | **`Handle Composite Keys?`** | **`Handle Non-Integer PKs?`** | **`Handle Non-Sequential PK Population?`** | **`Handle Row Deletion?`** |
 |-----|-----|-----|-----|-----|-----|-----|

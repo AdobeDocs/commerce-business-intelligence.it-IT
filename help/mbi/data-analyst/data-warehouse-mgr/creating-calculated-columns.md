@@ -23,7 +23,7 @@ Prima di iniziare, Adobe consiglia di rivedere [Guida ai tipi di colonna calcola
 
 1. Viene visualizzato lo schema di tabella. Clic **[!UICONTROL Create New Column]**.
 
-1. Assegna un nome alla colonna. Ad esempio: `Customer Gender`.
+1. Assegna un nome alla colonna. Ad esempio, `Customer Gender`.
 
 1. Selezionare la definizione della colonna. Qui è dove [Guida ai tipi di colonne calcolate](../data-warehouse-mgr/calc-column-types.md) è utile!
 

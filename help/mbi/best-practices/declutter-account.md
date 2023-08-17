@@ -47,7 +47,7 @@ Ogni utente con `Admin` o `Standard` In Access è possibile creare report e dash
 
 ### Rivedere dashboard e rapporti
 
-Prima di eliminare qualcosa, è necessario rivedere i rapporti e le dashboard per valutare ciò che è in uso. Mentre è possibile utilizzare il **[!UICONTROL find unused reports]** di seguito, qualsiasi revisione iniziale rende le attività di pulizia molto più produttive.
+Prima di eliminare qualcosa, è necessario rivedere i rapporti e le dashboard per valutare cosa è in uso. Mentre è possibile utilizzare il **[!UICONTROL find unused reports]** di seguito, qualsiasi revisione iniziale rende le attività di pulizia molto più produttive.
 
 ### Eliminazione di dashboard e report
 

@@ -35,7 +35,7 @@ Ad esempio, nella relazione tra persone e numeri di patente, una persona può av
 
 ### `One-to-Many` {#onetomany}
 
-In un `one-to-many` relazione, un record nella tabella `A` può potenzialmente appartenere a più record nella tabella `B`. Pensate alla relazione tra `orders` e `items` - un ordine può contenere molti articoli, ma un articolo appartiene a un singolo ordine. In questo caso, il `orders` la tabella è il lato uno e il `items` tabella è il lato molti.
+In un `one-to-many` relazione, un record nella tabella `A` può potenzialmente appartenere a più record nella tabella `B`. Pensate alla relazione tra `orders` e `items` - un ordine può contenere più articoli, ma un articolo appartiene a un singolo ordine. In questo caso, il `orders` la tabella è il lato uno e il `items` tabella è il lato molti.
 
 ![](../../assets/one-to-many_001.png)
 

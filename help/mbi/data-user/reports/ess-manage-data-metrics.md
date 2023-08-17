@@ -52,7 +52,7 @@ Se utilizzate nei rapporti, le metriche possono essere analizzate in un determin
 
      Se stai modificando una metrica esistente, puoi anche [modificare la tabella operativa della metrica](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) in questa sezione.
 
-   * Scegli una dimensione di data che può essere utilizzata per generare la tendenza della metrica. Ad esempio: `order date`.
+   * Scegli una dimensione di data che può essere utilizzata per generare la tendenza della metrica. Ad esempio, `order date`.
 
 ## Aggiunta di filtri {#filters}
 

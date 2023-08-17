@@ -30,7 +30,7 @@ I riepiloghi e-mail sono un potente strumento di comunicazione che puoi utilizza
 
 1. Immettere un nome per il riepilogo.
 
-   Scegli un nome che trasmetta ciò che è incluso nel riepilogo. Ad esempio: `AOV Comparison`.
+   Scegli un nome che trasmetta ciò che è incluso nel riepilogo. Ad esempio, `AOV Comparison`.
 
 1. In `Choose Content` , selezionare i rapporti che si desidera includere nel riepilogo.
 

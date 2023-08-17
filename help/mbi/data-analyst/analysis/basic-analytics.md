@@ -280,7 +280,7 @@ Di seguito sono riportati alcuni esempi comuni di rapporti e metriche che potreb
 
 ### Ordini
 
-* **Descrizione**: conteggio del numero totale di ordini in un determinato periodo. Un rapporto Ordini tiene traccia delle modifiche nel volume degli ordini causate da nuove offerte di prodotti, promozioni o qualsiasi altra cosa che possa aumentare (o diminuire) il volume delle transazioni. Spesso potrebbe essere utile segmentare questa metrica in base ad alcune variabili per rispondere a specifiche domande.
+* **Descrizione**: conteggio del numero totale di ordini in un determinato periodo. Un rapporto Ordini tiene traccia delle modifiche nel volume dell’ordine causate da nuove offerte di prodotti, promozioni o qualsiasi altra cosa che possa aumentare (o diminuire) il volume delle transazioni. Spesso potrebbe essere utile segmentare questa metrica in base ad alcune variabili per rispondere a specifiche domande.
 * **Definizione della metrica**: questa metrica esegue una **Conteggio** di `entity_id` da `sales_flat_order` tabella ordinata da `created_at`.
 * **Esempio di rapporto**: Ordini per mese, progressivo anno
    * **[!UICONTROL Metric]**: `number of orders`

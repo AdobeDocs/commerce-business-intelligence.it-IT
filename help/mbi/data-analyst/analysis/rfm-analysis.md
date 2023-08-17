@@ -21,7 +21,7 @@ Questo argomento illustra come impostare una dashboard che consenta di segmentar
 
 ![](../../assets/blobid0.png)
 
-L&#39;analisi RFM può essere configurata solo se si dispone di [!DNL Adobe Commerce Intelligence] Pro pianifica la nuova architettura (ad esempio, se disponi del `Data Warehouse Views` opzione sotto `Manage Data` menu). Queste colonne possono essere create da **[!DNL Manage Data > Data Warehouse]** pagina. Istruzioni dettagliate sono fornite di seguito.
+L&#39;analisi RFM può essere configurata solo se si dispone di [!DNL Adobe Commerce Intelligence] Pro pianifica la nuova architettura (ad esempio, se disponi di `Data Warehouse Views` opzione sotto `Manage Data` menu). Queste colonne possono essere create da **[!DNL Manage Data > Data Warehouse]** pagina. Istruzioni dettagliate sono fornite di seguito.
 
 ## Guida introduttiva
 

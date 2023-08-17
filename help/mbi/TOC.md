@@ -231,7 +231,7 @@ ht-degree: 0%
    - Utilizzo dei dashboard {#working-dashboards}
       - [Condivisione di dashboard](best-practices/share-dashboard-best-practice.md)
       - [Creazione di un dashboard per investitori](best-practices/build-investor-dashboard.md)
-- Tutorials {#tutorials}
+- Tutorial {#tutorials}
    - [Utilizzo di [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Utilizzo delle opzioni di tempo in [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [Creazione di visualizzazioni per un [!DNL SQL] Query](tutorials/create-visuals-from-sql.md)

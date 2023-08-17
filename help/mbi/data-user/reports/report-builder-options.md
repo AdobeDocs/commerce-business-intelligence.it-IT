@@ -57,7 +57,7 @@ Supponiamo che un singolo prodotto sia considerato parte di più categorie di pr
 
 ## Quando dovrei usare il Report Builder tradizionale? {#whentraditionalrb}
 
-Mentre il [!DNL SQL Report Builder] offre maggiore controllo e accesso a funzionalità precedentemente non disponibili; è possibile che non sia sempre la scelta giusta. L’Adobe suggerisce di considerare anche quanto segue quando si decide quale sapore del report builder utilizzare.
+Mentre il [!DNL SQL Report Builder] offre maggiore controllo e accesso a funzionalità precedentemente non disponibili; potrebbe non essere sempre la scelta giusta. L’Adobe suggerisce di considerare anche quanto segue quando si decide quale sapore del report builder utilizzare.
 
 ### Se stai creando un rapporto semplice...
 

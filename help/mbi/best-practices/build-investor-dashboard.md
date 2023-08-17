@@ -47,7 +47,7 @@ Di seguito è riportato ciò che è necessario creare rapporti per il dashboard 
    * Metrica - Ricavi
    * Raggruppa per cliente `utm_source`
 * **[!UICONTROL Revenue from top 10 products]**
-   * Metrica: ricavi da prodotti
+   * Metrica - Entrate da prodotti
       * Nascondi il grafico
       * Raggruppa per nome del prodotto. Seleziona tutti i prodotti.
       * Imposta l&#39;intervallo di tempo su All-Time

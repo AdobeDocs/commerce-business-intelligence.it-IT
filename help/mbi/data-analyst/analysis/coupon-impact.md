@@ -22,7 +22,7 @@ L’analisi del modo in cui i clienti utilizzano i coupon può fornire informazi
 
 Rispondi a queste domande concentrandoti su [confronto tra clienti acquisiti con cedola e clienti acquisiti senza cedola](#compare), [analisi dei dettagli del primo ordine dalle acquisizioni di coupon](#firstorder), e [esaminare gli attributi dei clienti che utilizzano i coupon nel loro primo ordine.](#attributes)
 
-Inizia.
+Introduzione!
 
 ## Confronto tra clienti acquisiti con cedola e clienti acquisiti senza cedola {#compare}
 

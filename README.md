@@ -2,7 +2,7 @@
 source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 # Contribuisci articolo
@@ -11,7 +11,7 @@ Apprezziamo i contributi della nostra community e dei dipendenti Adobi esterni a
 
 ## Codice di condotta open source Adobe
 
-Questo progetto ha adottato [Codice di condotta open source Adobe](../code-of-conduct.md) o [Codice di condotta .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Per ulteriori informazioni, vedere [Contribuire](../contributing.md) argomento.
+Questo progetto ha adottato il [Codice di condotta di Adobe Open Source](../code-of-conduct.md) o il [Codice di condotta di .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Per ulteriori informazioni, vedere [Contribuire](../contributing.md) argomento.
 
 ## Informazioni sui contributi ai contenuti Adobe
 

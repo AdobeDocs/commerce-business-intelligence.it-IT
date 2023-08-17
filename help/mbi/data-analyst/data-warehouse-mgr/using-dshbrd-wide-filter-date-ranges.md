@@ -47,7 +47,7 @@ Per analizzare le prestazioni di un negozio specifico, fai clic sull’icona dei
 
 >[!NOTE]
 >
->Un filtro store è abilitato o disabilitato per un intero [!DNL Commerce Intelligence] account. Se un dashboard contiene rapporti che non sono interessati dal filtro (ad esempio rapporti che non sono generati su [!DNL Adobe Commerce] ), questi rapporti non vengono aggiornati quando viene applicato il filtro store. È possibile [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) se ritieni che un rapporto debba essere aggiornato in base alla selezione dello store o se ritieni che il filtro dello store dell’account sia disabilitato per errore.
+>Un filtro store è abilitato o disabilitato per un intero [!DNL Commerce Intelligence] account. Se una dashboard contiene rapporti che non sono interessati dal filtro (ad esempio rapporti che non sono generati su [!DNL Adobe Commerce] ), questi rapporti non vengono aggiornati quando viene applicato il filtro store. È possibile [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) se ritieni che un rapporto debba essere aggiornato in base alla selezione dello store o se ritieni che il filtro dello store dell’account sia disabilitato per errore.
 
 Quando selezioni uno store da `Store Filter`, il filtro mantiene la selezione quando ci si sposta tra le dashboard. Mantenere la selezione consente di visualizzare ovunque i dati per lo store selezionato fino a quando non si seleziona `All Stores`.
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Richiede [Autorizzazioni di amministrazione.](../../administrator/user-management/user-management.md)
 
-Nel tuo [!DNL Commerce Intelligence] account, puoi personalizzare le impostazioni dell’account per la tua Data Warehouse. Per accedervi, seleziona il nome della tua organizzazione nell’angolo in alto a destra di qualsiasi schermata, quindi scegli **[!UICONTROL Account Settings]** dal menu a discesa.
+Nel tuo [!DNL Commerce Intelligence] account, puoi personalizzare le impostazioni del tuo account per la tua Data Warehouse. Per accedervi, seleziona il nome della tua organizzazione nell’angolo in alto a destra di qualsiasi schermata, quindi scegli **[!UICONTROL Account Settings]** dal menu a discesa.
 
 * **[!UICONTROL Client Name:]** Questa impostazione viene visualizzata nell’angolo in alto a destra di tutte le dashboard e altrove nell’account. Se desideri modificare **[!UICONTROL "Vandelay Industries Co., Ltd]** a semplicemente **[!UICONTROL "Vandelay]**, ecco dove farlo.
 

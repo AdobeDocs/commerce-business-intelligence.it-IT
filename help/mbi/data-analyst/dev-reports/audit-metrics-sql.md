@@ -44,7 +44,7 @@ Dopo aver salvato il report, accedi a tale dashboard selezionando `Go to Dashboa
 
 ## Query personalizzate
 
-Puoi anche scrivere query personalizzate ed esportare i risultati da confrontare con il database locale. Dopo il [linee guida per l’ottimizzazione delle query](../../best-practices/optimizing-your-sql-queries.md), scrivere una query nell&#39;editor SQL. Puoi utilizzare i pulsanti nella parte superiore della barra laterale per passare da un elenco di tabelle a un altro e le metriche disponibili per l’utilizzo in [!DNL SQL Report Builder] e aggiungerli alla query. Quando la query personalizzata soddisfa le tue esigenze, puoi salvare il rapporto ed esportare tali dati dal dashboard.
+Puoi anche scrivere query personalizzate ed esportare i risultati da confrontare con il database locale. Dopo il [linee guida per l’ottimizzazione delle query](../../best-practices/optimizing-your-sql-queries.md), scrivere una query nell&#39;editor SQL. Puoi utilizzare i pulsanti nella parte superiore della barra laterale per passare da un elenco di tabelle a un elenco di metriche disponibili per l’utilizzo in [!DNL SQL Report Builder] e aggiungerli alla query. Quando la query personalizzata soddisfa le tue esigenze, puoi salvare il rapporto ed esportare tali dati dal dashboard.
 
 >[!NOTE]
 >
