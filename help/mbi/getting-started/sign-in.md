@@ -4,9 +4,9 @@ description: Scopri come accedere al tuo account Commerce Intelligence.
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Accounts
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 988a7bee27a0c381d1c84db960e978ca73eb3615
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 0%
 # Accedi al file attivato [!DNL Adobe Commerce Intelligence] account
 
 Dopo aver attivato il [!DNL Commerce Intelligence] account per [on-premise o cloud](../getting-started/onpremise-activation.md) e hai lavorato con il tuo Adobe Account Team per finalizzare i passaggi di configurazione, ora puoi accedere al tuo account.
-
-Puoi accedere con il tuo [!DNL Adobe ID] o utilizzando [!DNL Commerce Intelligence] indirizzo e-mail e password.
-
-![accesso](../assets/sign-in.png)
 
 ## Accedi con il tuo [!DNL Adobe ID]
 
