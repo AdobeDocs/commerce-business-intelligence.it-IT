@@ -4,7 +4,7 @@ description: Scopri come utilizzare [!DNL Commerce Intelligence] funzioni dispon
 breadcrumb-title: Guida utente di Commerce Intelligence
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
+source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
@@ -57,10 +57,10 @@ ht-degree: 0%
       - [Standardizzazione dei dati con le tabelle di mappatura](data-analyst/data-warehouse-mgr/stndrd-data-map-tables.md)
       - [Traduzione di query SQL in [!DNL Commerce Intelligence] rapporti](data-analyst/dev-reports/sql-queries-reports.md)
       - [Informazioni e valutazione delle relazioni tra tabelle](data-analyst/data-warehouse-mgr/table-relationships.md)
-      - [Utilizzo della differenza di data calcolata](data-analyst/data-warehouse-mgr/using-date-diff-calc-column-.md)
+      - [Utilizzo della differenza di data calcolata](data-analyst/data-warehouse-mgr/using-date-diff-calc-column.md)
       - [Utilizzo del filtro a livello di dashboard](data-analyst/data-warehouse-mgr/using-dshbrd-wide-filter-date-ranges.md)
       - [Utilizzo della colonna Numero evento calcolato](data-analyst/data-warehouse-mgr/using-event-num-calc-column.md)
-      - [Utilizzo della colonna Calcolato di confronto sequenziale](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column-.md)
+      - [Utilizzo della colonna Calcolato di confronto sequenziale](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column.md)
    - Tabelle Commerce comuni {#tables}
       - [Introduzione](data-analyst/data-warehouse-mgr/common-mage-tables.md)
       - [[!DNL customer_entity]](data-analyst/data-warehouse-mgr/cust-ent-table.md)
@@ -231,7 +231,7 @@ ht-degree: 0%
    - Utilizzo dei dashboard {#working-dashboards}
       - [Condivisione di dashboard](best-practices/share-dashboard-best-practice.md)
       - [Creazione di un dashboard per investitori](best-practices/build-investor-dashboard.md)
-- Tutorial {#tutorials}
+- Tutorials {#tutorials}
    - [Utilizzo di [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Utilizzo delle opzioni di tempo in [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [Creazione di visualizzazioni per un [!DNL SQL] Query](tutorials/create-visuals-from-sql.md)
