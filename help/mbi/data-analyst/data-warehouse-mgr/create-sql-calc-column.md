@@ -4,9 +4,9 @@ description: Scopri come creare colonne avanzate sotto forma di colonne di calco
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 8090c2e0f17f0e8d3bdec668ce546206bf024691
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Da qui puoi creare una `Calculation` seguendo i passaggi seguenti:
    * `Integer` - Numero intero
    * `Decimal(10,2)` - un numero decimale composto da dieci cifre totali, di cui due a destra del separatore decimale
    * `String` - Qualsiasi tipo di testo o serie di caratteri che non utilizzano numeri
-   * `Datetime` dd/MM/yyyy hh:mm:formato ss
+   * `Datetime` - `yyyy-MM-dd hh:mm:ss` formato
 
 1. Clic **[!UICONTROL test column]**. In questo modo viene generato un elenco di cinque valori di test per ogni input e viene visualizzato il risultato della logica del passaggio 6 per ogni set di valori di test. Se una parte qualsiasi dell&#39;istruzione SQL genera un errore, viene restituito il messaggio di errore appropriato. I risultati di esempio possono essere generati solo se tutte le colonne di input sono campi nativi. Se una delle colonne di input è una colonna calcolata, devi convalidarne i risultati aggiungendo la colonna a una metrica e visualizzandola nel Report Builder visivo
 
