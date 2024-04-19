@@ -4,9 +4,9 @@ description: Scopri le prestazioni dei coupon nel tuo business, un modo interess
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: d8fc96a58b72c601a5700f35ea1f3dc982d76571
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Innanzitutto, una nota su come viene tenuta traccia dei codici coupon. Se un cli
 * Uno sconto si riflette nel `base_grand_total` importo (il tuo `Revenue` in Commerce Intelligence)
 * Il codice coupon viene memorizzato in `coupon_code` campo. Se questo campo è NULL (vuoto), all&#39;ordine non è associato alcun coupon.
 * L&#39;importo scontato è memorizzato in `base_discount_amount`. A seconda della configurazione, questo valore può apparire negativo o positivo.
+
+A partire dalla versione 2.4.7 di Commerce, un cliente può applicare più codici coupon a un ordine. In questo caso:
+
+* Tutti i codici coupon applicati sono memorizzati nel `coupon_code` campo di `sales_order_coupons`. Il primo codice coupon applicato viene memorizzato anche nel `coupon_code` campo di `sales_order`. Se questo campo è NULL (vuoto), all&#39;ordine non è associato alcun coupon.
 
 ## Creazione di una metrica
 
@@ -196,3 +200,9 @@ Il primo passaggio consiste nel creare una nuova metrica con i passaggi seguenti
    * [!UICONTROL Chart type]: `Stacked Column`
 
 Dopo aver generato i rapporti, consulta l’immagine nella parte superiore di questo argomento per informazioni su come organizzare i rapporti sul dashboard.
+
+>[!NOTE]
+>
+>A partire dalla versione 2.4.7 di Adobe Commerce, i clienti possono utilizzare **quote_coupon** e **sales_order_coupons** tabelle per ottenere informazioni approfondite sul modo in cui i clienti utilizzano più coupon.
+
+![](../../assets/multicoupon_relationship_tables.png)

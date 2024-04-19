@@ -4,9 +4,9 @@ description: Scopri come analizzare le prestazioni del coupon.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: d8fc96a58b72c601a5700f35ea1f3dc982d76571
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -507,3 +507,9 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile all’immagine nella parte superiore della pagina.
 
 In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il team Professional Services, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+
+>[!NOTE]
+>
+>A partire dalla versione 2.4.7 di Adobe Commerce, i clienti possono utilizzare **quote_coupon** e **sales_order_coupons** tabelle per ottenere informazioni approfondite sul modo in cui i clienti utilizzano più coupon.
+
+![](../../assets/multicoupon_relationship_tables.png)
