@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Questo argomento illustra le analisi che possono aiutarti a rispondere alle segu
 
 ## Metriche consigliate
 
-Quando si analizzano il decadimento e l’abbandono della probabilità di ripetizione, considerare l’utilizzo di ([o edificio](../../data-user/reports/ess-manage-data-metrics.md)) le metriche seguenti:
+Quando si analizza il decadimento e l&#39;abbandono della probabilità di ripetizione, è consigliabile utilizzare ([o la compilazione](../../data-user/reports/ess-manage-data-metrics.md)) delle metriche seguenti:
 
 ### Probabilità ordine di ripetizione iniziale
 
@@ -33,7 +33,7 @@ Questa misura è definita come il numero totale di ordini ripetuti, espresso com
 
 Questa misura dimostra la probabilità che un utente ordini nuovamente, dato il numero di mesi trascorsi dall’ultimo ordine. La formula utilizzata per generare questa metrica semplifica le operazioni seguenti:
 
-![Ripeti formula di probabilità](../../assets/Repeat_probability_formula.png)
+![Formula di probabilità di ripetizione](../../assets/Repeat_probability_formula.png)
 
 A seconda del modello di business, la probabilità di ripetizione dell’ordine può calare immediatamente dopo che un cliente ha effettuato un ordine e continuare a diminuire nei mesi successivi, oppure può dimostrare variazioni stagionali e picchi.
 
@@ -43,7 +43,7 @@ Comprendere la percentuale di clienti che si prevede effettueranno acquisti ripe
 
 Osserva il decadimento della probabilità di ripetizione per una tipica attività di e-commerce.
 
-![Probabilità di ripetizione ordine iniziale probabilità di ripetizione ordine dati mesi dall&#39;ordine.](../../assets/Order_probability_reports.png)
+![Probabilità ordine di ripetizione iniziale probabilità ordine di ripetizione data mesi dall&#39;ordine.](../../assets/Order_probability_reports.png)
 
 ### Probabilità ordine di ripetizione iniziale
 
@@ -78,7 +78,7 @@ Dopo aver creato l’analisi di cui sopra e aver determinato una soglia di abban
 
 Se offri più di un prodotto, probabilmente ti chiedi in che modo i clienti che acquistano un prodotto specifico si comportano in modo diverso nel tempo rispetto ad altri clienti. Vuoi saperne di più? Consulta questa esercitazione per esplorare il comportamento di acquisto nel corso del ciclo di vita delle coorti di clienti in base a prodotti specifici acquistati.
 
-Questa best practice è fornita da [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per ulteriori informazioni.
+Questa best practice è fornita da [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per ulteriori informazioni.
 
 ### Correlato
 

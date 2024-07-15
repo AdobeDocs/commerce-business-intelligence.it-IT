@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
 
 # Migrazione dei dati
 
-La migrazione a un nuovo schema di database, server o database di reporting non deve essere troppo complessa. Il [[!DNL Adobe] Team di servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) offre assistenza in materia di migrazione.
+La migrazione a un nuovo schema di database, server o database di reporting non deve essere troppo complessa. Il [[!DNL Adobe] team dei servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) offre assistenza per la migrazione.
 
 Per garantire una transizione quanto più fluida possibile, è necessario essere il più dettagliati possibile durante l’invio della richiesta di migrazione. Questo argomento contiene tutto il necessario per inviare una richiesta e iniziare a eseguire la migrazione. Fornendoci un quadro completo delle tue esigenze, assicurati che il tuo progetto abbia un ambito appropriato e che la stima sia accurata.
 
@@ -21,15 +21,15 @@ Per garantire una transizione quanto più fluida possibile, è necessario essere
 
 Prima di iniziare, è necessario conoscere le risposte alle seguenti domande:
 
-* **Il nuovo database si trova su un nuovo server?** Prima di inviare una richiesta, aggiorna le impostazioni della connessione dati in **[!UICONTROL Manage Data** > **Connections]**. Se hai bisogno di un aggiornamento su come farlo, vai al [`Integrations`](../integrations/integrations.md) e trovare le istruzioni per il tipo di database in uso.
+* **Il nuovo database si trova su un nuovo server?** Prima di inviare una richiesta, aggiornare le impostazioni della connessione dati in **[!UICONTROL Manage Data** > **Connections]**. Se è necessario un aggiornamento su come eseguire questa operazione, passare alla sezione [`Integrations`](../integrations/integrations.md) e trovare le istruzioni per il tipo di database utilizzato.
 
-* **Il nuovo database contiene tutti i dati storici o è necessario eseguirne la migrazione?** Puoi consolidare i dati storici e quelli nuovi durante il processo di migrazione. Anche se non hai bisogno di un consolidamento, comunicaci nella tua richiesta.
+* **Nel nuovo database sono presenti tutti i dati storici o è necessario eseguirne la migrazione?** È possibile consolidare i dati storici e i nuovi dati durante il processo di migrazione. Anche se non hai bisogno di un consolidamento, comunicaci nella tua richiesta.
 
-Dopo aver ricevuto le risposte a quanto sopra, è necessario conoscere il tipo di migrazione. Il nuovo database avrà [`same`](#sameschema) o avrà un [`different`](#newschema) schema? Nelle discussioni seguenti trovi istruzioni dettagliate per ciascun tipo di migrazione.
+Dopo aver ricevuto le risposte a quanto sopra, è necessario conoscere il tipo di migrazione. Il nuovo database avrà lo schema [`same`](#sameschema) o uno schema [`different`](#newschema)? Nelle discussioni seguenti trovi istruzioni dettagliate per ciascun tipo di migrazione.
 
 ## Migrazione a un nuovo database con lo stesso schema {#sameschema}
 
-Quando invii la richiesta, informa che lo schema del database non sta cambiando e che la connessione è già impostata in [!DNL Adobe Commerce Intelligence].
+Quando si invia la richiesta, verificare che lo schema del database non stia cambiando e che la connessione sia già impostata in [!DNL Adobe Commerce Intelligence].
 
 Se il database ha un nuovo nome, includilo nella richiesta in modo che sia possibile migrare correttamente le dashboard.
 
@@ -49,13 +49,13 @@ Se ti senti a tuo agio a fare da solo la corrispondenza, segui queste istruzioni
 
 1. In un foglio di calcolo creare una scheda per ogni tabella da migrare al nuovo database.
 
-1. In ogni scheda, crea una colonna per tutte le colonne esistenti da migrare. L’Adobe consiglia di denominarlo in un modo simile a `Existing column name`.
+1. In ogni scheda, crea una colonna per tutte le colonne esistenti da migrare. L&#39;Adobe consiglia di denominarlo con un nome simile a `Existing column name`.
 
-1. È inoltre necessario creare un&#39;altra colonna per gli equivalenti di colonna nel nuovo database in ogni scheda del foglio di calcolo. L’Adobe consiglia di denominare la colonna in un modo simile a `New column name`.
+1. È inoltre necessario creare un&#39;altra colonna per gli equivalenti di colonna nel nuovo database in ogni scheda del foglio di calcolo. L&#39;Adobe consiglia di denominare la colonna in modo analogo a `New column name`.
 
-1. Inserire le colonne esistenti e le relative equivalenti. Se una colonna esistente non ha un nuovo equivalente, immettere: `N/A`.
+1. Inserire le colonne esistenti e le relative equivalenti. Se una colonna esistente non ha un nuovo equivalente, immettere `N/A`.
 
-   Inoltre, se esiste un nuovo metodo per calcolare le stesse informazioni nel nuovo database, immetterlo nel [`New column name`] colonna.
+   Inoltre, se esiste un nuovo metodo per calcolare le stesse informazioni nel nuovo database, immetterlo nella colonna [`New column name`].
 
 Ecco un esempio:
 
@@ -67,10 +67,10 @@ Ecco un esempio:
 
 ## Come si invia una richiesta? {#submitreq}
 
-Puoi contattarci tramite [invio di una richiesta di assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Puoi contattarci inviando [una richiesta di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 Se hai seguito i passaggi della sezione precedente per creare il foglio di calcolo corrispondente alle colonne, non dimenticare di allegarlo.
 
 ## Cosa succede dopo? {#wrapup}
 
-La determinazione dell’ambito del progetto richiede una certa collaborazione tra l’utente e l’analista del team Commerce Services che esegue la migrazione. La complessità delle modifiche e la reattività dell’utente e dell’analista influiscono direttamente sul tempo necessario per la migrazione. Dopo aver individuato i dettagli, verrà stabilita una sequenza temporale e inviata all&#39;utente con una descrizione del lavoro.
+La determinazione dell’ambito del progetto richiede una certa collaborazione tra l’utente e l’analista del team di Commerce Services che esegue la migrazione. La complessità delle modifiche e la reattività dell’utente e dell’analista influiscono direttamente sul tempo necessario per la migrazione. Dopo aver individuato i dettagli, verrà stabilita una sequenza temporale e inviata all&#39;utente con una descrizione del lavoro.

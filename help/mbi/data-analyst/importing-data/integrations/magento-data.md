@@ -1,33 +1,33 @@
 ---
 title: Dati Commerce previsti
-description: Esplora le tabelle di dati principali importate dagli utenti Commerce in Commerce Intelligence
+description: Esplora le tabelle di dati principali importate dagli utenti di Commerce in Commerce Intelligence
 exl-id: b481c8fc-41b6-4094-8901-17d57f26bfc0
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
 
-# Previsto [!DNL Adobe Commerce] Dati
+# Previsti [!DNL Adobe Commerce] dati
 
-Dopo aver [ha connesso [!DNL Adobe Commerce] archiviare](../../../data-analyst/importing-data/integrations/magento.md), è possibile utilizzare Data Warehouse Manager per tracciare facilmente i campi di dati rilevanti dal database Commerce per l’analisi.
+Dopo aver [connesso il tuo [!DNL Adobe Commerce] archivio](../../../data-analyst/importing-data/integrations/magento.md), puoi utilizzare Gestione Date Warehouse per tenere traccia facilmente dei campi di dati rilevanti dal database Commerce per l&#39;analisi.
 
-Questo argomento esplora le tabelle di dati principali importate dagli utenti Commerce [!DNL Commerce Intelligence].
+In questo argomento vengono illustrate le principali tabelle dati importate dagli utenti di Commerce in [!DNL Commerce Intelligence].
 
 | **Nome tabella** | **Descrizione** |
 |-----|-----|
-| `Customers` | Il `customer\_entity` e tabelle correlate descrivono le informazioni associate a ciascuna *cliente registrato* nel database, ad esempio l’indirizzo e-mail e la data di registrazione. Con queste informazioni, puoi iniziare a segmentare per attributi e coorti a livello di cliente. |
-| `Orders` | Il `sales\_flat\_order` nella tabella vengono registrati tutti gli ordini, inclusi `created\_at` la marca temporale in cui è stato effettuato l’ordine e il `base\_grand\_total` campo che somma i ricavi. Questi campi costituiscono la base per le metriche a livello di ordine. Se l’ordine è stato effettuato da un *cliente registrato*, il `customer\_id` collegamenti di campo al  `customer\_entity` tabella per consentire l’analisi del comportamento di acquisto dei clienti. |
-| `Order items` | Il `sales\_flat\_order\_item` la tabella registra ogni articolo appartenente a un ordine. Ciò include `price` e `qty\_ordered` e `order\_id` campo che si connette al `sales\_flat\_order` tabella. Questa tabella è la base per le metriche come `Item sold`, e consente di segmentare per `product` e `product type`. |
-| `Products` | Il `catalog\_product\_entity` nella tabella sono memorizzate informazioni sugli attributi a livello di prodotto, come categoria, dimensione e colore. |
-| `Categories` | I tuoi prodotti appartengono a uno o più diversi `product categories`, a seconda della configurazione della build Commerce. Il `catalog\_category\_entity` La tabella memorizza la gerarchia di queste categorie (ad esempio, Abbigliamento > Punte superiori > T-shirt) e il `catalog\_category\_product` La tabella registra le connessioni tra i prodotti e le categorie. |
+| `Customers` | Le tabelle `customer\_entity` e correlate descrivono le informazioni associate a ogni *cliente registrato* nel database, come l&#39;indirizzo e-mail e la data di registrazione. Con queste informazioni, puoi iniziare a segmentare per attributi e coorti a livello di cliente. |
+| `Orders` | La tabella `sales\_flat\_order` registra tutti gli ordini, inclusi il timestamp `created\_at` utilizzato per l&#39;ordine e il campo `base\_grand\_total` che somma i ricavi. Questi campi costituiscono la base per le metriche a livello di ordine. Se l&#39;ordine è stato effettuato da un *cliente registrato*, il campo `customer\_id` si collega alla tabella `customer\_entity` per consentire l&#39;analisi del comportamento di acquisto del cliente. |
+| `Order items` | La tabella `sales\_flat\_order\_item` registra ogni elemento appartenente a un ordine. Sono inclusi i campi `price` e `qty\_ordered` e il campo `order\_id` che si connette alla tabella `sales\_flat\_order`. Questa tabella è la base per le metriche come `Item sold` e consente di segmentare per `product` e `product type`. |
+| `Products` | Nella tabella `catalog\_product\_entity` sono memorizzate informazioni sugli attributi a livello di prodotto, ad esempio categoria, dimensione e colore. |
+| `Categories` | I prodotti appartengono a uno o più `product categories` diversi, a seconda di come è configurata la build Commerce. La tabella `catalog\_category\_entity` memorizza la gerarchia di queste categorie (ad esempio, Abbigliamento > Punte superiori > T-shirt) e la tabella `catalog\_category\_product` registra le connessioni tra i prodotti e le categorie. |
 
 {style="table-layout:auto"}
 
 ## Correlato
 
-* [Connessione [!DNL Adobe Commerce]](../integrations/magento.md)
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Connessione in corso  [!DNL Adobe Commerce]](../integrations/magento.md)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

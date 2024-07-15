@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -21,79 +21,79 @@ Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-c
 
 Devi innanzitutto caricare un file contenente solo una chiave primaria con il valore di una. Ciò consente di creare alcune colonne calcolate necessarie per l’analisi.
 
-È possibile utilizzare [caricatore di file](../importing-data/connecting-data/using-file-uploader.md) e l&#39;immagine seguente per formattare il file.
+Per formattare il file è possibile utilizzare [lo strumento di caricamento file](../importing-data/connecting-data/using-file-uploader.md) e l&#39;immagine seguente.
 
 ## Colonne calcolate
 
-Se utilizzi l’architettura originale (ad esempio, se non disponi del `Data Warehouse Views` opzione sotto `Manage Data` ), desideri contattare il team di supporto per creare le colonne seguenti. Nella nuova architettura, queste colonne possono essere create dal `Manage Data > Data Warehouse` pagina. Di seguito sono riportate istruzioni dettagliate.
+Se si utilizza l&#39;architettura originale (ad esempio, se non si dispone dell&#39;opzione `Data Warehouse Views` nel menu `Manage Data`), contattare il team di supporto per creare le colonne seguenti. Nella nuova architettura, è possibile creare queste colonne dalla pagina `Manage Data > Data Warehouse`. Di seguito sono riportate istruzioni dettagliate.
 
-Un&#39;ulteriore distinzione viene fatta se la vostra azienda consente gli ordini degli ospiti. In tal caso, puoi ignorare tutti i passaggi per `customer_entity` tabella. Se gli ordini degli ospiti non sono consentiti, ignora tutti i passaggi per `sales_flat_order` tabella.
+Un&#39;ulteriore distinzione viene fatta se la vostra azienda consente gli ordini degli ospiti. In tal caso, è possibile ignorare tutti i passaggi per la tabella `customer_entity`. Se gli ordini guest non sono consentiti, ignorare tutti i passaggi per la tabella `sales_flat_order`.
 
 Colonne da creare
 
-* `Sales_flat_order/customer_entity` tabella
-* (ingresso) `reference`
-* [!UICONTROL Column type]: – `Same table > Calculation`
-* [!UICONTROL Inputs]: – `entity_id`
-* [!UICONTROL Calculation]: - **caso in cui A è null then null else 1 end**
-* [!UICONTROL Datatype]: – `Integer`
+* Tabella `Sales_flat_order/customer_entity`
+* (input) `reference`
+* [!UICONTROL Column type]: - `Same table > Calculation`
+* [!UICONTROL Inputs]: - `entity_id`
+* [!UICONTROL Calculation]: - **caso in cui A è null quindi null altrimenti 1 fine**
+* [!UICONTROL Datatype]: - `Integer`
 
-* `Customer concentration` tabella (file caricato con il numero `1`)
+* Tabella `Customer concentration` (file caricato con il numero `1`)
 * Numero di clienti
-* [!UICONTROL Column type]: – `Many to One > Count Distinct`
-* Percorso - `sales_flat_order.(input) reference > Customer Concentration.Primary Key` OPPURE `customer_entity.(input)reference > Customer Concentration.Primary Key`
-* Colonna selezionata - `sales_flat_order.customer_email` OPPURE `customer_entity.entity_id`
+* [!UICONTROL Column type]: - `Many to One > Count Distinct`
+* Percorso - `sales_flat_order.(input) reference > Customer Concentration.Primary Key` O `customer_entity.(input)reference > Customer Concentration.Primary Key`
+* Colonna selezionata - `sales_flat_order.customer_email` O `customer_entity.entity_id`
 
-* `customer_entity` tabella
+* Tabella `customer_entity`
 * Numero di clienti
-* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]: - `One to Many > JOINED_COLUMN`
 * Percorso - `customer_entity.(input) reference > Customer Concentration. Primary Key`
 * Colonna selezionata - `Number of customers`
 
-* (ingresso) `Ranking by customer lifetime revenue`
-* [!UICONTROL Column type]: – `Same table > Event Number`
+* (input) `Ranking by customer lifetime revenue`
+* [!UICONTROL Column type]: - `Same table > Event Number`
 * Proprietario evento - `Number of customers`
 * Classifica eventi - `Customer's lifetime revenue`
 
 * Percentile di ricavi del cliente
-* [!UICONTROL Column type]: – `Same table > Calculation`
-* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]IT: - **caso in cui A è null e quindi null else (A/B)* 100 end **
-* [!UICONTROL Datatype]: – `Decimal`
+* [!UICONTROL Column type]: - `Same table > Calculation`
+* [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Calculation]: - **se A è null, allora null else (A/B)* 100 end **
+* [!UICONTROL Datatype]: - `Decimal`
 
-* `Sales_flat_order` tabella
+* Tabella `Sales_flat_order`
 * Numero di clienti
-* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]: - `One to Many > JOINED_COLUMN`
 * Percorso - `sales_flat_order.(input) reference > Customer Concentration.Primary Key`
 * Colonna selezionata - `Number of customers`
 
 * (input) Classificazione per ricavi ciclo di vita cliente
-* [!UICONTROL Column type]: – `Same table > Event Number`
+* [!UICONTROL Column type]: - `Same table > Event Number`
 * Proprietario evento - `Number of customers`
-* Classifica eventi - `Customer's lifetime revenue`
+* Classificazione evento - `Customer's lifetime revenue`
 * Filtro - `Customer's order number = 1`
 
 * Percentile di ricavi del cliente
-* [!UICONTROL Column type]: – `Same table > Calculation`
-* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]IT: - **caso in cui A è null e quindi null else (A/B)* 100 end **
+* [!UICONTROL Column type]: - `Same table > Calculation`
+* [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Calculation]: - **se A è null, allora null else (A/B)* 100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
 >
->I percentili utilizzati sono anche frazioni di clienti, che rappresentano il X percentile della base clienti. Ogni cliente è associato a un numero intero compreso tra 1 e 100, che può essere considerato come il ricavo del ciclo di vita *rango*. Ad esempio, se il percentile dei ricavi del cliente per un cliente specifico è **5**, questo cliente si trova in ***quinto percentile*** di tutti i clienti in termini di fatturato nel ciclo di vita.
+>I percentili utilizzati sono anche frazioni di clienti, che rappresentano il X percentile della base clienti. Ogni cliente è associato a un numero intero compreso tra 1 e 100, che può essere considerato come il ricavo del ciclo di vita *rank*. Ad esempio, se il percentile dei ricavi del Cliente per un cliente specifico è **5**, il cliente si trova nel ***quinto percentile*** di tutti i clienti in termini di ricavi relativi al ciclo di vita.
 
 ## Metriche
 
-* **Valore &quot;lifetime&quot; del ciclo di vita totale del cliente**
-* In `customer_entity` tabella
-* Questa metrica esegue una **Somma**
-* Il giorno `Customer's lifetime revenue` colonna
-* Ordinato da `Customer's first order date` timestamp
+* **Valore totale durata cliente**
+* Nella tabella `customer_entity`
+* Questa metrica esegue una **somma**
+* Nella colonna `Customer's lifetime revenue`
+* Ordinato per la marca temporale `Customer's first order date`
 
 ## Rapporti
 
-* **Concentrazione dei clienti**
+* **Concentrazione cliente**
 * [!UICONTROL Metric]: `Total customer lifetime value`
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
@@ -112,7 +112,7 @@ Colonne da creare
 * 
   [!UICONTROL Chart type]: `Line`
 
-* **Massima concentrazione del 10%**
+* **Primi 10% di concentrazione**
 * [!UICONTROL Filter]: `Customer's revenue percentile <= 10`
 
 * Metrica `A`: `Total customer lifetime revenue`
@@ -125,7 +125,7 @@ Colonne da creare
 * 
   [!UICONTROL Chart type]: `Table`
 
-* **Concentrazione minima del 50% con un solo acquisto**
+* **Ultima concentrazione del 50% con un solo acquisto**
 
 * Metrica `A`: `Total customer lifetime revenue`
 * `Customer's revenue percentile <= 50`
@@ -141,7 +141,7 @@ Colonne da creare
 * 
   [!UICONTROL Chart type]: `Table`
 
-* **Concentrazione minima del 10%**
+* **Concentrazione inferiore del 10%**
 * [!UICONTROL Filter]: `Customer's revenue percentile > 90`
 
 * Metrica `A`: `Total customer lifetime revenue`
@@ -156,4 +156,4 @@ Colonne da creare
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile al dashboard di esempio riportato sopra.
 
-In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il team Professional Services, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

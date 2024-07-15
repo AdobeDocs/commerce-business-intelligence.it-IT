@@ -1,96 +1,96 @@
 ---
-title: Attiva [!DNL Adobe Commerce Intelligence] Account
-description: Scopri chi contattare per attivare il tuo [!DNL Commerce Intelligence] account.
+title: Attiva il tuo account  [!DNL Adobe Commerce Intelligence]
+description: Scopri chi contattare per attivare il tuo account [!DNL Commerce Intelligence] .
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: cdd2373c2b9afd85427d437c6d8450f4d4e03350
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
 
-# Attiva [!DNL Commerce Intelligence] Account per sottoscrizioni locali e iniziali
+# Attiva il tuo account [!DNL Commerce Intelligence] per le sottoscrizioni locali e iniziali
 
-Per attivare [!DNL Commerce Intelligence] per gli abbonamenti on-premise, crea innanzitutto un [!DNL Commerce Intelligence] , immettere le informazioni sulle impostazioni, quindi connettersi [!DNL Commerce Intelligence] al tuo [!DNL Commerce] database. <!-- For information about activation in `Cloud Starter` projects, see [Activating your [!DNL Commerce Intelligence] Account for `Cloud Starter` Subscriptions](../getting-started/cloud-activation.md).-->
+Per attivare [!DNL Commerce Intelligence] per le sottoscrizioni on-premise, creare innanzitutto un account [!DNL Commerce Intelligence], immettere le informazioni sulle impostazioni, quindi connettere [!DNL Commerce Intelligence] al database [!DNL Commerce]. <!-- For information about activation in `Cloud Starter` projects, see [Activating your [!DNL Commerce Intelligence] Account for `Cloud Starter` Subscriptions](../getting-started/cloud-activation.md).-->
 
-## Crea [!DNL Commerce Intelligence] account
+## Crea il tuo account [!DNL Commerce Intelligence]
 
 Per creare il tuo account, contatta il team dell’account Adobe o il consulente tecnico del cliente.
 
 ## Crea la password
 
-Dopo la creazione dell’account, verifica la presenza di un’e-mail di notifica dell’account da [!DNL The Magento BI Team@rjmetrics.com]. Utilizza il collegamento fornito nell’e-mail per accedere al [!DNL Commerce Intelligence] e creare la password. Vai alla tua casella in entrata e verifica il tuo indirizzo e-mail.
+Dopo la creazione dell&#39;account, controllare l&#39;indirizzo di posta elettronica per un messaggio di notifica dell&#39;account da [!DNL The Magento BI Team@rjmetrics.com]. Utilizza il collegamento fornito nell&#39;e-mail per accedere al tuo account [!DNL Commerce Intelligence] e creare la tua password. Vai alla tua casella in entrata e verifica il tuo indirizzo e-mail.
 
-Se non hai ricevuto un’e-mail, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Se non hai ricevuto un&#39;e-mail, [contatta l&#39;assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ![](../assets/create-account-4.png)
 
 ## Imposta le preferenze del Negozio
 
-Prima di configurare la connessione al database, completare il modulo per le informazioni sull&#39;archivio. Queste informazioni sono necessarie per completare **[!UICONTROL Connect your Database]** configurazione.
+Prima di configurare la connessione al database, completare il modulo per le informazioni sull&#39;archivio. Queste informazioni sono necessarie per completare l&#39;installazione di **[!UICONTROL Connect your Database]**.
 
 ![](../assets/create-account-6.png)
 
 ## Aggiungi [!DNL Commerce Intelligence] utenti
 
-Dopo aver impostato la password e aver effettuato l’accesso a [!DNL Commerce Intelligence], puoi aggiungere altri utenti al tuo [!DNL Commerce Intelligence] account. Quando aggiungi degli utenti, aggiungi gli utenti amministratore con le autorizzazioni appropriate per completare il processo di attivazione.
+Dopo aver impostato la password e aver effettuato l&#39;accesso a [!DNL Commerce Intelligence], puoi aggiungere altri utenti al tuo account [!DNL Commerce Intelligence]. Quando aggiungi degli utenti, aggiungi gli utenti amministratore con le autorizzazioni appropriate per completare il processo di attivazione.
 
 ![](../assets/create-account-5.png)
 
-## Creare un [!DNL Commerce Intelligence] utente in [!DNL Commerce] admin
+## Crea un utente [!DNL Commerce Intelligence] dedicato nell&#39;amministratore [!DNL Commerce]
 
-Da utilizzare [!DNL Commerce Intelligence], devi aggiungere un utente permanente e dedicato al [!DNL Commerce] progetto. Questo utente dedicato funge da connessione permanente a [!DNL Commerce] che consente il recupero e il trasferimento di nuovi dati al [!DNL Commerce Intelligence] Data Warehouse.
+Per utilizzare [!DNL Commerce Intelligence], è necessario aggiungere un utente permanente e dedicato al progetto [!DNL Commerce]. Questo utente dedicato funge da connessione permanente a [!DNL Commerce] che consente il recupero e il trasferimento di nuovi dati nella Data Warehouse [!DNL Commerce Intelligence] dell&#39;account.
 
-Configurazione di un [!DNL Commerce Intelligence] si assicura che l’account non venga disattivato o eliminato, bloccando in tal modo [!DNL Commerce Intelligence] connessione.
+La configurazione di un utente [!DNL Commerce Intelligence] dedicato garantisce che l&#39;account non venga disattivato o eliminato, interrompendo così la connessione [!DNL Commerce Intelligence].
 
 
 >[!NOTE]
 >
 >L’Adobe incoraggia l’utilizzo di un nome account che ne indichi lo stato permanente (ad esempio ACI-dedicato, ACI-database-connector e così via).
 
-Dopo aver creato l’utente dedicato per [!DNL Commerce Intelligence] in Admin, aggiungi lo stesso utente all’ambiente principale del [!DNL Commerce] progetto con un **[!UICONTROL Master]** impostazione di `Contributor`.
+Dopo aver creato l&#39;utente dedicato per [!DNL Commerce Intelligence] nell&#39;amministratore, aggiungere lo stesso utente all&#39;ambiente primario del progetto [!DNL Commerce] con l&#39;impostazione **[!UICONTROL Master]** di `Contributor`.
 
 ![](../assets/commerce-add-user-settings.png)
 
-## Ottenere le chiavi SSH di Commerce Intelligence
+## Ottieni le chiavi SSH di Commerce Intelligence
 
-1. Il giorno [!UICONTROL Connect your database] pagina per [!DNL Commerce Intelligence] imposta, scorri verso il basso e seleziona **[!UICONTROL Encryption settings]**.
+1. Nella pagina [!UICONTROL Connect your database] per la configurazione di [!DNL Commerce Intelligence], scorrere verso il basso e selezionare **[!UICONTROL Encryption settings]**.
 
-1. Per **Tipo di crittografia**, seleziona `SSH Tunnel`.
+1. Per **Tipo di crittografia**, selezionare `SSH Tunnel`.
 
 1. Dall’elenco a discesa, copia la chiave pubblica fornita.
 
    ![](../assets/encryption-setting-new-account.png)
 
-## Aggiungi la chiave pubblica al [!DNL Commerce Intelligence]
+## Aggiungi la chiave pubblica a [!DNL Commerce Intelligence]
 
-1. Dalla sezione [!DNL Commerce Admin], accedere utilizzando le informazioni di accesso per [!DNL Commerce Intelligence] utente appena creato.
+1. Da [!DNL Commerce Admin], accedere utilizzando le informazioni di accesso per l&#39;utente [!DNL Commerce Intelligence] appena creato.
 
-1. Seleziona la **Impostazioni account** scheda.
+1. Selezionare la scheda **Impostazioni account**.
 
-1. Scorri verso il basso ed espandi **[!UICONTROL SSH Keys]** a discesa. Quindi, seleziona **[!UICONTROL Add a public key]**.
+1. Scorri verso il basso ed espandi il menu a discesa **[!UICONTROL SSH Keys]**. Quindi, selezionare **[!UICONTROL Add a public key]**.
 
    ![](../assets/add-public-key.png)
 
-1. Incolla la chiave pubblica copiata in [!DNL Encryption Type] sopra.
+1. Incolla la chiave pubblica copiata nel passaggio [!DNL Encryption Type] precedente.
 
    ![](../assets/paste-public-key.png)
 
-## Fornire [!DNL Commerce Intelligence] Elementi di base `MySQL` credenziali
+## Fornisci credenziali `MySQL` di Essentials [!DNL Commerce Intelligence]
 
-1. Aggiorna il tuo `.magento/services.yaml`.
+1. Aggiorna `.magento/services.yaml`.
 
    ![](../assets/update-magento-services-yaml.png)
 
-1. Aggiorna il tuo `.magento.app.yaml`.
+1. Aggiorna `.magento.app.yaml`.
 
    ![](../assets/magento-app-yaml-relationships.png)
 
 ## Ottieni informazioni sulla connessione al database
 
-Ottenere le informazioni sulla connessione al database [!DNL Commerce] database a [!DNL Commerce Intelligence]
+Ottiene le informazioni sulla connessione al database [!DNL Commerce] in [!DNL Commerce Intelligence]
 
 1. Eseguire il comando seguente per ottenere le informazioni.
 
@@ -100,19 +100,19 @@ Ottenere le informazioni sulla connessione al database [!DNL Commerce] database 
 
    ![](../assets/example-database-information.png)
 
-## Connetti [!DNL Commerce Intelligence] al tuo [!DNL Commerce] database che utilizza una connessione crittografata
+## Connetti [!DNL Commerce Intelligence] al database [!DNL Commerce] utilizzando una connessione crittografata
 
 >[!NOTE]
 >
->L’Adobe consiglia vivamente di utilizzare un [`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) per stabilire la connessione al database. Tuttavia, se questo metodo non è un&#39;opzione, è comunque possibile collegare [!DNL Commerce Intelligence] al database utilizzando una [`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md).
+>L&#39;Adobe consiglia vivamente di utilizzare un tunnel [`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) per stabilire la connessione al database. Tuttavia, se questo metodo non è un&#39;opzione, è comunque possibile collegare [!DNL Commerce Intelligence] al database utilizzando [`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md).
 
-Immetti il [!DNL Commerce Intelligence] informazioni in [!UICONTROL Connect your Magento Database] schermo.
+Immettere le informazioni di [!DNL Commerce Intelligence] nella schermata [!UICONTROL Connect your Magento Database].
 
 ![](../assets/connect-magento-db.png)
 
 **Input:**
 
-[!UICONTROL Integration Name]: [scegli un nome per il tuo [!DNL Commerce Intelligence] istanza]
+[!UICONTROL Integration Name]: [scegliere un nome per l&#39;istanza [!DNL Commerce Intelligence]]
 
 [!UICONTROL Host]: `mbi.internal`
 
@@ -126,7 +126,7 @@ Immetti il [!DNL Commerce Intelligence] informazioni in [!UICONTROL Connect your
 
 [!UICONTROL Table Prefixes]: [lascia vuoto se non sono presenti prefissi di tabella]
 
-## Imposta il [!UICONTROL **Fuso orario**] impostazioni
+## Imposta il tuo [!UICONTROL **fuso orario**]
 
 ![](../assets/time-zone-settings.png)
 
@@ -134,15 +134,15 @@ Immetti il [!DNL Commerce Intelligence] informazioni in [!UICONTROL Connect your
 
 [!UICONTROL Database Timezone]: `UTC`
 
-[!UICONTROL Desired Timezone]: [scegliere il fuso orario per il quale si desidera visualizzare i dati]
+[!UICONTROL Desired Timezone]: [scegli il fuso orario per il quale vuoi visualizzare i dati]
 
 ## Ottenere le informazioni sulle impostazioni di crittografia
 
-L’interfaccia utente del progetto fornisce una stringa di accesso SSH. Questa stringa può essere utilizzata per raccogliere le informazioni necessarie per [!UICONTROL **Indirizzo remoto**] e [!UICONTROL **Nome utente**]. Utilizza la stringa di accesso SSH selezionando il pulsante del sito di accesso nel ramo principale dell’interfaccia utente del progetto. Quindi, trova il tuo [!UICONTROL User Name] e [!UICONTROL Remote Address] come mostrato di seguito.
+L’interfaccia utente del progetto fornisce una stringa di accesso SSH. Questa stringa può essere utilizzata per raccogliere le informazioni necessarie per [!UICONTROL **Indirizzo remoto**] e [!UICONTROL **Nome utente**]. Utilizza la stringa di accesso SSH selezionando il pulsante del sito di accesso nel ramo principale dell’interfaccia utente del progetto. Quindi, trova [!UICONTROL User Name] e [!UICONTROL Remote Address] come mostrato di seguito.
 
 ![](../assets/master-branch-settings.png)
 
-## Inserisci il tuo [!DNL Encryption] impostazioni
+## Immettere le impostazioni di [!DNL Encryption]
 
 ![](../assets/encryption-settings-2.png)
 
@@ -150,23 +150,23 @@ L’interfaccia utente del progetto fornisce una stringa di accesso SSH. Questa 
 
 [!UICONTROL Encryption Type]: `SSH Tunnel`
 
-[!UICONTROL Remote Address]: `ssh.us-3.magento.cloud`  [dal passaggio precedente]
+[!UICONTROL Remote Address]: `ssh.us-3.magento.cloud` [dal passaggio precedente]
 
-[!UICONTROL Username]: `vfbfui4vmfez6-master-7rqtwti—mymagento`  [dal passaggio precedente]
+[!UICONTROL Username]: `vfbfui4vmfez6-master-7rqtwti—mymagento` [dal passaggio precedente]
 
 [!UICONTROL Port]: `22`
 
 ## Salva l’integrazione.
 
-Dopo aver completato i passaggi di configurazione, applica le modifiche selezionando [!UICONTROL **Salva integrazione**].
+Dopo aver completato i passaggi di configurazione, applicare le modifiche selezionando [!UICONTROL **Salva integrazione**].
 
-Hai connesso correttamente il tuo [!DNL Commerce] al tuo database [!DNL Commerce Intelligence] account.
+Il database [!DNL Commerce] è stato connesso all&#39;account [!DNL Commerce Intelligence].
 
 >[!NOTE]
 >
->Se sei un [!DNL Adobe Commerce Intelligence Pro] cliente, contatta il tuo Customer Success Manager o Customer Technical Advisor per coordinare i passaggi successivi.
+>Se sei un cliente [!DNL Adobe Commerce Intelligence Pro], contatta il tuo Customer Success Manager o il tuo consulente tecnico per coordinare i passaggi successivi.
 
-Dopo aver completato la configurazione, [accedi](../getting-started/sign-in.md) al tuo [!DNL Commerce Intelligence] account.
+Dopo aver completato la configurazione, [accedi](../getting-started/sign-in.md) al tuo account [!DNL Commerce Intelligence].
 
 <!---# Activate your [!DNL Commerce Intelligence] Account 
 

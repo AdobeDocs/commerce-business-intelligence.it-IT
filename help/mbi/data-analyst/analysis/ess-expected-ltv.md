@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -17,29 +17,29 @@ Prevedere il valore del ciclo di vita dei clienti quando effettuano più ordini 
 
 Di seguito sono riportati i passaggi per creare analisi che consentano di comprendere il valore del ciclo di vita dei clienti attuali e prevedere in che modo il valore del ciclo di vita aumenta con un numero maggiore di ordini.
 
-![valore del ciclo di vita previsto](../../assets/expected_ltv_720.png)
+![valore di durata previsto](../../assets/expected_ltv_720.png)
 
 ## Creazione di una metrica
 
 Il primo passaggio consiste nel creare una nuova metrica con i passaggi seguenti:
-* Accedi a **[!UICONTROL Manage Data > Metrics]**
-   * Visualizza il **[!UICONTROL Avg lifetime revenue]**.
+* Passa a **[!UICONTROL Manage Data > Metrics]**
+   * Visualizza **[!UICONTROL Avg lifetime revenue]** esistente.
 
   >[!NOTE]
   >
-  >La tabella su cui è costruita questa metrica (probabilmente `customer_entity` o `sales_order` a seconda della capacità del tuo negozio di accettare il pagamento come ospite.).
+  >La tabella su cui è costruita questa metrica (probabilmente `customer_entity` o `sales_order` a seconda della capacità dell&#39;archivio di accettare l&#39;estrazione guest).
 
-   * Clic **[!UICONTROL Create New Metric]** e seleziona la tabella dall’alto.
-   * Questa metrica esegue una **Mediana** il `Customer's lifetime revenue` colonna, ordinata per `created_at`.
+   * Fare clic su **[!UICONTROL Create New Metric]** e selezionare la tabella dall&#39;alto.
+   * Questa metrica esegue una **mediana** nella colonna `Customer's lifetime revenue`, ordinata da `created_at`.
       * [!UICONTROL Filters]:
-         * Aggiungi il `Customers we count (Saved Filter Set)` (o `Registered accounts we count`)
+         * Aggiungi `Customers we count (Saved Filter Set)` (o `Registered accounts we count`)
 
-   * Assegna un nome alla metrica, ad esempio `Median lifetime revenue`.
+   * Assegnare un nome alla metrica, ad esempio `Median lifetime revenue`.
 
 ## Creazione del dashboard
 
-Una volta creata la metrica, puoi **creare un dashboard** in questo modo:
-* Accedi a **[!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
+Una volta creata la metrica, puoi **creare un dashboard** effettuando le seguenti operazioni:
+* Passa a **[!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
 * Assegna al dashboard un nome come `Expected LTV`.
 
 * Qui puoi creare e aggiungere tutti i rapporti.
@@ -48,7 +48,7 @@ Una volta creata la metrica, puoi **creare un dashboard** in questo modo:
 
 >[!NOTE]
 >
->On **[!UICONTROL Time Period:]**, il periodo di tempo per ogni rapporto è elencato come `All-time`. Puoi modificarlo in base alle tue esigenze di analisi. L’Adobe consiglia che tutti i rapporti su questo dashboard riguardino lo stesso periodo di tempo, ad esempio `All time`, `Year-to-date`, o `Last 365 days`.
+>Il **[!UICONTROL Time Period:]**, il periodo di tempo per ogni report è elencato come `All-time`. Puoi modificarlo in base alle tue esigenze di analisi. L&#39;Adobe consiglia che tutti i report in questo dashboard riguardino lo stesso periodo di tempo, ad esempio `All time`, `Year-to-date` o `Last 365 days`.
 
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
@@ -60,8 +60,8 @@ Una volta creata la metrica, puoi **creare un dashboard** in questo modo:
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Aggiungi [!UICONTROL filters]:
-         * [`A`] `Customer's group code` **Diverso da** `Not Logged In`
-         * [`B`] `Customer's lifetime number of orders` **Maggiore di**`0`
+         * [`A`] `Customer's group code` **Diverso Da** `Not Logged In`
+         * [`B`] `Customer's lifetime number of orders` **Maggiore Di**`0`
 
    * [!UICONTROL Time period]: `All time`
    * 
@@ -89,8 +89,8 @@ Una volta creata la metrica, puoi **creare un dashboard** in questo modo:
 
   >[!NOTE]
   >
-  >Non aggiungere tutti i valori per `Customer's lifetime number of orders`. Osservare invece un punto in cui il numero di nuovi clienti raggiunge un numero limitato e aggiungere manualmente il numero di ordini del ciclo di vita di ogni cliente a tale punto. Ad esempio, se ci sono 200 clienti in un ordine, 75 in due, 15 in tre e 3 in quattro, aggiungi *1, 2 e 3*.
+  >Non aggiungere tutti i valori per `Customer's lifetime number of orders`. Osservare invece un punto in cui il numero di nuovi clienti raggiunge un numero limitato e aggiungere manualmente il numero di ordini del ciclo di vita di ogni cliente a tale punto. Ad esempio, se ci sono 200 clienti in un ordine, 75 in due, 15 in tre e 3 in quattro, aggiungere *1, 2 e 3*.
 
-* Aggiungi il [!UICONTROL Avg customer lifetime revenue by cohort] rapporto.
+* Aggiungi il report [!UICONTROL Avg customer lifetime revenue by cohort] esistente.
 
 Dopo aver generato i rapporti, consulta l’immagine nella parte superiore di questo argomento per informazioni su come organizzare i rapporti sul dashboard.

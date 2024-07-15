@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
 source-git-commit: ddda796c9f32d22b1d679fc245eb11b92cd491cf
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
 # Nuova architettura
 
-[!DNL Adobe Commerce Intelligence] Nell&#39;ultimo anno, i team tecnici e di prodotto si sono concentrati sulla realizzazione dei miglioramenti più complessi e richiesti. L&#39;Adobe è entusiasta di annunciare la disponibilità di un nuovo [!DNL Commerce Intelligence] che rende questi miglioramenti una realtà.
+[!DNL Adobe Commerce Intelligence] I team tecnici e di prodotto si sono concentrati su come rendere possibili i miglioramenti più radicali e altamente richiesti per l&#39;ultimo anno. Adobe è entusiasta di annunciare la disponibilità di una nuova architettura di prodotto [!DNL Commerce Intelligence] che rende questi miglioramenti una realtà.
 
 ## Vantaggi della nuova architettura
 
@@ -45,7 +45,7 @@ Una volta completato, sai quali dati devi sincronizzare con la nuova Data Wareho
 
 ### Ottenimento della Guida
 
-Il [!DNL Adobe Commerce Intelligence] [Team di servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) può eseguire la reimplementazione a un costo aggiuntivo. Contatta il tuo [Adobe team account](../../guide-overview.md#Submitting-a-Support-Ticket) e preparati a fornire un elenco di dashboard/report da creare con priorità nel nuovo account
+Il [!DNL Adobe Commerce Intelligence] [team dei servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) può eseguire la reimplementazione per un costo aggiuntivo. Contatta il [Adobe Account Team](../../guide-overview.md#Submitting-a-Support-Ticket) e preparati a fornire un elenco di dashboard/report a cui assegnare la priorità per la creazione nel nuovo account
 
 ### Mantenere l&#39;architettura esistente
 

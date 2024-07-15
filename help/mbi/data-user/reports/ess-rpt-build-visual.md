@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # [!DNL Visual Report Builder]
 
-[!DNL Visual Report Builder] consente di creare facilmente rapporti rapidi basati su metriche predefinite. Ogni metrica include una query che definisce il set di dati per il rapporto.
+[!DNL Visual Report Builder] semplifica la creazione di report rapidi basati su metriche predefinite. Ogni metrica include una query che definisce il set di dati per il rapporto.
 
 Nell&#39;esempio seguente viene illustrato come creare un report semplice, raggruppare i dati per una dimensione aggiuntiva, impostare l&#39;intervallo di data e ora, modificare il tipo di grafico e salvare il report in un dashboard.
 
 ## Per creare un rapporto semplice:
 
-1. In [!DNL Commerce Intelligence] menu, fai clic su **[!UICONTROL Report Builder]**.
+1. Nel menu [!DNL Commerce Intelligence], fare clic su **[!UICONTROL Report Builder]**.
 
-1. Sotto [!UICONTROL Visual Report Builder], fai clic su **[!UICONTROL Create Report]** ed effettuare le seguenti operazioni:
+1. In [!UICONTROL Visual Report Builder], fare clic su **[!UICONTROL Create Report]** ed eseguire le operazioni seguenti:
 
-   * Clic **[!UICONTROL Add Metric]**.
+   * Fare clic su **[!UICONTROL Add Metric]**.
 
      Le metriche disponibili possono essere elencate in ordine alfabetico o per tabella.
 
@@ -31,7 +31,7 @@ Nell&#39;esempio seguente viene illustrato come creare un report semplice, raggr
 
    * Scegli la [metrica](../../data-user/reports/ess-manage-data-metrics.md) che descrive il set di dati da utilizzare per il rapporto.
 
-     Il `New Customers` La metrica utilizzata in questo esempio conta tutti i clienti e ordina l’elenco in base alla data in cui il cliente si è registrato per un conto. Il rapporto iniziale include un semplice grafico a linee seguito dalla tabella dei dati.
+     La metrica `New Customers` utilizzata in questo esempio conta tutti i clienti e ordina l&#39;elenco in base alla data in cui il cliente si è iscritto a un account. Il rapporto iniziale include un semplice grafico a linee seguito dalla tabella dei dati.
 
      Il riepilogo a sinistra mostra il nome della metrica corrente, seguito dal risultato di eventuali calcoli sui dati delle colonne specificati nella metrica. In questo esempio, nel riepilogo viene visualizzato il conteggio totale dei clienti.
 
@@ -43,17 +43,17 @@ Nell&#39;esempio seguente viene illustrato come creare un report semplice, raggr
 
    **`Group By`**
 
-   Il `Group By` controllo consente di aggiungere più dimensioni per gruppo o segmento. I Dimension sono colonne della tabella che possono essere utilizzate per raggruppare i dati.
+   Il controllo `Group By` consente di aggiungere più dimensioni per gruppo o segmento. I Dimension sono colonne della tabella che possono essere utilizzate per raggruppare i dati.
 
-   * Scegliete una delle dimensioni disponibili dall&#39;elenco `Group By` opzioni.
+   * Scegliere una delle dimensioni disponibili dall&#39;elenco delle opzioni `Group By`.
 
      Per questo esempio, il sistema ha trovato cinque codici coupon utilizzati dai clienti durante il primo ordine.
 
      ![Raggruppa per](../../assets/magento-bi-report-builder-group-by-dimensions.png)
 
-     Il `Group By` nel dettaglio sono elencati tutti i coupon utilizzati dai clienti. I coupon utilizzati per effettuare l&#39;ordine iniziale sono contrassegnati da una casella di controllo. Il grafico ora presenta più linee colorate che rappresentano ogni coupon utilizzato per un primo ordine. La legenda è codificata per colore in modo da corrispondere a ogni riga di dati.
+     Nel dettaglio `Group By` sono elencati tutti i coupon utilizzati dai clienti. I coupon utilizzati per effettuare l&#39;ordine iniziale sono contrassegnati da una casella di controllo. Il grafico ora presenta più linee colorate che rappresentano ogni coupon utilizzato per un primo ordine. La legenda è codificata per colore in modo da corrispondere a ogni riga di dati.
 
-   * Clic **[!UICONTROL Apply]** per chiudere il dettaglio Raggruppa per.
+   * Fare clic su **[!UICONTROL Apply]** per chiudere il dettaglio Raggruppa per.
 
      ![Più Dimension](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
@@ -63,7 +63,7 @@ Nell&#39;esempio seguente viene illustrato come creare un report semplice, raggr
 
      ![Raggruppa per dati tabella](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * Fare clic sul pulsante Trasposizione (![](../../assets/magento-bi-btn-transpose.png)) nell&#39;angolo superiore destro della tabella per modificare l&#39;orientamento dei dati.
+   * Fare clic sul controllo Trasposizione (![](../../assets/magento-bi-btn-transpose.png)) nell&#39;angolo superiore destro della tabella per modificare l&#39;orientamento dei dati.
 
      L’asse dei dati viene capovolto e la tabella ora ha una colonna per ciascun codice coupon e una riga per ogni mese. Questo orientamento potrebbe risultare più semplice da leggere.
 
@@ -71,17 +71,17 @@ Nell&#39;esempio seguente viene illustrato come creare un report semplice, raggr
 
    **`Date Range`**
 
-   Il `Date Range` mostra le impostazioni correnti per l&#39;intervallo di date e l&#39;intervallo di tempo e si trova appena sopra il grafico a destra.
+   Il controllo `Date Range` mostra le impostazioni correnti dell&#39;intervallo di date e dell&#39;intervallo di tempo e si trova appena sopra il grafico a destra.
 
-   * Fai clic su `Date Range` , che in questo esempio è impostato su `All-Time by Month`.
+   * Fare clic sul controllo `Date Range`, in questo esempio impostato su `All-Time by Month`.
 
      ![Intervallo date](../../assets/magento-bi-report-builder-date-range.png)
 
    * Apporta le seguenti modifiche:
 
-      * Per ingrandire la visualizzazione, modifica l’intervallo di date in `Last Full Quarter`.
-      * Sotto `Select Time Interval`, scegli `Week`.
-      * Al termine, fai clic su **[!UICONTROL Save]**.
+      * Per ingrandire la visualizzazione, impostare l&#39;intervallo di date su `Last Full Quarter`.
+      * In `Select Time Interval` scegliere `Week`.
+      * Al termine, fare clic su **[!UICONTROL Save]**.
 
      Il rapporto ora include solo i dati dell’ultimo trimestre, per settimana.
 
@@ -106,22 +106,22 @@ Nell&#39;esempio seguente viene illustrato come creare un report semplice, raggr
 
      {style="table-layout:auto"}
 
-1. Per assegnare al report `title`, sostituisci `Untitled Report` testo in alto con un titolo descrittivo.
+1. Per assegnare al report un `title`, sostituisci il testo `Untitled Report` nella parte superiore della pagina con un titolo descrittivo.
 
-1. Nell’angolo superiore destro, fai clic su **[!UICONTROL Save]** ed effettuare le seguenti operazioni:
+1. Nell&#39;angolo superiore destro fare clic su **[!UICONTROL Save]** ed effettuare le seguenti operazioni:
 
-   * Per `Type`, accetta l&#39;impostazione predefinita, `Chart`.
+   * Per `Type`, accettare l&#39;impostazione predefinita, `Chart`.
 
-   * Scegli la `Dashboard` dove la relazione deve essere disponibile.
+   * Scegliere `Dashboard` in cui il report deve essere disponibile.
 
-   * Clic **[!UICONTROL Save to Dashboard]**.
+   * Fare clic su **[!UICONTROL Save to Dashboard]**.
 
      ![Salva nel dashboard](../../assets/magento-bi-report-builder-save-to-dashboard.png)
 
 1. Per visualizzare il grafico in un dashboard, effettuare una delle seguenti operazioni:
 
-   * Clic **[!UICONTROL Go to Dashboard]** nel messaggio nella parte superiore della pagina.
+   * Fare clic su **[!UICONTROL Go to Dashboard]** nel messaggio nella parte superiore della pagina.
 
-   * Nel menu, scegli `Dashboards` e fare clic sul nome del dashboard corrente per visualizzare l&#39;elenco. Quindi, fai clic sul nome della dashboard in cui è stato salvato il rapporto.
+   * Scegliere `Dashboards` dal menu e fare clic sul nome del dashboard corrente per visualizzare l&#39;elenco. Quindi, fai clic sul nome della dashboard in cui è stato salvato il rapporto.
 
-     ![Rapporto nel dashboard](../../assets/magento-bi-report-builder-my-dashboard.png)
+     ![Report nel dashboard](../../assets/magento-bi-report-builder-my-dashboard.png)

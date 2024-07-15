@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Consolidare le tabelle
 
-Se si gestiscono più punti vendita o mercati, è possibile che database simili siano archiviati separatamente. In entrata [!DNL Adobe Commerce Intelligence], è facile consolidare tabelle simili provenienti da database diversi.
+Se si gestiscono più punti vendita o mercati, è possibile che database simili siano archiviati separatamente. In [!DNL Adobe Commerce Intelligence] è facile consolidare tabelle simili da database diversi.
 
-Ad esempio, è possibile che `orders` tabella per `Market A`, e una simile `orders` tabella per `Market B`. [!DNL Commerce Intelligence] può consolidare entrambe le tabelle e consentire di esaminare i dati aggregati dell&#39;ordine da entrambe `Market A` e `B`, oltre a segmentarla per mercato specifico.
+Ad esempio, è possibile avere una tabella `orders` per `Market A` e una tabella `orders` simile per `Market B`. [!DNL Commerce Intelligence] può consolidare entrambe le tabelle e consentire di esaminare i dati aggregati dell&#39;ordine di `Market A` e `B`, oltre a segmentarli per mercato specifico.
 
-Affinché il consolidamento delle tabelle funzioni, le tabelle di input devono essere **con struttura simile**. In altre parole, tutte le tabelle di input devono contenere le colonne di dati richieste nella tabella consolidata.
+Affinché il consolidamento delle tabelle funzioni, le tabelle di input devono essere **strutturate in modo simile**. In altre parole, tutte le tabelle di input devono contenere le colonne di dati richieste nella tabella consolidata.
 
 In questo argomento vengono descritti alcuni dei casi d&#39;uso più comuni per le tabelle consolidate e i passaggi successivi necessari per la creazione di tabelle personalizzate.
 
@@ -29,7 +29,7 @@ Di seguito viene descritto quando potrebbe essere appropriato utilizzare tabelle
 
 Se vendi i tuoi prodotti con marchi e siti web diversi, è probabile che le tabelle per ogni marchio o sito web siano strutturate in modo simile.
 
-Ad esempio, è possibile che `orders` tabella per il sito web `A` e una distinta, ma simile, `orders` tabella per il sito web `B`. In questa situazione, può essere utile consolidare `orders` tabelle dal sito web `A` e `B`. Questo consente di esaminare i ricavi consolidati e il numero di ordini dal sito Web `A` e `B`, oltre a poter segmentare le metriche in base a questi due siti web.
+È possibile ad esempio disporre di una tabella `orders` per il sito Web `A` e di una tabella `orders` separata ma simile per il sito Web `B`. In questa situazione, potrebbe essere utile consolidare le tabelle `orders` dal sito Web `A` e `B`. Questo consente di esaminare i ricavi consolidati e il numero di ordini dal sito Web `A` e `B`, oltre a poter segmentare le metriche da questi due siti Web.
 
 ### Integrazione dei dati legacy
 
@@ -49,4 +49,4 @@ Per aggiungere una tabella consolidata alla Data Warehouse, contattare [!DNL Com
 
 >[!NOTE]
 >
->Perché le tabelle consolidate non sono visualizzabili in `Data Warehouse Manager`, la visualizzazione e l&#39;aggiornamento di queste tabelle possono essere eseguiti solo da [!DNL Commerce Intelligence] supporto.
+>Poiché le tabelle consolidate non sono visualizzabili in `Data Warehouse Manager`, è possibile visualizzarle e aggiornarle solo con il supporto di [!DNL Commerce Intelligence].

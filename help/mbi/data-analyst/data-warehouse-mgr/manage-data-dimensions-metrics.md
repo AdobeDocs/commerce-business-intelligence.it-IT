@@ -25,17 +25,17 @@ Per aggiungere una o più dimensioni a più metriche contemporaneamente:
 
 1. Vai a **[!UICONTROL Manage Data > Metrics]**.
 
-1. Clic **[!UICONTROL Add Dimensions To Metric(s)]**.
+1. Fare clic su **[!UICONTROL Add Dimensions To Metric(s)]**.
 
 1. Selezionate la tabella contenente le quote.
 
-1. In `Choose Metric(s) to Add Dimensions` , seleziona le metriche a cui desideri aggiungere dimensioni. Una volta selezionata, la `Choose Dimensions to Add` a destra. Controlla le dimensioni da aggiungere alla metrica selezionata.
+1. Nella colonna `Choose Metric(s) to Add Dimensions` selezionare le metriche a cui si desidera aggiungere le dimensioni. Una volta selezionata, la colonna `Choose Dimensions to Add` viene visualizzata a destra. Controlla le dimensioni da aggiungere alla metrica selezionata.
 
    ![](../../assets/Add_Dimensions.png)
 
-1. Se desideri segmentare o raggruppare per una qualsiasi delle dimensioni dati nei rapporti, assicurati di indicarli _Raggruppabile_.
+1. Se desideri segmentare o raggruppare per una qualsiasi delle dimensioni dati nei rapporti, assicurati di indicare che sono _Raggruppabili_.
 
-1. Clic **[!UICONTROL Add]**.
+1. Fare clic su **[!UICONTROL Add]**.
 
 ## Eliminare dimensioni da più metriche
 
@@ -43,42 +43,42 @@ Per eliminare una o più dimensioni da più metriche:
 
 1. Vai a **[!UICONTROL Data > Metrics]**.
 
-1. Clic **[!UICONTROL Remove Dimensions From Metric(s)]**.
+1. Fare clic su **[!UICONTROL Remove Dimensions From Metric(s)]**.
 
 1. Selezionate la tabella contenente le quote.
 
 1. Seleziona le metriche da cui vuoi rimuovere le dimensioni a sinistra e le dimensioni da rimuovere a destra.
 
-1. Clic **[!UICONTROL Remove]**.
+1. Fare clic su **[!UICONTROL Remove]**.
 
-1. Se le dimensioni sono in uso nei rapporti, viene visualizzato un avviso con l’elenco dei grafici che utilizzano le dimensioni. Clic **[!UICONTROL Delete]** per eliminare le dimensioni selezionate e tutte le relative dipendenze, inclusi i rapporti.
+1. Se le dimensioni sono in uso nei rapporti, viene visualizzato un avviso con l’elenco dei grafici che utilizzano le dimensioni. Fare clic su **[!UICONTROL Delete]** per eliminare le dimensioni selezionate e tutte le relative dipendenze, inclusi i report.
 
 ## Gestire le dimensioni nelle metriche
 
-**Per aggiungere dimensioni a una metrica:**
+**Per aggiungere dimensioni in una metrica:**
 
 1. Vai a **[!UICONTROL Data > Metrics]**.
 
-1. Clic **[!UICONTROL Edit]** sulla metrica desideri una nuova dimensione.
+1. Fare clic su **[!UICONTROL Edit]** sulla metrica per la quale si desidera una nuova dimensione.
 
-1. In `Dimensions` , utilizza la sezione `Add a dimension` per selezionare una dimensione da aggiungere.
+1. Nella sezione `Dimensions`, utilizza il menu a discesa `Add a dimension` per selezionare una dimensione da aggiungere.
 
 >[!NOTE]
 >
->Qualsiasi dimensione in base alla quale si desidera filtrare o raggruppare deve essere già tracciata [!DNL Commerce Intelligence]. Se non trovi la dimensione desiderata, potrebbe essere necessario iniziare a tracciare una nuova colonna di dati nel database tramite [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) pagina.
+>Qualsiasi dimensione in base alla quale si desidera filtrare o raggruppare deve essere già tracciata in [!DNL Commerce Intelligence]. Se non trovi la dimensione desiderata, potresti dover iniziare a monitorare una nuova colonna di dati nel database tramite la pagina [Data Warehouse](../data-warehouse-mgr/tour-dwm.md).
 
 
 **Per eliminare una o più dimensioni da una metrica:**
 
 1. Vai a **[!UICONTROL Manage Data > Metrics]**.
 
-1. Clic **[!UICONTROL Edit]** sulla metrica desideri una nuova dimensione.
+1. Fare clic su **[!UICONTROL Edit]** sulla metrica per la quale si desidera una nuova dimensione.
 
-1. Sotto `Dimensions` , seleziona la casella di controllo nella colonna elimina accanto alle dimensioni da rimuovere.
+1. Nella sezione `Dimensions`, seleziona la casella di controllo nella colonna Elimina accanto alle dimensioni da rimuovere.
 
 >[!NOTE]
 >
->Anche dopo aver eliminato una dimensione, essa esiste ancora come colonna nella tabella della Data Warehouse. Puoi aggiungerla nuovamente a qualsiasi metrica e creare nuove metriche utilizzando queste dimensioni. Per rimuovere la colonna di dati a cui corrisponde una dimensione da [!DNL Commerce Intelligence], è sufficiente annullare il tracciamento della colonna di dati tramite [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) pagina.
+>Anche dopo aver eliminato una dimensione, essa esiste ancora come colonna nella tabella della Data Warehouse. Puoi aggiungerla nuovamente a qualsiasi metrica e creare nuove metriche utilizzando queste dimensioni. Per rimuovere la colonna di dati a cui corrisponde una dimensione da [!DNL Commerce Intelligence], è sufficiente annullare il tracciamento della colonna di dati tramite la pagina [Data Warehouse](../data-warehouse-mgr/tour-dwm.md).
 
 ## Documentazione correlata
 

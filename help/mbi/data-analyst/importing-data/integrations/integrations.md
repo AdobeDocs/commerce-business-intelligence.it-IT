@@ -1,12 +1,12 @@
 ---
 title: Connettere dati esterni tramite un’integrazione
-description: Scopri le integrazioni disponibili che puoi utilizzare per collegare diverse origini dati esterne a [!DNL Commerce Intelligence].
+description: Scopri le integrazioni disponibili che puoi utilizzare per connettere diverse origini dati esterne a  [!DNL Commerce Intelligence].
 exl-id: b80f6f77-15f7-4d20-83fe-c6d758f9b0f8
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '84'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,6 @@ ht-degree: 0%
 
 Un’integrazione è un’origine dati. Le integrazioni sono applicazioni e database che è possibile collegare alla Data Warehouse.
 
-Questa sezione presenta le integrazioni disponibili che puoi utilizzare per collegare diverse origini dati esterne a [!DNL Commerce Intelligence].
+In questa sezione sono illustrate le integrazioni disponibili che è possibile utilizzare per connettere diverse origini dati esterne a [!DNL Commerce Intelligence].
 
-Per eliminare una connessione o un&#39;integrazione: [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) e includono il nome della connessione o dell’integrazione da eliminare.
+Per eliminare una connessione o un&#39;integrazione, [contattare il supporto tecnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) e includere il nome della connessione o dell&#39;integrazione da eliminare.

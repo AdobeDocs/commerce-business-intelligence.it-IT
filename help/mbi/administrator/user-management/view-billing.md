@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Informazioni fatturazione
 
-Per visualizzare, aggiungere o modificare le informazioni di fatturazione del tuo account, devi avere `Billing` autorizzazioni. [Le autorizzazioni sono impostate utente per utente](../../administrator/user-management/user-management.md) quando vengono creati account utente. Se necessario `Billing` autorizzazioni, contatta l’amministratore del tuo account.
+Per visualizzare, aggiungere o modificare le informazioni di fatturazione dell&#39;account, è necessario disporre delle autorizzazioni `Billing`. [Le autorizzazioni vengono impostate utente per utente](../../administrator/user-management/user-management.md) al momento della creazione degli account utente. Se hai bisogno delle autorizzazioni di `Billing`, contatta l&#39;amministratore del tuo account.

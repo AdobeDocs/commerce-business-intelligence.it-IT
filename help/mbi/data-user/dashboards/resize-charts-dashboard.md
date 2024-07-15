@@ -13,12 +13,12 @@ ht-degree: 0%
 
 # Utilizzo dei grafici nei dashboard
 
-Numeri scalari. Grafici a barre. Grafici che si estendono per lunghi periodi. Ogni grafico visualizza le informazioni in modo diverso, il che significa che le dimensioni e la posizione dei grafici non costituiscono una soluzione valida per tutti. In entrata [!DNL Commerce Intelligence], è possibile ridimensionare e ridisporre i grafici per creare l&#39;area di lavoro ideale.
+Numeri scalari. Grafici a barre. Grafici che si estendono per lunghi periodi. Ogni grafico visualizza le informazioni in modo diverso, il che significa che le dimensioni e la posizione dei grafici non costituiscono una soluzione valida per tutti. In [!DNL Commerce Intelligence] è possibile ridimensionare e ridisporre i grafici per creare l&#39;area di lavoro ideale.
 
-*Per ridimensionare un grafico*, fai clic e trascina l’angolo in basso a destra di qualsiasi grafico.
+*Per ridimensionare un grafico*, fare clic e trascinare l&#39;angolo inferiore destro di qualsiasi grafico.
 
 ![ridimensiona grafico](../../assets/Resize_Chart_in_Dashboard.gif)
 
-*Per spostare un grafico*, passa il puntatore del mouse sulla parte superiore del grafico fino a quando `Move` viene visualizzato il cursore. Fare clic e tenere premuto, quindi trascinare il grafico nella posizione desiderata. Rilascia fai clic su per posizionare il grafico.
+*Per spostare un grafico*, posizionare il cursore del mouse sulla parte superiore del grafico finché non viene visualizzato il cursore `Move`. Fare clic e tenere premuto, quindi trascinare il grafico nella posizione desiderata. Rilascia fai clic su per posizionare il grafico.
 
 ![sposta grafico](../../assets/Move_Chart_in_Dashboard.gif)

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Informazioni dati grafico
 
-Scegli l’inglese semplice o la definizione della metrica. Gli utenti possono annotare i grafici e visualizzarne le metriche e le formule facendo clic sul pulsante _Informazioni_ nell’angolo in alto a destra di qualsiasi grafico.
+Scegli l’inglese semplice o la definizione della metrica. Gli utenti possono annotare i grafici e visualizzare le metriche e le formule in un grafico facendo clic sull&#39;icona _Informazioni_ nell&#39;angolo in alto a destra di qualsiasi grafico.
 
 ## Correlato:
 

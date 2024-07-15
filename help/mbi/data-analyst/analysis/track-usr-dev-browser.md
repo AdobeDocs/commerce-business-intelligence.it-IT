@@ -6,14 +6,14 @@ role: Admin, User
 feature: Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Google Analytics] Tracciamento
+# Tracciamento di [!UICONTROL Google Analytics]
 
-Con [!UICONTROL Google Analytics] è possibile [salva informazioni origine riferimento](../analysis/google-track-user-acq.md) per capire da dove provengono gli utenti più importanti. In questo argomento viene illustrata la piattaforma, ad esempio il dispositivo o il browser, su cui gli utenti stanno lavorando. In questo modo, potrai capire quanti utenti accedono effettivamente tramite dispositivi mobili e in che modo questo influisce sul valore del ciclo di vita di tali utenti.
+Con [!UICONTROL Google Analytics] puoi [salvare le informazioni sull&#39;origine del riferimento](../analysis/google-track-user-acq.md) per capire da dove provengono gli utenti più importanti. In questo argomento viene illustrata la piattaforma, ad esempio il dispositivo o il browser, su cui gli utenti stanno lavorando. In questo modo, potrai capire quanti utenti accedono effettivamente tramite dispositivi mobili e in che modo questo influisce sul valore del ciclo di vita di tali utenti.
 
 ## Salvataggio dei dati del dispositivo utente e del browser
 
@@ -25,29 +25,29 @@ Ogni volta che viene effettuata una richiesta al sito web, il browser dell’ute
 1.` Mozilla/5.0 (iPad; CPU OS 5\_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3`
 1. `Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1`
 
-Se osservi attentamente, vedrai che la stringa contiene informazioni sul sistema operativo dell’utente, sul browser e sul nome del dispositivo che sta utilizzando (se ha un nome). Anche se le stringhe dell’agente utente variano notevolmente tra le piattaforme e persino tra le versioni della stessa piattaforma, è generalmente vero che il nome della piattaforma esisterà da qualche parte all’interno di. Ad esempio, #1 precedente è un Mac con il browser Chrome, #2 precedente è un computer Windows con il browser Firefox, #3 è un iPhone, #4 è un iPad e #5 è un dispositivo Android.
+Se osservi attentamente, vedrai che la stringa contiene informazioni sul sistema operativo dell’utente, sul browser e sul nome del dispositivo che sta utilizzando (se ha un nome). Anche se le stringhe dell’agente utente variano notevolmente tra le piattaforme e persino tra le versioni della stessa piattaforma, è generalmente vero che il nome della piattaforma esisterà da qualche parte all’interno di. Ad esempio, #1 sopra è un Mac con il browser Chrome, #2 sopra è un computer Windows con il browser Firefox, #3 è un iPhone, #4 è un iPad e #5 è un dispositivo Android.
 
-È possibile accedere a queste informazioni dal server ogni volta che viene effettuata una richiesta. In PHP, la stringa dell’agente utente è memorizzata in `$_SERVER['HTTP_USER_AGENT']`. In Ruby on Rails, è memorizzato in `request.env['HTTP_USER_AGENT']`. Altri linguaggi e ambienti ti consentiranno di accedervi in modo simile.
+È possibile accedere a queste informazioni dal server ogni volta che viene effettuata una richiesta. In PHP, la stringa dell&#39;agente utente è memorizzata in `$_SERVER['HTTP_USER_AGENT']`. In Ruby on Rails è memorizzato in `request.env['HTTP_USER_AGENT']`. Altri linguaggi e ambienti ti consentiranno di accedervi in modo simile.
 
 ### Quando registrare i dati?
 
-[!DNL Adobe] consiglia di aggiungere un nuovo campo denominato `Platform` o `User-Agent` al tuo `Customers` e `Orders` tabelle di database per memorizzare queste informazioni ogni volta che viene creato un utente o che viene effettuato un ordine. Se si utilizza un database SQL, questo campo deve essere `VARCHAR(255)`. 
+[!DNL Adobe] consiglia di aggiungere un nuovo campo denominato `Platform` o `User-Agent` alle tabelle di database `Customers` e `Orders` per memorizzare queste informazioni ogni volta che viene creato un utente o effettuato un ordine. Se si utilizza un database SQL, questo campo deve essere un `VARCHAR(255)`. 
 
 >[!NOTE]
 >
->Il `User-Agent` La stringa può essere molto più lunga di questa, ma in pratica raramente supera questa lunghezza.
+>La stringa `User-Agent` può essere molto più lunga di questa, ma in pratica raramente supera questa lunghezza.
 
 ### Come posso analizzare i segmenti utili?
 
-Ci sono diverse librerie là fuori per aiutarti ad analizzare il `User-Agent` stringa in componenti come sistema operativo, dispositivo e così via. Consulta la sezione [progetto ua-parser](https://github.com/tobie/ua-parser) per ulteriori informazioni.
+Sono disponibili diverse librerie che consentono di analizzare la stringa `User-Agent` in componenti quali sistema operativo, dispositivo e così via. Per ulteriori informazioni, consulta il [progetto ua-parser](https://github.com/tobie/ua-parser).
 
 Con queste nuove informazioni, puoi comprendere meglio in che modo gli utenti accedono al tuo sito. Puoi quindi adattare la loro esperienza o creare campagne di marketing per determinati gruppi.
 
 ## Correlato
 
-* [Tracciare l’origine di riferimento dell’ordine tramite [!DNL Google Anaytics] E-commerce](../importing-data/integrations/google-ecommerce.md)
+* [Tracciare l&#39;origine di riferimento dell&#39;ordine tramite  [!DNL Google Anaytics] E-Commerce](../importing-data/integrations/google-ecommerce.md)
 * [Tracciare l&#39;origine di riferimento dell&#39;utente nel database](../analysis/google-track-user-acq.md)
 * [Scopri le fonti e i canali di acquisizione più importanti](../analysis/most-value-source-channel.md)
-* [Connetti [!DNL Google Adwords] account](../importing-data/integrations/google-adwords.md)
+* [Connetti il tuo account  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
 * [Aumentare il ROI nelle campagne pubblicitarie](../analysis/roi-ad-camp.md)
-* [In che modo [!DNL Google Analytics] Lavoro di attribuzione UTM?](../analysis/utm-attributes.md)
+* [Come funziona l&#39;attribuzione  [!DNL Google Analytics] UTM?](../analysis/utm-attributes.md)

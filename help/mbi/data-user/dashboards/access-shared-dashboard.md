@@ -17,8 +17,8 @@ Rendere i nuovi utenti pronti e veloci è semplice.
 
 ## Nuovo utente
 
-Dopo che un nuovo utente ha creato la propria password, verrà visualizzato un elenco delle dashboard condivise più popolari. È possibile selezionare le dashboard che si desidera visualizzare nel dashboard e fare clic su **[!UICONTROL Done]**.
+Dopo che un nuovo utente ha creato la propria password, verrà visualizzato un elenco delle dashboard condivise più popolari. È possibile selezionare i dashboard che si desidera visualizzare nel dashboard e fare clic su **[!UICONTROL Done]**.
 
 ## Utenti esistenti
 
-Per visualizzare nuovamente l’elenco delle dashboard condivise, gli utenti possono fare clic su **[!UICONTROL Find]** nel `Global Search` menu.
+Per visualizzare nuovamente l&#39;elenco delle dashboard condivise, gli utenti possono fare clic su **[!UICONTROL Find]** nel menu `Global Search`.

@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Condivisione dei dati
 
-Comunicare lo stato e le tendenze della vostra attività è essenziale. In questa sezione, scopri come esportare e condividere dati da un grafico in un `.csv` o `Excel` file. Inoltre, scopri come configurare e inviare automaticamente alle principali parti interessate i riepiloghi e-mail dei tuoi dati.
+Comunicare lo stato e le tendenze della vostra attività è essenziale. In questa sezione, scopri come esportare e condividere dati da un grafico in un file `.csv` o `Excel`. Inoltre, scopri come configurare e inviare automaticamente alle principali parti interessate i riepiloghi e-mail dei tuoi dati.

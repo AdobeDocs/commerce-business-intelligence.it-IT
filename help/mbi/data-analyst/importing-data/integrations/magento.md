@@ -17,9 +17,9 @@ ht-degree: 0%
 >
 >Richiede [Autorizzazioni amministratore](../../../administrator/user-management/user-management.md).
 
-Vuoi vedere le prestazioni della tua azienda o trovare le fonti e i canali di acquisizione più importanti? Collegamento [!DNL Adobe Commerce] dati a [!DNL Commerce Intelligence] consente di rispondere a queste e altre domande.
+Vuoi vedere le prestazioni della tua azienda o trovare le fonti e i canali di acquisizione più importanti? La connessione dei dati di [!DNL Adobe Commerce] a [!DNL Commerce Intelligence] consente di rispondere a queste e altre domande.
 
-Come [!DNL Adobe Commerce] database basato su MySQL, è possibile connettersi a [!DNL Commerce Intelligence] attraverso un [connessione diretta](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md), o [tramite un tunnel SSH](../integrations/mysql-via-ssh-tunnel.md). Il metodo SSH è consigliato perché è il più sicuro.
+Poiché il database [!DNL Adobe Commerce] è basato su MySQL, è possibile connettersi a [!DNL Commerce Intelligence] tramite una [connessione diretta](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md) o [tramite un tunnel SSH](../integrations/mysql-via-ssh-tunnel.md). Il metodo SSH è consigliato perché è il più sicuro.
 
 ## Informazioni correlate
 

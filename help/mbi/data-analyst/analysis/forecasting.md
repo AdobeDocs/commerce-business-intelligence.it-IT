@@ -17,4 +17,4 @@ La capacità di prevedere il valore del ciclo di vita dei clienti quando effettu
 
 In questa sezione imparerai a conoscere il valore del ciclo di vita dei clienti attuali e a prevedere in che modo il valore del ciclo di vita aumenta con un numero maggiore di ordini.
 
-Vedi anche: [Analisi del valore del ciclo di vita previsto (LTV) (base)](../../data-analyst/analysis/ess-expected-ltv.md)
+Vedere anche: [Analisi del valore del ciclo di vita previsto (LTV) (base)](../../data-analyst/analysis/ess-expected-ltv.md)

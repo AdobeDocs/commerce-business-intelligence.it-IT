@@ -1,6 +1,6 @@
 ---
-title: Abbandono e Commerce
-description: Scopri come generare e analizzare il tasso di abbandono di Commerce.
+title: Abbandono Commerce
+description: Scopri come generare e analizzare la frequenza di abbandono di Commerce.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports
@@ -13,26 +13,26 @@ ht-degree: 2%
 
 # Frequenza di abbandono
 
-In questo argomento viene illustrato come calcolare un **frequenza di abbandono** per **clienti commerce**. A differenza di SaaS o delle società di abbonamento tradizionali, i clienti commerce non hanno in genere un **&quot;evento churn&quot;** per mostrare che non devono più essere conteggiati nei confronti dei clienti attivi. Per questo motivo, le istruzioni di seguito consentono di definire un cliente come &quot;abbandonato&quot; in base a una determinata quantità di tempo trascorso dal suo ultimo ordine.
+In questo argomento viene illustrato come calcolare una **frequenza di abbandono** per i **clienti commerce**. A differenza di SaaS o delle società di abbonamento tradizionali, i clienti commerce in genere non hanno un **&quot;evento di abbandono&quot;** concreto per mostrare che non dovrebbero più contare verso i tuoi clienti attivi. Per questo motivo, le istruzioni di seguito consentono di definire un cliente come &quot;abbandonato&quot; in base a una determinata quantità di tempo trascorso dal suo ultimo ordine.
 
 ![](../../assets/Churn_rate_image.png)
 
-Molti clienti desiderano assistenza per iniziare a concettualizzare ciò che **arco temporale** devono utilizzare in base ai loro dati. Se desideri utilizzare il comportamento storico del cliente per definire questo **intervallo di abbandono**, potrebbe essere utile acquisire familiarità con [definizione dell’abbandono](../analysis/define-cust-churn.md) argomento. Quindi, puoi utilizzare i risultati nella formula per il tasso di abbandono nelle istruzioni seguenti.
+Molti clienti desiderano assistenza per iniziare a concettualizzare **l&#39;intervallo di tempo** da utilizzare in base ai propri dati. Se desideri utilizzare il comportamento storico del cliente per definire questo **intervallo di abbandono**, puoi acquisire familiarità con l&#39;[argomento definizione dell&#39;abbandono](../analysis/define-cust-churn.md). Quindi, puoi utilizzare i risultati nella formula per il tasso di abbandono nelle istruzioni seguenti.
 
 ## Colonne calcolate
 
 Colonne da creare
 
-* **`customer_entity`** tabella
+* Tabella **`customer_entity`**
 * **`Customer's last order date`**
-   * Seleziona un [!UICONTROL definition]: `Max`
+   * Seleziona [!UICONTROL definition]: `Max`
    * Seleziona [!UICONTROL table]: `sales_flat_order`
    * Seleziona [!UICONTROL column]: `created_at`
    * `sales_flat_order.customer_id = customer_entity.entity_id`
    * [!UICONTROL Filter]: `Orders we count`
 
 * **`Seconds since customer's last order date`**
-   * Seleziona un [!UICONTROL definition]: `Age`
+   * Seleziona [!UICONTROL definition]: `Age`
    * Seleziona [!UICONTROL column]: `Customer's last order date`
 
 >[!NOTE]
@@ -48,10 +48,10 @@ Colonne da creare
 >
 >Questa metrica potrebbe esistere sul tuo account.
 
-* In **`customer_entity`** tabella
-* Questa metrica esegue una **Conteggio**
-* Il giorno **`entity_id`** colonna
-* Ordinato da **`Customer's first order date`** timestamp
+* Nella tabella **`customer_entity`**
+* Questa metrica esegue **Count**
+* Nella colonna **`entity_id`**
+* Ordinato per la marca temporale **`Customer's first order date`**
 * [!UICONTROL Filter]:
 
 * **Nuovi clienti (per data ultimo ordine)**
@@ -61,10 +61,10 @@ Colonne da creare
   >
   >Questa metrica potrebbe esistere sul tuo account.
 
-* In **`customer_entity`** tabella
-* Questa metrica esegue una **Conteggio**
-* Il giorno **`entity_id`** colonna
-* Ordinato da **`Customer's last order date`** timestamp
+* Nella tabella **`customer_entity`**
+* Questa metrica esegue **Count**
+* Nella colonna **`entity_id`**
+* Ordinato per la marca temporale **`Customer's last order date`**
 * [!UICONTROL Filter]:
 
 >[!NOTE]
@@ -103,9 +103,9 @@ Di seguito sono riportati alcuni mesi comuni > seconde conversioni, ma google fo
 
 | **Mesi** | **Secondi** |
 |---|---|
-| 3 | 7,776,000 |
-| 6 | 15,552,000 |
-| 9 | 23,328,000 |
-| 12 | 31,104,000 |
+| 3 | 7.776.000 |
+| 6 | 15.552.000 |
+| 9 | 23.328.000 |
+| 12 | 31.104.000 |
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile al dashboard di esempio riportato sopra.

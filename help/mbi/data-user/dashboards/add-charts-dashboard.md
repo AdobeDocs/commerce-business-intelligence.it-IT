@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Aggiungere grafici ai dashboard
 
-I grafici esistenti possono essere aggiunti alle dashboard utilizzando [!UICONTROL Add Report] , situata nell&#39;area superiore destra dello schermo. Lo stesso grafico può essere aggiunto a più dashboard, il che significa che se il grafico viene modificato, tutte le dashboard con questo grafico riflettono la modifica.
+I grafici esistenti possono essere aggiunti ai dashboard utilizzando la funzione [!UICONTROL Add Report], che si trova nell&#39;area in alto a destra dello schermo. Lo stesso grafico può essere aggiunto a più dashboard, il che significa che se il grafico viene modificato, tutte le dashboard con questo grafico riflettono la modifica.
 
 >[!NOTE]
 >
->Clic **[!UICONTROL Add Report]** non equivale a fare clic su **[!UICONTROL Save As]** nell’editor grafico. `Add Report` si limita ad aggiungere il grafico al dashboard, mentre, `Save As` crea una versione di un grafico esistente.
+>Fare clic su **[!UICONTROL Add Report]** non equivale a fare clic su **[!UICONTROL Save As]** nell&#39;editor grafico. `Add Report` aggiunge semplicemente il grafico al dashboard, mentre `Save As` crea una versione di un grafico esistente.
 
 ## Aggiungi un grafico
 
-1. Clic **[!UICONTROL Add Report]**. Viene visualizzato un elenco dei grafici esistenti.
+1. Fare clic su **[!UICONTROL Add Report]**. Viene visualizzato un elenco dei grafici esistenti.
 
 1. Cercare o fare clic sul nome del grafico da aggiungere.
 

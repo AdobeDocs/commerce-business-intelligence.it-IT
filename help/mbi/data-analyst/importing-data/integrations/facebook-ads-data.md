@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
 
-# Previsto [!DNL Facebook Ads] dati
+# Previsti [!DNL Facebook Ads] dati
 
-Dopo aver [ha connesso [!DNL Facebook Ads] account](../integrations/facebook-ads.md), è possibile utilizzare [Gestione Date Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) per tracciare facilmente i campi di dati rilevanti per l’analisi.
+Dopo aver [connesso il tuo [!DNL Facebook Ads] account](../integrations/facebook-ads.md), puoi utilizzare [Gestione Date Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) per tenere traccia facilmente dei campi di dati rilevanti per l&#39;analisi.
 
 Questo argomento offre una breve panoramica delle tabelle. L&#39;Adobe consiglia di eseguire la sincronizzazione con la Data Warehouse. Questo evidenzia solo le tabelle principali, in quanto sono presenti alcune sottotabelle.
 
@@ -23,15 +23,15 @@ Queste tabelle contengono dati sui componenti core di ad campaign.
 
 ### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
 
-Questa tabella è la tabella principale delle campagne in una [!DNL Facebook Ads] account. Le colonne includono `campaign id`, `name`, `status (active/paused)`, `objective`.
+Questa tabella è la tabella principale delle campagne in un account [!DNL Facebook Ads]. Le colonne includono `campaign id`, `name`, `status (active/paused)`, `objective`.
 
 ### [`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
 
-Questo record di tabella è la tabella principale di [!DNL Facebook Ads] Imposta in un [!DNL Facebook Ads] account. Le colonne includono l’annuncio `Campaign id/name` la serie di annunci appartiene a, le informazioni su budget, tipo di offerta, pianificazione e targeting del pubblico.
+Questo record di tabella è la tabella principale di [!DNL Facebook Ads] set in un account [!DNL Facebook Ads]. Le colonne includono l&#39;annuncio `Campaign id/name` a cui appartiene il set di annunci, il budget, il tipo di offerta, la pianificazione e le informazioni sul targeting del pubblico.
 
 ### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
 
-Questa tabella registra tutti gli annunci in una [!DNL Facebook Ads] account. Le colonne includono le informazioni sull’annuncio, tra cui il set di annunci e la campagna pubblicitaria a cui appartiene, l’offerta pubblicitaria, il targeting degli annunci e il riferimento a specifici contenuti creativi (immagine/testo) utilizzati dall’annuncio.
+Questa tabella registra tutti gli annunci in un account [!DNL Facebook Ads]. Le colonne includono le informazioni sull’annuncio, tra cui il set di annunci e la campagna pubblicitaria a cui appartiene, l’offerta pubblicitaria, il targeting degli annunci e il riferimento a specifici contenuti creativi (immagine/testo) utilizzati dall’annuncio.
 
 ### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
 
@@ -47,17 +47,17 @@ Questa tabella include una voce per ogni combinazione di campagna/set/annunci pe
 
 ### `facebook _ads insights_ (account-id)_~\_actions`
 
-Questa è una sottotabella della `facebook_ads_insights_{account_id}` tabella. Include i dati di conversione per le azioni che si verificano in base a campagne diverse.
+Sottotabella della tabella `facebook_ads_insights_{account_id}`. Include i dati di conversione per le azioni che si verificano in base a campagne diverse.
 
 ### `facebook _ads insights country_ (account-id)`
 
-Questa tabella include le stesse informazioni del `facebook_ads_insights_{account_id}` e lo segmenta per paese.
+Questa tabella include le stesse informazioni della tabella `facebook_ads_insights_{account_id}` e le segmenta per paese.
 
 ### `facebook ads insights age and gender (account-id)`
 
-Questa tabella include le stesse informazioni del `facebook_ads_insights_{account_id}` tabella e la segmenta per età e genere.
+Questa tabella include le stesse informazioni della tabella `facebook_ads_insights_{account_id}` e le segmenta per età e genere.
 
 ## Correlato
 
-* [Connessione [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Connessione in corso  [!DNL Facebook Ads]](../integrations/facebook-ads.md)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

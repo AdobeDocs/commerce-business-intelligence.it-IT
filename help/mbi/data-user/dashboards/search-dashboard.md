@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Cercare un dashboard
 
-Questo argomento illustra come utilizzare [[!DNL Global Search] funzionalità](#global) per cercare dashboard e come cercare [dashboard di proprietà di altri utenti](#other).
+In questo argomento viene illustrato come utilizzare la [[!DNL Global Search] funzionalità](#global) per cercare dashboard e come cercare [dashboard di proprietà di altri utenti](#other).
 
 ## Ricerca globale {#global}
 
-Il [!DNL Global Search] consente di cercare e selezionare le dashboard da visualizzare.
+Il menu [!DNL Global Search] consente di cercare e selezionare i dashboard da visualizzare.
 
-* *Per visualizzare un elenco delle dashboard esistenti*, fai clic sul dashboard.
+* *Per visualizzare un elenco dei dashboard esistenti*, fare clic sul dashboard.
 
-* *Per cercare un dashboard*, digita alcuni criteri di ricerca nella barra di ricerca dopo aver fatto clic sul menu a discesa del dashboard. Se una dashboard corrisponde ai criteri, viene visualizzata per prima nell’elenco.
+* *Per cercare un dashboard*, immettere alcuni criteri di ricerca nella barra di ricerca dopo aver fatto clic sul menu a discesa del dashboard. Se una dashboard corrisponde ai criteri, viene visualizzata per prima nell’elenco.
 
 Esempio:
 
@@ -29,6 +29,6 @@ Esempio:
 
 ## Trova dashboard di proprietà di altri utenti {#other}
 
-Cerchi un dashboard di proprietà di un altro utente? Se altri utenti possono visualizzare il dashboard, è possibile cercarlo facendo clic su **[!UICONTROL Find]** nel `Dashboard Options` a discesa.
+Cerchi un dashboard di proprietà di un altro utente? Se altri utenti possono visualizzare il dashboard, è possibile cercarlo facendo clic su **[!UICONTROL Find]** nel menu a discesa `Dashboard Options`.
 
 ![trova dashboard](../../assets/find-dboards-other-owners.png)

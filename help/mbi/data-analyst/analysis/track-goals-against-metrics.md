@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Tracciamento degli obiettivi rispetto alle metriche delle prestazioni
 
-La maggior parte dei clienti desidera tenere traccia delle proprie **obiettivi aziendali**, ma non capire che questo è possibile in [!DNL Adobe Commerce Intelligence]. In questo argomento viene illustrato come impostare una dashboard che consenta di tenere traccia degli obiettivi aziendali in base ai dati effettivi, inclusi ricavi, nuovi utenti registrati e ordini nel tempo. Scopri anche come confrontare le prestazioni anno su anno, il tutto in una dashboard come questa:
+La maggior parte dei client desidera tenere traccia dei propri **obiettivi aziendali**, ma non si rende conto che ciò è possibile in [!DNL Adobe Commerce Intelligence]. In questo argomento viene illustrato come impostare una dashboard che consenta di tenere traccia degli obiettivi aziendali in base ai dati effettivi, inclusi ricavi, nuovi utenti registrati e ordini nel tempo. Scopri anche come confrontare le prestazioni anno su anno, il tutto in una dashboard come questa:
 
 ![](../../assets/Goals-_dashboard_2.png)
 
-Prima di iniziare, è necessario rivedere [caricatore di file](../importing-data/connecting-data/using-file-uploader.md) e assicurati di aver definito gli obiettivi aziendali per un dato periodo.
+Prima di iniziare, è necessario esaminare lo strumento di caricamento [file](../importing-data/connecting-data/using-file-uploader.md) e assicurarsi di aver definito gli obiettivi aziendali per un determinato periodo.
 
 ## Guida introduttiva
 
 Devi innanzitutto caricare un file contenente i target giornalieri/mensili/trimestrali specifici per la tua azienda.
 
-È possibile utilizzare [caricatore di file](../importing-data/connecting-data/using-file-uploader.md) e l&#39;immagine seguente per formattare il file. I target più comuni tracciati dai client [!DNL Commerce Intelligence] includono Ordini, Ricavi e Nuovi conti registrati.
+Per formattare il file è possibile utilizzare [uploader file](../importing-data/connecting-data/using-file-uploader.md) e l&#39;immagine seguente. Le destinazioni più comuni monitorate dai client in [!DNL Commerce Intelligence] includono Ordini, Ricavi e Nuovi account registrati.
 
 ![](../../assets/Goals-_Excel.png)
 
@@ -31,29 +31,29 @@ Devi innanzitutto caricare un file contenente i target giornalieri/mensili/trime
 
 Crea una nuova metrica per ogni destinazione. Ad esempio, se carichi gli obiettivi mensili di ricavi e ordini, devi creare due nuove metriche:
 
-* **Obiettivo di ricavo mensile**
-* In **`Monthly goals`** tabella
-* Questa metrica esegue una **Somma**
-* Il giorno **`Revenue target`** colonna
-* Ordinato da **`Month`** timestamp
+* **Destinazione ricavi mensile**
+* Nella tabella **`Monthly goals`**
+* Questa metrica esegue una **somma**
+* Nella colonna **`Revenue target`**
+* Ordinato per la marca temporale **`Month`**
 
-* **Obiettivo ordini mensili**
-* In **`Monthly goals`** tabella
-* Questa metrica esegue una **Somma**
-* Il giorno **`Orders target`** colonna
-* Ordinato da **`Month`** timestamp
+* **Destinazione ordini mensili**
+* Nella tabella **`Monthly goals`**
+* Questa metrica esegue una **somma**
+* Nella colonna **`Orders target`**
+* Ordinato per la marca temporale **`Month`**
 
-* **Destinazione nuovi account registrati mensili**
-* In **`Monthly goals`** tabella
-* Questa metrica esegue una **Somma**
-* Il giorno **`New registered accounts target`** colonna
-* Ordinato da **`Month`** timestamp
+* **Destinazione mensile nuovi account registrati**
+* Nella tabella **`Monthly goals`**
+* Questa metrica esegue una **somma**
+* Nella colonna **`New registered accounts target`**
+* Ordinato per la marca temporale **`Month`**
 
 ## Rapporti
 
 Nell’analisi dei target, è utile disporre di una combinazione di valori statici e grafici visivi. Di seguito sono riportati tre rapporti di esempio per iniziare a monitorare le prestazioni dei ricavi.
 
-* **Ricavi rimasti per raggiungere l&#39;obiettivo**
+* **Ricavi rimanenti per raggiungere la destinazione**
 * Metrica `A`: `Revenue`
 * 
   [!UICONTROL Metric]: `Revenue`
@@ -67,13 +67,13 @@ Nell’analisi dei target, è utile disporre di una combinazione di valori stati
 * 
   [!UICONTROL Format]: `Number`
 
-* [!UICONTROL Time period]: (qualunque sia il periodo di tempo rilevante desiderato)
+* [!UICONTROL Time period]: (qualsiasi periodo di tempo rilevante si desideri)
 * 
   [!UICONTROL Interval]: `Month`
 * 
   [!UICONTROL Chart Type]: `Scalar`
 
-* **Obiettivi di ricavo**
+* **Destinazioni ricavi**
 * Metrica `A`: `Revenue`
 * 
   [!UICONTROL Metric]: `Revenue`
@@ -81,12 +81,12 @@ Nell’analisi dei target, è utile disporre di una combinazione di valori stati
 * Metrica `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
-* Metrica `C`: `Revenue (amount change since previous year)` (nascondi)
+* Metrica `C`: `Revenue (amount change since previous year)` (nascondere)
 * 
   [!UICONTROL Metric]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
-* [!UICONTROL Formula]: (questo mese, ultimo anno)
+* [!UICONTROL Formula]: (questo mese l&#39;anno scorso)
 * 
   [!UICONTROL Formula]: `(A-C)`
 * 

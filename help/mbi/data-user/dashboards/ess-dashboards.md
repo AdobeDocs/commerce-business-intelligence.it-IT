@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Dashboard
 
-[!DNL Adobe Commerce Intelligence] Le dashboard offrono una rapida panoramica delle prestazioni del negozio e dell&#39;attività di vendita. I singoli dashboard possono essere condivisi con altri utenti e organizzati in gruppi logici. È inoltre possibile impostare diversi livelli di autorizzazione per altri utenti.
+Le dashboard di [!DNL Adobe Commerce Intelligence] offrono una rapida panoramica delle prestazioni del tuo negozio e dell&#39;attività di vendita. I singoli dashboard possono essere condivisi con altri utenti e organizzati in gruppi logici. È inoltre possibile impostare diversi livelli di autorizzazione per altri utenti.
 
 È facile creare un rapporto, aggiungerlo a una dashboard ed esportare i dati in Excel. Grafici e report possono essere ridimensionati e trascinati nella posizione desiderata nel dashboard.
 
@@ -23,29 +23,29 @@ ht-degree: 0%
 
 Le dashboard sono contenitori condivisibili a tema per le analisi create nei Report Builder. In questo modo puoi incoraggiare il tuo team a collaborare e mantenere un’unica fonte di verità in tutta l’organizzazione.
 
-*Se sei un amministratore o un utente Standard*, è possibile creare un dashboard facendo clic sul pulsante `Dashboard Options` menu a discesa e scelta `Create New dashboard`.
+*Se sei un amministratore o un utente Standard*, puoi creare un dashboard facendo clic sul menu a discesa `Dashboard Options` e scegliendo `Create New dashboard`.
 
 Sta a te definire l’aspetto delle dashboard create. Puoi disporre e ridimensionare gli elementi nel dashboard in qualsiasi modo desideri in base alle tue esigenze e al tuo flusso di lavoro.
 
-![disporre l&#39;elemento del dashboard di ridimensionamento](../../assets/arrange_resize_dashboard_element.gif)
+![disponi elemento dashboard di ridimensionamento](../../assets/arrange_resize_dashboard_element.gif)
 
 ### Creare un dashboard
 
-1. Scegliere dal menu **[!UICONTROL Dashboards]**.
+1. Scegliere **[!UICONTROL Dashboards]** dal menu.
 
 1. Il nome del dashboard di default viene visualizzato nell&#39;angolo superiore sinistro dell&#39;intestazione del dashboard. Fare clic sulla freccia giù (![](../../assets/magento-bi-btn-down.png)) per visualizzare le opzioni disponibili.
 
    ![Crea dashboard](../../assets/magento-bi-dashboard-create.png)
 
-1. Clic **[!UICONTROL Create Dashboard]**. Quindi, effettua le seguenti operazioni:
+1. Fare clic su **[!UICONTROL Create Dashboard]**. Quindi, effettua le seguenti operazioni:
 
-   * Immetti un `Name` per il tuo dashboard.
+   * Immetti `Name` per il dashboard.
 
    * Per creare un `Group` per il dashboard, immettere il nome del gruppo.
 
-     Ad esempio, se nell’installazione di Commerce sono presenti più visualizzazioni dello store, puoi creare un Gruppo per ogni visualizzazione dello store.
+     Se, ad esempio, nell&#39;installazione di Commerce sono presenti più visualizzazioni dello store, è possibile creare un gruppo per ogni visualizzazione dello store.
 
-   * Clic **[!UICONTROL Create]**.
+   * Fare clic su **[!UICONTROL Create]**.
 
    ![nome dashboard](../../assets/magento-bi-dashboard-create-name.png)
 
@@ -55,13 +55,13 @@ Sta a te definire l’aspetto delle dashboard create. Puoi disporre e ridimensio
 
 1. Per aggiungere un rapporto, effettuare una delle seguenti operazioni:
 
-   * Fai clic su **[!UICONTROL Add a report]** nella pagina.
+   * Fare clic sul prompt **[!UICONTROL Add a report]** sulla pagina.
 
-   * Nell’intestazione della dashboard, fai clic su **[!UICONTROL Add Report]**.
+   * Nell&#39;intestazione del dashboard, fare clic su **[!UICONTROL Add Report]**.
 
      ![Aggiungi report](../../assets/magento-bi-dashboard-create-add-report.png)
 
-1. Clic **[!UICONTROL Create Report]** per visualizzare **[!UICONTROL Report Builder Options]**.
+1. Fare clic su **[!UICONTROL Create Report]** per visualizzare **[!UICONTROL Report Builder Options]**.
 
    ![Opzioni Report Builder](../../assets/magento-bi-report-builder.png)
 
@@ -73,50 +73,50 @@ Sta a te definire l’aspetto delle dashboard create. Puoi disporre e ridimensio
 
 ## Gestione delle dashboard {#managedash}
 
-In entrata **[!DNL Manage Data** > **Dashboards]**, è possibile gestire le autorizzazioni utente per i dashboard di tua proprietà, eliminare i dashboard non più necessari e impostare un dashboard predefinito.
+In **[!DNL Manage Data** > **Dashboards]** è possibile gestire le autorizzazioni utente per i dashboard di tua proprietà, eliminare i dashboard non più necessari e impostare un dashboard predefinito.
 
 ### Condivisione delle dashboard {#sharingdash}
 
-Per scalare veramente [!DNL Commerce Intelligence] Adobe ti incoraggia a condividere con altri membri del team le dashboard che hai creato e a fornire informazioni preziose. *Puoi condividere dashboard di tua proprietà* facendo clic su `Share Dashboard` nella parte superiore della pagina.
+Per scalare [!DNL Commerce Intelligence] in tutta l&#39;organizzazione e fornire informazioni utili, Adobe ti incoraggia a condividere dashboard create con altri membri del team. *Puoi condividere i dashboard di tua proprietà* facendo clic sull&#39;opzione `Share Dashboard` nella parte superiore della pagina.
 
 Quando condividi una dashboard, puoi assegnare le autorizzazioni in tutta l’organizzazione OPPURE su base individuale, il che significa che puoi decidere chi può visualizzare e modificare i rapporti.
 
 >[!NOTE]
 >
->`Read-Only` gli utenti possono accedere solo alle dashboard condivise direttamente con loro, ma non possono cercare e aggiungere dashboard autonomamente. Non dimenticate di tenerli in loop!
+>`Read-Only` utenti hanno accesso solo alle dashboard che sono condivise direttamente con loro e non possono cercare e aggiungere dashboard da soli. Non dimenticate di tenerli in loop!
 
 ### Accesso ai dashboard condivisi {#accessshared}
 
-*Se sei un utente amministratore o standard* e desideri aggiungere un dashboard condiviso al tuo account, puoi farlo facendo clic su **[!UICONTROL Dashboard Options]** e quindi clic su **[!UICONTROL Find]** nel menu a discesa.
+*Se sei un utente Amministratore o Standard* e desideri aggiungere un dashboard condiviso al tuo account, fai clic su **[!UICONTROL Dashboard Options]** e quindi su **[!UICONTROL Find]** nel menu a discesa.
 
 ![trova dashboard](../../assets/find_dashboard.png)<!--{: width="1000" height="535"}-->
 
 ### Gestire le impostazioni del dashboard
 
-1. Scegliere dal menu **[!DNL Manage Data** > **Dashboards]**.
+1. Scegliere **[!DNL Manage Data** > **Dashboards]** dal menu.
 
 1. Se applicabile, immettere un nuovo `Dashboard Name`.
 
-1. Per assegnare il dashboard a un `Dashboard Group`, scegli dall’elenco dei gruppi.
+1. Per assegnare il dashboard a un `Dashboard Group` specifico, scegliere dall&#39;elenco dei gruppi.
 
    **`Permissions`**
 
    Per concedere a tutti gli utenti lo stesso livello di accesso al dashboard, effettua le seguenti operazioni:
 
-   1. Sotto **`Shared with`**, scegli una delle seguenti opzioni:
+   1. In **`Shared with`** scegliere una delle opzioni seguenti:
 
       * `View`
       * `Edit`
       * `None`
 
-   1. Quando viene richiesto di confermare, fai clic su **[!UICONTROL OK]** per aggiornare il livello di autorizzazioni per ogni utente.
+   1. Quando viene richiesta la conferma, fare clic su **[!UICONTROL OK]** per aggiornare il livello di autorizzazioni per ogni utente.
 
    1. Per modificare il livello di autorizzazione di una persona, individuare l&#39;utente nell&#39;elenco e modificare il livello di autorizzazione. La modifica viene salvata automaticamente.
 
    **`Default`**
 
-   1. Per impostare questa dashboard come predefinita per [!DNL Commerce Intelligence] account, fai clic su **[!UICONTROL Make Default]**.
+   1. Per impostare questo dashboard come predefinito per l&#39;account [!DNL Commerce Intelligence], fare clic su **[!UICONTROL Make Default]**.
 
    **`Remove`**
 
-   1. Per rimuovere il dashboard, fai clic su **[!UICONTROL Delete Dashboard]**.
+   1. Per rimuovere il dashboard, fare clic su **[!UICONTROL Delete Dashboard]**.

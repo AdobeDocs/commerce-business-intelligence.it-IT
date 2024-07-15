@@ -17,12 +17,12 @@ ht-degree: 0%
 
 ## Trovare il grafico
 
-Individuare innanzitutto il grafico da copiare dall&#39;altro utente. Tutte le dashboard condivise con te sono disponibili nella sezione `Dashboard` barra laterale in cui sono contrassegnati con un’icona condivisa. Fai clic sul dashboard desiderato.
+Individuare innanzitutto il grafico da copiare dall&#39;altro utente. Tutte le dashboard condivise con te si trovano nella barra laterale `Dashboard` dove sono contrassegnate da un&#39;icona condivisa. Fai clic sul dashboard desiderato.
 
 ## Clona il grafico
 
-Nel dashboard condiviso, scegliere il grafico che si desidera copiare nel proprio account. Fare clic sull&#39;ingranaggio (![](../../assets/gear-icon.png)) e quindi fare clic su **[!UICONTROL Save As]**.
+Nel dashboard condiviso, scegliere il grafico che si desidera copiare nel proprio account. Fare clic sull&#39;icona a forma di ingranaggio (![](../../assets/gear-icon.png)) e quindi su **[!UICONTROL Save As]**.
 
-Viene richiesto di assegnare un nome alla copia del grafico e di aggiungerla a una delle dashboard esistenti. Se non si seleziona una dashboard, questa verrà aggiunta all&#39;elenco dei grafici esistenti e sarà possibile [aggiungilo in un secondo momento](../../data-user/dashboards/add-charts-dashboard.md).
+Viene richiesto di assegnare un nome alla copia del grafico e di aggiungerla a una delle dashboard esistenti. Se non selezioni un dashboard, questo verrà aggiunto all&#39;elenco dei grafici esistenti e potrai [aggiungerlo in un secondo momento](../../data-user/dashboards/add-charts-dashboard.md).
 
 ![clienti totali](../../assets/total-customers.png)

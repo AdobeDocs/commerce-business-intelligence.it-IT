@@ -13,10 +13,10 @@ ht-degree: 0%
 
 # Rimuovere un grafico da un dashboard
 
-Per rimuovere un grafico da un dashboard, fare clic sull&#39;ingranaggio (![](../../assets/gear-icon.png)) in alto a destra nel grafico e fai clic su **[!UICONTROL Remove from Dashboard]**.
+Per rimuovere un grafico da un dashboard, fare clic sull&#39;icona a forma di ingranaggio (![](../../assets/gear-icon.png)) nell&#39;angolo superiore destro del grafico e fare clic su **[!UICONTROL Remove from Dashboard]**.
 
 >[!NOTE]
 >
->La rimozione di un grafico non è uguale a [eliminazione](../../data-user/dashboards/delete-chart.md). Inoltre, [un grafico può essere letto in un dashboard](../../data-user/dashboards/add-charts-dashboard.md) in qualsiasi momento.
+>La rimozione di un grafico non equivale a [l&#39;eliminazione](../../data-user/dashboards/delete-chart.md). Inoltre, [un grafico può essere letto in un dashboard](../../data-user/dashboards/add-charts-dashboard.md) in qualsiasi momento.
 
 ![rimuovi grafico](../../assets/Removing_Charts_from_Dashboards.gif)

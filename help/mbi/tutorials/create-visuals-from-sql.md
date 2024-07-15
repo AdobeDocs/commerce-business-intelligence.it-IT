@@ -6,42 +6,42 @@ role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
 # Creare visualizzazioni da query SQL
 
-L&#39;obiettivo di questo tutorial è quello di acquisire familiarità con la terminologia utilizzata nel [!DNL SQL Report Builder] e fornire una solida base per la creazione di `SQL visualizations`.
+L&#39;obiettivo di questo tutorial è acquisire familiarità con la terminologia utilizzata in [!DNL SQL Report Builder] e fornire una solida base per la creazione di `SQL visualizations`.
 
-Il [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) è un generatore di rapporti con opzioni: puoi eseguire una query al solo scopo di recuperare una tabella di dati oppure puoi trasformare tali risultati in un rapporto. Questo tutorial spiega come creare una visualizzazione da una query SQL.
+[[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) è un generatore di report con opzioni: è possibile eseguire una query al solo scopo di recuperare una tabella di dati oppure è possibile trasformare tali risultati in un report. Questo tutorial spiega come creare una visualizzazione da una query SQL.
 
 ## Terminologia
 
-Prima di iniziare questo tutorial, consulta la terminologia seguente utilizzata nel `SQL Report Builder`.
+Prima di iniziare questa esercitazione, fare riferimento alla seguente terminologia utilizzata in `SQL Report Builder`.
 
-- `Series`: la colonna che desideri misurare è indicata come Serie nel Report Builder SQL. Esempi comuni sono `revenue`, `items sold`, e `marketing spend`. Almeno una colonna deve essere impostata come `Series` per creare una visualizzazione.
+- `Series`: la colonna che si desidera misurare viene indicata come Serie nel Report Builder SQL. Esempi comuni sono `revenue`, `items sold` e `marketing spend`. Almeno una colonna deve essere impostata come `Series` per creare una visualizzazione.
 
-- `Category`: la colonna che desideri utilizzare per segmentare i dati è denominata `Category` Questo è proprio come `Group By` funzionalità in [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). Ad esempio, se desideri segmentare i ricavi del ciclo di vita dei clienti in base all&#39;origine di acquisizione, la colonna che contiene l&#39;origine di acquisizione viene specificata come `Category`. È possibile impostare più colonne come `Category`.
+- `Category`: la colonna che si desidera utilizzare per segmentare i dati è denominata `Category`. È simile alla funzionalità `Group By` in [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). Ad esempio, se desideri segmentare i ricavi relativi al ciclo di vita dei clienti in base all&#39;origine di acquisizione, la colonna che contiene l&#39;origine di acquisizione verrà specificata come `Category`. È possibile impostare più colonne come `Category`.
 
 >[!NOTE]
 >
->Date e marche temporali possono essere utilizzate anche come `Categories`. Si tratta solo di un’altra colonna di dati nella query e deve essere formattata e ordinata come desiderato nella query stessa.
+>È inoltre possibile utilizzare date e marche temporali come `Categories`. Si tratta solo di un’altra colonna di dati nella query e deve essere formattata e ordinata come desiderato nella query stessa.
 
-- `Labels`: vengono applicate come etichette dell’asse x. Quando si analizzano i dati con tendenze nel tempo, le colonne anno e mese vengono specificate come etichette. È possibile impostare più colonne come Etichetta.
+- `Labels`: vengono applicate come etichette dell&#39;asse x. Quando si analizzano i dati con tendenze nel tempo, le colonne anno e mese vengono specificate come etichette. È possibile impostare più colonne come Etichetta.
 
 ## Passaggio 1: scrivere la query
 
 Considera quanto segue:
 
-- Il [!DNL SQL Report Builder] utilizza [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
+- [!DNL SQL Report Builder] utilizza [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
 
-- Se stai creando un rapporto con una serie temporale, assicurati di `ORDER BY` le colonne timestamp. In questo modo le marche temporali vengono tracciate nell’ordine corretto sul rapporto.
+- Se stai creando un report con una serie temporale, assicurati di `ORDER BY` le colonne timestamp. In questo modo le marche temporali vengono tracciate nell’ordine corretto sul rapporto.
 
-- Il `EXTRACT` è utile per analizzare il giorno, la settimana, il mese o l’anno della marca temporale. Questa funzione è utile quando `time interval` che desideri utilizzare per il report è `daily`, `weekly`, `monthly`, o `yearly`.
+- La funzione `EXTRACT` è utile per analizzare il giorno, la settimana, il mese o l&#39;anno della marca temporale. Questa opzione è utile quando `time interval` che si desidera utilizzare nel report è `daily`, `weekly`, `monthly` o `yearly`.
 
-Per iniziare, apri [!DNL SQL Report Builder] facendo clic su **[!UICONTROL Report Builder** > **SQL Report Builder]**.
+Per iniziare, aprire [!DNL SQL Report Builder] facendo clic su **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
 Ad esempio, considera questa query che restituisce il numero totale mensile di articoli venduti per ciascun prodotto:
 
@@ -62,7 +62,7 @@ Questa query restituisce questa tabella di risultati:
 
 ## Passaggio 2: creare la visualizzazione
 
-Con questi risultati, *come si crea la visualizzazione?* Per iniziare, fai clic su **[!UICONTROL Chart]** scheda in `Results` riquadro. Viene visualizzata la `Chart settings` scheda.
+Con questi risultati, *come si crea la visualizzazione?* Per iniziare, fare clic sulla scheda **[!UICONTROL Chart]** nel riquadro `Results`. Verrà visualizzata la scheda `Chart settings`.
 
 Quando si esegue una query per la prima volta, il report potrebbe risultare imperscrutabile perché tutte le colonne della query vengono tracciate come una serie:
 
@@ -70,15 +70,15 @@ Quando si esegue una query per la prima volta, il report potrebbe risultare impe
 
 In questo esempio, vuoi che sia un grafico a linee con tendenze nel tempo. Per crearlo, usa le seguenti impostazioni:
 
-- `Series`: seleziona la `Items sold` colonna come `Series` perché desideri misurarla. Dopo aver definito un `Series` nella colonna viene visualizzata una singola riga tracciata nel rapporto.
+- `Series`: selezionare la colonna `Items sold` come `Series` poiché si desidera misurarla. Dopo aver definito una colonna `Series`, nel rapporto verrà tracciata una singola riga.
 
-- `Category`: per questo esempio, vuoi visualizzare ogni prodotto come una riga diversa nel rapporto. A questo scopo, imposta `Product name` come `Category`.
+- `Category`: in questo esempio, si desidera visualizzare ogni prodotto come una riga diversa nel report. Per eseguire questa operazione, impostare `Product name` come `Category`.
 
-- `Labels`: utilizza le colonne `year` e `month` come etichette sull’asse x per poter visualizzare `Items Sold` come tendenza nel tempo.
+- `Labels`: utilizzare le colonne `year` e `month` come etichette sull&#39;asse x per visualizzare `Items Sold` come tendenza nel tempo.
 
 >[!NOTE]
 >
->La query deve contenere un `ORDER BY` sulle etichette se sono `date`/`time` colonne.
+>La query deve contenere una clausola `ORDER BY` nelle etichette se sono `date`/`time` colonne.
 
 Di seguito è riportato un rapido riepilogo su come hai creato questa visualizzazione, dall’esecuzione della query alla configurazione del rapporto:
 
@@ -86,16 +86,16 @@ Di seguito è riportato un rapido riepilogo su come hai creato questa visualizza
 
 ## Passaggio 3: selezionare un `Chart Type`
 
-In questo esempio viene utilizzato `Line` tipo di grafico. Per utilizzare un `chart type`, fai clic sulle icone sopra la sezione delle opzioni del grafico per modificarla:
+Questo esempio utilizza il tipo di grafico `Line`. Per utilizzare un `chart type` diverso, fare clic sulle icone sopra la sezione delle opzioni del grafico per modificarlo:
 
 ![](../assets/Chart_types.png)
 
 ## Passaggio 4: salvare la visualizzazione
 
-Se desideri utilizzare di nuovo questo rapporto, assegna un nome al rapporto e fai clic su **[!UICONTROL Save]** in alto a destra.
+Se desideri utilizzare di nuovo questo report, assegna un nome al report e fai clic su **[!UICONTROL Save]** nell&#39;angolo in alto a destra.
 
-Nel menu a discesa, seleziona `Chart` come `Type` e quindi una dashboard in cui salvare il rapporto.
+Nel menu a discesa, selezionare `Chart` come `Type` e quindi una dashboard in cui salvare il report.
 
 ## Ritorno a capo
 
-Vuoi fare un passo avanti? Consulta la sezione [best practice di ottimizzazione delle query](../best-practices/optimizing-your-sql-queries.md).
+Vuoi fare un passo avanti? Consulta le [best practice per l&#39;ottimizzazione delle query](../best-practices/optimizing-your-sql-queries.md).

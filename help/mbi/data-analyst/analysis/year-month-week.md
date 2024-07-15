@@ -15,28 +15,28 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Questo argomento contiene istruzioni per i client che utilizzano l&#39;architettura originale e la nuova architettura. Sei sul [nuova architettura](../../administrator/account-management/new-architecture.md) se ha la [!DNL _Data Warehouse visualizzazioni_] sezione disponibile dopo la selezione [!DNL Manage Data] dalla barra degli strumenti principale.
+>Questo argomento contiene istruzioni per i client che utilizzano l&#39;architettura originale e la nuova architettura. Ti trovi nella [nuova architettura](../../administrator/account-management/new-architecture.md) se disponi della sezione [!DNL _Data Warehouse visualizzazioni_] dopo aver selezionato [!DNL Manage Data] dalla barra degli strumenti principale.
 
 Il generatore di rapporti consente di visualizzare facilmente le tendenze nel tempo e di cambiare la prospettiva per i periodi di tempo che potrebbe essere utile confrontare. Questo argomento illustra come impostare una dashboard per andare a un livello più approfondito e consentire di creare rapporti per l’analisi settimana per settimana, mese per mese e anno per anno.
 
 ![](../../assets/Wow__mom__yoy.png)
 
-Prima di iniziare, è necessario rivedere le prospettive in modo più dettagliato [qui](../../tutorials/using-visual-report-builder.md) e opzioni di tempo indipendenti [qui](../../tutorials/time-options-visual-rpt-bldr.md).
+Prima di iniziare, è necessario rivedere le prospettive di esplorazione in modo più dettagliato [qui](../../tutorials/using-visual-report-builder.md) e le opzioni di tempo indipendenti [qui](../../tutorials/time-options-visual-rpt-bldr.md).
 
 Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Colonne calcolate
 
-* **`Sales_flat_order`** tabella
-* **Architettura originale:** le colonne seguenti vengono create da un analista come parte del `[YoY WoW MoM ANALYSIS]` ticket
+* Tabella **`Sales_flat_order`**
+* **Architettura originale:** le colonne seguenti sono state create da un analista come parte del ticket `[YoY WoW MoM ANALYSIS]`
 * `created_at (month-day)`
 * `created_at (month)`
 * `created_at (day of the month)`
 * `created_at (day of the week)`
 * `created_at (hour of the day)`
 
-* **Nuova architettura:** Di seguito sono elencate le istruzioni SQL con la foto di un esempio per la creazione di questo calcolo
-   * `created_at (month-day)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-gg&#39;)**
+* **Nuova architettura:** SQL elencato di seguito con la foto di un esempio per la creazione di questo calcolo
+   * `created_at (month-day)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-dd&#39;)**
    * `created_at (month)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-mese&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;gg&#39;)**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
@@ -53,13 +53,13 @@ Nessuno.
 
 ## Rapporti
 
-* **Grafico a Y**
+* **Grafico YoY**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 years ago to 1 year ago`
 
-   * [!UICONTROL Show top/bottom]: primo 100% ordinato per **`created_at (month-day)`***
+   * [!UICONTROL Show top/bottom]: primi 100% in base a **`created_at (month-day)`***
 
 * Metrica `A`: `This year`
 * Metrica `B`: `Last year`
@@ -74,9 +74,9 @@ Nessuno.
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * Opzioni tempo: `Time range (Custom)`: `2 months ago to 1 month ago`
+   * Opzioni ora: `Time range (Custom)`: `2 months ago to 1 month ago`
 
-   * Mostra in alto/in basso: Primi 100% in ordine **`created_at (day of month)`***
+   * Mostra in alto/in basso: primi 100% in base a **`created_at (day of month)`***
 
 * Metrica `A`: questo mese*
 * Metrica `B`: ultimo mese*
@@ -87,13 +87,13 @@ Nessuno.
 * 
   [!UICONTROL Chart Type]: Line
 
-* **Grafico a W**
+* **Grafico W**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 weeks ago to 1 week ago`
 
-   * [!UICONTROL Show top/bottom]: primo 100% ordinato per `created_at (day of week)`
+   * [!UICONTROL Show top/bottom]: primi 100% ordinati per `created_at (day of week)`
 
 * Metrica `A`: `This week`
 * Metrica `B`: `Last week`
@@ -110,7 +110,7 @@ Nessuno.
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 days ago to 1 day ago`
 
-   * [!UICONTROL Show top/bottom]: primo 100% ordinato per `created_at (hour of day)`
+   * [!UICONTROL Show top/bottom]: primi 100% ordinati per `created_at (hour of day)`
 
 * Metrica `A`: `Today`
 * Metrica B: `Yesterday`

@@ -6,28 +6,28 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 1%
+source-wordcount: '267'
+ht-degree: 0%
 
 ---
 
 # Tabella enterprise_rma
 
-Ogni riga nella `enterprise_rma` tabella (spesso chiamata `magento_rma` in Adobe Commerce 2.x, ma il nome può essere personalizzato) contiene informazioni su una richiesta di ritorno specifica.
+Ogni riga della tabella `enterprise_rma` (spesso denominata `magento_rma` in Adobe Commerce 2.x, ma il nome può essere personalizzato) contiene informazioni su una richiesta di ritorno specifica.
 
 >[!NOTE]
 >
->Questa tabella viene fornita come standard con il tuo account Adobe Commerce solo se sei un utente `Enterprise Edition` o `Enterprise Cloud Edition` cliente.
+>Questa tabella è standard solo per il tuo account Adobe Commerce se sei un cliente `Enterprise Edition` o `Enterprise Cloud Edition`.
 
 ## Colonne native comuni
 
 | **Nome colonna** | **Descrizione** |
 |---|---|
-| `entity\_id` | Identificatore univoco della tabella. Ogni `entity\_id` rappresenta una richiesta di ritorno. |
+| `entity\_id` | Identificatore univoco della tabella. Ogni `entity\_id` rappresenta una richiesta restituita. |
 | `date\_requested` | Data in cui è stata richiesta la restituzione. |
 | `status` | Stato del reso. I valori includono, tra gli altri, &quot;received&quot;, &quot;pending&quot;, &quot;authorized&quot;. |
-| `order\_id` | Chiave esterna associata al `sales\_flat\_order` tabella. |
-| `customer\_id` | Chiave esterna associata al `customer\_entity` tabella. |
+| `order\_id` | Chiave esterna associata alla tabella `sales\_flat\_order`. |
+| `customer\_id` | Chiave esterna associata alla tabella `customer\_entity`. |
 
 {style="table-layout:auto"}
 
@@ -44,12 +44,12 @@ Ogni riga nella `enterprise_rma` tabella (spesso chiamata `magento_rma` in Adobe
 
 ## Metriche comuni
 
-| **Nome della metrica** | **Descrizione** | **Costruzione** |
+| **Nome metrica** | **Descrizione** | **Costruzione** |
 |---|---|---|
-| `Number of returns` | Il numero di restituzioni richieste. | `Operation` colonna: `entity id`<br>`Operation`: `Count`<br>`Timestamp` Colonna: `date requested` |
+| `Number of returns` | Il numero di restituzioni richieste. | `Operation` colonna: `entity id`<br>`Operation`: `Count`<br>`Timestamp` colonna: `date requested` |
 | `Total returned amount` | Importo monetario totale restituito. | `Operation `Colonna: `Return's total value`<br>`Operation`: Somma<br>`Timestamp` Colonna: data richiesta |
 | `Average returned amount` | Importo monetario medio restituito. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Colonna: `date requested` |
-| `Average time to return` | Tempo medio dall&#39;ordine alla restituzione. | `Operation` Colonna: secondi tra la data di creazione dell’ordine e la data di restituzione richiesta<br>`Operation`: `Average`<br>`Timestamp` Colonna: `date requested` |
+| `Average time to return` | Tempo medio dall&#39;ordine alla restituzione. | `Operation` Colonna: secondi tra la data di creazione dell&#39;ordine e la data di restituzione richiesta<br>`Operation`: `Average`<br>`Timestamp` Colonna: `date requested` |
 
 {style="table-layout:auto"}
 
@@ -57,12 +57,12 @@ Ogni riga nella `enterprise_rma` tabella (spesso chiamata `magento_rma` in Adobe
 
 `sale_flat_order`
 
-* Crea colonne unite per segmentare e filtrare in base agli attributi a livello di ordine nel `enterprise_rma` tabella tramite il seguente join:
+* Creare colonne unite per segmentare e filtrare in base agli attributi a livello di ordine nella tabella `enterprise_rma` tramite il join seguente:
    * Commerce 1.x: `enterprise_rma.order_id` (molti) => `sales_flat_order.entity_id` (uno)
    * Commerce 2.x: `magento_rma.order_id` (molti) => `sales_order.entity_id` (uno)
 
 `enterprise_rma_item_entity`
 
-* Creare colonne molti-a-uno come `Return's total value` il `enterprise_rma` tabella tramite il seguente join:
+* Creare colonne molti-a-uno come `Return's total value` nella tabella `enterprise_rma` tramite il join seguente:
    * Commerce 1.x: `enterprise_rma_item_entity.rma_entity_id` (molti) => `enterprise_rma.entity_id` (uno)
    * Commerce 2.x: `magento_rma_item_entity.rma_entity_id ` (molti) => `magento_rma.entity_id` (uno)

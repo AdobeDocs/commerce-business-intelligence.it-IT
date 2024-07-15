@@ -13,27 +13,27 @@ ht-degree: 0%
 
 # Crea colonne calcolate
 
-Nell’analisi dei dati, è utile consolidare i dati provenienti da origini diverse. Desideri raggruppare i ricavi per origine di acquisizione, collegando i dati dal tuo `orders` tabella e [!DNL Google Analytics] dati? Puoi raggruppare i ricavi per genere del cliente o aggiungere un attributo del cliente ai dati della transazione per la segmentazione. Questo argomento illustra come eseguire questa operazione.
+Nell’analisi dei dati, è utile consolidare i dati provenienti da origini diverse. Raggruppare i ricavi per origine di acquisizione, collegando i dati dalla tabella `orders` e i dati [!DNL Google Analytics]? Puoi raggruppare i ricavi per genere del cliente o aggiungere un attributo del cliente ai dati della transazione per la segmentazione. Questo argomento illustra come eseguire questa operazione.
 
-Prima di iniziare, Adobe consiglia di rivedere [Guida ai tipi di colonna calcolati](../../data-analyst/data-warehouse-mgr/calc-column-types.md) per informazioni sui tipi di colonne che è possibile creare in Gestione Date Warehouse, insieme alle relative definizioni ed esempi.
+Prima di iniziare, Adobe consiglia di esaminare la [Guida ai tipi di colonna calcolati](../../data-analyst/data-warehouse-mgr/calc-column-types.md) per informazioni sui tipi di colonne che è possibile creare in Gestione Date Warehouse, insieme alle relative definizioni ed esempi.
 
-1. Per iniziare, fai clic su **[!DNL Manage Data > Data Warehouse]**.
+1. Per iniziare, fare clic su **[!DNL Manage Data > Data Warehouse]**.
 
-1. Fare clic sulla tabella in cui si desidera creare una colonna. Ad esempio, se desideri creare un’ `Customer Gender` per la segmentazione dei ricavi, è necessario selezionare la `sales_flat_order` tabella.
+1. Fare clic sulla tabella in cui si desidera creare una colonna. Ad esempio, se desideri creare una colonna `Customer Gender` per la segmentazione dei ricavi, seleziona la tabella `sales_flat_order`.
 
-1. Viene visualizzato lo schema di tabella. Clic **[!UICONTROL Create New Column]**.
+1. Viene visualizzato lo schema di tabella. Fare clic su **[!UICONTROL Create New Column]**.
 
 1. Assegna un nome alla colonna. Ad esempio, `Customer Gender`.
 
-1. Selezionare la definizione della colonna. Qui è dove [Guida ai tipi di colonne calcolate](../data-warehouse-mgr/calc-column-types.md) è utile!
+1. Selezionare la definizione della colonna. Qui la [guida dei tipi di colonna calcolati](../data-warehouse-mgr/calc-column-types.md) si rivela utile.
 
 1. Per alcuni tipi di colonne, sono necessarie ulteriori informazioni per creare correttamente la colonna:
 
-   * Per `One to Many` (uniti) e `Many to One` (aggregato), è necessario selezionare le tabelle e le colonne.
+   * Per `One to Many` colonne (unite) e `Many to One` colonne (aggregate), è necessario selezionare le tabelle e le colonne.
 
-   * Per un `Same Table calculation`, è necessario selezionare il campo data desiderato dal menu a discesa.
+   * Per `Same Table calculation`, è necessario selezionare il campo data desiderato dal menu a discesa.
 
-Se stai creando un `One to Many` (uniti) o `Many to One` (aggregato), è necessario selezionare un percorso per collegare le due tabelle. In questo passaggio è possibile utilizzare un percorso esistente o crearne uno esistente.
+Se si sta creando una colonna `One to Many` (unita in join) o `Many to One` (aggregata), è necessario selezionare un percorso per connettere le due tabelle. In questo passaggio è possibile utilizzare un percorso esistente o crearne uno esistente.
 
 >[!NOTE]
 >
@@ -41,9 +41,9 @@ Se stai creando un `One to Many` (uniti) o `Many to One` (aggregato), è necessa
 
 * Se lo desideri, puoi applicare [filtri](../../data-user/reports/ess-manage-data-filters.md) alla nuova colonna.
 
-* Al termine, fai clic su **[!UICONTROL Save]**.
+* Al termine, fare clic su **[!UICONTROL Save]**.
 
-La nuova colonna viene visualizzata nella tabella corrente con `Pending` stato. Al termine del prossimo aggiornamento, la colonna sarà disponibile per l’utilizzo in metriche e rapporti.
+La nuova colonna viene visualizzata nella tabella corrente con lo stato `Pending`. Al termine del prossimo aggiornamento, la colonna sarà disponibile per l’utilizzo in metriche e rapporti.
 
 ## Mappa di riferimento utile {#map}
 
@@ -55,4 +55,4 @@ Se non riesci a ricordare quali sono tutti gli input durante la creazione di una
 
 * [Tipi di colonne calcolate](../data-warehouse-mgr/calc-column-types.md)
 * [Tipi di colonne calcolate avanzate](../data-warehouse-mgr/adv-calc-columns.md)
-* [Generazione [!DNL Google ECommerce] dimensioni con dati di ordini e clienti](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [Creazione di  [!DNL Google ECommerce]  dimensioni con i dati dell&#39;ordine e del cliente](../data-warehouse-mgr/bldg-google-ecomm-dim.md)

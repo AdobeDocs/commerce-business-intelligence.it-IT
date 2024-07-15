@@ -16,10 +16,10 @@ ht-degree: 0%
 Puoi progettare le query ed essere la persona di riferimento per l’analisi dei dati. Saprai come trovare risposte specifiche alle domande sui dati e vuoi facilitare un’esperienza self-service per i tuoi colleghi.
 
 In questa sezione viene illustrato come:
-* connettere e importare dati in [!DNL Commerce Intelligence]
+* connetti e importa dati in [!DNL Commerce Intelligence]
 * visualizzare il modo in cui i dati vengono memorizzati e strutturati nella Data Warehouse
 * analizzare i dati
-* utilizzare il [!DNL SQL Report Builder]
+* utilizza [!DNL SQL Report Builder]
 
 ## Correlato
 

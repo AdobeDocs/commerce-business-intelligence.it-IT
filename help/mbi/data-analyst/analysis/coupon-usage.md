@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 2%
+source-wordcount: '1177'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ Vi siete mai chiesti in che modo l&#39;offerta di coupon influisce sulla vostra 
 
 ## Metriche consigliate {#metrics}
 
-Durante l’analisi dell’utilizzo dei coupon, considera l’utilizzo di ([o edificio](../../data-user/reports/ess-manage-data-metrics.md)) le metriche seguenti:
+Quando si analizza l&#39;utilizzo dei coupon, è consigliabile utilizzare ([o la compilazione](../../data-user/reports/ess-manage-data-metrics.md)) delle metriche seguenti:
 
 ### Numero di ordini
 
@@ -65,26 +65,26 @@ Questa metrica consente di valutare la fedeltà e i ricavi medi generati dai cli
 
 Ora che sai quali metriche esaminare, prendi un esempio che coinvolge tre diversi coupon: 10% di sconto, 20 dollari di sconto, 100 o più e 10 dollari di sconto.
 
-| **Coupon** | **N. di ordini** | **Entrate lorde** | **Sconti lordi da cedole** | **Ricavi netti** | **Percentuale scontata** |
+| **Coupon** | **# di ordini** | **Entrate lorde** | **Sconti lordi da coupon** | **Entrate nette** | **Percentuale scontata** |
 |-----|-----|-----|-----|-----|-----|
-| **Sconto del 10%** | 79 | $19,757.02 | $1,975.70 | $17,781.32 | 10.00% |
-| **$20 di sconto $100+** | 101 | $13,928.91 | $2,020.00 | $11,908.91 | 14.50% |
-| **$10 di sconto** | 201 | $14,542.35 | $2,010.00 | $12,532.35 | 13.82% |
+| **10% di sconto** | 79 | 19.757,02 $ | 1.975,70 $ | 17.781,32 $ | 10,00% |
+| **$20 di sconto $100+** | 101 | 13.928,91 $ | 2.020,00 $ | 11.908,91 $ | 14,50% |
+| **$10 di sconto** | 201 | 14.542,35 $ | 2.010,00 $ | 12.532,35 $ | 13,82% |
 
 {style="table-layout:auto"}
 
 
-| **Coupon** | **Media valore netto dell’ordine** | **Media sconto ordine** | **Acquirenti diversi** | **Media ricavi ciclo di vita** |
+| **Coupon** | **Media valore ordine netto** | **Media sconto ordine** | **Acquirenti distinti** | **Media ricavi ciclo di vita** |
 |-----|-----|-----|-----|-----|
-| **Sconto del 10%** | $225.08 | $25.01 | 79 | $361.50 |
-| **$20 di sconto $100+** | $117.91 | $20.00 | 95 | $218.76 |
-| **$10 di sconto** | $62.35 | $10.00 | 199 | $84.27 |
+| **10% di sconto** | 225,08 $ | 25,01 $ | 79 | 361,50 $ |
+| **$20 di sconto $100+** | 117,91 $ | 20,00 $ | 95 | 218,76 $ |
+| **$10 di sconto** | 62,35 $ | 10,00 $ | 199 | 84,27 $ |
 
 {style="table-layout:auto"}
 
 ## Cosa puoi portare via da questo?
 
-Circa 80 ordini sono stati effettuati con il coupon &quot;10% di sconto&quot;, 100 ordini con il coupon &quot;20 dollari di sconto di 100 dollari o più&quot; e 200 ordini con il coupon &quot;10 dollari di sconto&quot;. Il **numero di ordini** associato a ciascuna cedola può variare in base a diversi fattori, tra cui:
+Circa 80 ordini sono stati effettuati con il coupon &quot;10% di sconto&quot;, 100 ordini con il coupon &quot;20 dollari di sconto di 100 dollari o più&quot; e 200 ordini con il coupon &quot;10 dollari di sconto&quot;. Il **numero di ordini** associati a ogni coupon può variare in base a diversi fattori, tra cui:
 
 * il periodo di tempo per il quale i buoni sono stati offerti.
 * l’ora del giorno/settimana/mese/anno in cui sono stati offerti i coupon.
@@ -97,15 +97,15 @@ Circa 80 ordini sono stati effettuati con il coupon &quot;10% di sconto&quot;, 1
 
 * il comportamento d&#39;acquisto tipico del cliente.
 
-Mentre il **sconti lordi** per tutti e tre i coupon sono simili (circa $ 2.000), il numero di ordini per ogni coupon è diverso. L&#39;analisi degli sconti per ordine consente di spiegare le ragioni di questi numeri contrastanti. Il coupon &quot;10% di sconto&quot; ha il minor numero di ordini, ma un **sconto medio ordine** di circa 25 dollari. Anche se questo coupon ha un basso numero di ordini, il suo alto valore di sconto medio fa sì che il suo importo di sconto lordo si avvicini a $ 2.000.
+Mentre gli **sconti lordi** per tutti e tre i coupon sono simili (circa $ 2.000), il numero di ordini per ogni coupon è diverso. L&#39;analisi degli sconti per ordine consente di spiegare le ragioni di questi numeri contrastanti. Il coupon &quot;10% di sconto&quot; ha il minor numero di ordini, ma uno **sconto medio sull&#39;ordine** di circa $ 25. Anche se questo coupon ha un basso numero di ordini, il suo alto valore di sconto medio fa sì che il suo importo di sconto lordo si avvicini a $ 2.000.
 
-**Entrate lorde e nette** fornisci un’idea generale del valore completo degli ordini associati a ciascun coupon. Tuttavia, questo quadro generale non fornisce una comprensione dei diversi comportamenti correlati a ciascun coupon. Se si considera una base di ordine, è possibile notare che il coupon &quot;10% di sconto&quot; ha un valore elevato **ordine netto medio** valore, che a sua volta porta al suo elevato **ricavi netti**.
+**Le entrate lorde e nette** forniscono un&#39;idea generale del valore completo degli ordini associati a ciascuna cedola. Tuttavia, questo quadro generale non fornisce una comprensione dei diversi comportamenti correlati a ciascun coupon. Se si considera una base per ordine, è possibile notare che il coupon &quot;10% off&quot; ha un valore **net order** elevato, che a sua volta porta a **net revenue** elevato.
 
-D&#39;altra parte, la cedola &quot;10% di sconto&quot; ha un valore di sconto medio alto ($25.01), ma il più basso **percentuale attualizzata**. Ciò ha senso quando si tiene conto del suo valore netto medio di ordine di $ 225,08. La cedola &quot;10% di sconto&quot; ha un piccolo sconto percentuale di un grande valore medio netto dell&#39;ordine, quindi lo sconto medio dell&#39;ordine è un grande importo.
+D&#39;altra parte, il coupon &quot;10% di sconto&quot; ha un valore di sconto medio alto ($25.01), ma il più basso **percentuale di sconto**. Ciò ha senso quando si tiene conto del suo valore netto medio di ordine di $ 225,08. La cedola &quot;10% di sconto&quot; ha un piccolo sconto percentuale di un grande valore medio netto dell&#39;ordine, quindi lo sconto medio dell&#39;ordine è un grande importo.
 
-Osserva la **acquirenti distinti** e **reddito medio nel ciclo di vita** per ogni cedola. Il coupon &quot;10% di sconto&quot; ha lo stesso numero di ordini come acquirenti distinti. Ciò potrebbe essere dovuto al fatto che ogni cliente è limitato a un solo coupon. D&#39;altra parte, i coupon da &quot;$20 off $100 o più&quot; e &quot;$10 off&quot; hanno meno acquirenti distinti rispetto al numero di ordini, il che implica che alcuni clienti hanno utilizzato questi coupon più volte.
+Osserva i **acquirenti distinti** e i **ricavi medi della durata** per ogni coupon. Il coupon &quot;10% di sconto&quot; ha lo stesso numero di ordini come acquirenti distinti. Ciò potrebbe essere dovuto al fatto che ogni cliente è limitato a un solo coupon. D&#39;altra parte, i coupon da &quot;$20 off $100 o più&quot; e &quot;$10 off&quot; hanno meno acquirenti distinti rispetto al numero di ordini, il che implica che alcuni clienti hanno utilizzato questi coupon più volte.
 
-Per i ricavi medi nel ciclo di vita, puoi notare che i ricavi medi nel ciclo di vita di ogni coupon sono superiori ai rispettivi **ordine netto medio** valore. Ciò implica che i clienti hanno effettuato acquisti ripetuti e/o che il loro valore dell’ordine era molto più alto del valore netto medio dell’ordine.
+Per i ricavi medi nel ciclo di vita, puoi vedere che i ricavi medi nel ciclo di vita di ogni coupon sono superiori al rispettivo valore **medio netto ordine**. Ciò implica che i clienti hanno effettuato acquisti ripetuti e/o che il loro valore dell’ordine era molto più alto del valore netto medio dell’ordine.
 
 ## Che altro posso analizzare? {#otheranalyses}
 
@@ -115,11 +115,11 @@ Le analisi menzionate in questo argomento possono fornirti informazioni utili su
 
 Quali coupon incoraggiano i clienti a effettuare ordini? Questi coupon attirano acquirenti occasionali o incoraggiano la fedeltà dei clienti (in altre parole, clienti che effettuano acquisti ripetuti)?
 
-**Puoi analizzare il tempo necessario ai clienti per utilizzare i coupon.**
+**Puoi analizzare il tempo necessario ai tuoi clienti per utilizzare i coupon.**
 
 I coupon vengono utilizzati il giorno in cui vengono rilasciati o trascorrono una settimana o due prima che la maggior parte dei clienti li utilizzi?
 
-**Puoi scoprire l’importo dello sconto ottimale che aumenta la fedeltà dei clienti e il valore complessivo.**
+**È possibile scoprire l&#39;importo dello sconto ottimale che aumenta la fedeltà del cliente e il valore complessivo.**
 
 Quale importo di sconto incoraggia gli acquirenti abituali, un valore medio più alto per l&#39;ordine e maggiori ricavi nel corso del ciclo di vita?
 

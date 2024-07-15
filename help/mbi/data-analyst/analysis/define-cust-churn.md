@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -23,32 +23,32 @@ Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-c
 
 Colonne da creare
 
-* `customer_entity` tabella
+* Tabella `customer_entity`
 * `Customer's lifetime number of orders`
-* Seleziona una definizione: `Count`
-* Seleziona un [!UICONTROL table]: `sales_flat_order`
-* Seleziona un [!UICONTROL column]: **`entity_id`**
+* Selezionare una definizione: `Count`
+* Seleziona [!UICONTROL table]: `sales_flat_order`
+* Seleziona [!UICONTROL column]: **`entity_id`**
 * [!UICONTROL Path]: sales_flat_order.customer_id = customer_entity.entity_id
 * [!UICONTROL Filter]:
 * Ordini conteggiati
 
-* `sales_flat_order` tabella
+* Tabella `sales_flat_order`
 * `Customer's lifetime number of orders`
 * Seleziona una definizione: colonna unita
-* Seleziona un [!UICONTROL table]: `customer_entity`
-* Seleziona un [!UICONTROL column]: `Customer's lifetime number of orders`
+* Seleziona [!UICONTROL table]: `customer_entity`
+* Seleziona [!UICONTROL column]: `Customer's lifetime number of orders`
 * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
 * [!UICONTROL Filter]: `Orders we count`
 
 * `Seconds since created_at`
-* Seleziona una definizione: `Age`
-* Seleziona un [!UICONTROL column]: `created_at`
+* Selezionare una definizione: `Age`
+* Seleziona [!UICONTROL column]: `created_at`
 
-* **`Customer's order number`** viene creato da un analista come parte del **[DEFINIZIONE DELL’ABBANDONO]** ticket
-* **`Is customer's last order`** viene creato da un analista come parte del **[DEFINIZIONE DELL’ABBANDONO]** ticket
-* **`Seconds since previous order`** viene creato da un analista come parte del **[DEFINIZIONE DELL’ABBANDONO]** ticket
-* **`Months since order`** viene creato da un analista come parte del **[DEFINIZIONE DELL’ABBANDONO]** ticket
-* **`Months since previous order`** viene creato da un analista come parte del **[DEFINIZIONE DELL’ABBANDONO]** ticket
+* **`Customer's order number`** è stato creato da un analista come parte del **[ticket DEFINIZIONE ABBANDONO]**
+* **`Is customer's last order`** è stato creato da un analista come parte del **[ticket DEFINIZIONE ABBANDONO]**
+* **`Seconds since previous order`** è stato creato da un analista come parte del **[ticket DEFINIZIONE ABBANDONO]**
+* **`Months since order`** è stato creato da un analista come parte del **[ticket DEFINIZIONE ABBANDONO]**
+* **`Months since previous order`** è stato creato da un analista come parte del **[ticket DEFINIZIONE ABBANDONO]**
 
 ## Metriche
 
@@ -80,7 +80,7 @@ Nessuna nuova metrica.
 * 
   [!UICONTROL Chart type]: `Scalar`
 
-* **Probabilità di ripetizione ordine specificata mesi dopo l&#39;ordine**
+* **Probabilità di ripetizione ordine fornita mesi dall&#39;ordine**
 * Metrica A: ripetere gli ordini per mesi dall’ordine precedente (nascondere)
 * [!UICONTROL Metric]: `Number of orders`
 * 
@@ -128,8 +128,8 @@ La formula utilizzata è semplificata in (Totale ordini ripetuti dopo X mesi)/ (
 
 Una volta creato il dashboard, la domanda più comune è: come si utilizza questo valore per determinare una soglia di abbandono?
 
-**Non c&#39;è &quot;una risposta giusta&quot; a questo.** Tuttavia, l’Adobe consiglia di trovare il punto in cui la linea interseca il valore che è la metà del tasso di probabilità di ripetizione iniziale. Questo è il punto in cui si può dire &quot;Se un utente sta per fare un ordine di ripetizione, probabilmente lo avrebbe già fatto a questo punto.&quot; In ultima analisi, l’obiettivo è quello di selezionare la soglia in cui ha senso passare dagli sforzi di &quot;conservazione&quot; a quelli di &quot;riattivazione&quot;.
+**Non esiste un&#39;unica risposta corretta.** Tuttavia, l&#39;Adobe consiglia di trovare il punto in cui la linea interseca il valore che è la metà del tasso di probabilità di ripetizione iniziale. Questo è il punto in cui si può dire &quot;Se un utente sta per fare un ordine di ripetizione, probabilmente lo avrebbe già fatto a questo punto.&quot; In ultima analisi, l’obiettivo è quello di selezionare la soglia in cui ha senso passare dagli sforzi di &quot;conservazione&quot; a quelli di &quot;riattivazione&quot;.
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile all’immagine nella parte superiore della pagina
 
-In caso di domande durante la creazione di questa analisi, o se desideri semplicemente coinvolgere il team Professional Services, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

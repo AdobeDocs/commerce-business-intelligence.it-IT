@@ -11,17 +11,17 @@ ht-degree: 1%
 
 ---
 
-# [!DNL MongoDB] Modellazione dati
+# Modellazione dati [!DNL MongoDB]
 
-Quando [!DNL Adobe Commerce Intelligence] richiama [!DNL MongoDB] dati, questi dati vengono tradotti in un modello relazionale.
+Quando [!DNL Adobe Commerce Intelligence] estrae i dati [!DNL MongoDB], questi vengono convertiti in un modello relazionale.
 
-La cattiva notizia: anche se la maggior parte dei pattern di dati non pone alcun problema, ce ne sono alcuni che non sono supportati da [!DNL Commerce Intelligence], a causa della traduzione in un modello relazionale.
+La cattiva notizia: sebbene la maggior parte dei pattern di dati non ponga alcun problema, ce ne sono alcuni che non sono supportati da [!DNL Commerce Intelligence], a causa della conversione in un modello relazionale.
 
 La buona notizia: tutti questi modelli possono essere evitati.
 
 ## Array subannidati {#subnested}
 
-Se la tua raccolta è simile all’esempio di seguito, [!DNL Commerce Intelligence] replica solo i dati nell&#39;array items. I dati dell’array dei sottoelementi non vengono estratti.
+Se la raccolta è simile all&#39;esempio seguente, [!DNL Commerce Intelligence] replica solo i dati nell&#39;array di elementi. I dati dell’array dei sottoelementi non vengono estratti.
 
 ```bash
     {

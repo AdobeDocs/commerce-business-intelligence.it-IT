@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Di seguito è riportato ciò che è necessario creare rapporti per il dashboard 
       * A/B
 * **[!UICONTROL All-time revenue by source]**
    * Metrica - Ricavi
-   * Raggruppa per cliente `utm_source`
+   * Raggruppa per `utm_source` del cliente
 * **[!UICONTROL Revenue from top 10 products]**
    * Metrica - Entrate da prodotti
       * Nascondi il grafico
@@ -59,20 +59,20 @@ Di seguito è riportato ciò che è necessario creare rapporti per il dashboard 
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * Sessioni
 
-Con un [!DNL Google Analytics] integrazione, puoi includere rapporti su:
+Con l&#39;integrazione di [!DNL Google Analytics], è possibile includere report su:
 
 * Visite al sito
 * Tasso di conversione
 
-Con il [Servizi di arricchimento dati Commerce](https://business.adobe.com/products/magento/magento-commerce.html), puoi includere rapporti su:
+Con i [Servizi di arricchimento dati di Commerce](https://business.adobe.com/products/magento/magento-commerce.html) è possibile includere report su:
 
 * Clienti univoci per stato/regione, età, genere.
 
 ## Altri suggerimenti
 
-* Utilizza un testo chiaro e conciso [convenzione di denominazione](../best-practices/naming-elements.md)
+* Utilizza una convenzione di denominazione [chiara e concisa](../best-practices/naming-elements.md)
 * Condividere il dashboard con gli utenti investitori
-* Oppure invialo tramite **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
+* Oppure inviarlo tramite **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
 * Crea un solo dashboard. Questo rende il contenuto più semplice da gestire e sai esattamente cosa stanno guardando gli investitori.
 
 Organizza i tuoi report in modo attento e presta attenzione ai dettagli. Una volta completato, il dashboard avrà un aspetto simile a quello riportato di seguito:

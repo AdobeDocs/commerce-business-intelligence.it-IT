@@ -22,31 +22,31 @@ I riepiloghi e-mail sono un potente strumento di comunicazione che puoi utilizza
 
 ## Crea nuovo riepilogo e-mail
 
-1. Clic **[!DNL Manage Data]** allora **[!UICONTROL Email Summary]** nella barra laterale.
+1. Fare clic su **[!DNL Manage Data]** e quindi su **[!UICONTROL Email Summary]** nella barra laterale.
 
    Se è la prima volta che crei un riepilogo e-mail, questa pagina non mostra alcun riepilogo salvato.
 
-1. Clic **[!UICONTROL Create New Email Summary]** in alto a destra.
+1. Fare clic su **[!UICONTROL Create New Email Summary]** nell&#39;angolo superiore destro.
 
 1. Immettere un nome per il riepilogo.
 
    Scegli un nome che trasmetta ciò che è incluso nel riepilogo. Ad esempio, `AOV Comparison`.
 
-1. In `Choose Content` , selezionare i rapporti che si desidera includere nel riepilogo.
+1. Nella sezione `Choose Content` selezionare i report che si desidera includere nel riepilogo.
 
-   Puoi selezionare fino a dieci rapporti di tua proprietà. Dopo aver selezionato un rapporto, utilizza le icone visualizzate per selezionare se desideri che il rapporto venga inviato come tabella o grafico. Se il report è stato salvato come numero, è possibile inviarlo solo come numero. Per informazioni sull’invio di un riepilogo e-mail contenente un rapporto con dati non aggiornati, consulta [Gestione delle impostazioni dell’account](../../administrator/account-management/managing-account-settings.md).
+   Puoi selezionare fino a dieci rapporti di tua proprietà. Dopo aver selezionato un rapporto, utilizza le icone visualizzate per selezionare se desideri che il rapporto venga inviato come tabella o grafico. Se il report è stato salvato come numero, è possibile inviarlo solo come numero. Per informazioni sull&#39;invio di un riepilogo e-mail contenente un report con dati non aggiornati, vedere [Gestione delle impostazioni account](../../administrator/account-management/managing-account-settings.md).
 
    >[!NOTE]
    >
-   >`Cohort` i rapporti sono disponibili solo se utilizzi la nuova architettura.
+   >I report `Cohort` sono disponibili solo se si utilizza la nuova architettura.
 
-1. (Facoltativo) Seleziona `Send Email To Me` se desideri ricevere l’e-mail.
+1. (Facoltativo) Selezionare `Send Email To Me` se si desidera ricevere l&#39;e-mail.
 
-1. Per includere altri utenti nell’e-mail, inserisci i loro indirizzi e-mail in `Add Email Recipients` campo separato da virgole, spazi, tabulazioni o punti e virgola.
+1. Per includere altri utenti nell&#39;e-mail, immettere i propri indirizzi e-mail nel campo `Add Email Recipients` separati da virgole, spazi, tabulazioni o punti e virgola.
 
 ## Riepilogo pianificazione e-mail
 
-In `Set when to send the Email Summary` , puoi specificare quando inviare i riepiloghi e-mail. Le opzioni sono:
+Nel campo `Set when to send the Email Summary`, puoi specificare quando inviare i riepiloghi dell&#39;e-mail. Le opzioni sono:
 
 * `Manual`
 * `Once`
@@ -54,40 +54,40 @@ In `Set when to send the Email Summary` , puoi specificare quando inviare i riep
 
 ### Salva riepilogo e-mail da inviare in un secondo momento
 
-1. Seleziona `Manual` dal `Set when to send the Email Summary` campo.
+1. Selezionare `Manual` dal campo `Set when to send the Email Summary`.
 
-1. Clic **[!UICONTROL Save]**.
+1. Fare clic su **[!UICONTROL Save]**.
 
    In questo modo il riepilogo viene salvato nell’elenco dei riepiloghi e-mail.
 
-1. Quando sei pronto per inviare il riepilogo, fai clic sull’icona a forma di ingranaggio e seleziona `Send Now`.
+1. Quando sei pronto a inviare il riepilogo, fai clic sull&#39;icona a forma di ingranaggio e seleziona `Send Now`.
 
 ### Invia riepilogo e-mail una volta
 
-1. Seleziona `Once` dal `Set when to send the Email Summary` campo.
+1. Selezionare `Once` dal campo `Set when to send the Email Summary`.
 
-1. Specifica la data di inizio nel `Select Start Date` calendario.
+1. Specificare la data di inizio nel calendario `Select Start Date`.
 
-1. Specifica l’ora in cui inviare l’e-mail in `Select time to send` campo.
+1. Specificare l&#39;ora di invio dell&#39;e-mail nel campo `Select time to send`.
 
 ### Crea pianificazione ripetuta
 
-1. Seleziona `Repeating` dal `Set when to send the Email Summary` campo.
+1. Selezionare `Repeating` dal campo `Set when to send the Email Summary`.
 
-1. In `Set Frequency` campo, seleziona `Daily`, `Weekly`, o `Monthly`.
+1. Nel campo `Set Frequency`, selezionare `Daily`, `Weekly` o `Monthly`.
 
-1. Specifica la data di inizio nel `Select Start Date` calendario.
+1. Specificare la data di inizio nel calendario `Select Start Date`.
 
-1. Specifica l’ora in cui inviare l’e-mail in `Select time to send` campo.
+1. Specificare l&#39;ora di invio dell&#39;e-mail nel campo `Select time to send`.
 
-1. (Facoltativo) Per specificare una data di fine, seleziona `End Date` e selezionare la data di fine dal calendario.
+1. (Facoltativo) Per specificare una data di fine, selezionare `End Date` e selezionare la data di fine dal calendario.
 
 ## Modifica riepilogo e-mail esistente
 
-Dopo aver creato e salvato un riepilogo e-mail, il `Email Summaries` pagina visualizza un elenco di tutti i riepiloghi salvati. È possibile espandere (`+`) per ulteriori informazioni. Le colonne in questa visualizzazione sono:
+Dopo aver creato e salvato un riepilogo e-mail, nella pagina `Email Summaries` viene visualizzato un elenco di tutti i riepiloghi salvati. È possibile espandere (`+`) ogni riga per ulteriori informazioni. Le colonne in questa visualizzazione sono:
 
 * `Email Name` - Nome del riepilogo e-mail
-* `Content` - Tipo di contenuto all’interno del riepilogo, ad esempio i nomi di eventuali rapporti. Per informazioni sull’invio di un riepilogo e-mail contenente un rapporto con dati non aggiornati, consulta [Gestione delle impostazioni dell’account](../../administrator/account-management/managing-account-settings.md).
+* `Content` - Tipo di contenuto all&#39;interno del riepilogo, ad esempio i nomi dei report. Per informazioni sull&#39;invio di un riepilogo e-mail contenente un report con dati non aggiornati, vedere [Gestione delle impostazioni account](../../administrator/account-management/managing-account-settings.md).
 * `Scheduled` - Frequenza, data e ora di invio del riepilogo e-mail
 * `Recipients` - Destinatari del riepilogo e-mail
 * `Created Date` - Data di creazione del riepilogo e-mail
@@ -97,5 +97,5 @@ Fai clic sull’icona a forma di ingranaggio a destra di ciascuna riga per:
 
 * `Send Now` - Invia immediatamente il riepilogo e-mail a tutti i destinatari specificati
 * `Edit` - Consente di modificare i dettagli del riepilogo e-mail
-* `Pause/Active` - Consente di sospendere la consegna del riepilogo dell’e-mail o di abilitare il riepilogo in base alla configurazione
+* `Pause/Active` - Consente di sospendere la consegna del riepilogo e-mail o di abilitare il riepilogo in base alla configurazione
 * `Delete` - Elimina il riepilogo e-mail

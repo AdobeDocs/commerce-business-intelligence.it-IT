@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Gestisci dati consente di accedere a vari strumenti per gestire integrazioni, dati di report e grafici, dashboard ed esportazioni.
 
-## Per accedere [!DNL Manage Data]:
+## Per accedere a [!DNL Manage Data]:
 
-1. Nel menu, fai clic su **[!DNL Manage Data]**.
+1. Nel menu, fare clic su **[!DNL Manage Data]**.
 
 1. Nella barra laterale, scegli l’argomento desiderato tra i seguenti titoli:
 

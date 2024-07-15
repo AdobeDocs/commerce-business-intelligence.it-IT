@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 2%
+source-wordcount: '1382'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +20,9 @@ L’analisi del modo in cui i clienti utilizzano i coupon può fornire informazi
 * In che modo i ricavi medi nel ciclo di vita differiscono tra i clienti acquisiti con coupon e i clienti non acquisiti con coupon?
 * I clienti acquisiti da coupon effettuano acquisti ripetuti con coupon?
 
-Rispondi a queste domande concentrandoti su [confronto tra clienti acquisiti con cedola e clienti acquisiti senza cedola](#compare), [analisi dei dettagli del primo ordine dalle acquisizioni di coupon](#firstorder), e [esaminare gli attributi dei clienti che utilizzano i coupon nel loro primo ordine.](#attributes)
+Rispondi a queste domande concentrandoti su [confronto tra clienti acquisiti con coupon e clienti non acquisiti con coupon](#compare), [analisi dei dettagli del primo ordine da acquisizioni con coupon](#firstorder) e [analisi degli attributi dei clienti che utilizzano i coupon nel primo ordine.](#attributes)
 
-Introduzione!
+Inizia.
 
 ## Confronto tra clienti acquisiti con cedola e clienti acquisiti senza cedola {#compare}
 
@@ -46,10 +46,10 @@ Mostra il numero di ordini ripetuti eseguiti con un coupon applicato e la percen
 
 Osserva alcuni dati di esempio per le metriche di acquisizione di cedole e non cedole:
 
-| **Acquisizione cliente** | **Numero di nuovi clienti** | **Ricavi medi nel ciclo di vita** | **Numero di ordini ripetuti** | **Numero di ordini ripetuti con coupon** | **% di ordini con coupon** |
+| **Acquisizione cliente** | **Numero di nuovi clienti** | **Ricavi medi nel corso della vita** | **Numero di ordini ripetuti** | **Numero di ordini ripetuti con coupon** | **% di ordini ripetuti con coupon** |
 |-----|-----|-----|-----|-----|-----|
-| Coupon | 1,206 | $356.91 | 2,570 | 1,248 | 48.56% |
-| Non cedola | 11,561 | $498.30 | 20,145 | 3,251 | 16.14% |
+| Coupon | 1.206 | 356,91 $ | 2.570 | 1.248 | 48,56% |
+| Non cedola | 11.561 | 498,30 $ | 20.145 | 3.251 | 16,14% |
 
 {style="table-layout:auto"}
 
@@ -77,7 +77,7 @@ I clienti acquisiti senza cedola hanno una percentuale molto inferiore di ordini
 
 ## Analisi dei dettagli del primo ordine dalle acquisizioni di coupon {#firstorder}
 
-Questa sezione si concentra solo su **primi ordini da acquisizioni di cedole, segmentati per cedola.** Utilizza queste metriche nell’analisi:
+Questa sezione si concentra solo su **primi ordini da acquisizioni di cedole, segmentati per cedola.** Utilizza queste metriche nell&#39;analisi:
 
 ### Numero di ordini/clienti
 
@@ -109,11 +109,11 @@ Questa metrica consente di valutare la fedeltà e i ricavi medi generati dai cli
 
 Ora, guarda un esempio che coinvolge tre diversi coupon utilizzati per il primo ordine dei clienti:
 
-| **Coupon** | **Nuovi ordini (FTO)** | **Entrate lorde da operazioni di finanziamento a lungo termine** | **Sconti applicati a FTO** | **Ricavi netti da operazioni di finanziamento** | **Valore medio ordine per FTO** |
+| **Coupon** | **Nuovi ordini (FTO)** | **Ricavi lordi da FTO** | **Sconti applicati a FTO** | **Entrate nette da FTO** | **Valore medio ordine per FTO** |
 |-----|-----|-----|-----|-----|-----|
-| **25% di sconto di $100 o più** | 56 | $8,531.04 | $2,132.76 | $6,398.28 | $152.34 |
-| **$10 di sconto** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
-| **20% di sconto** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
+| **25% di sconto di $100 o più** | 56 | 8.531,04 $ | 2.132,76 $ | 6.398,28 $ | 152,34 $ |
+| **$10 di sconto** | 87 | 3.707,07 $ | 426,10 $ | 3.280,97 $ | 42,61 $ |
+| **20% di sconto** | 145 | 10.975,05 $ | 2.195,01 $ | 8.780,04 $ | 75,69 $ |
 
 {style="table-layout:auto"}
 
@@ -124,31 +124,31 @@ Cosa si può ricavare da questo? In primo luogo, il coupon &quot;20% off&quot; h
 * l’ora del giorno/settimana/mese/anno in cui sono stati offerti i coupon.
 * la stagione in cui sono stati offerti i coupon, a seconda dell&#39;azienda.
 
-  **Esempio:** il coupon &quot;20% off&quot; è stato offerto durante i mesi estivi, ma l&#39;azienda vende abbigliamento invernale.
+  **Esempio:** il coupon &quot;20% di sconto&quot; è stato offerto durante i mesi estivi, ma l&#39;azienda vende abbigliamento invernale.
 * le restrizioni sulle cedole.
 
   **Esempio:** il coupon &quot;10% di sconto&quot; è offerto solo ai clienti che acquistano un cappotto invernale nello stesso ordine.
 
-Il **reddito lordo** per la cedola &quot;25% off $100 o più&quot; è molto più alto del ricavo lordo per la cedola &quot;$10 off&quot;. Tuttavia, il coupon &quot;$10 off&quot; ha un molto più grande **numero di ordini**. Analisi del **valore medio dell’ordine** fornisce informazioni approfondite su queste differenze. Anche se il coupon &quot;25% off $100 o più&quot; aveva un numero inferiore di ordini, il valore medio dell&#39;ordine è più del triplo rispetto al coupon &quot;off$10&quot;. Pertanto, un maggiore ricavo lordo è attribuito alla cedola &quot;25% off $100 o più&quot;.
+Il **ricavo lordo** per la cedola &quot;25% di sconto di 100 o più dollari&quot; è molto più alto del ricavo lordo per la cedola &quot;10 dollari di sconto&quot;. Tuttavia, il coupon &quot;$10 off&quot; ha un **numero di ordini** molto più grande. L&#39;analisi del **valore medio dell&#39;ordine** fornisce informazioni approfondite su queste differenze. Anche se il coupon &quot;25% off $100 o più&quot; aveva un numero inferiore di ordini, il valore medio dell&#39;ordine è più del triplo rispetto al coupon &quot;off$10&quot;. Pertanto, un maggiore ricavo lordo è attribuito alla cedola &quot;25% off $100 o più&quot;.
 
-Il **sconti** e **ricavi netti** per le cedole &quot;25% off $100 o più&quot; e &quot;20% off&quot; sono vicino in valore. Anche se il valore medio dell&#39;ordine per &quot;25% di sconto di $100 o più&quot; è vicino al doppio del valore medio dell&#39;ordine per &quot;20% di sconto&quot;, quest&#39;ultimo coupon ha un poco meno del triplo del numero di ordini.
+I **sconti** e **ricavi netti** per i coupon &quot;25% di sconto pari o superiore a 100 dollari&quot; e &quot;20% di sconto&quot; hanno un valore vicino. Anche se il valore medio dell&#39;ordine per &quot;25% di sconto di $100 o più&quot; è vicino al doppio del valore medio dell&#39;ordine per &quot;20% di sconto&quot;, quest&#39;ultimo coupon ha un poco meno del triplo del numero di ordini.
 
 ## Attributi dei clienti che utilizzano i coupon per il primo ordine {#attributes}
 
 Dopo aver esaminato gli ordini, esaminare i clienti che utilizzano i coupon nei loro primi ordini:
 
-| **Coupon del primo ordine del cliente** | **Numero di clienti** | **Numero medio di ordini nel ciclo di vita** | **Ricavi medi nel ciclo di vita** |
+| **Buono sconto primo cliente** | **Numero di clienti** | **Numero medio di ordini nel ciclo di vita** | **Ricavi medi nel corso della vita** |
 |-----|-----|-----|-----|
-| **25% di sconto di $100 o più** | 56 | 2.8 | $554.54 |
-| **$10 di sconto** | 87 | 1.9 | $115.50 |
-| **20% di sconto** | 145 | 1.3 | $103.75 |
+| **25% di sconto di $100 o più** | 56 | 2,8 | 554,54 $ |
+| **$10 di sconto** | 87 | 1,9 | 115,50 $ |
+| **20% di sconto** | 145 | 1,3 | 103,75 $ |
 
 {style="table-layout:auto"}
 
 Noterai che il numero di nuovi ordini corrisponde al numero di clienti per ogni coupon. Questo è utile perché ogni cliente può avere un solo primo ordine.
 
-Il maggior numero di clienti è stato acquisito attraverso il coupon &quot;20% di sconto&quot;. Tuttavia, questi clienti hanno il valore più basso **numero medio di ordini a vita** e **reddito medio nel ciclo di vita**; in genere, la maggior parte dei clienti acquistati con coupon non effettua ordini ripetuti. Inoltre, i clienti acquisiscono tramite l&#39;unità coupon &quot;25% off $100 o più&quot; più alta **numero medio di ordini a vita** e, a sua volta, **reddito medio nel ciclo di vita**. In genere, gli utenti che sono stati acquistati tramite questo coupon di solito tornano e fanno più acquisti ripetuti.
+Il maggior numero di clienti è stato acquisito attraverso il coupon &quot;20% di sconto&quot;. Tuttavia, questi clienti hanno il **numero medio di ordini nel ciclo di vita** e il **reddito medio nel ciclo di vita** più basso; in genere, la maggior parte dei clienti acquisiti con coupon non effettua ordini ripetuti. Inoltre, i clienti hanno acquisito tramite l&#39;unità coupon &quot;25% off $100 o più&quot; un numero di ordini superiore a **numero di ordini con durata media** e, a sua volta, un numero superiore a **ricavi con durata media**. In genere, gli utenti che sono stati acquistati tramite questo coupon di solito tornano e fanno più acquisti ripetuti.
 
 ## Ritorno a capo {#wrapup}
 
-Sono disponibili numerose analisi che puoi creare per comprendere meglio come i tuoi clienti utilizzano i coupon. Hai mai pensato di analizzare in che modo i tuoi clienti utilizzano i coupon o il tempo necessario per utilizzarli? E per quanto riguarda la ricerca dell&#39;importo di sconto ottimale: quale importo incoraggia gli acquirenti ripetuti, un valore medio più alto dell&#39;ordine e maggiori ricavi nel corso della vita? Per assistenza su questi tipi di domande, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Sono disponibili numerose analisi che puoi creare per comprendere meglio come i tuoi clienti utilizzano i coupon. Hai mai pensato di analizzare in che modo i tuoi clienti utilizzano i coupon o il tempo necessario per utilizzarli? E per quanto riguarda la ricerca dell&#39;importo di sconto ottimale: quale importo incoraggia gli acquirenti ripetuti, un valore medio più alto dell&#39;ordine e maggiori ricavi nel corso della vita? Per informazioni su questi tipi di domande, [contatta l&#39;assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

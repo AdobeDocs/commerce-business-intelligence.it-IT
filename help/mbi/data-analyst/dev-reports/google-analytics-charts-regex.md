@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '160'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 (con aiuto per la sintassi regex)
 
-Dopo aver connesso [[!DNL Google Analytics] account](../../data-analyst/importing-data/integrations/google-analytics.md), è possibile creare grafici con [!DNL Google Analytics] dati.
+Dopo aver connesso il tuo [[!DNL Google Analytics] account](../../data-analyst/importing-data/integrations/google-analytics.md), puoi creare grafici con i tuoi dati di [!DNL Google Analytics].
 
-## Crea [!DNL Google Analytics] Grafici
+## Crea [!DNL Google Analytics] grafici
 
-1. Clic **[!UICONTROL Add Chart** > **Create New Chart]**.
+1. Fare clic su **[!UICONTROL Add Chart** > **Create New Chart]**.
 
-1. Quando si seleziona una metrica in `Chart Builder`, scorri fino alla parte inferiore dell’elenco per trovare una sezione che includa [!DNL Google Analytics] Profili. Viene visualizzato un secondo elenco a discesa delle metriche. Qui puoi scegliere la metrica da analizzare.
+1. Quando selezioni una metrica in `Chart Builder`, scorri fino alla fine dell&#39;elenco per trovare una sezione che includa i tuoi profili [!DNL Google Analytics]. Viene visualizzato un secondo elenco a discesa delle metriche. Qui puoi scegliere la metrica da analizzare.
 
-1. Dopo aver scelto la metrica, puoi procedere con questo grafico come se fosse un qualsiasi altro grafico selezionando la `time period`, `interval`, e dati `perspectives` che vorresti vedere.
+1. Dopo aver scelto la metrica, è possibile procedere con il grafico come se si trattasse di un qualsiasi altro grafico selezionando `time period`, `interval` e i dati `perspectives` che si desidera visualizzare.
 
-1. L&#39;unica grande differenza è che `√` utilizza espressioni regolari per i filtri. Un’espressione regolare (regex o short) è una stringa di testo speciale che descrive un pattern di ricerca. Vedi esempi di sintassi regex in [[!DNL Google] guida alle espressioni regolari di Analytics](https://support.google.com/analytics/answer/1034324?hl=en).
+1. L&#39;unica differenza importante è che `√` utilizza espressioni regolari per i filtri. Un’espressione regolare (regex o short) è una stringa di testo speciale che descrive un pattern di ricerca. Vedi esempi di sintassi regex nella [[!DNL Google] guida sulle espressioni regolari di Analytics](https://support.google.com/analytics/answer/1034324?hl=en).
 
 >[!NOTE]
 >

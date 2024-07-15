@@ -1,62 +1,62 @@
 ---
-title: Connessione [!DNL MySQL] tramite tunnel SSH
-description: Scopri come connetterti [!DNL MySQL] tramite tunnel SSH.
+title: Connessione in corso  [!DNL MySQL]  tramite tunnel SSH
+description: Scopri come connettersi [!DNL MySQL] tramite tunnel SSH.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
 
 # Connetti [!DNL MySQL] tramite [!DNL SSH Tunnel]
 
-* [Recupera il [!DNL Commerce Intelligence] chiave pubblica](#retrieve)
-* [Consenti accesso a [!DNL Commerce Intelligence] Indirizzo IP](#allowlist)
-* [Creare un utente Linux per [!DNL Commerce Intelligence]](#linux)
-* [Creare un [!DNL MySQL] utente per [!DNL Commerce Intelligence]](#mysql)
-* [Immetti la connessione e le informazioni utente in [!DNL Commerce Intelligence]](#finish)
+* [Recupera la chiave pubblica  [!DNL Commerce Intelligence] ](#retrieve)
+* [Consenti accesso all&#39;indirizzo IP  [!DNL Commerce Intelligence] ](#allowlist)
+* [Crea un utente Linux per  [!DNL Commerce Intelligence]](#linux)
+* [Crea un  [!DNL MySQL]  utente per  [!DNL Commerce Intelligence]](#mysql)
+* [Immetti la connessione e le informazioni utente in  [!DNL Commerce Intelligence]](#finish)
 
 ## PASSA A
 
 * [[!DNL MySQL] tramite ](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL] tramite [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
-Per collegare [!DNL MySQL] database a [!DNL Commerce Intelligence] tramite un `SSH tunnel`, è necessario eseguire alcune operazioni:
+Per connettere il database [!DNL MySQL] a [!DNL Commerce Intelligence] tramite `SSH tunnel`, è necessario eseguire alcune operazioni:
 
-1. Recupera il [!DNL Commerce Intelligence] `public key`
+1. Recupera [!DNL Commerce Intelligence] `public key`
 1. Consenti accesso a [!DNL Commerce Intelligence] `IP address`
-1. Creare un `Linux` utente per [!DNL Commerce Intelligence]
-1. Creare un `MySQL` utente per [!DNL Commerce Intelligence]
-1. Immetti la connessione e le informazioni utente in [!DNL Commerce Intelligence]
+1. Crea un utente `Linux` per [!DNL Commerce Intelligence]
+1. Crea un utente `MySQL` per [!DNL Commerce Intelligence]
+1. Immettere la connessione e le informazioni utente in [!DNL Commerce Intelligence]
 
 
-## Recupero di [!DNL Commerce Intelligence] chiave pubblica {#retrieve}
+## Recupero della chiave pubblica [!DNL Commerce Intelligence] {#retrieve}
 
-Il `public key` viene utilizzato per autorizzare [!DNL Commerce Intelligence] `Linux` utente. Nella sezione successiva, creerai l’utente e importerai la chiave.
+`public key` viene utilizzato per autorizzare l&#39;utente [!DNL Commerce Intelligence] `Linux`. Nella sezione successiva, creerai l’utente e importerai la chiave.
 
 1. Vai a **[!UICONTROL Manage Data** > **Connections]** e fai clic su **[!UICONTROL Add New Data Source]**.
-1. Fai clic su `MySQL` icona.
-1. Dopo il `MySQL credentials` viene visualizzata la pagina, impostare `Encrypted` passa a `Yes`. Viene visualizzato il modulo di configurazione SSH.
-1. Il `public key` si trova sotto questo modulo.
+1. Fare clic sull&#39;icona `MySQL`.
+1. Dopo l&#39;apertura della pagina `MySQL credentials`, impostare `Encrypted` su `Yes`. Viene visualizzato il modulo di configurazione SSH.
+1. `public key` si trova sotto questo modulo.
 
 Lascia aperta questa pagina per tutta la durata dell’esercitazione: sarà necessario visualizzarla nella sezione successiva e alla fine.
 
-Ecco come navigare [!DNL Commerce Intelligence] per recuperare la chiave:
+Ecco come navigare in [!DNL Commerce Intelligence] per recuperare la chiave:
 
 ![](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
 
-## Consenti accesso a [!DNL Commerce Intelligence] Indirizzo IP {#allowlist}
+## Consenti accesso all&#39;indirizzo IP [!DNL Commerce Intelligence] {#allowlist}
 
-Affinché la connessione abbia esito positivo, è necessario configurare il firewall per consentire l&#39;accesso dagli indirizzi IP. Sono `54.88.76.97` e `34.250.211.151` ma sono anche in corso `MySQL credentials` pagina. Vedi la casella blu in GIF.
+Affinché la connessione abbia esito positivo, è necessario configurare il firewall per consentire l&#39;accesso dagli indirizzi IP. Sono `54.88.76.97` e `34.250.211.151` ma si trovano anche nella pagina `MySQL credentials`. Vedi la casella blu in GIF.
 
-## Creazione di un [!DNL Linux] utente per [!DNL Commerce Intelligence] {#linux}
+## Creazione di un utente [!DNL Linux] per [!DNL Commerce Intelligence] {#linux}
 
-Può trattarsi di un computer di produzione o secondario, purché contenga dati in tempo reale (o aggiornati di frequente). È possibile [limita questo utente](../../../administrator/account-management/restrict-db-access.md) in qualsiasi modo, purché conservi il diritto di connessione al `MySQL` server.
+Può trattarsi di un computer di produzione o secondario, purché contenga dati in tempo reale (o aggiornati di frequente). È possibile [limitare l&#39;utente](../../../administrator/account-management/restrict-db-access.md) in qualsiasi modo, purché conservi il diritto di connettersi al server `MySQL`.
 
-1. Per aggiungere il nuovo utente, eseguire i seguenti comandi come radice sul [!DNL Linux] server:
+1. Per aggiungere il nuovo utente, eseguire i comandi seguenti come radice nel server [!DNL Linux]:
 
 ```bash
         adduser rjmetric -p<password>
@@ -64,16 +64,16 @@ Può trattarsi di un computer di produzione o secondario, purché contenga dati 
         mkdir /home/rjmetric/.ssh
 ```
 
-1. Ricorda la `public key` hai recuperato nella prima sezione? Per garantire che l’utente abbia accesso al database, devi importare la chiave in `authorized\_keys`.
+1. Ricordi `public key` recuperato nella prima sezione? Per assicurarsi che l&#39;utente abbia accesso al database, è necessario importare la chiave in `authorized\_keys`.
 
-   Copia l’intera chiave in `authorized\_keys` file come segue:
+   Copiare l&#39;intera chiave nel file `authorized\_keys` come segue:
 
 ```bash
         touch /home/rjmetric/.ssh/authorized_keys
         "<PASTE KEY HERE>" >> /home/rjmetric/.ssh/authorized_keys
 ```
 
-1. Per completare la creazione dell&#39;utente, modificare le autorizzazioni per `/home/rjmetric` directory per consentire l&#39;accesso tramite `SSH`:
+1. Per completare la creazione dell&#39;utente, modificare le autorizzazioni nella directory `/home/rjmetric` per consentire l&#39;accesso tramite `SSH`:
 
 ```bash
         chown -R rjmetric:rjmetric /home/rjmetric
@@ -83,41 +83,41 @@ Può trattarsi di un computer di produzione o secondario, purché contenga dati 
 
 >[!IMPORTANT]
 >
->Se il `sshd\_config` il file associato al server non è impostato sull&#39;opzione predefinita, solo alcuni utenti dispongono dell&#39;accesso al server. [!DNL Commerce Intelligence]. In questi casi, è necessario eseguire un comando come `AllowUsers` per consentire `rjmetric` accesso utente al server.
+>Se il file `sshd\_config` associato al server non è impostato sull&#39;opzione predefinita, solo alcuni utenti dispongono dell&#39;accesso al server. Ciò impedisce la connessione a [!DNL Commerce Intelligence]. In questi casi, è necessario eseguire un comando come `AllowUsers` per consentire all&#39;utente `rjmetric` di accedere al server.
 
-## Creazione di un [!DNL MySQL] utente per [!DNL Commerce Intelligence] {#mysql}
+## Creazione di un utente [!DNL MySQL] per [!DNL Commerce Intelligence] {#mysql}
 
-La tua organizzazione potrebbe richiedere un processo diverso, ma il modo più semplice per creare questo utente è quello di eseguire la seguente query al momento dell’accesso [!DNL MySQL] come utente con il diritto di concedere privilegi:
+La tua organizzazione potrebbe richiedere un processo diverso, ma il modo più semplice per creare questo utente è quello di eseguire la seguente query quando si è connessi a [!DNL MySQL] come utente con il diritto di concedere privilegi:
 
 ```sql
     GRANT SELECT ON *.* TO 'rjmetric'@'localhost' IDENTIFIED BY '<secure password here>';
 ```
 
-Sostituisci `secure password here` con una password sicura, che può essere diversa dalla `SSH` password.
+Sostituire `secure password here` con una password sicura, che può essere diversa dalla password `SSH`.
 
 Per impedire a questo utente di accedere ai dati in database, tabelle o colonne specifiche, è invece possibile eseguire query GRANT che consentono solo l&#39;accesso ai dati consentiti.
 
 ## Immissione della connessione e delle informazioni utente in [!DNL Commerce Intelligence] {#finish}
 
-Per concludere, devi immettere la connessione e le informazioni utente in [!DNL Commerce Intelligence]. Hai lasciato il `MySQL credentials` pagina aperta? In caso contrario, vai a **[!UICONTROL Data** > **Connections]** e fai clic su **[!UICONTROL Add New Data Source]**, quindi [!DNL MySQL] icona. Non dimenticare di impostare `Encrypted` passa a `Yes`.
+Per concludere, devi immettere la connessione e le informazioni utente in [!DNL Commerce Intelligence]. Hai lasciato aperta la pagina `MySQL credentials`? In caso contrario, passare a **[!UICONTROL Data** > **Connections]** e fare clic su **[!UICONTROL Add New Data Source]**, quindi sull&#39;icona [!DNL MySQL]. Non dimenticare di impostare `Encrypted` su `Yes`.
 
-Immetti le seguenti informazioni in questa pagina, iniziando da `Database Connection` sezione:
+Immettere le informazioni seguenti in questa pagina, a partire dalla sezione `Database Connection`:
 
-* `Username`: nome utente per [!DNL Commerce Intelligence] [!DNL MySQL] utente
-* `Password`: password per [!DNL Commerce Intelligence] [!DNL MySQL] utente
+* `Username`: nome utente per l&#39;utente [!DNL Commerce Intelligence] [!DNL MySQL]
+* `Password`: password per l&#39;utente [!DNL Commerce Intelligence] [!DNL MySQL]
 * `Port`: [!DNL MySQL] porta sul server (3306 per impostazione predefinita)
-* `Host` Per impostazione predefinita, è localhost. In generale, è il valore bind-address per il [!DNL MySQL] , che per impostazione predefinita è `127.0.0.1 (localhost)`, ma potrebbe anche essere un indirizzo di rete locale (ad esempio, `192.168.0.1`) o l&#39;indirizzo IP pubblico del server.
+* `Host` Per impostazione predefinita, è localhost. In generale, si tratta del valore di indirizzo di binding per il server [!DNL MySQL], che per impostazione predefinita è `127.0.0.1 (localhost)`, ma potrebbe anche essere un indirizzo di rete locale (ad esempio, `192.168.0.1`) o l&#39;indirizzo IP pubblico del server.
 
-  Il valore si trova nella `my.cnf` file (che si trova in `/etc/my.cnf`) sotto la riga che recita `\[mysqld\]`. Se la riga dell&#39;indirizzo di associazione viene inserita come commento in tale file, il server viene protetto dai tentativi di connessione esterni.
+  Il valore si trova nel file `my.cnf` (che si trova in `/etc/my.cnf`) sotto la riga che recita `\[mysqld\]`. Se la riga dell&#39;indirizzo di associazione viene inserita come commento in tale file, il server viene protetto dai tentativi di connessione esterni.
 
-In `SSH Connection` sezione:
+Nella sezione `SSH Connection`:
 
-* `Remote Address`: indirizzo IP o nome host del server [!DNL Commerce Intelligence] si trasformerà in
-* `Username`: nome utente per [!DNL Commerce Intelligence] SSH ([!DNL Linux]) utente
+* `Remote Address`: l&#39;indirizzo IP o il nome host del server [!DNL Commerce Intelligence] verrà sottoposto a tunneling in
+* `Username`: nome utente per l&#39;utente SSH ([!DNL Linux]) di [!DNL Commerce Intelligence]
 * `SSH Port`: porta SSH sul server (22 per impostazione predefinita)
 
-Al termine, fai clic su **[!UICONTROL Save & Test]** per completare la configurazione.
+Al termine, fare clic su **[!UICONTROL Save & Test]** per completare la configurazione.
 
 ## Correlato:
 
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

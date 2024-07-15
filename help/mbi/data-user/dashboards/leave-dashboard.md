@@ -13,8 +13,8 @@ ht-degree: 0%
 
 # Lascia una dashboard (annulla condivisione)
 
-Cambiare team? Nel mezzo della primavera pulire il vostro [!DNL Commerce Intelligence] account? Per uscire o annullare la condivisione da una dashboard, fai clic su **[!UICONTROL Shared]** nella parte superiore dello schermo mentre nel dashboard desideri uscire. Clic **[!UICONTROL Leave this Dashboard]** per rimuoverti.
+Cambiare team? A metà primavera pulirai il tuo account [!DNL Commerce Intelligence]? Per uscire o annullare la condivisione da un dashboard, fare clic su **[!UICONTROL Shared]** nella parte superiore dello schermo mentre si desidera uscire dal dashboard. Fai clic su **[!UICONTROL Leave this Dashboard]** per rimuoverti.
 
 Esempio:
 
-![lascia dashboard](../../assets/Leave_Dashboard.gif)
+![lascia il dashboard](../../assets/Leave_Dashboard.gif)

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Utilizzare un rapporto
 
-Utilizzare i rapporti in [!DNL Adobe Commerce Intelligence] per aiutarti a rispondere alle domande di business: vuoi semplicemente visualizzare i ricavi di questo mese rispetto all&#39;anno precedente o capire i costi di acquisizione per il tuo ultimo [!DNL Google AdWords] campagna.
+Utilizza i report in [!DNL Adobe Commerce Intelligence] per rispondere alle domande aziendali, per vedere semplicemente i ricavi di questo mese rispetto all&#39;anno scorso o per capire i costi di acquisizione per l&#39;ultima campagna [!DNL Google AdWords].
 
 Come si presenta esattamente il percorso da domanda a risposta?
 
@@ -45,26 +45,26 @@ A un livello più alto, è necessario sapere dove trovare questi dati nel databa
 
 * Tabella che registra una riga di dati ogni volta che un utente si registra
 * Tabella che registra una riga di dati ogni volta che qualcuno effettua un acquisto
-* La colonna che può essere utilizzata per unire o fare riferimento al `purchase` tabella al `customer` tabella: consente di sapere chi ha effettuato un acquisto
+* La colonna che può essere utilizzata per unire o fare riferimento alla tabella `purchase` nella tabella `customer`. Questo consente di sapere chi ha effettuato un acquisto
 
 A un livello più granulare, è necessario identificare i campi dati esatti utilizzati per questa analisi:
 
-* La tabella e la colonna di dati che contengono la data di registrazione di un cliente: ad esempio `user.created\_at`
-* La tabella e la colonna di dati che contengono una data di acquisto: ad esempio `order.created\_at`
+* Tabella dati e colonna che contengono la data di registrazione di un cliente, ad esempio `user.created\_at`
+* Tabella dati e colonna che contengono una data di acquisto, ad esempio `order.created\_at`
 
 ## Creazione di colonne di dati per l’analisi
 
 Oltre alle colonne di dati native descritte in precedenza, è necessario anche un set di campi di dati calcolati per abilitare questa analisi, tra cui:
 
-* `Customer's first purchase date` che restituisce il `MIN(order.created_at`)
+* `Customer's first purchase date` che restituisce il `MIN(order.created_at` di un utente specifico)
 
 Viene quindi utilizzato per creare:
 
 * `Time between a customer's registration date and first purchase date`, che restituisce il tempo trascorso da un utente specifico tra la registrazione e la data del primo acquisto. Questa è la base per la metrica in un secondo momento.
 
-Entrambi questi campi devono essere creati a livello di utente (ad esempio, sul `user` tabella). Ciò consente all’analisi media di essere normalizzata dagli utenti (in altre parole, il denominatore in questo calcolo medio è il numero di utenti).
+Entrambi questi campi devono essere creati a livello di utente (ad esempio, nella tabella `user`). Ciò consente all’analisi media di essere normalizzata dagli utenti (in altre parole, il denominatore in questo calcolo medio è il numero di utenti).
 
-Qui è dove [!DNL Commerce Intelligence] entra! Puoi utilizzare il tuo [!DNL Commerce Intelligence] Data Warehouse per creare le colonne precedenti. Contatta il team di analisti Adobe e fornisci la definizione specifica delle nuove colonne da creare. È inoltre possibile utilizzare [Editor colonne](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+[!DNL Commerce Intelligence] interviene qui. Puoi utilizzare la Data Warehouse [!DNL Commerce Intelligence] per creare le colonne di cui sopra. Contatta il team di analisti Adobe e fornisci la definizione specifica delle nuove colonne da creare. È inoltre possibile utilizzare l&#39;[Editor colonne](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 È consigliabile evitare di creare direttamente questi campi di dati calcolati nel database, in quanto ciò rappresenta un onere inutile per i server di produzione.
 
@@ -75,13 +75,13 @@ Ora che disponi dei campi di dati richiesti per l’analisi, è necessario trova
 A questo punto si desidera eseguire il seguente calcolo:
 
 
-_[SOMMA di `Time between a customer's registration date and first purchase date`] / [Numero totale di clienti che hanno effettuato la registrazione e l&#39;acquisto]_
+_[SOMMA di `Time between a customer's registration date and first purchase date`] / [Numero totale di clienti registrati e acquistati]_
 
-E vuoi vedere questo calcolo tracciato nel tempo, o tendenza, in base alla data di registrazione di un cliente. Ed ecco come [crea questa metrica](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
+E vuoi vedere questo calcolo tracciato nel tempo, o tendenza, in base alla data di registrazione di un cliente. Ecco come [creare questa metrica](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
 
-1. Vai a **[!UICONTROL Data]** e seleziona la `Metrics` scheda.
-1. Clic **[!UICONTROL Add New Metric]** e seleziona la `user` tabella (dove sono state create le quote precedenti).
-1. Dal menu a discesa, seleziona `Average` il`Time between a customer's registration date and first purchase date` colonna nella `user` tabella ordinata da `Customer's registration date`  colonna.
+1. Vai a **[!UICONTROL Data]** e seleziona la scheda `Metrics`.
+1. Fare clic su **[!UICONTROL Add New Metric]** e selezionare la tabella `user` (in cui sono state create le dimensioni sopra).
+1. Dal menu a discesa, selezionare `Average` nella colonna `Time between a customer's registration date and first purchase date` della tabella `user` ordinata in base alla colonna `Customer's registration date`.
 1. Aggiungi eventuali filtri o set di filtri pertinenti.
 
 Questa metrica è ora pronta.
@@ -90,7 +90,7 @@ Questa metrica è ora pronta.
 
 Con la nuova metrica impostata, puoi utilizzarla per generare rapporti sul tempo medio tra la registrazione e la data del primo acquisto per data di registrazione.
 
-Basta andare a qualsiasi dashboard e [creare un rapporto](../../data-user/reports/ess-manage-data-metrics.md) utilizzando la metrica creata in precedenza.
+Basta accedere a qualsiasi dashboard e [creare un report](../../data-user/reports/ess-manage-data-metrics.md) utilizzando la metrica creata in precedenza.
 
 ### `Visual Report Builder` {#visualrb}
 
@@ -98,8 +98,8 @@ Basta andare a qualsiasi dashboard e [creare un rapporto](../../data-user/report
 
 |  |  |
 |--- |--- |
-| **Questo è perfetto per...** | **Questo non è grandioso per...** |
-| - Tutti i livelli di analisi/esperienza tecnica<br>- Creazione rapida di rapporti<br>- Creazione di analisi da condividere con altri utenti | - Analisi che richiedono funzioni specifiche di SQL<br>- Verifica di nuove colonne: le colonne calcolate dipendono dai cicli di aggiornamento per la popolazione di dati iniziale, mentre quelle create utilizzando SQL no. |
+| **Questo è perfetto per...** | **Non è un&#39;ottima soluzione per...** |
+| - Tutti i livelli di esperienza di analisi/tecnica<br>- Creazione rapida di report<br>- Creazione di analisi da condividere con altri utenti | - Analisi che richiedono funzioni specifiche di SQL<br>- Verifica delle nuove colonne - le colonne calcolate dipendono dai cicli di aggiornamento per la popolazione iniziale dei dati, mentre le colonne create utilizzando SQL no. |
 
 {style="table-layout:auto"}
 
@@ -109,9 +109,9 @@ Basta andare a qualsiasi dashboard e [creare un rapporto](../../data-user/report
 
 Durante la creazione di rapporti condivisi con altri membri del team, l’Adobe consiglia di aggiungere descrizioni che consentano ad altri utenti di comprendere meglio l’analisi.
 
-1. Clic **[!UICONTROL i]** nella parte superiore di qualsiasi rapporto.
+1. Fai clic su **[!UICONTROL i]** nella parte superiore di qualsiasi rapporto.
 1. Immettere una descrizione nella casella di testo.
-1. Clic **[!UICONTROL Save Description]**.
+1. Fare clic su **[!UICONTROL Save Description]**.
 
 Vedi di seguito:
 
@@ -119,11 +119,11 @@ Vedi di seguito:
 
 #### Esportazione di report come immagini
 
-È necessario includere un report in una presentazione o in un documento? Qualsiasi rapporto può essere salvato come immagine (in formato PNG, PDF o SVG) utilizzando `Report Options` nell’angolo in alto a destra di ogni rapporto.
+È necessario includere un report in una presentazione o in un documento? Qualsiasi report può essere salvato come immagine (in formato PNG, PDF o SVG) utilizzando il menu `Report Options`, che si trova nell&#39;angolo in alto a destra di ogni report.
 
 1. Fai clic sull’icona a forma di ingranaggio nell’angolo in alto a destra di qualsiasi rapporto.
-1. Dal menu a discesa, seleziona `Enlarge`.
-1. Quando il report viene ingrandito, fai clic su **[!UICONTROL Download]** nell’angolo in alto a destra del rapporto.
+1. Dal menu a discesa, selezionare `Enlarge`.
+1. Quando il report viene ingrandito, fare clic su **[!UICONTROL Download]** nell&#39;angolo superiore destro del report.
 1. Seleziona il formato immagine preferito dal menu a discesa. Il download inizia immediatamente.
 
 Vedi di seguito:

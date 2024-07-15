@@ -12,4 +12,4 @@ ht-degree: 25%
 
 # Tutorial
 
-Segui questi tutorial guidati per scoprire la potenza di [!DNL Adobe Commerce Intelligence].
+Segui queste esercitazioni guidate per scoprire la potenza di [!DNL Adobe Commerce Intelligence].

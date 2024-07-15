@@ -22,6 +22,6 @@ Seleziona una delle seguenti opzioni:
 - `Full Excel Export`
 - `Raw Export`
 
-Puoi anche definire [tabella e colonne da includere nell’esportazione](../../tutorials/export-raw-data.md).
+Puoi anche definire la [tabella e le colonne da includere nell&#39;esportazione](../../tutorials/export-raw-data.md).
 
-Se è necessario includere un grafico in una presentazione o in un documento, è possibile esportare il grafico come immagine in formato PNG, PDF o SVG. Fai clic sull’icona a forma di ingranaggio nell’angolo in alto a destra di qualsiasi grafico. Seleziona la `Enlarge` nel menu a discesa, quindi fai clic su **[!UICONTROL Download]** per completare l&#39;esportazione.
+Se è necessario includere un grafico in una presentazione o in un documento, è possibile esportare il grafico come immagine in formato PNG, PDF o SVG. Fai clic sull’icona a forma di ingranaggio nell’angolo in alto a destra di qualsiasi grafico. Selezionare l&#39;opzione `Enlarge` nel menu a discesa, quindi fare clic su **[!UICONTROL Download]** per completare l&#39;esportazione.

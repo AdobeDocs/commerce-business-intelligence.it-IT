@@ -6,22 +6,22 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1950'
 ht-degree: 0%
 
 ---
 
 # Dashboard preconfigurati
 
-[!DNL Adobe Commerce Intelligence] include dashboard pronte all’uso per fornire informazioni approfondite sulla tua attività. Con le dashboard, puoi verificare lo stato di metriche essenziali come i ricavi dal ciclo di vita dell’utente, il numero di acquisti ripetuti, i prodotti migliori acquistati in un determinato periodo di tempo e altro ancora. Queste dashboard preconfigurate sono state create per aiutarti a prendere decisioni aziendali informate.
+[!DNL Adobe Commerce Intelligence] include dashboard predefiniti per fornire informazioni approfondite sulla tua attività. Con le dashboard, puoi verificare lo stato di metriche essenziali come i ricavi dal ciclo di vita dell’utente, il numero di acquisti ripetuti, i prodotti migliori acquistati in un determinato periodo di tempo e altro ancora. Queste dashboard preconfigurate sono state create per aiutarti a prendere decisioni aziendali informate.
 
 >[!NOTE]
 >
->L’accesso a queste dashboard dipende dal tipo di account e dal livello di accesso. Se non trovi queste dashboard, contatta [supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>L’accesso a queste dashboard dipende dal tipo di account e dal livello di accesso. Se queste dashboard non vengono visualizzate, contatta il [supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Disponibilità del rapporto
 
-Per `Customers` e `Executive Summary` dashboard, alcuni rapporti sono disponibili solo a seconda della configurazione di estrazione del tuo archivio. In particolare, se lo store consente il pagamento come ospite o non consente il pagamento come ospite.
+Per i dashboard `Customers` e `Executive Summary`, alcuni report sono disponibili solo a seconda della configurazione di estrazione dell&#39;archivio. In particolare, se lo store consente il pagamento come ospite o non consente il pagamento come ospite.
 
 ## Clienti (è consentita l’estrazione come ospite)
 
@@ -42,7 +42,7 @@ La dashboard Clienti (pagamento guest consentito) fornisce informazioni sulla ba
 | `Time Between Orders` | Il tempo medio e mediano che i clienti prendono tra gli ordini, suddiviso per numero di ordine (ovvero il tempo tra gli ordini uno e due, due e tre e così via). |
 | `Number of Customers - Lifetime Orders` | Per un determinato numero di ordini effettuati nel ciclo di vita di un cliente, il numero di clienti che hanno effettuato tali ordini e la percentuale dell&#39;intera base clienti che tale numero rappresenta. |
 | `One-Time Customers who Bought 3-6 Months Ago` | Clienti che hanno effettuato il primo e unico acquisto tra tre e sei mesi fa. |
-| `Avg LTV by First Order` | Confronta la media cumulativa dei ricavi relativi al ciclo di vita del cliente per coorti. Le coorti sono definite dal mese in cui un cliente ha effettuato per la prima volta un acquisto. Ad esempio, un `Jan 2020` La coorte mostra l’LTV medio cumulativo per i clienti il cui primo acquisto è stato nel gennaio 2020. |
+| `Avg LTV by First Order` | Confronta la media cumulativa dei ricavi relativi al ciclo di vita del cliente per coorti. Le coorti sono definite dal mese in cui un cliente ha effettuato per la prima volta un acquisto. Ad esempio, una coorte `Jan 2020` mostra il valore LTV medio cumulativo per i clienti il cui primo acquisto è stato nel gennaio 2020. |
 | `Customer's First 30 Day vs Lifetime Revenue` | Confronto dei ricavi medi dei clienti nei 30 giorni successivi al primo acquisto rispetto all’intero ciclo di vita. Ogni bolla corrisponde a un’area di spedizione e la dimensione di ogni bolla rappresenta il numero di clienti acquisiti da tale area. |
 
 ## Clienti (non è consentito effettuare il pagamento come ospite)
@@ -133,7 +133,7 @@ Il pannello di controllo Ordini fornisce informazioni sul volume transazionale d
 
 ## Prodotti
 
-Il dashboard Prodotti mostra le prestazioni generali del prodotto in termini di prodotti ordinati, valore lordo delle merci (GMV, Gross Merchandise Value) e principali prodotti acquistati e rimborsati. Può aiutarti a bilanciare acquisti e restituzioni e a determinare il successo e la popolarità del prodotto. Il punto vendita deve essere [configurato per tenere traccia dei rimborsi](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) per compilare tali grafici.
+Il dashboard Prodotti mostra le prestazioni generali del prodotto in termini di prodotti ordinati, valore lordo delle merci (GMV, Gross Merchandise Value) e principali prodotti acquistati e rimborsati. Può aiutarti a bilanciare acquisti e restituzioni e a determinare il successo e la popolarità del prodotto. L&#39;archivio deve essere [configurato per tenere traccia dei rimborsi](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) per i grafici da compilare.
 
 >[!NOTE]
 >

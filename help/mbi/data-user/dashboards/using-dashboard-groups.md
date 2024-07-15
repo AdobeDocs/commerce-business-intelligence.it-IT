@@ -31,11 +31,11 @@ I gruppi di dashboard possono essere creati in uno dei due modi seguenti:
 
    ![crea gruppo dashboard](../../assets/create-dashboard-groups-new-dashboard.png)
 
-1. Quando si modifica il gruppo di un dashboard esistente, da `Manage Data > Dashboards` pagina:
+1. Quando si modifica il gruppo di un dashboard esistente dalla pagina `Manage Data > Dashboards`:
 
    1. Fate clic sul quadro comandi per il quale desiderate creare il gruppo.
 
-   1. Sotto `Dashboard Group (optional)`, viene visualizzato il gruppo di dashboard corrente.
+   1. In `Dashboard Group (optional)` viene visualizzato il gruppo di dashboard corrente.
 
    1. Per creare un gruppo, digitarne il nome e fare clic all&#39;esterno della casella.
 
@@ -43,11 +43,11 @@ I gruppi di dashboard possono essere creati in uno dei due modi seguenti:
 
 ## Aggiungere dashboard esistenti ai gruppi esistenti
 
-1. Il giorno `Manage Data > Dashboards` , scegliere il dashboard per il quale modificare il gruppo.
+1. Nella pagina `Manage Data > Dashboards`, scegliere il dashboard per il quale modificare il gruppo.
 
 1. Il testo in `Dashboard Group (optional)` mostra il gruppo di dashboard corrente del dashboard.
 
-1. Per modificare il gruppo del dashboard, scegliete un altro gruppo dall&#39;elenco, in questo caso `PS`, `Campaigns`.
+1. Per modificare il gruppo del dashboard, scegliere un altro gruppo dall&#39;elenco, in questo caso `PS`, `Campaigns`.
 
    ![cambia dashboard gruppo](../../assets/add-existing-dashboard-existing-group.png)
 

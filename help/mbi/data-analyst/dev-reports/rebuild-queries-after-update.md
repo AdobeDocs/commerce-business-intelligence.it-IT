@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Ricostruzione delle query dopo il ciclo di aggiornamento
 
-Non è necessario ricreare le query. Rapporti creati utilizzando [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) vengono salvate come quelle create nel `Report Builder`. Il processo di aggiornamento per i grafici SQL è lo stesso: dopo l&#39;aggiornamento dei dati, i valori nei grafici verranno ricalcolati e rivisualizzati.
+Non è necessario ricreare le query. I report creati utilizzando [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) vengono salvati come quelli creati nel `Report Builder` tradizionale. Il processo di aggiornamento per i grafici SQL è lo stesso: dopo l&#39;aggiornamento dei dati, i valori nei grafici verranno ricalcolati e rivisualizzati.

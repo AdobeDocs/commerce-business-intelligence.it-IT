@@ -6,28 +6,28 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
 # Avanzamento ciclo di aggiornamento
 
-Quando accedi a [!DNL Adobe Commerce Intelligence] sono disponibili diversi modi per controllare lo stato dell’ultimo ciclo di aggiornamento. Dipende tutto dal tipo di [autorizzazioni utente](../administrator/user-management/user-management.md) che hai.
+Quando si accede al dashboard di [!DNL Adobe Commerce Intelligence], è possibile controllare lo stato dell&#39;ultimo ciclo di aggiornamento in diversi modi. Dipende tutto dal tipo di [autorizzazioni utente](../administrator/user-management/user-management.md) di cui disponi.
 
 ## Perché devo controllare lo stato del ciclo di aggiornamento?
 
-La verifica del ciclo di aggiornamento dello stato è utile quando si controllano i dati nel [!DNL Commerce Intelligence] account. Se vedi [risultati che non soddisfano le tue aspettative](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)ad esempio le vendite giornaliere in [!DNL Commerce Intelligence] non corrispondono a ciò che visualizzi nella tua piattaforma di e-commerce o nel tuo [[!DNL Google] ricavi da e-commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) puoi controllare l’ultimo punto dati per vedere se il problema è risolto al termine di un aggiornamento.
+La verifica del ciclo di aggiornamento dello stato è utile quando si controllano i dati nell&#39;account [!DNL Commerce Intelligence]. Se vedi [risultati che non soddisfano le tue aspettative](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), ad esempio, le vendite giornaliere in [!DNL Commerce Intelligence] non corrispondono a quelle che vedi nella tua piattaforma di e-commerce o nei tuoi [[!DNL Google] ricavi di e-commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html), puoi controllare l&#39;ultimo punto dati per vedere se il problema è risolto una volta completato un aggiornamento.
 
-## [!UICONTROL Read-Only] e [!UICONTROL Standard] Utenti
+## [!UICONTROL Read-Only] e [!UICONTROL Standard] utenti
 
-`Read-only` gli utenti possono accedere al proprio dashboard e vedere quanto recentemente i dati sono stati aggiornati passando con il mouse sull’icona in alto a destra della pagina. Questo mostra quando è stato estratto l’ultimo punto dati.
+`Read-only` utenti possono accedere al proprio dashboard e vedere quanto recentemente i dati sono stati aggiornati passando con il mouse sull&#39;icona in alto a destra della pagina. Questo mostra quando è stato estratto l’ultimo punto dati.
 
 ![](../../mbi/assets/last-success-data.png)
 
-## [!UICONTROL Admin] Utenti
+## [!UICONTROL Admin] utenti
 
-`Admin` gli utenti possono accedere al dashboard e visualizzare l’ultimo punto dati in alto, insieme a una breve icona di stato delle integrazioni dei propri account.
+`Admin` utenti possono accedere al dashboard e visualizzare l&#39;ultimo punto dati in alto, insieme a una breve icona di stato delle loro integrazioni account.
 
 Per ulteriori dettagli, gli utenti amministratori possono fare clic su **[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]**.
 
@@ -41,4 +41,4 @@ Se un aggiornamento non è in corso, viene visualizzato un collegamento per forz
 
 >[!NOTE]
 >
->Se si dispone di ore di sospensione attività (orario non desiderato) [!DNL Commerce Intelligence] per aggiornare i dati) impostata, forzare un aggiornamento avvia un ciclo di aggiornamento che non rispetta le limitazioni di tali ore di sospensione attività.
+>Se sono state impostate ore di sospensione attività (periodo di tempo in cui non si desidera che [!DNL Commerce Intelligence] aggiorni i dati), forzare un aggiornamento avvia un ciclo di aggiornamento che non rispetta le limitazioni di tali ore di sospensione attività.

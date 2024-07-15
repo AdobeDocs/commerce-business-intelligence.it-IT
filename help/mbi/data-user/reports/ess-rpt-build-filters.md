@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
 
 # Filtri
 
-È possibile aggiungere uno o più filtri per limitare i dati utilizzati per produrre un rapporto. Ogni filtro è un&#39;espressione che include una colonna della tabella associata, un operatore e un valore. Ad esempio, per includere solo i clienti frequenti, puoi creare un filtro che includa solo i clienti che hanno effettuato più ordini. È possibile utilizzare più filtri con `AND/OR` per aggiungere una logica al report.
+È possibile aggiungere uno o più filtri per limitare i dati utilizzati per produrre un rapporto. Ogni filtro è un&#39;espressione che include una colonna della tabella associata, un operatore e un valore. Ad esempio, per includere solo i clienti frequenti, puoi creare un filtro che includa solo i clienti che hanno effettuato più ordini. È possibile utilizzare più filtri con operatori `AND/OR` logici per aggiungere logica al report.
 
 >[!TIP]
 >
@@ -27,11 +27,11 @@ ht-degree: 0%
 
    In questo rapporto, ogni punto dati mostra il numero totale di clienti per il mese.
 
-1. Nel pannello a sinistra, fai clic su Filtri (![](../../assets/magento-bi-btn-filter.png)).
+1. Nel pannello sinistro fare clic sull&#39;icona Filtri (![](../../assets/magento-bi-btn-filter.png)).
 
    ![Aggiungi filtro](../../assets/magento-bi-report-builder-filter-add.png)
 
-1. Clic **[!UICONTROL Add Filter]**.
+1. Fare clic su **[!UICONTROL Add Filter]**.
 
    I filtri sono numerati alfabeticamente e il primo è `[A]`. Le prime due parti del filtro sono opzioni a discesa e la terza parte è un valore.
 
@@ -43,28 +43,28 @@ ht-degree: 0%
 
    * Fai clic sulla seconda parte del filtro e scegli l’operatore.
 
-     ![Scegli l’operatore](../../assets/magento-bi-report-builder-filter-part2.png)
+     ![Scegli l&#39;operatore](../../assets/magento-bi-report-builder-filter-part2.png)
 
    * Nella terza parte del filtro immettere il valore necessario per completare l&#39;espressione.
 
-     ![Inserisci il valore](../../assets/magento-bi-report-builder-filter-part3.png)
+     ![Immettere il valore](../../assets/magento-bi-report-builder-filter-part3.png)
 
-   * Una volta completato il filtro, fai clic su **[!UICONTROL Apply]**.
+   * Al termine del filtro, fare clic su **[!UICONTROL Apply]**.
 
      Il rapporto ora include solo i clienti frequenti e il numero di record dei clienti recuperati per il rapporto è stato ridotto da 33.000 a 12.600.
 
      ![Rapporto filtrato](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
-1. Nella barra laterale, fai clic sulla prospettiva ( ![](../../assets/magento-bi-btn-perspective.png)).
+1. Nella barra laterale fare clic sull&#39;icona Prospettiva ( ![](../../assets/magento-bi-btn-perspective.png)).
 
    ![Prospettiva](../../assets/magento-bi-report-builder-filter-perspective.png)<!--{: .zoom}-->
 
-1. Nell’elenco delle impostazioni, scegli `Cumulative`. Quindi, fai clic su **[!UICONTROL Apply]**.
+1. Nell&#39;elenco delle impostazioni scegliere `Cumulative`. Quindi fare clic su **[!UICONTROL Apply]**.
 
    ![Prospettiva cumulativa](../../assets/magento-bi-report-builder-filter-perspective-cumulative.png)
 
-   Il `Cumulative` La prospettiva distribuisce la modifica nel tempo, anziché mostrare le modifiche su e giù per ogni mese.
+   La prospettiva `Cumulative` distribuisce la modifica nel tempo, anziché mostrare le modifiche su e giù per ogni mese.
 
-1. Immetti un `Title` per il rapporto e fai clic su **[!UICONTROL Save]** come `Chart` alla dashboard.
+1. Immetti un `Title` per il report e fai clic su **[!UICONTROL Save]** come `Chart` nel dashboard.
 
    ![Salva nel dashboard](../../assets/magento-bi-report-builder-filter-perspective-cumulative-save.png)

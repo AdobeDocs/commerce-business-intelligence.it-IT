@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Condividere un dashboard
 
-Condividere dashboard significa che tu e il tuo team possiedete le stesse informazioni in qualsiasi momento, il che consente collaborazione e discussione. Di seguito sono riportati alcuni consigli per la condivisione delle dashboard e la conservazione dei [!DNL Adobe Commerce Intelligence] account ordinato.
+Condividere dashboard significa che tu e il tuo team possiedete le stesse informazioni in qualsiasi momento, il che consente collaborazione e discussione. Di seguito sono riportati alcuni consigli per la condivisione di dashboard e per mantenere l&#39;account [!DNL Adobe Commerce Intelligence] ordinato.
 
 ## Evita dashboard duplicati
 
@@ -26,8 +26,8 @@ Per visualizzare il proprietario di un dashboard, fai clic sul menu a discesa de
 Per rimuovere tutti i dashboard duplicati:
 
 1. Sincronizza con il tuo team e identifica la persona che deve gestire il dashboard.
-1. [Annulla condivisione](../data-user/dashboards/leave-dashboard.md) da tutte le dashboard simili, tranne quella condivisa dall’utente principale.
-1. Se disponi di una copia del dashboard, [elimina](../data-user/dashboards/deleting-dashboard.md).
+1. [Annulla condivisione](../data-user/dashboards/leave-dashboard.md) da tutti i dashboard simili, tranne quello condiviso dall&#39;utente principale.
+1. Se hai una copia del dashboard, [eliminalo](../data-user/dashboards/deleting-dashboard.md).
 1. Chiedere ad altri utenti di eliminare la propria versione del dashboard.
 
 ## Creare un set principale di dashboard
@@ -36,11 +36,11 @@ Quando vengono creati nuovi utenti, questi non dispongono di dashboard o grafici
 
 ## Condividere dashboard con i nuovi utenti
 
-I nuovi utenti possono inoltre beneficiare dell’accesso ad alcune dashboard che non sono condivise a livello di organizzazione. In questi casi, l’Adobe consiglia ai proprietari dei dashboard [condividere le dashboard pertinenti](../data-user/dashboards/share-dashboard-with-users.md) con nuovi utenti al momento della creazione dei loro account.
+I nuovi utenti possono inoltre beneficiare dell’accesso ad alcune dashboard che non sono condivise a livello di organizzazione. In questi casi, l&#39;Adobe consiglia ai proprietari dei dashboard [di condividere i dashboard rilevanti](../data-user/dashboards/share-dashboard-with-users.md) con i nuovi utenti al momento della creazione dei loro account.
 
 ## Essere selettivi con le autorizzazioni di modifica
 
-`Edit` Le autorizzazioni danno agli utenti molto potere. Ma con grande potere si ha una grande responsabilità. Per evitare modifiche accidentali ai grafici e alle dashboard, l’Adobe consiglia di scegliere chi assegnare `Edit` autorizzazioni di.
+Le autorizzazioni di `Edit` offrono agli utenti molta potenza. Ma con grande potere si ha una grande responsabilità. Per evitare modifiche accidentali ai grafici e alle dashboard, l&#39;Adobe consiglia di scegliere gli utenti a cui concedere le autorizzazioni `Edit`.
 
 ## Annotare i grafici
 

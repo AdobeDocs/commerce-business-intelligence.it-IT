@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Impostare un dashboard predefinito
 
-Il dashboard predefinito è il primo dashboard visualizzato all’apertura [!DNL Commerce Intelligence].
+Il dashboard predefinito è il primo dashboard visualizzato all&#39;apertura di [!DNL Commerce Intelligence].
 
-1. Nel dashboard, fai clic su **[!UICONTROL Dashboard Options]** nella parte superiore dello schermo.
+1. Nel dashboard, fare clic su **[!UICONTROL Dashboard Options]** che si trova nella parte superiore dello schermo.
 
-1. Clic **[!UICONTROL Make Default]** nel menu a discesa.
+1. Fare clic su **[!UICONTROL Make Default]** nel menu a discesa.
 
-1. Quando viene visualizzato il prompt di conferma, fare clic su **[!UICONTROL Yes]** per modificare il dashboard predefinito.
+1. Quando viene visualizzata la richiesta di conferma, fare clic su **[!UICONTROL Yes]** per modificare il dashboard predefinito.
 
 Questa è la nuova dashboard predefinita.
 

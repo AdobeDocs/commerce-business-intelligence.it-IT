@@ -6,8 +6,8 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 1%
+source-wordcount: '149'
+ht-degree: 0%
 
 ---
 
@@ -19,33 +19,33 @@ ht-degree: 1%
 
 ![](../../../assets/stripe-logo.png)
 
-[!DNL Stripe] consente di gestire e tenere traccia dei dati di pagamento e delle fatture aziendali. Collegamento [!DNL Stripe] account a [!DNL Commerce Intelligence] è un semplice processo in due fasi:
+[!DNL Stripe] ti consente di gestire e tenere traccia dei dati di pagamento e fattura della tua azienda. La connessione dell&#39;account [!DNL Stripe] a [!DNL Commerce Intelligence] è un semplice processo in due fasi:
 
 1. [Aggiungi [!DNL Stripe] come origine dati in [!DNL Commerce Intelligence]](#stepone)
-1. [Consenti [!DNL Commerce Intelligence] accesso al tuo [!DNL Stripe] Dati](#steptwo)
+1. [Consenti [!DNL Commerce Intelligence] accesso ai tuoi [!DNL Stripe] dati](#steptwo)
 
 ## Aggiungi [!DNL Stripe] come origine dati {#stepone}
 
-1. Vai a `Connections` pagina in **[!UICONTROL Admin** > **Connections]**.
-1. Clic **[!UICONTROL Add a Data Source]**, situato sul lato destro dello schermo sopra la `Data Sources` tabella.
-1. Fai clic su [!DNL Stripe] icona. Viene visualizzata la `[!DNL Stripe] authorization` pagina.
-1. Clic **[!UICONTROL Connect with Stripe]**.
+1. Passare alla pagina `Connections` in **[!UICONTROL Admin** > **Connections]**.
+1. Fare clic su **[!UICONTROL Add a Data Source]**, che si trova sul lato destro della schermata sopra la tabella `Data Sources`.
+1. Fare clic sull&#39;icona [!DNL Stripe]. Verrà visualizzata la pagina `[!DNL Stripe] authorization`.
+1. Fare clic su **[!UICONTROL Connect with Stripe]**.
 
-## Consenti [!DNL Commerce Intelligence] accesso al tuo [!DNL Stripe] dati {#steptwo}
+## Consenti a [!DNL Commerce Intelligence] l&#39;accesso ai tuoi dati di [!DNL Stripe] {#steptwo}
 
 Dopo aver fatto clic su **[!UICONTROL Connect with Stripe]**, viene visualizzata una pagina di richiesta di accesso.
 
-1. Clic **[!UICONTROL Sign in with Stripe to Continue]**.
+1. Fare clic su **[!UICONTROL Sign in with Stripe to Continue]**.
 
-1. Immetti le credenziali e fai clic su **[!UICONTROL Sign in to your account]**.
+1. Immettere le credenziali e fare clic su **[!UICONTROL Sign in to your account]**.
 
-1. Le tue credenziali verranno convalidate e verrai indirizzato di nuovo a [!DNL Commerce Intelligence].
+1. Le credenziali verranno convalidate e verrà eseguito il reindirizzamento a [!DNL Commerce Intelligence].
 
-1. Se la connessione ha esito positivo, viene visualizzata una *Connessione riuscita* nella parte superiore dello schermo.
+1. Se la connessione ha esito positivo, *Connessione riuscita.Il messaggio* viene visualizzato nella parte superiore dello schermo.
 
 ## Correlato:
 
-Il [[!DNL Stripe] Documentazione API](https://stripe.com/docs/api) può essere una risorsa utile per saperne di più su come [!DNL Stripe] è integrato con [!DNL Commerce Intelligence].
+La [[!DNL Stripe] documentazione API](https://stripe.com/docs/api) può essere una risorsa utile per ulteriori informazioni sull&#39;integrazione di [!DNL Stripe] con [!DNL Commerce Intelligence].
 
-* [Previsto [!DNL Stripe] dati](../integrations/stripe-data.md)
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Previsti [!DNL Stripe] dati](../integrations/stripe-data.md)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

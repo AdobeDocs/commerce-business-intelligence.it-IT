@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Modificare l’accesso ai dashboard condivisi
 
-L’accesso alle dashboard può essere modificato in qualsiasi momento seguendo gli stessi passaggi per [condividi inizialmente il dashboard](../../data-user/dashboards/share-dashboard-with-users.md){: target=&quot;_blank&quot;}. Nell’elenco degli utenti visualizzato in `Share Dashboard` , aggiorna le autorizzazioni utente/organizzazione in base alle esigenze e fai clic su **[!UICONTROL Save Changes]** da aggiornare.
+L&#39;accesso ai dashboard può essere modificato in qualsiasi momento seguendo gli stessi passaggi per [condividere inizialmente il dashboard](../../data-user/dashboards/share-dashboard-with-users.md){: target=&quot;_blank&quot;}. Nell&#39;elenco degli utenti visualizzato nel menu `Share Dashboard`, aggiornare le autorizzazioni utente/organizzazione in base alle esigenze e fare clic su **[!UICONTROL Save Changes]** per aggiornare.

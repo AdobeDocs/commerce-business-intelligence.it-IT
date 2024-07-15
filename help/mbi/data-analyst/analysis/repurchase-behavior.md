@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 1%
+source-wordcount: '849'
+ht-degree: 0%
 
 ---
 
@@ -46,11 +46,11 @@ Questa misura mostra la frequenza di ordinazione del cliente o il tempo necessar
 
 Tenendo conto delle metriche di cui sopra, osserva un esempio che coinvolge prodotti a base di caffè.
 
-| **Nome del prodotto** | **Probabilità di ripetizione ordine** | **Numero medio di ordini nel ciclo di vita** | **Ricavi medi nel ciclo di vita** | **Tempo mediano all&#39;ordine successivo** |
+| **Nome prodotto** | **Probabilità di ripetizione ordine** | **Numero medio di ordini nel ciclo di vita** | **Ricavi medi nel ciclo di vita** | **Tempo mediano all&#39;ordine successivo** |
 |-----|-----|-----|-----|-----|
-| Produttore di caffè monodose | 94.98% | 7.92 | $549.82 | 57,01 giorni |
-| Capsule di caffè | 93.82% | 8.68 | $479.98 | 63,48 giorni |
-| Semi di caffè | 41.92% | 6.07 | $99.82 | 27,31 giorni |
+| Produttore di caffè monodose | 94,98% | 7,92 | 549,82 $ | 57,01 giorni |
+| Capsule di caffè | 93,82% | 8,68 | 479,98 $ | 63,48 giorni |
+| Semi di caffè | 41,92% | 6,07 | 99,82 $ | 27,31 giorni |
 
 {style="table-layout:auto"}
 
@@ -76,10 +76,10 @@ Tra i clienti che hanno acquistato capsule di caffè, la metà fare un ordine ri
 
 ## Quali altre analisi posso creare?
 
-Utilizzando le metriche descritte in questo argomento, puoi anche creare altre utili analisi di riacquisto. Ad esempio, puoi anche vedere come i clienti riacquistano **lo stesso elemento** - ad esempio, se acquistano le ricariche regolarmente. Le capsule e i chicchi di caffè possono essere riacquistati regolarmente, ma sarebbe inaspettato vedere i clienti fare acquisti ripetuti della caffettiera. Questa analisi è utile se l&#39;azienda si concentra sulla ricarica o sul ripopolamento.
+Utilizzando le metriche descritte in questo argomento, puoi anche creare altre utili analisi di riacquisto. Ad esempio, puoi anche vedere in che modo i clienti riacquistano **lo stesso articolo**, ad esempio se acquistano regolarmente le ricariche. Le capsule e i chicchi di caffè possono essere riacquistati regolarmente, ma sarebbe inaspettato vedere i clienti fare acquisti ripetuti della caffettiera. Questa analisi è utile se l&#39;azienda si concentra sulla ricarica o sul ripopolamento.
 
 Oltre ad analizzare il comportamento di riacquisto dei clienti, puoi anche creare analisi che considerano la loro fedeltà. Valuta l’analisi dei pattern di customer churn: dove sono i clienti che lasciano il tuo sito e non tornano? A che velocità si verifica?
 
-Una volta identificata la causa dell’abbandono, puoi utilizzare l’analisi per generare un `reactivation` campagna. Utilizzando questi dati, puoi identificare gli utenti che non sono più attivi, il periodo di tempo trascorso dall’ultima visita, l’ultimo acquisto e così via. Questo consente di prendere decisioni fruibili che incitano i clienti a tornare.
+Dopo aver identificato il motivo dell&#39;abbandono, è possibile utilizzare l&#39;analisi per creare una campagna `reactivation`. Utilizzando questi dati, puoi identificare gli utenti che non sono più attivi, il periodo di tempo trascorso dall’ultima visita, l’ultimo acquisto e così via. Questo consente di prendere decisioni fruibili che incitano i clienti a tornare.
 
-Per assistenza nell’analisi, [contatta l’assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Per assistenza sull&#39;analisi, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

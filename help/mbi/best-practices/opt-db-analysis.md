@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Business Performance, Data Integration, Data Import/Export, Data Warehouse Manager
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
 
 # Ottimizzazione del database
 
-Il vantaggio principale di utilizzare un database operativo per [!DNL Adobe Commerce Intelligence] è che non è necessario creare o modificare nulla per raccogliere i dati. Le informazioni importanti sono già disponibili, è sufficiente sbloccarle.
+Il vantaggio principale dell&#39;utilizzo di un database operativo per [!DNL Adobe Commerce Intelligence] è che non è necessario creare o modificare nulla per raccogliere i dati. Le informazioni importanti sono già disponibili, è sufficiente sbloccarle.
 
 Questo argomento contiene alcuni consigli utili per ottimizzare il database per l’analisi e trarre informazioni fruibili dai dati non elaborati.
 
@@ -35,15 +35,15 @@ Utilizzando le date di accesso come esempio, molte aziende memorizzano la data d
 
 In genere, se si aggiorna un record a causa di un&#39;azione dell&#39;utente, non sovrascrivere le informazioni relative a un&#39;azione precedente o separata dell&#39;utente.
 
-## Includi `Updated_at` Colonne per dati aggiornati nel tempo
+## Includi `Updated_at` colonne per dati aggiornati nel tempo
 
-Se, ad esempio, le righe di una tabella avranno valori che si modificano nel tempo, **order\_status** modifiche da`processing` a `complete`, includi un **aggiornato\_at** colonna da registrare quando si verifica l’ultima modifica. Assicurati che un’ **aggiornato\_at** valore è disponibile quando si inserisce per la prima volta la nuova riga di dati, quando **aggiornato\_at** la data corrisponde al **creato\_at** data.
+Se le righe di una tabella avranno valori che cambiano nel tempo, ad esempio **order\_status** cambia da`processing` a `complete`, includi una colonna **updated\_at** da registrare quando si verifica l&#39;ultima modifica. Assicurati che un valore **updated\_at** sia disponibile al primo inserimento della nuova riga di dati, quando la data **updated\_at** corrisponde alla data **created\_at**.
 
-Oltre all&#39;ottimizzazione per l&#39;analisi, **aggiornato\_at** Le colonne consentono inoltre di utilizzare [Metodi di replica incrementale](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md), che può contribuire a ridurre la durata dei cicli di aggiornamento.
+Oltre all&#39;ottimizzazione per l&#39;analisi, le colonne **updated\_at** consentono anche di utilizzare i [metodi di replica incrementale](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md), che possono aiutare a ridurre la durata dei cicli di aggiornamento.
 
-## Archivia origine acquisizione utente
+## Archivia Source di acquisizione utenti
 
-Uno degli errori più comuni è il [origine acquisizione utente](../data-analyst/analysis/google-track-user-acq.md) (UAS) non memorizzato nel database operativo. Nella maggior parte delle situazioni in cui si tratta di un problema, UAS viene tracciato solo [!DNL Google Analytics] o un altro strumento di analisi web. Anche se questi strumenti possono essere utili, esistono alcuni svantaggi nell’archiviazione esclusiva di UAS; ad esempio, non è possibile estrarre dati a livello di utente da questi strumenti. Quando è possibile, di solito è un processo difficile. Dovrebbe essere facile ottenere queste informazioni e combinarle con dati provenienti da altre origini, ad esempio le informazioni comportamentali e transazionali memorizzate anche nel database.
+Uno degli errori più comuni è che l&#39;origine di acquisizione [utente](../data-analyst/analysis/google-track-user-acq.md) (UAS) non è memorizzata nel database operativo. Nella maggior parte delle situazioni in cui si verifica questo problema, il tracciamento di UAS viene eseguito solo tramite [!DNL Google Analytics] o un altro strumento di analisi Web. Anche se questi strumenti possono essere utili, esistono alcuni svantaggi nell’archiviazione esclusiva di UAS; ad esempio, non è possibile estrarre dati a livello di utente da questi strumenti. Quando è possibile, di solito è un processo difficile. Dovrebbe essere facile ottenere queste informazioni e combinarle con dati provenienti da altre origini, ad esempio le informazioni comportamentali e transazionali memorizzate anche nel database.
 
 L&#39;archiviazione di UAS nel proprio database è spesso il più grande miglioramento che un&#39;azienda online può apportare alle proprie capacità analitiche. Questo consente di analizzare vendite, coinvolgimento degli utenti, periodi di recupero, valore del ciclo di vita del cliente, abbandono e altre metriche critiche da parte di UAS. [Questi dati sono fondamentali per decidere dove investire le risorse di marketing](../data-analyst/analysis/most-value-source-channel.md).
 
@@ -53,7 +53,7 @@ Troppe aziende si concentrano esclusivamente sulla ricerca di canali che offrano
 
 ### Impostare una chiave primaria
 
-A [chiave primaria](https://en.wikipedia.org/wiki/Unique_key) è una colonna (o un insieme di colonne) che non cambia e produce valori univoci all’interno di una tabella. Le chiavi primarie sono estremamente importanti, in quanto garantiscono la corretta replica delle tabelle in [!DNL Commerce Intelligence].
+Una [chiave primaria](https://en.wikipedia.org/wiki/Unique_key) è una colonna (o un set di colonne) immutabile che produce valori univoci all&#39;interno di una tabella. Le chiavi primarie sono estremamente importanti in quanto garantiscono la corretta replica delle tabelle in [!DNL Commerce Intelligence].
 
 Quando crei le chiavi primarie, utilizza un tipo di dati integer per la colonna che aumenta automaticamente. L’Adobe consiglia di evitare di utilizzare più chiavi primarie di colonna, ove possibile.
 
@@ -61,8 +61,8 @@ Se la tabella è una vista SQL, aggiungere una colonna che possa fungere da chia
 
 ### Assegnare un tipo di dati alla colonna di dati
 
-Se a una colonna di dati non è assegnato un [tipo di dati](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] indovina il tipo di dati da utilizzare. Se il sistema non indovina correttamente, potresti non essere in grado di eseguire le analisi pertinenti fino a quando il team di supporto Adobe non regolerà la colonna in base al tipo di dati corretto. Ad esempio, se una colonna data è considerata un tipo di dati numerico, puoi generare tendenze nel tempo utilizzando tale dimensione data.
+Se a una colonna di dati non è assegnato un tipo di dati [](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] indovina quale tipo di dati utilizzare. Se il sistema non indovina correttamente, potresti non essere in grado di eseguire le analisi pertinenti fino a quando il team di supporto Adobe non regolerà la colonna in base al tipo di dati corretto. Ad esempio, se una colonna data è considerata un tipo di dati numerico, puoi generare tendenze nel tempo utilizzando tale dimensione data.
 
 ### Aggiungere prefissi alle tabelle dati se si dispone di più database
 
-Se sono connessi più database a [!DNL Commerce Intelligence], Adobe consiglia di aggiungere prefissi alle tabelle per evitare confusione. I prefissi consentono di ricordare da dove provengono le metriche o le dimensioni dati.
+Se a [!DNL Commerce Intelligence] è connesso più di un database, l&#39;Adobe consiglia di aggiungere prefissi alle tabelle per evitare confusione. I prefissi consentono di ricordare da dove provengono le metriche o le dimensioni dati.

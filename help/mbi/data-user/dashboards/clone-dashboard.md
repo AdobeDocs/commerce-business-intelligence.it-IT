@@ -19,17 +19,17 @@ Questa funzione è utile se desideri ricreare un set di grafici esistente ma cam
 
 1. Per clonare un dashboard, fare clic su **[!UICONTROL Options]** nella parte superiore dello schermo.
 
-1. Nel menu a discesa , fai clic su **[!UICONTROL Save As]**.
+1. Nel menu a discesa , fare clic su **[!UICONTROL Save As]**.
 
-1. Quando richiesto, immetti `New Dashboard Name`. In questo Adobe vengono consigliati nomi che indicano immediatamente quali informazioni sono contenute nel dashboard.
+1. Quando richiesto, immettere `New Dashboard Name`. In questo Adobe vengono consigliati nomi che indicano immediatamente quali informazioni sono contenute nel dashboard.
 
-   Ad esempio, si sta clonando un dashboard denominato `Customer Activity`. Questa dashboard conteneva informazioni sull’attività del cliente per la tua posizione a Philadelphia, ma ora desideri creare una dashboard per la posizione a New York. Questo dashboard può essere denominato `New York City - Customer Activity`.
+   Si sta ad esempio clonando un dashboard denominato `Customer Activity`. Questa dashboard conteneva informazioni sull’attività del cliente per la tua posizione a Philadelphia, ma ora desideri creare una dashboard per la posizione a New York. Questo dashboard potrebbe essere denominato `New York City - Customer Activity`.
 
-1. Utilizza il `Chart Title Find` e `Chart Title Replace` campi per trovare tutti i grafici con `Philadelphia` nel titolo e sostituirlo con `New York City`.
+1. Utilizzare i campi `Chart Title Find` e `Chart Title Replace` per trovare tutti i grafici con `Philadelphia` nel titolo e sostituirli con `New York City`.
 
-   Se non si immette alcun valore in questi campi, viene visualizzata una `(2)` aggiunge automaticamente alla fine di tutti i titoli dei grafici nel nuovo dashboard.
+   Se non si immettono valori in questi campi, un `(2)` aggiunge automaticamente alla fine di tutti i titoli del grafico nel nuovo dashboard.
 
-1. Clic **[!UICONTROL Save]** per clonare il dashboard.
+1. Fare clic su **[!UICONTROL Save]** per clonare il dashboard.
 
 Esempio:
 

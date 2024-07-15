@@ -11,26 +11,26 @@ ht-degree: 0%
 
 ---
 
-# Onboarding [!DNL Adobe Commerce Intelligence]
+# Onboarding di [!DNL Adobe Commerce Intelligence]
 
-Domande sull’onboarding relative a `store` e `database` Le impostazioni consentono di configurare correttamente la generazione rapporti. Con queste risposte, Adobe distribuisce i report personalizzati in base alla configurazione del negozio.
+Le domande sull&#39;onboarding relative alle impostazioni `store` e `database` garantiscono la corretta configurazione dei rapporti. Con queste risposte, Adobe distribuisce i report personalizzati in base alla configurazione del negozio.
 
 ## Impostazioni store
 
-- *Il tuo negozio accetta il pagamento degli ospiti?* - Seleziona **sì** se consenti ai clienti di effettuare un acquisto dal tuo negozio senza registrarti a un account.
+- *Il tuo store accetta l&#39;acquisto degli ospiti?* - Seleziona **sì** se consenti ai clienti di effettuare un acquisto dal tuo store senza registrarti a un account.
 
-- `Timezone` - Selezionare la `timezone` che desideri visualizzare nei rapporti.
+- `Timezone` - Seleziona `timezone` in cui visualizzare i tuoi report.
 
-- `Currency` - Selezionare la `currency` che il tuo negozio funzioni in.
+- `Currency` - Seleziona `currency` in cui opera il tuo archivio.
 
-- `Your week starts on...` - Selezionare il giorno della settimana per il quale si desidera impostare l&#39;inizio della settimana nei report.
+- `Your week starts on...` - Selezionare nei report il giorno della settimana di inizio settimana.
 
-- *Quale versione di Commerce utilizzi?* - Selezionare la `currency` che il tuo negozio funzioni in.
+- *Quale versione di Commerce utilizzi?* - Seleziona `currency` in cui opera il tuo archivio.
 
-- *Il tuo punto vendita è nell&#39;Unione Europea?* - Se risponde `Yes` per rispondere a questa domanda, Adobe ospita la tua Data Warehouse e tutti i tuoi dati nell’Unione Europea, in conformità con il RGPD.
+- *Il tuo punto vendita si trova nell&#39;Unione Europea?* - Se rispondi a `Yes` a questa domanda, Adobe di ospitare la tua Data Warehouse e tutti i tuoi dati nell&#39;Unione Europea, in conformità con il RGPD.
 
 ## Impostazioni del database
 
-- `Database name` - Che cos&#39;è *nome del [!DNL MySQL] database* dove risiedono i dati transazionali di Commerce?
+- `Database name` - Qual è il *nome del database [!DNL MySQL]* in cui risiedono i dati transazionali di Commerce?
 
-- `Table prefix (optional)` : le tabelle contenute nel database Commerce sono precedute da un elemento (ad esempio, `store_`)? Questo non avviene normalmente, ma si tratta di una personalizzazione che può essere effettuata.
+- `Table prefix (optional)` - Le tabelle contenute nel database Commerce sono precedute da un elemento (ad esempio, `store_`)? Questo non avviene normalmente, ma si tratta di una personalizzazione che può essere effettuata.

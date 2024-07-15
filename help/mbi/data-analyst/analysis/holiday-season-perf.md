@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Le precipitazioni possono essere vissute in qualsiasi momento dell&#39;anno; ad 
 
 ## Metriche consigliate
 
-Quando analizzi le prestazioni della stagione delle festività, prendi in considerazione l’analisi ([o edificio](../../data-user/reports/ess-manage-data-metrics.md)) le metriche seguenti:
+Quando si analizzano le prestazioni della stagione festiva, è consigliabile analizzare ([o creare](../../data-user/reports/ess-manage-data-metrics.md)) le metriche seguenti:
 
 ### Numero di nuovi clienti, Numero di ordini, Ricavi
 
@@ -33,7 +33,7 @@ Questa misura visualizza il valore medio complessivo dell’ordine durante le fe
 
 Ora che sai quali metriche analizzare, puoi esaminare alcuni dati di esempio sui ricavi durante i mesi festivi di novembre e dicembre per entrambi gli anni 2014 e 2015.
 
-![Ricavi festivi giornalieri per il 2014 e il 2015](../../assets/Analyzing_holiday_season.png)
+![Ricavi giornalieri durante le feste per il 2014 e il 2015](../../assets/Analyzing_holiday_season.png)
 
 In questo esempio, ci sono due forti picchi di ricavi per il 2014 e il 2015: questi aumenti coincidono con il Black Friday e il Cyber Monday. Nota come i picchi non si verificano nello stesso giorno per il 2014 e il 2015. Questo perché il Black Friday è caduto il 27 novembre per il 2014 e il 28 novembre per il 2015. Allo stesso modo, il Cyber Monday è stato il 30 novembre per il 2014 e il 1 dicembre per il 2015.
 
@@ -58,7 +58,7 @@ Un&#39;opzione consiste nell&#39;analizzare il comportamento d&#39;acquisto dei 
 
 Un’altra opzione consiste nell’analizzare il ROI per campagna durante le stagioni festive. Il tuo ROI è superiore per particolari campagne che vengono eseguite durante le feste? Dovresti aumentare la spesa per le campagne con ROI elevato durante queste stagioni?
 
-Inoltre, è possibile analizzare il numero di ordini scontati rispetto a ordini a prezzo pieno. [La maggior parte dei clienti è in attesa di una vendita su ordini di acquisto?](../analysis/coupon-usage.md) durante le vacanze o acquistano articoli a prezzo pieno?
+Inoltre, è possibile analizzare il numero di ordini scontati rispetto a ordini a prezzo pieno. [La maggior parte dei clienti è in attesa di una vendita su ordini di acquisto](../analysis/coupon-usage.md) durante le tue feste o sta acquistando articoli a prezzo pieno?
 
 ### Correlato
 

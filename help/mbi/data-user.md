@@ -16,7 +16,7 @@ ht-degree: 0%
 I dati vengono utilizzati per prendere decisioni aziendali. Potresti ricevere report e dashboard da un analista di dati del tuo team, ma desideri anche imparare a creare tali report e dashboard.
 
 In questa sezione viene illustrato come:
-* acquisire e visualizzare dati in [!DNL Commerce Intelligence] utilizzo di report e dashboard
+* acquisire e visualizzare dati in [!DNL Commerce Intelligence] tramite report e dashboard
 * condividere tali dati con le parti interessate tramite e-mail e `.csv` file
 
 ## Correlato

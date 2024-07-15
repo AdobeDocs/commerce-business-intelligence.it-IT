@@ -1,5 +1,5 @@
 ---
-title: Accedere all’account Commerce Intelligence
+title: Accedi al tuo account Commerce Intelligence
 description: Scopri come accedere al tuo account Commerce Intelligence.
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
 role: Admin, Data Architect, Data Engineer, Leader, User
@@ -11,24 +11,24 @@ ht-degree: 0%
 
 ---
 
-# Accedi al file attivato [!DNL Adobe Commerce Intelligence] account
+# Accedi all&#39;account [!DNL Adobe Commerce Intelligence] attivato
 
-Dopo aver attivato il [!DNL Commerce Intelligence] account per [on-premise o cloud](../getting-started/onpremise-activation.md) e hai lavorato con il tuo Adobe Account Team per finalizzare i passaggi di configurazione, ora puoi accedere al tuo account.
+Dopo aver attivato l&#39;account [!DNL Commerce Intelligence] per [on-premise o cloud](../getting-started/onpremise-activation.md) e aver collaborato con il team dell&#39;account Adobe per finalizzare i passaggi di configurazione, puoi accedere al tuo account.
 
-## Accedi con il tuo [!DNL Adobe ID]
+## Accedi con [!DNL Adobe ID]
 
-1. Clic **[!UICONTROL Sign in with Adobe ID]**.
+1. Fare clic su **[!UICONTROL Sign in with Adobe ID]**.
 
    ![accesso ad adobe](../assets/sign-in-adobe.png)
 
-1. Immetti l&#39;indirizzo e-mail utilizzato al momento della creazione del [!DNL Commerce Intelligence] account. Se non disponi già di un account Adobe, fai clic su **[!UICONTROL Create an account]** e immettere le informazioni. Ricorda di utilizzare l&#39;indirizzo e-mail utilizzato al momento della creazione del [!DNL Commerce Intelligence] account. L’indirizzo e-mail è la chiave di accesso al tuo account di Adobe.
+1. Immettere l&#39;indirizzo di posta elettronica utilizzato al momento della creazione dell&#39;account [!DNL Commerce Intelligence]. Se non si dispone già di un account Adobe, fare clic su **[!UICONTROL Create an account]** e immettere le informazioni. Ricorda di utilizzare l&#39;indirizzo e-mail utilizzato al momento della creazione dell&#39;account [!DNL Commerce Intelligence]. L’indirizzo e-mail è la chiave di accesso al tuo account di Adobe.
 
 >[!NOTE]
 >
->Se effettui l’accesso utilizzando il [!DNL Adobe ID], non è possibile modificare il [!DNL Commerce Intelligence] password del profilo.
+>Se si effettua l&#39;accesso utilizzando [!DNL Adobe ID], non è possibile modificare la password del profilo di [!DNL Commerce Intelligence].
 
 ## Accedi con il tuo nome utente e la tua password
 
-Inserisci il tuo indirizzo e-mail e la tua password e fai clic su **[!UICONTROL Sign In]**.
+Immettere l&#39;indirizzo e-mail e la password e fare clic su **[!UICONTROL Sign In]**.
 
-Ora hai accesso a [!DNL Commerce Intelligence].
+Hai ora accesso a [!DNL Commerce Intelligence].
