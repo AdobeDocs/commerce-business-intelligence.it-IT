@@ -4,9 +4,9 @@ description: Scopri come utilizzare le  [!DNL Commerce Intelligence]  funzionali
 breadcrumb-title: Guida utente di Commerce Intelligence
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
+source-git-commit: cea314102fb3b2164c1498ce1efa60e83c41b188
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,10 @@ ht-degree: 0%
       - [Gestione autorizzazioni utente](administrator/user-management/user-management.md)
       - [Reimposta password](../mbi/administrator/user-management/reset-password.md)
       - [Limitare l’accesso alle metriche](../mbi/administrator/user-management/restrict-metric-access.md)
+      - [Gestione avanzata degli utenti](../mbi/administrator/user-management/advanced.md)
 - Analizza dati {#analyze}
    - [Analista dati](data-analyst.md)
-   - Gestione Date Warehouse {#warehouse-manager}
+   - Data Warehouse Manager {#warehouse-manager}
       - [Introduzione](data-analyst/data-warehouse-mgr/tour-dwm.md)
       - [Tipi di colonne calcolate avanzate](data-analyst/data-warehouse-mgr/adv-calc-columns.md)
       - [Generazione di  [!DNL Google Ecommerce]  dimensioni](data-analyst/data-warehouse-mgr/bldg-google-ecomm-dim.md)
@@ -43,7 +44,7 @@ ht-degree: 0%
       - [Configurazione dei metodi di replica](data-analyst/data-warehouse-mgr/cfg-replication-methods.md)
       - [Configurazione dei controlli dei dati](data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)
       - [Modifica della tabella operativa di una metrica](data-analyst/data-warehouse-mgr/change-metric-op-table.md)
-      - [Creazione e utilizzo delle viste Data Warehouse](data-analyst/data-warehouse-mgr/create-dw-views.md)
+      - [Creazione e utilizzo delle visualizzazioni di Data Warehouse](data-analyst/data-warehouse-mgr/create-dw-views.md)
       - [Creazione/eliminazione di percorsi per colonne calcolate](data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)
       - [Creazione/utilizzo di una colonna calcolata SQL](data-analyst/data-warehouse-mgr/create-sql-calc-column.md)
       - [Creazione di colonne calcolate](data-analyst/data-warehouse-mgr/creating-calculated-columns.md)
@@ -70,13 +71,13 @@ ht-degree: 0%
       - [[!DNL sales_order_item]](data-analyst/data-warehouse-mgr/sales-flat-order-item-table.md)
       - [[!DNL quote]](data-analyst/data-warehouse-mgr/sales-flat-quote-table.md)
       - [[!DNL quote_item]](data-analyst/data-warehouse-mgr/sales-flat-quote-item-table.md)
-   - REPORT BUILDER SQL {#sql}
+   - SQL Report Builder {#sql}
       - [Utilizzo di  [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
       - [Utilizzo di  [!DNL Cohort Report Builder]  per coorti non basate su data](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
       - [Creazione di un’analisi qualitativa per coorte](data-analyst/dev-reports/create-qual-cohort-analysis.md)
       - [Esplora operatori filtro speciali](data-analyst/dev-reports/explr-special-filter-ops.md)
       - [Esporta i risultati della query](data-analyst/dev-reports/export-query-results.md)
-      - [Utilizzo di formule nel Report Builder](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
+      - [Utilizzo delle formule in [Report Builder]](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
       - [Crea [!DNL Google Analytics] grafici](data-analyst/dev-reports/google-analytics-charts-regex.md)
       - [Importanza di  [!DNL Lifetime Revenue Cohort Analysis]](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
       - [Ordinamento dei dati tramite la funzionalità  [!DNL Show Top/Bottom] ](data-analyst/dev-reports/order-data-top-bottom-feat.md)
@@ -176,7 +177,7 @@ ht-degree: 0%
    - [Utente dati](../mbi/data-user.md)
    - Rapporti {#reports}
       - [Nozioni di base sui rapporti](data-user/reports/rpt-fundamentals.md)
-      - [Quale Report Builder dovrei usare?](data-user/reports/report-builder-options.md)
+      - [Quale Report Builder utilizzare?](data-user/reports/report-builder-options.md)
       - [[!DNL Visual Report Builder]](data-user/reports/ess-rpt-build-visual.md)
       - [Opzioni di visualizzazione](data-user/reports/visual-options.md)
       - [[!DNL Visual Report Builder] filtri](data-user/reports/ess-rpt-build-filters.md)
@@ -217,7 +218,7 @@ ht-degree: 0%
       - [Utilizzo dei dati](best-practices/work-data.md)
       - [Assegnazione tag UTM in [!DNL Google Analytics]](best-practices/utm-tagging-google.md)
       - [Formattazione e importazione di dati finanziari](best-practices/format-import-financial-data.md)
-      - [Dimension di dati consigliati per segmentazione e filtro](best-practices/segment-filter.md)
+      - [Dimensioni dati consigliate per segmentazione e filtro](best-practices/segment-filter.md)
       - [Controllo dello stato del ciclo di aggiornamento](best-practices/check-update-cycle.md)
       - [Riduzione della durata del ciclo di aggiornamento](best-practices/reduce-update-cycle-time.md)
       - [Modifica del database per supportare la replica incrementale](best-practices/mod-db-inc-replication.md)
@@ -231,7 +232,7 @@ ht-degree: 0%
    - Utilizzo dei dashboard {#working-dashboards}
       - [Condivisione di dashboard](best-practices/share-dashboard-best-practice.md)
       - [Creazione di un dashboard per investitori](best-practices/build-investor-dashboard.md)
-- Tutorials {#tutorials}
+- Esercitazioni {#tutorials}
    - [Utilizzo di  [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Utilizzo delle opzioni di tempo in  [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [Creazione di visualizzazioni per una query  [!DNL SQL] ](tutorials/create-visuals-from-sql.md)
