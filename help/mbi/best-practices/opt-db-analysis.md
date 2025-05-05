@@ -61,7 +61,7 @@ Se la tabella è una vista SQL, aggiungere una colonna che possa fungere da chia
 
 ### Assegnare un tipo di dati alla colonna di dati
 
-Se a una colonna di dati non è assegnato un tipo di dati [](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] indovina quale tipo di dati utilizzare. Se il sistema non indovina correttamente, potresti non essere in grado di eseguire le analisi pertinenti fino a quando il team di supporto Adobe non regolerà la colonna in base al tipo di dati corretto. Ad esempio, se una colonna data è considerata un tipo di dati numerico, puoi generare tendenze nel tempo utilizzando tale dimensione data.
+Se a una colonna di dati non è assegnato un tipo di dati [&#128279;](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] indovina quale tipo di dati utilizzare. Se il sistema non indovina correttamente, potresti non essere in grado di eseguire le analisi pertinenti fino a quando il team di supporto Adobe non regolerà la colonna in base al tipo di dati corretto. Ad esempio, se una colonna data è considerata un tipo di dati numerico, puoi generare tendenze nel tempo utilizzando tale dimensione data.
 
 ### Aggiungere prefissi alle tabelle dati se si dispone di più database
 

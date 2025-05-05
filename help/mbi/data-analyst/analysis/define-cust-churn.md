@@ -69,27 +69,27 @@ Nessuna nuova metrica.
 * [!UICONTROL Metric]: numero di ordini
 
 * [!UICONTROL Formula]: probabilità ordine di ripetizione iniziale
-* 
+* &#x200B;
   [!UICONTROL Formula]: `A/B`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Scalar`
 
 * **Probabilità di ripetizione ordine fornita mesi dall&#39;ordine**
 * Metrica A: ripetere gli ordini per mesi dall’ordine precedente (nascondere)
 * [!UICONTROL Metric]: `Number of orders`
-* 
+* &#x200B;
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * Metrica B: Ultimi ordini per mesi dall’ordine (nascondi)
 * [!UICONTROL Metric]: `Number of orders`
-* 
+* &#x200B;
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
@@ -97,29 +97,29 @@ Nessuna nuova metrica.
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* 
+* &#x200B;
   [!UICONTROL Raggruppa per]: `Independent`
 
 * Metrica D: Ultimi ordini in qualsiasi momento (nascondi)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* 
+* &#x200B;
   [!UICONTROL Raggruppa per]: `Independent`
 
 * [!UICONTROL Formula]: probabilità ordine di ripetizione iniziale
-* 
+* &#x200B;
   [!UICONTROL Formula]: `(C-A)/(C+D-A-B)`
-* 
+* &#x200B;
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * Mostra top.bottom: prime 24 categorie, ordinate per nome di categoria
 
-* 
+* &#x200B;
   [!UICONTROL Chart type]: `Line`
 
 Il rapporto probabilità ordine ripetuto iniziale rappresenta il totale ordini ripetuti / totale ordini. Ogni ordine è un&#39;opportunità per fare un ordine ripetuto; il numero di ordini ripetuti è il sottoinsieme di quelli che effettivamente lo fanno.

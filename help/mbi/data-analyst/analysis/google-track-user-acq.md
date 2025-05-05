@@ -27,7 +27,7 @@ Se non si tiene traccia delle origini di acquisizione utente nel database, [!DNL
 
 ### (Opzione 1) Tenere traccia dei dati di origine dei riferimenti dell&#39;ordine tramite [!DNL Google Analytics E-Commerce]
 
-Se si utilizza [!DNL Google Analytics E-Commerce] per tenere traccia dei dati relativi a ordini e vendite, è possibile utilizzare [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) per sincronizzare i dati di origine di riferimento di ogni ordine. Questo consente di segmentare i ricavi e gli ordini per origine di riferimento (ad esempio, `utm_source` o `utm_medium`). È inoltre possibile ottenere un&#39;idea delle origini di acquisizione del cliente tramite [!DNL Commerce Intelligence] dimensioni personalizzate, ad esempio `User's first order source`.
+Se si utilizza [!DNL Google Analytics E-Commerce] per tenere traccia dei dati relativi a ordini e vendite, è possibile utilizzare [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md) per sincronizzare i dati di origine di riferimento di ogni ordine. Questo consente di segmentare i ricavi e gli ordini per origine di riferimento (ad esempio, `utm_source` o `utm_medium`). È inoltre possibile ottenere un&#39;idea delle origini di acquisizione del cliente tramite [!DNL Commerce Intelligence] dimensioni personalizzate, ad esempio `User's first order source`.
 
 ### (Opzione 2) Salvataggio dei dati di origine di acquisizione di [!DNL Google Analytics] nel database
 
