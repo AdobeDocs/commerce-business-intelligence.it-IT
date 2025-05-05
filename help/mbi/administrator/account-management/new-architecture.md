@@ -45,7 +45,7 @@ Una volta completato, sai quali dati devi sincronizzare con la nuova Data Wareho
 
 ### Ottenimento della Guida
 
-Il [!DNL Adobe Commerce Intelligence] [team dei servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) può eseguire la reimplementazione per un costo aggiuntivo. Contatta il [Adobe Account Team](../../guide-overview.md#Submitting-a-Support-Ticket) e preparati a fornire un elenco di dashboard/report a cui assegnare la priorità per la creazione nel nuovo account
+Il [!DNL Adobe Commerce Intelligence] [team dei servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) può eseguire la reimplementazione per un costo aggiuntivo. Contatta il [Adobe Account Team](../../guide-overview.md#Submitting-a-Support-Ticket) e preparati a fornire un elenco di dashboard/report a cui assegnare la priorità per la creazione nel nuovo account
 
 ### Mantenere l&#39;architettura esistente
 

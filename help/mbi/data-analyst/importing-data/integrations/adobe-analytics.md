@@ -57,6 +57,6 @@ Per la connessione sono necessarie le seguenti informazioni:
 
 1. La suite di rapporti selezionata viene visualizzata in una tabella. Fai clic su **[!UICONTROL Save]** per confermare la selezione.
 
-1. Informare il [!DNL Commerce Intelligence] [team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) che l&#39;integrazione è autorizzata ed eseguono il processo di connessione iniziale.
+1. Informare il [!DNL Commerce Intelligence] [team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) che l&#39;integrazione è autorizzata ed eseguono il processo di connessione iniziale.
 
 Dopo l&#39;esecuzione della connessione iniziale, la tabella sarà disponibile nella pagina Data Warehouse, nella scheda `All Tables`. Seleziona le colonne da replicare per visualizzare i dati dopo il prossimo aggiornamento completo.

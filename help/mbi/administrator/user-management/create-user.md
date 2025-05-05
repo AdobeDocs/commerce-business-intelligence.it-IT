@@ -40,4 +40,4 @@ Se devi inviare nuovamente l&#39;invito, nella [pagina di accesso](https://dashb
 
 >[!IMPORTANT]
 >
->Ogni account dispone di un numero contrattuale di licenze o di posti. Se raggiungi il limite o desideri saperne di più, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>Ogni account dispone di un numero contrattuale di licenze o di posti. Se raggiungi il limite o desideri saperne di più, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).

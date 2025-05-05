@@ -46,7 +46,7 @@ Se alcuni di questi calcoli non sono attualmente presenti nel database, qualsias
 
 **Accetti gli ordini degli ospiti?**
 
-*In questo caso, è possibile che la tabella non contenga tutti i clienti. Contatta il [team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per assicurarti che le analisi dei clienti includano tutti i clienti.*
+*In questo caso, è possibile che la tabella non contenga tutti i clienti. Contatta il [team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per assicurarti che le analisi dei clienti includano tutti i clienti.*
 
 *Non sei sicuro di accettare gli ordini degli ospiti? Fai riferimento a [questo argomento](../data-warehouse-mgr/guest-orders.md) per ulteriori informazioni!*
 
@@ -60,7 +60,7 @@ In questa tabella, ogni riga rappresenta un ordine. Le colonne di questa tabella
 * **[!UICONTROL Created_at]**: data di creazione o di inserimento dell&#39;ordine.
 * **[!UICONTROL Customer_email]**: indirizzo e-mail del cliente che ha effettuato l&#39;ordine. Può anche essere l’identificatore univoco del cliente.
 * **[!UICONTROL Customer's lifetime number of orders]**: copia della colonna con lo stesso nome nella tabella `Customers`.
-* **[!UICONTROL Customer's order number]**: numero di ordine sequenziale del cliente associato all&#39;ordine. Ad esempio, se la riga che stai esaminando è il primo ordine di un cliente, questa colonna è &quot;1&quot;; ma, se si tratta del quindicesimo ordine del cliente, questa colonna mostra &quot;15&quot; per questo ordine. Se questa dimensione non esiste nella tabella `Customers`, chiedere al team di supporto [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) di aiutarti a generarla.
+* **[!UICONTROL Customer's order number]**: numero di ordine sequenziale del cliente associato all&#39;ordine. Ad esempio, se la riga che stai esaminando è il primo ordine di un cliente, questa colonna è &quot;1&quot;; ma, se si tratta del quindicesimo ordine del cliente, questa colonna mostra &quot;15&quot; per questo ordine. Se questa dimensione non esiste nella tabella `Customers`, chiedere al team di supporto [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) di aiutarti a generarla.
 * **[!UICONTROL Customer's order number (previous-current)]**: concatenazione di due valori nella colonna **[!UICONTROL Customer's order number]**. Viene utilizzato in un report di esempio riportato di seguito per visualizzare il tempo trascorso tra due ordini. Ad esempio, con questo calcolo il tempo tra la data del primo ordine di un cliente e la data del secondo ordine è rappresentato da &quot;1-2&quot;.
 * **[!UICONTROL Coupon_code]**: mostra i coupon utilizzati in ogni ordine.
 * **[!UICONTROL Seconds since previous order]**: tempo (in secondi) tra gli ordini di un cliente.

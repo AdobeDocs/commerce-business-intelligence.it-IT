@@ -82,4 +82,4 @@ Oltre ad analizzare il comportamento di riacquisto dei clienti, puoi anche crear
 
 Dopo aver identificato il motivo dell&#39;abbandono, è possibile utilizzare l&#39;analisi per creare una campagna `reactivation`. Utilizzando questi dati, puoi identificare gli utenti che non sono più attivi, il periodo di tempo trascorso dall’ultima visita, l’ultimo acquisto e così via. Questo consente di prendere decisioni fruibili che incitano i clienti a tornare.
 
-Per assistenza sull&#39;analisi, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Per assistenza sull&#39;analisi, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
