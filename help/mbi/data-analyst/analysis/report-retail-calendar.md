@@ -50,7 +50,7 @@ Puoi [scaricare](../../assets/454-calendar.csv) una versione `.csv` del calendar
    * **Data corrente**
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]: `Date Retail`
-      * 
+      * &#x200B;
         [!UICONTROL Datatype]: `Datetime`
       * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
@@ -62,7 +62,7 @@ Puoi [scaricare](../../assets/454-calendar.csv) una versione `.csv` del calendar
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
       * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
-      * 
+      * &#x200B;
         [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]: `Year Retail`
    * **Incluso nell&#39;anno corrente? (Sì/No)**
@@ -70,7 +70,7 @@ Puoi [scaricare](../../assets/454-calendar.csv) una versione `.csv` del calendar
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * 
+      * &#x200B;
         [!UICONTROL Datatype]: `String`
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **Incluso nell&#39;anno di vendita precedente? (Sì/No)**
@@ -78,7 +78,7 @@ Puoi [scaricare](../../assets/454-calendar.csv) una versione `.csv` del calendar
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * 
+      * &#x200B;
         [!UICONTROL Datatype]: String
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
@@ -139,62 +139,62 @@ Nota: non sono necessarie nuove metriche per questa analisi. Tuttavia, assicurat
       * [!UICONTROL Filter]:
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
      [!UICONTROL Group by]: `Created\_at` (retail week)
-   * 
+   * &#x200B;
      [!UICONTROL Chart type]: `Line`
       * Disattiva `multiple Y-axes`
 
 * **Panoramica calendario vendite al dettaglio (anno vendita al dettaglio corrente per mese)**
    * Metrica `A`: `Revenue`
-      * 
+      * &#x200B;
         [!UICONTROL Metric]: `Revenue`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * Metrica `B`: `Orders`
       * [!UICONTROL Metric]: `Number of orders`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * Metrica `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * 
+   * &#x200B;
      [!UICONTROL Chart type]: `Line`
 
 * **Panoramica calendario vendite al dettaglio (anno precedente vendite al dettaglio per mese)**
    * Metrica `A`: `Revenue`
-      * 
+      * &#x200B;
         [!UICONTROL Metric]: `Revenue`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * Metrica `B`: `Orders`
       * [!UICONTROL Metric]: numero di ordini
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * Metrica `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * 
+   * &#x200B;
      [!UICONTROL Chart type]: `Line`
 
 ## Passaggi successivi

@@ -31,7 +31,7 @@ Per completare il processo, è necessario aprire due finestre o schede del brows
 
 ## Apri la pagina delle credenziali di [!DNL Zendesk] in [!DNL Commerce Intelligence] {#stepone}
 
-1. Vai alla pagina `Integrations` in **[!UICONTROL Manage Data** > ** Origini dati **> **Integrazioni]**.
+1. Vai alla pagina `Integrations` in **[!UICONTROL Manage Data** > **&#x200B; Origini dati &#x200B;**> **Integrazioni]**.
 1. Fare clic su **[!UICONTROL Add Integration]**, che si trova sul lato destro della schermata.
 1. Fare clic sull&#39;icona [!DNL Zendesk]. Verrà aperta la pagina delle credenziali [!DNL Zendesk].
 
