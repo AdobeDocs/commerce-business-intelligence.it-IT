@@ -27,19 +27,19 @@ Colonne da creare nella tabella **orders** se si utilizzano **mesi di 30 giorni*
 
 * [!UICONTROL Column name]: `Months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `Seconds between customer's first order date and this order`
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `Integer`
 * **Definizione:**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
 
 * [!UICONTROL Column name]: `Months since order`
 * [!UICONTROL Column type]: `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `created_at`
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `Integer`
 * Definizione: `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
@@ -47,31 +47,31 @@ Colonne da creare nella tabella **`orders`** se si utilizza **calendario** mesi:
 
 * [!UICONTROL Column name]: `Calendar months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column inputs]:
    * `A` = `created_at`
    * `B` = `Customer's first order date`
 
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `Integer`
 * Definizione: `case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
 
 * [!UICONTROL Column name]: `Calendar months since order`
 * [!UICONTROL Column type]: `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: `A` = `created_at`
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `Integer`
 * **Definizione:**`case when A is null then null else ((date_part('year',current_timestamp::date) - date_part('year',A::date))*12 + date_part('month',current_timestamp::date) - date_part('month',A::date))::int end`
 
 * [!UICONTROL Column name]: `Is in current month? (Yes/No)`
 * [!UICONTROL Column type]: `Same Table`
-* &#x200B;
+* 
   [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `created_at`
-* &#x200B;
+* 
   [!UICONTROL Datatype]: `String`
 * Definizione: `case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
 
@@ -103,7 +103,7 @@ Metriche da creare
    * `Calendar months between first order and this order` `<= X` (Scegli un numero ragionevole per X, ad esempio, 24 mesi)
    * `Is in current month?` = `No`
 
-* &#x200B;
+* 
   [!UICONTROL Metric]: `Revenue`
 * [!UICONTROL Filter]:
 
@@ -122,7 +122,7 @@ Metriche da creare
 
 * [!UICONTROL Formula]: `Expected revenue`
 * [!UICONTROL Formula]: `A / (B - C)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Currency`
 
 Altri dettagli grafico
@@ -139,7 +139,7 @@ Altri dettagli grafico
 **Ricavi medi al mese per coorte**
 
 * Metrica `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Average value per cohort member`
@@ -147,11 +147,11 @@ Altri dettagli grafico
 **Ricavi medi cumulati al mese per coorte**
 
 * Metrica `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL Metric view]: `Cohort`
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Cumulative average value per cohort member`
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile all’immagine nella parte superiore della pagina.
 
-Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

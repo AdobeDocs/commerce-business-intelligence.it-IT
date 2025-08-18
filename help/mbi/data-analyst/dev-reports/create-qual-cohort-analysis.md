@@ -37,9 +37,9 @@ Tuttavia, se desideri analizzare il comportamento della coorte di più segmenti 
 
 ## Quali informazioni devo inviare al supporto per configurare la mia analisi? {#support}
 
-La creazione di un report `qualitative cohort` in `Report Builder` implica che il team di analisti Adobi crei alcune [colonne calcolate avanzate](../data-warehouse-mgr/creating-calculated-columns.md) nelle tabelle necessarie.
+La creazione di un report `qualitative cohort` in `Report Builder` implica che il team di analisti Adobe crei alcune [colonne calcolate avanzate](../data-warehouse-mgr/creating-calculated-columns.md) nelle tabelle necessarie.
 
-Per generare questi elementi, invia un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) (e fai riferimento a questo articolo!). Ecco cosa devi sapere:
+Per generare questi elementi, invia un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (e fai riferimento a questo articolo!). Ecco cosa devi sapere:
 
 * `metric` con cui eseguire l&#39;analisi della coorte e la tabella utilizzata (ad esempio: `Revenue`, basata sulla tabella `orders`).
 
@@ -49,7 +49,7 @@ Per generare questi elementi, invia un [ticket di supporto](https://experiencele
 
 * `time interval` per cui si desidera visualizzare l&#39;analisi (ad esempio: `weeks`, `months` o `quarters` dopo `User's first order date`).
 
-Una volta che il team di analisti Adobe risponderà a quanto sopra, avrai a disposizione un paio di nuove colonne calcolate avanzate per creare il tuo rapporto. A questo scopo, puoi seguire le istruzioni riportate di seguito.
+Una volta che il team di analisti di Adobe risponderà a quanto sopra, avrai a disposizione un paio di nuove colonne calcolate avanzate per creare il tuo rapporto. A questo scopo, puoi seguire le istruzioni riportate di seguito.
 
 ## Creazione dell’analisi qualitativa per coorte {#create}
 
@@ -67,7 +67,7 @@ In questo esempio, si esamina una visualizzazione `all time` di `Revenue`. Dopo 
 
 ![](../../assets/qualcohort2.gif)
 
-In terzo luogo, si esegue la regolazione per impostare `cohorts`. In base a `cohort date` e `time interval` specificati per il team di analisti Adobe, nel tuo account è presente una dimensione che esegue la data `cohort`. In questo esempio, la dimensione personalizzata è denominata `Months between this order and customer's first order date`. Utilizzando questa dimensione, è necessario:
+In terzo luogo, si esegue la regolazione per impostare `cohorts`. In base a `cohort date` e `time interval` specificati per il team di analisti Adobe, hai una dimensione nel tuo account che esegue la data `cohort`. In questo esempio, la dimensione personalizzata è denominata `Months between this order and customer's first order date`. Utilizzando questa dimensione, è necessario:
 
 * `Group by` la dimensione con l&#39;opzione `group by`
 

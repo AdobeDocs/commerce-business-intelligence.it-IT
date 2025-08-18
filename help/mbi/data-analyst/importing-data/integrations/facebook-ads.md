@@ -1,5 +1,5 @@
 ---
-title: Connetti Facebook Ads
+title: Connetti annunci Facebook
 description: Scopri come analizzare i dati di spesa degli annunci e vedere se i tuoi soldi vengono spesi in modo efficace.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
 role: Admin, Data Architect, Data Engineer, User
@@ -58,7 +58,7 @@ Assicurati di monitorare [!DNL Facebook] campagne in [!DNL Google Analytics]. In
 
 ## Correlato
 
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Connetti il tuo account  [!DNL Google Adwords] ](../integrations/google-ecommerce.md)
 * [Tracciare l&#39;origine di riferimento dell&#39;ordine tramite [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Tracciare l&#39;origine di riferimento dell&#39;utente nel database](../../analysis/google-track-user-acq.md)

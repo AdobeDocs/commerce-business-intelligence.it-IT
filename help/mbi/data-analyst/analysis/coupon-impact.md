@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Impatto coupon
 
-L’analisi del modo in cui i clienti utilizzano i coupon può fornire informazioni significative sulla tua attività. In particolare, analizzando come acquisire e fidelizzare i clienti tramite coupon. In questo argomento vengono illustrate le analisi che consentono di rispondere ai seguenti tipi di domande:
+L’analisi del modo in cui i clienti utilizzano i coupon può fornire un contributo significativo di insight alla tua attività. In particolare, analizzando come acquisire e fidelizzare i clienti tramite coupon. In questo argomento vengono illustrate le analisi che consentono di rispondere ai seguenti tipi di domande:
 
 * Quanti clienti acquisisci tramite coupon?
 * I clienti acquisiti con coupon hanno più probabilità di effettuare acquisti ripetuti rispetto ai clienti non acquisiti con coupon?
@@ -129,7 +129,7 @@ Cosa si può ricavare da questo? In primo luogo, il coupon &quot;20% off&quot; h
 
   **Esempio:** il coupon &quot;10% di sconto&quot; è offerto solo ai clienti che acquistano un cappotto invernale nello stesso ordine.
 
-Il **ricavo lordo** per la cedola &quot;25% di sconto di 100 o più dollari&quot; è molto più alto del ricavo lordo per la cedola &quot;10 dollari di sconto&quot;. Tuttavia, il coupon &quot;$10 off&quot; ha un **numero di ordini** molto più grande. L&#39;analisi del **valore medio dell&#39;ordine** fornisce informazioni approfondite su queste differenze. Anche se il coupon &quot;25% off $100 o più&quot; aveva un numero inferiore di ordini, il valore medio dell&#39;ordine è più del triplo rispetto al coupon &quot;off$10&quot;. Pertanto, un maggiore ricavo lordo è attribuito alla cedola &quot;25% off $100 o più&quot;.
+Il **ricavo lordo** per la cedola &quot;25% di sconto di 100 o più dollari&quot; è molto più alto del ricavo lordo per la cedola &quot;10 dollari di sconto&quot;. Tuttavia, il coupon &quot;$10 off&quot; ha un **numero di ordini** molto più grande. L&#39;analisi del **valore medio dell&#39;ordine** fornisce ad insight queste differenze. Anche se il coupon &quot;25% off $100 o più&quot; aveva un numero inferiore di ordini, il valore medio dell&#39;ordine è più del triplo rispetto al coupon &quot;off$10&quot;. Pertanto, un maggiore ricavo lordo è attribuito alla cedola &quot;25% off $100 o più&quot;.
 
 I **sconti** e **ricavi netti** per i coupon &quot;25% di sconto pari o superiore a 100 dollari&quot; e &quot;20% di sconto&quot; hanno un valore vicino. Anche se il valore medio dell&#39;ordine per &quot;25% di sconto di $100 o più&quot; è vicino al doppio del valore medio dell&#39;ordine per &quot;20% di sconto&quot;, quest&#39;ultimo coupon ha un poco meno del triplo del numero di ordini.
 
@@ -151,4 +151,4 @@ Il maggior numero di clienti è stato acquisito attraverso il coupon &quot;20% d
 
 ## Ritorno a capo {#wrapup}
 
-Sono disponibili numerose analisi che puoi creare per comprendere meglio come i tuoi clienti utilizzano i coupon. Hai mai pensato di analizzare in che modo i tuoi clienti utilizzano i coupon o il tempo necessario per utilizzarli? E per quanto riguarda la ricerca dell&#39;importo di sconto ottimale: quale importo incoraggia gli acquirenti ripetuti, un valore medio più alto dell&#39;ordine e maggiori ricavi nel corso della vita? Per informazioni su questi tipi di domande, [contatta l&#39;assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Sono disponibili numerose analisi che puoi creare per comprendere meglio come i tuoi clienti utilizzano i coupon. Hai mai pensato di analizzare in che modo i tuoi clienti utilizzano i coupon o il tempo necessario per utilizzarli? E per quanto riguarda la ricerca dell&#39;importo di sconto ottimale: quale importo incoraggia gli acquirenti ripetuti, un valore medio più alto dell&#39;ordine e maggiori ricavi nel corso della vita? Per informazioni su questi tipi di domande, [contatta l&#39;assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

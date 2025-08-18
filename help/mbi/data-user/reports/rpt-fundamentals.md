@@ -64,7 +64,7 @@ Viene quindi utilizzato per creare:
 
 Entrambi questi campi devono essere creati a livello di utente (ad esempio, nella tabella `user`). Ciò consente all’analisi media di essere normalizzata dagli utenti (in altre parole, il denominatore in questo calcolo medio è il numero di utenti).
 
-[!DNL Commerce Intelligence] interviene qui. Puoi utilizzare la Data Warehouse [!DNL Commerce Intelligence] per creare le colonne di cui sopra. Contatta il team di analisti Adobe e fornisci la definizione specifica delle nuove colonne da creare. È inoltre possibile utilizzare l&#39;[Editor colonne](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+[!DNL Commerce Intelligence] interviene qui. Puoi utilizzare il Data Warehouse [!DNL Commerce Intelligence] per creare le colonne di cui sopra. Contatta il team di analisti di Adobe e forniscici la definizione specifica delle nuove colonne da creare. È inoltre possibile utilizzare l&#39;[Editor colonne](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 È consigliabile evitare di creare direttamente questi campi di dati calcolati nel database, in quanto ciò rappresenta un onere inutile per i server di produzione.
 
@@ -94,7 +94,7 @@ Basta accedere a qualsiasi dashboard e [creare un report](../../data-user/report
 
 ### `Visual Report Builder` {#visualrb}
 
-[Il `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) è il modo più semplice per visualizzare i dati. Se non si ha familiarità con SQL o si desidera creare rapidamente un report, il Report Builder visivo rappresenta la soluzione migliore. Con pochi clic, puoi aggiungere metriche, segmentare i dati e creare rapporti in tutta l’organizzazione. Questa opzione è perfetta sia per i principianti che per gli esperti, in quanto non richiede alcuna competenza tecnica.
+[Il `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) è il modo più semplice per visualizzare i dati. Se non si ha familiarità con SQL o si desidera creare rapidamente un report, Visual Report Builder rappresenta la soluzione ottimale. Con pochi clic, puoi aggiungere metriche, segmentare i dati e creare rapporti in tutta l’organizzazione. Questa opzione è perfetta sia per i principianti che per gli esperti, in quanto non richiede alcuna competenza tecnica.
 
 |  |  |
 |--- |--- |
@@ -107,7 +107,7 @@ Basta accedere a qualsiasi dashboard e [creare un report](../../data-user/report
 
 #### Aggiunta di descrizioni ai rapporti
 
-Durante la creazione di rapporti condivisi con altri membri del team, l’Adobe consiglia di aggiungere descrizioni che consentano ad altri utenti di comprendere meglio l’analisi.
+Durante la creazione di rapporti condivisi con altri membri del team, Adobe consiglia di aggiungere descrizioni che consentano ad altri utenti di comprendere meglio l’analisi.
 
 1. Fai clic su **[!UICONTROL i]** nella parte superiore di qualsiasi rapporto.
 1. Immettere una descrizione nella casella di testo.

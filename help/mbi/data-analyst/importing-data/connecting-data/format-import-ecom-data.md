@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Formattazione e importazione di dati
 
-Se utilizzi un&#39;integrazione non attualmente supportata da [!DNL Adobe Commerce Intelligence], puoi comunque utilizzare la [funzione di caricamento file](using-file-uploader.md) per inserire i dati nella Data Warehouse. Questo argomento descrive i formati di dati ideali da utilizzare per caricare i dati di e-commerce.
+Se utilizzi un&#39;integrazione non attualmente supportata da [!DNL Adobe Commerce Intelligence], puoi comunque utilizzare la [funzione di caricamento file](using-file-uploader.md) per inserire i dati nel Data Warehouse. Questo argomento descrive i formati di dati ideali da utilizzare per caricare i dati di e-commerce.
 
 ## Tabella `Orders`
 

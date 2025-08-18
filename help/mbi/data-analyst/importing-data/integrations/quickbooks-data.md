@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Previsti [!DNL QuickBooks] dati
 
-Dopo che [hai connesso il tuo [!DNL QuickBooks] account](../../../data-analyst/importing-data/integrations/quickbooks.md), puoi utilizzare [Gestione Date Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) per tenere traccia facilmente dei campi di dati rilevanti per l&#39;analisi. Nella Data Warehouse vengono create le tabelle seguenti:
+Dopo che [hai connesso il tuo [!DNL QuickBooks] account](../../../data-analyst/importing-data/integrations/quickbooks.md), puoi utilizzare [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) per tenere traccia facilmente dei campi di dati rilevanti per l&#39;analisi. Le tabelle seguenti vengono create nel Data Warehouse:
 
 Per visualizzare tutti i campi disponibili per il tracciamento, fai clic sui collegamenti nella colonna nome tabella.
 
@@ -62,4 +62,4 @@ Per visualizzare tutti i campi disponibili per il tracciamento, fai clic sui col
 ## Correlato:
 
 * [Connessione in corso  [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

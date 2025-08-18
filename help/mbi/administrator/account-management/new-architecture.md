@@ -17,17 +17,17 @@ ht-degree: 0%
 
 ## Vantaggi della nuova architettura
 
-* Consente di creare tipi di colonne nella Data Warehouse, incluse le colonne calcolate con SQL.
+* Consente di creare tipi di colonne in Data Warehouse, incluse le colonne calcolate con SQL.
 * Le nuove colonne sono immediatamente disponibili.
 * La latenza dei dati è notevolmente migliorata.
 
 ## Vantaggi tecnici
 
-Le principali differenze sono elencate qui sopra, ma il cambiamento principale riguarda il modo in cui i calcoli vengono eseguiti durante il ciclo di aggiornamento. I calcoli non vengono più eseguiti su ogni colonna durante ogni aggiornamento, ma su richiesta dal Report Builder visivo.
+Le principali differenze sono elencate qui sopra, ma il cambiamento principale riguarda il modo in cui i calcoli vengono eseguiti durante il ciclo di aggiornamento. I calcoli non vengono più eseguiti su ogni colonna durante ogni aggiornamento, ma su richiesta da Visual Report Builder.
 
 ### Passaggio a una nuova architettura
 
-Poiché gli account sono fondamentalmente creati in modo diverso, non esiste alcuna procedura automatica per migrare la Data Warehouse o i report a un nuovo account dell’architettura. Il passaggio alla nuova architettura richiede la reimplementazione dell’account esistente.
+Poiché gli account sono fondamentalmente creati in modo diverso, non esiste un processo automatico per migrare il Data Warehouse o i rapporti a un nuovo account con architettura. Il passaggio alla nuova architettura richiede la reimplementazione dell’account esistente.
 
 ### Costo del passaggio alla nuova architettura
 
@@ -35,18 +35,18 @@ Nessun costo aggiuntivo. Adobe creerà questo nuovo account per iniziare la reim
 
 ### Tempo necessario per reimplementare l’account nella nuova architettura
 
-I tempi di reimplementazione variano a seconda di cosa desideri ricostruire. L’Adobe consiglia di eseguire i seguenti passaggi nell’account esistente per avere un’idea di cosa sarebbe coinvolto nella reimplementazione:
+I tempi di reimplementazione variano a seconda di cosa desideri ricostruire. Adobe consiglia di eseguire i seguenti passaggi nell’account esistente per avere un’idea di cosa sarebbe coinvolto nella reimplementazione:
 
 * Identifica un set principale di rapporti/dashboard.
 * Identifica le metriche e le dimensioni necessarie per creare tali rapporti.
 * Identifica le colonne necessarie per ricreare tali metriche e dimensioni.
 
-Una volta completato, sai quali dati devi sincronizzare con la nuova Data Warehouse dell’architettura per ricreare questi rapporti di base.
+Una volta completato, sai quali dati devi sincronizzare con la nuova architettura Data Warehouse per ricreare questi rapporti di base.
 
 ### Ottenimento della Guida
 
-Il [!DNL Adobe Commerce Intelligence] [team dei servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) può eseguire la reimplementazione per un costo aggiuntivo. Contatta il [Adobe Account Team](../../guide-overview.md#Submitting-a-Support-Ticket) e preparati a fornire un elenco di dashboard/report a cui assegnare la priorità per la creazione nel nuovo account
+Il [!DNL Adobe Commerce Intelligence] [team dei servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) può eseguire la reimplementazione per un costo aggiuntivo. Contatta il [Adobe Account Team](../../guide-overview.md#Submitting-a-Support-Ticket) e preparati a fornire un elenco di dashboard/report a cui assegnare la priorità per la creazione nel nuovo account
 
 ### Mantenere l&#39;architettura esistente
 
-Se queste funzioni non sono importanti per te, puoi mantenere l’account esistente. Non ci sono costi aggiuntivi per mantenere il tuo account esistente. Adobe continua a supportare tali account senza modifiche.
+Se queste funzioni non sono importanti per te, puoi mantenere l’account esistente. Non ci sono costi aggiuntivi per mantenere il tuo account esistente. Adobe continua a supportare questi account senza apportare modifiche.

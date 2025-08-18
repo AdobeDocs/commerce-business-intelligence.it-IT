@@ -25,7 +25,7 @@ Per garantire che il metodo `Modified At` funzioni come previsto, non è possibi
 
 ## Modifiche per la chiave primaria con incremento automatico singolo
 
-Se il metodo `Modified At` non può essere abilitato, l&#39;opzione migliore successiva è Incrementa automaticamente chiave primaria singola. I nuovi dati vengono rilevati nelle tabelle utilizzando questo metodo ricercando valori di chiave primaria superiori al valore massimo corrente nella Data Warehouse.
+Se il metodo `Modified At` non può essere abilitato, l&#39;opzione migliore successiva è Incrementa automaticamente chiave primaria singola. I nuovi dati vengono rilevati nelle tabelle utilizzando questo metodo ricercando valori di chiave primaria superiori al valore massimo corrente in Data Warehouse.
 
 Le tabelle che utilizzano questo metodo sono a colonna singola con chiavi primarie a incremento automatico di numeri interi. Per utilizzare questo metodo nel database, effettuare le seguenti modifiche:
 

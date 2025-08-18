@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 * [Mappa di riferimento utile](#map)
 * [Colonne calcolate avanzate](#advanced)
 
-In [Gestione Date Warehouse](../data-warehouse-mgr/tour-dwm.md) puoi creare colonne per migliorare e ottimizzare i dati per l&#39;analisi. [Per accedere a questa funzionalità](../data-warehouse-mgr/creating-calculated-columns.md), selezionare una tabella qualsiasi in Gestione Date Warehouse e fare clic su **[!UICONTROL Create New Column]**.
+In [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) puoi creare colonne per migliorare e ottimizzare i dati per l&#39;analisi. [Per accedere a questa funzionalità](../data-warehouse-mgr/creating-calculated-columns.md), selezionare qualsiasi tabella in Data Warehouse Manager e fare clic su **[!UICONTROL Create New Column]**.
 
-In questo argomento vengono descritti i tipi di colonne che è possibile creare con Gestione Date Warehouse. Include inoltre la descrizione, una descrizione visiva della colonna e una [mappa di riferimento](#map) di tutti gli input necessari per creare una colonna. Sono disponibili tre modi per creare colonne calcolate:
+In questo argomento vengono descritti i tipi di colonne che è possibile creare con Data Warehouse Manager. Include inoltre la descrizione, una descrizione visiva della colonna e una [mappa di riferimento](#map) di tutti gli input necessari per creare una colonna. Sono disponibili tre modi per creare colonne calcolate:
 
 1. [Stesse colonne calcolate della tabella](#sametable)
 1. [Colonne calcolate uno-a-molti](#onetomany)
@@ -71,7 +71,7 @@ Questo tipo di colonna calcolata restituisce il conteggio dei valori nella tabel
 
 Nell&#39;esempio seguente, la dimensione `Customer's lifetime number of canceled orders` viene creata nella tabella `customers` (con un filtro per `orders.status`).
 
-![](../../assets/many_to_one.gif){: width=&quot;699&quot; height=&quot;351&quot;}
+![](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### Somma {#sum}
 
@@ -101,7 +101,7 @@ Se non riesci a ricordare quali sono tutti gli input durante la creazione di una
 
 Nella tua ricerca per analizzare e rispondere a domande sulla tua attività, potresti incontrare una situazione in cui non sei in grado di creare la colonna esatta che desideri.
 
-Per garantire un rapido ripristino, l&#39;Adobe consiglia di consultare la guida [Advanced Calculated Column Types](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) per verificare il tipo di colonne che il team di supporto Adobe può creare. In questo argomento vengono inoltre trattate le informazioni necessarie per creare la colonna, includendole nella richiesta.
+Per garantire una rapida risposta, Adobe consiglia di consultare la guida [Advanced Calculated Column Types](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) per verificare il tipo di colonne che il team di supporto di Adobe può creare. In questo argomento vengono inoltre trattate le informazioni necessarie per creare la colonna, includendole nella richiesta.
 
 ## Documentazione correlata
 

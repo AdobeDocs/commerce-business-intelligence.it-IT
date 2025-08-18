@@ -1,6 +1,6 @@
 ---
-title: Dati warehouse Google Analytics previsti
-description: Scopri come interagire con i dati memorizzati nel data warehouse di Google Analytics.
+title: Dati Warehousing Google Analytics previsti
+description: Scopri come interagire con i dati memorizzati in Google Analytics.
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -27,11 +27,11 @@ L&#39;integrazione di [!DNL Google Analytics Warehoused] in [!DNL Commerce Intel
 >
 >Per evitare risultati inattesi o insensati, verificare che le dimensioni utilizzate siano [compatibili con una o più metriche](https://ga-dev-tools.google/dimensions-metrics-explorer/) utilizzate in `Report Builder`.
 
-Nella Data Warehouse viene creata una singola tabella denominata `report`.
+Nel Data Warehouse viene creata una singola tabella denominata `report`.
 
-Lo schema di questa tabella è composto dalle metriche e dai Dimension selezionati durante il processo di configurazione e da altre due colonne: `start-date` e `end-date`.
+Lo schema di questa tabella è composto dalle metriche e dalle dimensioni selezionate durante il processo di configurazione e da altre due colonne: `start-date` e `end-date`.
 
-Ad esempio, hai selezionato le metriche e i Dimension seguenti durante la configurazione:
+Ad esempio, durante l’impostazione hai selezionato le metriche e le dimensioni seguenti:
 
 * `Metrics`: `ga:users`
 * `Dimensions`: `ga:month`
@@ -58,7 +58,7 @@ Osserva le [!DNL Google Analytics] campagne pubblicitarie per un esempio di cosa
 
 L&#39;aspetto combinato consente di unire i dati di [!DNL Google Analytics] ad altri dati per eseguire analisi. Prendi ad esempio `Total Time On Site By Ad Campaign` dati da [!DNL Google Analytics] e unisciti a `Total Spent Per Campaign` dati da [!DNL Facebook Ads] per ottenere un quadro completo del costo del coinvolgimento.
 
-Con l&#39;integrazione di [!DNL Google Analytics Live], invece, ogni grafico [!DNL Google Analytics] è come un piccolo silo non memorizzato nella Data Warehouse di [!DNL Commerce Intelligence].
+Con l&#39;integrazione di [!DNL Google Analytics Live], invece, ogni grafico [!DNL Google Analytics] è come un piccolo silo non memorizzato nel Data Warehouse [!DNL Commerce Intelligence].
 
 ## Correlato:
 

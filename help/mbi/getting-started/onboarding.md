@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Onboarding di [!DNL Adobe Commerce Intelligence]
 
-Le domande sull&#39;onboarding relative alle impostazioni `store` e `database` garantiscono la corretta configurazione dei rapporti. Con queste risposte, Adobe distribuisce i report personalizzati in base alla configurazione del negozio.
+Le domande sull&#39;onboarding relative alle impostazioni `store` e `database` garantiscono la corretta configurazione dei rapporti. Con queste risposte, Adobe distribuisce report personalizzati in base alla configurazione del negozio.
 
 ## Impostazioni store
 
@@ -27,7 +27,7 @@ Le domande sull&#39;onboarding relative alle impostazioni `store` e `database` g
 
 - *Quale versione di Commerce utilizzi?* - Seleziona `currency` in cui opera il tuo archivio.
 
-- *Il tuo punto vendita si trova nell&#39;Unione Europea?* - Se rispondi a `Yes` a questa domanda, Adobe di ospitare la tua Data Warehouse e tutti i tuoi dati nell&#39;Unione Europea, in conformità con il RGPD.
+- *Il tuo punto vendita si trova nell&#39;Unione Europea?* - Se rispondi a `Yes` a questa domanda, Adobe ospita il tuo Data Warehouse e tutti i tuoi dati nell&#39;Unione Europea, in conformità con il RGPD.
 
 ## Impostazioni del database
 

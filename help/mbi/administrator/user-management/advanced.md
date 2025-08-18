@@ -3,13 +3,13 @@ title: Gestione utente avanzata
 description: Migliora la visibilità dei dati, semplifica le attività di reporting, personalizza l’accesso dei gruppi di utenti, semplifica la condivisione delle dashboard e garantisce sicurezza e scalabilità per la tua organizzazione.
 role: Admin, User
 feature: User Management
-source-git-commit: 42871886d12b97ee52aa270da6f0186a9a4eaddc
+exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
+source-git-commit: df408b8947a62cdb498b56370be965c89c45f6ff
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
 
 ---
-
 
 # Gestione utente avanzata
 

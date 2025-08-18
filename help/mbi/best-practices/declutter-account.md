@@ -1,5 +1,5 @@
 ---
-title: Decluttering dell'account  [!DNL Commerce Intelligence]
+title: 'Decluttering dell''account  [!DNL Commerce Intelligence] '
 description: Scopri come pulire il tuo account  [!DNL Commerce Intelligence] .
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
@@ -99,13 +99,13 @@ Se decidi che la metrica non è più necessaria, torna alla pagina **[!UICONTROL
 
 ## Passaggio 4: valutare le colonne sincronizzate
 
-L’ultimo passaggio consiste nel valutare le colonne attualmente sincronizzate nella Data Warehouse. L’annullamento della sincronizzazione delle colonne può danneggiare l’account e ridurre potenzialmente il tempo di aggiornamento.
+L’ultimo passaggio consiste nel valutare le colonne attualmente sincronizzate nel Data Warehouse. L’annullamento della sincronizzazione delle colonne può danneggiare l’account e ridurre potenzialmente il tempo di aggiornamento.
 
-Se desideri proseguire, contatta l&#39;assistenza [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket). Il team di supporto può creare un report che include tutte le colonne che non vengono utilizzate in alcun dashboard per alcun utente e che non vengono utilizzate nei riepiloghi e-mail, esclusi i report SQL. Puoi quindi utilizzare questo rapporto come guida per selezionare le colonne da desincronizzare tramite Gestione Date Warehouse.
+Se desideri proseguire, contatta l&#39;assistenza [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket). Il team di supporto può creare un report che include tutte le colonne che non vengono utilizzate in alcun dashboard per alcun utente e che non vengono utilizzate nei riepiloghi e-mail, esclusi i report SQL. Puoi quindi utilizzare questo rapporto come guida per selezionare le colonne da desincronizzare tramite Data Warehouse Manager.
 
 >[!NOTE]
 >
->Puoi sempre iniziare di nuovo a sincronizzare queste colonne in futuro. Se si annulla la sincronizzazione di una colonna, verranno rimossi tutti i dati dalla Data Warehouse. Ciò significa solo che durante il ciclo di aggiornamento questa colonna non viene controllata per la presenza di valori nuovi o aggiornati.
+>Puoi sempre iniziare di nuovo a sincronizzare queste colonne in futuro. Se si annulla la sincronizzazione di una colonna, verranno rimossi tutti i dati dal Data Warehouse. Ciò significa solo che durante il ciclo di aggiornamento questa colonna non viene controllata per la presenza di valori nuovi o aggiornati.
 
 **Per annullare la sincronizzazione di una o più colonne**
 

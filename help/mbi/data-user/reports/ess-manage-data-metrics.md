@@ -33,7 +33,7 @@ Se utilizzate nei rapporti, le metriche possono essere analizzate in un periodo 
 
 1. Denomina la metrica.
 
-   L’Adobe consiglia un nome che, a colpo d’occhio, indichi qual è la metrica. Esempio: `Average Order Revenue`.
+   Adobe consiglia un nome che, a colpo d’occhio, indichi qual è la metrica. Esempio: `Average Order Revenue`.
 
 1. Il passaggio successivo consiste nel definire il ruolo della metrica. Utilizzando i menu a discesa, definisci l’operazione della metrica, la colonna `operation` e una dimensione `date`:
 
@@ -66,7 +66,7 @@ Nella sezione `Filter Logic` è possibile definire ulteriormente il comportament
 * &quot;\[`A`\] e \[`B`\]&quot; consente solo i dati che soddisfano entrambi i filtri \[`A`\] e \[`B`\]
 * &quot;(\[`A`\] e \[`B`\]) OPPURE \[`C`\]&quot; consente solo i dati che soddisfano entrambi i filtri \[`A`\] e \[`B`\] oppure soddisfano solo il filtro \[`C`\]
 
-## Aggiunta di Dimension {#dimensions}
+## Aggiunta di dimensioni {#dimensions}
 
 La sezione [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) mostra tutte le dimensioni dati disponibili per il filtraggio o il raggruppamento. Per impostazione predefinita, tutte le colonne dati disponibili sono elencate come dimensioni. Continuando l’esempio, se desideri segmentare i ricavi per origine di riferimento, puoi farlo qui.
 

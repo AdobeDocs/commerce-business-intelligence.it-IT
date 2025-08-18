@@ -1,6 +1,6 @@
 ---
 title: Attribuzione Google Analytics e UTM
-description: Scopri il processo di attribuzione dell’origine Google Analytics.
+description: Scopri il processo di attribuzione sorgente di Google Analytics.
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Idealmente, ogni volta che si verifica un evento di conversione, viene registrata una sorgente di riferimento. Ma come viene determinata la sorgente?
 
-La realtà è che gli utenti spesso provengono da diverse origini prima di raggiungere o eseguire una micro o macro conversione. Ad esempio, possono arrivare al sito tramite Organic, poi uscire, poi venire tramite ricerca a pagamento, poi uscire, quindi venire direttamente al sito stesso. Queste informazioni di tracciamento delle sorgenti vengono spesso fornite al sito tramite i parametri UTM, ma esistono anche sistemi più sofisticati. Per il tuo scopo, concentrati su [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998).
+La realtà è che gli utenti spesso provengono da diverse origini prima di raggiungere o eseguire una micro o macro conversione. Ad esempio, possono arrivare al sito tramite Organic, poi uscire, poi venire tramite ricerca a pagamento, poi uscire, quindi venire direttamente al sito stesso. Queste informazioni di tracciamento delle sorgenti vengono spesso fornite al sito tramite i parametri UTM, ma esistono anche sistemi più sofisticati. Per il tuo scopo, concentrati su [UTM](https://support.google.com/analytics/answer/1033867?hl=en&ref_topic=1032998).
 
 ## In che modo [!DNL Google Analytics] attribuisce origini di riferimento tramite parametri UTM?
 

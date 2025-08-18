@@ -21,7 +21,7 @@ Le dashboard di [!DNL Adobe Commerce Intelligence] offrono una rapida panoramica
 
 ## Creazione di dashboard {#createdash}
 
-Le dashboard sono contenitori condivisibili a tema per le analisi create nei Report Builder. In questo modo puoi incoraggiare il tuo team a collaborare e mantenere un’unica fonte di verità in tutta l’organizzazione.
+Le dashboard sono contenitori condivisibili a tema per le analisi create in Report Builder. In questo modo puoi incoraggiare il tuo team a collaborare e mantenere un’unica fonte di verità in tutta l’organizzazione.
 
 *Se sei un amministratore o un utente Standard*, puoi creare un dashboard facendo clic sul menu a discesa `Dashboard Options` e scegliendo `Create New dashboard`.
 
@@ -77,7 +77,7 @@ In **[!DNL Manage Data** > **Dashboards]** è possibile gestire le autorizzazion
 
 ### Condivisione delle dashboard {#sharingdash}
 
-Per scalare [!DNL Commerce Intelligence] in tutta l&#39;organizzazione e fornire informazioni utili, Adobe ti incoraggia a condividere dashboard create con altri membri del team. *Puoi condividere i dashboard di tua proprietà* facendo clic sull&#39;opzione `Share Dashboard` nella parte superiore della pagina.
+Per ridimensionare [!DNL Commerce Intelligence] in tutta l&#39;organizzazione e ottenere informazioni utili, Adobe ti incoraggia a condividere le dashboard create con altri membri del team. *Puoi condividere i dashboard di tua proprietà* facendo clic sull&#39;opzione `Share Dashboard` nella parte superiore della pagina.
 
 Quando condividi una dashboard, puoi assegnare le autorizzazioni in tutta l’organizzazione OPPURE su base individuale, il che significa che puoi decidere chi può visualizzare e modificare i rapporti.
 

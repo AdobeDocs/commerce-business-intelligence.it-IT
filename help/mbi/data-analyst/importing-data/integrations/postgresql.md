@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Di seguito viene illustrato come spostarsi in [!DNL Commerce Intelligence] per r
 
 ## Consenti accesso all&#39;indirizzo IP [!DNL Commerce Intelligence] {#allowlist}
 
-Affinché la connessione abbia esito positivo, è necessario configurare il firewall per consentire l&#39;accesso dall&#39;indirizzo IP. È `54.88.76.97/32`, ma si trova anche nella pagina delle credenziali di `PostgreSQL`. Vedi la casella blu in GIF.
+Affinché la connessione abbia esito positivo, è necessario configurare il firewall per consentire l&#39;accesso dall&#39;indirizzo IP. È `54.88.76.97/32`, ma si trova anche nella pagina delle credenziali di `PostgreSQL`. Vedi la casella blu nel GIF qui sopra.
 
 ## Creazione di un utente [!DNL Linux] per [!DNL Commerce Intelligence] {#linux}
 
@@ -105,4 +105,4 @@ Al termine, fare clic su **Salva e prova** per completare l&#39;installazione.
 
 ### Correlato
 
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

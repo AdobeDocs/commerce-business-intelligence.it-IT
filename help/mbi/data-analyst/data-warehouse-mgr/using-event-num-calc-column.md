@@ -31,7 +31,7 @@ Il caso d’uso più comune di questa colonna è quello di analizzare i nuovi ac
 | **2 | B | 00:30:00 01/01/2015 | 1 |
 | **3 | A | 01/01/02/00:00: | 2 |
 | **4 | A | 02/01/2015 13/00:00: | 3 |
-| **5 | B | 03/01/2015 13/0&rbrace;:00: | 2 |
+| **5 | B | 03/01/2015 13/0}:00: | 2 |
 
 Nell&#39;esempio precedente, la colonna `Owner's event number` è una colonna `Event Number`. Gli eventi del proprietario vengono classificati nell&#39;ordine in cui si sono verificati (in base alla colonna `timestamp`).
 

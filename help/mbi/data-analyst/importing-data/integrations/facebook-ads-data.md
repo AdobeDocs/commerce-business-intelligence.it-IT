@@ -1,6 +1,6 @@
 ---
-title: Dati previsti di Facebook Ads
-description: Breve panoramica delle tabelle che si consiglia di sincronizzare con la Data Warehouse
+title: Dati previsti per gli annunci Facebook
+description: Breve panoramica delle tabelle che si consiglia di sincronizzare con il Data Warehouse
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Previsti [!DNL Facebook Ads] dati
 
-Dopo aver [connesso il tuo [!DNL Facebook Ads] account](../integrations/facebook-ads.md), puoi utilizzare [Gestione Date Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) per tenere traccia facilmente dei campi di dati rilevanti per l&#39;analisi.
+Dopo aver [connesso il tuo [!DNL Facebook Ads] account](../integrations/facebook-ads.md), puoi utilizzare [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) per tenere traccia facilmente dei campi di dati rilevanti per l&#39;analisi.
 
-Questo argomento offre una breve panoramica delle tabelle. L&#39;Adobe consiglia di eseguire la sincronizzazione con la Data Warehouse. Questo evidenzia solo le tabelle principali, in quanto sono presenti alcune sottotabelle.
+Questo argomento offre una breve panoramica delle tabelle che Adobe consiglia di sincronizzare con il Data Warehouse. Questo evidenzia solo le tabelle principali, in quanto sono presenti alcune sottotabelle.
 
 ## Tabelle core per campagne pubblicitarie
 
@@ -60,4 +60,4 @@ Questa tabella include le stesse informazioni della tabella `facebook_ads_insigh
 ## Correlato
 
 * [Connessione in corso  [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

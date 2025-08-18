@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Se in [!DNL Commerce Intelligence] sono presenti più metriche che devono essere filtrate in modo simile (ad esempio, filtrare gli ordini di test), è possibile creare set di filtri salvati e applicarli alle metriche. In questo modo si risparmia tempo, poiché non è necessario aggiungere singoli filtri durante la creazione o la modifica di una metrica.
 
-Per ulteriori informazioni, consulta il [video di formazione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=it).
+Per ulteriori informazioni, consulta il [video di formazione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html).
 
 >[!NOTE]
 >

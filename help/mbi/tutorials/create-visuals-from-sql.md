@@ -1,6 +1,6 @@
 ---
 title: Creare visualizzazioni da query SQL
-description: Scopri come acquisire familiarità con la terminologia utilizzata nel Report Builder SQL e come fornire una solida base per la creazione di visualizzazioni SQL.
+description: Scopri come acquisire familiarità con la terminologia utilizzata in SQL Report Builder e come fornire una solida base per la creazione di visualizzazioni SQL.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
@@ -21,7 +21,7 @@ L&#39;obiettivo di questo tutorial è acquisire familiarità con la terminologia
 
 Prima di iniziare questa esercitazione, fare riferimento alla seguente terminologia utilizzata in `SQL Report Builder`.
 
-- `Series`: la colonna che si desidera misurare viene indicata come Serie nel Report Builder SQL. Esempi comuni sono `revenue`, `items sold` e `marketing spend`. Almeno una colonna deve essere impostata come `Series` per creare una visualizzazione.
+- `Series`: la colonna che si desidera misurare viene indicata come Serie in SQL Report Builder. Esempi comuni sono `revenue`, `items sold` e `marketing spend`. Almeno una colonna deve essere impostata come `Series` per creare una visualizzazione.
 
 - `Category`: la colonna che si desidera utilizzare per segmentare i dati è denominata `Category`. È simile alla funzionalità `Group By` in [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). Ad esempio, se desideri segmentare i ricavi relativi al ciclo di vita dei clienti in base all&#39;origine di acquisizione, la colonna che contiene l&#39;origine di acquisizione verrà specificata come `Category`. È possibile impostare più colonne come `Category`.
 

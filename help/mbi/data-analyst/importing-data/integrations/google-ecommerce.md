@@ -60,7 +60,7 @@ Per identificare l&#39;ID profilo [!DNL Google Analytics] di un particolare sito
 ## Correlato:
 
 * [Previsti [!DNL Google ECommerce] dati](../integrations/google-ecommerce-data.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Configurazione [!DNL Google ECommerce] tracciamento](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Scopri le fonti e i canali di acquisizione più importanti](../../analysis/most-value-source-channel.md)
 * [Aumentare il ROI nelle campagne pubblicitarie](../../analysis/roi-ad-camp.md)

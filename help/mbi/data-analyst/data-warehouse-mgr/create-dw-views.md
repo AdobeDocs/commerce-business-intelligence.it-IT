@@ -1,5 +1,5 @@
 ---
-title: Creazione e utilizzo di visualizzazioni Data Warehouse
+title: Creare e utilizzare le visualizzazioni di Data Warehouse
 description: Scopri come creare nuove tabelle warehouse modificando una tabella esistente o unendo o consolidando più tabelle utilizzando SQL.
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 role: Admin, Data Architect, Data Engineer, User
@@ -11,13 +11,13 @@ ht-degree: 6%
 
 ---
 
-# Utilizzo delle visualizzazioni Data Warehouse
+# Utilizzo delle visualizzazioni di Data Warehouse
 
 Questo documento descrive lo scopo e gli utilizzi di `Data Warehouse Views` accessibili passando a **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. Di seguito viene fornita una spiegazione delle operazioni eseguite e della modalità di creazione delle visualizzazioni, nonché un esempio di come utilizzare `Data Warehouse Views` per consolidare i dati di spesa di [!DNL Facebook] e [!DNL AdWords].
 
 ## Scopo generale
 
-La funzionalità `Data Warehouse Views` consente di creare nuove tabelle con data warehouse modificando una tabella esistente oppure unendo o consolidando più tabelle mediante SQL. Una volta creato ed elaborato un `Data Warehouse View` tramite un ciclo di aggiornamento, questo viene popolato nella tua Data Warehouse come nuova tabella sotto il menu a discesa `Data Warehouse Views`, come mostrato di seguito:
+La funzionalità `Data Warehouse Views` consente di creare nuove tabelle con data warehouse modificando una tabella esistente oppure unendo o consolidando più tabelle mediante SQL. Una volta creato ed elaborato da un ciclo di aggiornamento, un `Data Warehouse View` viene inserito nel Data Warehouse come nuova tabella sotto il menu a discesa `Data Warehouse Views`, come illustrato di seguito:
 
 ![](../../assets/Data_Warehouse.png)
 
@@ -27,7 +27,7 @@ Da qui, la nuova vista funziona come qualsiasi altra tabella, consentendoti di c
 
 Se si ha familiarità con SQL, entrambi gli esempi di consolidamento utilizzano la funzione `UNION`, ma è possibile utilizzare qualsiasi sintassi e funzione PostgreSQL durante la creazione di una nuova visualizzazione.
 
-## Creazione e gestione delle viste Data Warehouse
+## Creazione e gestione delle visualizzazioni di Data Warehouse
 
 È possibile creare un nuovo `Data Warehouse Views` ed eliminare le visualizzazioni esistenti passando a **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**, come illustrato di seguito:
 
@@ -36,7 +36,7 @@ Se si ha familiarità con SQL, entrambi gli esempi di consolidamento utilizzano 
 Da qui è possibile creare una visualizzazione seguendo le istruzioni di esempio riportate di seguito:
 
 1. Se si osserva una visualizzazione esistente, fare clic su **[!UICONTROL New Data Warehouse View]** per aprire una finestra di query vuota. Se è già aperta una finestra di query vuota, procedere al passaggio successivo.
-1. Assegnare un nome alla visualizzazione digitando nel campo `View Name`. Il nome fornito determina il nome visualizzato per la visualizzazione nella Data Warehouse. `View names` sono limitati a lettere minuscole, numeri e trattini bassi (_). Tutti gli altri caratteri sono vietati.
+1. Assegnare un nome alla visualizzazione digitando nel campo `View Name`. Il nome qui fornito determina il nome visualizzato per la visualizzazione nel Data Warehouse. `View names` sono limitati a lettere minuscole, numeri e trattini bassi (_). Tutti gli altri caratteri sono vietati.
 1. Immettere la query nella finestra `Select Query` utilizzando la sintassi PostgreSQL standard.
 
    >[!NOTE]
@@ -45,7 +45,7 @@ Da qui è possibile creare una visualizzazione seguendo le istruzioni di esempio
 
 1. Al termine, fare clic su **[!UICONTROL Save]** per salvare la visualizzazione. Lo stato della visualizzazione è `Pending` finché non viene elaborato dal successivo ciclo di aggiornamento completo, che cambia in `Active`. Dopo essere stata elaborata da un aggiornamento, la vista è pronta per essere utilizzata nei rapporti.
 
-È importante ricordare che dopo il salvataggio, la query sottostante utilizzata per generare un `Data Warehouse View` non può essere modificata. Se è necessario modificare la struttura di un `Data Warehouse View`, è necessario creare una visualizzazione e migrare manualmente le colonne, le metriche o i report calcolati dalla visualizzazione originale a quella nuova. Una volta completata la migrazione, puoi eliminare in tutta sicurezza la visualizzazione originale. Poiché `Data Warehouse Views` non sono modificabili, l&#39;Adobe consiglia di verificare l&#39;output della query utilizzando `SQL Report Builder` prima di salvare la query come visualizzazione Data Warehouse.
+È importante ricordare che dopo il salvataggio, la query sottostante utilizzata per generare un `Data Warehouse View` non può essere modificata. Se è necessario modificare la struttura di un `Data Warehouse View`, è necessario creare una visualizzazione e migrare manualmente le colonne, le metriche o i report calcolati dalla visualizzazione originale a quella nuova. Una volta completata la migrazione, puoi eliminare in tutta sicurezza la visualizzazione originale. Poiché `Data Warehouse Views` non sono modificabili, Adobe consiglia di verificare l&#39;output della query utilizzando `SQL Report Builder` prima di salvare la query come visualizzazione Data Warehouse.
 
 ## Esempio: [!DNL Facebook] e [!DNL Google AdWords] dati
 
@@ -136,11 +136,11 @@ Invece di creare un set separato di metriche di marketing per ogni origine di an
 
 **Ricerca di ulteriori informazioni?**
 
-Il supporto tecnico non include la scrittura di SQL e la creazione di `Data Warehouse Views`. Tuttavia, il [team dei servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) offre assistenza nella creazione delle visualizzazioni. Il team di supporto può fornire assistenza in tutti gli aspetti, dalla migrazione di un database legacy con un nuovo database alla creazione di una singola visualizzazione Data Warehouse ai fini di un’analisi specifica.
+Il supporto tecnico non include la scrittura di SQL e la creazione di `Data Warehouse Views`. Tuttavia, il [team dei servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) offre assistenza nella creazione delle visualizzazioni. Il team di supporto può fornire assistenza in tutte le fasi, dalla migrazione di un database legacy con un nuovo database alla creazione di una singola visualizzazione Data Warehouse ai fini di un’analisi specifica.
 
 In genere, la creazione di un nuovo `Data Warehouse View` per il consolidamento di 2-3 tabelle strutturate in modo simile richiede cinque ore di tempo di servizio, il che si traduce in circa $ 1.250 di lavoro. Tuttavia, di seguito sono riportati alcuni fattori comuni che possono aumentare gli investimenti previsti necessari:
 
 * Consolidamento di più di tre tabelle in un&#39;unica visualizzazione
-* Creazione di più di una vista Data Warehouse
+* Creazione di più di una visualizzazione Data Warehouse
 * Logica di unione complessa o condizioni di filtro
 * Consolidamento di due o più tabelle con strutture di dati dissimili

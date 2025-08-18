@@ -1,12 +1,12 @@
 ---
-title: Formule nel Report Builder
-description: Scopri come utilizzare le formule nel Report Builder.
+title: Formule in Report Builder
+description: Scopri come utilizzare le formule in Report Builder.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,6 @@ In questo esempio è stata utilizzata la prospettiva `Stacked Columns` per visua
 
 ## Ritorno a capo {#wrapup}
 
-Negli esempi precedenti è stato notato che le metriche di input della formula `timestamp`, `groupings`, `perspectives` e `filters` sono ereditate? Tieni presente che le formule possono essere utilizzate per utilizzare `perspectives` e [opzioni di tempo indipendenti](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}, proprio come le metriche.
+Negli esempi precedenti è stato notato che le metriche di input della formula `timestamp`, `groupings`, `perspectives` e `filters` sono ereditate? Tieni presente che le formule possono essere utilizzate per utilizzare `perspectives` e [opzioni di tempo indipendenti](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"}, proprio come le metriche.
 
-Per ulteriori domande sull&#39;utilizzo delle formule in `Report Builder`, [contattare il supporto tecnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Per ulteriori domande sull&#39;utilizzo delle formule in `Report Builder`, [contattare il supporto tecnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

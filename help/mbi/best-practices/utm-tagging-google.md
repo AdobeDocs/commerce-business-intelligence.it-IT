@@ -1,6 +1,6 @@
 ---
-title: Tracciamento UTM nelle Google Analytics
-description: Scopri le best practice per il tracciamento UTM (assegnazione tag) nelle Google Analytics.
+title: Tracciamento UTM in Google Analytics
+description: Scopri le best practice per il tracciamento UTM (assegnazione tag) in Google Analytics.
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
@@ -21,23 +21,23 @@ Il monitoraggio di `UTM` è una convenzione di assegnazione tag per gli URL che 
 
 Di seguito sono elencati i cinque elementi più importanti da ricordare durante la configurazione degli URL con tag `UTM`.
 
-### 1. Imposta i tag per ogni URL controllabile che arriva sul tuo sito
+### &#x200B;1. Imposta i tag per ogni URL controllabile che arriva sul tuo sito
 
 Ogni volta che si chiede alle persone di fare clic su un collegamento, è necessario impostare l&#39;assegnazione tag `UTM`. Questo include tutti i tuoi collegamenti e-mail (il provider di servizi e-mail probabilmente ha un modo per assegnare automaticamente tag ai tuoi URL), collegamenti agli annunci, articoli di stampa, post di blog.
 
-### 2. Utilizzare uno strumento per creare l’URL
+### &#x200B;2. Utilizzare uno strumento per creare l’URL
 
 Gli URL con tag di `UTM` possono essere complicati. Invece di digitarli a lungo, utilizza uno strumento [simile a questo](https://support.google.com/analytics/answer/1033867?hl=en) per aiutarti. In questo modo puoi aggiungere all’URL tutti i parametri pertinenti e ottenere l’URL da copiare e incollare immediatamente. Per gestire i collegamenti social, strumenti come [!DNL Hootsuite] includono l&#39;opzione di aggiungere parametri URL personalizzati a tutti i collegamenti.
 
-### 3. Assicurati di fare distinzione tra maiuscole e minuscole nei valori dei parametri
+### &#x200B;3. Assicurati di fare distinzione tra maiuscole e minuscole nei valori dei parametri
 
 È importante ricordare che il tag `utm\_source=adwords` è diverso da `utm\_source=Adwords`. Valuta di usare solo minuscole.
 
-### 4. Memorizza i valori dei parametri UTM nel database
+### &#x200B;4. Memorizza i valori dei parametri UTM nel database
 
 Ogni volta che si verifica una transazione o un evento, desideri valutare le prestazioni delle attività di marketing. A tale scopo, leggere i valori dei parametri UTM dal cookie [[!DNL Google Analytics] nel database](../data-analyst/analysis/google-track-user-acq.md).
 
-### 5. Pensa al nome delle campagne
+### &#x200B;5. Pensa al nome delle campagne
 
 Per monitorare il miglioramento delle attività di marketing nel tempo, è necessario conoscere in modo intelligente le convenzioni di denominazione. Semplificalo e riduci al minimo il più possibile. I sistemi di denominazione complicati sono più difficili da mantenere.
 

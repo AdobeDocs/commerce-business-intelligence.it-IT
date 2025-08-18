@@ -27,14 +27,14 @@ ht-degree: 0%
       - [Visualizza dashboard in ufficio](../mbi/administrator/account-management/display-dashboards-office.md)
       - [Gestione dell’account](administrator/account-management/managing-account-settings.md)
       - [Limita l&#39;accesso al database](../mbi/administrator/account-management/restrict-db-access.md)
-   - Gestione utenti {#user-mgmt}
+   - Gestione utente {#user-mgmt}
       - [Crea/Modifica utente](../mbi/administrator/user-management/create-user.md)
       - [Elimina/Riattiva utente](../mbi/administrator/user-management/delete-user.md)
       - [Gestione autorizzazioni utente](administrator/user-management/user-management.md)
       - [Reimposta password](../mbi/administrator/user-management/reset-password.md)
       - [Limitare l’accesso alle metriche](../mbi/administrator/user-management/restrict-metric-access.md)
       - [Gestione avanzata degli utenti](../mbi/administrator/user-management/advanced.md)
-- Analizza dati {#analyze}
+- Analizzare i dati {#analyze}
    - [Analista dati](data-analyst.md)
    - Data Warehouse Manager {#warehouse-manager}
       - [Introduzione](data-analyst/data-warehouse-mgr/tour-dwm.md)
@@ -71,7 +71,7 @@ ht-degree: 0%
       - [[!DNL sales_order_item]](data-analyst/data-warehouse-mgr/sales-flat-order-item-table.md)
       - [[!DNL quote]](data-analyst/data-warehouse-mgr/sales-flat-quote-table.md)
       - [[!DNL quote_item]](data-analyst/data-warehouse-mgr/sales-flat-quote-item-table.md)
-   - SQL Report Builder {#sql}
+   - SQL REPORT BUILDER {#sql}
       - [Utilizzo di  [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
       - [Utilizzo di  [!DNL Cohort Report Builder]  per coorti non basate su data](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
       - [Creazione di un’analisi qualitativa per coorte](data-analyst/dev-reports/create-qual-cohort-analysis.md)
@@ -86,7 +86,7 @@ ht-degree: 0%
       - [Informazioni su  [!DNL Repeat Order Probability Report]](data-analyst/dev-reports/repeat-order-probability.md)
       - [Controllo delle metriche tramite  [!DNL SQL Report Builder]](data-analyst/dev-reports/audit-metrics-sql.md)
       - [Differenze nelle colonne tra [!DNL SQL] e [!DNL Data Warehouse Manager]](data-analyst/dev-reports/columns-sql-dwm.md)
-   - Connessione dei dati {#connecting}
+   - Collegamento dei dati {#connecting}
       - [Introduzione](data-analyst/importing-data/connecting-data/connecting-data.md)
       - [Formattazione e importazione di dati di eCommerce](data-analyst/importing-data/connecting-data/format-import-ecom-data.md)
       - [Importazione dei dati  [!DNL Bing Ad Spend] ](data-analyst/importing-data/connecting-data/import-bing-ad-data.md)
@@ -141,7 +141,7 @@ ht-degree: 0%
       - [Connessione in corso [!DNL MySQL] tramite [!DNL cPanel]](data-analyst/importing-data/integrations/mysql-via-cpanel.md)
       - [Connessione in corso [!DNL MySQL] tramite [!DNL SSH Tunnel]](data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md)
       - [Connessione in corso  [!DNL PostgreSQ]](data-analyst/importing-data/integrations/postgresql.md)
-   - Analizza campagne {#campaigns}
+   - Analizzare le campagne {#campaigns}
       - [Analisi del codice coupon (base)](data-analyst/analysis/ess-coupon-code-analysis.md)
       - [Analisi del codice coupon (avanzata)](data-analyst/analysis/coupon-code-analysis.md)
       - [Soglia spedizione gratuita](data-analyst/analysis/free-ship-thresh.md)
@@ -149,7 +149,7 @@ ht-degree: 0%
       - [Analisi dell’utilizzo dei coupon](data-analyst/analysis/coupon-usage.md)
       - [Aumento del ROI nelle campagne pubblicitarie](data-analyst/analysis/roi-ad-camp.md)
       - [ROI marketing](data-analyst/analysis/marketing-roi.md)
-   - Analizza clienti {#customers}
+   - Analizzare i clienti {#customers}
       - [Calcolo della frequenza di abbandono di Commerce](data-analyst/analysis/commerce-churn.md)
       - [Definizione della concentrazione dei clienti](data-analyst/analysis/define-cust-concent.md)
       - [Definizione dell’abbandono dei clienti](data-analyst/analysis/define-cust-churn.md)
@@ -160,7 +160,7 @@ ht-degree: 0%
       - [Analisi del comportamento di riacquisto dei clienti](data-analyst/analysis/repurchase-behavior.md)
       - [Analisi dell&#39;attività del sito Web e dei tassi di conversione dei clienti](data-analyst/analysis/web-act-cust-conversion.md)
       - [Analisi monetaria (RFM)](data-analyst/analysis/rfm-analysis.md)
-   - Analizza prestazioni aziendali {#performance}
+   - Analisi delle prestazioni aziendali {#performance}
       - [Tracciamento degli obiettivi rispetto alle metriche effettive](data-analyst/analysis/track-goals-against-metrics.md)
       - [Analisi degli ordini restituiti](data-analyst/analysis/returned-order-analysis.md)
       - [Su base annua, mese su mese, settimana su settimana](data-analyst/analysis/year-month-week.md)
@@ -171,7 +171,7 @@ ht-degree: 0%
       - [Informazioni sull&#39;attribuzione  [!DNL Google Analytics] UTM](data-analyst/analysis/utm-attributes.md)
       - [Analisi dei livelli di inventario](data-analyst/analysis/analyze-inventory-level.md)
       - [Segnalazione di un calendario per la vendita al dettaglio](data-analyst/analysis/report-retail-calendar.md)
-   - Previsione di {#forecasting}
+   - Previsione {#forecasting}
       - [Introduzione](data-analyst/analysis/forecasting.md)
 - Creare rapporti e condividere dati {#build}
    - [Utente dati](../mbi/data-user.md)
@@ -225,14 +225,14 @@ ht-degree: 0%
       - [Ottimizzazione del database per l&#39;analisi](best-practices/opt-db-analysis.md)
       - [Ottimizzazione delle  [!DNL SQL]  query](best-practices/optimizing-your-sql-queries.md)
       - [Informazioni sull&#39;ambiente  [!DNL Commerce Intelligence] ](best-practices/understanding-magento.md)
-   - Organizzazione progetto {#project}
+   - Organizzazione del progetto {#project}
       - [Denominazione di report ed elementi in [!DNL Commerce Intelligence]](best-practices/naming-elements.md)
       - [Consolidamento delle tabelle](best-practices/consolidating-your-tables.md)
       - [Decluta il tuo account  [!DNL Commerce Intelligence] ](best-practices/declutter-account.md)
    - Utilizzo dei dashboard {#working-dashboards}
       - [Condivisione di dashboard](best-practices/share-dashboard-best-practice.md)
       - [Creazione di un dashboard per investitori](best-practices/build-investor-dashboard.md)
-- Esercitazioni {#tutorials}
+- Tutorial {#tutorials}
    - [Utilizzo di  [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Utilizzo delle opzioni di tempo in  [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [Creazione di visualizzazioni per una query  [!DNL SQL] ](tutorials/create-visuals-from-sql.md)

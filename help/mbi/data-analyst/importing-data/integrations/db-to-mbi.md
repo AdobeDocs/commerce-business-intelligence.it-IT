@@ -1,5 +1,5 @@
 ---
-title: Connetti il database  [!DNL MySQL]
+title: 'Connetti il database  [!DNL MySQL] '
 description: Guarda come collegare i tuoi [!DNL MySQL] database con [!DNL Commerce Intelligence].
 exl-id: 22632cab-3c44-4a1b-8809-ac6cba5f655a
 role: Admin, Data Architect, Data Engineer, User

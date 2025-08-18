@@ -51,7 +51,7 @@ In questo esempio, la probabilità di ordine ripetuto iniziale, o la probabilit�
 
 ### Probabilità di ripetizione ordine specificata mesi dopo l&#39;ordine
 
-Questo rapporto mostra la probabilità che un cliente ordini nuovamente, dato che sono trascorsi alcuni mesi dall’ultimo ordine. Anche se non esiste una definizione unica per la soglia di abbandono data questa relazione, Adobe consiglia di definire abbandono come il punto in cui la probabilità di decadimento attraversa il valore che è la metà del tasso di probabilità di ripetizione iniziale.
+Questo rapporto mostra la probabilità che un cliente ordini nuovamente, dato che sono trascorsi alcuni mesi dall’ultimo ordine. Sebbene non esista una definizione univoca per la soglia di abbandono data questa relazione, Adobe consiglia di definire l’abbandono come il punto in cui la probabilità di decadimento attraversa il valore che è la metà del tasso di probabilità di ripetizione iniziale.
 
 Poiché il tasso di probabilità di ripetizione iniziale per questo esempio è del 60%, la data di abbandono corrisponderebbe al momento in cui la probabilità di ordine di ripetizione scende al di sotto del 60%/2 = 30%, o a circa 6 mesi. Nel 60% dei casi, la metà degli ordini è stata inoltrata entro i primi sei mesi.
 
@@ -63,7 +63,7 @@ In ultima analisi, l’obiettivo è quello di selezionare la soglia in cui ha se
 
 ## Quali domande dovrei considerare?
 
-Per aiutarti a comprendere la probabilità di ordine ripetuto applicata alla tua azienda, l’Adobe suggerisce di considerare queste domande quando esplori i tuoi dati:
+Per aiutarti a comprendere la probabilità di ripetizione degli ordini applicata alla tua azienda, Adobe consiglia di considerare queste domande quando esplori i tuoi dati:
 
 * È prevista la probabilità di ordine di ripetizione iniziale? In caso negativo, perché pensa che dovrebbe essere superiore o inferiore?
 * Vi sono forti diminuzioni nella probabilità di ordine ripetuto per mesi specifici dall&#39;ultimo ordine? In caso affermativo, sono previste tali modifiche?
@@ -78,7 +78,7 @@ Dopo aver creato l’analisi di cui sopra e aver determinato una soglia di abban
 
 Se offri più di un prodotto, probabilmente ti chiedi in che modo i clienti che acquistano un prodotto specifico si comportano in modo diverso nel tempo rispetto ad altri clienti. Vuoi saperne di più? Consulta questa esercitazione per esplorare il comportamento di acquisto nel corso del ciclo di vita delle coorti di clienti in base a prodotti specifici acquistati.
 
-Questa best practice è fornita da [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per ulteriori informazioni.
+Questa best practice è fornita da [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per ulteriori informazioni.
 
 ### Correlato
 

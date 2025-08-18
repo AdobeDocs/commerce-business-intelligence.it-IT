@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Hai ricercato il tuo pubblico, creato la tua campagna, investito in alcuni canali di marketing. Ora che è passato un po&#39; di tempo, come stanno andando quei canali? Quale canale ha attirato il maggior numero di nuovi utenti? Qual è la fonte che ha contribuito maggiormente al fatturato totale?
 
-Con [!DNL Adobe Commerce Intelligence], puoi segmentare facilmente i ricavi e gli utenti per origine di riferimento, che corrisponda a [[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en) o a campi dati personalizzati. Questa segmentazione ti consente di trovare i canali con le prestazioni migliori e di investire meglio nel budget di marketing.
+Con [!DNL Adobe Commerce Intelligence], puoi segmentare facilmente i ricavi e gli utenti per origine di riferimento, che corrisponda a [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) o a campi dati personalizzati. Questa segmentazione ti consente di trovare i canali con le prestazioni migliori e di investire meglio nel budget di marketing.
 
 Questo argomento esplora alcuni rapporti che puoi utilizzare per scoprire i tuoi canali di marketing più importanti:
 
@@ -33,7 +33,7 @@ Per generare le analisi in questo argomento, devi accedere ai dati di origine di
 
 La valutazione delle prestazioni delle origini di riferimento è fondamentale per determinare i canali più importanti. Questo rapporto mostra il numero di utenti appena registrati, per origine di acquisizione, nel tempo, consentendo in tal modo di tenere traccia delle prestazioni delle origini di riferimento nell’acquisizione di nuovi utenti registrati.
 
-Per creare il report nel [Report Builder](../../tutorials/using-visual-report-builder.md), aggiungere al report la metrica **Nuovi utenti** (o una metrica equivalente che conta il numero di nuovi utenti nel tempo). Quindi, effettua le seguenti operazioni:
+Per creare il report in [Report Builder](../../tutorials/using-visual-report-builder.md), aggiungere al report la metrica **Nuovi utenti** (o una metrica equivalente che conta il numero di nuovi utenti nel tempo). Quindi, effettua le seguenti operazioni:
 
 1. Impostare [!UICONTROL Time Period] sul periodo di registrazione che si desidera analizzare.
 1. Imposta [!UICONTROL Interval] su mensile.
@@ -48,7 +48,7 @@ Di seguito è riportata una procedura dettagliata:
 
 Individuare i canali che portano nuovi utenti è importante, ma quanto sono importanti in generale queste referenze? Questo rapporto mostra i ricavi medi nel corso della vita degli utenti da fonti di acquisizione specifiche nel tempo. In altre parole, questo consente di vedere se gli utenti acquisiti da una particolare origine spendono di più con te nel corso della loro vita rispetto a un gruppo di utenti acquisiti da un’origine diversa.
 
-Per creare questo report nel Report Builder, aggiungi al report la metrica **Ricavi medi vita**. Quindi, effettua le seguenti operazioni:
+Per creare questo report in Report Builder, aggiungi al report la metrica **Ricavi medi vita**. Quindi, effettua le seguenti operazioni:
 
 1. Impostare [!UICONTROL Time Period] sul periodo di tempo da analizzare.
 1. Imposta [!UICONTROL Interval] su mensile.
@@ -65,7 +65,7 @@ In questo esempio vengono esaminati solo i ricavi relativi al ciclo di vita, ma 
 
 Per avere un’idea migliore di quanto denaro spendono gli utenti da una specifica origine di acquisizione, puoi creare un rapporto che considera il loro valore medio dell’ordine. Questo consente di monitorare se gli utenti acquisiti da una particolare origine spendono di più per ordine rispetto agli utenti di un’altra origine.
 
-Per creare questo report nel Report Builder, aggiungere la metrica **Valore medio ordine**, quindi eseguire le operazioni seguenti:
+Per creare questo report in Report Builder, aggiungere la metrica **Valore medio ordine**, quindi eseguire le operazioni seguenti:
 
 1. Impostare [!UICONTROL Time Period] sul periodo di registrazione che si desidera analizzare.
 1. Imposta [!UICONTROL Time Interval] su mensile.
@@ -80,7 +80,7 @@ Di seguito è riportata una procedura dettagliata:
 
 L’analisi dei ricavi nel ciclo di vita che è stata trattata in precedenza consente di esaminare i ricavi medi nel ciclo di vita degli utenti acquisiti da origini diverse. Ma cosa succede per i ricavi totali nel ciclo di vita? Questo rapporto ti consente di identificare la quantità complessiva di ricavi generati dagli utenti registrati durante un periodo di tempo specifico e da un’origine specifica.
 
-Per creare questo report nel Report Builder, aggiungere la metrica `Revenue by user registration date`. Se non hai già [creato questa metrica](../../data-user/reports/ess-manage-data-metrics.md), puoi replicare la metrica `Revenue` e modificare `time stamp` in `creation date` dell&#39;utente. Dopo aver aggiunto la metrica, effettua le seguenti operazioni:
+Per creare il report in Report Builder, aggiungere la metrica `Revenue by user registration date`. Se non hai già [creato questa metrica](../../data-user/reports/ess-manage-data-metrics.md), puoi replicare la metrica `Revenue` e modificare `time stamp` in `creation date` dell&#39;utente. Dopo aver aggiunto la metrica, effettua le seguenti operazioni:
 
 1. Impostare [!UICONTROL Time Period] sul periodo di registrazione che si desidera analizzare.
 1. Imposta [!UICONTROL Time Interval] su mensile.
@@ -95,7 +95,7 @@ Di seguito è riportata una procedura dettagliata:
 
 Il rapporto Valore medio ordine mostra, in media, quanti utenti acquisiti da una determinata origine spendono quando si effettua un ordine. Questo rapporto, tuttavia, non mostra se gli stessi utenti sono clienti frequenti. Tuttavia, con la funzione Ripeti ordini da parte delle origini utenti, è possibile verificare se gli utenti di una determinata origine effettuano acquisti più o meno ripetuti.
 
-Per creare questo report nel [Report Builder](../../tutorials/using-visual-report-builder.md), aggiungere la metrica **Numero di ordini**, quindi eseguire le operazioni seguenti:
+Per creare questo report in [Report Builder](../../tutorials/using-visual-report-builder.md), aggiungere la metrica **Numero di ordini**, quindi eseguire le operazioni seguenti:
 
 1. Impostare [!UICONTROL Time Period] sul periodo di registrazione che si desidera analizzare.
 1. Imposta [!UICONTROL Time Interval] su mensile.

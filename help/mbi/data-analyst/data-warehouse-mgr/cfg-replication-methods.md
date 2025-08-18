@@ -15,7 +15,7 @@ ht-degree: 0%
 
 I metodi `Replication` e le [verifiche](../data-warehouse-mgr/cfg-data-rechecks.md) vengono utilizzati per identificare dati nuovi o aggiornati nelle tabelle del database. Impostarle correttamente è fondamentale per garantire sia la precisione dei dati che tempi di aggiornamento ottimizzati. Questo argomento si concentra sui metodi di replica.
 
-Quando vengono sincronizzate nuove tabelle in [Gestione Date Warehouse](../data-warehouse-mgr/tour-dwm.md), viene scelto automaticamente un metodo di replica per la tabella. I vari metodi di replica, l&#39;organizzazione delle tabelle e il comportamento dei dati delle tabelle consentono di scegliere il metodo di replica più adatto alle tabelle.
+Quando vengono sincronizzate nuove tabelle in [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md), viene scelto automaticamente un metodo di replica per la tabella. I vari metodi di replica, l&#39;organizzazione delle tabelle e il comportamento dei dati delle tabelle consentono di scegliere il metodo di replica più adatto alle tabelle.
 
 ## Quali sono i metodi di replica?
 
@@ -23,7 +23,7 @@ I metodi `Replication` rientrano in tre gruppi: `Incremental`, `Full Table` e `P
 
 [**[!UICONTROL Incremental Replication]**](#incremental) significa che [!DNL Commerce Intelligence] replica solo dati nuovi o aggiornati a ogni tentativo di replica. Poiché questi metodi riducono notevolmente la latenza, Adobe consiglia di utilizzarla ove possibile.
 
-[**[!UICONTROL Full Table Replication]**](#fulltable) significa che [!DNL Commerce Intelligence] replica l&#39;intero contenuto di una tabella a ogni tentativo di replica. A causa della quantità potenzialmente elevata di dati da replicare, questi metodi possono aumentare la latenza e i tempi di aggiornamento. Se una tabella contiene colonne con marca temporale o datetime, l&#39;Adobe consiglia di utilizzare un metodo Incremental.
+[**[!UICONTROL Full Table Replication]**](#fulltable) significa che [!DNL Commerce Intelligence] replica l&#39;intero contenuto di una tabella a ogni tentativo di replica. A causa della quantità potenzialmente elevata di dati da replicare, questi metodi possono aumentare la latenza e i tempi di aggiornamento. Se una tabella contiene colonne con marca temporale o datetime, Adobe consiglia di utilizzare un metodo Incremental.
 
 **[!UICONTROL Paused]** indica che la replica per la tabella è stata interrotta o sospesa. [!DNL Commerce Intelligence] non verifica la presenza di dati nuovi o aggiornati durante un ciclo di aggiornamento. Ciò significa che non viene replicato alcun dato da una tabella con questo metodo di replica.
 
@@ -39,9 +39,9 @@ Il metodo di replica `Modified At` utilizza una colonna datetime, che viene comp
 
 Oltre a questi criteri, Adobe consiglia di **indicizzare** la colonna `datetime` utilizzata per la replica `Modified At`, in quanto consente di ottimizzare la velocità di replica.
 
-Durante l&#39;esecuzione dell&#39;aggiornamento, i dati nuovi o modificati vengono identificati ricercando le righe con un valore nella colonna `datetime` che si è verificato dopo l&#39;aggiornamento più recente. Quando vengono rilevate nuove righe, queste vengono replicate nella Data Warehouse. Le eventuali righe presenti in [Gestione Date Warehouse](../data-warehouse-mgr/tour-dwm.md) vengono sovrascritte con i valori di database correnti.
+Durante l&#39;esecuzione dell&#39;aggiornamento, i dati nuovi o modificati vengono identificati ricercando le righe con un valore nella colonna `datetime` che si è verificato dopo l&#39;aggiornamento più recente. Quando vengono rilevate nuove righe, queste vengono replicate nel Data Warehouse. Le eventuali righe presenti in [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) vengono sovrascritte con i valori di database correnti.
 
-Ad esempio, una tabella può avere una colonna denominata `modified\_at` che indica l&#39;ultima modifica dei dati. Se l&#39;aggiornamento più recente è stato eseguito martedì a mezzogiorno, verranno cercate tutte le righe con un valore `modified\_at` maggiore di martedì a mezzogiorno. Tutte le righe individuate che sono state create o modificate a partire da mezzogiorno di martedì vengono replicate nella Data Warehouse.
+Ad esempio, una tabella può avere una colonna denominata `modified\_at` che indica l&#39;ultima modifica dei dati. Se l&#39;aggiornamento più recente è stato eseguito martedì a mezzogiorno, verranno cercate tutte le righe con un valore `modified\_at` maggiore di martedì a mezzogiorno. Tutte le righe individuate create o modificate a partire da mezzogiorno di martedì vengono replicate in Data Warehouse.
 
 **Lo sapevi?**
 Anche se il database non supporta attualmente un metodo di replica di `Incremental`, è possibile [apportare modifiche al database](../../best-practices/mod-db-inc-replication.md) che consentirebbero l&#39;utilizzo di `Modified At` o `Single Auto Incrementing PK`.
@@ -58,13 +58,13 @@ Questo metodo è progettato per replicare nuovi dati da tabelle che soddisfano i
 * Il tipo di dati `primary key` è `integer`; e
 * `auto incrementing` valori chiave primaria.
 
-Quando una tabella utilizza la replica di `Single Auto Incrementing Primary Key`, i nuovi dati vengono rilevati ricercando valori di chiave primaria superiori al valore massimo corrente nella Data Warehouse. Se ad esempio il valore di chiave primaria più alto nella Data Warehouse è 500, quando viene eseguito l&#39;aggiornamento successivo verranno cercate le righe con valori di chiave primaria pari o superiori a 501.
+Quando una tabella utilizza la replica di `Single Auto Incrementing Primary Key`, i nuovi dati vengono rilevati ricercando valori di chiave primaria superiori al valore massimo corrente nel Data Warehouse. Ad esempio, se il valore di chiave primaria più alto nel Data Warehouse è 500, quando viene eseguito l’aggiornamento successivo verranno cercate le righe con valori di chiave primaria pari o superiori a 501.
 
 ### Aggiungi data
 
 Il metodo `Add Date` funziona in modo simile al metodo `Single Auto Incrementing Primary Key`. Invece di utilizzare un numero intero per la chiave primaria della tabella, questo metodo utilizza una colonna `timestamped` per verificare la presenza di nuove righe.
 
-Quando una tabella utilizza la replica `Add Date`, i nuovi dati vengono rilevati ricercando valori con marca temporale maggiori dell&#39;ultima data sincronizzata con la Data Warehouse. Ad esempio, se l’ultimo aggiornamento è stato eseguito il 20/12/2015 09:00:00, tutte le righe con una marca temporale maggiore di questa verranno contrassegnate come nuovi dati e replicate.
+Quando una tabella utilizza la replica `Add Date`, i nuovi dati vengono rilevati ricercando valori con marca temporale maggiori dell&#39;ultima data sincronizzata nel Data Warehouse. Ad esempio, se l’ultimo aggiornamento è stato eseguito il 20/12/2015 09:00:00, tutte le righe con una marca temporale maggiore di questa verranno contrassegnate come nuovi dati e replicate.
 
 >[!NOTE]
 >
@@ -97,13 +97,13 @@ Questo metodo ha lo scopo di replicare i dati da tabelle che soddisfano i seguen
 * chiavi composite (più colonne che includono la chiave primaria): le colonne utilizzate in una chiave primaria composita non possono mai avere valori null; oppure
 * valori di chiave primaria a colonna singola, numero intero, senza incremento automatico.
 
-Questo metodo non è ideale, in quanto è incredibilmente lento a causa della quantità di elaborazione che deve verificarsi per esaminare i batch e trovare le modifiche. L’Adobe consiglia di non utilizzare questo metodo, a meno che non sia impossibile apportare le modifiche necessarie per supportare gli altri metodi di replica. Se è necessario utilizzare questo metodo, i tempi di aggiornamento dovrebbero aumentare.
+Questo metodo non è ideale, in quanto è incredibilmente lento a causa della quantità di elaborazione che deve verificarsi per esaminare i batch e trovare le modifiche. Adobe consiglia di non utilizzare questo metodo, a meno che non sia impossibile apportare le modifiche necessarie per supportare gli altri metodi di replica. Se è necessario utilizzare questo metodo, i tempi di aggiornamento dovrebbero aumentare.
 
 ## Impostazione dei metodi di replica
 
-I metodi di replica sono impostati tabella per tabella. Per impostare un metodo di replica per una tabella, sono necessarie le autorizzazioni [`Admin`](../../administrator/user-management/user-management.md) in modo da poter accedere a Data Warehouse Manager.
+I metodi di replica sono impostati tabella per tabella. Per impostare un metodo di replica per una tabella, sono necessarie le autorizzazioni [`Admin`](../../administrator/user-management/user-management.md) per accedere a Data Warehouse Manager.
 
-1. Una volta in Gestione Date Warehouse, selezionare la tabella dall&#39;elenco `Synced Tables` per visualizzare lo schema della tabella.
+1. Una volta in Data Warehouse Manager, selezionare la tabella dall&#39;elenco `Synced Tables` per visualizzare lo schema della tabella.
 1. Il metodo di replica corrente è elencato sotto il nome della tabella. Per modificarlo, fai clic sul collegamento.
 1. Nel popup visualizzato, fare clic sul pulsante di opzione accanto alla replica `Incremental` o `Full Table` per selezionare un tipo di replica.
 1. Fare quindi clic sul menu a discesa **[!UICONTROL Replication Method]** per selezionare un metodo. Ad esempio, `Paused` o `Modified At`.
@@ -122,7 +122,7 @@ Osservare l&#39;intero processo:
 
 ## Ritorno a capo
 
-Per terminare, avete creato questa tabella che confronta i vari metodi di replica. È molto utile quando si seleziona un metodo per le tabelle della Data Warehouse.
+Per terminare, avete creato questa tabella che confronta i vari metodi di replica. È estremamente utile quando si seleziona un metodo per le tabelle nel Data Warehouse.
 
 | **`Method`** | **`Syncing New Data`** | **`Processing Rechecks on Large Data Sets`** | **`Handle Composite Keys?`** | **`Handle Non-Integer PKs?`** | **`Handle Non-Sequential PK Population?`** | **`Handle Row Deletion?`** |
 |-----|-----|-----|-----|-----|-----|-----|

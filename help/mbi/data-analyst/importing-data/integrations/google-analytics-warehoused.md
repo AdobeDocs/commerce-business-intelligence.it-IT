@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![](../../../assets/google-analytics-logo.png)
 
-[!DNL Google Analytics] è il servizio di analisi Web più utilizzato su Internet. L&#39;implementazione di [!DNL Google Analytics] sul sito Web consente di tenere traccia di come i visitatori utilizzano il sito, quali contenuti sono interessanti, dove i visitatori escono e altro ancora. [!DNL Google Analytics Warehoused] è un&#39;integrazione separata dall&#39;integrazione esistente di [!DNL Google Analytics]. Consente una migliore analisi grazie alla presenza di dati [!DNL Google Analytics] nella tua Data Warehouse, che è diversa dal feed live dell&#39;integrazione [!DNL Google Analytics] esistente. L&#39;analisi di queste metriche in [!DNL Commerce Intelligence], insieme ad altre parti di dati, migliora lo stato e l&#39;usabilità complessivi del sito.
+[!DNL Google Analytics] è il servizio di analisi Web più utilizzato su Internet. L&#39;implementazione di [!DNL Google Analytics] sul sito Web consente di tenere traccia di come i visitatori utilizzano il sito, quali contenuti sono interessanti, dove i visitatori escono e altro ancora. [!DNL Google Analytics Warehoused] è un&#39;integrazione separata dall&#39;integrazione esistente di [!DNL Google Analytics]. Consente una migliore analisi grazie alla presenza dei dati [!DNL Google Analytics] nel Data Warehouse, che è diverso dal feed live dell&#39;integrazione [!DNL Google Analytics] esistente. L&#39;analisi di queste metriche in [!DNL Commerce Intelligence], insieme ad altre parti di dati, migliora lo stato e l&#39;usabilità complessivi del sito.
 
 ## Differenza tra Warehouse GA e integrazione Live
 
@@ -29,13 +29,13 @@ Osserva le [!DNL Google Analytics] campagne pubblicitarie per un esempio di cosa
 
 L&#39;aspetto combinato consente di unire i dati di [!DNL Google Analytics] ad altri dati per eseguire analisi. Prendi ad esempio `Total Time On Site By Ad Campaign` dati da [!DNL Google Analytics] e unisciti a `Total Spent Per Campaign` dati da [!DNL Facebook Ads] per ottenere un quadro completo del costo del coinvolgimento.
 
-Con l&#39;integrazione di [!DNL Google Analytics Live], invece, ogni grafico [!DNL Google Analytics] è come un piccolo silo non memorizzato nella Data Warehouse.
+Con l&#39;integrazione di [!DNL Google Analytics Live], invece, ogni grafico [!DNL Google Analytics] è come un piccolo silo non memorizzato nel Data Warehouse.
 
 ## Connessione a [!DNL Google Analytics Warehoused] in corso
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] è un&#39;integrazione `Premium`. [Contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) se hai interesse ad aggiungere questa integrazione alla sottoscrizione.
+>[!DNL Google Analytics Warehoused] è un&#39;integrazione `Premium`. [Contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) se hai interesse ad aggiungere questa integrazione alla sottoscrizione.
 
 1. Passare alla pagina `Connections` in **[!UICONTROL Admin** > **Integrations]**.
 1. Fare clic su **[!UICONTROL Add an Integration]**, che si trova sul lato destro.
@@ -63,7 +63,7 @@ Per identificare l&#39;ID profilo [!DNL Google Analytics] di un particolare sito
 
 ## Documentazione correlata
 
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Connessione in corso  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analisi delle attività del sito web e dei tassi di conversione dei clienti](../../analysis/web-act-cust-conversion.md)
 * [Tieni traccia dei dati di acquisizione dell&#39;utente utilizzando  [!DNL Google Analytics] cookie](../../analysis/google-track-user-acq.md)

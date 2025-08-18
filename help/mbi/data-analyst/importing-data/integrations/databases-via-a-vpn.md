@@ -20,7 +20,7 @@ Adobe consiglia di connettere i database utilizzando `SSH tunnel`, ma è anche p
 1. [Consenti accesso all&#39;indirizzo IP  [!DNL Commerce Intelligence] ](#allowlist)
 1. [Immetti la connessione e le informazioni utente VPN in Commerce Intelligence](#finish)
 
-Oltre alle credenziali del database, è necessario immettere le credenziali per consentire a un utente VPN di completare la procedura. Qualsiasi utente VPN funziona, ma Adobe consiglia di creare un utente [!DNL Commerce Intelligence], in quanto consente di tenere traccia degli utenti nel proprio account in modo più semplice.
+Oltre alle credenziali del database, è necessario immettere le credenziali per consentire a un utente VPN di completare la procedura. Qualsiasi utente VPN funziona, ma Adobe consiglia di creare un utente [!DNL Commerce Intelligence], in quanto ti consente di tenere traccia più facilmente degli utenti sul tuo account.
 
 ## Creazione di un utente del database per [!DNL Commerce Intelligence] {#database}
 
@@ -33,7 +33,7 @@ Il processo di creazione di un utente di database varia a seconda del tipo di da
 
 ## Creazione di un utente `VPN` per [!DNL Commerce Intelligence] {#vpn}
 
-Come accennato in precedenza, qualsiasi utente `VPN` valido funziona, ma l&#39;Adobe consiglia di creare un utente solo per l&#39;utilizzo [!DNL Commerce Intelligence].
+Come accennato in precedenza, qualsiasi utente `VPN` valido funziona, ma Adobe consiglia di creare un utente solo per l&#39;utilizzo [!DNL Commerce Intelligence].
 
 ## Consenti accesso agli indirizzi IP [!DNL Commerce Intelligence] {#allowlist}
 

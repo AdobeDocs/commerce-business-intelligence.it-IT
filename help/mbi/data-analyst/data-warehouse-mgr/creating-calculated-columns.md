@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Nell’analisi dei dati, è utile consolidare i dati provenienti da origini diverse. Raggruppare i ricavi per origine di acquisizione, collegando i dati dalla tabella `orders` e i dati [!DNL Google Analytics]? Puoi raggruppare i ricavi per genere del cliente o aggiungere un attributo del cliente ai dati della transazione per la segmentazione. Questo argomento illustra come eseguire questa operazione.
 
-Prima di iniziare, Adobe consiglia di esaminare la [Guida ai tipi di colonna calcolati](../../data-analyst/data-warehouse-mgr/calc-column-types.md) per informazioni sui tipi di colonne che è possibile creare in Gestione Date Warehouse, insieme alle relative definizioni ed esempi.
+Prima di iniziare, Adobe consiglia di consultare la [Guida ai tipi di colonna calcolati](../../data-analyst/data-warehouse-mgr/calc-column-types.md) per informazioni sui tipi di colonne che è possibile creare in Data Warehouse Manager, insieme alle relative definizioni ed esempi.
 
 1. Per iniziare, fare clic su **[!DNL Manage Data > Data Warehouse]**.
 

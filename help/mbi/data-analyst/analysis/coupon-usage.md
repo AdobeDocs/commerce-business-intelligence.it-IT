@@ -43,7 +43,7 @@ Questa metrica mostra i ricavi netti ottenuti dagli ordini che includono un part
 
 ### Percentuale scontata
 
-Questa mostra la quota di reddito lordo che viene compensata dagli sconti. Per i coupon che offrono uno sconto percentuale, questo valore è già noto (ad esempio, uno sconto del 10%). Nonostante ciò, questa misura fornisce informazioni approfondite e un metodo di confronto per le cedole che sono uno sconto fisso in dollari.
+Questa mostra la quota di reddito lordo che viene compensata dagli sconti. Per i coupon che offrono uno sconto percentuale, questo valore è già noto (ad esempio, uno sconto del 10%). Nonostante ciò, questa misura fornisce insight e un metodo di confronto per i coupon che sono uno sconto fisso sul dollaro.
 
 ### Valore medio netto dell&#39;ordine
 
@@ -109,7 +109,7 @@ Per i ricavi medi nel ciclo di vita, puoi vedere che i ricavi medi nel ciclo di 
 
 ## Che altro posso analizzare? {#otheranalyses}
 
-Le analisi menzionate in questo argomento possono fornirti informazioni utili su come i tuoi clienti utilizzano i coupon, ma sono disponibili molte altre analisi che ti consentono di approfondire un po’.
+Le analisi menzionate in questo argomento possono fornire preziose informazioni su insight relative al modo in cui i clienti utilizzano i coupon, ma esistono molte altre analisi che consentono di approfondire un po’ la questione.
 
 **Puoi analizzare le acquisizioni dei clienti dai coupon.**
 

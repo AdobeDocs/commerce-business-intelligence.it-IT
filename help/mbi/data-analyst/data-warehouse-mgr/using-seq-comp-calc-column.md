@@ -31,7 +31,7 @@ Tipo di colonna `Sequential Comparison`: trova la differenza tra eventi consecut
 | **`2`** | B | 00:30:00 01/01/2015 | NULL |
 | **`3`** | A | 01/01/02/00:00: | 7200 |
 | **`4`** | A | 02/01/2015 13/00:00: | 126000 |
-| **`5`** | B | 03/01/2015 13/0&rbrace;:00: | 217800 |
+| **`5`** | B | 03/01/2015 13/0}:00: | 217800 |
 
 Nell&#39;esempio precedente, `Seconds since owner's previous event` è la colonna calcolata `Sequential Comparison`. Per `owner_id = A`, identifica innanzitutto una sequenza basata sulla colonna `timestamp`, quindi sottrae il `timestamp` dell&#39;evento precedente dalla marca temporale dell&#39;evento corrente. Nella terza riga della tabella, la seconda riga per `owner_id A`, il valore di `Seconds since owner's previous event` è il numero di secondi tra &#39;2015-01-01 02:00&#39; e &#39;2015-01-01 00:00:00&#39;. Questa differenza è uguale a due ore = 7200 secondi.
 

@@ -55,46 +55,46 @@ Nell’analisi dei target, è utile disporre di una combinazione di valori stati
 
 * **Ricavi rimanenti per raggiungere la destinazione**
 * Metrica `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL Metric]: `Revenue`
 
 * Metrica `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
-* &#x200B;
+* 
   [!UICONTROL Formula]: `(B-A)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: (qualsiasi periodo di tempo rilevante si desideri)
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Destinazioni ricavi**
 * Metrica `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL Metric]: `Revenue`
 
 * Metrica `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * Metrica `C`: `Revenue (amount change since previous year)` (nascondere)
-* &#x200B;
+* 
   [!UICONTROL Metric]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (questo mese l&#39;anno scorso)
-* &#x200B;
+* 
   [!UICONTROL Formula]: `(A-C)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Currency`
 
 * Disattiva `Multiple Y-Axes`
 * [!UICONTROL Time period]: (qualunque sia il periodo di tempo rilevante desiderato)*
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 

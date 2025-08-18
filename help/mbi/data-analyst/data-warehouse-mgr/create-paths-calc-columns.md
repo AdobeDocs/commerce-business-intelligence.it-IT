@@ -15,12 +15,12 @@ ht-degree: 0%
 
 ## Aggiornamento colonne calcolate
 
-Quando [crei colonne calcolate](../data-warehouse-mgr/creating-calculated-columns.md) nella Data Warehouse, ti viene chiesto di definire un percorso che descriva il modo in cui la tabella su cui stai creando una colonna è correlata alla tabella da cui stai richiamando le informazioni. Per creare correttamente un percorso, è necessario conoscere due cose:
+Quando [crei colonne calcolate](../data-warehouse-mgr/creating-calculated-columns.md) nel Data Warehouse, ti viene chiesto di definire un percorso che descriva il modo in cui la tabella su cui stai creando una colonna è correlata alla tabella da cui stai richiamando le informazioni. Per creare correttamente un percorso, è necessario conoscere due cose:
 
 1. Correlazione tra le tabelle dei database
 1. Chiavi primarie ed esterne che definiscono questa relazione
 
-Se si conoscono queste informazioni, è possibile creare facilmente un percorso seguendo le istruzioni riportate in questo argomento. Potresti chiedere a un esperto tecnico della tua organizzazione o contattare il [team Servizi professionali](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Se si conoscono queste informazioni, è possibile creare facilmente un percorso seguendo le istruzioni riportate in questo argomento. Potresti chiedere a un esperto tecnico della tua organizzazione o contattare il [team Servizi professionali](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Aggiornamenti relativi alle relazioni tra tabelle e ai tipi di chiave {#refresher}
 
@@ -48,7 +48,7 @@ Una colonna `Foreign Key` è una colonna creata all&#39;interno di una tabella c
 
 ## Creazione di un percorso {#createpath}
 
-Durante la creazione di una colonna nella Data Warehouse, è necessario definire il percorso che porta le informazioni da una tabella a un&#39;altra. A volte i percorsi vengono precompilati perché esiste un percorso tra le tabelle, ma se ciò non accade, è necessario crearne uno.
+Quando crei una colonna nel Data Warehouse, devi definire il percorso che porta le informazioni da una tabella a un’altra. A volte i percorsi vengono precompilati perché esiste un percorso tra le tabelle, ma se ciò non accade, è necessario crearne uno.
 
 Utilizza la relazione tra **clienti** e **ordini** per mostrarti come viene eseguita. Suddiviso:
 
@@ -79,7 +79,7 @@ Ora puoi creare il percorso.
 
 * **[!DNL Commerce Intelligence]non riesce a indovinare le relazioni chiave primaria/esterna**. Non desideri introdurre dati errati nell’account, pertanto la creazione dei percorsi deve essere eseguita manualmente.
 
-* **Al momento è possibile specificare percorsi solo tra due tabelle diverse**. La logica che si sta tentando di ricreare coinvolge più di due tabelle? Potrebbe quindi essere utile (1) unire le colonne prima a una tabella intermedia, quindi alla tabella &quot;destinazione finale&quot;, oppure (2) consultare il [team Professional Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per trovare il miglior approccio ai tuoi obiettivi.
+* **Al momento è possibile specificare percorsi solo tra due tabelle diverse**. La logica che si sta tentando di ricreare coinvolge più di due tabelle? Potrebbe quindi essere utile (1) unire le colonne prima a una tabella intermedia, quindi alla tabella &quot;destinazione finale&quot;, oppure (2) consultare il [team Professional Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per trovare il miglior approccio ai tuoi obiettivi.
 
 * **Una colonna può essere solo il riferimento di chiave esterna per UN percorso alla volta**. Ad esempio, se `order_items.order_id` punta a `orders.id`, `order_items.order_id` non può puntare ad altro.
 
@@ -89,11 +89,11 @@ Se non riesci a creare una colonna calcolata a causa di una o più delle limitaz
 
 ## Eliminare un percorso di colonna calcolato {#delete}
 
-Hai creato un percorso errato nella tua Data Warehouse? O forse stai facendo una piccola pulizia di primavera e vuoi riordinare? Se devi eliminare un percorso dal tuo account, puoi [inviare un ticket agli analisti del supporto Adobe](../../guide-overview.md#Submitting-a-Support-Ticket). **Assicurarsi di includere il nome del percorso!**
+Hai creato un percorso errato nel Data Warehouse? O forse stai facendo una piccola pulizia di primavera e vuoi riordinare? Se devi eliminare un percorso dal tuo account, puoi [inviare un ticket agli analisti del supporto Adobe](../../guide-overview.md#Submitting-a-Support-Ticket). **Assicurarsi di includere il nome del percorso!**
 
 ## Ritorno a capo {#wrapup}
 
-Ora che hai familiarità con la creazione di percorsi per le colonne calcolate nella Data Warehouse. Se non sei ancora sicuro di un percorso particolare, ricorda che puoi sempre fare clic su **[!UICONTROL Support]** nel tuo account [!DNL Commerce Intelligence] per ottenere assistenza.
+Ora che hai familiarità con la creazione di percorsi per le colonne calcolate nel Data Warehouse. Se non sei ancora sicuro di un percorso particolare, ricorda che puoi sempre fare clic su **[!UICONTROL Support]** nel tuo account [!DNL Commerce Intelligence] per ottenere assistenza.
 
 ## Correlato
 

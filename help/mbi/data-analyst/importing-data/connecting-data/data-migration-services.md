@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Migrazione dei dati
 
-La migrazione a un nuovo schema di database, server o database di reporting non deve essere troppo complessa. Il [[!DNL Adobe] team dei servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) offre assistenza per la migrazione.
+La migrazione a un nuovo schema di database, server o database di reporting non deve essere troppo complessa. Il [[!DNL Adobe] team dei servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) offre assistenza per la migrazione.
 
 Per garantire una transizione quanto più fluida possibile, è necessario essere il più dettagliati possibile durante l’invio della richiesta di migrazione. Questo argomento contiene tutto il necessario per inviare una richiesta e iniziare a eseguire la migrazione. Fornendoci un quadro completo delle tue esigenze, assicurati che il tuo progetto abbia un ambito appropriato e che la stima sia accurata.
 
@@ -45,13 +45,13 @@ Per completare correttamente questo tipo di migrazione, le colonne di dati esist
 
 Se ti senti a tuo agio a fare da solo la corrispondenza, segui queste istruzioni e allega alla tua richiesta il foglio di calcolo finito:
 
-1. Esaminare tutte le tabelle e le colonne attualmente sincronizzate con la Data Warehouse (**[!UICONTROL Manage Data** > **Data Warehouse]**).
+1. Esaminare tutte le tabelle e le colonne attualmente sincronizzate con il Data Warehouse (**[!UICONTROL Manage Data** > **Data Warehouse]**).
 
 1. In un foglio di calcolo creare una scheda per ogni tabella da migrare al nuovo database.
 
-1. In ogni scheda, crea una colonna per tutte le colonne esistenti da migrare. L&#39;Adobe consiglia di denominarlo con un nome simile a `Existing column name`.
+1. In ogni scheda, crea una colonna per tutte le colonne esistenti da migrare. Adobe consiglia di denominarlo in modo analogo a `Existing column name`.
 
-1. È inoltre necessario creare un&#39;altra colonna per gli equivalenti di colonna nel nuovo database in ogni scheda del foglio di calcolo. L&#39;Adobe consiglia di denominare la colonna in modo analogo a `New column name`.
+1. È inoltre necessario creare un&#39;altra colonna per gli equivalenti di colonna nel nuovo database in ogni scheda del foglio di calcolo. Adobe consiglia di denominare la colonna in modo analogo a `New column name`.
 
 1. Inserire le colonne esistenti e le relative equivalenti. Se una colonna esistente non ha un nuovo equivalente, immettere `N/A`.
 
@@ -67,7 +67,7 @@ Ecco un esempio:
 
 ## Come si invia una richiesta? {#submitreq}
 
-Puoi contattarci inviando [una richiesta di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Puoi contattarci inviando [una richiesta di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 Se hai seguito i passaggi della sezione precedente per creare il foglio di calcolo corrispondente alle colonne, non dimenticare di allegarlo.
 

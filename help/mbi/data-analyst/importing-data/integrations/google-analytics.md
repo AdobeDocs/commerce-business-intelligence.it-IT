@@ -1,6 +1,6 @@
 ---
 title: Connetti Google Analytics
-description: Scopri come connettere le Google Analytics con  [!DNL Commerce Intelligence].
+description: Scopri come connettere Google Analytics con  [!DNL Commerce Intelligence].
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -57,7 +57,7 @@ Per identificare l&#39;ID profilo [!DNL Google Analytics] di un particolare sito
 
 ## Correlato:
 
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Connessione in corso  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analisi delle attività del sito web e dei tassi di conversione dei clienti](../../analysis/web-act-cust-conversion.md)
 * [Tieni traccia dei dati di acquisizione dell&#39;utente utilizzando  [!DNL Google Analytics] cookie](../../analysis/google-track-user-acq.md)

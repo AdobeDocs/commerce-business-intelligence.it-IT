@@ -21,8 +21,8 @@ Le colonne non dipendono dai cicli di aggiornamento, pertanto non è più necess
 
 >[!IMPORTANT]
 >
->Le colonne create con l&#39;editor [!DNL SQL] non vengono salvate nella Data Warehouse. È sempre possibile accedere alla query contenente la colonna, ma se si desidera utilizzare la colonna in più report, è necessario ricrearla nella query per ogni report. Ciò significa che le colonne create con l&#39;editor [!DNL SQL] non possono essere utilizzate nel [!DNL Report Builder] tradizionale.
+>Le colonne create con l&#39;editor [!DNL SQL] non vengono salvate nel Data Warehouse. È sempre possibile accedere alla query contenente la colonna, ma se si desidera utilizzare la colonna in più report, è necessario ricrearla nella query per ogni report. Ciò significa che le colonne create con l&#39;editor [!DNL SQL] non possono essere utilizzate nel [!DNL Report Builder] tradizionale.
 
-## Colonne in Gestione Date Warehouse
+## Colonne in Data Warehouse Manager
 
-Le colonne dipendono dai cicli di aggiornamento, pertanto è necessario completare un ciclo completo prima di modificarle. Queste colonne vengono salvate in Gestione Date Warehouse e possono essere utilizzate nelle [!DNL Report Builder] o [!DNL SQL Report Builder] tradizionali.
+Le colonne dipendono dai cicli di aggiornamento, pertanto è necessario completare un ciclo completo prima di modificarle. Queste colonne vengono salvate in Data Warehouse Manager e possono essere utilizzate nelle [!DNL Report Builder] o [!DNL SQL Report Builder] tradizionali.

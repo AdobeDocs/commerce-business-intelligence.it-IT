@@ -25,11 +25,11 @@ Se si aggiunge un filtro che utilizza una dimensione non uguale per tutti gli or
 
 In alcuni casi, è possibile trasformare una dimensione `order-specific` in una dimensione `user-specific` da aggiungere come filtro nel grafico `Repeat Order Probability`. In questi casi, viene restituito l&#39;attributo order del primo ordine o dell&#39;ultimo ordine di un utente, ad esempio il nome dell&#39;area di primo ordine dell&#39;utente.
 
-Se desideri creare una nuova dimensione, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Se desideri creare una nuova dimensione, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Confronto della probabilità di ripetizione degli ordini con attributi diversi
 
-Adobe Per confrontare il numero di acquisti ripetuti per diversi attributi dell&#39;ordine (ad esempio, l&#39;ordine `region`), si consiglia di creare un grafico simile a `Users by lifetime number of orders`. Questo mostra il numero di utenti che hanno effettuato 1, 2, 3,... numero di ordini a vita e aggiungi il filtro a livello di ordine. (in altre parole, questo può mostrare se gli utenti effettuano più o meno acquisti ripetuti in una regione o in un&#39;altra.)
+Per confrontare il numero di acquisti ripetuti per diversi attributi dell&#39;ordine (ad esempio, l&#39;ordine `region`), Adobe consiglia di creare un grafico simile a `Users by lifetime number of orders`. Questo mostra il numero di utenti che hanno effettuato 1, 2, 3,... numero di ordini a vita e aggiungi il filtro a livello di ordine. (in altre parole, questo può mostrare se gli utenti effettuano più o meno acquisti ripetuti in una regione o in un&#39;altra.)
 
 I numeri che compongono tale grafico possono quindi essere esportati in Excel per calcolare il rapporto di probabilità dell&#39;ordine di ripetizione. Per vedere la probabilità dei clienti che hanno effettuato `(x)` ordini di effettuare `(x+1)` ordini, è sufficiente` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` acquisti.
 

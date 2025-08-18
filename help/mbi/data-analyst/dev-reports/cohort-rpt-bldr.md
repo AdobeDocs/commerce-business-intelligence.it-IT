@@ -59,7 +59,7 @@ Verrà aperta una nuova finestra per configurare i dettagli del report `Cohort`.
 1. La quantità minima di dati che ogni `cohort` deve contenere
 1. Intervallo di tempo dopo `cohort` occorrenza
 
-#### 1. Raggruppamento di `cohorts`
+#### &#x200B;1. Raggruppamento di `cohorts`
 
 `Cohorts` sono raggruppati per marca temporale, ad esempio **data di registrazione** o **data primo ordine**.
 
@@ -67,17 +67,17 @@ Verrà aperta una nuova finestra per configurare i dettagli del report `Cohort`.
 >
 >Non è possibile utilizzare la stessa marca temporale su cui è basata la metrica per la data `cohort`. Per un&#39;analisi che richiede questo, puoi utilizzare invece `Standard report builder`.
 
-#### 2. Periodo di tempo `Cohort`
+#### &#x200B;2. Periodo di tempo `Cohort`
 
 Scegliere il periodo di tempo in base al quale raggruppare `cohorts`. In altre parole, quale parte del timestamp selezionato in precedenza è più importante: `week`, `month`, `quarter` o `year`? Il rapporto visualizza i dati in qualsiasi intervallo selezionato qui
 
-#### 3. e 4. Imposta il numero di `cohorts` da visualizzare e la quantità di dati che ogni `cohort` deve avere
+#### &#x200B;3. e 4. Imposta il numero di `cohorts` da visualizzare e la quantità di dati che ogni `cohort` deve avere
 
 Questi parametri consentono di visualizzare solo i `cohorts` che ti interessano e la pratica casella `Preview` nella parte inferiore della finestra mostra esattamente le coorti visualizzate nel report.
 
 Per impostazione predefinita, `cohort` corrente non è incluso a meno che non si modifichi la quantità minima di dati richiesti per ogni `cohort` in `0`. In questo caso, `cohort` per il periodo di tempo corrente include solo dati parziali.
 
-#### 5. Intervallo di tempo dopo `Cohort` occorrenza
+#### &#x200B;5. Intervallo di tempo dopo `Cohort` occorrenza
 
 Questa funzionalità consente di impostare l&#39;intervallo di tempo dei dati visualizzati per `cohorts` selezionato. Ad esempio, se si desidera visualizzare 24 `cohorts` mensili in base a `customer's first order date`, ma si è interessati solo ai primi 3 mesi di dati per ogni `cohort`, è possibile impostare `number of cohorts to view` su `24` e `time range after cohort occurrence` su `3`.
 
@@ -109,7 +109,7 @@ Di seguito sono riportate le istruzioni specifiche della versione legacy di `Coh
 
 `Cohort` analisi in azione. In questo caso, puoi vedere i ricavi crescere nel tempo sia cumulativamente che per utente.
 
-Questa sezione illustra come creare la propria analisi di `cohort`. Per esempi (e GIF animati che illustrano il processo), consulta la [sezione Esempi](#examples) di questo argomento.
+Questa sezione illustra come creare la propria analisi di `cohort`. Per esempi (e file GIF animati che illustrano il processo), consulta la [sezione Esempi](#examples) di questo argomento.
 
 1. Fai clic su **[!UICONTROL Report Builder]** nella scheda a sinistra o su **[!UICONTROL Add Report** > **Create Report]** in qualsiasi dashboard.
 
@@ -213,4 +213,4 @@ Questo analizza il contributo aggregato `cohort` in un momento specifico in un c
 
 ## Ritorno a capo {#finish}
 
-`Cohort Report Builder` è ottimizzato per il raggruppamento degli utenti in base a un `cohort date` comune. Potrebbe essere utile raggruppare gli utenti per un&#39;attività o un attributo simile. L&#39;Adobe consiglia di consultare [questa esercitazione sulle coorti qualitative](../dev-reports/create-qual-cohort-analysis.md) per iniziare.
+`Cohort Report Builder` è ottimizzato per il raggruppamento degli utenti in base a un `cohort date` comune. Potrebbe essere utile raggruppare gli utenti per un&#39;attività o un attributo simile. Adobe consiglia di consultare [questo tutorial sulle coorti qualitative](../dev-reports/create-qual-cohort-analysis.md) per iniziare.

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Quando si valuta la relazione tra due determinate tabelle, è necessario comprendere il numero di occorrenze possibili in una tabella che potrebbero appartenere a un&#39;entità in un&#39;altra e viceversa. Utilizzare ad esempio una tabella `users` e una tabella `orders`. In questo caso, vuoi sapere quanti **ordini** ha effettuato un dato **utente** e quanti possibili **utenti** e **ordine** possono appartenere a.
 
-Comprendere le relazioni è fondamentale per mantenere l&#39;integrità dei dati, in quanto influisce sulla precisione delle [colonne calcolate](../data-warehouse-mgr/creating-calculated-columns.md) e delle [dimensioni](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Per ulteriori informazioni, vedere [tipi di relazione](#types) e [come valutare le tabelle nella Data Warehouse.](#eval)
+Comprendere le relazioni è fondamentale per mantenere l&#39;integrità dei dati, in quanto influisce sulla precisione delle [colonne calcolate](../data-warehouse-mgr/creating-calculated-columns.md) e delle [dimensioni](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Per ulteriori informazioni, vedere [tipi di relazione](#types) e [come valutare le tabelle nel Data Warehouse.](#eval)
 
 ## Tipi di relazione {#types}
 
@@ -49,9 +49,9 @@ Pensa alla relazione tra **prodotti** e **categorie**: un prodotto può apparten
 
 ## Valutazione delle tabelle {#eval}
 
-Dati i tipi di relazioni esistenti tra le tabelle, è possibile apprendere come valutare le tabelle nella Data Warehouse. Poiché queste relazioni determinano il modo in cui vengono definite le colonne calcolate di più tabelle, è importante comprendere come identificare le relazioni tra tabelle e quale lato - `one` o `many` - appartiene alla tabella.
+Dati i tipi di relazioni esistenti tra le tabelle, è possibile apprendere come valutare le tabelle nel Data Warehouse. Poiché queste relazioni determinano il modo in cui vengono definite le colonne calcolate di più tabelle, è importante comprendere come identificare le relazioni tra tabelle e quale lato - `one` o `many` - appartiene alla tabella.
 
-Esistono due metodi per valutare le relazioni di una determinata coppia di tabelle all’interno della Data Warehouse. Il primo metodo utilizza un [framework concettuale](#concept) che considera il modo in cui le entità della tabella interagiscono tra loro. Il secondo metodo utilizza lo schema della [tabella](#schema).
+Esistono due metodi per valutare le relazioni di una determinata coppia di tabelle all’interno del Data Warehouse. Il primo metodo utilizza un [framework concettuale](#concept) che considera il modo in cui le entità della tabella interagiscono tra loro. Il secondo metodo utilizza lo schema della [tabella](#schema).
 
 ### Utilizzo del framework concettuale {#concept}
 
@@ -65,7 +65,7 @@ Per utilizzare questo metodo:
 
 1. Identifica uno o più verbi che descrivono il modo in cui queste entità interagiscono. Ad esempio, quando si confrontano gli utenti con gli ordini, gli utenti &quot;inseriscono&quot; gli ordini. Nell&#39;altra direzione, gli ordini &quot;appartengono&quot; agli utenti.
 
-Questo tipo di framework può essere applicato a qualsiasi coppia di tabelle nella Data Warehouse. Questo consente di identificare facilmente il tipo di relazione, la tabella che rappresenta un lato e la tabella che rappresenta un lato molti.
+Questo tipo di framework può essere applicato a qualsiasi coppia di tabelle nel Data Warehouse. Questo consente di identificare facilmente il tipo di relazione, la tabella che rappresenta un lato e la tabella che rappresenta un lato molti.
 
 Una volta identificata la terminologia che descrive il modo in cui le due tabelle interagiscono, inquadrare l’interazione in entrambe le direzioni considerando come una determinata istanza della prima entità si relaziona alla seconda. Di seguito sono riportati alcuni esempi di ciascuna relazione:
 
@@ -129,4 +129,4 @@ Se si verifica una delle condizioni seguenti, la relazione è `many-to-many`:
 
 ## Passaggi successivi
 
-Valutare correttamente le relazioni tra tabelle è fondamentale per modellare accuratamente i dati. Dopo aver compreso il modo in cui le tabelle sono correlate tra loro, vedere [le operazioni possibili con Gestione Date Warehouse](../data-warehouse-mgr/tour-dwm.md).
+Valutare correttamente le relazioni tra tabelle è fondamentale per modellare accuratamente i dati. Dopo aver compreso le relazioni tra le tabelle, vedere [le operazioni possibili con Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md).

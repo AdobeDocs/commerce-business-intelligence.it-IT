@@ -34,7 +34,7 @@ Questa tabella contiene le informazioni chiave su ciascun cliente, ad esempio un
 
 Se alcuni di questi calcoli non sono attualmente presenti nel database, qualsiasi utente amministratore del tuo account può generarli. Inoltre, assicurati che queste dimensioni siano raggruppabili per tutte le metriche applicabili.
 
-**Dimension**
+**Dimensioni**
 
 * **[!UICONTROL Entity_id]**: un identificatore univoco per ciascun cliente. Può trattarsi anche di un numero cliente univoco o di un indirizzo e-mail del cliente, che deve fungere da chiave di riferimento per la tabella dell’ordine.
 * **[!UICONTROL Created_at]**: la data di creazione e di aggiunta dell&#39;account del cliente al database.
@@ -46,7 +46,7 @@ Se alcuni di questi calcoli non sono attualmente presenti nel database, qualsias
 
 **Accetti gli ordini degli ospiti?**
 
-*In questo caso, è possibile che la tabella non contenga tutti i clienti. Contatta il [team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per assicurarti che le analisi dei clienti includano tutti i clienti.*
+*In questo caso, è possibile che la tabella non contenga tutti i clienti. Contatta il [team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per assicurarti che le analisi dei clienti includano tutti i clienti.*
 
 *Non sei sicuro di accettare gli ordini degli ospiti? Fai riferimento a [questo argomento](../data-warehouse-mgr/guest-orders.md) per ulteriori informazioni!*
 
@@ -54,13 +54,13 @@ Se alcuni di questi calcoli non sono attualmente presenti nel database, qualsias
 
 In questa tabella, ogni riga rappresenta un ordine. Le colonne di questa tabella contengono informazioni di base su ciascun ordine, ad esempio l&#39;ID dell&#39;ordine, la data di creazione, lo stato, l&#39;ID del cliente che ha effettuato l&#39;ordine e così via. Negli esempi seguenti viene utilizzato **[!UICONTROL sales_flat_order]** come nome di una tabella ordini di esempio.
 
-**Dimension**
+**Dimensioni**
 
 * **[!UICONTROL Customer_id]**: identificatore univoco del cliente che ha effettuato l&#39;ordine. Questa funzione viene spesso utilizzata per spostare le informazioni tra le tabelle cliente e ordini. In questi esempi, si prevede che customer_id nella tabella **[!UICONTROL sales_flat_order]** sia allineato con **[!UICONTROL entitiy_id]** nella tabella **[!UICONTROL customer_entity]**.
 * **[!UICONTROL Created_at]**: data di creazione o di inserimento dell&#39;ordine.
 * **[!UICONTROL Customer_email]**: indirizzo e-mail del cliente che ha effettuato l&#39;ordine. Può anche essere l’identificatore univoco del cliente.
 * **[!UICONTROL Customer's lifetime number of orders]**: copia della colonna con lo stesso nome nella tabella `Customers`.
-* **[!UICONTROL Customer's order number]**: numero di ordine sequenziale del cliente associato all&#39;ordine. Ad esempio, se la riga che stai esaminando è il primo ordine di un cliente, questa colonna è &quot;1&quot;; ma, se si tratta del quindicesimo ordine del cliente, questa colonna mostra &quot;15&quot; per questo ordine. Se questa dimensione non esiste nella tabella `Customers`, chiedere al team di supporto [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) di aiutarti a generarla.
+* **[!UICONTROL Customer's order number]**: numero di ordine sequenziale del cliente associato all&#39;ordine. Ad esempio, se la riga che stai esaminando è il primo ordine di un cliente, questa colonna è &quot;1&quot;; ma, se si tratta del quindicesimo ordine del cliente, questa colonna mostra &quot;15&quot; per questo ordine. Se questa dimensione non esiste nella tabella `Customers`, chiedere al team di supporto [](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) di aiutarti a generarla.
 * **[!UICONTROL Customer's order number (previous-current)]**: concatenazione di due valori nella colonna **[!UICONTROL Customer's order number]**. Viene utilizzato in un report di esempio riportato di seguito per visualizzare il tempo trascorso tra due ordini. Ad esempio, con questo calcolo il tempo tra la data del primo ordine di un cliente e la data del secondo ordine è rappresentato da &quot;1-2&quot;.
 * **[!UICONTROL Coupon_code]**: mostra i coupon utilizzati in ogni ordine.
 * **[!UICONTROL Seconds since previous order]**: tempo (in secondi) tra gli ordini di un cliente.
@@ -69,7 +69,7 @@ In questa tabella, ogni riga rappresenta un ordine. Le colonne di questa tabella
 
 In questa tabella, ogni riga rappresenta un articolo venduto. Questa tabella contiene informazioni sugli articoli venduti in ciascun ordine, ad esempio il numero di riferimento dell&#39;ordine, il numero del prodotto, la quantità e così via. Negli esempi seguenti viene utilizzato `sales_flat_order_item` come nome di una tabella di elementi dell&#39;ordine di esempio.
 
-**Dimension**
+**Dimensioni**
 
 * **[!UICONTROL Item_id]**: identificatore univoco per ogni riga della tabella.
 * **[!UICONTROL Order_id]**: la chiave di riferimento alla tabella `Orders` che indica gli articoli acquistati nello stesso ordine. Se un ordine contiene più elementi, questo valore viene ripetuto.
@@ -81,7 +81,7 @@ In questa tabella, ogni riga rappresenta un articolo venduto. Questa tabella con
 
 Questa tabella viene utilizzata per gestire le informazioni sull’abbonamento, ad esempio l’ID, l’indirizzo e-mail dell’abbonato, la data di inizio e così via.
 
-**Dimension**
+**Dimensioni**
 
 * **[!UICONTROL Customer_id]**: identificatore univoco del cliente che ha effettuato l&#39;ordine. Si tratta di un metodo comune per creare un percorso tra la tabella Clienti e la tabella Ordini. In questi esempi, si prevede che customer_id nella tabella **sales_flat_order** sia allineato con `entitiy_id` nella tabella `customer_entity`.
 * **[!UICONTROL Start date]**: la data di inizio dell&#39;abbonamento di un cliente.
@@ -90,7 +90,7 @@ Questa tabella viene utilizzata per gestire le informazioni sull’abbonamento, 
 
 Durante l&#39;analisi delle spese di marketing, è possibile includere [!DNL Facebook], [!DNL Google AdWords] o altre origini nelle analisi. Se disponi di più origini di spesa marketing, contatta il [team Managed Services](https://business.adobe.com/products/magento/fully-managed-service.html) per assistenza nella configurazione di una tabella consolidata per le campagne marketing.
 
-**Dimension**
+**Dimensioni**
 
 * **[!UICONTROL Spend]**: la spesa totale dell&#39;annuncio. In [!DNL Facebook], questa sarebbe la colonna di spesa nella tabella `facebook_ads_insights_####`. Per [!DNL Google AdWords], questa sarebbe la colonna `adCost` nella tabella `campaigns####`.
 * Il `####` che viene aggiunto a ciascuna di queste tabelle è correlato all&#39;ID account specifico per l&#39;account [!DNL Facebook] o [!DNL Google AdWords].
@@ -343,7 +343,7 @@ Di seguito sono riportati alcuni esempi comuni di rapporti e metriche che potreb
 
 ### Prodotti più acquistati con coupon
 
-* **Descrizione**: questo report fornisce informazioni approfondite sui prodotti che vengono venduti quando offri promozioni o coupon.
+* **Descrizione**: questo report fornisce ad insight i prodotti che vengono venduti quando offri promozioni o coupon.
 * **Metrica utilizzata**: prodotti ordinati
 * **Esempio di rapporto**: prodotti più acquistati con coupon
    * **[!UICONTROL Metric]**: `Products ordered`
@@ -357,7 +357,7 @@ Di seguito sono riportati alcuni esempi comuni di rapporti e metriche che potreb
 
 ### Tempo tra gli ordini
 
-* **Descrizione**: verifica le ipotesi e le aspettative relative ai cicli di acquisto dei clienti con un&#39;analisi **time between orders** che considera la media (o mediana!) quantità di tempo tra gli acquisti. Il grafico qui sotto mostra che i migliori clienti - quelli che inoltrano più di tre ordini - effettuano il loro secondo acquisto in meno di sei mesi. I clienti che non hanno effettuato un quarto ordine attendono 14 mesi prima di effettuare un secondo acquisto.
+* **Descrizione**: verifica le ipotesi e le aspettative relative ai cicli di acquisto dei clienti con un&#39;analisi di **tempo tra gli ordini** che considera il periodo medio (o mediano!) tra gli acquisti. Il grafico qui sotto mostra che i migliori clienti - quelli che inoltrano più di tre ordini - effettuano il loro secondo acquisto in meno di sei mesi. I clienti che non hanno effettuato un quarto ordine attendono 14 mesi prima di effettuare un secondo acquisto.
 * **Definizione metrica**: questa metrica esegue una **media** di `Time since previous order` da `sales_flat_order` ordinata da `created_at`.
 * **Esempio di report**:
    * **Metrica 1**: ≤ 3 ordini
@@ -512,7 +512,7 @@ Di seguito sono riportati alcuni esempi comuni di rapporti e metriche che potreb
 
 >[!NOTE]
 >
->Per i due filtri, puoi aggiungere qualsiasi altro supporto considerato &quot;a pagamento&quot; per la tua attività (ad esempio cpc o ricerca a pagamento). Puoi anche aggiungere altre sorgenti che desideri analizzare, ad esempio Facebook. Consulta [questo articolo](../analysis/roi-ad-camp.md) per ulteriori dettagli su CAC, LTV e ROI.
+>Per i due filtri, puoi aggiungere qualsiasi altro supporto considerato &quot;a pagamento&quot; per la tua attività (ad esempio cpc o ricerca a pagamento). Puoi anche aggiungere altre fonti che desideri analizzare, come Facebook. Consulta [questo articolo](../analysis/roi-ad-camp.md) per ulteriori dettagli su CAC, LTV e ROI.
 
 ![Valore &quot;lifetime&quot; del ciclo di vita per origine di acquisizione, supporto e campagna](../../assets/LTV_2.png)<!--{: width="929"}-->
 

@@ -48,13 +48,12 @@ Una volta creata la metrica, puoi **creare un dashboard** effettuando le seguent
 
 >[!NOTE]
 >
->Il **[!UICONTROL Time Period:]**, il periodo di tempo per ogni report è elencato come `All-time`. Puoi modificarlo in base alle tue esigenze di analisi. L&#39;Adobe consiglia che tutti i report in questo dashboard riguardino lo stesso periodo di tempo, ad esempio `All time`, `Year-to-date` o `Last 365 days`.
+>Il **[!UICONTROL Time Period:]**, il periodo di tempo per ogni report è elencato come `All-time`. Puoi modificarlo in base alle tue esigenze di analisi. Adobe consiglia che tutti i rapporti in questo dashboard riguardino lo stesso periodo di tempo, ad esempio `All time`, `Year-to-date` o `Last 365 days`.
 
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
@@ -65,8 +64,7 @@ Una volta creata la metrica, puoi **creare un dashboard** effettuando le seguent
          * [`B`] `Customer's lifetime number of orders` **Maggiore Di**`0`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
@@ -75,8 +73,7 @@ Una volta creata la metrica, puoi **creare un dashboard** effettuando le seguent
    * Metrica `2`: `Median lifetime revenue`
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
-   * &#x200B;
-
+   * 
      [!UICONTROL Chart Type]: `Line`
    * Deseleziona `Multiple Y-Axes`
 
@@ -84,12 +81,10 @@ Una volta creata la metrica, puoi **creare un dashboard** effettuando le seguent
    * Metrica `1`: `Avg lifetime revenue`
    * Metrica `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
-
+   * 
      [!UICONTROL Interval]: `None`
    * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-   * &#x200B;
-
+   * 
      [!UICONTROL Chart Type]: `Line`
 
   >[!NOTE]

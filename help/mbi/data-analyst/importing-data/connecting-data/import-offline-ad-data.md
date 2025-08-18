@@ -17,9 +17,9 @@ Il caricamento dei dati sulla spesa pubblicitaria ti consente di misurare il ROI
 
 ## Caricamento dei dati sui costi della pubblicità
 
-Il primo passaggio nell’analisi dei dati relativi ad annunci spesi è ottenere i dati. Poiché la maggior parte delle piattaforme pubblicitarie ti consente di esportare rapporti, Adobe consiglia di esportare i dati non elaborati dalla piattaforma pubblicitaria e caricarli direttamente in [!DNL Commerce Intelligence] senza alcuna manipolazione. Puoi eseguire operazioni sui dati presenti nella Data Warehouse, quindi non è necessario raddoppiare gli sforzi.
+Il primo passaggio nell’analisi dei dati relativi ad annunci spesi è ottenere i dati. Poiché la maggior parte delle piattaforme pubblicitarie ti consente di esportare i rapporti, Adobe consiglia di esportare i dati non elaborati dalla piattaforma pubblicitaria e caricarli direttamente in [!DNL Commerce Intelligence] senza alcuna manipolazione. Puoi eseguire operazioni sui dati nel Data Warehouse, quindi non è necessario raddoppiare gli sforzi.
 
-Dopo aver esportato i dati di spesa dell&#39;annuncio, utilizzare la funzionalità [`File Upload`](../connecting-data/using-file-uploader.md) per inserire i dati nella Data Warehouse. Nel tempo è possibile caricare nuovi dati nella stessa tabella [!DNL Commerce Intelligence].
+Dopo aver esportato i dati di spesa dell&#39;annuncio, utilizzare la funzionalità [`File Upload`](../connecting-data/using-file-uploader.md) per inserire i dati nel Data Warehouse. Nel tempo è possibile caricare nuovi dati nella stessa tabella [!DNL Commerce Intelligence].
 
 ## Origini offline
 

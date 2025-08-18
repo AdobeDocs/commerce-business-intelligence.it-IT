@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # Condividere dashboard con altri utenti
 
-La condivisione di dashboard è un ottimo modo per mantenere il team in loop e incoraggiare la discussione collaborativa. Creando e condividendo una dashboard centrale, puoi fornire al team le informazioni necessarie mantenendo il controllo. [[!DNL Adobe] consiglia](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;} di concedere a `Edit` i diritti per alcuni di essi per ridurre al minimo le modifiche accidentali.
+La condivisione di dashboard è un ottimo modo per mantenere il team in loop e incoraggiare la discussione collaborativa. Creando e condividendo una dashboard centrale, puoi fornire al team le informazioni necessarie mantenendo il controllo. [[!DNL Adobe] consiglia](../../best-practices/share-dashboard-best-practice.md){: target="_blank"} di concedere a `Edit` i diritti di alcuni per ridurre al minimo le modifiche accidentali.
 
 >[!NOTE]
 >

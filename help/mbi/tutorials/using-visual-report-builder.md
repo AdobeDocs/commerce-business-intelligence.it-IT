@@ -1,5 +1,5 @@
 ---
-title: Utilizzare il Report Builder visivo
+title: Utilizzare Visual Report Builder
 description: Scopri come analizzare i dati nel rapporto per un periodo di tempo specifico.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
 role: Admin, Data Architect, Data Engineer, User

@@ -21,7 +21,7 @@ Questa funzione è utile se desideri ricreare un set di grafici esistente ma cam
 
 1. Nel menu a discesa , fare clic su **[!UICONTROL Save As]**.
 
-1. Quando richiesto, immettere `New Dashboard Name`. In questo Adobe vengono consigliati nomi che indicano immediatamente quali informazioni sono contenute nel dashboard.
+1. Quando richiesto, immettere `New Dashboard Name`. Adobe consiglia di assegnare nomi che indichino immediatamente quali informazioni sono contenute nel dashboard.
 
    Si sta ad esempio clonando un dashboard denominato `Customer Activity`. Questa dashboard conteneva informazioni sull’attività del cliente per la tua posizione a Philadelphia, ma ora desideri creare una dashboard per la posizione a New York. Questo dashboard potrebbe essere denominato `New York City - Customer Activity`.
 

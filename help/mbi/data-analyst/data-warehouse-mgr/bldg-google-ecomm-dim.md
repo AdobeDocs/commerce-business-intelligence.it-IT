@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Genera [!DNL Google ECommerce] Dimension
+# Genera dimensioni [!DNL Google ECommerce]
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Le dimensioni trattate consentono di creare analisi che [rispondono a domande fo
 
 ## Prerequisiti e panoramica
 
-Per creare le dimensioni in questo argomento, sono necessarie una tabella [!DNL Google ECommerce], una tabella `orders` e una tabella `customers`. Prima di poter creare le dimensioni, queste tabelle devono essere [sincronizzate con la Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md). Le tabelle sincronizzate vengono visualizzate nella sezione `Synced Tables` di `Data Warehouse Manager`.
+Per creare le dimensioni in questo argomento, sono necessarie una tabella [!DNL Google ECommerce], una tabella `orders` e una tabella `customers`. Prima di poter creare le dimensioni, queste tabelle devono essere [sincronizzate con il tuo Data Warehouse](../../data-analyst/data-warehouse-mgr/tour-dwm.md). Le tabelle sincronizzate vengono visualizzate nella sezione `Synced Tables` di `Data Warehouse Manager`.
 
 Di seguito è riportato un rapido esempio di sincronizzazione di tabelle e colonne, se è necessario un aggiornamento:
 
@@ -50,13 +50,13 @@ Di seguito sono elencate le dimensioni coperte:
 
 ## Creazione delle dimensioni
 
-Per creare le dimensioni, aprire [Gestione Date Warehouse](../data-warehouse-mgr/tour-dwm.md) facendo clic su **[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]**.
+Per creare le dimensioni, aprire [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) facendo clic su **[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]**.
 
 ### Tabella Ordini, arrotondamento 1
 
-In questo esempio viene creata la dimensione [!DNL Google Analytics] di Source **dell&#39;ordine**.
+In questo esempio viene creata la dimensione **di Source[!DNL Google Analytics] dell&#39;ordine**.
 
-1. Nell&#39;elenco delle tabelle della Data Warehouse fare clic sulla tabella (in questo caso, `orders`) contenente le informazioni sull&#39;ordine.
+1. Nell&#39;elenco delle tabelle di Data Warehouse fare clic sulla tabella (in questo caso, `orders`) contenente le informazioni sull&#39;ordine.
 1. Fare clic su **[!UICONTROL Create a Column]**.
 1. Denomina la colonna.
 1. Selezionare `Joined Column` dal menu a discesa [definizione](../data-warehouse-mgr/calc-column-types.md). Questo esempio funziona con una [relazione uno-a-uno](../data-warehouse-mgr/table-relationships.md), che corrisponde alla colonna `eCommerce.transactionID` esattamente a una riga della tabella `orders`.
@@ -80,9 +80,9 @@ Quindi, provare a creare il **supporto [!DNL Google Analytics] dell&#39;ordine**
 
 ### Tabella Clienti {#customers}
 
-In questo esempio viene creata la dimensione [!DNL Google Analytics] di origine **del primo ordine del cliente**.
+In questo esempio viene creata la dimensione **di origine[!DNL Google Analytics] del primo ordine del cliente**.
 
-1. Nell&#39;elenco delle tabelle della Data Warehouse fare clic sulla tabella (in questo caso, `customers`) contenente le informazioni sul cliente.
+1. Nell&#39;elenco delle tabelle di Data Warehouse fare clic sulla tabella (in questo caso, `customers`) contenente le informazioni sul cliente.
 1. Fare clic su **[!UICONTROL Create a Column]**.
 1. Denomina la colonna.
 1. Per questo esempio, selezionare la definizione `is MAX` dal menu a discesa [definizione](../../data-analyst/data-warehouse-mgr/calc-column-types.md). La definizione di `is MIN` potrebbe inoltre funzionare se applicata a una colonna di testo con un solo valore possibile. È importante assicurarsi che vengano impostati i filtri corretti, operazione che si effettua in seguito.
@@ -101,11 +101,11 @@ Quindi, prova a creare **il supporto [!DNL Google Analytics]** e `campaign` del 
 
 ### Bonus: tabella Ordini, turno 2
 
-Puoi fermarti qui se lo desideri, ma questa sezione abilita ulteriori analisi portando le [!DNL Google Analytics] dimensioni **del primo ordine del cliente create nella [ultima sezione](#customers) nella tabella `orders`.** La creazione delle dimensioni in questa sezione consente di analizzare tutte le metriche create nella tabella `orders` - `Revenue`, `Number of orders`, `Distinct buyers` e così via - utilizzando gli attributi [!DNL Google Analytics] del primo ordine di un cliente.
+Puoi fermarti qui se lo desideri, ma questa sezione abilita ulteriori analisi portando le **dimensioni [!DNL Google Analytics] del primo ordine del cliente create nella** ultima sezione[ nella tabella ](#customers). `orders` La creazione delle dimensioni in questa sezione consente di analizzare tutte le metriche create nella tabella `orders` - `Revenue`, `Number of orders`, `Distinct buyers` e così via - utilizzando gli attributi [!DNL Google Analytics] del primo ordine di un cliente.
 
 Questo esempio unisce la dimensione `Customer's first order's [!DNL Google Analytics] source` alla tabella `orders`.
 
-1. Nell&#39;elenco delle tabelle della Data Warehouse fare clic sulla tabella (in questo caso, `orders`) contenente le informazioni sull&#39;ordine.
+1. Nell&#39;elenco delle tabelle di Data Warehouse fare clic sulla tabella (in questo caso, `orders`) contenente le informazioni sull&#39;ordine.
 1. Fare clic su **[!UICONTROL Create a Column]**.
 1. Denomina la colonna.
 1. Selezionare `Joined Column` dal menu a discesa delle definizioni. In questo modo le dimensioni cliente create nella sezione precedente vengono unite alla tabella `orders`.

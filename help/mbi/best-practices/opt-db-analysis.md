@@ -55,14 +55,14 @@ Troppe aziende si concentrano esclusivamente sulla ricerca di canali che offrano
 
 Una [chiave primaria](https://en.wikipedia.org/wiki/Unique_key) è una colonna (o un set di colonne) immutabile che produce valori univoci all&#39;interno di una tabella. Le chiavi primarie sono estremamente importanti in quanto garantiscono la corretta replica delle tabelle in [!DNL Commerce Intelligence].
 
-Quando crei le chiavi primarie, utilizza un tipo di dati integer per la colonna che aumenta automaticamente. L’Adobe consiglia di evitare di utilizzare più chiavi primarie di colonna, ove possibile.
+Quando crei le chiavi primarie, utilizza un tipo di dati integer per la colonna che aumenta automaticamente. Adobe consiglia di evitare di utilizzare più chiavi primarie di colonna, ove possibile.
 
 Se la tabella è una vista SQL, aggiungere una colonna che possa fungere da chiave primaria. [!DNL Commerce Intelligence] è in grado di identificare automaticamente questa colonna come chiave primaria.
 
 ### Assegnare un tipo di dati alla colonna di dati
 
-Se a una colonna di dati non è assegnato un tipo di dati [&#128279;](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] indovina quale tipo di dati utilizzare. Se il sistema non indovina correttamente, potresti non essere in grado di eseguire le analisi pertinenti fino a quando il team di supporto Adobe non regolerà la colonna in base al tipo di dati corretto. Ad esempio, se una colonna data è considerata un tipo di dati numerico, puoi generare tendenze nel tempo utilizzando tale dimensione data.
+Se a una colonna di dati non è assegnato un tipo di dati [](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] indovina quale tipo di dati utilizzare. Se il sistema non indovina correttamente, potresti non essere in grado di eseguire le analisi pertinenti fino a quando il team di supporto Adobe non adegua la colonna al tipo di dati corretto. Ad esempio, se una colonna data è considerata un tipo di dati numerico, puoi generare tendenze nel tempo utilizzando tale dimensione data.
 
 ### Aggiungere prefissi alle tabelle dati se si dispone di più database
 
-Se a [!DNL Commerce Intelligence] è connesso più di un database, l&#39;Adobe consiglia di aggiungere prefissi alle tabelle per evitare confusione. I prefissi consentono di ricordare da dove provengono le metriche o le dimensioni dati.
+Se a [!DNL Commerce Intelligence] sono connessi più database, Adobe consiglia di aggiungere prefissi alle tabelle per evitare confusione. I prefissi consentono di ricordare da dove provengono le metriche o le dimensioni dati.

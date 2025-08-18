@@ -1,6 +1,6 @@
 ---
 title: Informazioni dati grafico
-description: Scopri come utilizzare le opzioni di visualizzazione nel Report Builder visivo.
+description: Scopri come utilizzare le opzioni di visualizzazione in Visual Report Builder.
 exl-id: 865efc8b-1e1a-4033-9e42-cbd03b220260
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration

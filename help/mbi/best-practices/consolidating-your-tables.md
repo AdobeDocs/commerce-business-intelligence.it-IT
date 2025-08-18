@@ -21,7 +21,7 @@ Affinché il consolidamento delle tabelle funzioni, le tabelle di input devono e
 
 In questo argomento vengono descritti alcuni dei casi d&#39;uso più comuni per le tabelle consolidate e i passaggi successivi necessari per la creazione di tabelle personalizzate.
 
-## Recommendations per quando utilizzare le tabelle consolidate
+## Raccomandazioni su quando utilizzare le tabelle consolidate
 
 Di seguito viene descritto quando potrebbe essere appropriato utilizzare tabelle consolidate nel sistema.
 
@@ -41,11 +41,11 @@ Immagina un sito web in cui gli utenti possano fare diverse cose: rispondere a u
 
 È possibile utilizzare le tabelle consolidate per creare un elenco unificato di tutti gli utenti e specificare quando si è verificato uno di questi eventi. Puoi quindi eseguire query sulla tabella consolidata per eseguire facilmente un’analisi di questo tipo.
 
-Come per tutte le altre tabelle della Data Warehouse, è possibile aggiungere colonne aggiuntive per alimentare diversi tipi di grafici e analisi.
+Come per tutte le altre tabelle del Data Warehouse, è possibile aggiungere colonne aggiuntive per alimentare diversi tipi di grafici e analisi.
 
 ## Creazione, visualizzazione o aggiornamento di una tabella consolidata
 
-Per aggiungere una tabella consolidata alla Data Warehouse, contattare [!DNL Commerce Intelligence] [supporto](../guide-overview.md#Submitting-a-Support-Ticket).
+Per aggiungere una tabella consolidata al Data Warehouse, contattare [!DNL Commerce Intelligence] [supporto](../guide-overview.md#Submitting-a-Support-Ticket).
 
 >[!NOTE]
 >

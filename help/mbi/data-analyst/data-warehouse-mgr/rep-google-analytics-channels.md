@@ -40,13 +40,13 @@ Per impostazione predefinita, [!DNL Google] imposta otto canali diversi. Di segu
 
 {style="table-layout:auto"}
 
-## Come posso ricreare questi raggruppamenti di canali nella mia Data Warehouse? {#recreate}
+## Come posso ricreare questi raggruppamenti di canali nel mio Data Warehouse? {#recreate}
 
-Ora che sai che i canali sono solo combinazioni di sorgenti e media, è facile ricreare questi raggruppamenti nella tua Data Warehouse in tre fasi.
+Ora che sai che i canali sono solo combinazioni di origini e media, è facile ricreare questi raggruppamenti nel tuo Data Warehouse in 3 fasi.
 
 1. **Abilita la tua[!DNL Google ECommerce]integrazione**
 
-   [Se abilitato](../importing-data/integrations/google-ecommerce.md), assicurati di [sincronizzare](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) i campi **medium** e **source** nella tua Data Warehouse. Al termine dell&#39;operazione, i dati di acquisizione di origine e di supporto verranno inseriti nella Data Warehouse.
+   [Quando è abilitato](../importing-data/integrations/google-ecommerce.md), assicurati di [sincronizzare]&#x200B;(../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) i campi **medium** e **source** nel tuo Data Warehouse. Al termine dell&#39;operazione, i dati di acquisizione di origine e di supporto verranno inseriti nel Data Warehouse.
 
 1. **Carica una mappatura dei raggruppamenti di canali di Google**
 
@@ -54,7 +54,7 @@ Ora che sai che i canali sono solo combinazioni di sorgenti e media, è facile r
 
    Se sei un professionista di [!DNL Google Analytics] e hai creato i tuoi canali, vuoi aggiungere le tue regole specifiche alla tabella di mappatura prima di caricare il file in [!DNL Commerce Intelligence].
 
-   Inseriscilo nella tua Data Warehouse come [caricamento file](../importing-data/connecting-data/using-file-uploader.md).
+   Inseriscilo nel tuo Data Warehouse come [caricamento file](../importing-data/connecting-data/using-file-uploader.md).
 
    ![](../../assets/Setting_Primary_Keys.png)
 
@@ -62,7 +62,7 @@ Ora che sai che i canali sono solo combinazioni di sorgenti e media, è facile r
 
    Per stabilire una relazione tra [!DNL Google ECommerce] e la tabella di mapping, [invia una richiesta di supporto](../../guide-overview.md#Submitting-a-Support-Ticket) al team di Data Analyst e fai riferimento a questo argomento. L&#39;analista crea una nuova colonna calcolata denominata **Canale** nella tabella ECommerce. **Dopo un ciclo di aggiornamento completo**, questa colonna sarà pronta per l&#39;utilizzo in `Filter` o `Group by`.
 
-Nella tua Data Warehouse sono ora presenti [!DNL Google Analytics Channel] raggruppamenti, il che significa che puoi analizzare i tuoi dati da una nuova prospettiva:
+Nel Data Warehouse sono ora presenti [!DNL Google Analytics Channel] raggruppamenti, il che significa che puoi analizzare i dati da una nuova prospettiva:
 
 ![Segmentazione della metrica Numero di ordini per canale](../../assets/GA_Channel_Gif.gif)
 
@@ -70,7 +70,7 @@ In questo esempio hai iniziato con la segmentazione della metrica **Numero di or
 
 ## Documentazione correlata
 
-* [Utilizzo del Report Builder](../../tutorials/using-visual-report-builder.md)
+* [Utilizzo di Report Builder](../../tutorials/using-visual-report-builder.md)
 * [Previsti[!DNL Google ECommerce]dati](../importing-data/integrations/google-ecommerce-data.md)
 * [Creazione di [!DNL Google ECommerce] dimensioni con i dati dell&#39;ordine e del cliente](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
 * [Quali sono le fonti e i canali di acquisizione più importanti?](../analysis/most-value-source-channel.md)

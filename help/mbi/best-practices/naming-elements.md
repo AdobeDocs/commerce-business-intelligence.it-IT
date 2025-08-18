@@ -20,7 +20,7 @@ Prima di iniziare a generare in [!DNL Adobe Commerce Intelligence], Adobe deside
 Il modo in cui si denominano le colonne calcolate, le metriche e i report determina la facilità con cui utenti diversi possono spostarsi attraverso l&#39;account [!DNL Commerce Intelligence]. Quando denominate queste funzioni, tenete presente le tre C:
 
 * **CHIAREZZA** - In questo modo è possibile verificare immediatamente cosa viene visualizzato in un report, cosa fa una metrica e così via.
-* **COERENZA** - In modo che tu (e il team di supporto Adobe) possiate trovare e comprendere facilmente gli elementi e i report nel vostro account.
+* **COERENZA** - In modo che tu (e il team di supporto Adobe) possiate trovare e comprendere facilmente elementi e report nel vostro account.
 * **CREDIBILITÀ** - Per ispirare e responsabilizzare altri utenti [!DNL Commerce Intelligence] basati sui dati, è necessario infondere fiducia nel modo in cui comprendono e utilizzano i dati.
 
 Continua a leggere per suggerimenti sulla nomenclatura comprovati e veri!
@@ -80,7 +80,7 @@ Le dashboard devono essere denominate in modo da rappresentare tematicamente i r
 
 Al contrario, se il dashboard è un luogo in cui si stanno sperimentando diversi rapporti, è consigliabile denominarlo **Sandbox del tuo nome** in modo da sapere che i rapporti contenuti in sono bozze.
 
-## Dimension (colonne calcolate) {#dimensions}
+## Dimensioni (colonne calcolate) {#dimensions}
 
 Quando si denominano le nuove [dimensioni](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md), è più utile seguire questa formula: **(Entità) + (Nth) + (intervallo di tempo) + (calcolo) + (commenti)**. Ad esempio:
 

@@ -50,7 +50,7 @@ Ecco come navigare in [!DNL Commerce Intelligence] per recuperare la chiave:
 
 ## Consenti accesso all&#39;indirizzo IP [!DNL Commerce Intelligence] {#allowlist}
 
-Affinché la connessione abbia esito positivo, è necessario configurare il firewall per consentire l&#39;accesso dagli indirizzi IP. Sono `54.88.76.97` e `34.250.211.151` ma si trovano anche nella pagina `MySQL credentials`. Vedi la casella blu in GIF.
+Affinché la connessione abbia esito positivo, è necessario configurare il firewall per consentire l&#39;accesso dagli indirizzi IP. Sono `54.88.76.97` e `34.250.211.151` ma si trovano anche nella pagina `MySQL credentials`. Vedi la casella blu nel GIF qui sopra.
 
 ## Creazione di un utente [!DNL Linux] per [!DNL Commerce Intelligence] {#linux}
 
@@ -113,11 +113,11 @@ Immettere le informazioni seguenti in questa pagina, a partire dalla sezione `Da
 Nella sezione `SSH Connection`:
 
 * `Remote Address`: l&#39;indirizzo IP o il nome host del server [!DNL Commerce Intelligence] verrà sottoposto a tunneling in
-* `Username`: nome utente per l&#39;utente SSH ([!DNL Linux]) di [!DNL Commerce Intelligence]
+* `Username`: nome utente per l&#39;utente SSH ([!DNL Commerce Intelligence]) di [!DNL Linux]
 * `SSH Port`: porta SSH sul server (22 per impostazione predefinita)
 
 Al termine, fare clic su **[!UICONTROL Save & Test]** per completare la configurazione.
 
 ## Correlato:
 
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -21,7 +21,7 @@ Dopo aver attivato l&#39;account [!DNL Commerce Intelligence] per [on-premise o 
 
    ![accesso ad adobe](../assets/sign-in-adobe.png)
 
-1. Immettere l&#39;indirizzo di posta elettronica utilizzato al momento della creazione dell&#39;account [!DNL Commerce Intelligence]. Se non si dispone già di un account Adobe, fare clic su **[!UICONTROL Create an account]** e immettere le informazioni. Ricorda di utilizzare l&#39;indirizzo e-mail utilizzato al momento della creazione dell&#39;account [!DNL Commerce Intelligence]. L’indirizzo e-mail è la chiave di accesso al tuo account di Adobe.
+1. Immettere l&#39;indirizzo di posta elettronica utilizzato al momento della creazione dell&#39;account [!DNL Commerce Intelligence]. Se non si dispone già di un account Adobe, fare clic su **[!UICONTROL Create an account]** e immettere le informazioni. Ricorda di utilizzare l&#39;indirizzo e-mail utilizzato al momento della creazione dell&#39;account [!DNL Commerce Intelligence]. L’indirizzo e-mail è la chiave necessaria per accedere al tuo account Adobe.
 
 >[!NOTE]
 >

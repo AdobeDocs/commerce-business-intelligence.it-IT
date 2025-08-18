@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Previsti [!DNL Google Adwords] dati
 
-Dopo che [hai connesso il tuo [!DNL Google Adwords] account](../integrations/google-adwords.md), puoi utilizzare [Gestione Date Warehouse](../../data-warehouse-mgr/tour-dwm.md) per tenere traccia facilmente dei campi di dati rilevanti per l&#39;analisi.
+Dopo che [hai connesso il tuo [!DNL Google Adwords] account](../integrations/google-adwords.md), puoi utilizzare [Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) per tenere traccia facilmente dei campi di dati rilevanti per l&#39;analisi.
 
-In questa pagina sono disponibili due tabelle per la replica nella Data Warehouse:
+In questa pagina sono disponibili due tabelle da replicare nel Data Warehouse:
 
 * `campaigns[account-id]`
 * `adwords[account-id]`
@@ -45,12 +45,12 @@ La tabella `campaigns` contiene le colonne seguenti:
 |-----|-----|
 | `\_id` | Chiave primaria per la tabella |
 | `accountId` | ID account |
-| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | Numero totale di clic per il giorno |
-| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | Costo totale della campagna per il giorno |
-| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | ID campagna [!DNL Adwords] |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | Nome della campagna (ad esempio, [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | Data di esecuzione della campagna |
-| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | Numero di impression per il giorno |
+| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adclicks) | Numero totale di clic per il giorno |
+| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adcost) | Costo totale della campagna per il giorno |
+| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adwordscampaignid) | ID campagna [!DNL Adwords] |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=traffic_sources&jump=ga_campaign) | Nome della campagna (ad esempio, [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=time&jump=ga_date) | Data di esecuzione della campagna |
+| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_impressions) | Numero di impression per il giorno |
 | `profileId` | ID profilo |
 | `profileName` | Nome del profilo |
 | `\_updated\_at` | Data e ora dell&#39;ultimo aggiornamento per questa riga |
@@ -65,12 +65,12 @@ La tabella `adwords` contiene le colonne seguenti:
 |-----|-----|
 | `\_id` | Chiave primaria per la tabella |
 | `accountId` | ID account |
-| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | Numero totale di clic per il giorno |
-| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | Costo totale della campagna per il giorno |
-| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | ID campagna [!DNL Adwords] |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | Nome della campagna (ad esempio, [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | Data di esecuzione della campagna |
-| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | Numero di impression per il giorno |
+| [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adclicks) | Numero totale di clic per il giorno |
+| [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adcost) | Costo totale della campagna per il giorno |
+| [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_adwordscampaignid) | ID campagna [!DNL Adwords] |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=traffic_sources&jump=ga_campaign) | Nome della campagna (ad esempio, [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=time&jump=ga_date) | Data di esecuzione della campagna |
+| [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&group=adwords&jump=ga_impressions) | Numero di impression per il giorno |
 | `profileId` | ID profilo |
 | `profileName` | Nome del profilo |
 | `\_updated\_at` | Data e ora dell&#39;ultimo aggiornamento per questa riga |
@@ -89,4 +89,4 @@ Utilizzando questi dati, puoi iniziare a creare [metriche](../../../data-user/re
 
 Se non si dispone di una tabella consolidata e si crea un dashboard sulla tabella `adwords`, è necessario replicare il reporting o creare metriche duplicate per confrontare tali dati con i dati di [!DNL Facebook Ads]. L&#39;utilizzo di una tabella consolidata consente di incorporare senza problemi i dati di [!DNL Facebook Ads] con i rapporti di [!DNL Adwords] esistenti. Puoi anche segmentare per piattaforma di annunci.
 
-Se hai già sincronizzato i campi qui sopra, [contattaci](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per consolidare la spesa pubblicitaria.
+Se hai già sincronizzato i campi qui sopra, [contattaci](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per consolidare la spesa pubblicitaria.

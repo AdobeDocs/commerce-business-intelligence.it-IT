@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Tempo medio per il primo rapporto acquisti
 
-Molti Adobi di clienti hanno una metrica e un grafico denominati `Average time to first purchase`, che mostra il tempo medio tra la data di registrazione di un gruppo di utenti e la data del primo acquisto. I dati tendono quasi invariabilmente a scendere man mano che il tempo si avvicina al presente.
+Molti clienti Adobe dispongono di una metrica e di un grafico denominati `Average time to first purchase` che mostrano il tempo medio tra la data di registrazione di un gruppo di utenti e la data del primo acquisto. I dati tendono quasi invariabilmente a scendere man mano che il tempo si avvicina al presente.
 
 ![tempo medio per il primo ordine](../../assets/average-time-to-first-order.png)
 

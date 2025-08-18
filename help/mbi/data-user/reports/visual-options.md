@@ -1,6 +1,6 @@
 ---
-title: Opzioni di visualizzazione nel Report Builder visivo
-description: Scopri come utilizzare le opzioni di visualizzazione nel Report Builder visivo.
+title: Opzioni di visualizzazione in Visual Report Builder
+description: Scopri come utilizzare le opzioni di visualizzazione in Visual Report Builder.
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration

@@ -1,5 +1,5 @@
 ---
-title: Report Builder visivo
+title: Visual Report Builder
 description: Scopri come utilizzare Visual Report Builder.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
@@ -27,7 +27,7 @@ Nell&#39;esempio seguente viene illustrato come creare un report semplice, raggr
 
      Le metriche disponibili possono essere elencate in ordine alfabetico o per tabella.
 
-     ![Report Builder visivo](../../assets/magento-bi-visual-report-builder-add-metric.png)
+     ![Visual Report Builder](../../assets/magento-bi-visual-report-builder-add-metric.png)
 
    * Scegli la [metrica](../../data-user/reports/ess-manage-data-metrics.md) che descrive il set di dati da utilizzare per il rapporto.
 
@@ -35,7 +35,7 @@ Nell&#39;esempio seguente viene illustrato come creare un report semplice, raggr
 
      Il riepilogo a sinistra mostra il nome della metrica corrente, seguito dal risultato di eventuali calcoli sui dati delle colonne specificati nella metrica. In questo esempio, nel riepilogo viene visualizzato il conteggio totale dei clienti.
 
-     ![Report Builder visivo](../../assets/magento-bi-report-builder-untitled.png)
+     ![Visual Report Builder](../../assets/magento-bi-report-builder-untitled.png)
 
 1. Nel grafico, passa il cursore del mouse su ogni punto dati della linea. Ogni punto dati mostra il numero totale di nuovi clienti che si sono iscritti durante quel mese.
 
@@ -43,7 +43,7 @@ Nell&#39;esempio seguente viene illustrato come creare un report semplice, raggr
 
    **`Group By`**
 
-   Il controllo `Group By` consente di aggiungere più dimensioni per gruppo o segmento. I Dimension sono colonne della tabella che possono essere utilizzate per raggruppare i dati.
+   Il controllo `Group By` consente di aggiungere più dimensioni per gruppo o segmento. Le dimensioni sono colonne della tabella che possono essere utilizzate per raggruppare i dati.
 
    * Scegliere una delle dimensioni disponibili dall&#39;elenco delle opzioni `Group By`.
 
@@ -55,7 +55,7 @@ Nell&#39;esempio seguente viene illustrato come creare un report semplice, raggr
 
    * Fare clic su **[!UICONTROL Apply]** per chiudere il dettaglio Raggruppa per.
 
-     ![Più Dimension](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
+     ![Dimensioni multiple](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
    * Passa il cursore del mouse su alcuni punti dati su ciascuna riga per vedere il numero di clienti che hanno utilizzato quel coupon durante il primo ordine.
 
@@ -101,7 +101,7 @@ Nell&#39;esempio seguente viene illustrato come creare un report semplice, raggr
      | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | Barra verticale |
      | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Barre verticali sovrapposte |
      | ![](../../assets/magento-bi-btn-chart-pie.png) | Torta |
-     | ![](../../assets/magento-bi-btn-chart-area.png) | Superfici |
+     | ![](../../assets/magento-bi-btn-chart-area.png) | Area |
      | ![](../../assets/magento-bi-btn-chart-funnel.png) | Funnel |
 
      {style="table-layout:auto"}

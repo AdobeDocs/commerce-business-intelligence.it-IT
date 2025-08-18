@@ -31,7 +31,7 @@ Per completare il processo, è necessario aprire due finestre o schede del brows
 
 ## Apri la pagina delle credenziali di [!DNL Zendesk] in [!DNL Commerce Intelligence] {#stepone}
 
-1. Vai alla pagina `Integrations` in **[!UICONTROL Manage Data** > **&#x200B; Origini dati &#x200B;**> **Integrazioni]**.
+1. Vai alla pagina `Integrations` in **[!UICONTROL Manage Data** > ** Origini dati **> **Integrazioni]**.
 1. Fare clic su **[!UICONTROL Add Integration]**, che si trova sul lato destro della schermata.
 1. Fare clic sull&#39;icona [!DNL Zendesk]. Verrà aperta la pagina delle credenziali [!DNL Zendesk].
 
@@ -41,7 +41,7 @@ Per completare il processo, è necessario aprire due finestre o schede del brows
 1. Quando viene visualizzato il menu `Settings`, individuare la sezione `Channels`. Fare clic su **[!UICONTROL API]** in questa sezione.
 1. Nella sezione `Token Access` di questa pagina, fare clic sulla casella di controllo accanto a `Enabled`. Viene visualizzato un elenco dei token API attivi.
 1. Fare clic su **[!UICONTROL Add New Token]**.
-1. Quando richiesto, immetti un’etichetta per il token. L&#39;Adobe consiglia di utilizzare `Commerce Intelligence`, in modo da sapere immediatamente quale applicazione sta utilizzando il token.
+1. Quando richiesto, immetti un’etichetta per il token. Adobe consiglia di utilizzare `Commerce Intelligence`, in modo da sapere subito quale applicazione sta utilizzando il token.
 1. Fare clic su **[!UICONTROL Create]**.
 1. Viene creato un token API. Copia questo token, che verrà utilizzato nel passaggio successivo.
 
@@ -54,4 +54,4 @@ Per completare il processo, è necessario aprire due finestre o schede del brows
 ## Correlato:
 
 * [Previsti [!DNL Zendesk] dati](../integrations/exp-zendesk-data.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

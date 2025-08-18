@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Connettere i dati
 
-In [!DNL Adobe Commerce Intelligence] le origini dati sono denominate `integrations`. Una volta stabilita la connessione a un `integration`, sarà possibile sfogliare le tabelle disponibili per la sincronizzazione in Gestione Date Warehouse.
+In [!DNL Adobe Commerce Intelligence] le origini dati sono denominate `integrations`. Una volta connessa una `integration`, sarà possibile sfogliare le tabelle disponibili per la sincronizzazione in Data Warehouse Manager.
 
 Le integrazioni vengono aggiunte e gestite utilizzando la pagina `Connections`, a cui è possibile accedere facendo clic su **[!UICONTROL Manage Data** > **Connections]**. Qui puoi vedere:
 
@@ -37,7 +37,7 @@ Esistono quattro modi per immettere i dati in [!DNL Commerce Intelligence]: conn
 
 [!DNL Commerce Intelligence] supporta database SQL e NoSQL come [MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md), [Microsoft SQL](../integrations/microsoft-sql-server.md), [MongoDB](../integrations/mongodb-via-ssh-tunnel.md) e [PostgreSQL](../integrations/postgresql.md).
 
-Sebbene sia possibile connettere direttamente il database a [!DNL Commerce Intelligence] utilizzando le credenziali del database, l&#39;Adobe consiglia di utilizzare un metodo di crittografia collaudato, ad esempio un tunnel SSH. In questo modo i dati rimarranno sicuri mentre entrano nella tua Data Warehouse.
+Sebbene sia possibile connettere direttamente il database a [!DNL Commerce Intelligence] utilizzando le credenziali del database, Adobe consiglia di utilizzare un metodo di crittografia collaudato, ad esempio un tunnel SSH. In questo modo i dati rimarranno sicuri durante la distribuzione nel Data Warehouse.
 
 A seconda del metodo di connessione e del tipo di database, potrebbero essere necessarie alcune competenze tecniche per completare la configurazione.
 
@@ -51,7 +51,7 @@ In genere, impostare un&#39;integrazione in [!DNL Commerce Intelligence] è semp
 
 ## Caricamento file
 
-Non sei sicuro di come ottenere dati da un’origine supplementare nella tua Data Warehouse? [L&#39;utilizzo della funzionalità `File Upload`](../connecting-data/using-file-uploader.md) è un buon modo per estrarre i dati che non sono necessari per prendere decisioni quotidiane. Seguendo le regole di formattazione, puoi caricare rapidamente `.csv` file nella tua Data Warehouse e unirli ad altre origini dati.
+Non sei sicuro di come ottenere i dati da un’origine supplementare nel tuo Data Warehouse? [L&#39;utilizzo della funzionalità `File Upload`](../connecting-data/using-file-uploader.md) è un buon modo per estrarre i dati che non sono necessari per prendere decisioni quotidiane. Seguendo le regole di formattazione, puoi caricare rapidamente `.csv` file nel tuo Data Warehouse e unirli ad altre origini dati.
 
 ## [!DNL Commerce Intelligence] `Import API`
 
@@ -70,6 +70,6 @@ Per aggiungere un&#39;integrazione, fare clic su **[!UICONTROL Manage Data** > *
 * [Consolidamento delle tabelle](../../../best-practices/consolidating-your-tables.md)
 * [Limitazione dell&#39;accesso al database](../../../administrator/account-management/restrict-db-access.md)
 
-**Non vedi un&#39;integrazione che vuoi?** Per essere visibili nel tuo account, è necessario attivare alcune integrazioni. Se si cerca qualcosa come [!DNL Facebook] ma non è elencato, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+**Non vedi un&#39;integrazione che vuoi?** Per essere visibili nel tuo account, è necessario attivare alcune integrazioni. Se si cerca qualcosa come [!DNL Facebook] ma non è elencato, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 **Se viene visualizzato uno stato di errore per un&#39;integrazione**, consultare la [sezione per la risoluzione dei problemi](https://support.magento.com/hc/en-us/sections/360003078151).

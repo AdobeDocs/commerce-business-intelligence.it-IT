@@ -1,5 +1,5 @@
 ---
-title: Report Builder di coorti per coorti non basate sulla data
+title: Coorte Report Builder per coorti non basate sulla data
 description: Scopri come raggruppare gli utenti in base a un’attività o un attributo simile.
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
 role: Admin, Data Architect, Data Engineer, User
@@ -55,11 +55,11 @@ Per creare un rapporto per coorte sono necessarie cinque specifiche:
 
 
 
-#### 1. Raggruppamento di `cohorts`
+#### &#x200B;1. Raggruppamento di `cohorts`
 
 `Cohorts` sono raggruppati per una caratteristica di comportamento, in questo esempio `Customer's first order GA source`. Le opzioni disponibili qui sono colonne già designate come `groupable` per la metrica.
 
-#### 2. Selezione delle coorti
+#### &#x200B;2. Selezione delle coorti
 
 È possibile visualizzare tutti i risultati per la caratteristica specificata. Poiché questo può comportare molti `cohorts`, è possibile selezionare `cohorts` specifici (che corrispondono ai vari valori disponibili per `Customer's first order GA source`) necessari.
 

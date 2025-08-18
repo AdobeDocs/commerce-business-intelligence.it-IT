@@ -19,7 +19,7 @@ Questo argomento illustra come impostare una dashboard che tenga traccia dell’
 
 ## Prerequisiti
 
-**Importa i dati relativi ai costi pubblicitari** - Connetti [[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md) a [!DNL Adobe Commerce Intelligence] - in questo modo sincronizzerai automaticamente la spesa [!DNL AdWords] in Commerce Intelligence.
+**Importa i dati relativi ai costi pubblicitari** - Connetti [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) a [!DNL Adobe Commerce Intelligence] - in questo modo sincronizzerai automaticamente la spesa [!DNL AdWords] in Commerce Intelligence.
 
 **Tracciare i dati del canale di acquisizione dell&#39;utente** - Per collegare i dati di [!DNL Google AdWords] a ordini specifici nel database, è necessario [tracciare l&#39;acquisizione dell&#39;utente](../analysis/google-track-user-acq.md) tramite [!DNL Google Analytics E-commerce]. Questo consente di collegare ogni ordine con una sorgente UTM e un supporto.
 
@@ -29,7 +29,7 @@ Questa raccolta di rapporti viene creata utilizzando quanto segue:
 
 * Metriche generate automaticamente alla connessione dei dati di [!DNL Google AdWords]
 * Metriche di base che dovrebbero essere già disponibili sul tuo account, come `Number of orders` e `New users`
-* Dimension creati quando si uniscono i dati di [!DNL Google Analytics Ecommerce] al database, come origine utm dell&#39;ordine e supporto utm dell&#39;ordine. Contatta il team di supporto se questi campi non sono attualmente disponibili nel tuo account
+* Le dimensioni create quando si uniscono i dati [!DNL Google Analytics Ecommerce] al database, come l&#39;origine utm dell&#39;ordine e il supporto utm dell&#39;ordine. Contatta il team di supporto se questi campi non sono attualmente disponibili nel tuo account
 
 ## Creazione dei rapporti
 

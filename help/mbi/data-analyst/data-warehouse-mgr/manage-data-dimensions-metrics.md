@@ -78,7 +78,7 @@ Per eliminare una o più dimensioni da più metriche:
 
 >[!NOTE]
 >
->Anche dopo aver eliminato una dimensione, essa esiste ancora come colonna nella tabella della Data Warehouse. Puoi aggiungerla nuovamente a qualsiasi metrica e creare nuove metriche utilizzando queste dimensioni. Per rimuovere la colonna di dati a cui corrisponde una dimensione da [!DNL Commerce Intelligence], è sufficiente annullare il tracciamento della colonna di dati tramite la pagina [Data Warehouse](../data-warehouse-mgr/tour-dwm.md).
+>Anche dopo l’eliminazione di una dimensione, questa esiste ancora come colonna nella tabella del Data Warehouse. Puoi aggiungerla nuovamente a qualsiasi metrica e creare nuove metriche utilizzando queste dimensioni. Per rimuovere la colonna di dati a cui corrisponde una dimensione da [!DNL Commerce Intelligence], è sufficiente annullare il tracciamento della colonna di dati tramite la pagina [Data Warehouse](../data-warehouse-mgr/tour-dwm.md).
 
 ## Documentazione correlata
 

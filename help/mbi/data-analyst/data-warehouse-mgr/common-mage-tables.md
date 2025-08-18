@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Tabelle Commerce comuni
 
-Quando si connette per la prima volta un&#39;istanza di [!DNL Adobe Commerce] a [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md), [!DNL Commerce Intelligence] replica automaticamente i dati da alcune tabelle commerce (in genere 4-6 tabelle) per configurare il set iniziale di dashboard e report. Anche se questo offre un ottimo punto di partenza, la maggior parte delle istanze dello store genera decine se non centinaia di tabelle aggiuntive che possono fornire informazioni critiche sulle prestazioni della tua azienda.
+Quando si connette per la prima volta un&#39;istanza di [!DNL Adobe Commerce] a [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md), [!DNL Commerce Intelligence] replica automaticamente i dati da alcune tabelle commerce (in genere 4-6 tabelle) per configurare il set iniziale di dashboard e report. Anche se questo offre un ottimo punto di partenza, la maggior parte delle istanze dello store genera decine se non centinaia di tabelle aggiuntive che possono fornire un insight critico per le prestazioni della tua azienda.
 
 Di seguito è riportato un elenco di alcune delle tabelle più comuni utilizzate dai clienti [!DNL Commerce Intelligence]. Dopo aver [connesso l&#39;istanza di Commerce a Commerce Intelligence](../../data-analyst/importing-data/integrations/magento.md), puoi utilizzare [Data Warehouse Manager](../../data-analyst/data-warehouse-mgr/tour-dwm.md) per tenere traccia dei campi di dati rilevanti.
 

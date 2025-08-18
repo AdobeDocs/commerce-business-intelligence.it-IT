@@ -25,7 +25,7 @@ Sfortunatamente, la mancanza di standardizzazione può a volte causare confusion
 
 >[!NOTE]
 >
->Non è possibile creare una tabella di mapping per le tabelle consolidate senza l&#39;assistenza del team di supporto Adobe.
+>Non è possibile creare una tabella di mappatura per le tabelle consolidate senza l’aiuto del team di supporto Adobe.
 
 ## Come si crea? {#how}
 
@@ -37,7 +37,7 @@ Sfortunatamente, la mancanza di standardizzazione può a volte causare confusion
 * Le percentuali devono essere immesse come decimali.
 * Assicurati che eventuali zeri iniziali o finali siano correttamente conservati.
 
-Prima di iniziare, Adobe consiglia di [esportare i dati della tabella non elaborati](../../tutorials/export-raw-data.md). Osservare prima i dati non elaborati significa poter esplorare tutte le possibili combinazioni per i dati da pulire, garantendo in tal modo che la tabella di mappatura copra tutto.
+Prima di iniziare, Adobe consiglia di [esportare i dati non elaborati della tabella](../../tutorials/export-raw-data.md). Osservare prima i dati non elaborati significa poter esplorare tutte le possibili combinazioni per i dati da pulire, garantendo in tal modo che la tabella di mappatura copra tutto.
 
 Per creare una tabella di mappatura, devi creare un foglio di calcolo a due colonne che segua le [regole di formattazione per i caricamenti di file](../../data-analyst/importing-data/connecting-data/using-file-uploader.md).
 
@@ -49,11 +49,11 @@ Nella seconda colonna immettere i valori **da**. Continuando con l&#39;esempio d
 
 ## Cosa devo fare in [!DNL Commerce Intelligence] per usarlo? {#use}
 
-Dopo aver creato la tabella di mapping, è necessario [caricare il file](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) in [!DNL Commerce Intelligence] e [creare una colonna unita](../../data-analyst/data-warehouse-mgr/calc-column-types.md) che riposiziona il nuovo campo nella tabella desiderata. Puoi eseguire questa operazione dopo che il file è stato sincronizzato con la Data Warehouse.
+Dopo aver creato la tabella di mapping, è necessario [caricare il file](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) in [!DNL Commerce Intelligence] e [creare una colonna unita](../../data-analyst/data-warehouse-mgr/calc-column-types.md) che riposiziona il nuovo campo nella tabella desiderata. Puoi eseguire questa operazione dopo che il file è stato sincronizzato con il Data Warehouse.
 
 In questo esempio la colonna creata nella tabella `mapping_state` (`state_input`) viene spostata nella tabella `customer_address` utilizzando una colonna unita in join. Questo consente di eseguire il raggruppamento in base alla colonna `state_input` pulita nei report anziché alla colonna `state`.
 
-Per creare la colonna `joined`, passare alla tabella in cui il campo verrà spostato in Gestione Date Warehouse. In questo esempio, la tabella `customer_address`.
+Per creare la colonna `joined`, passare alla tabella in cui il campo verrà spostato in Data Warehouse Manager. In questo esempio, la tabella `customer_address`.
 
 1. Fare clic su **[!UICONTROL Create a Column]**.
 1. Selezionare `Joined Column` dal menu a discesa `Definition`.
@@ -78,7 +78,7 @@ Al termine di un ciclo di aggiornamento, potrai utilizzare la nuova colonna unit
 
 ![](../../assets/Clean_State_Segments.png)
 
-Le tabelle di mappatura sono utili per ogni momento in cui si desidera eliminare alcuni dati potenzialmente confusi nella Data Warehouse. Tuttavia, le tabelle di mappatura possono essere utilizzate anche per altri casi d&#39;uso interessanti, come [replicare il tuo [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
+Le tabelle di mappatura sono utili per ogni momento in cui si desidera eliminare alcuni dati potenzialmente confusi nel Data Warehouse. Tuttavia, le tabelle di mappatura possono essere utilizzate anche per altri casi d&#39;uso interessanti, come [replicare il tuo [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 
 ### Correlato
 

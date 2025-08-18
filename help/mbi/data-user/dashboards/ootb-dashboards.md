@@ -13,19 +13,19 @@ ht-degree: 0%
 
 # Dashboard inclusi
 
-[!DNL Adobe] offre `eCommerce` e `SaaS` pacchetti iniziali. Questi pacchetti, creati da analisti Adobe, contengono un set personalizzato di dashboard e rapporti per il set di dati. Le analisi contenute in questi pacchetti consentono di verificare lo stato di metriche essenziali quali i ricavi derivanti dal ciclo di vita dell’utente, il numero di acquisti ripetuti e altro ancora, creando in tal modo una solida base per le esplorazioni future.
+[!DNL Adobe] offre `eCommerce` e `SaaS` pacchetti iniziali. Questi pacchetti, creati dagli analisti di Adobe, contengono un set personalizzato di dashboard e rapporti per il set di dati. Le analisi contenute in questi pacchetti consentono di verificare lo stato di metriche essenziali quali i ricavi derivanti dal ciclo di vita dell’utente, il numero di acquisti ripetuti e altro ancora, creando in tal modo una solida base per le esplorazioni future.
 
 >[!NOTE]
 >
 >La disponibilità di alcune dashboard dipende dal set di dati.
 
-In caso di domande o se sei interessato ad aggiungere un pacchetto al tuo account, invia un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per assistenza.
+In caso di domande o se sei interessato ad aggiungere un pacchetto al tuo account, invia un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per assistenza.
 
 ## Panoramica esecutiva
 
 Il dashboard `executive overview` è creato da grafici presenti in altri dashboard. Questa dashboard offre una panoramica di alto livello dei dati e contiene grafici che verrebbero rivisti quotidianamente, mentre altre dashboard contenevano informazioni più dettagliate. Inizialmente, viene impostato come dashboard predefinito in ogni account.
 
-È incluso un set generale di grafici. L&#39;Adobe consiglia di adattare il dashboard alle proprie esigenze aggiungendo altri grafici utilizzati più di frequente.
+È incluso un set generale di grafici. Adobe consiglia di adattare il dashboard alle esigenze specifiche aggiungendo altri grafici utilizzati più di frequente.
 
 ## Analisi per coorte
 

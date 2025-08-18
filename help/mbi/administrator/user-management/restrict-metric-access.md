@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Oltre a impostare i livelli di autorizzazione utente, puoi anche limitare l’accesso alle metriche utente per utente. Ad esempio, se desideri che il tuo reparto contabile abbia accesso alle metriche relative ai ricavi ma non a quelle di acquisizione degli utenti, puoi limitare l’accesso a tali metriche.
 
-In casi simili, l&#39;Adobe consiglia di impostare l&#39;account dell&#39;utente su **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**. Le autorizzazioni **[!UICONTROL Standard]** devono essere assegnate agli utenti che non hanno bisogno di creare o modificare metriche, colonne calcolate, integrazioni o utenti, ma che hanno bisogno dell&#39;accesso ai dati nella Data Warehouse. Se si desidera limitare completamente l&#39;accesso ai dati, utilizzare le autorizzazioni **[!UICONTROL Read Only]**.
+In casi simili, Adobe consiglia di impostare l&#39;account dell&#39;utente su **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**. Le autorizzazioni **[!UICONTROL Standard]** devono essere assegnate agli utenti che non hanno bisogno di creare o modificare metriche, colonne calcolate, integrazioni o utenti, ma che hanno bisogno dell&#39;accesso ai dati in Data Warehouse. Se si desidera limitare completamente l&#39;accesso ai dati, utilizzare le autorizzazioni **[!UICONTROL Read Only]**.
 
 Dopo aver impostato il livello di autorizzazione, è possibile selezionare le metriche a cui un utente **[!UICONTROL Standard]** può accedere eseguendo le operazioni seguenti:
 
@@ -26,7 +26,7 @@ Dopo aver impostato il livello di autorizzazione, è possibile selezionare le me
 
 >[!NOTE]
 >
->Tutti gli utenti con autorizzazioni **[!UICONTROL Standard]** possono accedere a tutti i dati della Data Warehouse tramite Esportazione dati, oltre a tutte le metriche di [!DNL Google Analytics].
+>Tutti gli utenti con autorizzazioni **[!UICONTROL Standard]** possono accedere a tutti i dati in Data Warehouse tramite Esportazione dati, oltre a tutte le metriche di [!DNL Google Analytics].
 
 È inoltre possibile limitare l&#39;accesso a una metrica modificando la metrica e **[!UICONTROL Standard]** selezionando gli utenti nella sezione **[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)**.
 

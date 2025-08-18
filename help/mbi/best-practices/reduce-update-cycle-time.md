@@ -19,13 +19,13 @@ A un tempo di aggiornamento già lungo possono aggiungersi molti fattori. Alcuni
 
 ## Diminuisci frequenza di ricontrollo
 
-In una tabella di database possono essere presenti colonne di dati con valori modificabili. Ad esempio, in una tabella **orders** potrebbe essere presente una colonna denominata **status**. Quando un ordine viene scritto inizialmente nel database, la colonna di stato potrebbe contenere il valore `pending`. L&#39;ordine è replicato nella [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) con questo valore `pending`.
+In una tabella di database possono essere presenti colonne di dati con valori modificabili. Ad esempio, in una tabella **orders** potrebbe essere presente una colonna denominata **status**. Quando un ordine viene scritto inizialmente nel database, la colonna di stato potrebbe contenere il valore `pending`. L&#39;ordine è replicato nel tuo [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) con questo valore `pending`.
 
 Le colonne modificabili devono essere [ricontrollate per verificare la presenza di valori aggiornati](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) nel tempo. Per impostazione predefinita, [!DNL Commerce Intelligence] ricontrolla queste colonne durante ogni aggiornamento, ma se è presente una grande quantità di dati da ricontrollare e replicare, questo può influire negativamente sul tempo di aggiornamento. Invece di eseguire nuovi controlli durante ogni aggiornamento, Adobe consiglia di impostare la frequenza di nuovi controlli su giornaliera, settimanale o mensile.
 
 ## Utilizzare i metodi di replica incrementali
 
-Come accennato in precedenza, i tempi di aggiornamento lunghi sono direttamente correlati alla quantità di dati da ricontrollare e replicare. [I metodi di replica incrementali](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md) possono ridurre notevolmente la quantità di dati elaborati durante il ciclo di aggiornamento. Laddove possibile, Adobe consiglia di utilizzare questi metodi o di modificare il database per supportare un metodo incrementale.
+Come accennato in precedenza, i tempi di aggiornamento lunghi sono direttamente correlati alla quantità di dati da ricontrollare e replicare. [I metodi di replica incrementali](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md) possono ridurre notevolmente la quantità di dati elaborati durante il ciclo di aggiornamento. Se possibile, Adobe consiglia di utilizzare questi metodi o di modificare il database per supportare un metodo incrementale.
 
 ## Rimuovere i grafici inutilizzati dai dashboard
 
@@ -43,4 +43,4 @@ Oltre a rivalutare le frequenze di ricontrollo, i metodi di replica e l&#39;util
 
 ## Ritorno a capo
 
-Se il tempo di aggiornamento sembra ancora lento anche dopo l&#39;implementazione di queste raccomandazioni, [contatta il team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Se il tempo di aggiornamento sembra ancora lento anche dopo l&#39;implementazione di queste raccomandazioni, [contatta il team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

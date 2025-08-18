@@ -1,6 +1,6 @@
 ---
 title: Dashboard preconfigurati
-description: Scopri le dashboard pronte all’uso per fornire informazioni approfondite sulla tua attività.
+description: Scopri le dashboard pronte all’uso per fornire insight alla tua azienda.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Dashboard preconfigurati
 
-[!DNL Adobe Commerce Intelligence] include dashboard predefiniti per fornire informazioni approfondite sulla tua attività. Con le dashboard, puoi verificare lo stato di metriche essenziali come i ricavi dal ciclo di vita dell’utente, il numero di acquisti ripetuti, i prodotti migliori acquistati in un determinato periodo di tempo e altro ancora. Queste dashboard preconfigurate sono state create per aiutarti a prendere decisioni aziendali informate.
+[!DNL Adobe Commerce Intelligence] include dashboard predefiniti per fornire insight alla tua azienda. Con le dashboard, puoi verificare lo stato di metriche essenziali come i ricavi dal ciclo di vita dell’utente, il numero di acquisti ripetuti, i prodotti migliori acquistati in un determinato periodo di tempo e altro ancora. Queste dashboard preconfigurate sono state create per aiutarti a prendere decisioni aziendali informate.
 
 >[!NOTE]
 >
->L’accesso a queste dashboard dipende dal tipo di account e dal livello di accesso. Se queste dashboard non vengono visualizzate, contatta il [supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+>L’accesso a queste dashboard dipende dal tipo di account e dal livello di accesso. Se queste dashboard non vengono visualizzate, contatta il [supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Disponibilità del rapporto
 
@@ -133,7 +133,7 @@ Il pannello di controllo Ordini fornisce informazioni sul volume transazionale d
 
 ## Prodotti
 
-Il dashboard Prodotti mostra le prestazioni generali del prodotto in termini di prodotti ordinati, valore lordo delle merci (GMV, Gross Merchandise Value) e principali prodotti acquistati e rimborsati. Può aiutarti a bilanciare acquisti e restituzioni e a determinare il successo e la popolarità del prodotto. L&#39;archivio deve essere [configurato per tenere traccia dei rimborsi](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=it) per i grafici da compilare.
+Il dashboard Prodotti mostra le prestazioni generali del prodotto in termini di prodotti ordinati, valore lordo delle merci (GMV, Gross Merchandise Value) e principali prodotti acquistati e rimborsati. Può aiutarti a bilanciare acquisti e restituzioni e a determinare il successo e la popolarità del prodotto. L&#39;archivio deve essere [configurato per tenere traccia dei rimborsi](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) per i grafici da compilare.
 
 >[!NOTE]
 >

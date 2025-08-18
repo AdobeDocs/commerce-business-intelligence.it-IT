@@ -1,6 +1,6 @@
 ---
-title: Dati previsti Salesforce
-description: Scopri gli oggetti supportati e non supportati nei dati Salesforce.
+title: Dati Salesforce previsti
+description: Scopri gli oggetti supportati e non supportati nei dati di Salesforce.
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Previsti [!DNL Salesforce] dati
 
-Al termine dell&#39;[[!DNL Salesforce] installazione](../integrations/salesforce.md), nella Data Warehouse verrà creata una tabella per ogni [oggetto](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) interrogabile, denominato `sf_/\{sobject-name}`.
+Al termine dell&#39;[[!DNL Salesforce] installazione](../integrations/salesforce.md), viene creata una tabella per ogni [oggetto](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) interrogabile, denominato `sf_/\{sobject-name}`, nel Data Warehouse.
 
 >[!NOTE]
 >
@@ -50,4 +50,4 @@ Attualmente, [!DNL Salesforce] non espone i seguenti oggetti nella loro API:
 ## Correlato:
 
 * [Connessione in corso  [!DNL Salesforce]](../integrations/salesforce.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

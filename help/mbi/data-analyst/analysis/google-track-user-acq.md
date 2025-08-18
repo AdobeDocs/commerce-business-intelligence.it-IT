@@ -27,7 +27,7 @@ Se non si tiene traccia delle origini di acquisizione utente nel database, [!DNL
 
 ### (Opzione 1) Tenere traccia dei dati di origine dei riferimenti dell&#39;ordine tramite [!DNL Google Analytics E-Commerce]
 
-Se si utilizza [!DNL Google Analytics E-Commerce] per tenere traccia dei dati relativi a ordini e vendite, è possibile utilizzare [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md) per sincronizzare i dati di origine di riferimento di ogni ordine. Questo consente di segmentare i ricavi e gli ordini per origine di riferimento (ad esempio, `utm_source` o `utm_medium`). È inoltre possibile ottenere un&#39;idea delle origini di acquisizione del cliente tramite [!DNL Commerce Intelligence] dimensioni personalizzate, ad esempio `User's first order source`.
+Se si utilizza [!DNL Google Analytics E-Commerce] per tenere traccia dei dati relativi a ordini e vendite, è possibile utilizzare [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) per sincronizzare i dati di origine di riferimento di ogni ordine. Questo consente di segmentare i ricavi e gli ordini per origine di riferimento (ad esempio, `utm_source` o `utm_medium`). È inoltre possibile ottenere un&#39;idea delle origini di acquisizione del cliente tramite [!DNL Commerce Intelligence] dimensioni personalizzate, ad esempio `User's first order source`.
 
 ### (Opzione 2) Salvataggio dei dati di origine di acquisizione di [!DNL Google Analytics] nel database
 
@@ -35,7 +35,7 @@ In questo argomento viene illustrato come salvare le informazioni sul canale di 
 
 #### Perché?
 
-Se si considerano solo le metriche di conversione e acquisizione predefinite di [!DNL Google Analytics], non si ottiene l&#39;intera immagine. Mentre è interessante vedere il numero di conversioni dalla ricerca organica rispetto alla ricerca a pagamento, cosa si può fare con quelle informazioni? Dovresti spendere più soldi per la ricerca a pagamento? Questo dipende dal valore dei clienti provenienti da quel canale, che non è qualcosa che la Google Analytics fornisce.
+Se si considerano solo le metriche di conversione e acquisizione predefinite di [!DNL Google Analytics], non si ottiene l&#39;intera immagine. Mentre è interessante vedere il numero di conversioni dalla ricerca organica rispetto alla ricerca a pagamento, cosa si può fare con quelle informazioni? Dovresti spendere più soldi per la ricerca a pagamento? Questo dipende dal valore dei clienti provenienti da quel canale, che non è qualcosa che Google Analytics fornisce.
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Questo codice è stato tradotto in una libreria [PHP ospitata su github](https:/
 
 L&#39;array `$data` restituito è una mappa delle chiavi `source`, `medium`, `term`, `content`, `campaign`, `gclid` e dei rispettivi valori.
 
-L&#39;Adobe consiglia di aggiungere al database una tabella denominata, ad esempio, `user_referral`, con colonne del tipo: `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. Ogni volta che un utente si iscrive, prendi le informazioni di riferimento e memorizzale in questa tabella.
+Adobe consiglia di aggiungere al database una tabella denominata, ad esempio, `user_referral`, con colonne del tipo: `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. Ogni volta che un utente si iscrive, prendi le informazioni di riferimento e memorizzale in questa tabella.
 
 #### Come utilizzare questi dati
 

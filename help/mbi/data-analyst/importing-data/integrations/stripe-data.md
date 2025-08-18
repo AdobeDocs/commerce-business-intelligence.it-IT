@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Previsti [!DNL Stripe] dati
 
-Dopo che [hai connesso il tuo [!DNL Stripe] account](../integrations/stripe.md), puoi utilizzare [Gestione Date Warehouse](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) per tenere traccia facilmente dei campi di dati rilevanti per l&#39;analisi.
+Dopo che [hai connesso il tuo [!DNL Stripe] account](../integrations/stripe.md), puoi utilizzare [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) per tenere traccia facilmente dei campi di dati rilevanti per l&#39;analisi.
 
-In questo argomento vengono illustrate le principali tabelle dati che è possibile importare da [!DNL Stripe] in [!DNL Commerce Intelligence]. Al termine dell’installazione, nella Data Warehouse verranno create le seguenti tabelle. Fare clic sui collegamenti nella colonna Nome tabella per ulteriori informazioni sugli attributi di ogni tabella.
+In questo argomento vengono illustrate le principali tabelle dati che è possibile importare da [!DNL Stripe] in [!DNL Commerce Intelligence]. Al termine dell’installazione, nel Data Warehouse verranno create le seguenti tabelle. Fare clic sui collegamenti nella colonna Nome tabella per ulteriori informazioni sugli attributi di ogni tabella.
 
 | **Nome tabella** | **Descrizione** |
 |-----|-----|
@@ -36,4 +36,4 @@ In questo argomento vengono illustrate le principali tabelle dati che è possibi
 ## Correlato:
 
 * [Connessione in corso  [!DNL Stripe]](../integrations/stripe.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -6,7 +6,7 @@ role: Admin, User
 feature: User Management
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Queste autorizzazioni consentono agli utenti di eseguire determinate azioni o di
 | **Creare/modificare/eliminare i report SQL** | ✔ |  |   |
 | **Clona dashboard** | ✔ |   |   |
 | **Aggiungi/gestisci integrazioni** | ✔ |   |   |
-| **Accedere a Gestione Date Warehouse** | ✔ |   |   |
+| **Accedere a Data Warehouse Manager** | ✔ |   |   |
 | **Sincronizza/Annulla sincronizzazione tabelle e colonne** | ✔ |   |   |
 | **Crea/modifica metriche** | ✔ |   |   |
 | **Crea/modifica set di filtri** | ✔ |   |   |
@@ -50,11 +50,11 @@ Queste autorizzazioni consentono agli utenti di eseguire determinate azioni o di
 
 >[!NOTE]
 >
->_È possibile limitare l&#39;[accesso di un utente **[!UICONTROL Standard]**&#x200B;a metriche specifiche](../../administrator/user-management/restrict-metric-access.md)._
+>_È possibile limitare l&#39;**[!UICONTROL Standard]**accesso di un utente [ a metriche specifiche](../../administrator/user-management/restrict-metric-access.md)._
 >
 >**[!UICONTROL Standard] _gli utenti possono accedere alla fatturazione con un&#39;impostazione di autorizzazione aggiuntiva._
 >
->Gli utenti di **[!UICONTROL Read-Only]** possono solo _visualizzare_ dashboard che sono stati condivisi con loro; non possono creare o modificare nulla in [!DNL Commerce Intelligence], né cercare e aggiungere nuovi dashboard al loro account. L&#39;Adobe consiglia di condividere un set specifico di dashboard con **[!UICONTROL Read-Only]** utenti gestiti dall&#39;utente o da un altro membro del team. Non clonare un set di dashboard.
+>Gli utenti di **[!UICONTROL Read-Only]** possono solo _visualizzare_ dashboard che sono stati condivisi con loro; non possono creare o modificare nulla in [!DNL Commerce Intelligence], né cercare e aggiungere nuovi dashboard al loro account. Adobe consiglia di condividere un set specifico di dashboard con **[!UICONTROL Read-Only]** utenti gestiti da te o da un altro membro del team. Non clonare un set di dashboard.
 
 ## Autorizzazioni aggiuntive: fatturazione e tecniche {#billingtech}
 
@@ -62,7 +62,7 @@ Oltre ai livelli di autorizzazione generali, esistono altre due designazioni ute
 
 ### Fatturazione
 
-`Billing` utenti hanno accesso alla pagina di fatturazione e possono modificare le informazioni di pagamento. Inoltre, possono anche essere contattati da un Adobe per le domande di fatturazione.
+`Billing` utenti hanno accesso alla pagina di fatturazione e possono modificare le informazioni di pagamento. Inoltre, possono anche essere contattati da Adobe per le domande di fatturazione.
 
 `Admin` utenti hanno accesso alla scheda `Billing` per impostazione predefinita, ma `Standard` utenti possono anche ottenere l&#39;accesso se hanno la casella di controllo `Billing` selezionata sul loro profilo.
 
@@ -70,7 +70,7 @@ Oltre ai livelli di autorizzazione generali, esistono altre due designazioni ute
 
 ### Tecnico
 
-`Technical` utenti non dispongono di autorizzazioni specifiche. Questa impostazione contrassegna semplicemente un contatto tecnico all&#39;interno dell&#39;organizzazione. Questi utenti possono essere contattati da un Adobe per domande tecniche.
+`Technical` utenti non dispongono di autorizzazioni specifiche. Questa impostazione contrassegna semplicemente un contatto tecnico all&#39;interno dell&#39;organizzazione. Adobe può contattare questi utenti per domande tecniche.
 
 `Admin` utenti possono aggiungere nuovi utenti al proprio account facendo clic su **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** e seguendo le istruzioni. Dopo la creazione dell&#39;utente in [!DNL Commerce Intelligence], la persona fortunata che si sta invitando riceverà tramite e-mail istruzioni su come completare il processo di configurazione dell&#39;account.
 

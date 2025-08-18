@@ -73,6 +73,6 @@ Per ottenere un quadro completo delle tue attività di campagna, puoi importare 
 
 ## Prepara i file per il caricamento in [!DNL Commerce Intelligence] {#upload}
 
-Ogni file - `Opens`, `Clicks` e `Sent` - deve essere caricato in [!DNL Commerce Intelligence] come file separato. L&#39;Adobe consiglia di denominare i file utilizzando questa convenzione di denominazione: `MailChimp\_ACTION\_DATE`. Sostituisci `ACTION` con `Open`, `Click` o `Sent` e sostituisci `DATE` con la data di esportazione.
+Ogni file - `Opens`, `Clicks` e `Sent` - deve essere caricato in [!DNL Commerce Intelligence] come file separato. Adobe consiglia di denominare i file utilizzando questa convenzione di denominazione: `MailChimp\_ACTION\_DATE`. Sostituisci `ACTION` con `Open`, `Click` o `Sent` e sostituisci `DATE` con la data di esportazione.
 
-Quando sei pronto a caricare i file, utilizza la funzionalità [`File Upload`](../connecting-data/using-file-uploader.md) per inserire i dati nella tua Data Warehouse.
+Quando sei pronto a caricare i file, utilizza la funzionalità [`File Upload`](../connecting-data/using-file-uploader.md) per inserire i dati nel tuo Data Warehouse.
