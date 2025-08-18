@@ -71,7 +71,7 @@ Questo tipo di analisi è ciò che gli esperti di marketing delle aziende Fortun
 
 Il primo passaggio per segmentare le metriche in base alle dimensioni di cui sopra consiste nell’assicurarsi di tenere traccia di questi dati nel database. Se non viene tracciato, incontra il tuo team tecnico e trova un modo per iniziare a tracciare questi dati.
 
-Dopo aver confermato che i dati sono tracciati nel database, [contatta il team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per inviare le dimensioni alle metriche e ai grafici di [!DNL Commerce Intelligence]. È inoltre possibile utilizzare lo strumento *Gestione campi* per tenere traccia di questi campi in [!DNL Commerce Intelligence].
+Dopo aver confermato che i dati sono tracciati nel database, [contatta il team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per inviare le dimensioni alle metriche e ai grafici di [!DNL Commerce Intelligence]. È inoltre possibile utilizzare lo strumento *Gestione campi* per tenere traccia di questi campi in [!DNL Commerce Intelligence].
 
 ## Correlato
 

@@ -30,4 +30,4 @@ In questo argomento vengono illustrate le principali tabelle dati importate dagl
 ## Correlato
 
 * [Connessione in corso  [!DNL Adobe Commerce]](../integrations/magento.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)

@@ -40,4 +40,4 @@ Dopo aver fatto clic su **[!UICONTROL Connect to Quickbooks]**, accedi al tuo ac
 ## Correlato
 
 * [Previsti [!DNL QuickBooks] dati](../integrations/quickbooks-data.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)

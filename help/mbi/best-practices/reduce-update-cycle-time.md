@@ -43,4 +43,4 @@ Oltre a rivalutare le frequenze di ricontrollo, i metodi di replica e l&#39;util
 
 ## Ritorno a capo
 
-Se il tempo di aggiornamento sembra ancora lento anche dopo l&#39;implementazione di queste raccomandazioni, [contatta il team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Se il tempo di aggiornamento sembra ancora lento anche dopo l&#39;implementazione di queste raccomandazioni, [contatta il team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).

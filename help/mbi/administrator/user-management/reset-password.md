@@ -17,4 +17,4 @@ Per reimpostare la password, fai clic su **[!UICONTROL Reset Password]** sotto i
 
 È inoltre possibile modificare la password in [!DNL Commerce Intelligence] utilizzando la pagina **[!UICONTROL Personal Settings]**.
 
-Se reimposti la password e rimani bloccato fuori dall&#39;account, segui [questi suggerimenti](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html) per individuare il problema.
+Se reimposti la password e rimani bloccato fuori dall&#39;account, segui [questi suggerimenti](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=it) per individuare il problema.

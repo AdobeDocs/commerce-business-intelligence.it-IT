@@ -32,4 +32,4 @@ In questo argomento vengono illustrate le principali tabelle dati che è possibi
 ## Documentazione correlata
 
 * [Connessione in corso  [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)

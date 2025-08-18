@@ -65,4 +65,4 @@ Se la connessione ha esito positivo, _ha esito positivo.Il messaggio_ viene visu
 ### Correlato
 
 * [Previsti [!DNL Mixpanel] dati](../integrations/mixpanel-data.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
