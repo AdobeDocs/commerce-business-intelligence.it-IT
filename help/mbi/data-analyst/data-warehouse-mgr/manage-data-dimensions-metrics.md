@@ -4,9 +4,9 @@ description: Scopri cos’è una dimensione che può essere utilizzata per filtr
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Per aggiungere una o più dimensioni a più metriche contemporaneamente:
 
 1. Nella colonna `Choose Metric(s) to Add Dimensions` selezionare le metriche a cui si desidera aggiungere le dimensioni. Una volta selezionata, la colonna `Choose Dimensions to Add` viene visualizzata a destra. Controlla le dimensioni da aggiungere alla metrica selezionata.
 
-   ![](../../assets/Add_Dimensions.png)
+   ![Finestra di dialogo Aggiungi dimensioni con le opzioni di dimensione disponibili](../../assets/Add_Dimensions.png)
 
 1. Se desideri segmentare o raggruppare per una qualsiasi delle dimensioni dati nei rapporti, assicurati di indicare che sono _Raggruppabili_.
 

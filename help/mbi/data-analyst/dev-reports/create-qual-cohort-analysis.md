@@ -4,9 +4,9 @@ description: Scopri cos’è una coorte qualitativa, perché potresti essere int
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Tuttavia, se desideri analizzare il comportamento della coorte di più segmenti 
 
 La creazione di un report `qualitative cohort` in `Report Builder` implica che il team di analisti Adobe crei alcune [colonne calcolate avanzate](../data-warehouse-mgr/creating-calculated-columns.md) nelle tabelle necessarie.
 
-Per generare questi elementi, invia un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) (e fai riferimento a questo articolo!). Ecco cosa devi sapere:
+Per generare questi elementi, invia un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (e fai riferimento a questo articolo!). Ecco cosa devi sapere:
 
 * `metric` con cui eseguire l&#39;analisi della coorte e la tabella utilizzata (ad esempio: `Revenue`, basata sulla tabella `orders`).
 
@@ -55,7 +55,7 @@ Una volta che il team di analisti di Adobe risponderà a quanto sopra, avrai a d
 
 Innanzitutto, aggiungere la metrica che si è interessati a raggruppare, una volta per ogni `cohort` che si sta analizzando. In questo esempio, vuoi visualizzare i `Revenue` cumulativi effettuati nei mesi successivi al primo ordine di un cliente, segmentati da `User's referral source`. Ciò significa che, per ogni segmento, aggiungi una metrica `Revenue` e un filtro per il segmento specifico:
 
-![](../../assets/qualcohort1.gif)
+![Dimostrazione animata della creazione di un&#39;analisi qualitativa per coorte](../../assets/qualcohort1.gif)
 
 In secondo luogo, è necessario apportare due modifiche alle opzioni di tempo del rapporto:
 
@@ -65,7 +65,7 @@ In secondo luogo, è necessario apportare due modifiche alle opzioni di tempo de
 
 In questo esempio, si esamina una visualizzazione `all time` di `Revenue`. Dopo di che, dovresti finire con una serie di punti:
 
-![](../../assets/qualcohort2.gif)
+![Dimostrazione animata delle opzioni di raggruppamento e analisi per coorte](../../assets/qualcohort2.gif)
 
 In terzo luogo, si esegue la regolazione per impostare `cohorts`. In base a `cohort date` e `time interval` specificati per il team di analisti Adobe, hai una dimensione nel tuo account che esegue la data `cohort`. In questo esempio, la dimensione personalizzata è denominata `Months between this order and customer's first order date`. Utilizzando questa dimensione, è necessario:
 

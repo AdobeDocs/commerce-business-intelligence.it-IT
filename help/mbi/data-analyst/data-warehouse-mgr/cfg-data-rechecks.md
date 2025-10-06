@@ -4,9 +4,9 @@ description: Scopri come configurare le colonne di dati con valori modificabili.
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Poiché gli orari di aggiornamento sono correlati alla quantità di dati da sinc
 
 Per modificare la frequenza di ricontrollo, fare clic sulla casella di controllo accanto alle colonne che si desidera modificare. Fare quindi clic sul menu a discesa **[!UICONTROL Set Recheck Frequency]** e impostare la frequenza desiderata.
 
-![](../../assets/dwm-recheck.png)
+![Data Warehouse Manager mostra le opzioni di ricontrolla configurazione](../../assets/dwm-recheck.png)
 
 A volte potresti vedere `Paused` nella colonna `Changes?`. Questo valore viene visualizzato quando il metodo di replica [della tabella](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) è impostato su `Paused`.
 

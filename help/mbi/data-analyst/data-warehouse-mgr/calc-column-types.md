@@ -4,9 +4,9 @@ description: Scopri come creare colonne per migliorare e ottimizzare i dati per 
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Una colonna calcolata in base all&#39;età restituisce il numero di secondi che 
 
 L&#39;esempio seguente crea `Seconds since customer's most recent order` nella tabella `customers`. Può essere utilizzato per creare elenchi di utenti di clienti che non hanno effettuato acquisti (talvolta denominati abbandono) in `X days`.
 
-![](../../assets/age.gif)
+![Dimostrazione animata della creazione della colonna di calcolo età](../../assets/age.gif)
 
 ### Convertitore valuta
 
@@ -47,7 +47,7 @@ L&#39;esempio seguente crea `base\_grand\_total In AED`, convertendo `base\_gran
 
 Per i client Commerce, il campo `base\_currency\_code` in genere memorizza le valute native. Il campo `Spot Time` deve corrispondere alla data utilizzata nelle metriche.
 
-![](../../assets/currency_converter.png)
+![Configurazione colonna calcolata convertitore valuta](../../assets/currency_converter.png)
 
 ## Colonne calcolate uno-a-molti {#onetomany}
 
@@ -59,7 +59,7 @@ Una colonna unita in join riposiziona un attributo nella tabella *a* nella tabel
 
 Nell&#39;esempio seguente, la dimensione `Customer's group\_id` viene unita alla tabella `orders`.
 
-![](../../assets/joined_column.gif)
+![Dimostrazione animata della creazione di tabelle di collegamento di colonne unite](../../assets/joined_column.gif)
 
 ## Colonne calcolate &quot;molti a uno&quot; {#manytoone}
 
@@ -71,7 +71,7 @@ Questo tipo di colonna calcolata restituisce il conteggio dei valori nella tabel
 
 Nell&#39;esempio seguente, la dimensione `Customer's lifetime number of canceled orders` viene creata nella tabella `customers` (con un filtro per `orders.status`).
 
-![](../../assets/many_to_one.gif){: width="699" height="351"}
+![Dimostrazione animata dell&#39;aggregazione di colonne molti a uno](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### Somma {#sum}
 
@@ -95,7 +95,7 @@ Questo tipo di dimensione potrebbe determinare, ad esempio, se un cliente ha mai
 
 Se non riesci a ricordare quali sono tutti gli input durante la creazione di una colonna calcolata, tieni a portata di mano questa mappa di riferimento durante la creazione di:
 
-![](../../assets/merged_reference_map.png)
+![Mappa di riferimento che mostra la configurazione delle colonne calcolate unite](../../assets/merged_reference_map.png)
 
 ## Colonne calcolate avanzate {#advanced}
 

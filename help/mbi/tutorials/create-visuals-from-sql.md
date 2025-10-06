@@ -4,9 +4,9 @@ description: Scopri come acquisire familiarità con la terminologia utilizzata i
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Ad esempio, considera questa query che restituisce il numero totale mensile di a
 
 Questa query restituisce questa tabella di risultati:
 
-![](../assets/SQL_results_table.png)
+![Tabella che mostra i risultati delle query SQL con gli elementi venduti per prodotto, anno e mese](../assets/SQL_results_table.png)
 
 ## Passaggio 2: creare la visualizzazione
 
@@ -66,7 +66,7 @@ Con questi risultati, *come si crea la visualizzazione?* Per iniziare, fare clic
 
 Quando si esegue una query per la prima volta, il report potrebbe risultare imperscrutabile perché tutte le colonne della query vengono tracciate come una serie:
 
-![](../assets/SQL_initial_report_results.png)
+![Report SQL iniziale con tutte le colonne tracciate come serie](../assets/SQL_initial_report_results.png)
 
 In questo esempio, vuoi che sia un grafico a linee con tendenze nel tempo. Per crearlo, usa le seguenti impostazioni:
 
@@ -82,13 +82,13 @@ In questo esempio, vuoi che sia un grafico a linee con tendenze nel tempo. Per c
 
 Di seguito è riportato un rapido riepilogo su come hai creato questa visualizzazione, dall’esecuzione della query alla configurazione del rapporto:
 
-![](../assets/SQL_report_settings.gif)
+![Dimostrazione animata della configurazione delle impostazioni di visualizzazione del report SQL](../assets/SQL_report_settings.gif)
 
 ## Passaggio 3: selezionare un `Chart Type`
 
 Questo esempio utilizza il tipo di grafico `Line`. Per utilizzare un `chart type` diverso, fare clic sulle icone sopra la sezione delle opzioni del grafico per modificarlo:
 
-![](../assets/Chart_types.png)
+![Icone del tipo di grafico disponibili, incluse opzioni di visualizzazione a linee, a barre, ad area e di altro tipo](../assets/Chart_types.png)
 
 ## Passaggio 4: salvare la visualizzazione
 

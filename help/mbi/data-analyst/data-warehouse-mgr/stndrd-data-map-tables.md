@@ -4,9 +4,9 @@ description: Scopri come utilizzare le tabelle di mappatura.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Immagina di essere in `Report Builder` a creare un report `Revenue by State`. Tutto sta andando bene finché non tenti di aggiungere un raggruppamento `billing state` al report e vedi questo:
 
-![](../../assets/Messy_State_Segments.png)
+![Grafico che mostra segmenti di stato disordinato con denominazione incoerente](../../assets/Messy_State_Segments.png)
 
 ## Com&#39;è potuto succedere?
 
@@ -45,7 +45,7 @@ Nella prima colonna immettere i valori memorizzati nel database con **un solo va
 
 Nella seconda colonna immettere i valori **da**. Continuando con l&#39;esempio dello stato di fatturazione, se desideri che `pa`, `PA`, `Pennsylvania` e `pennsylvania` siano semplicemente `PA`, immetti `PA` in questa colonna per ogni valore di input.
 
-![](../../assets/Mapping_table_examples.jpg)
+![Tabella di mappatura di esempio che mostra i valori originali e i valori standardizzati](../../assets/Mapping_table_examples.jpg)
 
 ## Cosa devo fare in [!DNL Commerce Intelligence] per usarlo? {#use}
 
@@ -66,7 +66,7 @@ Per creare la colonna `joined`, passare alla tabella in cui il campo verrà spos
    * Sul lato `One`, selezionare la tabella `mapping` e la colonna `Primary key`. In questo caso, selezionare la colonna `state_input` dalla tabella `mapping_state`.
    * Ecco un’anteprima del percorso:
 
-     ![](../../assets/State_Mapping_Path.png)
+     ![Data Warehouse Manager mostra il percorso di calcolo del mapping dello stato](../../assets/State_Mapping_Path.png)
 
 1. Al termine, fare clic su **[!UICONTROL Save]** per creare il percorso.
 1. Il percorso potrebbe non essere popolato immediatamente dopo il salvataggio. In questo caso, fare clic sulla casella `Path` e selezionare il percorso creato.
@@ -76,7 +76,7 @@ Per creare la colonna `joined`, passare alla tabella in cui il campo verrà spos
 
 Al termine di un ciclo di aggiornamento, potrai utilizzare la nuova colonna unita per segmentare correttamente i dati anziché la colonna confusa dal database. Esaminare le opzioni di raggruppamento ora, senza ulteriori problemi di stress:
 
-![](../../assets/Clean_State_Segments.png)
+![Grafico che mostra i segmenti di stato pulito dopo la standardizzazione](../../assets/Clean_State_Segments.png)
 
 Le tabelle di mappatura sono utili per ogni momento in cui si desidera eliminare alcuni dati potenzialmente confusi nel Data Warehouse. Tuttavia, le tabelle di mappatura possono essere utilizzate anche per altri casi d&#39;uso interessanti, come [replicare il tuo [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 

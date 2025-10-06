@@ -4,9 +4,9 @@ description: Scopri come connettersi [!DNL MySQL] tramite tunnel SSH.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Lascia aperta questa pagina per tutta la durata dell’esercitazione: sarà nece
 
 Ecco come navigare in [!DNL Commerce Intelligence] per recuperare la chiave:
 
-![](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
+![Dimostrazione animata della connessione MySQL tramite tunnel SSH](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
 
 ## Consenti accesso all&#39;indirizzo IP [!DNL Commerce Intelligence] {#allowlist}
 
@@ -120,4 +120,4 @@ Al termine, fare clic su **[!UICONTROL Save & Test]** per completare la configur
 
 ## Correlato:
 
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

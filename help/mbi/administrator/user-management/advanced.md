@@ -4,9 +4,9 @@ description: Migliora la visibilità dei dati, semplifica le attività di report
 role: Admin, User
 feature: User Management
 exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
-source-git-commit: df408b8947a62cdb498b56370be965c89c45f6ff
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -460,7 +460,7 @@ Gli utenti amministratori possono visualizzare i dati del dashboard con accesso 
 
 Tuttavia, gli utenti possono visualizzare i dati del dashboard filtrati in base agli store mappati a loro durante la configurazione utente.
 
-![Visualizza amministratore dashboard](../../assets/view-dashboard-user.png)
+![Visualizza dashboard filtrata dall&#39;amministratore](../../assets/view-dashboard-user.png)
 
 >[!TIP]
 >

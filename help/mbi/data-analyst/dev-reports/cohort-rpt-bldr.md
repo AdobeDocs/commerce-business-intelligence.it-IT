@@ -4,9 +4,9 @@ description: Scopri l’analisi dei gruppi di utenti che condividono caratterist
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1607'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Ora che ti trovi in `Report Builder`, aggiungi la metrica su cui desideri esegui
 
 **Attiva/disattiva visualizzazione metrica su`Cohort`**
 
-![](../../assets/visual-report-builder-cohort-toggle.png)
+![Visual Report Builder mostra l&#39;opzione di attivazione/disattivazione analisi per coorte](../../assets/visual-report-builder-cohort-toggle.png)
 
 Verrà aperta una nuova finestra per configurare i dettagli del report `Cohort`.
 
@@ -83,7 +83,7 @@ Questa funzionalità consente di impostare l&#39;intervallo di tempo dei dati vi
 
 L&#39;intervallo per questo valore cambia con quello selezionato in `cohort time period` e il valore è impostato su `12` per impostazione predefinita; il valore non cambia a meno che non si faccia clic sull&#39;icona del calendario per modificarlo.
 
-![](../../assets/cohort-time-range.png)
+![Selettore intervallo di tempo coorte con opzioni data](../../assets/cohort-time-range.png)
 
 #### Altre note
 
@@ -105,7 +105,7 @@ Di seguito sono riportate le istruzioni specifiche della versione legacy di `Coh
 
 #### Come si crea un&#39;analisi `cohort` personalizzata? {#create}
 
-![](../../assets/create-cohort-analysis.png)
+![Finestra di dialogo per l&#39;analisi per coorte con opzioni di configurazione](../../assets/create-cohort-analysis.png)
 
 `Cohort` analisi in azione. In questo caso, puoi vedere i ricavi crescere nel tempo sia cumulativamente che per utente.
 
@@ -155,7 +155,7 @@ In `duration` è possibile definire le impostazioni dell&#39;asse X del grafico.
 
 Se si è scelto di raggruppare gli utenti in base a un `cohort date` che è stato aggiunto da un&#39;altra tabella, è possibile che venga visualizzata l&#39;opzione `counting members in the … table`.
 
-![](../../assets/Cohort_Counting_Members_option.png)
+![Opzione membri conteggio coorte con modalità indipendente e cumulativa](../../assets/Cohort_Counting_Members_option.png)
 
 Guarda un esempio per comprendere questa impostazione. Supponiamo che tu abbia creato un rapporto che classifica una metrica `Revenue` per `Customer's registration date`. Si desidera inoltre utilizzare la prospettiva `Average value per cohort member` per visualizzare i ricavi per acquirente nel tempo. Per trovare il valore medio per acquirente, devi decidere il numero di acquirenti da dividere. È il numero di clienti registrati nella tabella `customers` o è il numero di acquirenti distinti in `orders table` per lo stesso periodo?
 
@@ -169,7 +169,7 @@ Appena sopra la visualizzazione del rapporto c&#39;è un elenco a discesa di `pe
 
 Vedi [Prospettive](#perspectives).
 
-![](../../assets/Cohort_Perspective_Menu.png)
+![Menu Prospettiva coorte con diverse opzioni di visualizzazione](../../assets/Cohort_Perspective_Menu.png)
 
 ## Esempi di analisi per coorte {#examples}
 

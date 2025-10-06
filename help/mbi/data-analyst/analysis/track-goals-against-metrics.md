@@ -4,9 +4,9 @@ description: Scopri come impostare una dashboard che ti aiuti a tenere traccia d
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 La maggior parte dei client desidera tenere traccia dei propri **obiettivi aziendali**, ma non si rende conto che ciò è possibile in [!DNL Adobe Commerce Intelligence]. In questo argomento viene illustrato come impostare una dashboard che consenta di tenere traccia degli obiettivi aziendali in base ai dati effettivi, inclusi ricavi, nuovi utenti registrati e ordini nel tempo. Scopri anche come confrontare le prestazioni anno su anno, il tutto in una dashboard come questa:
 
-![](../../assets/Goals-_dashboard_2.png)
+![Dashboard che mostra il tracciamento degli obiettivi rispetto alle prestazioni effettive delle metriche](../../assets/Goals-_dashboard_2.png)
 
 Prima di iniziare, è necessario esaminare lo strumento di caricamento [file](../importing-data/connecting-data/using-file-uploader.md) e assicurarsi di aver definito gli obiettivi aziendali per un determinato periodo.
 
@@ -25,7 +25,7 @@ Devi innanzitutto caricare un file contenente i target giornalieri/mensili/trime
 
 Per formattare il file è possibile utilizzare [uploader file](../importing-data/connecting-data/using-file-uploader.md) e l&#39;immagine seguente. Le destinazioni più comuni monitorate dai client in [!DNL Commerce Intelligence] includono Ordini, Ricavi e Nuovi account registrati.
 
-![](../../assets/Goals-_Excel.png)
+![Modello di foglio di calcolo Excel per monitorare obiettivi e metriche](../../assets/Goals-_Excel.png)
 
 ## Metriche
 
@@ -55,46 +55,46 @@ Nell’analisi dei target, è utile disporre di una combinazione di valori stati
 
 * **Ricavi rimanenti per raggiungere la destinazione**
 * Metrica `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL Metric]: `Revenue`
 
 * Metrica `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
-* &#x200B;
+* 
   [!UICONTROL Formula]: `(B-A)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: (qualsiasi periodo di tempo rilevante si desideri)
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Destinazioni ricavi**
 * Metrica `A`: `Revenue`
-* &#x200B;
+* 
   [!UICONTROL Metric]: `Revenue`
 
 * Metrica `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * Metrica `C`: `Revenue (amount change since previous year)` (nascondere)
-* &#x200B;
+* 
   [!UICONTROL Metric]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (questo mese l&#39;anno scorso)
-* &#x200B;
+* 
   [!UICONTROL Formula]: `(A-C)`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Currency`
 
 * Disattiva `Multiple Y-Axes`
 * [!UICONTROL Time period]: (qualunque sia il periodo di tempo rilevante desiderato)*
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 

@@ -4,9 +4,9 @@ description: Scopri come utilizzare Visual Report Builder.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Nell&#39;esempio seguente viene illustrato come creare un report semplice, raggr
 
      ![Raggruppa per dati tabella](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * Fare clic sul controllo Trasposizione (![](../../assets/magento-bi-btn-transpose.png)) nell&#39;angolo superiore destro della tabella per modificare l&#39;orientamento dei dati.
+   * Fare clic sul controllo Trasposizione (![icona Trasposizione](../../assets/magento-bi-btn-transpose.png)) nell&#39;angolo superiore destro della tabella per modificare l&#39;orientamento dei dati.
 
      L’asse dei dati viene capovolto e la tabella ora ha una colonna per ciascun codice coupon e una riga per ogni mese. Questo orientamento potrebbe risultare più semplice da leggere.
 
@@ -95,14 +95,14 @@ Nell&#39;esempio seguente viene illustrato come creare un report semplice, raggr
 
      | | |
      |-----|-----|
-     | ![](../../assets/magento-bi-btn-chart-line.png) | Grafico a linee |
-     | ![](../../assets/magento-bi-btn-chart-horz-bar.png) | Barre orizzontali |
-     | ![](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Barre orizzontali sovrapposte |
-     | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | Barra verticale |
-     | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Barre verticali sovrapposte |
-     | ![](../../assets/magento-bi-btn-chart-pie.png) | Torta |
-     | ![](../../assets/magento-bi-btn-chart-area.png) | Area |
-     | ![](../../assets/magento-bi-btn-chart-funnel.png) | Funnel |
+     | ![Icona grafico a linee](../../assets/magento-bi-btn-chart-line.png) | Grafico a linee |
+     | ![Icona barra orizzontale](../../assets/magento-bi-btn-chart-horz-bar.png) | Barre orizzontali |
+     | ![Icona Barre orizzontali sovrapposte](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Barre orizzontali sovrapposte |
+     | ![Icona barra verticale](../../assets/magento-bi-btn-chart-vert-bar.png) | Barra verticale |
+     | ![Icona Barre sovrapposte verticali](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Barre verticali sovrapposte |
+     | ![Icona grafico a torta](../../assets/magento-bi-btn-chart-pie.png) | Torta |
+     | ![Icona grafico ad area](../../assets/magento-bi-btn-chart-area.png) | Area |
+     | ![Icona grafico Funnel](../../assets/magento-bi-btn-chart-funnel.png) | Funnel |
 
      {style="table-layout:auto"}
 

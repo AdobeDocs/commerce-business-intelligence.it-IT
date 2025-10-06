@@ -4,9 +4,9 @@ description: Scopri come analizzare i dati nel rapporto per un periodo di tempo 
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Alcune metriche semplicemente non possono avere una tendenza nel tempo perché i
 
 Quando si utilizza tale metrica nel reporting, si nota che l&#39;aggiunta di questa metrica a un report imposta automaticamente un `Time Interval` indipendente di `None` e un `Time Range` di `Global`:
 
-![](../assets/Metrics_without_timestamps.gif)
+![Rapporto che mostra la metrica con intervallo di tempo impostato su Nessuno e intervallo di tempo impostato su Globale](../assets/Metrics_without_timestamps.gif)
 
 ## Assegnare a una metrica un intervallo di tempo indipendente {#independenttimeinterval}
 
@@ -62,11 +62,11 @@ Questo tipo di rapporto può essere utile se si desidera confrontare i ricavi ge
 
 Ora puoi vedere quanto ha avuto un impatto ogni mese lo scorso anno:
 
-![](../assets/Independent_Time_Int.png)
+![Grafico che mostra la percentuale di ricavi per mese per l&#39;anno precedente](../assets/Independent_Time_Int.png)
 
 ## Confronto della stessa metrica tra intervalli di tempo diversi {#difftimerange}
 
-In questo esempio viene utilizzata una dimensione personalizzata denominata `Day number of the month`. Se desideri creare questo report e non hai già questa dimensione nel tuo Data Warehouse, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per assistenza.
+In questo esempio viene utilizzata una dimensione personalizzata denominata `Day number of the month`. Se desideri creare questo report e non hai già questa dimensione nel tuo Data Warehouse, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per assistenza.
 
 I due esempi più comuni in questa categoria sono (1) il confronto delle metriche di crescita (ricavi su base annua o mese sul mese) e (2) una migliore comprensione delle recenti tendenze delle scorte o delle vendite di articoli.
 
@@ -87,7 +87,7 @@ Per dimostrare questo caso d’uso, osserva le entrate giornaliere del mese prec
 
    Non preoccuparti se la metrica scompare dal rapporto: l’impostazione di un’opzione di tempo indipendente nasconde automaticamente la metrica dal rapporto. Per visualizzarlo nuovamente, fare clic su **[!UICONTROL Show]** accanto alla metrica.
 
-   ![](../assets/Different_Time_Ranges.gif)
+   ![Dimostrazione dell&#39;impostazione di intervalli di tempo diversi per le metriche in un report](../assets/Different_Time_Ranges.gif)
 
    * Fare clic su **[!UICONTROL Apply]** per salvare le impostazioni dell&#39;intervallo e dell&#39;intervallo.
 
@@ -95,7 +95,7 @@ Per dimostrare questo caso d’uso, osserva le entrate giornaliere del mese prec
 
    * Nel menu a discesa `Group By`, seleziona `Show All` e fai clic su **[!UICONTROL Apply]**. In questo modo vengono creati i valori dell’asse X per il rapporto:
 
-   ![](../assets/TO4.png)
+   ![Rapporto che mostra il confronto dei ricavi raggruppato per numero di giorno del mese](../assets/TO4.png)
 
    * Rinominare le metriche. Nell&#39;esempio, la prima metrica è `Revenue - 2015` e la seconda è `Revenue - 2014`.
 
@@ -136,7 +136,7 @@ Per creare le formule, scegliere **[!UICONTROL Add Formula]**. Immettere le form
 
 * Per `last promo period`, immettere `D / C` nel campo `Formula`.
 
-  ![](../assets/Different_Time_Ranges_2.png)
+  ![Report che mostra le settimane di calcolo della fornitura per diversi periodi di tempo](../assets/Different_Time_Ranges_2.png)
 
 * Infine, personalizzare il rapporto nascondendo le metriche e aggiungendo una dimensione `SKU` o simile al rapporto come `Group By`.
 

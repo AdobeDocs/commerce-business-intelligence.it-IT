@@ -4,9 +4,9 @@ description: Scopri come consolidare i dati da diverse origini.
 exl-id: 668cbc77-6a96-4687-9f40-3635b1be5c66
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ La nuova colonna viene visualizzata nella tabella corrente con lo stato `Pending
 
 Se non riesci a ricordare quali sono tutti gli input durante la creazione di una colonna calcolata, prova a tenere a portata di mano questa mappa di riferimento durante la creazione di:
 
-![](../../assets/Calculated_Columns_Example.png)
+![Esempio di configurazione delle colonne calcolate in Data Warehouse Manager](../../assets/Calculated_Columns_Example.png)
 
 ## Documentazione correlata
 

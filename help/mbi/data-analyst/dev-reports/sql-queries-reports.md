@@ -4,9 +4,9 @@ description: Scopri come le query SQL vengono convertite nelle colonne calcolate
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Osservare un esempio specifico di come una metrica `Total Revenue` potrebbe esse
 | `email NOT LIKE '%@magento.com'` | Metrica `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | Metrica `timestamp` (e reporting `time range`) |
 
-Passare al generatore di metriche facendo clic su **[!UICONTROL Manage Data** > **&#x200B; Metriche &#x200B;**> **Crea nuova metrica]**, è innanzitutto necessario selezionare la tabella `source` appropriata, che in questo caso è la tabella `orders`. La metrica viene quindi impostata come mostrato di seguito:
+Passare al generatore di metriche facendo clic su **[!UICONTROL Manage Data** > ** Metriche **> **Crea nuova metrica]**, è innanzitutto necessario selezionare la tabella `source` appropriata, che in questo caso è la tabella `orders`. La metrica viene quindi impostata come mostrato di seguito:
 
 ![Aggregazione metrica](../../assets/Metric_aggregation.png)
 
@@ -75,7 +75,7 @@ La query per questa aggregazione potrebbe essere simile alla seguente:
 
 La configurazione in [!DNL Commerce Intelligence] richiede l&#39;utilizzo di Data Warehouse Manager, dove si crea un percorso tra la tabella `orders` e `customers` e quindi si crea una colonna denominata `Customer LTV` nella tabella del cliente.
 
-Verificare come stabilire un nuovo percorso tra `customers` e `orders`. L&#39;obiettivo finale è la creazione di una nuova colonna aggregata nella tabella `customers`. Passare quindi alla tabella `customers` nel Data Warehouse, quindi fare clic su **[!UICONTROL Create a Column** > **&#x200B; Seleziona una definizione &#x200B;**> **SOMMA]**.
+Verificare come stabilire un nuovo percorso tra `customers` e `orders`. L&#39;obiettivo finale è la creazione di una nuova colonna aggregata nella tabella `customers`. Passare quindi alla tabella `customers` nel Data Warehouse, quindi fare clic su **[!UICONTROL Create a Column** > ** Seleziona una definizione **> **SOMMA]**.
 
 Successivamente, è necessario selezionare la tabella di origine. Se esiste un percorso per la tabella `orders`, selezionalo semplicemente dal menu a discesa. Tuttavia, se stai creando un nuovo percorso, fai clic su **[!UICONTROL Create new path]** e viene visualizzata la schermata seguente:
 
@@ -89,7 +89,7 @@ In questo caso è necessario considerare attentamente la relazione tra le due ta
 
 Una volta salvato il percorso, è possibile creare la colonna `Customer LTV`. Vedi di seguito:
 
-![](../../assets/Customer_LTV.gif)
+![Dimostrazione animata dell&#39;analisi del valore del ciclo di vita del cliente tramite SQL](../../assets/Customer_LTV.gif)
 
 Ora che hai creato la nuova colonna `Customer LTV` nella tabella `customers`, puoi creare un&#39;aggregazione di [metrica](#aggregate) utilizzando questa colonna (ad esempio, per trovare l&#39;LTV medio per cliente). È inoltre possibile `group by` o `filter` in base alla colonna calcolata in un report utilizzando le metriche esistenti create nella tabella `customers`.
 

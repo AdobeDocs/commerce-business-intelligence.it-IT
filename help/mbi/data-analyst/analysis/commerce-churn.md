@@ -4,9 +4,9 @@ description: Scopri come generare e analizzare la frequenza di abbandono di Comm
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '338'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 In questo argomento viene illustrato come calcolare una **frequenza di abbandono** per i **clienti commerce**. A differenza di SaaS o delle società di abbonamento tradizionali, i clienti commerce in genere non hanno un **&quot;evento di abbandono&quot;** concreto per mostrare che non dovrebbero più contare verso i tuoi clienti attivi. Per questo motivo, le istruzioni di seguito consentono di definire un cliente come &quot;abbandonato&quot; in base a una determinata quantità di tempo trascorso dal suo ultimo ordine.
 
-![](../../assets/Churn_rate_image.png)
+![Visualizzazione della frequenza di abbandono che mostra la fidelizzazione dei clienti nel tempo](../../assets/Churn_rate_image.png)
 
 Molti clienti desiderano assistenza per iniziare a concettualizzare **l&#39;intervallo di tempo** da utilizzare in base ai propri dati. Se desideri utilizzare il comportamento storico del cliente per definire questo **intervallo di abbandono**, puoi acquisire familiarità con l&#39;[argomento definizione dell&#39;abbandono](../analysis/define-cust-churn.md). Quindi, puoi utilizzare i risultati nella formula per il tasso di abbandono nelle istruzioni seguenti.
 
@@ -76,19 +76,19 @@ Colonne da creare
 * **Frequenza di abbandono**
    * [!UICONTROL Metric]: nuovi clienti (per data primo ordine)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * Secondi trascorsi dall&#39;ultima data dell&#39;ordine del cliente >= [Limite predefinito per i clienti abbandonati ]&#x200B;**`^`**
+   * Secondi trascorsi dall&#39;ultima data dell&#39;ordine del cliente >= [Limite predefinito per i clienti abbandonati ]**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * &#x200B;
+   * 
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: Percentage
 
 * *Metrica `A`:`New customers cumulative`*

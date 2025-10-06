@@ -4,9 +4,9 @@ description: Scopri come utilizzare le opzioni di visualizzazione in Visual Repo
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1823'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ La selezione della visualizzazione corretta per un dato set di dati è un elemen
 
 `Scalar` report sono visualizzati come un singolo valore numerico. Nella maggior parte dei casi viene utilizzato per mostrare il valore &quot;in qualsiasi momento&quot; di una metrica chiave come ricavi o ordini, o per confrontare i ricavi attuali rispetto al budget con due rapporti scalari separati. Nell’esempio seguente, questo mostra semplicemente il numero totale di ordini per l’intervallo di reporting specificato:
 
-![](../../assets/blobid0.png)
+![Report scalare che mostra il numero totale di ordini come singolo valore numerico](../../assets/blobid0.png)
 
 Per salvare un report come scalare, configura i filtri e le impostazioni di ora, quindi fai clic su **[!UICONTROL Save]** o **[!UICONTROL Update]** nella sezione in alto a destra del report. Nel menu a discesa `Type`, scegli Numero: Nome metrica per salvare il rapporto come valore visualizzato sulla barra laterale sinistra.
 
-![](../../assets/blobid1.png)
+![Finestra di dialogo Salva report con menu a discesa Tipo che mostra l&#39;opzione Nome metrica numero](../../assets/blobid1.png)
 
 **Requisiti**:
 
@@ -51,11 +51,11 @@ Per salvare un report come scalare, configura i filtri e le impostazioni di ora,
 
 Come suggerisce il nome, `table` report sono ideali per la visualizzazione dei dettagli tabulari. Quando è necessario visualizzare più gruppi per valori o metriche in un singolo rapporto, spesso la tabella è la soluzione migliore. Ad esempio, di seguito è riportata una tabella di &quot;Dettagli cliente&quot; che mostra gli ordini e i ricavi raggruppati per e-mail del cliente:
 
-![](../../assets/blobid2.png)
+![Report tabella che mostra i dettagli del cliente con ordini e ricavi per e-mail cliente](../../assets/blobid2.png)
 
 Analogamente ai report scalari, è possibile salvare un report come tabella facendo clic su **[!UICONTROL Save]** o **[!UICONTROL Update]** nel generatore di report e selezionando l&#39;opzione Tabella nel menu a discesa `Type`.
 
-![](../../assets/blobid3.png)
+![Finestra di dialogo Salva report con menu a discesa Tipo che mostra l&#39;opzione Tabella selezionata](../../assets/blobid3.png)
 
 **Requisiti:**
 
@@ -65,13 +65,13 @@ Analogamente ai report scalari, è possibile salvare un report come tabella face
 
 `Line` grafici sono la scelta perfetta per confrontare le prestazioni di coorti metriche simili. Ad esempio, analizzando le entrate di due aree nello stesso periodo di tempo o confrontando la crescita su base annua degli ordini evasi, come illustrato di seguito:
 
-![](../../assets/blobid0.png)
+![Grafico a linee che confronta due metriche nel tempo con più righe](../../assets/blobid0.png)
 
 Ogni metrica e formula aggiunta al rapporto è rappresentata da una propria riga. Quando si confrontano metriche con unità e scale simili, non dimenticare di deselezionare la casella di controllo di `Multiple Y-Axes` per visualizzare tutte le metriche sulla stessa scala.
 
 Per salvare un report come grafico a linee, regolare il report `Type` in `Chart` e selezionare la visualizzazione appropriata dall&#39;interno del generatore di report, come illustrato di seguito:
 
-![](../../assets/blobid1.png)
+![Generatore di report con tipo di grafico selezionato ed opzione di visualizzazione grafico a linee evidenziata](../../assets/blobid1.png)
 
 **Requisiti:**
 
@@ -81,13 +81,13 @@ Per salvare un report come grafico a linee, regolare il report `Type` in `Chart`
 
 I grafici `Bar` visualizzano i dati come una serie di barre orizzontali e sono ideali per mostrare le prestazioni complessive di un numero limitato di metriche o di valori di raggruppamento. Ad esempio, un grafico a barre può essere utilizzato per confrontare i ricavi per punto vendita:
 
-![](../../assets/blobid2.png)
+![Grafico a barre orizzontale con confronto dei ricavi per archivio](../../assets/blobid2.png)
 
 Ogni metrica distinta, raggruppamento e combinazione di intervalli di tempo viene visualizzata come una propria barra. Se si dispone di due metriche con un `group by`, contenenti tre valori `group by` distinti, il report mostra sei barre separate.
 
 Per salvare un report come grafico a barre, regolare il report `Type` in `Chart` e selezionare l&#39;opzione `Bar` come illustrato di seguito:
 
-![](../../assets/blobid3.png)
+![Generatore di report con tipo di grafico selezionato ed opzione di visualizzazione Barra evidenziata](../../assets/blobid3.png)
 
 **Requisiti:**
 
@@ -99,13 +99,13 @@ Per salvare un report come grafico a barre, regolare il report `Type` in `Chart`
 
 Ad esempio, il rapporto seguente presenta due metriche di ricavo identiche: una filtrata per gli ordini nuovi e l’altra filtrata per gli ordini ripetuti. Dopo il raggruppamento per punto vendita, puoi visualizzare sia il contributo totale dei ricavi per ciascun punto vendita (rappresentato dalla larghezza totale della barra) che la suddivisione dei ricavi per ogni punto vendita per la prima volta o ripetuta.
 
-![](../../assets/blobid4.png)
+![Grafico a barre orizzontali in pila che mostra le entrate nuove e ripetute per archivio](../../assets/blobid4.png)
 
 Assicurarsi che la casella `Multiple Y-Axes` sia deselezionata durante la configurazione di un report come quello precedente.
 
 Per salvare un report come grafico a barre in pila, regolare il report `Type` in `Chart` e selezionare l&#39;opzione Barre in pila dal Report Builder:
 
-![](../../assets/blobid5.png)
+![Generatore di report con tipo di grafico selezionato e opzione di visualizzazione con barre sovrapposte evidenziata](../../assets/blobid5.png)
 
 **Requisiti:**
 
@@ -117,11 +117,11 @@ Per salvare un report come grafico a barre in pila, regolare il report `Type` in
 
 Nell’esempio seguente vengono visualizzate due metriche di ricavo, una filtrata per i ricavi nuovi e l’altra per i ricavi ripetuti, con tendenza nel tempo per mese:
 
-![](../../assets/blobid6.png)
+![Istogramma verticale che mostra le entrate nuove e ripetute per mese](../../assets/blobid6.png)
 
 È possibile salvare i report colonna modificando il report `Type` in `Chart` e selezionando l&#39;opzione di visualizzazione delle colonne:
 
-![](../../assets/blobid7.png)
+![Generatore di report con tipo di grafico selezionato ed opzione di visualizzazione colonna evidenziata](../../assets/blobid7.png)
 
 **Requisiti:**
 
@@ -133,13 +133,13 @@ I report `Stacked column` sono quasi identici ai istogrammi, tranne per il fatto
 
 Utilizzando la stessa configurazione del rapporto descritta nella sezione `Column` precedente, un rapporto con due metriche di ricavo (filtrate per la prima volta e ripetute) sarà simile al seguente con una visualizzazione a colonne sovrapposte:
 
-![](../../assets/blobid8.png)
+![Istogramma verticale in pila che mostra i ricavi nuovi e ripetuti per mese](../../assets/blobid8.png)
 
 Anche in questo caso, è importante che la casella di controllo `Multiple Y-Axes` sia deselezionata quando si visualizzano più metriche con la visualizzazione a colonne sovrapposte.
 
 Per salvare un report come colonna sovrapposta, impostare il report `Type` su `Chart` e selezionare l&#39;opzione `stacked column`:
 
-![](../../assets/blobid9.png)
+![Generatore di report con tipo di grafico selezionato e opzione di visualizzazione colonna in pila evidenziata](../../assets/blobid9.png)
 
 **Requisiti:**
 
@@ -149,11 +149,11 @@ Per salvare un report come colonna sovrapposta, impostare il report `Type` su `C
 
 I grafici `Pie` sono ideali per la visualizzazione di una singola metrica con una o più unità di misura del gruppo o di più metriche senza unità di misura del gruppo. In entrambi i casi, l&#39;intervallo di tempo deve essere impostato su Nessuno per visualizzare i dati in un grafico a torta. Nell’esempio seguente, una singola metrica di ordini è raggruppata per nome del negozio per mostrare la suddivisione degli ordini per negozio:
 
-![](../../assets/blobid10.png)
+![Grafico a torta che mostra la distribuzione degli ordini per nome del negozio](../../assets/blobid10.png)
 
 Per salvare un report come grafico a torta, impostare il report `Type` su `Chart` e selezionare l&#39;opzione `pie` come illustrato di seguito:
 
-![](../../assets/blobid11.png)
+![Generatore di report con tipo di grafico selezionato ed opzione di visualizzazione grafico a torta evidenziata](../../assets/blobid11.png)
 
 **Requisiti:**
 
@@ -168,11 +168,11 @@ Per salvare un report come grafico a torta, impostare il report `Type` su `Chart
 
 Prendendo lo stesso esempio dalla sezione `stacked column`, il rapporto seguente mostra le entrate nuove rispetto a quelle ripetute con la visualizzazione grafico ad area:
 
-![](../../assets/blobid12.png)
+![Grafico a superficie che mostra l&#39;andamento dei ricavi nuovi e ripetuti nel tempo](../../assets/blobid12.png)
 
 Per salvare un report come grafico ad area, regolare `Type` in `Chart` e selezionare l&#39;opzione area:
 
-![](../../assets/blobid13.png)
+![Generatore di report con tipo di grafico selezionato ed opzione di visualizzazione grafico ad area evidenziata](../../assets/blobid13.png)
 
 **Requisiti:**
 
@@ -180,19 +180,19 @@ Per salvare un report come grafico ad area, regolare `Type` in `Chart` e selezio
 
 ## `Funnel`
 
-`Funnel` grafici sono perfetti per visualizzare la conversione in una sequenza di eventi prevista. Alcuni esempi includono l’analisi dei ricavi potenziali nel funnel di vendita dal lead all’affare chiuso o la misurazione del calo dei clienti tra il primo e il secondo ordine, il secondo e il terzo ordine e così via. Di seguito è riportato un esempio di quest’ultimo:
+`Funnel` grafici sono perfetti per visualizzare la conversione in una sequenza di eventi prevista. Alcuni esempi includono l&#39;analisi dei ricavi potenziali nel funnel di vendita dal lead all&#39;operazione chiusa o la misurazione del calo dei clienti tra il primo e il secondo ordine, il secondo e il terzo ordine e così via. Di seguito è riportato un esempio di quest’ultimo:
 
-![](../../assets/blobid4.png)
+![Grafico Funnel che mostra la conversione del cliente tra ordini sequenziali](../../assets/blobid4.png)
 
-In un rapporto funnel, il valore relativo di un dato passaggio dell’imbuto si riflette nell’altezza del passaggio. La configurazione del rapporto determina l’ordine in cui vengono visualizzati i passaggi. Esistono due modi per configurare un rapporto funnel:
+In un rapporto di funnel, il valore relativo di un dato passaggio del funnel si riflette nell’altezza del passaggio. La configurazione del rapporto determina l’ordine in cui vengono visualizzati i passaggi. Esistono due modi per configurare un rapporto funnel:
 
-* `Single metric with one group by`: - Ordine dei passaggi determinato dall&#39;impostazione &quot;Show Top/Bottom&quot; (Mostra superiore/inferiore) del gruppo in base a. Per impostazione predefinita, i passaggi funnel vengono visualizzati in ordine dal valore più grande al più piccolo, ma è anche possibile ordinarli alfabeticamente in base al nome del gruppo.
+* `Single metric with one group by`: - Ordine dei passaggi determinato dall&#39;impostazione &quot;Show Top/Bottom&quot; (Mostra superiore/inferiore) del gruppo in base a. Per impostazione predefinita, i passaggi di funnel vengono visualizzati in ordine dal valore più grande al più piccolo, ma è anche possibile ordinarli alfabeticamente in base al nome del gruppo.
 
 * `Multiple metrics with no group by`: - Ordine dei passaggi determinato dall&#39;ordine in cui le metriche vengono aggiunte al rapporto.
 
-Per salvare un report come grafico funnel, regolare il report `Type` in `Chart` e selezionare la visualizzazione appropriata dall&#39;interno del Report Builder.
+Per salvare un report come grafico di funnel, regolare il report `Type` in `Chart` e selezionare la visualizzazione appropriata dall&#39;interno del generatore di report.
 
-![](../../assets/blobid5.png)
+![Generatore di report con tipo di grafico selezionato ed opzione di visualizzazione funnel evidenziata](../../assets/blobid5.png)
 
 **Requisiti:**
 
@@ -205,13 +205,13 @@ Per salvare un report come grafico funnel, regolare il report `Type` in `Chart` 
 
 Un `scatter plot` viene utilizzato per esaminare la relazione di una metrica con due variabili diverse in modo da identificare facilmente correlazioni e valori anomali. È consigliabile utilizzare questo tipo di visualizzazione solo con dimensioni numeriche. Provare con la metrica Ordini e le dimensioni `Customer's lifetime number of coupons` e `Customer's lifetime revenue` per vedere come l&#39;utilizzo dei coupon è correlato ai ricavi. Potete scegliere tra un grafico a dispersione con e senza una linea di tendenza:
 
-![](../../assets/scatter-plot-1.png)
+![Grafico a dispersione che mostra la correlazione tra le metriche del cliente](../../assets/scatter-plot-1.png)
 
-![senza linea di tendenza](../../assets/scatter-plot-2.png)
+![Grafico a dispersione senza linea di tendenza che mostra la distribuzione dei punti dati](../../assets/scatter-plot-2.png)
 
-![](../../assets/scatter-plot-3.png)
+![Grafico a dispersione con coordinate e pattern di correlazione](../../assets/scatter-plot-3.png)
 
-![Con linea di tendenza](../../assets/scatter-plot-4.png)
+![Grafico a dispersione con linea di tendenza che mostra la correlazione tra le metriche](../../assets/scatter-plot-4.png)
 
 **Requisiti:**
 
@@ -233,11 +233,11 @@ Un grafico `bubble` può visualizzare fino a quattro dimensioni di dati in cui g
 
 Ad esempio, il grafico seguente mostra il numero di clienti (dimensioni bolle) raggruppati per un&#39;origine di acquisizione specifica (colore bolla) e lo stato (diverse bolle in un colore specifico), tracciati rispetto ai ricavi totali e agli ordini a vita media.
 
-![](../../assets/bubble-1.png)
+![Grafico a bolle che mostra il conteggio dei clienti per origine e stato di acquisizione rispetto a ricavi e ordini](../../assets/bubble-1.png)
 
 Il grafico seguente mostra il numero di clienti (dimensioni bolla) raggruppati per origine di acquisizione (colore bolla) e stato (varie bolle in un colore specifico), tracciati rispetto al valore medio di vita e ai ricavi totali.
 
-![](../../assets/bubble-2.png)
+![Grafico a bolle che mostra le metriche dei clienti per origine e stato di acquisizione](../../assets/bubble-2.png)
 
 **Requisiti per il grafico a bolle a serie singola:**
 
@@ -265,7 +265,7 @@ Utilizza `heatmaps` per visualizzare le aree sensibili nei tuoi dati. Ad esempio
 
 La mappa di calore seguente mostra gli ordini per giorno della settimana per ora del giorno in aggregato, in diverse settimane.
 
-![](../../assets/heat-map.png)<!--{: width="650"}-->
+![Mappa di calore che mostra l&#39;intensità dell&#39;ordine per giorno della settimana e ora del giorno](../../assets/heat-map.png)<!--{: width="650"}-->
 
 **Requisiti:**
 

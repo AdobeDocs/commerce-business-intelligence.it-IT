@@ -4,9 +4,9 @@ description: Scopri come creare set di filtri salvati e applicarli alle metriche
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Se in [!DNL Commerce Intelligence] sono presenti più metriche che devono essere filtrate in modo simile (ad esempio, filtrare gli ordini di test), è possibile creare set di filtri salvati e applicarli alle metriche. In questo modo si risparmia tempo, poiché non è necessario aggiungere singoli filtri durante la creazione o la modifica di una metrica.
 
-Per ulteriori informazioni, consulta il [video di formazione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=it).
+Per ulteriori informazioni, consulta il [video di formazione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html).
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Per ulteriori informazioni, consulta il [video di formazione](https://experience
 
 1. Fare clic su **[!DNL Manage Data** > **Filter Sets]** nella barra laterale.
 
-   ![](../../assets/create-filter-sets.png)
+   ![Crea un&#39;interfaccia per set di filtri con l&#39;opzione Aggiungi set di filtri](../../assets/create-filter-sets.png)
 
 1. Fai clic su **[!UICONTROL Add Filter Set]** nella parte superiore della pagina.
 

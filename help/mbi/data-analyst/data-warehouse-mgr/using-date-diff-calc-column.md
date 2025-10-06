@@ -4,9 +4,9 @@ description: Scopri lo scopo e gli utilizzi della colonna calcolata Differenza d
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -50,4 +50,4 @@ Nei passaggi seguenti viene descritto come creare una colonna `Date Difference`.
 
 Ad esempio, l&#39;esempio seguente è configurato per calcolare `Seconds between order date and customer's creation date`:
 
-![](../../assets/date_diff.png)
+![Configurazione del calcolo della differenza di data che mostra le selezioni della colonna datetime](../../assets/date_diff.png)

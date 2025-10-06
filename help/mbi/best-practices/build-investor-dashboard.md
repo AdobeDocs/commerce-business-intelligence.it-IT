@@ -4,9 +4,9 @@ description: Scopri come creare un dashboard per gli investitori.
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Di seguito è riportato ciò che è necessario creare rapporti per il dashboard 
    * Metrica - Ricavi
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
    * Metrica - Ricavi primo ordine
-   * Filtro: il numero di ordine dell’utente è uguale a 1
+      * Filtro: il numero di ordine dell’utente è uguale a 1
    * Metrica 2 - Ricavi da ordini ripetuti
       * Filtro: il numero di ordine dell’utente è maggiore di 1
    * Deseleziona la casella per più assi Y
@@ -77,4 +77,4 @@ Con i [Servizi di arricchimento dati di Commerce](https://business.adobe.com/pro
 
 Organizza i tuoi report in modo attento e presta attenzione ai dettagli. Una volta completato, il dashboard avrà un aspetto simile a quello riportato di seguito:
 
-![](../../mbi/assets/investor-dboard-example.png)
+![Crea Cruscotto Investor](../../mbi/assets/investor-dboard-example.png)

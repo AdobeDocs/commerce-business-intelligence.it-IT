@@ -4,9 +4,9 @@ description: Scopri come analizzare il modo in cui gli utenti si spostano e util
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Richiede [Autorizzazioni amministratore](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/Mixpanel_logo.png)
+![Logo Mixpanel](../../../assets/Mixpanel_logo.png)
 
 Con [!DNL Mixpanel] puoi analizzare il modo in cui gli utenti si spostano e utilizzano i tuoi siti Web e le tue app. Osservando da vicino i dati sul comportamento degli utenti, si ottengono decisioni di progettazione e sviluppo più intelligenti, il che significa un prodotto complessivamente migliore. La connessione di [!DNL Mixpanel] a [!DNL Commerce Intelligence] consente di analizzare il comportamento degli utenti e come questo comportamento si traduce in ricavi.
 
@@ -65,4 +65,4 @@ Se la connessione ha esito positivo, _ha esito positivo.Il messaggio_ viene visu
 ### Correlato
 
 * [Previsti [!DNL Mixpanel] dati](../integrations/mixpanel-data.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

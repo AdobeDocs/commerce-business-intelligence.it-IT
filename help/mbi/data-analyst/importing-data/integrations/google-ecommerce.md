@@ -4,9 +4,9 @@ description: Scopri i canali di riferimento più importanti.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Richiede [Autorizzazioni amministratore](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/google-ecommerce-logo.png)
+![Logo Google eCommerce](../../../assets/google-ecommerce-logo.png)
 
 Il flusso del traffico e degli ordini è costante, il che significa che puoi raggiungere e acquisire in modo efficace i clienti. Ma quali sono i canali di riferimento più importanti? Qual è il valore medio del ciclo di vita dei clienti acquisiti da un&#39;origine rispetto a un&#39;altra? Collegando i dati di origine per la segnalazione degli ordini da [!DNL Google ECommerce] a [!DNL Commerce Intelligence], puoi creare analisi che ti aiutino a identificare i [canali di marketing più importanti](../../../data-analyst/analysis/most-value-source-channel.md).
 
@@ -35,7 +35,7 @@ Inizia immettendo le tue credenziali di [!DNL Google ECommerce] in [!DNL Commerc
 
    Se disponi di più profili e hai bisogno di aiuto per identificare quale sia, consulta la sezione seguente **Connessione di più profili [!DNL Google Analytics].
 
-   ![](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
+   ![Modulo con opzioni per la connessione di più profili Google Analytics](../../../assets/conn-mult-ga-profiles.png)<!--{: width="500"}-->
 
 1. Le modifiche vengono salvate automaticamente, quindi fare clic su **[!UICONTROL Back to Connections]** al termine dell&#39;operazione.
 
@@ -60,7 +60,7 @@ Per identificare l&#39;ID profilo [!DNL Google Analytics] di un particolare sito
 ## Correlato:
 
 * [Previsti [!DNL Google ECommerce] dati](../integrations/google-ecommerce-data.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Configurazione [!DNL Google ECommerce] tracciamento](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Scopri le fonti e i canali di acquisizione più importanti](../../analysis/most-value-source-channel.md)
 * [Aumentare il ROI nelle campagne pubblicitarie](../../analysis/roi-ad-camp.md)

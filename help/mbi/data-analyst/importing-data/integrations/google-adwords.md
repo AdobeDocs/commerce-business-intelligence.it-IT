@@ -4,9 +4,9 @@ description: Scopri come misurare il ROI delle campagne sposando i costi pubblic
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Richiede [Autorizzazioni amministratore](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/Google_Adwords_logo.png)
+![Logo Google AdWords](../../../assets/Google_Adwords_logo.png)
 
 Hai fatto la tua ricerca, creato i tuoi annunci, lanciato la tua campagna [!DNL Google]. Ora è il momento di analizzare i dati di spesa degli annunci e verificare se i soldi vengono spesi in modo efficace. Utilizzando i dati di spesa degli annunci, puoi [misurare il ROI delle campagne unendo i costi pubblicitari e il valore del ciclo di vita del cliente (CLV)](../../analysis/roi-ad-camp.md) degli utenti acquisiti dalle campagne.
 
@@ -29,7 +29,7 @@ Inizia immettendo le tue credenziali di [!DNL Google Adwords] in [!DNL Commerce 
 1. Immetti le tue credenziali di [!DNL Google Analytics]. Al termine del processo di autorizzazione, l&#39;utente viene reindirizzato a [!DNL Commerce Intelligence].
 1. Viene visualizzato un elenco di ID profilo. Controllare i profili a cui connettersi [!DNL Commerce Intelligence].
 
-   ![](../../../assets/cnnct-profile.png)
+   ![Finestra di dialogo della connessione di Google AdWords con la selezione del profilo](../../../assets/cnnct-profile.png)
 
 1. Le modifiche vengono salvate automaticamente, quindi al termine fai clic su **[!UICONTROL Back to Connections]**.
 
@@ -55,7 +55,7 @@ Se hai più profili e hai bisogno di aiuto per identificare quale sia, consulta 
 
 ## Correlato
 
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Tracciare l&#39;origine di riferimento dell&#39;ordine tramite [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Tracciare l&#39;origine di riferimento dell&#39;utente nel database](../../analysis/google-track-user-acq.md)
 * [Scopri le fonti e i canali di acquisizione più importanti](../../analysis/most-value-source-channel.md)

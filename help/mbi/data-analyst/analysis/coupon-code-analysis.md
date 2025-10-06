@@ -4,9 +4,9 @@ description: Scopri come analizzare le prestazioni del coupon.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: d8fc96a58b72c601a5700f35ea1f3dc982d76571
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Comprendere le prestazioni dei coupon della vostra azienda è un modo interessante per segmentare gli ordini e anche meglio comprendere i vostri clienti. Questo argomento illustra i passaggi necessari per creare analisi che consentano di individuare i clienti acquisiti utilizzando i coupon, le relative prestazioni e tenere traccia dell’utilizzo generale dei coupon.
 
-![](../../assets/coupon_analysis_-_analysis_library.png)<!--{: width="800" height="375"}-->
+![Analisi del codice coupon dalla libreria di analisi con metriche chiave](../../assets/coupon_analysis_-_analysis_library.png)<!--{: width="800" height="375"}-->
 
 Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -37,7 +37,7 @@ Colonne da creare indipendentemente dai criteri per gli ordini degli ospiti:
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
 
-   * &#x200B;
+   * 
      [!UICONTROL Datatype]: `String`
    * [!UICONTROL Calculation]: caso in cui `A` è nullo allora `No coupon` altro `Coupon` fine
 
@@ -87,7 +87,7 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
 
-      * &#x200B;
+      * 
         [!UICONTROL Datatype]: `String`
       * [!UICONTROL Calculation]: **caso in cui A=&#39;Coupon&#39; allora &#39;Coupon acquisizione cliente&#39; altro &#39;Non-coupon acquisizione cliente&#39; fine**
 
@@ -97,7 +97,7 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
          * `A`: `User's lifetime number of coupons used`
          * `B`: `User's lifetime number of orders`
 
-      * &#x200B;
+      * 
         [!UICONTROL Datatype]: `Decimal`
       * [!UICONTROL Calculation]: **caso in cui A è null o B è null o B=0 allora null altro A/B fine**
 
@@ -106,7 +106,7 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
       * [!UICONTROL Inputs]:
          * `A`: `Percent of customer's orders with coupon`
 
-      * &#x200B;
+      * 
         [!UICONTROL Datatype]: `String`
       * [!UICONTROL Calculation]: **caso in cui A è nullo e quindi nullo quando A=0 quindi &quot;buono non utilizzato&quot; quando A&lt;0.5 quindi &quot;prezzo per lo più pieno&quot; quando A=0.5 quindi &quot;50/50&quot; quando A=1 quindi &quot;solo coupon&quot; quando A>0.5 quindi &quot;buono per lo più&quot; altro &quot;non definito&quot; fine**
 
@@ -126,15 +126,15 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 
 * Tabella `sales\_flat\_order`
    * Il primo ordine del cliente **include un coupon? (Coupon/Nessun coupon)** **-** creato dall&#39;analista come parte del ticket \[COUPON ANALYSIS\]
-   * **Buono sconto del primo ordine del cliente &#x200B;**{::}**-** creato dall&#39;analista come parte del ticket \[COUPON ANALYSIS\]
+   * **Buono sconto del primo ordine del cliente **{::}**-** creato dall&#39;analista come parte del ticket \[COUPON ANALYSIS\]
 
-* **Il numero di coupon utilizzati nel ciclo di vita del cliente &#x200B;**{::}**-** è stato creato dall&#39;analista come parte del ticket \[COUPON ANALYSIS\]
+* **Il numero di coupon utilizzati nel ciclo di vita del cliente **{::}**-** è stato creato dall&#39;analista come parte del ticket \[COUPON ANALYSIS\]
 * **Cliente acquisizione coupon o Cliente acquisizione non coupon**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
 
-   * &#x200B;
+   * 
      [!UICONTROL Datatype]: `String`
    * [!UICONTROL Calculation]: **caso in cui A=&#39;Coupon&#39; allora &#39;Coupon acquisizione cliente&#39; altro &#39;Non-coupon acquisizione cliente&#39; fine**
 
@@ -144,7 +144,7 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
 
-   * &#x200B;
+   * 
      [!UICONTROL Datatype]: `Decimal`
    * [!UICONTROL Calculation]: **caso in cui A è null o B è null o B=0 allora null altro A/B fine**
 
@@ -153,7 +153,7 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
    * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
 
-   * &#x200B;
+   * 
      [!UICONTROL Datatype]: `String`
    * [!UICONTROL Calculation]: **caso in cui A è nullo e quindi nullo quando A=0 quindi &quot;buono non utilizzato&quot; quando A&lt;0.5 quindi &quot;prezzo per lo più pieno&quot; quando A=0.5 quindi &quot;50/50&quot; quando A=1 quindi &quot;solo coupon&quot; quando A>0.5 quindi &quot;buono per lo più&quot; altro &quot;non definito&quot; fine**
 
@@ -190,10 +190,10 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 
 * Metrica `A`: `Coupon acquisitions`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Coupon acquisitions customer` o `Non coupon acquisition customer`
-* &#x200B;
+* 
   [!UICONTROL Tipo di grafico]: `Pie`
 
 * **Numero di clienti con e senza cedola**
@@ -212,9 +212,9 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 
 * Metrica `A`: `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period]: `X years ago to 90 days ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Tipo di grafico]: `Scalar`
 
 * **Ricavi medi ciclo di vita: acq non coupon. (oltre 90 giorni di età)**
@@ -224,9 +224,9 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 
 * Metrica `A`: `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period]: `X years ago to 90 days ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Tipo di grafico]: `Scalar`
 
 * **Ricavi medi vita per coupon primo ordine**
@@ -234,10 +234,10 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 
 * Metrica `A`: `Average lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's first order's coupon`
-* &#x200B;
+* 
   [!UICONTROL Tipo di grafico]: `Column`
 
 >[!NOTE]
@@ -253,7 +253,7 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
    * [!UICONTROL Filter]:
       * Il primo ordine del cliente includeva un coupon (Coupon/No Coupon) = Coupon
       * L&#39;ultimo ordine del cliente è? = No
-   * &#x200B;
+   * 
      [!UICONTROL Formula]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
@@ -263,7 +263,7 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 * Metrica `B`: `Number of non last orders`
 * [!UICONTROL Formula]: `Repeat order probability`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
@@ -278,7 +278,7 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
       * Il primo ordine del cliente includeva un coupon (Coupon/No Coupon) = Nessun coupon
       * L&#39;ultimo ordine del cliente è? = No
 
-   * &#x200B;
+   * 
      [!UICONTROL Formula]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
@@ -288,7 +288,7 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 * Metrica `B`: `Number of non last orders`
 * [!UICONTROL Formula]: `Repeat order probability`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
@@ -309,7 +309,7 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
       * Il primo ordine del cliente includeva un coupon? (Coupon/No coupon) = Coupon
       * L’ordine ha un coupon applicato? (Coupon/No coupon) = Coupon
 
-   * &#x200B;
+   * 
      [!UICONTROL Formula]: `C/B`
    * [!UICONTROL Format]: `Percentage %`
 
@@ -318,9 +318,9 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 * Metrica `C`: `Number of repeat orders with coupon`
 * [!UICONTROL Formula]: `% of repeat orders with coupon`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Tipo di grafico]: `Table` (può trasporre questa tabella per una migliore visualizzazione)
 
 * **Tasso di utilizzo coupon dei clienti non acquisiti con coupon (ordini ripetuti)**
@@ -339,7 +339,7 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
       * Il primo ordine del cliente includeva un coupon? (Coupon/No coupon) = No Coupon
       * L’ordine ha un coupon applicato? (Coupon/No coupon) = Coupon
 
-   * &#x200B;
+   * 
      [!UICONTROL Formula]: `C/B`
    * [!UICONTROL Format]: `Percentage %`
 
@@ -348,9 +348,9 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 * Metrica `C`: `Number of repeat orders with coupon`
 * [!UICONTROL Formula]: `% of repeat orders with coupon`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Tipo di grafico]: `Table` (può trasporre questa tabella per una migliore visualizzazione)
 
 * **Dettagli sull&#39;utilizzo del coupon (nuovi ordini)**
@@ -359,7 +359,7 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
       * Numero ordine cliente = 1
       * Numero di ordini con questo coupon > 10
 
-   * &#x200B;
+   * 
      [!UICONTROL Metric]: `Revenue`
    * [!UICONTROL Filter]:
       * Numero ordine cliente = 1
@@ -371,7 +371,7 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
       * Numero di ordini con questo coupon > 10
 
    * [!UICONTROL Formula]: `B-C` (se C è negativo); B+C (se C è positivo)
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Metric]: `Average order value`
@@ -385,10 +385,10 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 * [!UICONTROL Formula]: `Gross revenue from FTO`
 * Metrica `E`: `Average order value for FTO`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `coupon code`
-* &#x200B;
+* 
   [!UICONTROL Tipo di grafico]: `Table`
 >[!NOTE]
 >
@@ -399,22 +399,22 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 
 * Metrica `A`: `Number or orders with coupon`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Tipo di grafico]: `Scalar`
 
 * **Ricavi netti da ordini con coupon (in qualsiasi momento)**
-   * &#x200B;
+   * 
      [!UICONTROL Metric]: `Revenue`
    * [!UICONTROL Filter]:
       * L’ordine ha un coupon applicato? (Coupon/No coupon) = Coupon
 
 * Metrica `A`: `Net revenue from orders with coupons`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Tipo di grafico]: `Scalar`
 
 * **Sconti dai coupon (in qualsiasi momento)**
@@ -422,9 +422,9 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 
 * Metrica `A`: `Coupon discount amount`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Tipo di grafico]: `Scalar`
 
 * **Numero di ordini con e senza coupon**
@@ -432,7 +432,7 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 
 * Metrica `A`: `Number of orders`
 * [!UICONTROL Time period]: `Last 24 months`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order has coupon applied? (Coupon/No coupon)`
 * [!UICONTROL Chart type]: `Stacked column`
@@ -444,10 +444,10 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 
 * Metrica `A`: `New customers`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's coupon usage`
-* &#x200B;
+* 
   [!UICONTROL Tipo di grafico]: `Pie`
 
 * **Dettagli sull&#39;utilizzo del coupon**
@@ -455,7 +455,7 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
    * [!UICONTROL Filter]:
       * Numero di ordini con questo coupon > 10
 
-   * &#x200B;
+   * 
      [!UICONTROL Metric]: `Revenue`
    * [!UICONTROL Filter]:
       * Numero di ordini con questo coupon > 10
@@ -465,20 +465,20 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
       * Numero di ordini con questo coupon > 10
 
    * [!UICONTROL Formula]: `B-C` (se `C` è negativo); `B+C` (se `C` è positivo)
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `C/(B-C)` (se `C` è negativo); `C/(B+C)` (se `C` è positivo)
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Metric]: `Average order value`
    * [!UICONTROL Filter]:
       * Numero di ordini con questo coupon > 10
 
-   * &#x200B;
+   * 
      [!UICONTROL Formula]: `C/A`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Metric]: `Distinct buyers`
@@ -494,10 +494,10 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 * [!UICONTROL Formula]: `Average order discount`
 * Metrica `H`: `Distinct buyers`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `coupon code`
-* &#x200B;
+* 
   [!UICONTROL Tipo di grafico]: `Table`
 
 >[!NOTE]
@@ -506,10 +506,10 @@ Colonne aggiuntive da creare se gli ordini degli ospiti NON sono supportati:
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile all’immagine nella parte superiore della pagina.
 
-Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >
 >A partire dalla versione 2.4.7 di Adobe Commerce, i clienti possono utilizzare le tabelle **quote_cedole** e **sales_order_cedole** per ottenere informazioni su come il cliente utilizza più cedole.
 
-![](../../assets/multicoupon_relationship_tables.png)
+![Diagramma delle relazioni tra tabelle per l&#39;analisi con più coupon](../../assets/multicoupon_relationship_tables.png)

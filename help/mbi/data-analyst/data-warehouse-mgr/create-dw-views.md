@@ -4,9 +4,9 @@ description: Scopri come creare nuove tabelle warehouse modificando una tabella 
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1120'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ Questo documento descrive lo scopo e gli utilizzi di `Data Warehouse Views` acce
 
 La funzionalità `Data Warehouse Views` consente di creare nuove tabelle con data warehouse modificando una tabella esistente oppure unendo o consolidando più tabelle mediante SQL. Una volta creato ed elaborato da un ciclo di aggiornamento, un `Data Warehouse View` viene inserito nel Data Warehouse come nuova tabella sotto il menu a discesa `Data Warehouse Views`, come illustrato di seguito:
 
-![](../../assets/Data_Warehouse.png)
+![Interfaccia Data Warehouse con le opzioni di gestione delle tabelle](../../assets/Data_Warehouse.png)
 
 Da qui, la nuova vista funziona come qualsiasi altra tabella, consentendoti di creare nuove colonne calcolate o di creare metriche e rapporti al suo interno.
 
@@ -31,7 +31,7 @@ Se si ha familiarità con SQL, entrambi gli esempi di consolidamento utilizzano 
 
 È possibile creare un nuovo `Data Warehouse Views` ed eliminare le visualizzazioni esistenti passando a **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**, come illustrato di seguito:
 
-![](../../assets/Data_Warehouse_Views.png)
+![Sezione Visualizzazioni Data Warehouse con configurazioni di visualizzazione personalizzate](../../assets/Data_Warehouse_Views.png)
 
 Da qui è possibile creare una visualizzazione seguendo le istruzioni di esempio riportate di seguito:
 
@@ -136,7 +136,7 @@ Invece di creare un set separato di metriche di marketing per ogni origine di an
 
 **Ricerca di ulteriori informazioni?**
 
-Il supporto tecnico non include la scrittura di SQL e la creazione di `Data Warehouse Views`. Tuttavia, il [team dei servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) offre assistenza nella creazione delle visualizzazioni. Il team di supporto può fornire assistenza in tutte le fasi, dalla migrazione di un database legacy con un nuovo database alla creazione di una singola visualizzazione Data Warehouse ai fini di un’analisi specifica.
+Il supporto tecnico non include la scrittura di SQL e la creazione di `Data Warehouse Views`. Tuttavia, il [team dei servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) offre assistenza nella creazione delle visualizzazioni. Il team di supporto può fornire assistenza in tutte le fasi, dalla migrazione di un database legacy con un nuovo database alla creazione di una singola visualizzazione Data Warehouse ai fini di un’analisi specifica.
 
 In genere, la creazione di un nuovo `Data Warehouse View` per il consolidamento di 2-3 tabelle strutturate in modo simile richiede cinque ore di tempo di servizio, il che si traduce in circa $ 1.250 di lavoro. Tuttavia, di seguito sono riportati alcuni fattori comuni che possono aumentare gli investimenti previsti necessari:
 

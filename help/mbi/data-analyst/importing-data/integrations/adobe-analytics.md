@@ -4,9 +4,9 @@ description: Scopri come unire l'obiettivo di percorso del cliente end-to-end di
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Richiede [Autorizzazioni amministratore](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/adobe-analytic-slogo.png)
+![Logo Adobe Analytics](../../../assets/adobe-analytic-slogo.png)
 
 L&#39;integrazione di [!DNL Adobe Analytics] per [!DNL Adobe Commerce Intelligence] consente di riunire l&#39;attenzione del percorso clienti end-to-end di [!DNL Adobe Analytics] e l&#39;attenzione eCommerce su cui ci si basa da [!DNL Commerce Intelligence]. In questo modo è possibile avere un quadro completo delle prestazioni complessive del negozio.
 
@@ -57,6 +57,6 @@ Per la connessione sono necessarie le seguenti informazioni:
 
 1. La suite di rapporti selezionata viene visualizzata in una tabella. Fai clic su **[!UICONTROL Save]** per confermare la selezione.
 
-1. Informare il [!DNL Commerce Intelligence] [team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) che l&#39;integrazione è autorizzata ed eseguono il processo di connessione iniziale.
+1. Informare il [!DNL Commerce Intelligence] [team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) che l&#39;integrazione è autorizzata ed eseguono il processo di connessione iniziale.
 
 Dopo l&#39;esecuzione del processo di connessione iniziale, la tabella sarà disponibile nella pagina Data Warehouse, nella scheda `All Tables`. Seleziona le colonne da replicare per visualizzare i dati dopo il prossimo aggiornamento completo.

@@ -4,9 +4,9 @@ description: Scopri come impostare una dashboard che tenga traccia dell’analis
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
 role: Admin,  User
 feature: Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 Se stai spendendo soldi per la pubblicità online, vuoi tenere traccia del tuo ritorno su questa spesa e prendere decisioni basate sui dati su ulteriori investimenti. Questo argomento illustra come impostare una dashboard che tenga traccia dell’analisi dei canali, incluso il ROI in forma aggregata e per campagna.
 
-![](../../assets/Marketing_dashboard_example.png)
+![Dashboard di marketing con metriche di ROI e prestazioni della campagna](../../assets/Marketing_dashboard_example.png)
 
-Prima di iniziare, connettere gli account [[!DNL [Facebook Ads]]](../importing-data/integrations/facebook-ads.md), [[!DNL [Adwords]]](../importing-data/integrations/google-adwords.md) e [[!DNL [Google Ecommerce]]](../importing-data/integrations/google-ecommerce.md) e inserire eventuali dati aggiuntivi sulla spesa pubblicitaria online. Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-calc-columns.md).
+Prima di iniziare, connettere gli account [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md), [!DNL [Adwords]](../importing-data/integrations/google-adwords.md) e [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) e inserire eventuali dati aggiuntivi sulla spesa pubblicitaria online. Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Tabelle consolidate
 
@@ -42,9 +42,9 @@ Colonne da creare
    * **`Order's GA campaign`**
       * Selezionare una definizione: `Joined Column`
       * [!UICONTROL Create Path]:
-      * &#x200B;
+      * 
         [!UICONTROL Many]: `sales_flat_order.increment_id`
-      * &#x200B;
+      * 
         [!UICONTROL One]: `ecommerce####.transaction_id`
 
       * Seleziona [!UICONTROL table]: `ecommerce####`
@@ -142,9 +142,9 @@ Colonne da creare
 
 * Metrica `A`: spesa annuncio
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Acquisizioni di clienti annuncio (in qualsiasi momento)**
@@ -158,9 +158,9 @@ Colonne da creare
 
 * Metrica `A`: `Ad customer acquisitions`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **ROI annuncio**
@@ -183,7 +183,7 @@ Colonne da creare
       * Logica filtro: ([`A`] O [`B`] O [`C`]) E [`D`]
 
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `Percentage`
 
 * Metrica `A`: `Ad Spend (hide)`
@@ -191,20 +191,20 @@ Colonne da creare
 * Metrica `C`: `Average LTV (hide)`
 * [!UICONTROL Formula]: `Ads ROI`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Ordini per mezzo ga**
-   * &#x200B;
+   * 
      [!UICONTROL Metric]: `Orders`
 
 * Metrica `A`: `Orders`
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By Month`
 * [!UICONTROL Group by]: `Order's medium`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Area`
 
 * **ROI annuncio per campagna**
@@ -235,15 +235,15 @@ Colonne da creare
       * Logica filtro: ([`A`] O [`B`] O [`C`]) E [`D`]
 
    * [!UICONTROL Formula]: `(A / B)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `(C - (A / B))`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Metric]: `Ad Clicks`
@@ -251,36 +251,36 @@ Colonne da creare
    * [!UICONTROL Metric]: `Ad Impressions`
 
    * [!UICONTROL Formula]: `(H / I)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Formula]: `(A / H)`
-   * &#x200B;
+   * 
      [!UICONTROL Format]: `Currency`
 
 * Metrica `A`: `Ad Spend` (nascondere)
 * Metrica `B`: `Ad customer acquisitions`
 * Metrica `C`: `Average LTV`
 * Metrica `D`: `Average lifetime # of orders`
-* &#x200B;
+* 
   [!UICONTROL Formula]: `CAC`
 * [!UICONTROL Formula]: `Avg return`
 * [!UICONTROL Formula]: `Ads ROI`
 * Metrica `H`: `adClicks`
 * Metrica `I`: `Impressions`
-* &#x200B;
+* 
   [!UICONTROL Formula]: `CTR`
-* &#x200B;
+* 
   [!UICONTROL Formula]: `CPC`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Raggruppa per]: `campaign` (Utilizza la campagna &quot;Customer&#39;s first order&#39;s&quot; per le metriche della tabella di spesa non relative agli annunci)
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Table`
 
-Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ### Correlato
 

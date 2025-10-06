@@ -4,9 +4,9 @@ description: Scopri i passaggi per la connessione dell’istanza RDS.
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ I passaggi per la connessione all&#39;istanza [!DNL RDS] variano a seconda del t
 
 Nella pagina delle credenziali (**[!UICONTROL Manage Data** > **Integrations]**) di ogni database viene visualizzata una casella contenente gli indirizzi IP che è necessario autorizzare per la connessione di R[!DNL RDS] a [!DNL Commerce Intelligence]: `54.88.76.97` e `34.250.211.151`. Di seguito viene fornita una panoramica della pagina `MySQL credentials`, in cui è stata evidenziata la casella dell&#39;indirizzo IP:
 
-![](../../../assets/RDS_IP.png)
+![Impostazioni del gruppo di sicurezza Amazon RDS che mostrano la configurazione dell&#39;indirizzo IP](../../../assets/RDS_IP.png)
 
 Affinché [!DNL Commerce Intelligence] si connetta correttamente all&#39;istanza di [!DNL RDS], è necessario aggiungere questi indirizzi IP al gruppo di sicurezza del database appropriato tramite la console di gestione di AWS. Questi indirizzi IP possono essere aggiunti a un gruppo esistente oppure è possibile crearne uno. È importante che il gruppo sia autorizzato ad accedere all&#39;istanza a cui si desidera connettersi [!DNL Commerce Intelligence].
 
@@ -55,6 +55,6 @@ Per completare la creazione della connessione, sono necessarie le seguenti infor
 
 Se si utilizza una connessione crittografata, modificare l&#39;opzione `Encrypted` nella pagina delle credenziali del database in `Yes`. Verrà visualizzato un modulo aggiuntivo per l&#39;impostazione della crittografia:
 
-![](../../../assets/sql-integration-encrypted-yes.png)
+![Modulo di integrazione SQL con crittografia abilitata che mostra l&#39;opzione Sì](../../../assets/sql-integration-encrypted-yes.png)
 
 

@@ -4,16 +4,16 @@ description: Scopri come esportare i record dal tuo [!DNL Commerce Intelligence]
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
 
 # Esporta dati non elaborati
 
-Utilizzando le esportazioni di dati non elaborati, puoi esportare i record dal Data Warehouse per avere una visione più dettagliata di ciò che alimenta il dashboard. Inoltre, le esportazioni di dati non elaborati possono aiutarti a [individuare le discrepanze di dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=it).
+Utilizzando le esportazioni di dati non elaborati, puoi esportare i record dal Data Warehouse per avere una visione più dettagliata di ciò che alimenta il dashboard. Inoltre, le esportazioni di dati non elaborati possono aiutarti a [individuare le discrepanze di dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
 
 Le esportazioni di dati non elaborati consentono di accedere a colonne e dimensioni aggiuntive generate tramite la denormalizzazione e la preaggregazione di metriche rilevanti. `User's first order date`, ad esempio, è una dimensione che è possibile esportare per ogni utente in [!DNL Commerce Intelligence], mentre potrebbe non essere disponibile nel database.
 
@@ -34,7 +34,7 @@ Esistono due modi per esportare i dati non elaborati in [!DNL Commerce Intellige
 
 Per esportare la tabella dalla scheda [!UICONTROL Manage Data], sono necessarie [autorizzazioni amministratore](../administrator/user-management/user-management.md).
 
-1. Fai clic su **[!UICONTROL Manage Data** > **&#x200B; Esporta dati &#x200B;**> **Esportazione dati non elaborati]**.
+1. Fai clic su **[!UICONTROL Manage Data** > ** Esporta dati **> **Esportazione dati non elaborati]**.
 1. Viene visualizzato un `Export List` delle esportazioni di dati create di recente, se presenti. Fare clic su **[!UICONTROL Add Export]** per creare un&#39;esportazione.
 1. Viene visualizzata la finestra di dialogo `New Raw Data Export`. In questo caso, puoi personalizzare l’esportazione selezionando o deselezionando colonne e filtri:
 
@@ -61,7 +61,7 @@ Per esportare la tabella dalla scheda [!UICONTROL Manage Data], sono necessarie 
 
 Osservare l&#39;intero processo a livello di grafico.
 
-![](../assets/Chart-level_export.gif)
+![Dimostrazione animata dell&#39;esportazione di dati non elaborati da un grafico](../assets/Chart-level_export.gif)
 
 ## Passaggio 2: Scaricare l’esportazione {#download}
 
@@ -69,7 +69,7 @@ L&#39;elaborazione dell&#39;esportazione inizierà subito dopo aver completato l
 
 Per verificare se l&#39;esportazione è pronta, fare clic su **[!UICONTROL Raw Data Exports]** nell&#39;angolo superiore destro della schermata. Fai clic su **[!UICONTROL Download]** per scaricare un file `.csv` compresso della tua esportazione.
 
-![](../assets/Downloading_export.gif)
+![Dimostrazione animata del download di un file CSV esportato](../assets/Downloading_export.gif)
 
 ## Passaggio 3: Accesso alle esportazioni storiche {#historical}
 

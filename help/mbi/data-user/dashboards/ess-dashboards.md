@@ -4,9 +4,9 @@ description: Scopri come creare e utilizzare una dashboard.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Sta a te definire l’aspetto delle dashboard create. Puoi disporre e ridimensio
 
 1. Scegliere **[!UICONTROL Dashboards]** dal menu.
 
-1. Il nome del dashboard di default viene visualizzato nell&#39;angolo superiore sinistro dell&#39;intestazione del dashboard. Fare clic sulla freccia giù (![](../../assets/magento-bi-btn-down.png)) per visualizzare le opzioni disponibili.
+1. Il nome del dashboard di default viene visualizzato nell&#39;angolo superiore sinistro dell&#39;intestazione del dashboard. Fare clic sulla freccia giù (![icona freccia giù](../../assets/magento-bi-btn-down.png)) per visualizzare le opzioni disponibili.
 
    ![Crea dashboard](../../assets/magento-bi-dashboard-create.png)
 
@@ -49,7 +49,7 @@ Sta a te definire l’aspetto delle dashboard create. Puoi disporre e ridimensio
 
    ![nome dashboard](../../assets/magento-bi-dashboard-create-name.png)
 
-   * Il nome del nuovo dashboard viene visualizzato nell&#39;angolo superiore sinistro. Fare clic sulla freccia giù (![](../../assets/magento-bi-btn-down.png)) per visualizzare le opzioni. Se avete creato un gruppo, il nuovo quadro comandi viene visualizzato sotto il gruppo nell&#39;elenco.
+   * Il nome del nuovo dashboard viene visualizzato nell&#39;angolo superiore sinistro. Fare clic sulla freccia giù (![icona freccia giù](../../assets/magento-bi-btn-down.png)) per visualizzare le opzioni. Se avete creato un gruppo, il nuovo quadro comandi viene visualizzato sotto il gruppo nell&#39;elenco.
 
 ### Aggiungere un rapporto
 

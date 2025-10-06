@@ -4,9 +4,9 @@ description: Scopri alcuni diagrammi ER per visualizzare la relazione tra alcune
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Un cliente può effettuare molti ordini. La relazione tra queste due tabelle è 
 
 All&#39;interno di [!DNL Commerce Intelligence], se il percorso tra queste due tabelle non esiste, è possibile [creare il percorso](../data-warehouse-mgr/create-paths-calc-columns.md) nella scheda Data Warehouse. Quando siete pronti a creare il percorso, questo viene definito come segue:
 
-![](../../assets/SFO___CE_path.png)
+![Diagramma relazioni entità che mostra il percorso da sales_flat_order a customer_entity](../../assets/SFO___CE_path.png)
 
 ## `sales\_flat\_order & sales\_flat\_order\_item`
 
@@ -49,7 +49,7 @@ Un ordine può contenere molti elementi. La relazione tra queste due tabelle è 
 
 All&#39;interno di [!DNL Commerce Intelligence], se il percorso tra queste due tabelle non esiste, è possibile [creare il percorso](../data-warehouse-mgr/create-paths-calc-columns.md) nella scheda Data Warehouse. Quando siete pronti a creare il percorso, definite il percorso come mostrato di seguito.
 
-![](../../assets/SFOI___SFO_path.png)
+![Diagramma relazioni entità che mostra il percorso da sales_flat_order_item a sales_flat_order](../../assets/SFOI___SFO_path.png)
 
 ## `catalog\_product\_entity & sales\_flat\_order\_item`
 
@@ -59,4 +59,4 @@ Un prodotto può essere acquistato in molti articoli. La relazione tra queste du
 
 All&#39;interno di [!DNL Commerce Intelligence], se il percorso tra queste due tabelle non esiste, è possibile [creare il percorso](../data-warehouse-mgr/create-paths-calc-columns.md) nella scheda Data Warehouse. Quando siete pronti a creare il percorso, definite il percorso come mostrato di seguito.
 
-![](../../assets/SFOI___CPE_path.png)
+![Diagramma relazioni entità che mostra il percorso da sales_flat_order_item a catalog_product_entity](../../assets/SFOI___CPE_path.png)

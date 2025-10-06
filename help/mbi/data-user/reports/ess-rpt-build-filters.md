@@ -4,9 +4,9 @@ description: Scopri come utilizzare i filtri.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 0854d644cb72b3fc8b8b31a0bf7e8dca4cc99724
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
    In questo rapporto, ogni punto dati mostra il numero totale di clienti per il mese.
 
-1. Nel pannello sinistro fare clic sull&#39;icona Filtri (![](../../assets/magento-bi-btn-filter.png)).
+1. Nel pannello sinistro fare clic sull&#39;icona Filtri (![icona Filtro](../../assets/magento-bi-btn-filter.png)).
 
    ![Aggiungi filtro](../../assets/magento-bi-report-builder-filter-add.png)
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
    I filtri sono numerati alfabeticamente e il primo è `[A]`. Le prime due parti del filtro sono opzioni a discesa e la terza parte è un valore.
 
-   ![](../../assets/magento-bi-report-builder-filter-add-a.png)
+   ![Interfaccia filtro con opzione di aggiunta filtro](../../assets/magento-bi-report-builder-filter-add-a.png)
 
    * Fare clic sulla prima parte del filtro e scegliere la colonna da utilizzare come oggetto dell&#39;espressione.
 

@@ -4,9 +4,9 @@ description: Scopri l'impatto degli ordini degli ospiti sui tuoi dati e quali op
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Nel tipico database di commerce è presente una tabella `orders` che viene unita
 
 * **Se tutti i clienti sono registrati** e gli ordini dei guest non sono consentiti, significa che ogni record della tabella `orders` ha un valore nella colonna `customer\_id`. Di conseguenza, ogni ordine torna alla tabella `customers`.
 
-  ![](../../assets/guest-orders-4.png)
+  ![Tabella dati ordini ospite con informazioni sul cliente](../../assets/guest-orders-4.png)
 
 * **Se sono consentiti ordini guest**, significa che alcuni ordini non hanno un valore nella colonna `customer\_id`. Solo ai clienti registrati viene assegnato un valore per la colonna `customer\_id` nella tabella `orders`. I clienti non registrati ricevono un valore `NULL` (o vuoto) per questa colonna. Di conseguenza, non tutti i record degli ordini hanno record corrispondenti nella tabella `customers`.
 
@@ -39,7 +39,7 @@ Il modo migliore per tenere conto degli ordini dei clienti è basare tutte le me
 
 È possibile che il filtro `Customers we count` impostato in questo tipo di installazione abbia un filtro per `Customer's order number = 1`.
 
-![](../../assets/guest-orders-filter-set.png)
+![Configurazione set di filtri per l&#39;esclusione di ordini guest](../../assets/guest-orders-filter-set.png)
 
 In una situazione senza ordini, ogni cliente esiste come riga univoca nella tabella dei clienti (vedere Immagine 1). Una metrica come `New customers` può semplicemente contare l&#39;ID di questa tabella in base alla data `created\_at` per comprendere i nuovi clienti in base alla data di registrazione.
 

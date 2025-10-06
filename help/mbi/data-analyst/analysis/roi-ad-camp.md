@@ -4,9 +4,9 @@ description: Scopri alcuni metodi diversi per valutare le prestazioni della camp
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Le analisi (1) e (2) di cui sopra vengono esaminate in un&#39;esercitazione sepa
 1. Selezionare `Add New Metric` e selezionare la tabella [!DNL `Adwords...`] che registra i dati dei costi [!DNL AdWords].
 1. Nell&#39;editor delle metriche, assegna un nome alla metrica (ad esempio, [!UICONTROL AdWord Cost])
 1. Utilizzando i menu a discesa, eseguire un **Sum** nella colonna `adCost` della tabella [!DNL Adwords...] (Modifica) ordinata in base alla colonna `date`.
-   ![](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
+   ![Messaggio di successo dopo l&#39;aggiunta di una nuova metrica](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. Fai clic su `Back to Metric List` in alto e vai a qualsiasi dashboard.
 
 1. Creare un rapporto che segmenta la spesa per campagne
@@ -99,7 +99,7 @@ Stai eseguendo annunci pubblicitari specifici per il prodotto? In tal caso, puoi
 >
 >Questo esempio presuppone che tutti i costi della campagna siano stati utilizzati esclusivamente per generare acquisti di prodotti specifici. Supponendo che tutti i costi siano stati spesi per la generazione di acquisti, il ROI risultante rappresenta lo scenario peggiore (costo più alto per acquisto). Puoi essere sicuro che il ROI effettivo sia superiore a questo calcolo. Esempio: supponendo di aver speso 20 $ per una campagna che ha generato 10 nuovi utenti e 10 acquisti, il costo effettivo per acquisto è di 1 $. Presumendo che tutti i costi siano andati ad acquisire nuovi utenti, il costo per acquisto è di 2 $.
 
-Prima di iniziare, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per unire le dimensioni seguenti alla tabella degli elementi di riga (`sales\_flat\_order\_item, order\_item`):
+Prima di iniziare, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per unire le dimensioni seguenti alla tabella degli elementi di riga (`sales\_flat\_order\_item, order\_item`):
 
 * Origine dell’ordine (se tieni traccia solo dell’origine di riferimento a livello di utente, quindi unisci all’origine dell’utente)
 * Campagna dell’ordine (se tieni traccia solo dell’origine di riferimento a livello di utente, quindi partecipa alla campagna dell’utente)
@@ -122,8 +122,8 @@ Prima di iniziare, [invia un ticket di supporto](https://experienceleague.adobe.
 1. Dopo aver impostato queste metriche, aggiungi le seguenti formule:
 1. [!UICONTROL ROI]: immettere la formula `\[A\]/\[B\]`, se `\[A\]` rappresenta `Revenue per campaign for specific product(s)` e `\[B\]` rappresenta `Ad cost by campaigns`. Restituisce il rapporto tra (Ricavi per prodotti specifici) e (Costo campagna)
 1. [!UICONTROL Return]: immettere la formula `\[A\]-\[B\]`. Restituisce il margine medio realizzato da un utente calcolando (LTV utente medio) - (costo medio per acquisizione)
-1. (Facoltativo) [!UICONTROL Revenue]: scopri la metrica `Revenue by items` per visualizzare i ricavi per prodotti specifici per campagna
-1. (Facoltativo) [!UICONTROL Cost]: scopri la metrica `AdWords Cost` per visualizzare il costo delle campagne
+   1. (Facoltativo) [!UICONTROL Revenue]: scopri la metrica `Revenue by items` per visualizzare i ricavi per prodotti specifici per campagna
+   1. (Facoltativo) [!UICONTROL Cost]: scopri la metrica `AdWords Cost` per visualizzare il costo delle campagne
 
 1. Assegna un nome al report e assicurati di salvarlo come tabella
 

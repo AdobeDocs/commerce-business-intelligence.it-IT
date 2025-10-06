@@ -4,18 +4,18 @@ description: Scopri come ottimizzare le query SQL.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: acc152709c7c66f387f4eded9e6c1c646a83af35
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
 
 # Ottimizzare le query SQL
 
-[!DNL SQL Report Builder] consente di eseguire query e iterazioni su tali query in qualsiasi momento. Questa opzione è utile quando è necessario modificare una query senza dover attendere il completamento di un ciclo di aggiornamento prima di realizzare che è necessario aggiornare una colonna o un report creato.
+[!DNL SQL Report Builder] consente di eseguire e modificare le query in qualsiasi momento. Questa funzionalità è utile se è necessario aggiornare immediatamente una query, anziché attendere il completamento di un ciclo di aggiornamento prima di correggere una colonna o un report.
 
-Prima dell&#39;esecuzione di una query, [[!DNL Commerce Intelligence] ne stima il costo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=it). Il costo considera il tempo e il numero di risorse necessari per eseguire una query. Se il costo è ritenuto troppo elevato o se il numero di righe restituite supera i limiti di [!DNL Commerce Intelligence], la query non riesce. Per eseguire query su [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), in modo da garantire la scrittura di query il più possibile semplificate, Adobe consiglia quanto segue.
+Prima dell&#39;esecuzione di una query, [[!DNL Commerce Intelligence] ne stima il costo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Il costo considera il tempo e il numero di risorse necessari per eseguire una query. Se il costo è ritenuto troppo elevato o se il numero di righe restituite supera i limiti di [!DNL Commerce Intelligence], la query non riesce. Per eseguire query su [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), in modo da garantire la scrittura di query il più possibile semplificate, Adobe consiglia quanto segue.
 
 ## Utilizzo di SELECT o selezione di tutte le colonne
 
@@ -25,7 +25,7 @@ Per questo motivo, Adobe consiglia di evitare di utilizzare `SELECT *` laddove p
 
 | **Invece di questo...** | **Prova questo!** |
 |-----|-----|
-| ![](../../mbi/assets/Select_all_1.png) | ![](../../mbi/assets/Select_all_2.png) |
+| ![Query SQL tramite l&#39;asterisco SELECT](../../mbi/assets/Select_all_1.png) | ![Query SQL che seleziona colonne specifiche](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -39,7 +39,7 @@ Osservare come è possibile riscrivere una query FULL OUTER JOIN:
 
 | **Invece di questo...** | **Prova questo!** |
 |-----|-----|
-| ![](../../mbi/assets/Full_Outer_Join_1.png) | ![](../../mbi/assets/Full_Outer_Join_2.png) |
+| ![Query SQL con outer join completo](../../mbi/assets/Full_Outer_Join_1.png) | ![Query SQL con join ottimizzato](../../mbi/assets/Full_Outer_Join_2.png) |
 
 {style="table-layout:auto"}
 
@@ -59,7 +59,7 @@ Se si utilizza un filtro durante l&#39;esecuzione di un join, assicurarsi di app
 
 | **Invece di questo...** | **Prova questo!** |
 |-----|-----|
-| ![](../../mbi/assets/Join_filters_1.png) | ![](../../mbi/assets/Join_filters_2.png) |
+| ![Query SQL con filtro clausola WHERE](../../mbi/assets/Join_filters_1.png) | ![Query SQL con filtro clausola ON](../../mbi/assets/Join_filters_2.png) |
 
 {style="table-layout:auto"}
 
@@ -73,19 +73,19 @@ Gli operatori di confronto (>, &lt;, = e così via) sono i meno costosi, seguiti
 
 L&#39;utilizzo di `EXISTS` rispetto a `IN` dipende dal tipo di risultati che si sta tentando di restituire. Se si è interessati a un solo valore, utilizzare la clausola `EXISTS` anziché `IN`. `IN` viene utilizzato con elenchi di valori separati da virgole, che aumentano il costo di calcolo della query.
 
-Quando vengono eseguite `IN` query, il sistema deve prima elaborare la sottoquery (l&#39;istruzione `IN`), quindi l&#39;intera query basata sulla relazione specificata nell&#39;istruzione `IN`. `EXISTS` è molto più efficiente perché la query non deve essere eseguita più volte. Viene restituito un valore true/false durante la verifica della relazione specificata nella query.
+Quando vengono eseguite `IN` query, il sistema deve prima elaborare la sottoquery (l&#39;istruzione `IN`), quindi l&#39;intera query basata sulla relazione specificata nell&#39;istruzione `IN`. La query `EXISTS` è molto più efficiente perché non deve essere eseguita più volte. Viene restituito un valore true/false durante il controllo della relazione specificata nella query.
 
 In parole povere: il sistema non deve elaborare altrettanto quando utilizza `EXISTS`.
 
 | **Invece di questo...** | **Prova questo!** |
 |-----|-----|
-| ![](../../mbi/assets/Exists_1.png) | ![](../../mbi/assets/Exists_2.png) |
+| ![Query SQL tramite LEFT JOIN con controllo NULL](../../mbi/assets/Exists_1.png) | ![Query SQL con clausola EXISTS](../../mbi/assets/Exists_2.png) |
 
 {style="table-layout:auto"}
 
 ## Utilizzo di ORDER BY
 
-`ORDER BY` è una funzione costosa in SQL e può aumentare notevolmente il costo di una query. Se viene visualizzato un messaggio di errore che indica che il costo EXPLAIN della query è troppo elevato, provare a eliminare `ORDER BY` dalla query se non necessario.
+La funzione `ORDER BY` è costosa in SQL e può aumentare notevolmente il costo di una query. Se viene visualizzato un messaggio di errore che indica che il costo EXPLAIN della query è troppo elevato, provare a eliminare `ORDER BY` dalla query se non necessario.
 
 Ciò non significa che `ORDER BY` non possa essere utilizzato, ma solo che debba essere utilizzato solo quando necessario.
 
@@ -95,7 +95,7 @@ In alcune situazioni questo approccio non è conforme a quello che stai cercando
 
 | **Invece di questo...** | **Prova questo!** |
 |-----|-----|
-| ![](../../mbi/assets/Group_by_2.png) | ![](../../mbi/assets/Group_by_1.png) |
+| ![Query SQL con GROUP BY prima del filtro](../../mbi/assets/Group_by_2.png) | ![Query SQL con filtro prima di GROUP BY](../../mbi/assets/Group_by_1.png) |
 
 {style="table-layout:auto"}
 

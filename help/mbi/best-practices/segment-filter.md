@@ -4,9 +4,9 @@ description: Scopri le best practice per la segmentazione e il filtraggio.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Vuoi sapere chi sono i tuoi clienti più importanti? Quali sono i tuoi canali di
 
 Questo argomento tratta i segmenti critici che sono spesso consigliati ai clienti. Inoltre, illustra in dettaglio le domande che questi segmenti possono aiutarti a rispondere. Tecnicamente, i segmenti sono colonne di dati nel database. In [!DNL Adobe Commerce Intelligence] sono denominate dimensioni.
 
-![](../../mbi/assets/mbi-critical-segments.png)
+![Dashboard che mostra segmenti e filtri critici per i clienti](../../mbi/assets/mbi-critical-segments.png)
 
 
 ## Segmenti utente
@@ -71,7 +71,7 @@ Questo tipo di analisi è ciò che gli esperti di marketing delle aziende Fortun
 
 Il primo passaggio per segmentare le metriche in base alle dimensioni di cui sopra consiste nell’assicurarsi di tenere traccia di questi dati nel database. Se non viene tracciato, incontra il tuo team tecnico e trova un modo per iniziare a tracciare questi dati.
 
-Dopo aver confermato che i dati sono tracciati nel database, [contatta il team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per inviare le dimensioni alle metriche e ai grafici di [!DNL Commerce Intelligence]. È inoltre possibile utilizzare lo strumento *Gestione campi* per tenere traccia di questi campi in [!DNL Commerce Intelligence].
+Dopo aver confermato che i dati sono tracciati nel database, [contatta il team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per inviare le dimensioni alle metriche e ai grafici di [!DNL Commerce Intelligence]. È inoltre possibile utilizzare lo strumento *Gestione campi* per tenere traccia di questi campi in [!DNL Commerce Intelligence].
 
 ## Correlato
 

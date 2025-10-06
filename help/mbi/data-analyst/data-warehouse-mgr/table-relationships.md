@@ -4,9 +4,9 @@ description: Scopri come comprendere quante possibili occorrenze in una tabella 
 exl-id: e7256f46-879a-41da-9919-b700f2691013
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ In una relazione `one-to-one`, un record nella tabella `B` appartiene a un solo 
 
 Ad esempio, nella relazione tra persone e numeri di patente, una persona può avere un solo numero di patente e il numero di patente appartiene a una sola persona.
 
-![](../../assets/one-to-one.png)
+![Diagramma che mostra la relazione uno-a-uno tra due entità](../../assets/one-to-one.png)
 
 ### `One-to-Many` {#onetomany}
 
 In una relazione `one-to-many`, un record nella tabella `A` può potenzialmente appartenere a più record nella tabella `B`. Considerare la relazione tra `orders` e `items`: un ordine può contenere molti elementi, ma un elemento appartiene a un singolo ordine. In questo caso, la tabella `orders` è il lato uno e la tabella `items` è il lato molti.
 
-![](../../assets/one-to-many_001.png)
+![Diagramma che mostra la relazione uno-a-molti tra ordini ed elementi](../../assets/one-to-many_001.png)
 
 ### `Many-to-Many` {#manytomany}
 
@@ -45,7 +45,7 @@ In una relazione `many-to-many`, un record nella tabella `B` può potenzialmente
 
 Pensa alla relazione tra **prodotti** e **categorie**: un prodotto può appartenere a molte categorie e una categoria può contenere molti prodotti.
 
-![](../../assets/many-to-many.png)
+![Diagramma che mostra la relazione molti-a-molti tra prodotti e categorie](../../assets/many-to-many.png)
 
 ## Valutazione delle tabelle {#eval}
 
@@ -75,7 +75,7 @@ Una persona può avere un solo numero di patente di guida. Un dato numero di pat
 
 Questa è una relazione `one-to-one` in cui ogni tabella è un lato uno.
 
-![](../../assets/one-to-one3.png)
+![Diagramma concettuale del rapporto uno-a-uno tra la persona e la patente di guida](../../assets/one-to-one3.png)
 
 ### `One-to-Many`
 
@@ -83,7 +83,7 @@ Un dato ordine può contenere molti elementi. Un dato articolo appartiene a un s
 
 Si tratta di una relazione `one-to-many` in cui la tabella ordini è il lato uno e la tabella articoli è il lato molti.
 
-![](../../assets/one-to-many3.png)
+![Diagramma concettuale della relazione uno-a-molti tra ordini ed elementi](../../assets/one-to-many3.png)
 
 ### `Many-to-Many`
 
@@ -91,7 +91,7 @@ Un dato prodotto può appartenere a molte categorie. Una determinata categoria p
 
 Questa è una relazione `many-to-many` in cui ogni tabella è un lato molti.
 
-![](../../assets/many-to-many3.png)
+![Diagramma concettuale della relazione molti-a-molti tra prodotti e categorie](../../assets/many-to-many3.png)
 
 ### Utilizzo dello schema della tabella {#schema}
 
@@ -105,7 +105,7 @@ Se le tabelle sono collegate utilizzando `primary key` di entrambe le tabelle, l
 
 Ad esempio, una tabella `users` può acquisire la maggior parte degli attributi utente (come il nome), mentre una tabella supplementare `user_source` acquisisce le origini di registrazione utente. In ogni tabella, una riga rappresenta un utente.
 
-![](../../assets/one-to-one1.png)
+![Diagramma di schema che mostra una relazione uno-a-uno utilizzando le chiavi primarie](../../assets/one-to-one1.png)
 
 ### `One-to-many`
 
@@ -115,17 +115,17 @@ Ad esempio, una tabella `users` può acquisire la maggior parte degli attributi 
 
 Quando le tabelle sono collegate utilizzando un `Foreign key` che punta a un `primary key`, questa configurazione descrive una relazione `one-to-many`. Il lato uno è la tabella contenente `primary key` e il lato molti è la tabella contenente `foreign key`.
 
-![](../../assets/one-to-many1.png)
+![Diagramma di schema che mostra una relazione uno-a-molti utilizzando una chiave esterna](../../assets/one-to-many1.png)
 
 ### `Many-to-many`
 
 Se si verifica una delle condizioni seguenti, la relazione è `many-to-many`:
 
 * `Non-primary key` colonne vengono utilizzate per collegare due tabelle
-  ![](../../assets/many-to-many1.png)
+  ![Diagramma di schema che mostra la relazione molti-a-molti utilizzando chiavi non primarie](../../assets/many-to-many1.png)
 * Parte di un `primary key` composito utilizzata per collegare due tabelle
 
-![](../../assets/many-to-mnay2.png)
+![Diagramma di schema che mostra la relazione molti-a-molti utilizzando una chiave primaria composita](../../assets/many-to-mnay2.png)
 
 ## Passaggi successivi
 

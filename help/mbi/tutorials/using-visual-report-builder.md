@@ -4,9 +4,9 @@ description: Scopri come analizzare i dati nel rapporto per un periodo di tempo 
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -37,13 +37,13 @@ Puoi aggiungere altre metriche dopo aver selezionato la metrica iniziale e sovra
 
 Si supponga di voler creare un rapporto che mostri i ricavi medi per ordine. In questo caso, la metrica `Revenue` viene divisa per la metrica `Number of orders`.
 
-![](../assets/ave-rev-per-order.png)
+![Utilizza Visual Report Builder](../assets/ave-rev-per-order.png)
 
 ## Passaggio 4: impostazione di `Time Period` e `Interval of Analysis` {#time}
 
 Per azzerare in un particolare intervallo di tempo, potete impostare il periodo di tempo per l&#39;analisi. Puoi anche scegliere intervalli di tempo per segmentare i dati (ad esempio per anno, per trimestre o per mese). Utilizzare i menu nell&#39;angolo superiore destro del grafico per impostare il periodo di tempo e l&#39;intervallo.
 
-![](../assets/Time_Options_Report_Builder.png)
+![Utilizza Visual Report Builder](../assets/Time_Options_Report_Builder.png)
 
 Quando imposti un intervallo di date specifico per il periodo di tempo, assicurati che la data di inizio sia all’inizio dell’intervallo e la data di fine sia alla fine dell’intervallo.
 
@@ -57,17 +57,17 @@ Ad esempio, se si imposta un periodo di tempo compreso tra `January 1st` e `Marc
 
 Torna all’esempio delle entrate medie per ordine e imposta il Raggruppa per sul codice promozionale. Questo mostra i ricavi medi per ordine per ordini con e senza codice promozionale.
 
-![](../assets/Group_By_Report_Builder.png)
+![Utilizza Visual Report Builder](../assets/Group_By_Report_Builder.png)
 
 Se le metriche incluse nell’analisi sono basate su tabelle di dati diverse, un pop-up ti consente di selezionare la dimensione dati corrispondente in ogni tabella. L’obiettivo qui è quello di trovare dimensioni che condividono il tipo di valori per la segmentazione:
 
-![](../assets/Dimension_Editor.png)
+![Utilizza Visual Report Builder](../assets/Dimension_Editor.png)
 
 ## Passaggio 6: impostazione di `Metric Filters`, `Perspective` e `Time Interval` {#metric-specific}
 
-Per ogni metrica aggiunta all&#39;analisi, puoi aggiungere filtri, selezionare la prospettiva dati rilevante e impostare le opzioni `time interval`. Per accedere a queste funzionalità, fare clic sulle icone imbuto (`Filter`), occhio (`Perspective`) e orologio (`Time`) accanto alle metriche incluse nel report.
+Per ogni metrica aggiunta all&#39;analisi, puoi aggiungere filtri, selezionare la prospettiva dati rilevante e impostare le opzioni `time interval`. Per accedere a queste funzionalità, fare clic sulle icone funnel (`Filter`), eye (`Perspective`) e clock (`Time`) accanto alle metriche incluse nel report.
 
-![](../assets/Filters_Perspective_Interval_Report_builder.png)
+![Utilizza Visual Report Builder](../assets/Filters_Perspective_Interval_Report_builder.png)
 
 ### `Filters`
 
@@ -83,7 +83,7 @@ L&#39;utilizzo di caratteri jolly (`%` o `_`) con istruzioni `LIKE` è supportat
 
 L’aggiunta di più filtri consente un controllo rigoroso dei dati del grafico. Per impostazione predefinita, tutte le condizioni del filtro devono essere true per includere una parte di dati, ma è possibile creare relazioni OR modificando la casella di testo Regole filtro.
 
-![](../assets/edit-filter-rules.png)
+![Utilizza Visual Report Builder](../assets/edit-filter-rules.png)
 
 ### `Perspectives`
 
@@ -91,23 +91,23 @@ L’aggiunta di più filtri consente un controllo rigoroso dei dati del grafico.
 
 - `Standard perspective`: la prospettiva standard mostra il risultato per la data corrispondente sull&#39;asse x (ad esempio i ricavi di gennaio). Questa è la prospettiva utilizzata nell&#39;esempio Ricavo medio per ordine.
 
-![](../assets/Standard.png)
+![Utilizza Visual Report Builder](../assets/Standard.png)
 
 - Prospettiva `Amount` OR `Percent Change` rispetto a `Previous Period`: questa prospettiva mostra la variazione percentuale o della quantità da un intervallo all&#39;altro ed è utile per misurare il tasso di variazione nelle metriche a modifica rapida. È inoltre possibile confrontare l&#39;intervallo con lo stesso periodo dello scorso anno per evidenziare la crescita su base annua.
 
-![](../assets/Amt_or_Percent_Change.png)
+![Utilizza Visual Report Builder](../assets/Amt_or_Percent_Change.png)
 
 - `Cumulative perspective`: `cumulative perspective` mostra l&#39;importo della somma corrente o cumulativa della metrica nel periodo di tempo. Questa funzione viene spesso utilizzata per analizzare i clienti totali e pianificare la capacità futura.
 
-![](../assets/Cumulative_Perspective.png)
+![Utilizza Visual Report Builder](../assets/Cumulative_Perspective.png)
 
 - `Percent of First Value perspective`: questa prospettiva mostra i dati come percentuale del primo intervallo incluso nell&#39;analisi. Ciò è utile per misurare l’efficacia di azioni specifiche rispetto alle prestazioni del primo periodo.
 
-![](../assets/Percent_of_First_Value.png)
+![Utilizza Visual Report Builder](../assets/Percent_of_First_Value.png)
 
 - `Rolling averages window perspective`: la prospettiva della finestra delle medie continue mostra il valore medio continuo di una metrica nell&#39;intervallo di tempo specificato. L&#39;intervallo deve essere uguale all&#39;intervallo impostato a livello di report. Ad esempio, se il rapporto mostra l’ultimo trimestre completo dei Ricavi per settimana, puoi impostare l’intervallo di tempo della finestra per la media continua su quattro settimane. In questo modo i primi tre valori sono nulli e il quarto valore rappresenta la media delle prime quattro settimane di retribuzione. Per maggiore chiarezza, disattivare la casella di controllo `Multiple Y-Axes` se si visualizza la stessa metrica con una media continua, come nell&#39;esempio seguente.
 
-![](../assets/rolling_avg_window.png)
+![Utilizza Visual Report Builder](../assets/rolling_avg_window.png)
 
 ### Opzioni di tempo specifiche per la metrica
 
@@ -131,7 +131,7 @@ Quando crei un grafico, puoi salvarlo facendo clic su **[!UICONTROL Save]** nell
 
 È quindi possibile salvare il report facendo clic su **[!UICONTROL Save to Dashboard]**.
 
-![](../assets/save-to-dashboard.png)
+![Utilizza Visual Report Builder](../assets/save-to-dashboard.png)
 
 ## Output dei rapporti
 
@@ -139,14 +139,14 @@ Per aiutarti a decidere quale output del rapporto scegliere, vedi quanto segue:
 
 ### Grafico
 
-![](../assets/RB_Chart.png)
+![Utilizza Visual Report Builder](../assets/RB_Chart.png)
 
 ### Tabella
 
-![](../assets/RB_Table.png)
+![Utilizza Visual Report Builder](../assets/RB_Table.png)
 
 ### Numero (`scalar`)
 
-![](../assets/RB_Scalar.png)
+![Utilizza Visual Report Builder](../assets/RB_Scalar.png)
 
 Congratulazioni! Hai finito.

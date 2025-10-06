@@ -4,9 +4,9 @@ description: Scopri le prestazioni dei coupon nel tuo business, un modo interess
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: d8fc96a58b72c601a5700f35ea1f3dc982d76571
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Comprendere le prestazioni dei coupon della tua azienda è un modo interessante 
 
 In questo argomento vengono documentati i passaggi necessari per creare questa analisi per comprendere le prestazioni dei clienti acquisiti con coupon, visualizzare le tendenze e tenere traccia dell’utilizzo del codice coupon individuale.
 
-![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
+![Dashboard di analisi del codice coupon con metriche di utilizzo e prestazioni](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
 ## Guida introduttiva
 
@@ -62,42 +62,42 @@ Il primo passaggio consiste nel creare una nuova metrica con i passaggi seguenti
 >[!UICONTROL Time Period]** per ogni report è elencato come `All-time`. Puoi modificarlo in base alle tue esigenze di analisi. Adobe consiglia che tutti i rapporti in questo dashboard riguardino lo stesso periodo di tempo, ad esempio `All time`, `Year-to-date` o `Last 365 days`.
 
 * **Ordini con coupon**
-   * &#x200B;
+   * 
      [!UICONTROL Metric]: `Orders`
       * Aggiungi filtro:
          * [`A`] `coupon_code` **NON È** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **Ordini senza coupon**
-   * &#x200B;
+   * 
      [!UICONTROL Metric]: `Orders`
       * Aggiungi filtro:
          * [`A`] `coupon_code` **IS** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **Ricavi netti da ordini con coupon**
-   * &#x200B;
+   * 
      [!UICONTROL Metric]: `Revenue`
       * Aggiungi filtro:
          * [`A`] `coupon_code` **NON È** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **Sconti dai coupon**
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -107,7 +107,7 @@ Il primo passaggio consiste nel creare una nuova metrica con i passaggi seguenti
          * [`A`] `Customer's first order's coupon_code` **NON È** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -117,7 +117,7 @@ Il primo passaggio consiste nel creare una nuova metrica con i passaggi seguenti
          * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -141,23 +141,23 @@ Il primo passaggio consiste nel creare una nuova metrica con i passaggi seguenti
 
    * Crea formula: `Gross revenue`
       * [!UICONTROL Formula]: `(B – C)`
-      * &#x200B;
+      * 
         [!UICONTROL Format]: `Currency`
 
    * Crea formula:**% scontato**
       * Formula: `(C / (B - C))`
-      * &#x200B;
+      * 
         [!UICONTROL Format]: `Percentage`
 
    * Crea formula: `Average order discount`
       * [!UICONTROL Formula]: `(C / A)`
-      * &#x200B;
+      * 
         [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
+   * 
      [!UICONTROL Tipo di grafico]: `Table`
 
 * **Ricavi medi vita per coupon primo ordine**
@@ -166,7 +166,7 @@ Il primo passaggio consiste nel creare una nuova metrica con i passaggi seguenti
          * [`A`] `coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -176,10 +176,10 @@ Il primo passaggio consiste nel creare una nuova metrica con i passaggi seguenti
          * [`A`] `Customer's first order's coupon_code` **NON È** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
    * [!UICONTROL Group by]: `Customer's first order's coupon_code`
-   * &#x200B;
+   * 
      [!UICONTROL Tipo di grafico]: **Column**
 
 * **Nuovi clienti tramite acquisizione coupon/non coupon**
@@ -205,4 +205,4 @@ Dopo aver generato i rapporti, consulta l’immagine nella parte superiore di qu
 >
 >A partire dalla versione 2.4.7 di Adobe Commerce, i clienti possono utilizzare le tabelle **quote_cedole** e **sales_order_cedole** per ottenere informazioni su come il cliente utilizza più cedole.
 
-![](../../assets/multicoupon_relationship_tables.png)
+![Diagramma delle relazioni tra tabelle per l&#39;analisi con più coupon](../../assets/multicoupon_relationship_tables.png)

@@ -4,9 +4,9 @@ description: Scopri come monitorare il modo in cui i visitatori utilizzano il tu
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Richiede [Autorizzazioni amministratore](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/google-analytics-logo.png)
+![Logo Google Analytics](../../../assets/google-analytics-logo.png)
 
 [!DNL Google Analytics] è il servizio di analisi Web più utilizzato su Internet. L&#39;implementazione di [!DNL Google Analytics] sul sito Web consente di tenere traccia di come i visitatori utilizzano il sito, quali contenuti sono interessanti, dove i visitatori escono e altro ancora. [!DNL Google Analytics Warehoused] è un&#39;integrazione separata dall&#39;integrazione esistente di [!DNL Google Analytics]. Consente una migliore analisi grazie alla presenza dei dati [!DNL Google Analytics] nel Data Warehouse, che è diverso dal feed live dell&#39;integrazione [!DNL Google Analytics] esistente. L&#39;analisi di queste metriche in [!DNL Commerce Intelligence], insieme ad altre parti di dati, migliora lo stato e l&#39;usabilità complessivi del sito.
 
@@ -35,7 +35,7 @@ Con l&#39;integrazione di [!DNL Google Analytics Live], invece, ogni grafico [!D
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] è un&#39;integrazione `Premium`. [Contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) se hai interesse ad aggiungere questa integrazione alla sottoscrizione.
+>[!DNL Google Analytics Warehoused] è un&#39;integrazione `Premium`. [Contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) se hai interesse ad aggiungere questa integrazione alla sottoscrizione.
 
 1. Passare alla pagina `Connections` in **[!UICONTROL Admin** > **Integrations]**.
 1. Fare clic su **[!UICONTROL Add an Integration]**, che si trova sul lato destro.
@@ -63,7 +63,7 @@ Per identificare l&#39;ID profilo [!DNL Google Analytics] di un particolare sito
 
 ## Documentazione correlata
 
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Connessione in corso  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analisi delle attività del sito web e dei tassi di conversione dei clienti](../../analysis/web-act-cust-conversion.md)
 * [Tieni traccia dei dati di acquisizione dell&#39;utente utilizzando  [!DNL Google Analytics] cookie](../../analysis/google-track-user-acq.md)

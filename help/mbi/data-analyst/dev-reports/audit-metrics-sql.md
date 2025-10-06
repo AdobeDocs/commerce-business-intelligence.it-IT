@@ -4,9 +4,9 @@ description: Scopri come controllare dati e metriche utilizzando SQL Report Buil
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ Per iniziare, aprire [!DNL SQL Report Builder] passando a **[!UICONTROL Report B
 
 Per ottenere una visualizzazione più chiara della query, è possibile riformattarne la visualizzazione nel campo della query. Al termine, selezionare `Run Query`. I risultati vengono inseriti sotto forma di tabella nel pannello del rapporto sotto la query.
 
-![](../../assets/run-query-results.gif)
+![Dimostrazione animata dell&#39;esecuzione della query SQL e della visualizzazione dei risultati](../../assets/run-query-results.gif)
 
 ## Limitazione della query
 
 Se si tenta di individuare una discrepanza o un insieme di dati specifico, è necessario limitare la query a un esempio specifico da controllare rispetto al database locale. Per farlo, modifica la query in modo che corrisponda alle restrizioni desiderate. Nell’esempio seguente, la query viene limitata per includere solo i ricavi a partire dal 1° gennaio 2013 o versione successiva. Dopo aver aggiornato la query, selezionare nuovamente **[!UICONTROL Run Query]** per aggiornare i risultati.
 
-![](../../assets/restricting-query.gif)
+![Dimostrazione animata della limitazione della query con filtri](../../assets/restricting-query.gif)
 
 ## Salvataggio ed esportazione
 
@@ -40,7 +40,7 @@ Quando il report soddisfa le tue esigenze, assegna al report un nome distinto, f
 
 Dopo aver salvato il report, passare a tale dashboard selezionando `Go to Dashboard`. Da qui è possibile esportare i dati individuando il report e selezionando **[!UICONTROL Options gear > Full `.csv`Esporta]** o **[!UICONTROL Full Excel Export]**.
 
-![](../../assets/export-dboard-data.gif)
+![Dimostrazione animata dell&#39;esportazione dei dati del dashboard](../../assets/export-dboard-data.gif)
 
 ## Query personalizzate
 
@@ -48,4 +48,4 @@ Puoi anche scrivere query personalizzate ed esportare i risultati da confrontare
 
 >[!NOTE]
 >
->Se riscontri una discrepanza dopo aver controllato i dati, consulta l&#39;argomento di supporto [Contattare il supporto: discrepanze di dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=it) per ulteriori informazioni su come procedere.
+>Se riscontri una discrepanza dopo aver controllato i dati, consulta l&#39;argomento di supporto [Contattare il supporto: discrepanze di dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) per ulteriori informazioni su come procedere.
