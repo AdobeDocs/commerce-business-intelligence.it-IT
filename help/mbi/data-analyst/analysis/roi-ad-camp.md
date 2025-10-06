@@ -135,6 +135,6 @@ Prima di iniziare, [invia un ticket di supporto](https://experienceleague.adobe.
 * [Tracciare l&#39;origine di riferimento dell&#39;utente nel database](../analysis/google-track-user-acq.md)
 * [Tenere traccia dei dati relativi a dispositivi utente, browser e sistema operativo nel database](../analysis/track-usr-dev-browser.md)
 * [Scopri le fonti e i canali di acquisizione più importanti](../analysis/most-value-source-channel.md)
-* [Connetti il tuo account  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
+* [Connetti il tuo account  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
 * [Come funziona l&#39;attribuzione  [!DNL Google Analytics] UTM?](../analysis/utm-attributes.md)
 * [Cinque best practice per l&#39;assegnazione di tag UTM in [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

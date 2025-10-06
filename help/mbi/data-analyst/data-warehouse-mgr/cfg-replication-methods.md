@@ -135,6 +135,6 @@ Per terminare, avete creato questa tabella che confronta i vari metodi di replic
 ## Documentazione correlata
 
 * [Ricontrolli dei dati](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [Modifica del database per supportare ](../../best-practices/mod-db-inc-replication.md)
+* [Modifica del database per supportare &#x200B;](../../best-practices/mod-db-inc-replication.md)
 * [Ottimizzazione del database per l&#39;analisi](../../best-practices/opt-db-analysis.md)
 * [Riduzione dei tempi di aggiornamento](../../best-practices/reduce-update-cycle-time.md)

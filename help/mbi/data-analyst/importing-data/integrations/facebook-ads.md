@@ -59,7 +59,7 @@ Assicurati di monitorare [!DNL Facebook] campagne in [!DNL Google Analytics]. In
 ## Correlato
 
 * [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
-* [Connetti il tuo account  [!DNL Google Adwords] ](../integrations/google-ecommerce.md)
+* [Connetti il tuo account  [!DNL Google Adwords] &#x200B;](../integrations/google-ecommerce.md)
 * [Tracciare l&#39;origine di riferimento dell&#39;ordine tramite [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Tracciare l&#39;origine di riferimento dell&#39;utente nel database](../../analysis/google-track-user-acq.md)
 * [Tenere traccia dei dati relativi a dispositivi utente, browser e sistema operativo nel database](../../analysis/track-usr-dev-browser.md)

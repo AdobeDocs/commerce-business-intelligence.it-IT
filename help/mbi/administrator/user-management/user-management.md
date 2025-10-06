@@ -50,7 +50,7 @@ Queste autorizzazioni consentono agli utenti di eseguire determinate azioni o di
 
 >[!NOTE]
 >
->_È possibile limitare l&#39;**[!UICONTROL Standard]**accesso di un utente [ a metriche specifiche](../../administrator/user-management/restrict-metric-access.md)._
+>_È possibile limitare l&#39;**[!UICONTROL Standard]**&#x200B;accesso di un utente [&#x200B; a metriche specifiche](../../administrator/user-management/restrict-metric-access.md)._
 >
 >**[!UICONTROL Standard] _gli utenti possono accedere alla fatturazione con un&#39;impostazione di autorizzazione aggiuntiva._
 >

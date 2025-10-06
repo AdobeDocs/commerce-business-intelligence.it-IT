@@ -66,9 +66,9 @@ Nessuna nuova metrica!!!
 
 * Metrica `A`: `Average Order Value`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Numero di ordini per bucket di subtotale con regola di spedizione A**
@@ -80,53 +80,53 @@ Nessuna nuova metrica!!!
 
 * Metrica `A`: `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Column`
 
 * **Percentuale di ordini per subtotale con regola di spedizione A**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL Raggruppa per]: `Independent`
    * [!UICONTROL Formula]: `(A / B)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `%`
 
 * Metrica `A`: `Number of orders by subtotal (hide)`
 * Metrica `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * **Percentuale di ordini con subtotale superiore alla regola di spedizione A**
    * [!UICONTROL Metric]: `Number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL Raggruppa per]: `Independent`
 
    * [!UICONTROL Formula]: `1- (A / B)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `%`
 
 * Metrica `A`: `Number of orders by subtotal`
 * Metrica `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 

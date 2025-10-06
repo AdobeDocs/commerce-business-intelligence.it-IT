@@ -101,7 +101,7 @@ Quindi, prova a creare **il supporto [!DNL Google Analytics]** e `campaign` del 
 
 ### Bonus: tabella Ordini, turno 2
 
-Puoi fermarti qui se lo desideri, ma questa sezione abilita ulteriori analisi portando le **dimensioni [!DNL Google Analytics] del primo ordine del cliente create nella** ultima sezione[ nella tabella ](#customers). `orders` La creazione delle dimensioni in questa sezione consente di analizzare tutte le metriche create nella tabella `orders` - `Revenue`, `Number of orders`, `Distinct buyers` e così via - utilizzando gli attributi [!DNL Google Analytics] del primo ordine di un cliente.
+Puoi fermarti qui se lo desideri, ma questa sezione abilita ulteriori analisi portando le **dimensioni [!DNL Google Analytics] del primo ordine del cliente create nella** ultima sezione[&#x200B; nella tabella &#x200B;](#customers). `orders` La creazione delle dimensioni in questa sezione consente di analizzare tutte le metriche create nella tabella `orders` - `Revenue`, `Number of orders`, `Distinct buyers` e così via - utilizzando gli attributi [!DNL Google Analytics] del primo ordine di un cliente.
 
 Questo esempio unisce la dimensione `Customer's first order's [!DNL Google Analytics] source` alla tabella `orders`.
 
