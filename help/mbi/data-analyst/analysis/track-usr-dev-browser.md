@@ -48,6 +48,6 @@ Con queste nuove informazioni, puoi comprendere meglio in che modo gli utenti ac
 * [Tracciare l&#39;origine di riferimento dell&#39;ordine tramite  [!DNL Google Anaytics] E-Commerce](../importing-data/integrations/google-ecommerce.md)
 * [Tracciare l&#39;origine di riferimento dell&#39;utente nel database](../analysis/google-track-user-acq.md)
 * [Scopri le fonti e i canali di acquisizione più importanti](../analysis/most-value-source-channel.md)
-* [Connetti il tuo account  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
+* [Connetti il tuo account  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
 * [Aumentare il ROI nelle campagne pubblicitarie](../analysis/roi-ad-camp.md)
 * [Come funziona l&#39;attribuzione  [!DNL Google Analytics] UTM?](../analysis/utm-attributes.md)

@@ -18,8 +18,8 @@ ht-degree: 0%
 - [Introduzione a [!DNL Commerce Intelligence]](getting-started/getting-started.md)
 - Guida introduttiva {#start}
    - [Onboarding](getting-started/onboarding.md)
-   - [Attiva il tuo account  [!DNL Commerce Intelligence] ](getting-started/onpremise-activation.md)
-   - [Accedi al tuo account  [!DNL Commerce Intelligence] ](getting-started/sign-in.md)
+   - [Attiva il tuo account  [!DNL Commerce Intelligence] &#x200B;](getting-started/onpremise-activation.md)
+   - [Accedi al tuo account  [!DNL Commerce Intelligence] &#x200B;](getting-started/sign-in.md)
    - [Commerce Intelligence Essentials e Commerce Intelligence Pro](getting-started/essentials-vs-pro.md)
 - Amministratore {#administrator}
    - Gestione account {#acct-mgmt}
@@ -80,7 +80,7 @@ ht-degree: 0%
       - [Utilizzo delle formule in [Report Builder]](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
       - [Crea [!DNL Google Analytics] grafici](data-analyst/dev-reports/google-analytics-charts-regex.md)
       - [Importanza di  [!DNL Lifetime Revenue Cohort Analysis]](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
-      - [Ordinamento dei dati tramite la funzionalità  [!DNL Show Top/Bottom] ](data-analyst/dev-reports/order-data-top-bottom-feat.md)
+      - [Ordinamento dei dati tramite la funzionalità  [!DNL Show Top/Bottom] &#x200B;](data-analyst/dev-reports/order-data-top-bottom-feat.md)
       - [Utilizzo di  [!DNL SQL Report Builder]](data-analyst/dev-reports/sql-rpt-bldr.md)
       - [Rapporto sul primo acquisto](data-analyst/dev-reports/time-first-purchase-slope-dwnwrd.md)
       - [Informazioni su  [!DNL Repeat Order Probability Report]](data-analyst/dev-reports/repeat-order-probability.md)
@@ -89,10 +89,10 @@ ht-degree: 0%
    - Collegamento dei dati {#connecting}
       - [Introduzione](data-analyst/importing-data/connecting-data/connecting-data.md)
       - [Formattazione e importazione di dati di eCommerce](data-analyst/importing-data/connecting-data/format-import-ecom-data.md)
-      - [Importazione dei dati  [!DNL Bing Ad Spend] ](data-analyst/importing-data/connecting-data/import-bing-ad-data.md)
+      - [Importazione dei dati  [!DNL Bing Ad Spend] &#x200B;](data-analyst/importing-data/connecting-data/import-bing-ad-data.md)
       - [Importazione dei dati di marketing  [!DNL CJ Affiliate] (Commission Junction) in corso](data-analyst/importing-data/connecting-data/import-cj-market-data.md)
-      - [Importazione dei dati  [!DNL Linkshare] ](data-analyst/importing-data/connecting-data/import-linkshare-data.md)
-      - [Importazione dei dati  [!DNL MailChimp] ](data-analyst/importing-data/connecting-data/import-mailchimp-data.md)
+      - [Importazione dei dati  [!DNL Linkshare] &#x200B;](data-analyst/importing-data/connecting-data/import-linkshare-data.md)
+      - [Importazione dei dati  [!DNL MailChimp] &#x200B;](data-analyst/importing-data/connecting-data/import-mailchimp-data.md)
       - [Importazione offline/altri dati di spesa degli annunci](data-analyst/importing-data/connecting-data/import-offline-ad-data.md)
       - [Utilizzo di Caricamento file](data-analyst/importing-data/connecting-data/using-file-uploader.md)
       - [Servizi di migrazione dati](data-analyst/importing-data/connecting-data/data-migration-services.md)
@@ -105,7 +105,7 @@ ht-degree: 0%
       - [Previsti [!DNL Facebook Ads] dati](data-analyst/importing-data/integrations/facebook-ads-data.md)
       - [Connessione in corso  [!DNL Google Adwords]](data-analyst/importing-data/integrations/google-adwords.md)
       - [Previsti [!DNL Google Adword] dati](data-analyst/importing-data/integrations/google-adwords-data.md)
-      - [Controllo dei dati  [!DNL Google Adwords] ](data-analyst/importing-data/integrations/audit-google-adwords.md)
+      - [Controllo dei dati  [!DNL Google Adwords] &#x200B;](data-analyst/importing-data/integrations/audit-google-adwords.md)
       - [Connessione in corso  [!DNL Google Analytics Warehoused]](data-analyst/importing-data/integrations/google-analytics-warehoused.md)
       - [Previsti [!DNL Google Analytics Warehoused] Dati](data-analyst/importing-data/integrations/google-analytics-warehoused-data.md)
       - [Connessione in corso  [!DNL Google Analytics]](data-analyst/importing-data/integrations/google-analytics.md)
@@ -128,7 +128,7 @@ ht-degree: 0%
       - [Connessione in corso  [!DNL Zendesk]](data-analyst/importing-data/integrations/zendesk.md)
       - [Previsti [!DNL Zendesk] dati](data-analyst/importing-data/integrations/exp-zendesk-data.md)
       - [Analisi dei dati  [!DNL Zendesk]  in corso](data-analyst/importing-data/integrations/help-desk-zendesk.md)
-      - [Controllo dei dati  [!DNL Zendesk] ](data-analyst/importing-data/integrations/audit-zendesk-data.md)
+      - [Controllo dei dati  [!DNL Zendesk] &#x200B;](data-analyst/importing-data/integrations/audit-zendesk-data.md)
    - Integrazioni di database {#integration}
       - [Connessione in corso  [!DNL Amazon RDS]](data-analyst/importing-data/integrations/amazon-rds.md)
       - [Connessione dei database tramite VPN](data-analyst/importing-data/integrations/databases-via-a-vpn.md)
@@ -224,16 +224,16 @@ ht-degree: 0%
       - [Modifica del database per supportare la replica incrementale](best-practices/mod-db-inc-replication.md)
       - [Ottimizzazione del database per l&#39;analisi](best-practices/opt-db-analysis.md)
       - [Ottimizzazione delle  [!DNL SQL]  query](best-practices/optimizing-your-sql-queries.md)
-      - [Informazioni sull&#39;ambiente  [!DNL Commerce Intelligence] ](best-practices/understanding-magento.md)
+      - [Informazioni sull&#39;ambiente  [!DNL Commerce Intelligence] &#x200B;](best-practices/understanding-magento.md)
    - Organizzazione del progetto {#project}
       - [Denominazione di report ed elementi in [!DNL Commerce Intelligence]](best-practices/naming-elements.md)
       - [Consolidamento delle tabelle](best-practices/consolidating-your-tables.md)
-      - [Decluta il tuo account  [!DNL Commerce Intelligence] ](best-practices/declutter-account.md)
+      - [Decluta il tuo account  [!DNL Commerce Intelligence] &#x200B;](best-practices/declutter-account.md)
    - Utilizzo dei dashboard {#working-dashboards}
       - [Condivisione di dashboard](best-practices/share-dashboard-best-practice.md)
       - [Creazione di un dashboard per investitori](best-practices/build-investor-dashboard.md)
 - Tutorial {#tutorials}
    - [Utilizzo di  [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Utilizzo delle opzioni di tempo in  [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
-   - [Creazione di visualizzazioni per una query  [!DNL SQL] ](tutorials/create-visuals-from-sql.md)
+   - [Creazione di visualizzazioni per una query  [!DNL SQL] &#x200B;](tutorials/create-visuals-from-sql.md)
    - [Esportazione di dati non elaborati](tutorials/export-raw-data.md)

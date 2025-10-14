@@ -67,6 +67,6 @@ Qui è dove si chiede, &quot;Quanto reddito ho ottenuto dalla ricerca a pagament
 * [Tracciare l&#39;origine di riferimento dell&#39;utente nel database](../analysis/google-track-user-acq.md)
 * [Tenere traccia dei dati relativi a dispositivi utente, browser e sistema operativo nel database](../analysis/google-track-user-acq.md)
 * [Scopri le fonti e i canali di acquisizione più importanti](../analysis/most-value-source-channel.md)
-* [Connetti il tuo account  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
+* [Connetti il tuo account  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
 * [Aumentare il ROI nelle campagne pubblicitarie](../analysis/roi-ad-camp.md)
 * [Cinque best practice per l&#39;assegnazione di tag UTM in [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
