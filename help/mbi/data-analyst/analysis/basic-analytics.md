@@ -88,7 +88,7 @@ Questa tabella viene utilizzata per gestire le informazioni sull’abbonamento, 
 
 ## Tabella delle spese di marketing
 
-Durante l&#39;analisi delle spese di marketing, è possibile includere [!DNL Facebook], [!DNL Google AdWords] o altre origini nelle analisi. Se disponi di più origini di spesa marketing, contatta il [team Managed Services](https://business.adobe.com/products/magento/fully-managed-service.html) per assistenza nella configurazione di una tabella consolidata per le campagne marketing.
+Durante l&#39;analisi delle spese di marketing, è possibile includere [!DNL Facebook], [!DNL Google AdWords] o altre origini nelle analisi. Se disponi di più origini di spesa marketing, contatta il [team Managed Services](https://business.adobe.com/it/products/magento/fully-managed-service.html) per assistenza nella configurazione di una tabella consolidata per le campagne marketing.
 
 **Dimensioni**
 

@@ -17,7 +17,7 @@ In questo argomento viene illustrato come impostare una dashboard che fornisca u
 
 ![Dashboard di restituzioni dettagliato con tassi e motivi di restituzione](../../assets/detailed-returns-dboard.png)
 
-Prima di iniziare, devi essere un cliente di [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) e assicurarti che la tua azienda utilizzi la tabella `enterprise\_rma` per le restituzioni.
+Prima di iniziare, devi essere un cliente di [Adobe Commerce](https://business.adobe.com/it/products/magento/magento-commerce.html) e assicurarti che la tua azienda utilizzi la tabella `enterprise\_rma` per le restituzioni.
 
 Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-calc-columns.md).
 
