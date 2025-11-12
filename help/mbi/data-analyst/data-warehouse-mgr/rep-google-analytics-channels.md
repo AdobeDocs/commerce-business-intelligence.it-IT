@@ -4,9 +4,9 @@ description: Scopri come replicare i canali Google Analytics utilizzando le orig
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: cb7dd221f3e83be0c7ee01a6af479e5d1bad108c
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Ora che sai che i canali sono solo combinazioni di origini e media, è facile ri
 
 1. **Abilita la tua[!DNL Google ECommerce]integrazione**
 
-   [Quando è abilitato](../importing-data/integrations/google-ecommerce.md), assicurati di [sincronizzare]&#x200B;(../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) i campi **medium** e **source** nel tuo Data Warehouse. Al termine dell&#39;operazione, i dati di acquisizione di origine e di supporto verranno inseriti nel Data Warehouse.
+   [Quando è abilitato](../importing-data/integrations/google-ecommerce.md), assicurati di [sincronizzare](tour-dwm.md#syncing) i campi **medium** e **source** nel tuo Data Warehouse. Al termine dell&#39;operazione, i dati di acquisizione di origine e di supporto verranno inseriti nel Data Warehouse.
 
 1. **Carica una mappatura dei raggruppamenti di canali di Google**
 
