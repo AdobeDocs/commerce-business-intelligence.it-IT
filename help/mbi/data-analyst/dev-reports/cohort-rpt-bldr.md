@@ -4,9 +4,9 @@ description: Scopri l’analisi dei gruppi di utenti che condividono caratterist
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1597'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,6 @@ Hai mai desiderato studiare il comportamento nel tempo di diversi sottoinsiemi d
 ## L’analisi per coorte {#what}
 
 L&#39;analisi di `Cohort` può essere definita in modo generico come l&#39;analisi di gruppi di utenti che condividono caratteristiche simili nel corso dei loro cicli di vita. Consente di identificare le tendenze comportamentali tra diversi gruppi di utenti.
-
-Per un&#39;introduzione approfondita all&#39;analisi `cohort`, esaminare [questa pagina](https://www.cohortanalysis.com/).
 
 Nel dashboard di [!DNL Commerce Intelligence], è facile creare l&#39;utente `cohorts` in base a una data di `cohort` e a una metrica nel tuo account.
 

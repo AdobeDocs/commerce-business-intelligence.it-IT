@@ -4,9 +4,9 @@ description: Scopri come replicare i canali Google Analytics utilizzando le orig
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: cb7dd221f3e83be0c7ee01a6af479e5d1bad108c
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Per impostazione predefinita, [!DNL Google] imposta otto canali diversi. Di segu
 | Ricerca organica | Traffico che è stato classificato in modo organico nei motori di ricerca non pagati. | Medium = `organic` |
 | Referral | Traffico proveniente da un collegamento esterno che non è Ricerca organica o da siti web che non sono social network. | Medium = `referral` |
 | Ricerca a pagamento | Traffico con un codice di tracciamento UTM in cui il mezzo è &quot;cpc&quot;, &quot;ppc&quot; o &quot;paidsearch&quot; e è una rete di distribuzione di annunci che non corrisponde a &quot;Content&quot; (Contenuto). | Medium = `^(cpc|ppc|paidsearch)$`<br>E ≠ rete di distribuzione annunci `Content` |
-| Social | Traffico di riferimento proveniente da uno dei circa [400 social network](https://www.annielytics.com/blog/analytics/sites-google-analytics-includes-in-social-reports/) e non taggato come annuncio. | Riferimento Source social network = `Yes`<br> O Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
+| Social | Il traffico di riferimento proviene da uno qualsiasi dei circa 400 social network e non è taggato come annuncio. | Riferimento Source social network = `Yes`<br> O Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
 | E-mail | Traffico proveniente da sessioni a cui viene applicato un tag &quot;e-mail&quot;. | Codice di tracciamento UTM di Medium = `email` |
 | Visualizzazione | Traffico con codice di tracciamento UTM in cui il supporto è display o cpm. Include anche l’interazione AdWords in cui la rete di distribuzione degli annunci corrisponde a &quot;Content&quot; (Contenuto) | Medium = `^(display|cpm|banner)$`<br>OR Rete di distribuzione di annunci = `Content`<br>AND Formato annunci ≠ `Text` |
 | Altro | Sessioni da altri canali pubblicitari (esclusa la Ricerca a pagamento) contrassegnate con un supporto di &quot;cpc&quot;, &quot;ppc&quot;, &quot;cpm, &quot;cpv&quot;, &quot;cpa&quot;, &quot;cpp&quot;, &quot;affiliate&quot;. | Medium = `^(cpv|cpa|cpp|content-text)$` |

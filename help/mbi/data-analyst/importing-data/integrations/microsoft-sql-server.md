@@ -4,9 +4,9 @@ description: Scopri come connettere il database Microsoft SQL a  [!DNL Commerce 
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 In questo argomento viene illustrato come connettere il database [!DNL Microsoft SQL] a [!DNL Commerce Intelligence] in un processo in quattro fasi. Questo processo richiede alcune competenze tecniche relative alle connessioni server e a SQL e potrebbe richiedere il supporto degli sviluppatori del team.
 
-[!DNL Commerce Intelligence] supporta [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] e la maggior parte degli altri provider di server cloud. Se hai una domanda sul tuo host specifico, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) chiedendoci di fornirci queste informazioni.
+[!DNL Commerce Intelligence] supporta [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] e la maggior parte degli altri provider di server cloud. Se hai una domanda sul tuo host specifico, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) chiedendoci di fornirci queste informazioni.
 
 Il sistema deve eseguire le query SELECT sul database. Questa operazione viene eseguita inizialmente per ottenere un’istantanea della struttura del database e quindi regolarmente nel corso del tempo per mantenere i dati aggiornati. Gli aggiornamenti sono incrementali e Adobe limita la frequenza e il tempo di aggiornamento per evitare carichi indesiderati sul server.
 
@@ -35,9 +35,9 @@ Il modo migliore per eseguire questa operazione è connettersi al server di data
 
    L&#39;indirizzo IP utilizzato per connettersi al server è disponibile nella sezione connessioni della pagina `Settings`.
 
-1. Creare un utente da utilizzare per accedere al server di database. Sono disponibili due opzioni: tramite `UI` o tramite `query`:
+1. Creare un utente per accedere al server di database. Sono disponibili due opzioni: tramite `UI` o tramite `query`:
    * `UI`
-   * [`Query`](http://sqlserverplanet.com/security/add-user) (secondo esempio)
+   * `Query`
 
 1. Immettere l&#39;indirizzo IP del server, il nome utente e la password in [!DNL Commerce Intelligence] in **[!UICONTROL Manage Data** > **Connections]**.
 

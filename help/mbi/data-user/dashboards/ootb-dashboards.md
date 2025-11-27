@@ -4,9 +4,9 @@ description: Scopri come verificare lo stato di metriche essenziali come i ricav
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 3a7423c9dd0f957b77baa27b3447a715caad017b
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >La disponibilità di alcune dashboard dipende dal set di dati.
 
-In caso di domande o se sei interessato ad aggiungere un pacchetto al tuo account, invia un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per assistenza.
+In caso di domande o se sei interessato ad aggiungere un pacchetto al tuo account, invia un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per assistenza.
 
 ## Panoramica esecutiva
 
@@ -45,7 +45,7 @@ Il dashboard `Email Summary` include un set di grafici di esempio che è possibi
 
 La dashboard di `Retention health` mostra il comportamento di acquisto ripetuto della base utenti.
 
-Il grafico `Time between orders` mostra il tempo medio e/o mediano trascorso tra il primo e il secondo ordine di un utente, il secondo e il terzo ordine e così via. Puoi [considerare l&#39;utilizzo di questi dati per configurare le campagne di e-mail marketing](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/).
+Il grafico `Time between orders` mostra il tempo medio e/o mediano trascorso tra il primo e il secondo ordine di un utente, il secondo e il terzo ordine e così via. Potresti considerare l’utilizzo di questi dati per configurare le campagne di e-mail marketing.
 
 Il grafico `Users by lifetime number of orders` elenca il numero totale di utenti per ogni numero di ordini del ciclo di vita per fornire una panoramica generale del comportamento di acquisto ripetuto.  
 
@@ -89,7 +89,7 @@ Il dashboard `Users to target` include grafici in stile tabella che elencano gli
 
 * Elenco dei principali spenditori attivi negli ultimi `X` giorni (che puoi premiare)
 
-Utilizzando gli strumenti di esportazione dei dati, è facile [creare elenchi e-mail di utenti con comportamenti di acquisto simili per il marketing di destinazione](http://blog.rjmetrics.com/creating-contact-lists-for-top-customers/).
+Puoi utilizzare gli strumenti di esportazione dei dati per creare elenchi e-mail di utenti con un comportamento di acquisto simile per il marketing di destinazione.
 
 ## Attività utente
 
@@ -97,4 +97,4 @@ Il dashboard `User activity` include grafici che segmentano gli utenti in base a
 
 Il grafico `% of cohort members who have purchased` è utile perché mostra il rapporto di conversione (da 0 a 1) degli utenti in base al momento della registrazione (ogni riga rappresenta una coorte di utenti). Mostra anche quando effettuano il primo acquisto (ad esempio, nel mese 1, 2, 3... dopo la registrazione). Questo potrebbe mostrare che il 10% degli utenti si è attivato nel mese 1, mentre questo numero aumenta nei mesi 2, 3, 4... e potrebbe stabilizzarsi in un secondo momento.
 
-In genere, le linee di questo grafico diventano orizzontali dopo un certo periodo di tempo. Ciò indica che pochi membri della coorte aggiuntivi effettueranno la conversione organicamente dopo tale momento; la maggior parte degli utenti che effettueranno un acquisto lo hanno già fatto. A questo punto, è altamente improbabile che questi membri si convertano ad acquirenti senza intervento. [Per avviare la conversione di questa popolazione, è consigliabile contattare i destinatari tramite promozioni personalizzate o e-mail mirate.](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/)
+In genere, le linee di questo grafico diventano orizzontali dopo un certo periodo di tempo. Ciò indica che pochi membri della coorte aggiuntivi effettueranno la conversione organicamente dopo tale momento; la maggior parte degli utenti che effettueranno un acquisto lo hanno già fatto. A questo punto, è altamente improbabile che questi membri si convertano ad acquirenti senza intervento. Raggiungerli con promozioni personalizzate o e-mail mirate è un modo a basso rischio per avviare rapidamente la conversione di questa popolazione.

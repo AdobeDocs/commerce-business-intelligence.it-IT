@@ -4,7 +4,7 @@ description: Scopri chi contattare per attivare il tuo account [!DNL Commerce In
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Per creare il tuo account, contatta il tuo Adobe Account Team o Customer Technic
 
 Dopo la creazione dell&#39;account, controllare l&#39;indirizzo di posta elettronica per un messaggio di notifica dell&#39;account da [!DNL The Magento BI Team@rjmetrics.com]. Utilizza il collegamento fornito nell&#39;e-mail per accedere al tuo account [!DNL Commerce Intelligence] e creare la tua password. Vai alla tua casella in entrata e verifica il tuo indirizzo e-mail.
 
-Se non hai ricevuto un&#39;e-mail, [contatta l&#39;assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Se non hai ricevuto un&#39;e-mail, [contatta l&#39;assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ![Schermata per la creazione della password per il nuovo account Commerce Intelligence](../assets/create-account-4.png)
 
@@ -170,7 +170,7 @@ Dopo aver completato la configurazione, [accedi](../getting-started/sign-in.md) 
 
 <!---# Activate your [!DNL Commerce Intelligence] Account
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >

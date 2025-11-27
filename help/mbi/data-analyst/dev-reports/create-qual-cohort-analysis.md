@@ -4,9 +4,9 @@ description: Scopri cos’è una coorte qualitativa, perché potresti essere int
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,6 @@ In questo argomento vengono illustrate le caratteristiche di una coorte qualitat
 ## Cosa sono `qualitative cohorts`? {#whatare}
 
 L&#39;analisi di `Cohort` in generale può essere definita come l&#39;analisi di gruppi di utenti che condividono caratteristiche simili nel corso dei loro cicli di vita. Consente di identificare le tendenze comportamentali tra diversi gruppi di utenti.
-
-Vedi [analisi per coorte](https://www.cohortanalysis.com/).
 
 La maggior parte delle analisi di `cohort` in [!DNL Commerce Intelligence] raggruppa gli utenti in base a una data comune, ad esempio il set di tutti i clienti che hanno effettuato il primo acquisto in un dato mese. `qualitative cohort` è un gruppo di utenti definito da una caratteristica non basata sul tempo. Alcuni esempi:
 
@@ -39,7 +37,7 @@ Tuttavia, se desideri analizzare il comportamento della coorte di più segmenti 
 
 La creazione di un report `qualitative cohort` in `Report Builder` implica che il team di analisti Adobe crei alcune [colonne calcolate avanzate](../data-warehouse-mgr/creating-calculated-columns.md) nelle tabelle necessarie.
 
-Per generare questi elementi, invia un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) (e fai riferimento a questo articolo!). Ecco cosa devi sapere:
+Per generare questi elementi, invia un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (e fai riferimento a questo articolo!). Ecco cosa devi sapere:
 
 * `metric` con cui eseguire l&#39;analisi della coorte e la tabella utilizzata (ad esempio: `Revenue`, basata sulla tabella `orders`).
 
