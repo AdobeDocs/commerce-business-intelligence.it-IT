@@ -1,7 +1,7 @@
 ---
-source-git-commit: 199353c57dd1ca316c2a8b76fee1148d0e342299
+source-git-commit: 98e0c5dbd61d6d0f8d1a6e09d239cb25cbab8f81
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ Questa directory contiene hook di pre-commit che ottimizzano automaticamente le 
 
 ## Funzionamento degli hook
 
-- **Rileva automaticamente** file di immagine di staging (PNG, JPG, JPEG, GIF, SVG)
+- **Rileva automaticamente** file di immagine di staging (PNG, JPG, JPEG, GIF)
 - **Esegui`image_optim`** per comprimere e ottimizzare le immagini
 - **Riposiziona nell&#39;area intermedia le immagini ottimizzate** automaticamente
 - **Assicurarsi che tutte le immagini salvate** siano ottimizzate correttamente
@@ -85,11 +85,11 @@ Image optimization complete!
 ## Linee guida per le immagini
 
 - **PNG**: da utilizzare per le schermate e gli elementi dell&#39;interfaccia utente (verranno ottimizzati automaticamente)
-- **SVG**: utilizzare per icone e grafica semplice (ottimizzazione disabilitata per impostazione predefinita)
+- **SVG**: utilizza per icone ed elementi grafici semplici (non ottimizzati automaticamente dal hook di pre-commit)
 - **JPEG**: utilizza per le foto (verrà ottimizzato automaticamente)
 - **GIF**: utilizza per le animazioni (verrà ottimizzato automaticamente)
 
-Gli hook di pre-commit ottimizzano automaticamente tutte le immagini durante il commit.
+Gli hook di pre-commit ottimizzano automaticamente le immagini PNG, JPEG e GIF durante il commit.
 
 ## Ottimizzazione manuale
 
@@ -138,10 +138,13 @@ Gli hook utilizzano il file di configurazione `_jekyll/.image_optim.yml` per per
 
 ## Formati immagine supportati
 
+L’hook di pre-commit elabora automaticamente:
+
 - **PNG** (`.png`) - Compressione senza perdita di dati e perdita di dati
 - **JPEG** (`.jpg`, `.jpeg`) - Compressione con perdita di dati con pulizia metadati
 - **GIF** (`.gif`) - Animazione e ottimizzazione statica
-- **SVG** (`.svg`) - Ottimizzazione vettoriale (disattivata per impostazione predefinita)
+
+**Nota**: l&#39;ottimizzazione SVG è disabilitata per impostazione predefinita (può interrompere elementi grafici vettoriali complessi e animazioni). I file SVG non vengono elaborati automaticamente dall’hook di pre-commit.
 
 ## Best practice
 
