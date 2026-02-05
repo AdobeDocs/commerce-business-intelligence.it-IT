@@ -4,9 +4,9 @@ description: Scopri come sfogliare le tabelle disponibili per la sincronizzazion
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: d683f1362d87eee16c41ba9a8a83a9ff533b14aa
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -66,10 +66,14 @@ Per ulteriori informazioni su come iniziare a utilizzare `Import API`, consulta 
 Per aggiungere un&#39;integrazione, fare clic su **[!UICONTROL Manage Data** > **Connections]** e quindi su **[!UICONTROL Add a New Data Source]**. Fai clic sull’icona dell’integrazione da aggiungere e segui le istruzioni contenute negli argomenti dell’Aiuto per configurare:
 
 * [Domande frequenti sull&#39;integrazione](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [Disponibile &#x200B;](../integrations/integrations.md)
+* [Disponibile ](../integrations/integrations.md)
 * [Consolidamento delle tabelle](../../../best-practices/consolidating-your-tables.md)
 * [Limitazione dell&#39;accesso al database](../../../administrator/account-management/restrict-db-access.md)
 
-**Non vedi un&#39;integrazione che vuoi?** Per essere visibili nel tuo account, è necessario attivare alcune integrazioni. Se si cerca qualcosa come [!DNL Facebook] ma non è elencato, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+**Non vedi un&#39;integrazione che vuoi?** Per essere visibili nel tuo account, è necessario attivare alcune integrazioni. Se si cerca qualcosa come [!DNL Facebook] ma non è elencato, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 **Se viene visualizzato uno stato di errore per un&#39;integrazione**, consultare la [sezione per la risoluzione dei problemi](https://support.magento.com/hc/en-us/sections/360003078151).
+
+## Monitorare lo stato degli aggiornamenti (facoltativo)
+
+Dopo aver connesso le origini, potrebbe essere utile automatizzare un controllo di integrità di base per verificare il completamento degli aggiornamenti completi. Utilizza l&#39;API [Aggiorna stato ciclo](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/) nella documentazione per gli sviluppatori per recuperare il ciclo di aggiornamento completato più recente per il client e visualizzarlo in dashboard o avvisi interni.
