@@ -2,9 +2,9 @@
 title: Ricerca di dashboard
 description: Scopri come utilizzare la funzione Ricerca globale per cercare dashboard e come cercare dashboard di proprietà di altri utenti.
 exl-id: eea09ee5-e7ec-4002-8257-a35a64c900a9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%

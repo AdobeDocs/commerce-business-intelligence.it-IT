@@ -2,9 +2,9 @@
 title: Replica dei canali Google Analytics tramite origini di acquisizione
 description: Scopri come replicare i canali Google Analytics utilizzando le origini di acquisizione.
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 0%
@@ -32,11 +32,11 @@ Per impostazione predefinita, [!DNL Google] imposta otto canali diversi. Di segu
 | Diretto | Chiunque entri direttamente nel tuo sito. | Source = `Direct`<br> E Medium = `(not set); OR Medium = (none)` |
 | Ricerca organica | Traffico che è stato classificato in modo organico nei motori di ricerca non pagati. | Medium = `organic` |
 | Referral | Traffico proveniente da un collegamento esterno che non è Ricerca organica o da siti web che non sono social network. | Medium = `referral` |
-| Ricerca a pagamento | Traffico con un codice di tracciamento UTM in cui il mezzo è &quot;cpc&quot;, &quot;ppc&quot; o &quot;paidsearch&quot; e è una rete di distribuzione di annunci che non corrisponde a &quot;Content&quot; (Contenuto). | Medium = `^(cpc|ppc|paidsearch)$`<br>E ≠ rete di distribuzione annunci `Content` |
-| Social | Il traffico di riferimento proviene da uno qualsiasi dei circa 400 social network e non è taggato come annuncio. | Riferimento Source social network = `Yes`<br> O Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
+| Ricerca a pagamento | Traffico con un codice di tracciamento UTM in cui il mezzo è &quot;cpc&quot;, &quot;ppc&quot; o &quot;paidsearch&quot; e è una rete di distribuzione di annunci che non corrisponde a &quot;Content&quot; (Contenuto). | Medium = `^(cpc`\|`ppc`\|`paidsearch)$`<br>E Ad Distribution Network ≠ `Content` |
+| Social | Traffico da referral che proviene da uno qualsiasi dei circa 400 social network e non sono taggati come annunci. | Riferimento Source social network = `Yes`<br>OR Medium = `^(social`\|`social-network`\|`social-media`\|`sm`\|`social network`\|`social media)$` |
 | E-mail | Traffico proveniente da sessioni a cui viene applicato un tag &quot;e-mail&quot;. | Codice di tracciamento UTM di Medium = `email` |
-| Visualizzazione | Traffico con codice di tracciamento UTM in cui il supporto è display o cpm. Include anche l’interazione AdWords in cui la rete di distribuzione degli annunci corrisponde a &quot;Content&quot; (Contenuto) | Medium = `^(display|cpm|banner)$`<br>OR Rete di distribuzione di annunci = `Content`<br>AND Formato annunci ≠ `Text` |
-| Altro | Sessioni da altri canali pubblicitari (esclusa la Ricerca a pagamento) contrassegnate con un supporto di &quot;cpc&quot;, &quot;ppc&quot;, &quot;cpm, &quot;cpv&quot;, &quot;cpa&quot;, &quot;cpp&quot;, &quot;affiliate&quot;. | Medium = `^(cpv|cpa|cpp|content-text)$` |
+| Visualizzazione | Traffico con codice di tracciamento UTM in cui il supporto è display o cpm. Include anche l’interazione AdWords in cui la rete di distribuzione degli annunci corrisponde a &quot;Content&quot; (Contenuto) | Medium = `^(display`\|`cpm`\|`banner)$`<br>O Ad Distribution Network = `Content`<br>E Ad Format ≠ `Text` |
+| Altro | Sessioni da altri canali pubblicitari (esclusa la Ricerca a pagamento) contrassegnate con un supporto di &quot;cpc&quot;, &quot;ppc&quot;, &quot;cpm, &quot;cpv&quot;, &quot;cpa&quot;, &quot;cpp&quot;, &quot;affiliate&quot;. | Medium = `^(cpv`\|`cpa`\|`cpp`\|`content-text)$` |
 
 {style="table-layout:auto"}
 

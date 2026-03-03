@@ -2,9 +2,9 @@
 title: Opzioni di visualizzazione in Visual Report Builder
 description: Scopri come utilizzare le opzioni di visualizzazione in Visual Report Builder.
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1823'
 ht-degree: 0%
@@ -184,7 +184,7 @@ Per salvare un report come grafico ad area, regolare `Type` in `Chart` e selezio
 
 ![Grafico Funnel che mostra la conversione del cliente tra ordini sequenziali](../../assets/blobid4.png)
 
-In un rapporto di funnel, il valore relativo di un dato passaggio del funnel si riflette nell’altezza del passaggio. La configurazione del rapporto determina l’ordine in cui vengono visualizzati i passaggi. Esistono due modi per configurare un rapporto funnel:
+In un rapporto di funnel, il valore relativo di un dato passaggio del funnel si riflette nell’altezza del passaggio. La configurazione del rapporto determina l’ordine in cui vengono visualizzati i passaggi. Esistono due modi per configurare un rapporto di funnel:
 
 * `Single metric with one group by`: - Ordine dei passaggi determinato dall&#39;impostazione &quot;Show Top/Bottom&quot; (Mostra superiore/inferiore) del gruppo in base a. Per impostazione predefinita, i passaggi di funnel vengono visualizzati in ordine dal valore più grande al più piccolo, ma è anche possibile ordinarli alfabeticamente in base al nome del gruppo.
 

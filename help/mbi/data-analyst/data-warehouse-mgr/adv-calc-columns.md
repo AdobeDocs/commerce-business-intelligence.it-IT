@@ -2,9 +2,9 @@
 title: Tipi di colonne calcolate avanzate
 description: Scopri le nozioni di base per la maggior parte dei casi di colonna d’uso, ma potresti desiderare una colonna calcolata un po’ più complessa di quella che può essere creata da Data Warehouse Manager.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 2%

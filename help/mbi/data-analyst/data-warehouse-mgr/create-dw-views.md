@@ -2,9 +2,9 @@
 title: Creare e utilizzare le visualizzazioni di Data Warehouse
 description: Scopri come creare nuove tabelle warehouse modificando una tabella esistente o unendo o consolidando più tabelle utilizzando SQL.
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 6%
