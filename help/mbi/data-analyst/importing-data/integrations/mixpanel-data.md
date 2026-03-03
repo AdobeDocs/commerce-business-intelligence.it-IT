@@ -2,9 +2,9 @@
 title: Dati Mixpanel previsti
 description: Esplora le tabelle di dati principali che puoi importare da Mixpanel nel tuo account  [!DNL Commerce Intelligence] .
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 0%
@@ -24,7 +24,7 @@ In questo argomento vengono illustrate le principali tabelle dati che è possibi
 | **Nome tabella** | **Descrizione** |
 |-----|-----|
 | [`mixpanel\_export`](https://developer.mixpanel.com/reference/raw-data-export-api#datafeed) | Questa tabella contiene dati evento non elaborati, tra cui l’evento, le date dell’evento e il bucket della piattaforma. |
-| [`mixpanel\_funnels`](https://developer.mixpanel.com/reference/raw-data-export-api#funnels-default) | Questa tabella contiene dati sui funnel, tra cui l’ID funnel, la lunghezza del funnel (numero di giorni necessari all’utente per completare l’funnel) e le date di inizio e fine del funnel. |
+| [`mixpanel\_funnels`](https://developer.mixpanel.com/reference/raw-data-export-api#funnels-default) | Questa tabella contiene dati sui funnel, tra cui l’ID funnel, la lunghezza di funnel (numero di giorni necessari per il completamento di funnel) e le date di inizio e fine di funnel. |
 | [`mixpanel\_engage`](https://developer.mixpanel.com/reference/raw-data-export-api#engage-default) | Contiene dati provenienti da People Analytics, inclusi ID sessione, informazioni sulla pagina e sull’utente e la data/ora dell’ultima visualizzazione dell’utente. |
 
 {style="table-layout:auto"}
@@ -32,4 +32,4 @@ In questo argomento vengono illustrate le principali tabelle dati che è possibi
 ## Documentazione correlata
 
 * [Connessione in corso  [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

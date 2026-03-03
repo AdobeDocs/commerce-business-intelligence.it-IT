@@ -2,9 +2,9 @@
 title: Connetti Mixpanel
 description: Scopri come analizzare il modo in cui gli utenti si spostano e utilizzano i tuoi siti web e le tue app.
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Con [!DNL Mixpanel] puoi analizzare il modo in cui gli utenti si spostano e util
 Collegare i dati di [!DNL Mixpanel] a [!DNL Commerce Intelligence] è un semplice processo in tre fasi:
 
 1. [Apri la pagina delle credenziali  [!DNL Mixpanel]  in [!DNL Commerce Intelligence]](#stepone)
-1. [Recupera le tue credenziali API  [!DNL Mixpanel] &#x200B;](#steptwo)
+1. [Recupera le tue credenziali API  [!DNL Mixpanel] ](#steptwo)
 1. [Immetti le tue credenziali API  [!DNL Mixpanel]  in [!DNL Commerce Intelligence]](#stepthree)
 
 Per completare il processo, è necessario aprire due finestre o schede del browser, una per [!DNL Commerce Intelligence] e l&#39;altra per l&#39;account [!DNL Mixpanel].
@@ -65,4 +65,4 @@ Se la connessione ha esito positivo, _ha esito positivo.Il messaggio_ viene visu
 ### Correlato
 
 * [Previsti [!DNL Mixpanel] dati](../integrations/mixpanel-data.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

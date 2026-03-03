@@ -2,9 +2,9 @@
 title: Analisi dei livelli di magazzino
 description: Scopri come analizzare i livelli di inventario.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Dashboards, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Analizza livelli scorte
 
-In questo argomento viene illustrato come impostare un dashboard che fornisca informazioni approfondite sull&#39;inventario corrente e contenga istruzioni per i client sia sull&#39;architettura legacy che sulla nuova architettura. Se non si dispone dell&#39;opzione **[!UICONTROL Data Warehouse Views]** nel menu **[!UICONTROL Manage Data]**, si utilizza l&#39;architettura precedente. Se ti trovi nell&#39;architettura legacy, invia una [nuova richiesta di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) con oggetto **[!UICONTROL INVENTORY ANALYSIS]** una volta raggiunta la sezione designata nelle istruzioni _Colonne calcolate_ di seguito.
+In questo argomento viene illustrato come impostare un dashboard che fornisca informazioni approfondite sull&#39;inventario corrente e contenga istruzioni per i client sia sull&#39;architettura legacy che sulla nuova architettura. Se non si dispone dell&#39;opzione **[!UICONTROL Data Warehouse Views]** nel menu **[!UICONTROL Manage Data]**, si utilizza l&#39;architettura precedente. Se ti trovi nell&#39;architettura legacy, invia una [nuova richiesta di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) con oggetto **[!UICONTROL INVENTORY ANALYSIS]** una volta raggiunta la sezione designata nelle istruzioni _Colonne calcolate_ di seguito.
 
 ## Colonne da tracciare:
 
@@ -36,7 +36,7 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
 * Tabella **[!UICONTROL catalog_product_entity]**:
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Seleziona [!UICONTROL column]: `created_at`
@@ -45,7 +45,7 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
 
    * **`Product's first order date`**
       * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Seleziona [!UICONTROL column]: `created_at`
@@ -54,13 +54,13 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `Same Table`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `AGE`
       * Seleziona [!UICONTROL DATETIME column]: `Product's most recent order date`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Seleziona [!UICONTROL column]: `qty_ordered`
@@ -69,12 +69,12 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `Same Table`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] input:
          * R: `Product's lifetime number of items sold`
          * B: `Product's first order date`
-      * &#x200B;
+      * 
         [!UICONTROL Datatype]: `Decimal`
       * Definizione:
          * caso in cui A è nullo o B è nullo allora null altro round(A::decimal/(extract(epoch from (current_timestamp - B))::decimal/604800.0),2) end
@@ -82,40 +82,40 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
 * Tabella **[!UICONTROL cataloginventory_stock_item]**:
    * **`Sku`**
       * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Seleziona [!UICONTROL column]: `sku`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Seleziona [!UICONTROL column]: `Product's lifetime number of items sold`
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Seleziona [!UICONTROL column]: `Seconds since product's most recent order date`
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Seleziona [!UICONTROL column]: `Avg products sold per week (all time)`
 
    * **`Weeks on hand`**
       * [!UICONTROL Column type]: `Same Table`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `CALCULATION`
       * [!UICONTROL Column] input:
          * R: `qty`
          * B: `Avg products sold per week (all time)`
-      * &#x200B;
+      * 
         [!UICONTROL Datatype]: `Decimal`
       * Definizione:
          * caso in cui A è null o B è null o B = 0.0, quindi null altro round(A::decimal/B,2) end
@@ -126,7 +126,7 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
 * Tabella **[!UICONTROL catalog_product_entity]**:
    * **`Product's most recent order date`**
       * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Seleziona [!UICONTROL column]: `created_at`
@@ -135,7 +135,7 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
 
    * **`Product's first order date`**
       * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
       * Seleziona [!UICONTROL column]: `created_at`
@@ -144,13 +144,13 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `Same Table`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `AGE`
       * Seleziona colonna DATETIME: **`Product's most recent order date`**
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `Many to One`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: **`sales_order_item.product_id => catalog_product_entity.entity_id`**
       * Seleziona [!UICONTROL column]: **`qty_ordered`**
@@ -163,28 +163,28 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
 * Tabella **[!UICONTROL cataloginventory_stock_item]**:
    * **`Sku`**
       * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Seleziona [!UICONTROL column]: `sku`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Seleziona [!UICONTROL column]: `Product's lifetime number of items sold`
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Seleziona [!UICONTROL column]: `Seconds since product's most recent order date`
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
-      * &#x200B;
+      * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Seleziona [!UICONTROL column]: `Avg products sold per week (all time)`
@@ -215,7 +215,7 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
    * [!UICONTROL Group by]:
       * `Sku`
       * `Weeks on hand`
-   * &#x200B;
+   * 
      [!UICONTROL Chart type]: `Table`
 
 * **`Inventory with less than 2 weeks on hand (order now)`**
@@ -225,9 +225,9 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
 
    * [!UICONTROL Time period]: `All time`
    * Intervallo di tempo: `None`
-   * &#x200B;
+   * 
      [!UICONTROL Raggruppa per]: `Sku`
-   * &#x200B;
+   * 
      [!UICONTROL Chart type]: `Table`
 
 * **`Inventory with more than 26 weeks on hand (put on sale)`**
@@ -237,9 +237,9 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
 
    * [!UICONTROL Time period]: `All time`
    * Intervallo di tempo: `None`
-   * &#x200B;
+   * 
      [!UICONTROL Raggruppa per]: `Sku`
-   * &#x200B;
+   * 
      [!UICONTROL Chart type]: `Table`
 
-Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

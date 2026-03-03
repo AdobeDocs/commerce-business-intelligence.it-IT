@@ -2,9 +2,9 @@
 title: Utilizzare le opzioni di tempo in Visual Report Builder
 description: Scopri come analizzare i dati nel rapporto per un periodo di tempo specifico.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Ora puoi vedere quanto ha avuto un impatto ogni mese lo scorso anno:
 
 ## Confronto della stessa metrica tra intervalli di tempo diversi {#difftimerange}
 
-In questo esempio viene utilizzata una dimensione personalizzata denominata `Day number of the month`. Se desideri creare questo report e non hai già questa dimensione nel tuo Data Warehouse, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per assistenza.
+In questo esempio viene utilizzata una dimensione personalizzata denominata `Day number of the month`. Se desideri creare questo report e non hai già questa dimensione nel tuo Data Warehouse, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per assistenza.
 
 I due esempi più comuni in questa categoria sono (1) il confronto delle metriche di crescita (ricavi su base annua o mese sul mese) e (2) una migliore comprensione delle recenti tendenze delle scorte o delle vendite di articoli.
 

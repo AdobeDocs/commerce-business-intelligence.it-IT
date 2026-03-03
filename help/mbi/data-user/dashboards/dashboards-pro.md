@@ -2,9 +2,9 @@
 title: Dashboard preconfigurati
 description: Scopri le dashboard pronte all’uso per fornire insight alla tua azienda.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->L’accesso a queste dashboard dipende dal tipo di account e dal livello di accesso. Se queste dashboard non vengono visualizzate, contatta il [supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+>L’accesso a queste dashboard dipende dal tipo di account e dal livello di accesso. Se queste dashboard non vengono visualizzate, contatta il [supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Disponibilità del rapporto
 
@@ -133,7 +133,7 @@ Il pannello di controllo Ordini fornisce informazioni sul volume transazionale d
 
 ## Prodotti
 
-Il dashboard Prodotti mostra le prestazioni generali del prodotto in termini di prodotti ordinati, valore lordo delle merci (GMV, Gross Merchandise Value) e principali prodotti acquistati e rimborsati. Può aiutarti a bilanciare acquisti e restituzioni e a determinare il successo e la popolarità del prodotto. L&#39;archivio deve essere [configurato per tenere traccia dei rimborsi](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=it) per i grafici da compilare.
+Il dashboard Prodotti mostra le prestazioni generali del prodotto in termini di prodotti ordinati, valore lordo delle merci (GMV, Gross Merchandise Value) e principali prodotti acquistati e rimborsati. Può aiutarti a bilanciare acquisti e restituzioni e a determinare il successo e la popolarità del prodotto. L&#39;archivio deve essere [configurato per tenere traccia dei rimborsi](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) per i grafici da compilare.
 
 >[!NOTE]
 >

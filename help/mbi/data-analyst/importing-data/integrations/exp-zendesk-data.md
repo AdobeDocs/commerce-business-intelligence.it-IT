@@ -2,9 +2,9 @@
 title: Previsti dati Zendesk
 description: Scopri le principali tabelle di dati che puoi importare da Zendesk in Commerce Intelligence, inclusi i collegamenti alla documentazione aggiuntiva sui dati di Zendesk.
 exl-id: 838d8d13-e2e1-44c2-a416-f1792200ee6f
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -35,4 +35,4 @@ In questo argomento vengono illustrate le principali tabelle dati che è possibi
 ## Correlato
 
 * [Collegamento di Zendesk](../integrations/zendesk.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

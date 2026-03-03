@@ -2,9 +2,9 @@
 title: Accedi al tuo account Commerce Intelligence
 description: Scopri come accedere al tuo account Commerce Intelligence.
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-role: Admin, Data Architect, Data Engineer, Leader, User
+role: Admin, Developer, Leader, User
 feature: Accounts
-source-git-commit: 988a7bee27a0c381d1c84db960e978ca73eb3615
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 0%

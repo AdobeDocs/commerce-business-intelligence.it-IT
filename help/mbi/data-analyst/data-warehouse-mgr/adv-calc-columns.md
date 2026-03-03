@@ -2,9 +2,9 @@
 title: Tipi di colonne calcolate avanzate
 description: Scopri le nozioni di base per la maggior parte dei casi di colonna d’uso, ma potresti desiderare una colonna calcolata un po’ più complessa di quella che può essere creata da Data Warehouse Manager.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 2%
@@ -43,7 +43,7 @@ Ecco un esempio:
 | 2 | `B` | 00:30:00 01/01/2015 | 1 |
 | 3 | `A` | 01/01/02/00:00: | 2 |
 | 4 | `A` | 02/01/2015 13/00:00: | 3 |
-| 5 | `B` | 03/01/2015 13/0&rbrace;:00: | 2 |
+| 5 | `B` | 03/01/2015 13/0}:00: | 2 |
 
 {style="table-layout:auto"}
 
@@ -97,7 +97,7 @@ Ecco un esempio:
 | 2 | `B` | 00:30:00 01/01/2015 | NULL |
 | 3 | `A` | 01/01/02/00:00: | 7720 |
 | 4 | `A` | 02/01/2015 13/00:00: | 126000 |
-| 5 | `B` | 03/01/2015 13/0&rbrace;:00: | 217800 |
+| 5 | `B` | 03/01/2015 13/0}:00: | 217800 |
 
 {style="table-layout:auto"}
 
@@ -137,7 +137,7 @@ Per creare questo tipo di colonna calcolata, è necessario conoscere:
 
 ## Io sto provando a convertire i fusi orari. {#timezone}
 
-Una colonna calcolata per la conversione del fuso orario **&#x200B;**&#x200B;converte i timestamp per una particolare origine dati dal fuso orario registrato a un fuso orario di reporting.
+Una colonna calcolata per la conversione del fuso orario **** converte i timestamp per una particolare origine dati dal fuso orario registrato a un fuso orario di reporting.
 
 Ecco un esempio:
 
@@ -161,7 +161,7 @@ Per creare questo tipo di colonna calcolata, è necessario conoscere:
 
 Non preoccuparti. Solo perché non è elencato qui non significa che non è possibile. Il team Adobe degli analisti Data Warehouse può aiutarti.
 
-Per definire una nuova colonna calcolata, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) con i dettagli su ciò che desideri compilare.
+Per definire una nuova colonna calcolata, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) con i dettagli su ciò che desideri compilare.
 
 ## Documentazione correlata
 

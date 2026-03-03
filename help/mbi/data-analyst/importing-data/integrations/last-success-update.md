@@ -2,9 +2,9 @@
 title: Comprendere i risultati tra il database e l'editor SQL
 description: Scopri come comprendere i risultati tra database ed editor SQL.
 exl-id: f31f3eef-791a-4984-901e-bc10554031bd
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -31,4 +31,4 @@ Il punto dati più recente per una particolare integrazione è determinato dalla
 Per verificare l&#39;aggiornamento dei dati da *tabelle specifiche*, Adobe consiglia di creare un [[!DNL SQL] report](../../dev-reports/sql-rpt-bldr.md) rapido che esegua `MAX(timestamp)` sulla tabella più importante del tuo account. Il confronto di questa marca temporale con `Last Data Point` indica se il problema ha interessato l&#39;intero account o un sottoinsieme delle tabelle. Adobe consiglia di eseguire questa operazione per tre o quattro tabelle importanti e di uso comune.
 
 - Se i valori `MAX(timestamp)` sono più recenti di `Last Data Point Received`, significa che un sottoinsieme delle tabelle è stato interessato, ma il ciclo di aggiornamento complessivo del conto è stabile.
-- Se i valori `MAX(timestamp)` sono uguali o precedenti a `Last Data Point Received`, significa che il ciclo di aggiornamento dell&#39;account è stato interessato. In questa situazione, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+- Se i valori `MAX(timestamp)` sono uguali o precedenti a `Last Data Point Received`, significa che il ciclo di aggiornamento dell&#39;account è stato interessato. In questa situazione, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

@@ -2,9 +2,9 @@
 title: Usa Caricamento File
 description: Scopri come inserire tutti i dati in un unico Data Warehouse.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1293'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Utilizza le campagne pubblicitarie come esempio. Se esegui campagne online e off
 ## Restrizioni e requisiti {#require}
 
 1. **L&#39;unico formato supportato per i caricamenti di file è `CSV` o`comma separated values`**. Se si utilizza Excel, è possibile utilizzare la funzione Salva con nome per salvare il file nel formato `.csv`.
-1. **`CSV`file devono utilizzare`UTF-8 encoding`**. Nella maggior parte dei casi, questo non è un problema. Se riscontri questo errore durante il caricamento di un file, [consulta questo articolo del supporto tecnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=it).
+1. **`CSV`file devono utilizzare`UTF-8 encoding`**. Nella maggior parte dei casi, questo non è un problema. Se riscontri questo errore durante il caricamento di un file, [consulta questo articolo del supporto tecnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **I file non possono superare i 100 MB**. Se il file è più grande, separare la tabella in blocchi e salvarli come file singoli. È possibile aggiungere i dati dopo il caricamento del file iniziale.
 1. **Tutte le tabelle devono avere un`primary key`**. Nella tabella deve essere presente almeno una colonna che può essere utilizzata come `primary key` o un identificatore univoco per ogni riga della tabella. Qualsiasi colonna designata come `primary key` può *mai* essere null. Una `primary key` può essere semplice come aggiungere una colonna che dia un numero a ogni riga oppure può essere costituita da due colonne concatenate per creare una colonna di valori univoci (ad esempio, `campaign name` e `date`).
 

@@ -2,9 +2,9 @@
 title: Attribuzione Google Analytics e UTM
 description: Scopri il processo di attribuzione sorgente di Google Analytics.
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 0%
@@ -67,6 +67,6 @@ Qui è dove si chiede, &quot;Quanto reddito ho ottenuto dalla ricerca a pagament
 * [Tracciare l&#39;origine di riferimento dell&#39;utente nel database](../analysis/google-track-user-acq.md)
 * [Tenere traccia dei dati relativi a dispositivi utente, browser e sistema operativo nel database](../analysis/google-track-user-acq.md)
 * [Scopri le fonti e i canali di acquisizione più importanti](../analysis/most-value-source-channel.md)
-* [Connetti il tuo account  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
+* [Connetti il tuo account  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
 * [Aumentare il ROI nelle campagne pubblicitarie](../analysis/roi-ad-camp.md)
 * [Cinque best practice per l&#39;assegnazione di tag UTM in [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

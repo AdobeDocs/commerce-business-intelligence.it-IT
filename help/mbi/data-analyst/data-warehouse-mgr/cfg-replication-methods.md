@@ -2,9 +2,9 @@
 title: Configurazione dei metodi di replica
 description: Scopri come sono organizzate le tabelle e come si comportano i dati delle tabelle, per scegliere il metodo di replica migliore per le tabelle.
 exl-id: 83895c48-a6ec-4b01-9890-164e0b21dcbc
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1442'
 ht-degree: 0%
@@ -135,6 +135,6 @@ Per terminare, avete creato questa tabella che confronta i vari metodi di replic
 ## Documentazione correlata
 
 * [Ricontrolli dei dati](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [Modifica del database per supportare &#x200B;](../../best-practices/mod-db-inc-replication.md)
+* [Modifica del database per supportare ](../../best-practices/mod-db-inc-replication.md)
 * [Ottimizzazione del database per l&#39;analisi](../../best-practices/opt-db-analysis.md)
 * [Riduzione dei tempi di aggiornamento](../../best-practices/reduce-update-cycle-time.md)

@@ -2,9 +2,9 @@
 title: Ottimizzazione del database per l'analisi
 description: Scopri come ottimizzare il database per l’analisi.
 exl-id: e73e1a1e-c933-476d-97bc-bd8f52bb2fa1
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Business Performance, Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Se la tabella è una vista SQL, aggiungere una colonna che possa fungere da chia
 
 ### Assegnare un tipo di dati alla colonna di dati
 
-Se a una colonna di dati non è assegnato un tipo di dati [&#128279;](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] indovina quale tipo di dati utilizzare. Se il sistema non indovina correttamente, potresti non essere in grado di eseguire le analisi pertinenti fino a quando il team di supporto Adobe non adegua la colonna al tipo di dati corretto. Ad esempio, se una colonna data è considerata un tipo di dati numerico, puoi generare tendenze nel tempo utilizzando tale dimensione data.
+Se a una colonna di dati non è assegnato un tipo di dati [](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] indovina quale tipo di dati utilizzare. Se il sistema non indovina correttamente, potresti non essere in grado di eseguire le analisi pertinenti fino a quando il team di supporto Adobe non adegua la colonna al tipo di dati corretto. Ad esempio, se una colonna data è considerata un tipo di dati numerico, puoi generare tendenze nel tempo utilizzando tale dimensione data.
 
 ### Aggiungere prefissi alle tabelle dati se si dispone di più database
 

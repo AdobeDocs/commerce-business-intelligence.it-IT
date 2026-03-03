@@ -2,9 +2,9 @@
 title: Connessione in corso  [!DNL MySQL]  tramite tunnel SSH
 description: Scopri come connettersi [!DNL MySQL] tramite tunnel SSH.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 0%
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Connetti [!DNL MySQL] tramite [!DNL SSH Tunnel]
 
-* [Recupera la chiave pubblica  [!DNL Commerce Intelligence] &#x200B;](#retrieve)
-* [Consenti accesso all&#39;indirizzo IP  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
+* [Recupera la chiave pubblica  [!DNL Commerce Intelligence] ](#retrieve)
+* [Consenti accesso all&#39;indirizzo IP  [!DNL Commerce Intelligence] ](#allowlist)
 * [Crea un utente Linux per  [!DNL Commerce Intelligence]](#linux)
 * [Crea un  [!DNL MySQL]  utente per  [!DNL Commerce Intelligence]](#mysql)
 * [Immetti la connessione e le informazioni utente in  [!DNL Commerce Intelligence]](#finish)
 
 ## PASSA A
 
-* [[!DNL MySQL] tramite &#x200B;](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] tramite ](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL] tramite [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 Per connettere il database [!DNL MySQL] a [!DNL Commerce Intelligence] tramite `SSH tunnel`, è necessario eseguire alcune operazioni:
@@ -120,4 +120,4 @@ Al termine, fare clic su **[!UICONTROL Save & Test]** per completare la configur
 
 ## Correlato:
 
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

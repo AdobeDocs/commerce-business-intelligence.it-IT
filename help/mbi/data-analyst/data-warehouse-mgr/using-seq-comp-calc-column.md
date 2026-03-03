@@ -2,9 +2,9 @@
 title: Colonna calcolata confronto sequenziale
 description: Scopri lo scopo e gli utilizzi della colonna calcolata Confronto sequenziale.
 exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Tipo di colonna `Sequential Comparison`: trova la differenza tra eventi consecut
 | **`2`** | B | 00:30:00 01/01/2015 | NULL |
 | **`3`** | A | 01/01/02/00:00: | 7200 |
 | **`4`** | A | 02/01/2015 13/00:00: | 126000 |
-| **`5`** | B | 03/01/2015 13/0&rbrace;:00: | 217800 |
+| **`5`** | B | 03/01/2015 13/0}:00: | 217800 |
 
 Nell&#39;esempio precedente, `Seconds since owner's previous event` è la colonna calcolata `Sequential Comparison`. Per `owner_id = A`, identifica innanzitutto una sequenza basata sulla colonna `timestamp`, quindi sottrae il `timestamp` dell&#39;evento precedente dalla marca temporale dell&#39;evento corrente. Nella terza riga della tabella, la seconda riga per `owner_id A`, il valore di `Seconds since owner's previous event` è il numero di secondi tra &#39;2015-01-01 02:00&#39; e &#39;2015-01-01 00:00:00&#39;. Questa differenza è uguale a due ore = 7200 secondi.
 

@@ -2,9 +2,9 @@
 title: Modifica in serie dei grafici nei dashboard
 description: Scopri come utilizzare la funzione di modifica in blocco in [!DNL Commerce Intelligence].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 La funzione di modifica in serie consente di modificare facilmente i nomi dei grafici e le date nei dashboard. Ad esempio, si desidera che tutti i grafici di un dashboard specifico facciano riferimento a un singolo store e a un report su base mensile anziché trimestrale. Anziché modificare tutto manualmente, lasciare che la funzionalità `bulk-editing` esegua il lavoro. In questo argomento imparerai a utilizzare:
 
-* [Funzionalità  [!DNL Find/Replace] &#x200B;](#findreplace)
+* [Funzionalità  [!DNL Find/Replace] ](#findreplace)
 
-* [Funzionalità  [!DNL Prepend Name] &#x200B;](#prepend)
+* [Funzionalità  [!DNL Prepend Name] ](#prepend)
 
-* [Funzionalità  [!DNL Change Dates] &#x200B;](#dates)
+* [Funzionalità  [!DNL Change Dates] ](#dates)
 
 Detto questo, considera questo - *Queste modifiche devono essere permanenti?* In caso contrario, provare a clonare il dashboard e quindi a modificare le date nel nuovo dashboard. In questo modo è possibile mantenere il dashboard originale senza interrompere le modifiche necessarie.
 

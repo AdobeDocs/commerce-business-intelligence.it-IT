@@ -2,9 +2,9 @@
 title: Connessione di MySQL tramite una connessione diretta
 description: Scopri come connetterti [!DNL MongoDB] tramite connessione diretta.
 exl-id: 53765844-c9bb-4a16-b00c-ce9672f87415
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## In questo argomento
 
-* [Consenti accesso all&#39;indirizzo IP  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
+* [Consenti accesso all&#39;indirizzo IP  [!DNL Commerce Intelligence] ](#allowlist)
 * [Crea un  [!DNL MySQL]  utente per  [!DNL Commerce Intelligence]](#steptwo)
 * [Immetti le informazioni di connessione in  [!DNL Commerce Intelligence]](#stepthree)
 
 ## Passa a
 
-* [[!DNL MySQL] tramite &#x200B;](../integrations/mysql-via-ssh-tunnel.md)
+* [[!DNL MySQL] tramite ](../integrations/mysql-via-ssh-tunnel.md)
 * [[!DNL MySQL] tramite [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]
@@ -66,4 +66,4 @@ Al termine, fare clic su **[!UICONTROL Save & Test]** per completare la configur
 
 ## Documentazione correlata
 
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

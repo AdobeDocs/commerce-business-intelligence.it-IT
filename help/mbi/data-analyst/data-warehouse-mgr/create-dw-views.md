@@ -2,9 +2,9 @@
 title: Creare e utilizzare le visualizzazioni di Data Warehouse
 description: Scopri come creare nuove tabelle warehouse modificando una tabella esistente o unendo o consolidando più tabelle utilizzando SQL.
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 6%
@@ -136,7 +136,7 @@ Invece di creare un set separato di metriche di marketing per ogni origine di an
 
 **Ricerca di ulteriori informazioni?**
 
-Il supporto tecnico non include la scrittura di SQL e la creazione di `Data Warehouse Views`. Tuttavia, il [team dei servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) offre assistenza nella creazione delle visualizzazioni. Il team di supporto può fornire assistenza in tutte le fasi, dalla migrazione di un database legacy con un nuovo database alla creazione di una singola visualizzazione Data Warehouse ai fini di un’analisi specifica.
+Il supporto tecnico non include la scrittura di SQL e la creazione di `Data Warehouse Views`. Tuttavia, il [team dei servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) offre assistenza nella creazione delle visualizzazioni. Il team di supporto può fornire assistenza in tutte le fasi, dalla migrazione di un database legacy con un nuovo database alla creazione di una singola visualizzazione Data Warehouse ai fini di un’analisi specifica.
 
 In genere, la creazione di un nuovo `Data Warehouse View` per il consolidamento di 2-3 tabelle strutturate in modo simile richiede cinque ore di tempo di servizio, il che si traduce in circa $ 1.250 di lavoro. Tuttavia, di seguito sono riportati alcuni fattori comuni che possono aumentare gli investimenti previsti necessari:
 

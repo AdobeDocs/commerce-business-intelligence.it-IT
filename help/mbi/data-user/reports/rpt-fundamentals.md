@@ -2,9 +2,9 @@
 title: Utilizzare un rapporto
 description: Scopri come utilizzare i dati del rapporto.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Per questo esempio, si supponga di voler rispondere alla seguente domanda:
 
 * Tempo medio dalla registrazione alla data del primo acquisto per uso.
 
-Questo rivela il tempo medio che intercorre tra la data di registrazione e la data del primo acquisto dell’utente e dà un’idea del comportamento dell’utente in questo passaggio finale nel funnel di conversione.
+Questo mostra il tempo medio che intercorre tra la data di registrazione e la data del primo acquisto dell’utente e dà un’idea del comportamento dell’utente in questo passaggio finale nel funnel di conversione.
 
 ## Ricerca dei dati
 

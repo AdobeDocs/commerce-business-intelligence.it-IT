@@ -2,9 +2,9 @@
 title: Genera [!DNL Google ECommerce] dimensioni
 description: Scopri come creare dimensioni che collegano i dati di eCommerce con i tuoi ordini e i dati dei clienti.
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Warehouse Manager
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Quindi, prova a creare **il supporto [!DNL Google Analytics]** e `campaign` del 
 
 ### Bonus: tabella Ordini, turno 2
 
-Puoi fermarti qui se lo desideri, ma questa sezione abilita ulteriori analisi portando le **dimensioni [!DNL Google Analytics] del primo ordine del cliente create nella** ultima sezione[&#x200B; nella tabella &#x200B;](#customers). `orders` La creazione delle dimensioni in questa sezione consente di analizzare tutte le metriche create nella tabella `orders` - `Revenue`, `Number of orders`, `Distinct buyers` e così via - utilizzando gli attributi [!DNL Google Analytics] del primo ordine di un cliente.
+Puoi fermarti qui se lo desideri, ma questa sezione abilita ulteriori analisi portando le **dimensioni [!DNL Google Analytics] del primo ordine del cliente create nella** ultima sezione[ nella tabella ](#customers). `orders` La creazione delle dimensioni in questa sezione consente di analizzare tutte le metriche create nella tabella `orders` - `Revenue`, `Number of orders`, `Distinct buyers` e così via - utilizzando gli attributi [!DNL Google Analytics] del primo ordine di un cliente.
 
 Questo esempio unisce la dimensione `Customer's first order's [!DNL Google Analytics] source` alla tabella `orders`.
 
