@@ -40,7 +40,7 @@ Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-c
    * `created_at (month)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-mese&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;gg&#39;)**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
-   * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
+   * **`created_at (hour of the day)` [!UICONTROL Calculation]: &#x200B;** to_char(A, &#39;hh24&#39;)**
      ![Creare un&#39;interfaccia colonna calcolata in Data Warehouse Manager](../../assets/new-arch-create-calc.png)
 
 ## Metriche
@@ -64,10 +64,10 @@ Nessuno.
 * Metrica `A`: `This year`
 * Metrica `B`: `Last year`
 * [!UICONTROL Time period]: `1 year ago to 0 years ago`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (month-day)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * **Grafico MoM**
@@ -81,10 +81,10 @@ Nessuno.
 * Metrica `A`: questo mese*
 * Metrica `B`: ultimo mese*
 * [!UICONTROL Time period]: da un mese fa a 0 mesi fa
-* 
+* &#x200B;
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: Line
 
 * **Grafico W**
@@ -98,10 +98,10 @@ Nessuno.
 * Metrica `A`: `This week`
 * Metrica `B`: `Last week`
 * [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (day of week)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * **Grafico DoD**
@@ -115,10 +115,10 @@ Nessuno.
 * Metrica `A`: `Today`
 * Metrica B: `Yesterday`
 * [!UICONTROL Time period]: `1 day ago to 0 days ago`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (hour of day)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile all’immagine nella parte superiore della pagina.

@@ -15,11 +15,11 @@ ht-degree: 0%
 
 La funzione di modifica in serie consente di modificare facilmente i nomi dei grafici e le date nei dashboard. Ad esempio, si desidera che tutti i grafici di un dashboard specifico facciano riferimento a un singolo store e a un report su base mensile anziché trimestrale. Anziché modificare tutto manualmente, lasciare che la funzionalità `bulk-editing` esegua il lavoro. In questo argomento imparerai a utilizzare:
 
-* [Funzionalità  [!DNL Find/Replace] ](#findreplace)
+* [Funzionalità  [!DNL Find/Replace] &#x200B;](#findreplace)
 
-* [Funzionalità  [!DNL Prepend Name] ](#prepend)
+* [Funzionalità  [!DNL Prepend Name] &#x200B;](#prepend)
 
-* [Funzionalità  [!DNL Change Dates] ](#dates)
+* [Funzionalità  [!DNL Change Dates] &#x200B;](#dates)
 
 Detto questo, considera questo - *Queste modifiche devono essere permanenti?* In caso contrario, provare a clonare il dashboard e quindi a modificare le date nel nuovo dashboard. In questo modo è possibile mantenere il dashboard originale senza interrompere le modifiche necessarie.
 

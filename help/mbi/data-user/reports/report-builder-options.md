@@ -14,7 +14,7 @@ ht-degree: 0%
 # Scegli un generatore di report
 
 >[!NOTE]
->>Richiede [Autorizzazioni amministratore](../../administrator/user-management/user-management.md).
+>&#x200B;>Richiede [Autorizzazioni amministratore](../../administrator/user-management/user-management.md).
 
 Ora che hai più opzioni per la creazione di analisi, a volte può essere difficile sapere esattamente quale sapore del Report Builder soddisfa le tue esigenze. Questo argomento ti guida attraverso la scelta del modo migliore per generare la tua analisi.
 

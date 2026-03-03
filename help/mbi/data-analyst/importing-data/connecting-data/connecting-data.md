@@ -66,7 +66,7 @@ Per ulteriori informazioni su come iniziare a utilizzare `Import API`, consulta 
 Per aggiungere un&#39;integrazione, fare clic su **[!UICONTROL Manage Data** > **Connections]** e quindi su **[!UICONTROL Add a New Data Source]**. Fai clic sull’icona dell’integrazione da aggiungere e segui le istruzioni contenute negli argomenti dell’Aiuto per configurare:
 
 * [Domande frequenti sull&#39;integrazione](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [Disponibile ](../integrations/integrations.md)
+* [Disponibile &#x200B;](../integrations/integrations.md)
 * [Consolidamento delle tabelle](../../../best-practices/consolidating-your-tables.md)
 * [Limitazione dell&#39;accesso al database](../../../administrator/account-management/restrict-db-access.md)
 

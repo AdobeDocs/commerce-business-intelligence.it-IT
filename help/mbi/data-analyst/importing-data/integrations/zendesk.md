@@ -24,14 +24,14 @@ La connessione dei dati di [!DNL Zendesk] consente di consolidare il reporting d
 La connessione dei dati di [!DNL Zendesk] è un semplice processo in tre fasi:
 
 1. [Apri la pagina delle credenziali  [!DNL Zendesk]  in [!DNL Commerce Intelligence]](#stepone)
-1. [Recupera il token API  [!DNL Zendesk] ](#steptwo)
+1. [Recupera il token API  [!DNL Zendesk] &#x200B;](#steptwo)
 1. [Immetti le tue  [!DNL Zendesk] informazioni di accesso e il token in [!DNL Commerce Intelligence]](#stepthree)
 
 Per completare il processo, è necessario aprire due finestre o schede del browser: una per [!DNL Commerce Intelligence] e l&#39;altra per l&#39;account [!DNL Zendesk].
 
 ## Apri la pagina delle credenziali di [!DNL Zendesk] in [!DNL Commerce Intelligence] {#stepone}
 
-1. Vai alla pagina `Integrations` in **[!UICONTROL Manage Data** > ** Origini dati **> **Integrazioni]**.
+1. Vai alla pagina `Integrations` in **[!UICONTROL Manage Data** > **&#x200B; Origini dati &#x200B;**> **Integrazioni]**.
 1. Fare clic su **[!UICONTROL Add Integration]**, che si trova sul lato destro della schermata.
 1. Fare clic sull&#39;icona [!DNL Zendesk]. Verrà aperta la pagina delle credenziali [!DNL Zendesk].
 

@@ -48,7 +48,7 @@ Ogni riga della tabella `enterprise_rma` (spesso denominata `magento_rma` in Ado
 |---|---|---|
 | `Number of returns` | Il numero di restituzioni richieste. | `Operation` colonna: `entity id`<br>`Operation`: `Count`<br>`Timestamp` colonna: `date requested` |
 | `Total returned amount` | Importo monetario totale restituito. | `Operation `Colonna: `Return's total value`<br>`Operation`: Somma<br>`Timestamp` Colonna: data richiesta |
-| `Average returned amount` | Importo monetario medio restituito. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Colonna: `date requested` |
+| `Average returned amount` | Importo monetario medio restituito. | `Operation` ` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Colonna: `date requested` |
 | `Average time to return` | Tempo medio dall&#39;ordine alla restituzione. | `Operation` Colonna: secondi tra la data di creazione dell&#39;ordine e la data di restituzione richiesta<br>`Operation`: `Average`<br>`Timestamp` Colonna: `date requested` |
 
 {style="table-layout:auto"}

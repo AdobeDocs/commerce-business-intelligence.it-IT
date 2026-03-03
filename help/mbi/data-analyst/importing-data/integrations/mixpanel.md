@@ -24,7 +24,7 @@ Con [!DNL Mixpanel] puoi analizzare il modo in cui gli utenti si spostano e util
 Collegare i dati di [!DNL Mixpanel] a [!DNL Commerce Intelligence] è un semplice processo in tre fasi:
 
 1. [Apri la pagina delle credenziali  [!DNL Mixpanel]  in [!DNL Commerce Intelligence]](#stepone)
-1. [Recupera le tue credenziali API  [!DNL Mixpanel] ](#steptwo)
+1. [Recupera le tue credenziali API  [!DNL Mixpanel] &#x200B;](#steptwo)
 1. [Immetti le tue credenziali API  [!DNL Mixpanel]  in [!DNL Commerce Intelligence]](#stepthree)
 
 Per completare il processo, è necessario aprire due finestre o schede del browser, una per [!DNL Commerce Intelligence] e l&#39;altra per l&#39;account [!DNL Mixpanel].

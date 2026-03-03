@@ -34,7 +34,7 @@ Esistono due modi per esportare i dati non elaborati in [!DNL Commerce Intellige
 
 Per esportare la tabella dalla scheda [!UICONTROL Manage Data], sono necessarie [autorizzazioni amministratore](../administrator/user-management/user-management.md).
 
-1. Fai clic su **[!UICONTROL Manage Data** > ** Esporta dati **> **Esportazione dati non elaborati]**.
+1. Fai clic su **[!UICONTROL Manage Data** > **&#x200B; Esporta dati &#x200B;**> **Esportazione dati non elaborati]**.
 1. Viene visualizzato un `Export List` delle esportazioni di dati create di recente, se presenti. Fare clic su **[!UICONTROL Add Export]** per creare un&#39;esportazione.
 1. Viene visualizzata la finestra di dialogo `New Raw Data Export`. In questo caso, puoi personalizzare l’esportazione selezionando o deselezionando colonne e filtri:
 

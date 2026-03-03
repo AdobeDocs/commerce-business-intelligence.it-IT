@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Per inserire i dati di [!DNL Linkshare] in [!DNL Adobe Commerce Intelligence], è necessario eseguire due operazioni:
 
-1. [Esportare i dati di condivisione dei collegamenti in ](#export)
+1. [Esportare i dati di condivisione dei collegamenti in &#x200B;](#export)
 1. [Carica il foglio di calcolo in [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## Esporta dati da condivisione collegamenti {#export}

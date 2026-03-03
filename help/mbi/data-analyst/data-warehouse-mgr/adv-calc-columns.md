@@ -43,7 +43,7 @@ Ecco un esempio:
 | 2 | `B` | 00:30:00 01/01/2015 | 1 |
 | 3 | `A` | 01/01/02/00:00: | 2 |
 | 4 | `A` | 02/01/2015 13/00:00: | 3 |
-| 5 | `B` | 03/01/2015 13/0}:00: | 2 |
+| 5 | `B` | 03/01/2015 13/0&rbrace;:00: | 2 |
 
 {style="table-layout:auto"}
 
@@ -97,7 +97,7 @@ Ecco un esempio:
 | 2 | `B` | 00:30:00 01/01/2015 | NULL |
 | 3 | `A` | 01/01/02/00:00: | 7720 |
 | 4 | `A` | 02/01/2015 13/00:00: | 126000 |
-| 5 | `B` | 03/01/2015 13/0}:00: | 217800 |
+| 5 | `B` | 03/01/2015 13/0&rbrace;:00: | 217800 |
 
 {style="table-layout:auto"}
 
@@ -137,7 +137,7 @@ Per creare questo tipo di colonna calcolata, è necessario conoscere:
 
 ## Io sto provando a convertire i fusi orari. {#timezone}
 
-Una colonna calcolata per la conversione del fuso orario **** converte i timestamp per una particolare origine dati dal fuso orario registrato a un fuso orario di reporting.
+Una colonna calcolata per la conversione del fuso orario **&#x200B;**&#x200B;converte i timestamp per una particolare origine dati dal fuso orario registrato a un fuso orario di reporting.
 
 Ecco un esempio:
 

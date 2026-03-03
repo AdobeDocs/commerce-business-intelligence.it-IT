@@ -76,19 +76,19 @@ Colonne da creare
 * **Frequenza di abbandono**
    * [!UICONTROL Metric]: nuovi clienti (per data primo ordine)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * 
+   * &#x200B;
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * Secondi trascorsi dall&#39;ultima data dell&#39;ordine del cliente >= [Limite predefinito per i clienti abbandonati ]**`^`**
+   * Secondi trascorsi dall&#39;ultima data dell&#39;ordine del cliente >= [Limite predefinito per i clienti abbandonati ]&#x200B;**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * 
+   * &#x200B;
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: Percentage
 
 * *Metrica `A`:`New customers cumulative`*

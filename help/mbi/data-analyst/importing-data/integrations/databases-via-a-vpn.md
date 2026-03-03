@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Adobe consiglia di connettere i database utilizzando `SSH tunnel`, ma è anche possibile utilizzare una connessione `VPN` crittografata per mantenere la protezione. Un `VPN` può essere utilizzato per qualsiasi integrazione di database e, per semplificare le cose, il processo è quasi lo stesso della configurazione di un `SSH tunnel`:
 
-1. [Crea un utente del database  [!DNL Commerce Intelligence] ](#database)
-1. [Crea un utente VPN  [!DNL Commerce Intelligence] ](#vpn)
-1. [Consenti accesso all&#39;indirizzo IP  [!DNL Commerce Intelligence] ](#allowlist)
+1. [Crea un utente del database  [!DNL Commerce Intelligence] &#x200B;](#database)
+1. [Crea un utente VPN  [!DNL Commerce Intelligence] &#x200B;](#vpn)
+1. [Consenti accesso all&#39;indirizzo IP  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
 1. [Immetti la connessione e le informazioni utente VPN in Commerce Intelligence](#finish)
 
 Oltre alle credenziali del database, è necessario immettere le credenziali per consentire a un utente VPN di completare la procedura. Qualsiasi utente VPN funziona, ma Adobe consiglia di creare un utente [!DNL Commerce Intelligence], in quanto ti consente di tenere traccia più facilmente degli utenti sul tuo account.
