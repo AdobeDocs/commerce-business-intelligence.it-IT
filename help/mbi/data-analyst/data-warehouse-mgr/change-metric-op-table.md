@@ -25,6 +25,6 @@ In alcuni casi, puoi decidere di modificare la tabella di dati utilizzata da una
 
    ![Menu a discesa di selezione tabella che mostra le tabelle disponibili](../../assets/change-metrics-2.png)
 
-1. Se nella nuova tabella non è presente una colonna corrispondente, è possibile **crearla nella tabella dati** o [contattare il supporto tecnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) se si tratta di una colonna di calcolo o di una dimensione creata da [!DNL Commerce Intelligence]. Puoi anche **eliminare la dimensione dalla metrica**. Per eliminare una dimensione non più necessaria, tornare all&#39;editor della metrica e selezionare le dimensioni da eliminare in `Dimensions`.
+1. Se nella nuova tabella non è presente una colonna corrispondente, è possibile **crearla nella tabella dati** o [contattare il supporto tecnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) se si tratta di una colonna di calcolo o di una dimensione creata da [!DNL Commerce Intelligence]. Puoi anche **eliminare la dimensione dalla metrica**. Per eliminare una dimensione non più necessaria, tornare all&#39;editor della metrica e selezionare le dimensioni da eliminare in `Dimensions`.
 
    ![Menu a discesa per la selezione delle colonne operative](../../assets/change-metrics-3.png)

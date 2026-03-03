@@ -62,4 +62,4 @@ Per visualizzare tutti i campi disponibili per il tracciamento, fai clic sui col
 ## Correlato:
 
 * [Connessione in corso  [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)

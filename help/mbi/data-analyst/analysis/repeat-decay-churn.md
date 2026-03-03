@@ -78,7 +78,7 @@ Dopo aver creato l’analisi di cui sopra e aver determinato una soglia di abban
 
 Se offri più di un prodotto, probabilmente ti chiedi in che modo i clienti che acquistano un prodotto specifico si comportano in modo diverso nel tempo rispetto ad altri clienti. Vuoi saperne di più? Consulta questa esercitazione per esplorare il comportamento di acquisto nel corso del ciclo di vita delle coorti di clienti in base a prodotti specifici acquistati.
 
-Questa best practice è fornita da [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per ulteriori informazioni.
+Questa best practice è fornita da [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per ulteriori informazioni.
 
 ### Correlato
 

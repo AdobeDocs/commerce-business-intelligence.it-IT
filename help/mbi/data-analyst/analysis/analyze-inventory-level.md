@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Analizza livelli scorte
 
-In questo argomento viene illustrato come impostare un dashboard che fornisca informazioni approfondite sull&#39;inventario corrente e contenga istruzioni per i client sia sull&#39;architettura legacy che sulla nuova architettura. Se non si dispone dell&#39;opzione **[!UICONTROL Data Warehouse Views]** nel menu **[!UICONTROL Manage Data]**, si utilizza l&#39;architettura precedente. Se ti trovi nell&#39;architettura legacy, invia una [nuova richiesta di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) con oggetto **[!UICONTROL INVENTORY ANALYSIS]** una volta raggiunta la sezione designata nelle istruzioni _Colonne calcolate_ di seguito.
+In questo argomento viene illustrato come impostare un dashboard che fornisca informazioni approfondite sull&#39;inventario corrente e contenga istruzioni per i client sia sull&#39;architettura legacy che sulla nuova architettura. Se non si dispone dell&#39;opzione **[!UICONTROL Data Warehouse Views]** nel menu **[!UICONTROL Manage Data]**, si utilizza l&#39;architettura precedente. Se ti trovi nell&#39;architettura legacy, invia una [nuova richiesta di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) con oggetto **[!UICONTROL INVENTORY ANALYSIS]** una volta raggiunta la sezione designata nelle istruzioni _Colonne calcolate_ di seguito.
 
 ## Colonne da tracciare:
 
@@ -242,4 +242,4 @@ In questo argomento viene illustrato come impostare un dashboard che fornisca in
    * &#x200B;
      [!UICONTROL Chart type]: `Table`
 
-Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).

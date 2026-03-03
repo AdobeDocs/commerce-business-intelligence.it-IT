@@ -43,11 +43,11 @@ Quando si specifica un filtro data per un dashboard, tale filtro viene applicato
 
 ## Filtri store
 
-Per analizzare le prestazioni di un archivio specifico, fare clic sull&#39;icona relativa agli archivi nell&#39;angolo superiore destro (![Filtro store](../../assets/store-filter.png)). Per impostazione predefinita, `Store Filter` è impostato su `All Stores`, che visualizza i dati di tutte le [visualizzazioni store](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) disponibili nel sito Commerce.
+Per analizzare le prestazioni di un archivio specifico, fare clic sull&#39;icona relativa agli archivi nell&#39;angolo superiore destro (![Filtro store](../../assets/store-filter.png)). Per impostazione predefinita, `Store Filter` è impostato su `All Stores`, che visualizza i dati di tutte le [visualizzazioni store](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html?lang=it) disponibili nel sito Commerce.
 
 >[!NOTE]
 >
->Un filtro dell&#39;archivio è abilitato o disabilitato per un intero account [!DNL Commerce Intelligence]. Se un dashboard contiene report non interessati dal filtro, ad esempio report non generati su alcun dato [!DNL Adobe Commerce], tali report non vengono aggiornati quando viene applicato il filtro dell&#39;archivio. Puoi [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) se ritieni che un report debba essere aggiornato in base alla selezione dello store o se ritieni che il filtro dello store dell&#39;account sia disabilitato per errore.
+>Un filtro dell&#39;archivio è abilitato o disabilitato per un intero account [!DNL Commerce Intelligence]. Se un dashboard contiene report non interessati dal filtro, ad esempio report non generati su alcun dato [!DNL Adobe Commerce], tali report non vengono aggiornati quando viene applicato il filtro dell&#39;archivio. Puoi [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) se ritieni che un report debba essere aggiornato in base alla selezione dello store o se ritieni che il filtro dello store dell&#39;account sia disabilitato per errore.
 
 Quando si seleziona un archivio da `Store Filter`, il filtro mantiene la selezione quando si passa da un dashboard all&#39;altro. Mantenere la selezione consente di visualizzare i dati per l&#39;archivio selezionato ovunque fino a quando non si seleziona `All Stores`.
 

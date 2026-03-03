@@ -50,4 +50,4 @@ Attualmente, [!DNL Salesforce] non espone i seguenti oggetti nella loro API:
 ## Correlato:
 
 * [Connessione in corso  [!DNL Salesforce]](../integrations/salesforce.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
