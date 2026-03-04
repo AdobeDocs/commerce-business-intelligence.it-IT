@@ -4,7 +4,7 @@ description: Scopri come verificare di aver sincronizzato tutti gli stessi dati 
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+source-git-commit: 063112ebbafad195b0a80ee2b119ab32d879ae5b
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 0%
@@ -30,3 +30,4 @@ Quando [!DNL Adobe Commerce Intelligence] si connette per la prima volta ai dati
    ![Opzione esporta in formato CSV nel menu](../../../assets/export-csv-mixpanel.png)
 
 1. Invia il file `.csv` all&#39;account manager o all&#39;analista con cui stai lavorando in questo processo di convalida.
+
