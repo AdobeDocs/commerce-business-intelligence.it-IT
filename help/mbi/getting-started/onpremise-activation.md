@@ -118,7 +118,7 @@ Immettere le informazioni di [!DNL Commerce Intelligence] nella schermata [!UICO
 
 [!UICONTROL Port]: `3306`
 
-[!Username UICONTROL]: `mbi`
+[!UICONTROL Username]: `mbi`
 
 [!UICONTROL Password]: [password di input visualizzata nella sezione precedente]
 
