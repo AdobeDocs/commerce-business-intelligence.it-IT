@@ -4,16 +4,22 @@ description: Scopri come esportare i record dal tuo [!DNL Commerce Intelligence]
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/8n0DUwkiI1BVF5612vCd4jFWx7jwWlfOHg2K3hgWkco
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: 491
 ht-degree: 0%
 
 ---
 
 # Esporta dati non elaborati
 
-Utilizzando le esportazioni di dati non elaborati, puoi esportare i record dal Data Warehouse per avere una visione più dettagliata di ciò che alimenta il dashboard. Inoltre, le esportazioni di dati non elaborati possono aiutarti a [individuare le discrepanze di dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=it).
+Utilizzando le esportazioni di dati non elaborati, puoi esportare i record dal Data Warehouse per avere una visione più dettagliata di ciò che alimenta il dashboard. Inoltre, le esportazioni di dati non elaborati possono aiutarti a [individuare le discrepanze di dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
 
 Le esportazioni di dati non elaborati consentono di accedere a colonne e dimensioni aggiuntive generate tramite la denormalizzazione e la preaggregazione di metriche rilevanti. `User's first order date`, ad esempio, è una dimensione che è possibile esportare per ogni utente in [!DNL Commerce Intelligence], mentre potrebbe non essere disponibile nel database.
 
@@ -34,7 +40,7 @@ Esistono due modi per esportare i dati non elaborati in [!DNL Commerce Intellige
 
 Per esportare la tabella dalla scheda [!UICONTROL Manage Data], sono necessarie [autorizzazioni amministratore](../administrator/user-management/user-management.md).
 
-1. Fai clic su **[!UICONTROL Manage Data** > **&#x200B; Esporta dati &#x200B;**> **Esportazione dati non elaborati]**.
+1. Fai clic su **[!UICONTROL Manage Data** > ** Esporta dati **> **Esportazione dati non elaborati]**.
 1. Viene visualizzato un `Export List` delle esportazioni di dati create di recente, se presenti. Fare clic su **[!UICONTROL Add Export]** per creare un&#39;esportazione.
 1. Viene visualizzata la finestra di dialogo `New Raw Data Export`. In questo caso, puoi personalizzare l’esportazione selezionando o deselezionando colonne e filtri:
 

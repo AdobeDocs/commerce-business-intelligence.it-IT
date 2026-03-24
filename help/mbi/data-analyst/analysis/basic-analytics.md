@@ -4,9 +4,15 @@ description: Scopri come comprendere e creare analisi di base.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Dashboards, Data Integration
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/5AOJMiHxtu-nt3cWP-lF5g4Zufa2MuZr7xA8pX3OgB8
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '3130'
+source-wordcount: 3130
 ht-degree: 0%
 
 ---
@@ -46,7 +52,7 @@ Se alcuni di questi calcoli non sono attualmente presenti nel database, qualsias
 
 **Accetti gli ordini degli ospiti?**
 
-*In questo caso, è possibile che la tabella non contenga tutti i clienti. Contatta il [team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per assicurarti che le analisi dei clienti includano tutti i clienti.*
+*In questo caso, è possibile che la tabella non contenga tutti i clienti. Contatta il [team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per assicurarti che le analisi dei clienti includano tutti i clienti.*
 
 *Non sei sicuro di accettare gli ordini degli ospiti? Fai riferimento a [questo argomento](../data-warehouse-mgr/guest-orders.md) per ulteriori informazioni!*
 
@@ -60,7 +66,7 @@ In questa tabella, ogni riga rappresenta un ordine. Le colonne di questa tabella
 * **[!UICONTROL Created_at]**: data di creazione o di inserimento dell&#39;ordine.
 * **[!UICONTROL Customer_email]**: indirizzo e-mail del cliente che ha effettuato l&#39;ordine. Può anche essere l’identificatore univoco del cliente.
 * **[!UICONTROL Customer's lifetime number of orders]**: copia della colonna con lo stesso nome nella tabella `Customers`.
-* **[!UICONTROL Customer's order number]**: numero di ordine sequenziale del cliente associato all&#39;ordine. Ad esempio, se la riga che stai esaminando è il primo ordine di un cliente, questa colonna è &quot;1&quot;; ma, se si tratta del quindicesimo ordine del cliente, questa colonna mostra &quot;15&quot; per questo ordine. Se questa dimensione non esiste nella tabella `Customers`, chiedere al team di supporto [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) di aiutarti a generarla.
+* **[!UICONTROL Customer's order number]**: numero di ordine sequenziale del cliente associato all&#39;ordine. Ad esempio, se la riga che stai esaminando è il primo ordine di un cliente, questa colonna è &quot;1&quot;; ma, se si tratta del quindicesimo ordine del cliente, questa colonna mostra &quot;15&quot; per questo ordine. Se questa dimensione non esiste nella tabella `Customers`, chiedere al team di supporto [](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) di aiutarti a generarla.
 * **[!UICONTROL Customer's order number (previous-current)]**: concatenazione di due valori nella colonna **[!UICONTROL Customer's order number]**. Viene utilizzato in un report di esempio riportato di seguito per visualizzare il tempo trascorso tra due ordini. Ad esempio, con questo calcolo il tempo tra la data del primo ordine di un cliente e la data del secondo ordine è rappresentato da &quot;1-2&quot;.
 * **[!UICONTROL Coupon_code]**: mostra i coupon utilizzati in ogni ordine.
 * **[!UICONTROL Seconds since previous order]**: tempo (in secondi) tra gli ordini di un cliente.
@@ -88,7 +94,7 @@ Questa tabella viene utilizzata per gestire le informazioni sull’abbonamento, 
 
 ## Tabella delle spese di marketing
 
-Durante l&#39;analisi delle spese di marketing, è possibile includere [!DNL Facebook], [!DNL Google AdWords] o altre origini nelle analisi. Se disponi di più origini di spesa marketing, contatta il [team Managed Services](https://business.adobe.com/it/products/magento/fully-managed-service.html) per assistenza nella configurazione di una tabella consolidata per le campagne marketing.
+Durante l&#39;analisi delle spese di marketing, è possibile includere [!DNL Facebook], [!DNL Google AdWords] o altre origini nelle analisi. Se disponi di più origini di spesa marketing, contatta il [team Managed Services](https://business.adobe.com/products/magento/fully-managed-service.html) per assistenza nella configurazione di una tabella consolidata per le campagne marketing.
 
 **Dimensioni**
 

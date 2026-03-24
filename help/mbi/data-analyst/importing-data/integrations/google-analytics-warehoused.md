@@ -4,9 +4,15 @@ description: Scopri come monitorare il modo in cui i visitatori utilizzano il tu
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/fmI-RG3Ba7s--6-Qve8xzcBLAKcbAqfaMAb7hNiKciU
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: 489
 ht-degree: 0%
 
 ---
@@ -35,7 +41,7 @@ Con l&#39;integrazione di [!DNL Google Analytics Live], invece, ogni grafico [!D
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] è un&#39;integrazione `Premium`. [Contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) se hai interesse ad aggiungere questa integrazione alla sottoscrizione.
+>[!DNL Google Analytics Warehoused] è un&#39;integrazione `Premium`. [Contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) se hai interesse ad aggiungere questa integrazione alla sottoscrizione.
 
 1. Passare alla pagina `Connections` in **[!UICONTROL Admin** > **Integrations]**.
 1. Fare clic su **[!UICONTROL Add an Integration]**, che si trova sul lato destro.
@@ -63,7 +69,7 @@ Per identificare l&#39;ID profilo [!DNL Google Analytics] di un particolare sito
 
 ## Documentazione correlata
 
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Connessione in corso  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analisi delle attività del sito web e dei tassi di conversione dei clienti](../../analysis/web-act-cust-conversion.md)
 * [Tieni traccia dei dati di acquisizione dell&#39;utente utilizzando  [!DNL Google Analytics] cookie](../../analysis/google-track-user-acq.md)

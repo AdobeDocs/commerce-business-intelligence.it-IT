@@ -4,9 +4,15 @@ description: Scopri come controllare lo stato del ciclo di aggiornamento.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Developer, User
 feature: Dashboards
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/FAK0W9Qf002Xsug4GLlHs3ChiliC9UXHHrF-Wdo0reo
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: 336
 ht-degree: 0%
 
 ---
@@ -17,7 +23,7 @@ Quando si accede al dashboard di [!DNL Adobe Commerce Intelligence], è possibil
 
 ## Perché devo controllare lo stato del ciclo di aggiornamento?
 
-La verifica del ciclo di aggiornamento dello stato è utile quando si controllano i dati nell&#39;account [!DNL Commerce Intelligence]. Se vedi [risultati che non soddisfano le tue aspettative](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), ad esempio, le vendite giornaliere in [!DNL Commerce Intelligence] non corrispondono a quelle che vedi nella tua piattaforma di e-commerce o nei tuoi [[!DNL Google] ricavi di e-commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=it), puoi controllare l&#39;ultimo punto dati per vedere se il problema è risolto una volta completato un aggiornamento.
+La verifica del ciclo di aggiornamento dello stato è utile quando si controllano i dati nell&#39;account [!DNL Commerce Intelligence]. Se vedi [risultati che non soddisfano le tue aspettative](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), ad esempio, le vendite giornaliere in [!DNL Commerce Intelligence] non corrispondono a quelle che vedi nella tua piattaforma di e-commerce o nei tuoi [[!DNL Google] ricavi di e-commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html), puoi controllare l&#39;ultimo punto dati per vedere se il problema è risolto una volta completato un aggiornamento.
 
 ## [!UICONTROL Read-Only] e [!UICONTROL Standard] utenti
 

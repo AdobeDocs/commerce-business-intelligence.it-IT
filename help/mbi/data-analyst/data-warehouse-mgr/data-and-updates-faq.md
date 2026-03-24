@@ -4,9 +4,15 @@ description: Scopri come controllare lo stato del ciclo di aggiornamento.
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/qT3lojSuve8jHgNVKoJCUW82cN2QK497wFX8NVbptWI
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: 481
 ht-degree: 0%
 
 ---
@@ -46,8 +52,8 @@ Se è in corso un aggiornamento, è presente un collegamento nella pagina **[!UI
 
 ## Perché [!DNL Google ECommerce] dati sono diversi dal mio database? {#ecommdatabase}
 
-Le discrepanze tra [!DNL Google Analytics] e il database possono verificarsi per vari motivi. Il tracciamento non è abilitato correttamente, gli utenti che visitano in incognito e gli eventi di clic non funzionano correttamente sono solo alcuni esempi. Se le entrate e gli ordini non sembrano corretti, [consulta questo argomento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=it) per diagnosticare un problema.
+Le discrepanze tra [!DNL Google Analytics] e il database possono verificarsi per vari motivi. Il tracciamento non è abilitato correttamente, gli utenti che visitano in incognito e gli eventi di clic non funzionano correttamente sono solo alcuni esempi. Se le entrate e gli ordini non sembrano corretti, [consulta questo argomento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) per diagnosticare un problema.
 
 ## Come si risolve una discrepanza di dati? {#datadiscrepancy}
 
-Adobe sa che la visualizzazione di dati non coerenti può essere un’esperienza frustrante. Prova a utilizzare l&#39;[elenco di controllo per la discrepanza dei dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=it) o l&#39;[esercitazione sulle esportazioni dei dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=it) per diagnosticare il problema. Se sei ancora perplesso, [contatta l&#39;assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Adobe sa che la visualizzazione di dati non coerenti può essere un’esperienza frustrante. Prova a utilizzare l&#39;[elenco di controllo per la discrepanza dei dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html) o l&#39;[esercitazione sulle esportazioni dei dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html) per diagnosticare il problema. Se sei ancora perplesso, [contatta l&#39;assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

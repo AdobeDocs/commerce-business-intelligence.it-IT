@@ -4,9 +4,15 @@ description: Scopri alcuni metodi diversi per valutare le prestazioni della camp
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+TQID: https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: 1253
 ht-degree: 0%
 
 ---
@@ -99,7 +105,7 @@ Stai eseguendo annunci pubblicitari specifici per il prodotto? In tal caso, puoi
 >
 >Questo esempio presuppone che tutti i costi della campagna siano stati utilizzati esclusivamente per generare acquisti di prodotti specifici. Supponendo che tutti i costi siano stati spesi per la generazione di acquisti, il ROI risultante rappresenta lo scenario peggiore (costo più alto per acquisto). Puoi essere sicuro che il ROI effettivo sia superiore a questo calcolo. Esempio: supponendo di aver speso 20 $ per una campagna che ha generato 10 nuovi utenti e 10 acquisti, il costo effettivo per acquisto è di 1 $. Presumendo che tutti i costi siano andati ad acquisire nuovi utenti, il costo per acquisto è di 2 $.
 
-Prima di iniziare, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per unire le dimensioni seguenti alla tabella degli elementi di riga (`sales\_flat\_order\_item, order\_item`):
+Prima di iniziare, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per unire le dimensioni seguenti alla tabella degli elementi di riga (`sales\_flat\_order\_item, order\_item`):
 
 * Origine dell’ordine (se tieni traccia solo dell’origine di riferimento a livello di utente, quindi unisci all’origine dell’utente)
 * Campagna dell’ordine (se tieni traccia solo dell’origine di riferimento a livello di utente, quindi partecipa alla campagna dell’utente)
@@ -135,6 +141,6 @@ Prima di iniziare, [invia un ticket di supporto](https://experienceleague.adobe.
 * [Tracciare l&#39;origine di riferimento dell&#39;utente nel database](../analysis/google-track-user-acq.md)
 * [Tenere traccia dei dati relativi a dispositivi utente, browser e sistema operativo nel database](../analysis/track-usr-dev-browser.md)
 * [Scopri le fonti e i canali di acquisizione più importanti](../analysis/most-value-source-channel.md)
-* [Connetti il tuo account  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
+* [Connetti il tuo account  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
 * [Come funziona l&#39;attribuzione  [!DNL Google Analytics] UTM?](../analysis/utm-attributes.md)
 * [Cinque best practice per l&#39;assegnazione di tag UTM in [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

@@ -4,9 +4,15 @@ description: Scopri come definire un percorso che descriva il modo in cui la tab
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/UXIfQT9NxvKnefTMVWxjTYEMDpmCRITyzlFpNcU-y90
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: 1007
 ht-degree: 0%
 
 ---
@@ -20,7 +26,7 @@ Quando [crei colonne calcolate](../data-warehouse-mgr/creating-calculated-column
 1. Correlazione tra le tabelle dei database
 1. Chiavi primarie ed esterne che definiscono questa relazione
 
-Se si conoscono queste informazioni, è possibile creare facilmente un percorso seguendo le istruzioni riportate in questo argomento. Potresti chiedere a un esperto tecnico della tua organizzazione o contattare il [team Servizi professionali](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Se si conoscono queste informazioni, è possibile creare facilmente un percorso seguendo le istruzioni riportate in questo argomento. Potresti chiedere a un esperto tecnico della tua organizzazione o contattare il [team Servizi professionali](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Aggiornamenti relativi alle relazioni tra tabelle e ai tipi di chiave {#refresher}
 
@@ -79,7 +85,7 @@ Ora puoi creare il percorso.
 
 * **[!DNL Commerce Intelligence]non riesce a indovinare le relazioni chiave primaria/esterna**. Non desideri introdurre dati errati nell’account, pertanto la creazione dei percorsi deve essere eseguita manualmente.
 
-* **Al momento è possibile specificare percorsi solo tra due tabelle diverse**. La logica che si sta tentando di ricreare coinvolge più di due tabelle? Potrebbe quindi essere utile (1) unire le colonne prima a una tabella intermedia, quindi alla tabella &quot;destinazione finale&quot;, oppure (2) consultare il [team Professional Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per trovare il miglior approccio ai tuoi obiettivi.
+* **Al momento è possibile specificare percorsi solo tra due tabelle diverse**. La logica che si sta tentando di ricreare coinvolge più di due tabelle? Potrebbe quindi essere utile (1) unire le colonne prima a una tabella intermedia, quindi alla tabella &quot;destinazione finale&quot;, oppure (2) consultare il [team Professional Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) per trovare il miglior approccio ai tuoi obiettivi.
 
 * **Una colonna può essere solo il riferimento di chiave esterna per UN percorso alla volta**. Ad esempio, se `order_items.order_id` punta a `orders.id`, `order_items.order_id` non può puntare ad altro.
 

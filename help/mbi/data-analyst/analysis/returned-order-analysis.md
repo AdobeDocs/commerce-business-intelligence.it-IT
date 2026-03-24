@@ -4,9 +4,15 @@ description: Scopri come impostare una dashboard che fornisca un’analisi detta
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+TQID: https://experienceleague.adobe.com/vEHbYcJUPlGk2eZsKvak9nSYBqOVvnKNSYDEutHMt3g
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: 434
 ht-degree: 0%
 
 ---
@@ -17,7 +23,7 @@ In questo argomento viene illustrato come impostare una dashboard che fornisca u
 
 ![Dashboard di restituzioni dettagliato con tassi e motivi di restituzione](../../assets/detailed-returns-dboard.png)
 
-Prima di iniziare, devi essere un cliente di [Adobe Commerce](https://business.adobe.com/it/products/magento/magento-commerce.html) e assicurarti che la tua azienda utilizzi la tabella `enterprise\_rma` per le restituzioni.
+Prima di iniziare, devi essere un cliente di [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) e assicurarti che la tua azienda utilizzi la tabella `enterprise\_rma` per le restituzioni.
 
 Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -61,9 +67,9 @@ Colonne da creare
 * **`Order's created at`**
 * Selezionare una definizione: `Joined Column`
 * [!UICONTROL Create Path]:
-* &#x200B;
+* 
   [!UICONTROL Many]: `enterprise_rma.order_id`
-* &#x200B;
+* 
   [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * Seleziona [!UICONTROL table]: `sales_flat_order`
@@ -82,9 +88,9 @@ Colonne da creare
 * **`return_date_requested`**
 * Selezionare una definizione: `Joined Column`
 * [!UICONTROL Create Path]:
-   * &#x200B;
+   * 
      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-   * &#x200B;
+   * 
      [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * Seleziona [!UICONTROL table]: `enterprise_rma`
@@ -157,14 +163,14 @@ Colonne da creare
 
 * Formula: probabilità ordine ripetuto
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Bar`
 
 * **Tempo medio per il ritorno (tutti i tempi)**
@@ -172,9 +178,9 @@ Colonne da creare
 * [!UICONTROL Metric]: `Avg time between order and return`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Number`
 
 * **Percentuale di ordini con restituzione**
@@ -188,11 +194,11 @@ Colonne da creare
 
 * Formula: % di ordini con restituzione
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
@@ -202,7 +208,7 @@ Colonne da creare
 
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **Clienti che hanno effettuato una restituzione e non hanno acquistato nuovamente**
@@ -213,11 +219,11 @@ Colonne da creare
    * `Is customer's last order? (1=yes/0=no) = 1`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Raggruppa per]: `Customer_email`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Table`
 
 * **Percentuale di reso per elemento**
@@ -230,16 +236,16 @@ Colonne da creare
 
 * [!UICONTROL Formula]: `Return %`
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Table`
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile al dashboard di esempio riportato sopra.
 
-In caso di domande durante la creazione di questa analisi o se desideri coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+In caso di domande durante la creazione di questa analisi o se desideri coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
