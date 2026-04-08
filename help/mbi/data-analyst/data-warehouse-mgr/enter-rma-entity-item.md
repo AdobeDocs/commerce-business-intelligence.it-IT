@@ -19,7 +19,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 08a466710b782238003c6bdb8cefacd07134291c
 workflow-type: tm+mt
 source-wordcount: 269
 ht-degree: 0%
@@ -38,14 +38,14 @@ Ogni riga della tabella `enterprise_rma_item_entity` (spesso denominata `magento
 
 | **Nome colonna** | **Descrizione** |
 |---|---|
-| `entity\_id` | Identificatore univoco della tabella. Ogni `entity\_id` rappresenta un elemento che è stato richiesto per la restituzione. |
-| `rma\_entity\_id` | Chiave esterna associata alla tabella `enterprise\_rma`. |
+| `entity_id` | Identificatore univoco della tabella. Ogni `entity_id` rappresenta un elemento che è stato richiesto per la restituzione. |
+| `rma_entity_id` | Chiave esterna associata alla tabella `enterprise_rma`. |
 | `status` | Stato della restituzione dell&#39;elemento. I valori includono, tra gli altri, &quot;received&quot;, &quot;pending&quot;, &quot;authorized&quot;. I valori in questo stato potrebbero non corrispondere al valore dello stato complessivo della restituzione. |
-| `qty\_requested` | Quantità richiesta da parte del cliente per la restituzione. |
-| `qty\_approved` | Quantità approvata per la restituzione. |
-| `qty\_returned` | Quantità restituita. |
-| `order\_item\_id` | Chiave esterna associata alla tabella `sales\_flat\_order\_item`. |
-| `product\_sku` | Lo SKU restituito. |
+| `qty_requested` | Quantità richiesta da parte del cliente per la restituzione. |
+| `qty_approved` | Quantità approvata per la restituzione. |
+| `qty_returned` | Quantità restituita. |
+| `order_item_id` | Chiave esterna associata alla tabella `sales_flat_order_item`. |
+| `product_sku` | Lo SKU restituito. |
 
 {style="table-layout:auto"}
 
@@ -53,9 +53,9 @@ Ogni riga della tabella `enterprise_rma_item_entity` (spesso denominata `magento
 
 | **Nome colonna** | **Descrizione** |
 |---|---|
-| `Return date\_requested` | Questa è la data in cui il cliente ha richiesto la restituzione. |
+| `Return date_requested` | Questa è la data in cui il cliente ha richiesto la restituzione. |
 | `Item price` | Prezzo dell’articolo. |
-| `Return item's total value (qty\_returned * price)` | Si tratta del valore monetario totale degli elementi restituiti. Utilizzato per calcolare l&#39;importo restituito totale nella tabella `enterprise\_rma`. |
+| `Return item's total value (qty_returned * price)` | Si tratta del valore monetario totale degli elementi restituiti. Utilizzato per calcolare l&#39;importo restituito totale nella tabella `enterprise_rma`. |
 
 {style="table-layout:auto"}
 
@@ -72,7 +72,7 @@ Ogni riga della tabella `enterprise_rma_item_entity` (spesso denominata `magento
 
 `enterprise_rma`
 
-* Creare colonne unite come `Return date\_requested` nella tabella `enterprise_rma_item_entity` tramite il join seguente:
+* Creare colonne unite come `Return date_requested` nella tabella `enterprise_rma_item_entity` tramite il join seguente:
 * Commerce 1.x: `enterprise_rma_item_entity.rma_entity_id ` (molti) => `enterprise_rma.entity_id` (uno)
 * Commerce 2.x: `magento_rma_item_entity.rma_entity_id ` (molti) => `magento_rma.entity_id` (uno)
 
