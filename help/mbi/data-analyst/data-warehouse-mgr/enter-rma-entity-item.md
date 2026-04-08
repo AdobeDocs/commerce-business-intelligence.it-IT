@@ -5,21 +5,12 @@ exl-id: aa71cb3f-3e0b-4b6b-b4cc-dad103f79c51
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/jBMtEluq3XNIzItebuvDQ43PAuW6mAsyG7RkHn8URJ4
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 08a466710b782238003c6bdb8cefacd07134291c
 workflow-type: tm+mt
 source-wordcount: 269
 ht-degree: 0%
@@ -38,14 +29,14 @@ Ogni riga della tabella `enterprise_rma_item_entity` (spesso denominata `magento
 
 | **Nome colonna** | **Descrizione** |
 |---|---|
-| `entity\_id` | Identificatore univoco della tabella. Ogni `entity\_id` rappresenta un elemento che è stato richiesto per la restituzione. |
-| `rma\_entity\_id` | Chiave esterna associata alla tabella `enterprise\_rma`. |
+| `entity_id` | Identificatore univoco della tabella. Ogni `entity_id` rappresenta un elemento che è stato richiesto per la restituzione. |
+| `rma_entity_id` | Chiave esterna associata alla tabella `enterprise_rma`. |
 | `status` | Stato della restituzione dell&#39;elemento. I valori includono, tra gli altri, &quot;received&quot;, &quot;pending&quot;, &quot;authorized&quot;. I valori in questo stato potrebbero non corrispondere al valore dello stato complessivo della restituzione. |
-| `qty\_requested` | Quantità richiesta da parte del cliente per la restituzione. |
-| `qty\_approved` | Quantità approvata per la restituzione. |
-| `qty\_returned` | Quantità restituita. |
-| `order\_item\_id` | Chiave esterna associata alla tabella `sales\_flat\_order\_item`. |
-| `product\_sku` | Lo SKU restituito. |
+| `qty_requested` | Quantità richiesta da parte del cliente per la restituzione. |
+| `qty_approved` | Quantità approvata per la restituzione. |
+| `qty_returned` | Quantità restituita. |
+| `order_item_id` | Chiave esterna associata alla tabella `sales_flat_order_item`. |
+| `product_sku` | Lo SKU restituito. |
 
 {style="table-layout:auto"}
 
@@ -53,9 +44,9 @@ Ogni riga della tabella `enterprise_rma_item_entity` (spesso denominata `magento
 
 | **Nome colonna** | **Descrizione** |
 |---|---|
-| `Return date\_requested` | Questa è la data in cui il cliente ha richiesto la restituzione. |
+| `Return date_requested` | Questa è la data in cui il cliente ha richiesto la restituzione. |
 | `Item price` | Prezzo dell’articolo. |
-| `Return item's total value (qty\_returned * price)` | Si tratta del valore monetario totale degli elementi restituiti. Utilizzato per calcolare l&#39;importo restituito totale nella tabella `enterprise\_rma`. |
+| `Return item's total value (qty_returned * price)` | Si tratta del valore monetario totale degli elementi restituiti. Utilizzato per calcolare l&#39;importo restituito totale nella tabella `enterprise_rma`. |
 
 {style="table-layout:auto"}
 
@@ -72,7 +63,7 @@ Ogni riga della tabella `enterprise_rma_item_entity` (spesso denominata `magento
 
 `enterprise_rma`
 
-* Creare colonne unite come `Return date\_requested` nella tabella `enterprise_rma_item_entity` tramite il join seguente:
+* Creare colonne unite come `Return date_requested` nella tabella `enterprise_rma_item_entity` tramite il join seguente:
 * Commerce 1.x: `enterprise_rma_item_entity.rma_entity_id ` (molti) => `enterprise_rma.entity_id` (uno)
 * Commerce 2.x: `magento_rma_item_entity.rma_entity_id ` (molti) => `magento_rma.entity_id` (uno)
 
