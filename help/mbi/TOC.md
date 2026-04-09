@@ -5,7 +5,7 @@ user-guide-title: Guida utente di Commerce Intelligence
 breadcrumb-title: Guida utente di Commerce Intelligence
 role: Admin, Developer, Leader, User
 feature: Business Performance
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+source-git-commit: 994fd98dac3dd8693b79c7497bba7bb6df27edf6
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 0%
@@ -236,5 +236,5 @@ ht-degree: 0%
 - Tutorial {#tutorials}
    - [Utilizzo di  [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Utilizzo delle opzioni di tempo in  [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
-   - [Creazione di visualizzazioni per una query  [!DNL SQL] &#x200B;](tutorials/create-visuals-from-sql.md)
+   - [Creazione di visualizzazioni da una query  [!DNL SQL] &#x200B;](tutorials/create-visuals-from-sql.md)
    - [Esportazione di dati non elaborati](tutorials/export-raw-data.md)
