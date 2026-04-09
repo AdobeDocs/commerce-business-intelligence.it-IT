@@ -19,7 +19,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: ad4dda927f0b1b2eba9596d7adfd1419676cf03d
 workflow-type: tm+mt
 source-wordcount: 267
 ht-degree: 0%
@@ -38,11 +38,11 @@ Ogni riga della tabella `enterprise_rma` (spesso denominata `magento_rma` in Ado
 
 | **Nome colonna** | **Descrizione** |
 |---|---|
-| `entity\_id` | Identificatore univoco della tabella. Ogni `entity\_id` rappresenta una richiesta restituita. |
-| `date\_requested` | Data in cui è stata richiesta la restituzione. |
+| `entity_id` | Identificatore univoco della tabella. Ogni `entity_id` rappresenta una richiesta restituita. |
+| `date_requested` | Data in cui è stata richiesta la restituzione. |
 | `status` | Stato del reso. I valori includono, tra gli altri, &quot;received&quot;, &quot;pending&quot;, &quot;authorized&quot;. |
-| `order\_id` | Chiave esterna associata alla tabella `sales\_flat\_order`. |
-| `customer\_id` | Chiave esterna associata alla tabella `customer\_entity`. |
+| `order_id` | Chiave esterna associata alla tabella `sales_flat_order`. |
+| `customer_id` | Chiave esterna associata alla tabella `customer_entity`. |
 
 {style="table-layout:auto"}
 
@@ -50,9 +50,9 @@ Ogni riga della tabella `enterprise_rma` (spesso denominata `magento_rma` in Ado
 
 | **Nome colonna** | **Descrizione** |
 |---|---|
-| `Order's created\_at` | Questa è la data dell&#39;ordine originale. Può essere utilizzato per ottenere il tempo tra l&#39;ordine e la richiesta di restituzione. |
+| `Order's created_at` | Questa è la data dell&#39;ordine originale. Può essere utilizzato per ottenere il tempo tra l&#39;ordine e la richiesta di restituzione. |
 | `Customer's order number` | Si tratta del numero di ordine del cliente associato all&#39;ordine originale. |
-| `Seconds between order's created\_at and return's date\_requested` | Il numero di secondi dalla data dell’ordine alla richiesta di ritorno. |
+| `Seconds between order's created_at and return's date_requested` | Il numero di secondi dalla data dell’ordine alla richiesta di ritorno. |
 | `Return's total value` | Si tratta dell&#39;importo monetario totale restituito. Si tratta della somma dell&#39;importo del reso individuale di ogni articolo di reso. |
 
 {style="table-layout:auto"}
@@ -61,7 +61,7 @@ Ogni riga della tabella `enterprise_rma` (spesso denominata `magento_rma` in Ado
 
 | **Nome metrica** | **Descrizione** | **Costruzione** |
 |---|---|---|
-| `Number of returns` | Il numero di restituzioni richieste. | `Operation` colonna: `entity id`<br>`Operation`: `Count`<br>`Timestamp` colonna: `date requested` |
+| `Number of returns` | Il numero di restituzioni richieste. | `Operation` colonna: `entity_id`<br>`Operation`: `Count`<br>`Timestamp` colonna: `date requested` |
 | `Total returned amount` | Importo monetario totale restituito. | `Operation `Colonna: `Return's total value`<br>`Operation`: Somma<br>`Timestamp` Colonna: data richiesta |
 | `Average returned amount` | Importo monetario medio restituito. | `Operation` ` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Colonna: `date requested` |
 | `Average time to return` | Tempo medio dall&#39;ordine alla restituzione. | `Operation` Colonna: secondi tra la data di creazione dell&#39;ordine e la data di restituzione richiesta<br>`Operation`: `Average`<br>`Timestamp` Colonna: `date requested` |
