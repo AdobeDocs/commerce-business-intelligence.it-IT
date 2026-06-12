@@ -5,27 +5,20 @@ exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
 role: Admin, User
 feature: Accounts, User Management
 TQID: https://experienceleague.adobe.com/O2cS-hbhjqktc4LpJD6agxgIwabrypgCY9fnJTCR2XM
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 204
+source-wordcount: 225
 ht-degree: 0%
 
 ---
 
 # Limita l’accesso
 
-Quando si crea un tunnel SSH nel server, non è necessario che [!DNL Adobe Commerce Intelligence] abbia accesso ad altro che al database. Se non si desidera che [!DNL Commerce Intelligence] disponga dell&#39;accesso completo al server che ospita il database, è possibile limitare l&#39;accesso forzando l&#39;utente [!DNL Commerce Intelligence Linux] in una [shell di base con restrizioni](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html).
+Quando si crea un tunnel SSH nel server, non è necessario che [!DNL Adobe Commerce Intelligence] abbia accesso ad altro che al database. Per la registrazione della chiave host SSH, gli errori e la risoluzione dei problemi, vedere [Verifica della chiave host SSH](../../data-analyst/importing-data/integrations/ssh-host-key-verification.md). Se non si desidera che [!DNL Commerce Intelligence] disponga dell&#39;accesso completo al server che ospita il database, è possibile limitare l&#39;accesso forzando l&#39;utente [!DNL Commerce Intelligence Linux] in una [shell di base con restrizioni](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html).
 
 È possibile indovinare dal nome, ma viene utilizzata una shell base limitata per impostare un ambiente più controllato della shell standard. La cosa importante di questo tipo di shell è che gli utenti con restrizioni della shell non possono accedere alle funzioni di sistema né apportare alcun tipo di modifica.
 
