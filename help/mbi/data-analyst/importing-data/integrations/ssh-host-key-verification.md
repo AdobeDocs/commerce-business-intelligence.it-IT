@@ -124,4 +124,4 @@ Includi il nome della connessione, l&#39;ora approssimativa dell&#39;ultimo **[!
 * [Connetti MySQL tramite tunnel SSH](mysql-via-ssh-tunnel.md)
 * [Collegare MongoDB tramite tunnel SSH](mongodb-via-ssh-tunnel.md)
 * [Connetti PostgreSQL tramite tunnel SSH](postgresql.md)
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
