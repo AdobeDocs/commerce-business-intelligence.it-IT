@@ -20,16 +20,16 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 400
+source-wordcount: 414
 ht-degree: 0%
 
 ---
 
 # Collegare i database tramite VPN
 
-Adobe consiglia di connettere i database utilizzando `SSH tunnel`, ma è anche possibile utilizzare una connessione `VPN` crittografata per mantenere la protezione. Un `VPN` può essere utilizzato per qualsiasi integrazione di database e, per semplificare le cose, il processo è quasi lo stesso della configurazione di un `SSH tunnel`:
+Adobe consiglia di connettere i database utilizzando `SSH tunnel`, ma è anche possibile utilizzare una connessione `VPN` crittografata per mantenere la protezione. Per la registrazione della chiave host SSH, gli errori e la risoluzione dei problemi relativi alle connessioni del tunnel SSH, vedere [Verifica della chiave host SSH](ssh-host-key-verification.md). Un `VPN` può essere utilizzato per qualsiasi integrazione di database e, per semplificare le cose, il processo è quasi lo stesso della configurazione di un `SSH tunnel`:
 
 1. [Crea un utente del database  [!DNL Commerce Intelligence] &#x200B;](#database)
 1. [Crea un utente VPN  [!DNL Commerce Intelligence] &#x200B;](#vpn)

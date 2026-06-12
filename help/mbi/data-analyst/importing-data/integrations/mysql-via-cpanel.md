@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 366
+source-wordcount: 400
 ht-degree: 0%
 
 ---
@@ -82,6 +82,11 @@ Se si utilizza un [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md), è ne
 
 Al termine, fare clic su **[!UICONTROL Save & Test]** per completare la configurazione.
 
-## Correlato:
+>[!NOTE]
+>
+>Se si utilizza un tunnel SSH, vedere [Verifica chiave host SSH](ssh-host-key-verification.md) per la registrazione, l&#39;aggiornamento, i messaggi di errore e la risoluzione dei problemi.
 
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+## Correlato {#related}
+
+* [Verifica chiave host SSH](ssh-host-key-verification.md)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)

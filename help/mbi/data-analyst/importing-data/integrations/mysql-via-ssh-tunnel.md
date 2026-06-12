@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 615
+source-wordcount: 642
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## PASSA A
 
-* [[!DNL MySQL] tramite &#x200B;](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] tramite `direct connection`](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL] tramite [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 Per connettere il database [!DNL MySQL] a [!DNL Commerce Intelligence] tramite `SSH tunnel`, è necessario eseguire alcune operazioni:
@@ -128,11 +128,16 @@ Immettere le informazioni seguenti in questa pagina, a partire dalla sezione `Da
 Nella sezione `SSH Connection`:
 
 * `Remote Address`: l&#39;indirizzo IP o il nome host del server [!DNL Commerce Intelligence] verrà sottoposto a tunneling in
-* `Username`: nome utente per l&#39;utente SSH ([!DNL Commerce Intelligence]) di [!DNL Linux]
+* `Username`: nome utente per l&#39;utente SSH ([!DNL Linux]) di [!DNL Commerce Intelligence]
 * `SSH Port`: porta SSH sul server (22 per impostazione predefinita)
 
 Al termine, fare clic su **[!UICONTROL Save & Test]** per completare la configurazione.
 
-## Correlato:
+>[!NOTE]
+>
+>Per la registrazione, l&#39;aggiornamento, i messaggi di errore e la risoluzione dei problemi relativi alla chiave host SSH, vedere [Verifica della chiave host SSH](ssh-host-key-verification.md).
 
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+## Correlato {#related}
+
+* [Verifica chiave host SSH](ssh-host-key-verification.md)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)

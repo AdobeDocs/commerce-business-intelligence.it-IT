@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 376
+source-wordcount: 399
 ht-degree: 0%
 
 ---
@@ -36,12 +36,13 @@ ht-degree: 0%
 
 ## Passa a
 
-* [[!DNL MySQL] tramite &#x200B;](../integrations/mysql-via-ssh-tunnel.md)
+* [[!DNL MySQL] tramite `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)
+* [Verifica chiave host SSH](../integrations/ssh-host-key-verification.md)
 * [[!DNL MySQL] tramite [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]
 >
->[!DNL Adobe] consiglia di utilizzare [SSH](../integrations/mysql-via-ssh-tunnel.md) o un&#39;altra forma di crittografia per proteggere i dati. Se questa non è un&#39;opzione, è comunque possibile connettere direttamente [!DNL Commerce Intelligence] al database utilizzando le istruzioni riportate in questo argomento.
+>[!DNL Adobe] consiglia di utilizzare [SSH](../integrations/mysql-via-ssh-tunnel.md) o un&#39;altra forma di crittografia per proteggere i dati. Per verificare la chiave host SSH, vedere [Verifica chiave host SSH](../integrations/ssh-host-key-verification.md). Se questa non è un&#39;opzione, è comunque possibile connettere direttamente [!DNL Commerce Intelligence] al database utilizzando le istruzioni riportate in questo argomento.
 
 Questo argomento illustra come collegare direttamente il database [!DNL MySQL] a [!DNL Commerce Intelligence]. Queste impostazioni possono essere utilizzate anche con [!DNL Adobe Commerce] o altri database di eCommerce che utilizzano MySQL.
 
@@ -81,4 +82,4 @@ Al termine, fare clic su **[!UICONTROL Save & Test]** per completare la configur
 
 ## Documentazione correlata
 
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)

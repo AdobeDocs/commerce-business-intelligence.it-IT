@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 95
+source-wordcount: 116
 ht-degree: 0%
 
 ---
@@ -36,9 +36,9 @@ ht-degree: 0%
 
 Vuoi vedere le prestazioni della tua azienda o trovare le fonti e i canali di acquisizione più importanti? La connessione dei dati di [!DNL WooCommerce] a [!DNL Commerce Intelligence] consente di rispondere a queste e altre domande.
 
-Il database [!DNL WooCommerce] è basato su [!DNL MySQL]. È possibile connettersi a [!DNL Commerce Intelligence] tramite una [connessione diretta](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md) o [&#x200B; tramite un `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobe consiglia di utilizzare il metodo SSH, in quanto è il più sicuro.
+Il database [!DNL WooCommerce] è basato su [!DNL MySQL]. È possibile connettersi a [!DNL Commerce Intelligence] tramite una [connessione diretta](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md) o [&#x200B; tramite un `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md). Adobe consiglia di utilizzare il metodo SSH, in quanto è il più sicuro. Per verificare la chiave host SSH, vedere [Verifica chiave host SSH](../integrations/ssh-host-key-verification.md).
 
 ## Correlato:
 
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
 * [Dimensioni dati consigliate per segmentazione e filtro](../../../best-practices/segment-filter.md)

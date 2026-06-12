@@ -16,16 +16,16 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 204
+source-wordcount: 225
 ht-degree: 0%
 
 ---
 
 # Limita l’accesso
 
-Quando si crea un tunnel SSH nel server, non è necessario che [!DNL Adobe Commerce Intelligence] abbia accesso ad altro che al database. Se non si desidera che [!DNL Commerce Intelligence] disponga dell&#39;accesso completo al server che ospita il database, è possibile limitare l&#39;accesso forzando l&#39;utente [!DNL Commerce Intelligence Linux] in una [shell di base con restrizioni](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html).
+Quando si crea un tunnel SSH nel server, non è necessario che [!DNL Adobe Commerce Intelligence] abbia accesso ad altro che al database. Per la registrazione della chiave host SSH, gli errori e la risoluzione dei problemi, vedere [Verifica della chiave host SSH](../../data-analyst/importing-data/integrations/ssh-host-key-verification.md). Se non si desidera che [!DNL Commerce Intelligence] disponga dell&#39;accesso completo al server che ospita il database, è possibile limitare l&#39;accesso forzando l&#39;utente [!DNL Commerce Intelligence Linux] in una [shell di base con restrizioni](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html).
 
 È possibile indovinare dal nome, ma viene utilizzata una shell base limitata per impostare un ambiente più controllato della shell standard. La cosa importante di questo tipo di shell è che gli utenti con restrizioni della shell non possono accedere alle funzioni di sistema né apportare alcun tipo di modifica.
 

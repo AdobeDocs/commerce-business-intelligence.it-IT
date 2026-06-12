@@ -22,9 +22,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: b6ae8fb1a1a7f30e3d56740986f9366e7d1e7f1a
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 732
+source-wordcount: 761
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Dopo aver creato l&#39;utente dedicato per [!DNL Commerce Intelligence] nell&#39
 
    ![Aggiungi modulo chiave pubblica con campo di testo chiave e pulsante Invia](../assets/paste-public-key.png)
 
-## Fornisci credenziali [!DNL Commerce Intelligence] di Essentials `MySQL`
+## Fornisci credenziali `MySQL` di Essentials [!DNL Commerce Intelligence]
 
 1. Aggiorna `.magento/services.yaml`.
 
@@ -122,7 +122,7 @@ Ottiene le informazioni sulla connessione al database [!DNL Commerce] in [!DNL C
 
 >[!NOTE]
 >
->Adobe consiglia vivamente di utilizzare un tunnel [`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) per stabilire la connessione al database. Tuttavia, se questo metodo non è un&#39;opzione, è comunque possibile collegare [!DNL Commerce Intelligence] al database utilizzando [`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md).
+>Adobe consiglia vivamente di utilizzare un tunnel [`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) per stabilire la connessione al database. Per la registrazione della chiave host SSH, gli errori e la risoluzione dei problemi, vedere [Verifica della chiave host SSH](../data-analyst/importing-data/integrations/ssh-host-key-verification.md). Tuttavia, se questo metodo non è un&#39;opzione, è comunque possibile collegare [!DNL Commerce Intelligence] al database utilizzando [`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md).
 
 Immettere le informazioni di [!DNL Commerce Intelligence] nella schermata [!UICONTROL Connect your Magento Database].
 

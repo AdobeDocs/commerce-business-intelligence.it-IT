@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 503
+source-wordcount: 516
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Quando si aggiungono gli indirizzi IP [!DNL Commerce Intelligence], assicurarsi 
 
 >[!NOTE]
 >
->Questo passaggio è necessario solo se si utilizza una connessione crittografata. Per istruzioni su come eseguire questa operazione, fare riferimento all&#39;argomento relativo alla configurazione del database in uso (ad esempio MySQL). L&#39;utente `Linux` ci consente di creare un `SSH tunnel`, che è il metodo più sicuro per inviare dati tramite Internet.
+>Questo passaggio è necessario solo se si utilizza una connessione crittografata. Per istruzioni su come eseguire questa operazione, fare riferimento all&#39;argomento relativo alla configurazione del database in uso (ad esempio MySQL). L&#39;utente `Linux` ci consente di creare un `SSH tunnel`, che è il metodo più sicuro per inviare dati tramite Internet. Per la registrazione della chiave host SSH, gli errori e la risoluzione dei problemi, vedere [Verifica della chiave host SSH](ssh-host-key-verification.md).
 
 ## Crea un utente del database per [!DNL Commerce Intelligence]
 
