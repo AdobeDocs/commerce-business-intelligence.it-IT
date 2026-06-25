@@ -23,7 +23,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
 source-wordcount: 628
 ht-degree: 0%
@@ -96,3 +96,4 @@ Per aggiungere un&#39;integrazione, fare clic su **[!UICONTROL Manage Data** > *
 ## Monitorare lo stato degli aggiornamenti (facoltativo)
 
 Dopo aver connesso le origini, potrebbe essere utile automatizzare un controllo di integrità di base per verificare il completamento degli aggiornamenti completi. Utilizza l&#39;API [Aggiorna stato ciclo](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/) nella documentazione per gli sviluppatori per recuperare il ciclo di aggiornamento completato più recente per il client e visualizzarlo in dashboard o avvisi interni.
+
