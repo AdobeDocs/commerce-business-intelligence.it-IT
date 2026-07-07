@@ -23,7 +23,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
 workflow-type: tm+mt
 source-wordcount: 877
 ht-degree: 0%
@@ -490,4 +490,5 @@ Tuttavia, gli utenti possono visualizzare i dati del dashboard filtrati in base 
 [!DNL Advanced User Management] estende le funzionalità di filtro dei dati ai riepiloghi delle e-mail. A seconda del pubblico, gli utenti amministratori possono specificare i gruppi di utenti per i quali devono essere filtrati i rapporti selezionati.
 
 ![Riepilogo e-mail pianificato](../../assets/schedule-email-summary.png)
+
 

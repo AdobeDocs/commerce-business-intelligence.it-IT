@@ -18,7 +18,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
 workflow-type: tm+mt
 source-wordcount: 229
 ht-degree: 0%
@@ -40,4 +40,5 @@ Di seguito è riportato l’elenco consigliato di elementi necessari per l’opz
 1. **Estensione del browser per la rotazione tra più schede contemporaneamente.** In questo modo è possibile impostare le dashboard selezionate da visualizzare in una scheda univoca. Adobe consiglia l&#39;estensione [Revolver Tabs](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) se utilizzi [!DNL Chrome].
 
 Dopo aver installato l&#39;hardware in alto, è possibile aprire una finestra del browser sullo schermo con un dashboard specifico che si desidera visualizzare in ogni scheda. Infine, configura il browser in modo che ruoti attraverso ogni dashboard alla frequenza desiderata.
+
 
