@@ -1,7 +1,6 @@
 ---
 title: Aggiungi un nuovo utente Adobe Commerce Intelligence
 description: Scopri come aggiungere un nuovo [!DNL Commerce Intelligence] utente e come aggiornare il tuo nome utente o password.
-exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
 role: Admin, User
 feature: User Management
 TQID: https://experienceleague.adobe.com/-cMJHvHlodd05-Np22qtxxS8lHMi4StXOz1iD83xWkU
@@ -18,12 +17,14 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 245
 ht-degree: 0%
 
 ---
+
 
 # Aggiungi un nuovo utente [!DNL Adobe Commerce Intelligence]
 
@@ -55,5 +56,3 @@ Se devi inviare nuovamente l&#39;invito, nella [pagina di accesso](https://dashb
 >[!IMPORTANT]
 >
 >Ogni account dispone di un numero contrattuale di licenze o di posti. Se raggiungi il limite o desideri saperne di più, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
-
-

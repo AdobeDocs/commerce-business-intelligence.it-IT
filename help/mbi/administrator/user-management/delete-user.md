@@ -1,7 +1,6 @@
 ---
 title: Eliminare o riattivare un utente Adobe Commerce Intelligence
 description: Scopri come eliminare un utente  [!DNL Commerce Intelligence] .
-exl-id: 0590275d-3329-40fb-8be1-4a700438338d
 role: Admin, User
 feature: User Management
 product_v2:
@@ -19,12 +18,14 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 0590275d-3329-40fb-8be1-4a700438338d
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 201
 ht-degree: 0%
 
 ---
+
 
 # Elimina un utente [!DNL Adobe Commerce Intelligence]
 
@@ -43,5 +44,3 @@ Se hai solo bisogno che le dashboard di tale utente vengano inviate all’accoun
 1. Utilizzare l&#39;indirizzo di posta elettronica dell&#39;utente eliminato per creare un nuovo utente [!DNL Commerce Intelligence].
 1. [Invia una notifica al supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) dopo aver creato l&#39;utente. Il supporto trasferisce le dashboard nel tuo account.
 1. Dopo che il supporto Adobe ti ha notificato il trasferimento, puoi eliminare nuovamente l’utente.
-
-
