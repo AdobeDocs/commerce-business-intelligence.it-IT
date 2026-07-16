@@ -84,4 +84,4 @@ Questa tabella include le stesse informazioni della tabella `facebook_ads_insigh
 ## Correlato
 
 * [Connessione in corso  [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
