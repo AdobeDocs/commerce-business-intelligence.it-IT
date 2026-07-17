@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: c8d7097b4f841a4fe8c5777f207ea0ea53202a0f
 workflow-type: tm+mt
-source-wordcount: 303
+source-wordcount: 342
 ht-degree: 0%
 
 ---
@@ -37,19 +37,27 @@ Questo argomento offre una breve panoramica delle tabelle che Adobe consiglia di
 
 Queste tabelle contengono dati sui componenti core di ad campaign.
 
-### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
+### `facebook _campaigns_ (account-id)`
+
+[`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
 
 Questa tabella è la tabella principale delle campagne in un account [!DNL Facebook Ads]. Le colonne includono `campaign id`, `name`, `status (active/paused)`, `objective`.
 
-### [`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
+### `facebook _adsets_ (account-id)`
+
+[`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
 
 Questo record di tabella è la tabella principale di [!DNL Facebook Ads] set in un account [!DNL Facebook Ads]. Le colonne includono l&#39;annuncio `Campaign id/name` a cui appartiene il set di annunci, il budget, il tipo di offerta, la pianificazione e le informazioni sul targeting del pubblico.
 
-### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
+### `facebook _ads_ (account-id)`
+
+[`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
 
 Questa tabella registra tutti gli annunci in un account [!DNL Facebook Ads]. Le colonne includono le informazioni sull’annuncio, tra cui il set di annunci e la campagna pubblicitaria a cui appartiene, l’offerta pubblicitaria, il targeting degli annunci e il riferimento a specifici contenuti creativi (immagine/testo) utilizzati dall’annuncio.
 
-### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
+### `facebook _adcreative_ (account-id)`
+
+[`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
 
 Questa tabella registra le creatività utilizzate in [!DNL Facebook Ads]. I creativi includono il nome della creatività, la descrizione e gli URL immagine pertinenti, se del caso.
 
@@ -76,4 +84,4 @@ Questa tabella include le stesse informazioni della tabella `facebook_ads_insigh
 ## Correlato
 
 * [Connessione in corso  [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)

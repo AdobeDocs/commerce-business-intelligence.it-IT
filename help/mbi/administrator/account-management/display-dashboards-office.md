@@ -18,7 +18,7 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
-source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
+source-git-commit: 8dadc431bf2aa7e353c7aeea31db7fef75a011f0
 workflow-type: tm+mt
 source-wordcount: 229
 ht-degree: 0%
@@ -37,4 +37,4 @@ Di seguito è riportato l’elenco consigliato di elementi necessari per l’opz
 1. **Tastiera e mouse USB** per controllare il dongle.
 1. **Estensione del browser per la rotazione tra più schede contemporaneamente.** In questo modo è possibile impostare le dashboard selezionate da visualizzare in una scheda univoca. Adobe consiglia l&#39;estensione [Revolver Tabs](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) se utilizzi [!DNL Chrome].
 
-Dopo aver installato l&#39;hardware in alto, è possibile aprire una finestra del browser sullo schermo con un dashboard specifico che si desidera visualizzare in ogni scheda. Infine, configura il browser in modo che ruoti attraverso ogni dashboard alla frequenza desiderata.
+Una volta che si dispone dell&#39;hardware necessario, è possibile aprire una finestra del browser sullo schermo con un dashboard specifico che si desidera visualizzare in ogni scheda. Infine, configura il browser in modo che ruoti attraverso ogni dashboard alla frequenza desiderata.
