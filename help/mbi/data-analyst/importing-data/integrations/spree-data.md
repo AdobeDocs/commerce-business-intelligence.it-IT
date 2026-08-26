@@ -46,4 +46,4 @@ In questo argomento vengono illustrate le principali tabelle dati che è possibi
 ## Correlato:
 
 * [Connessione in corso  [!DNL Spree]](../integrations/spree.md)
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

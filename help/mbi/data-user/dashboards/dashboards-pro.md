@@ -36,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->L’accesso a queste dashboard dipende dal tipo di account e dal livello di accesso. Se queste dashboard non vengono visualizzate, contatta il [supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+>L’accesso a queste dashboard dipende dal tipo di account e dal livello di accesso. Se queste dashboard non vengono visualizzate, contatta il [supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## Disponibilità del rapporto
 
@@ -152,7 +152,7 @@ Il pannello di controllo Ordini fornisce informazioni sul volume transazionale d
 
 ## Prodotti
 
-Il dashboard Prodotti mostra le prestazioni generali del prodotto in termini di prodotti ordinati, valore lordo delle merci (GMV, Gross Merchandise Value) e principali prodotti acquistati e rimborsati. Può aiutarti a bilanciare acquisti e restituzioni e a determinare il successo e la popolarità del prodotto. L&#39;archivio deve essere [configurato per tenere traccia dei rimborsi](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure) per i grafici da compilare.
+Il dashboard Prodotti mostra le prestazioni generali del prodotto in termini di prodotti ordinati, valore lordo delle merci (GMV, Gross Merchandise Value) e principali prodotti acquistati e rimborsati. Può aiutarti a bilanciare acquisti e restituzioni e a determinare il successo e la popolarità del prodotto. L&#39;archivio deve essere [configurato per tenere traccia dei rimborsi](https://experienceleague.adobe.com/it/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure) per i grafici da compilare.
 
 >[!NOTE]
 >

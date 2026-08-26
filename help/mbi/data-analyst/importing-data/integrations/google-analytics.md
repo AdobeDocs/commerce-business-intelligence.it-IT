@@ -75,7 +75,7 @@ Per identificare l&#39;ID profilo [!DNL Google Analytics] di un particolare sito
 
 ## Correlato:
 
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [Connessione in corso  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analisi delle attività del sito web e dei tassi di conversione dei clienti](../../analysis/web-act-cust-conversion.md)
 * [Tieni traccia dei dati di acquisizione dell&#39;utente utilizzando  [!DNL Google Analytics] cookie](../../analysis/google-track-user-acq.md)

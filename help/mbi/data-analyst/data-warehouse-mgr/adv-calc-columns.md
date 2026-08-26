@@ -179,7 +179,7 @@ Per creare questo tipo di colonna calcolata, è necessario conoscere:
 
 Non preoccuparti. Solo perché non è elencato qui non significa che non è possibile. Il team Adobe degli analisti Data Warehouse può aiutarti.
 
-Per definire una nuova colonna calcolata, [invia un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) con i dettagli su ciò che desideri compilare.
+Per definire una nuova colonna calcolata, [invia un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) con i dettagli su ciò che desideri compilare.
 
 ## Documentazione correlata
 

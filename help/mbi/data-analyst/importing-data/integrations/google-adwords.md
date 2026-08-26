@@ -72,7 +72,7 @@ Se hai più profili e hai bisogno di aiuto per identificare quale sia, consulta 
 
 ## Correlato
 
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [Tracciare l&#39;origine di riferimento dell&#39;ordine tramite [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Tracciare l&#39;origine di riferimento dell&#39;utente nel database](../../analysis/google-track-user-acq.md)
 * [Scopri le fonti e i canali di acquisizione più importanti](../../analysis/most-value-source-channel.md)

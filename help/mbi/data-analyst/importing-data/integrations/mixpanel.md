@@ -80,4 +80,4 @@ Se la connessione ha esito positivo, un _operazione riuscita!_ viene visualizzat
 ### Correlato
 
 * [Previsti [!DNL Mixpanel] dati](../integrations/mixpanel-data.md)
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

@@ -71,4 +71,4 @@ Per completare il processo, è necessario aprire due finestre o schede del brows
 ## Correlato:
 
 * [Previsti [!DNL Zendesk] dati](../integrations/exp-zendesk-data.md)
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

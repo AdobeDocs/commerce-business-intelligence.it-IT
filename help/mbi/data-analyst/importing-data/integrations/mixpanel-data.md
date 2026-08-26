@@ -47,4 +47,4 @@ In questo argomento vengono illustrate le principali tabelle dati che è possibi
 ## Documentazione correlata
 
 * [Connessione in corso  [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

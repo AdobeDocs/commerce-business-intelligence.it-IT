@@ -64,4 +64,4 @@ Puoi anche scrivere query personalizzate ed esportare i risultati da confrontare
 
 >[!NOTE]
 >
->Se riscontri una discrepanza dopo aver controllato i dati, consulta l&#39;argomento di supporto [Contattare il supporto: discrepanze di dati](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies) per ulteriori informazioni su come procedere.
+>Se riscontri una discrepanza dopo aver controllato i dati, consulta l&#39;argomento di supporto [Contattare il supporto: discrepanze di dati](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies) per ulteriori informazioni su come procedere.

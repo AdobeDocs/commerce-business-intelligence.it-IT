@@ -82,4 +82,4 @@ Al termine, fare clic su **[!UICONTROL Save & Test]** per completare la configur
 
 ## Documentazione correlata
 
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
