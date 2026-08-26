@@ -1,30 +1,18 @@
 ---
 title: Tabella preventivo
-description: Scopri come utilizzare la tabella delle offerte.
+description: Rivedi lo schema della tabella delle virgolette in Commerce Intelligence, che tiene traccia di ogni carrello. Scopri i consigli di Adobe per gestire le dimensioni delle tabelle nel tempo.
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/Q-46fusr2IS4ZQDrR8IjHEttueSBpT2-LQBtsejMEC4
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 612
+source-wordcount: 627
 ht-degree: 0%
 
 ---
@@ -51,7 +39,7 @@ La tabella `quote` (`sales_flat_quote` su M1) contiene record in ogni carrello c
 | `is_active` | Campo booleano che restituisce &quot;1&quot; se il carrello è stato creato da un cliente e non è ancora stato convertito in un ordine. Restituisce &quot;0&quot; per i carrelli convertiti o creati tramite l’amministratore |
 | `items_qty` | Somma della quantità totale di tutti gli articoli inclusi nel carrello |
 | `reserved_order_id` | `Foreign key` associato alla tabella `sales_order`. Unisciti a `sales_order.increment_id` per determinare i dettagli dell&#39;ordine associati a un carrello convertito. Per i carrelli non associati a un ordine convertito, `reserved_order_id` rimane `NULL` |
-| `store_id` | `Foreign key` associato alla tabella `store`. Partecipa a `store`.`store_id` per determinare quale visualizzazione archivio Commerce è associata al carrello |
+| `store_id` | `Foreign key` associato alla tabella `store`. Partecipa a `store`.`store_id` per determinare quale visualizzazione store di Commerce è associata al carrello |
 
 {style="table-layout:auto"}
 
@@ -81,14 +69,14 @@ La tabella `quote` (`sales_flat_quote` su M1) contiene record in ogni carrello c
 `customer_entity`
 
 * Partecipa alla tabella `customer_entity` per creare nuove colonne a livello di cliente associate al cliente che ha creato il carrello.
-   * Percorso: `quote.customer_id` (molti) => `customer_entity.entity_id` (uno)
+  * Percorso: `quote.customer_id` (molti) => `customer_entity.entity_id` (uno)
 
 `sales_order`
 
 * Partecipa alla tabella `sales_order` per creare colonne che restituiscono i dettagli dell&#39;ordine associati a un carrello convertito.
-   * Percorso: `quote.reserved_order_id` (molti) => `sales_order.increment_id` (uno)
+  * Percorso: `quote.reserved_order_id` (molti) => `sales_order.increment_id` (uno)
 
 `store`
 
 * Partecipa alla tabella `store` per creare colonne che restituiscono dettagli relativi all&#39;archivio Commerce associato al carrello.
-   * Percorso: `quote.store_id` (molti) => `store.store_id` (uno)
+  * Percorso: `quote.store_id` (molti) => `store.store_id` (uno)

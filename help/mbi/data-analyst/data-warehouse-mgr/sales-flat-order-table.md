@@ -1,32 +1,18 @@
 ---
 title: tabella sales_order
-description: Scopri come utilizzare la tabella sales_order.
+description: Esplora la struttura della tabella sales_order nel Data Warehouse di Commerce Intelligence. Scopri in che modo ogni riga rappresenta un ordine e dove si verificano divisioni personalizzate.
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/zdxIx9qHzEyoCbFzh0EBv1BKJEWiShtAt33-dtkEGNo
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 1200
+source-wordcount: 1215
 ht-degree: 0%
 
 ---
@@ -65,26 +51,26 @@ Questa tabella include tutti gli ordini dei clienti, indipendentemente dal fatto
 
 | **Nome colonna** | **Descrizione** |
 |---|---|
-| `Billing address city` | Città di fatturazione dell&#39;ordine. Calcolato unendo `sales_order`.Da `billing_address_id` a `sales_order_address`.`entity_id` e restituzione del campo `city` |
-| `Billing address country` | Codice paese di fatturazione per l’ordine. Calcolato unendo `sales_order`.Da `billing_address_id` a `sales_order_address`.`entity_id` e restituzione di `country_id` |
-| `Billing address region` | Area di fatturazione (spesso stato o provincia) per l’ordine. Calcolato unendo `sales_order`.Da `billing_address_id` a `sales_order_address`.`entity_id` e restituzione del campo `region` |
-| `Customer's first order date` | Timestamp del primo ordine effettuato da questo cliente. Spesso viene considerata come la &quot;data di acquisizione&quot; per un cliente. Calcolato restituendo il minimo `sales_order`.Valore `created_at` per ogni cliente univoco |
+| `Billing address city` | Città di fatturazione dell&#39;ordine. Calcolato unendo `sales_order`.`billing_address_id` a `sales_order_address`.`entity_id` e restituisce il campo `city` |
+| `Billing address country` | Codice paese di fatturazione per l’ordine. Calcolato unendo `sales_order`.`billing_address_id` a `sales_order_address`.`entity_id` e restituisce `country_id` |
+| `Billing address region` | Area di fatturazione (spesso stato o provincia) per l’ordine. Calcolato unendo `sales_order`.`billing_address_id` a `sales_order_address`.`entity_id` e restituisce il campo `region` |
+| `Customer's first order date` | Timestamp del primo ordine effettuato da questo cliente. Spesso viene considerata come la &quot;data di acquisizione&quot; per un cliente. Calcolato restituendo il minimo `sales_order`.`created_at` valore per ogni cliente univoco |
 | `Customer's first order's billing region` | Area di fatturazione dell’acquisizione per il cliente che ha effettuato l’ordine. Calcolato restituendo il `Billing address region` associato al primo ordine del cliente |
 | `Customer's first order's coupon_code` | Codice coupon di acquisizione per il cliente che ha effettuato l&#39;ordine. Calcolato restituendo il `coupon_code` associato al primo ordine del cliente |
-| `Customer's group code` | Nome del gruppo del cliente che ha effettuato l&#39;ordine. Calcolato unendo `sales_order`.Da `customer_group_id` a `customer_group`.`customer_group_id` e restituzione del campo `customer_group_code` |
+| `Customer's group code` | Nome del gruppo del cliente che ha effettuato l&#39;ordine. Calcolato unendo `sales_order`.`customer_group_id` a `customer_group`.`customer_group_id` e restituisce il campo `customer_group_code` |
 | `Customer's lifetime number of coupons` | Quantità totale di cedole applicate a tutti gli ordini effettuati dal cliente. Calcolato contando il numero di ordini in cui `coupon_code` non è `NULL` per ciascun cliente univoco |
 | `Customer's lifetime number of orders` | Numero totale di ordini effettuati dal cliente. Calcolato contando il numero di righe nella tabella `sales_order` per ogni cliente univoco |
 | `Customer's lifetime revenue` | Somma il totale dei ricavi per tutti gli ordini effettuati dal cliente. Calcolato sommando il campo `base_grand_total` per tutti gli ordini di ciascun cliente univoco |
 | `Customer's order number` | Classificazione ordine sequenziale per l&#39;ordine del cliente. Calcolato identificando tutti gli ordini effettuati da un cliente, ordinandoli in ordine crescente in base alla marca temporale `created_at` e assegnando un valore intero incrementale a ciascun ordine. Ad esempio, il primo ordine del cliente restituisce `Customer's order number` di 1, il secondo ordine del cliente restituisce `Customer's order number` di 2 e così via. |
 | `Customer's order number (previous-current)` | Classificazione dell&#39;ordine precedente del cliente concatenato con la classificazione di questo ordine, separati da un carattere `-`. Calcolato concatenando (&quot;`Customer's order number` - 1&quot;) con &quot;`-`&quot; seguito da &quot;`Customer's order number`&quot;. Ad esempio, per l&#39;ordine associato al secondo acquisto del cliente, questa colonna restituisce il valore `1-2`. Più spesso utilizzato quando si rappresenta il tempo tra due eventi di ordine (ovvero, nel grafico &quot;Tempo tra gli ordini&quot;) |
 | `Is customer's last order?` | Determina se l&#39;ordine corrisponde all&#39;ultimo ordine del cliente o all&#39;ordine più recente. Calcolato confrontando il valore `Customer's order number` con `Customer's lifetime number of orders`. Quando questi due campi sono uguali per l&#39;ordine specificato, questa colonna restituisce `Yes`; in caso contrario restituisce `No` |
-| `Number of items in order` | Quantità totale di articoli inclusi nell&#39;ordine. Calcolato unendo `sales_order`.Da `entity_id` a `sales_order_item`.`order_id` e somma di `sales_order_item`.Campo `qty_ordered` |
+| `Number of items in order` | Quantità totale di articoli inclusi nell&#39;ordine. Calcolato unendo `sales_order`.`entity_id` a `sales_order_item`.`order_id` e somma di `sales_order_item`.`qty_ordered` campo |
 | `Seconds between customer's first order date and this order` | Tempo trascorso tra questo ordine e il primo ordine del cliente. Calcolato sottraendo `Customer's first order date` da `created_at` per ogni ordine, restituito come numero intero di secondi |
 | `Seconds since previous order` | Tempo trascorso tra questo ordine e l&#39;ordine immediatamente precedente del cliente. Calcolato sottraendo `created_at` per l&#39;ordine precedente dal `created_at` di questo ordine, restituito come numero intero di secondi. Ad esempio, per il record dell’ordine corrispondente al terzo ordine di un cliente, questa colonna restituisce il numero di secondi tra il secondo e il terzo ordine del cliente. Per il primo ordine del cliente, questo campo restituisce `NULL` |
-| `Shipping address city` | Città di spedizione per l&#39;ordine. Calcolato unendo `sales_order`.Da `shipping_address_id` a `sales_order_address`.`entity_id` e restituzione del campo `city` |
-| `Shipping address country` | Codice paese di spedizione per l&#39;ordine. Calcolato unendo `sales_order`.Da `Shipping_address_id` a `sales_order_address`.`entity_id` e restituzione di `country_id` |
-| `Shipping address region` | Area di spedizione (spesso stato o provincia) per l&#39;ordine. Calcolato unendo `sales_order`.Da `shipping_address_id` a `sales_order_address`.`entity_id` e restituzione del campo `region` |
-| `Store name` | Nome dell&#39;archivio Commerce associato a questo ordine. Calcolato unendo `sales_order`.Da `store_id` a `store`.`store_id` e restituzione del campo `name` |
+| `Shipping address city` | Città di spedizione per l&#39;ordine. Calcolato unendo `sales_order`.`shipping_address_id` a `sales_order_address`.`entity_id` e restituisce il campo `city` |
+| `Shipping address country` | Codice paese di spedizione per l&#39;ordine. Calcolato unendo `sales_order`.`Shipping_address_id` a `sales_order_address`.`entity_id` e restituisce `country_id` |
+| `Shipping address region` | Area di spedizione (spesso stato o provincia) per l&#39;ordine. Calcolato unendo `sales_order`.`shipping_address_id` a `sales_order_address`.`entity_id` e restituisce il campo `region` |
+| `Store name` | Nome dell&#39;archivio Commerce associato a questo ordine. Calcolato unendo `sales_order`.`store_id` a `store`.`store_id` e restituisce il campo `name` |
 
 ## Metriche comuni
 
@@ -105,21 +91,21 @@ Questa tabella include tutti gli ordini dei clienti, indipendentemente dal fatto
 `customer_entity`
 
 * Partecipa alla tabella `customer_entity` per creare nuove colonne a livello di cliente associate al cliente che ha effettuato l&#39;ordine.
-   * Percorso: `sales_order.customer_id` (molti) => `customer_entity.entity_id` (uno)
+  * Percorso: `sales_order.customer_id` (molti) => `customer_entity.entity_id` (uno)
 
 `customer_group`
 
 * Partecipa alla tabella `customer_group` per creare colonne che restituiscono il nome del gruppo di clienti del cliente che ha effettuato l&#39;ordine.
-   * Percorso: `sales_order.customer_group_id` (molti) => `customer_group.customer_group_id` (uno)
+  * Percorso: `sales_order.customer_group_id` (molti) => `customer_group.customer_group_id` (uno)
 
 `sales_order_address`
 
 * Unisciti alla tabella `sales_order_address` per creare colonne che restituiscono le ubicazioni di fatturazione e di spedizione associate all&#39;ordine. Sono possibili due percorsi di unione, a seconda che siano necessari i dettagli di fatturazione o di spedizione.
-   * Percorsi:
-      * Spedizione: `sales_order.shipping_address_id`(molti) => `sales_order_address.entity_id` (uno)
-      * Fatturazione: `sales_order.billing_address_id`(molti) => `sales_order_address.entity_id` (uno)
+  * Percorsi:
+    * Spedizione: `sales_order.shipping_address_id`(molti) => `sales_order_address.entity_id` (uno)
+    * Fatturazione: `sales_order.billing_address_id`(molti) => `sales_order_address.entity_id` (uno)
 
 `store`
 
 * Partecipa alla tabella `store` per creare colonne che restituiscono i dettagli relativi all&#39;archivio Commerce associato all&#39;ordine.
-   * Percorso: `sales_order.store_id` (molti) => `store.store_id` (uno)
+  * Percorso: `sales_order.store_id` (molti) => `store.store_id` (uno)

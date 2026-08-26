@@ -1,27 +1,18 @@
 ---
 title: Connetti [!DNL MongoDB] tramite tunnel SSH
-description: Scopri come connettersi [!DNL MongoDB] tramite tunnel SSH.
+description: Scopri come collegare in modo sicuro il database MongoDB a Commerce Intelligence utilizzando un tunnel SSH, inclusi i passaggi chiave di configurazione e configurazione della connessione.
 exl-id: 3557a8c7-c4c5-4742-ae30-125c719aca39
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/fYXQ353R-dPB-rSeYCR2w0c8Lp5I0HoVYh1A3UAI6aI
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 686
+source-wordcount: 705
 ht-degree: 0%
 
 ---
@@ -30,8 +21,8 @@ ht-degree: 0%
 
 Per connettere il database [!DNL MongoDB] a [!DNL Commerce Intelligence] tramite un tunnel SSH, è necessario eseguire alcune operazioni:
 
-1. [Recupera la chiave pubblica  [!DNL Commerce Intelligence] &#x200B;](#retrieve)
-1. [Consenti accesso all&#39;indirizzo IP  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
+1. [Recupera la chiave pubblica  [!DNL Commerce Intelligence] ](#retrieve)
+1. [Consenti accesso all&#39;indirizzo IP  [!DNL Commerce Intelligence] ](#allowlist)
 1. [Creare un utente Linux per Commerce Intelligence](#linux)
 1. [Crea un utente  [!DNL MongoDB]  per Commerce Intelligence](#mongodb)
 1. [Immetti la connessione e le informazioni utente in  [!DNL Commerce Intelligence]](#finish)
@@ -166,4 +157,4 @@ Al termine, fare clic su **[!UICONTROL Save & Test]** per completare la configur
 ## Correlato {#related}
 
 * [Verifica chiave host SSH](ssh-host-key-verification.md)
-* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
