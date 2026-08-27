@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 343
+source-wordcount: 357
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Se si aggiunge un filtro che utilizza una dimensione non uguale per tutti gli or
 
 In alcuni casi, è possibile trasformare una dimensione `order-specific` in una dimensione `user-specific` da aggiungere come filtro nel grafico `Repeat Order Probability`. In questi casi, viene restituito l&#39;attributo order del primo ordine o dell&#39;ultimo ordine di un utente, ad esempio il nome dell&#39;area di primo ordine dell&#39;utente.
 
-Se desideri creare una nuova dimensione, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Se desideri creare una nuova dimensione, [contatta il supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## Confronto della probabilità di ripetizione degli ordini con attributi diversi
 

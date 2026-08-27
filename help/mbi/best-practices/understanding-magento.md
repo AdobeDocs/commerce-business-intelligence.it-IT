@@ -21,16 +21,16 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 749
+source-wordcount: 770
 ht-degree: 0%
 
 ---
 
 # L&#39;ambiente [!DNL Adobe Commerce Intelligence]
 
-Mentre analizzi i dati di e-commerce, presta attenzione a questi fattori e ai pregiudizi più comuni. Se hai bisogno di assistenza per assicurarti di utilizzare correttamente lo schema di Commerce, non esitare a [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Mentre analizzi i dati di e-commerce, presta attenzione a questi fattori e ai pregiudizi più comuni. Se hai bisogno di assistenza per assicurarti di utilizzare correttamente lo schema di Commerce, non esitare a [contattare il supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## [!DNL entity\_id]
 

@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 628
+source-wordcount: 627
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ Per aggiungere un&#39;integrazione, fare clic su **[!UICONTROL Manage Data** > *
 * [Consolidamento delle tabelle](../../../best-practices/consolidating-your-tables.md)
 * [Limitazione dell&#39;accesso al database](../../../administrator/account-management/restrict-db-access.md)
 
-**Integrazione non visualizzata?** Per renderle visibili nel tuo account, è necessario attivare alcune integrazioni. Se si cerca qualcosa come [!DNL Facebook] ma non è elencato, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+**Integrazione non visualizzata?** Per renderle visibili nel tuo account, è necessario attivare alcune integrazioni. Se si cerca qualcosa come [!DNL Facebook] ma non è elencato, [invia un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 **Se viene visualizzato uno stato di errore per un&#39;integrazione**, consultare la [sezione per la risoluzione dei problemi](https://support.magento.com/hc/en-us/sections/360003078151).
 
 ## Monitorare lo stato degli aggiornamenti (facoltativo)
 
-Dopo aver connesso le origini, potrebbe essere utile automatizzare un controllo di integrità di base per verificare il completamento degli aggiornamenti completi. Utilizza l&#39;API [Aggiorna stato ciclo](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/) nella documentazione per gli sviluppatori per recuperare il ciclo di aggiornamento completato più recente per il client e visualizzarlo in dashboard o avvisi interni.
+Dopo aver connesso le origini, potrebbe essere utile automatizzare un controllo di integrità di base per verificare il completamento degli aggiornamenti completi. Utilizza l&#39;API [Aggiorna stato ciclo](https://developer.adobe.com/commerce/services/reporting/update-cycle/) nella documentazione per gli sviluppatori per recuperare il ciclo di aggiornamento completato più recente per il client e visualizzarlo in dashboard o avvisi interni.
 

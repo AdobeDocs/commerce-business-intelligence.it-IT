@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 261
+source-wordcount: 271
 ht-degree: 0%
 
 ---
@@ -66,9 +66,9 @@ Per completare il processo, è necessario aprire due finestre o schede del brows
 
 1. Immetti il prefisso del sito [!DNL Zendesk] e l&#39;indirizzo e-mail di accesso nella pagina delle credenziali [!DNL Zendesk] in [!DNL Commerce Intelligence].
 1. Immetti il token API.
-1. Fare clic su **[!UICONTROL Save & Connect]**. Se la connessione ha esito positivo, *Connessione riuscita.Il messaggio* viene visualizzato nella parte superiore dello schermo.
+1. Fare clic su **[!UICONTROL Save & Connect]**. Se la connessione ha esito positivo, *Connessione riuscita!* Il messaggio viene visualizzato nella parte superiore dello schermo.
 
 ## Correlato:
 
 * [Previsti [!DNL Zendesk] dati](../integrations/exp-zendesk-data.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

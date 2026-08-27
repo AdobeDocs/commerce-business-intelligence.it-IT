@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1253
+source-wordcount: 1265
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ ht-degree: 0%
 ## Prerequisiti
 
 * Importa i dati sui costi pubblicitari:
-   * [Connetti  [!DNL Google AdWords] a [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): questa operazione sincronizza la spesa di [!DNL Adwords] in [!DNL Commerce Intelligence]
-   * [Carica altri dati sui costi della pubblicità](../importing-data/connecting-data/import-offline-ad-data.md): consigliato per i canali senza un connettore diretto a [!DNL Commerce Intelligence]
-   * Se importi dati sui costi da più origini, puoi [consolidare](../../best-practices/consolidating-your-tables.md) i dati in [!DNL Commerce Intelligence]. È sufficiente [inviare un ticket di supporto](../../guide-overview.md#Submitting-a-Support-Ticket).
+  * [Connetti  [!DNL Google AdWords] a [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): questa operazione sincronizza la spesa di [!DNL Adwords] in [!DNL Commerce Intelligence]
+  * [Carica altri dati sui costi della pubblicità](../importing-data/connecting-data/import-offline-ad-data.md): consigliato per i canali senza un connettore diretto a [!DNL Commerce Intelligence]
+  * Se importi dati sui costi da più origini, puoi [consolidare](../../best-practices/consolidating-your-tables.md) i dati in [!DNL Commerce Intelligence]. È sufficiente [inviare un ticket di supporto](../../guide-overview.md#Submitting-a-Support-Ticket).
 * [Tracciare i dati del canale di acquisizione dell&#39;utente](../analysis/google-track-user-acq.md)
 
 ## Campagne di acquisizione utente
@@ -115,7 +115,7 @@ Stai eseguendo annunci pubblicitari specifici per il prodotto? In tal caso, puoi
 >
 >Questo esempio presuppone che tutti i costi della campagna siano stati utilizzati esclusivamente per generare acquisti di prodotti specifici. Supponendo che tutti i costi siano stati spesi per la generazione di acquisti, il ROI risultante rappresenta lo scenario peggiore (costo più alto per acquisto). Puoi essere sicuro che il ROI effettivo sia superiore a questo calcolo. Esempio: supponendo di aver speso 20 $ per una campagna che ha generato 10 nuovi utenti e 10 acquisti, il costo effettivo per acquisto è di 1 $. Presumendo che tutti i costi siano andati ad acquisire nuovi utenti, il costo per acquisto è di 2 $.
 
-Prima di iniziare, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per unire le dimensioni seguenti alla tabella degli elementi di riga (`sales\_flat\_order\_item, order\_item`):
+Prima di iniziare, [invia un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) per unire le dimensioni seguenti alla tabella degli elementi di riga (`sales\_flat\_order\_item, order\_item`):
 
 * Origine dell’ordine (se tieni traccia solo dell’origine di riferimento a livello di utente, quindi unisci all’origine dell’utente)
 * Campagna dell’ordine (se tieni traccia solo dell’origine di riferimento a livello di utente, quindi partecipa alla campagna dell’utente)
@@ -126,7 +126,7 @@ Prima di iniziare, [invia un ticket di supporto](https://experienceleague.adobe.
 1. In qualsiasi dashboard, fare clic su **[!UICONTROL Add Report > Create new report]**
 1. Seleziona la metrica `Revenue by items` che calcola i ricavi a livello di elementi riga
 1. Imposta [!UICONTROL Time period] su `All-time` e [!UICONTROL Interval] su `None`
-1. Nella scheda `Filter by`, aggiungi `product name 'IN'` Prodotto `A`, Prodotto `B`, Prodotto `C`, ...&quot; e includi tutti i nomi di prodotto target della campagna separati da una virgola (ad esempio, `product name 'IN' yellow t-shirt`, `red t-shirt, blue t-shirt`)
+1. Nella scheda `Filter by`, aggiungere `product name 'IN'` prodotto `A`, prodotto `B`, prodotto `C`, ...&quot; e includere tutti i nomi di prodotto target della campagna separati da virgola (ad esempio, `product name 'IN' yellow t-shirt`, `red t-shirt, blue t-shirt`)
 1. Nella scheda `Group by`, aggiungi `order's campaign` o `order's utm\_campaign` come campo `grouping` e fai clic su **[!UICONTROL Add All]** nella casella
 1. Questo rapporto mostra i ricavi per prodotti specifici per campagne
 

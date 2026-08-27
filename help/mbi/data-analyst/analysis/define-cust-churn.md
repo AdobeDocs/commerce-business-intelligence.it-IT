@@ -20,10 +20,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 482
-ht-degree: 0%
+source-wordcount: 593
+ht-degree: 16%
 
 ---
 
@@ -53,8 +53,8 @@ Colonne da creare
 * Seleziona una definizione: colonna unita
 * Seleziona [!UICONTROL table]: `customer_entity`
 * Seleziona [!UICONTROL column]: `Customer's lifetime number of orders`
-* [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
-* [!UICONTROL Filter]: `Orders we count`
+* [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
+* [!UICONTROL Filter]&#x200B;: `Orders we count`
 
 * `Seconds since created_at`
 * Selezionare una definizione: `Age`
@@ -78,65 +78,65 @@ Nessuna nuova metrica.
 
 * **Probabilità ordine di ripetizione iniziale**
 * Metrica A: Ordini ripetuti in qualsiasi momento
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * Metrica B: Ordini di tutti i tempi
 * [!UICONTROL Metric]: numero di ordini
 
 * [!UICONTROL Formula]: probabilità ordine di ripetizione iniziale
 * &#x200B;
-  [!UICONTROL Formula]: `A/B`
+  [!UICONTROL Formula]&#x200B;: `A/B`
 * &#x200B;
-  [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]&#x200B;: `None`
 * &#x200B;
-  [!UICONTROL Chart type]: `Scalar`
+  [!UICONTROL Chart type]&#x200B;: `Scalar`
 
 * **Probabilità di ripetizione ordine fornita mesi dall&#39;ordine**
 * Metrica A: ripetere gli ordini per mesi dall’ordine precedente (nascondere)
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * &#x200B;
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * Metrica B: Ultimi ordini per mesi dall’ordine (nascondi)
-* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
 * &#x200B;
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
 * Metrica C: Ordini ripetuti in qualsiasi momento (nascondi)
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * &#x200B;
-  [!UICONTROL Raggruppa per]: `Independent`
+  [!UICONTROL Raggruppa per]&#x200B;: `Independent`
 
 * Metrica D: Ultimi ordini in qualsiasi momento (nascondi)
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
 * &#x200B;
-  [!UICONTROL Raggruppa per]: `Independent`
+  [!UICONTROL Raggruppa per]&#x200B;: `Independent`
 
 * [!UICONTROL Formula]: probabilità ordine di ripetizione iniziale
 * &#x200B;
-  [!UICONTROL Formula]: `(C-A)/(C+D-A-B)`
+  [!UICONTROL Formula]&#x200B;: `(C-A)/(C+D-A-B)`
 * &#x200B;
-  [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]: `All time`
+* [!UICONTROL Time period]&#x200B;: `All time`
 * &#x200B;
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Months since previous order`
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Months since previous order`
 * Mostra top.bottom: prime 24 categorie, ordinate per nome di categoria
 
 * &#x200B;
-  [!UICONTROL Chart type]: `Line`
+  [!UICONTROL Chart type]&#x200B;: `Line`
 
 Il rapporto probabilità ordine ripetuto iniziale rappresenta il totale ordini ripetuti / totale ordini. Ogni ordine è un&#39;opportunità per fare un ordine ripetuto; il numero di ordini ripetuti è il sottoinsieme di quelli che effettivamente lo fanno.
 
@@ -144,8 +144,8 @@ La formula utilizzata è semplificata in (Totale ordini ripetuti dopo X mesi)/ (
 
 Una volta creato il dashboard, la domanda più comune è: come si utilizza questo valore per determinare una soglia di abbandono?
 
-**Non esiste un&#39;unica risposta corretta.** Tuttavia, Adobe consiglia di trovare il punto in cui la linea interseca il valore che è la metà della percentuale di probabilità di ripetizione iniziale. Questo è il punto in cui si può dire &quot;Se un utente sta per fare un ordine di ripetizione, probabilmente lo avrebbe già fatto a questo punto.&quot; In ultima analisi, l’obiettivo è quello di selezionare la soglia in cui ha senso passare dagli sforzi di &quot;conservazione&quot; a quelli di &quot;riattivazione&quot;.
+**Non esiste un&#39;unica risposta corretta.** Tuttavia, Adobe consiglia di trovare il punto in cui la linea interseca il valore che è la metà del tasso di probabilità di ripetizione iniziale. Questo è il punto in cui si può dire &quot;Se un utente sta per fare un ordine di ripetizione, probabilmente lo avrebbe già fatto a questo punto.&quot; In ultima analisi, l’obiettivo è quello di selezionare la soglia in cui ha senso passare dagli sforzi di &quot;conservazione&quot; a quelli di &quot;riattivazione&quot;.
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile all’immagine nella parte superiore della pagina
 
-Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

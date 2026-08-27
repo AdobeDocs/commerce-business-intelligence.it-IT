@@ -19,10 +19,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 849
-ht-degree: 0%
+source-wordcount: 866
+ht-degree: 1%
 
 ---
 
@@ -63,9 +63,9 @@ Tenendo conto delle metriche di cui sopra, osserva un esempio che coinvolge prod
 
 | **Nome prodotto** | **Probabilità di ripetizione ordine** | **Numero medio di ordini nel ciclo di vita** | **Ricavi medi nel ciclo di vita** | **Tempo mediano all&#39;ordine successivo** |
 |-----|-----|-----|-----|-----|
-| Produttore di caffè monodose | 94,98% | 7,92 | 549,82 $ | 57,01 giorni |
-| Capsule di caffè | 93,82% | 8,68 | 479,98 $ | 63,48 giorni |
-| Semi di caffè | 41,92% | 6,07 | 99,82 $ | 27,31 giorni |
+| Produttore di caffè monodose | 94.98% | 7,92 | $549.82 | 57,01 giorni |
+| Capsule di caffè | 93.82% | 8,68 | $479.98 | 63,48 giorni |
+| Semi di caffè | 41.92% | 6,07 | $99.82 | 27,31 giorni |
 
 {style="table-layout:auto"}
 
@@ -97,4 +97,4 @@ Oltre ad analizzare il comportamento di riacquisto dei clienti, puoi anche crear
 
 Dopo aver identificato il motivo dell&#39;abbandono, è possibile utilizzare l&#39;analisi per creare una campagna `reactivation`. Utilizzando questi dati, puoi identificare gli utenti che non sono più attivi, il periodo di tempo trascorso dall’ultima visita, l’ultimo acquisto e così via. Questo consente di prendere decisioni fruibili che incitano i clienti a tornare.
 
-Per assistenza sull&#39;analisi, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Per assistenza sull&#39;analisi, [contatta il supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

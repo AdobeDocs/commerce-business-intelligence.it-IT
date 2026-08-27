@@ -19,9 +19,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
-source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 201
+source-wordcount: 202
 ht-degree: 0%
 
 ---
@@ -42,5 +42,5 @@ Puoi riattivare l’utente creando un utente con lo stesso indirizzo e-mail. Ric
 Se hai solo bisogno che le dashboard di tale utente vengano inviate all’account di un altro utente, effettua le seguenti operazioni:
 
 1. Utilizzare l&#39;indirizzo di posta elettronica dell&#39;utente eliminato per creare un nuovo utente [!DNL Commerce Intelligence].
-1. [Invia una notifica al supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) dopo aver creato l&#39;utente. Il supporto trasferisce le dashboard nel tuo account.
+1. [Invia una notifica al supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) dopo aver creato l&#39;utente. Il supporto trasferisce le dashboard nel tuo account.
 1. Dopo che il supporto Adobe ti ha notificato il trasferimento, puoi eliminare nuovamente l’utente.

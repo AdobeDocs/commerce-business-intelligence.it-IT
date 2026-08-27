@@ -1,6 +1,6 @@
 ---
 title: Introduzione a Adobe Commerce Intelligence
-description: Informazioni su Adobe Commerce Intelligence.
+description: Introduzione a Adobe Commerce Intelligence, precedentemente Magento Business Intelligence. Scopri cosa offre la piattaforma e come iniziare a esplorare i tuoi dati.
 exl-id: 0c960d8c-9bb7-429e-a88e-21678a77b710
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -25,9 +25,9 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 252
+source-wordcount: 275
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ Connetti, consolida e trasforma i dati. Visualizza, analizza e ottieni informazi
 
 Le dashboard standard includono il ROI di marketing, il valore del ciclo di vita del cliente, la segmentazione del cliente, i KPI per dirigenti e investitori, l’analisi per coorte e l’analisi del merchandising.
 
-Quando [attivi](../getting-started/onpremise-activation.md) il tuo account [!DNL Commerce Intelligence], stai connettendo il tuo database [!DNL Adobe Commerce] a [!DNL Commerce Intelligence] e ottieni immediatamente l&#39;accesso a cinque dashboard con circa 100 report. Questi report sono progettati per fornire informazioni sui tuoi dati e rispondere a domande come *Come aumentano gli ordini mese dopo mese?*, *Chi sono i miei clienti più fedeli?* e *La mia strategia coupon funziona?*.
+Quando [attivi](../getting-started/onpremise-activation.md) il tuo account [!DNL Commerce Intelligence], stai connettendo il tuo database [!DNL Adobe Commerce] a [!DNL Commerce Intelligence] e ottieni immediatamente l&#39;accesso a cinque dashboard con circa 100 report. Questi report sono progettati per fornire informazioni sui tuoi dati e rispondere a domande come *Come aumentano gli ordini mese su mese?*, *Chi sono i miei clienti più fedeli?* e *La mia strategia coupon funziona?*.

@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 84
+source-wordcount: 96
 ht-degree: 0%
 
 ---
@@ -34,4 +34,4 @@ Un’integrazione è un’origine dati. Le integrazioni sono applicazioni e data
 
 In questa sezione sono illustrate le integrazioni disponibili che è possibile utilizzare per connettere diverse origini dati esterne a [!DNL Commerce Intelligence].
 
-Per eliminare una connessione o un&#39;integrazione, [contattare il supporto tecnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) e includere il nome della connessione o dell&#39;integrazione da eliminare.
+Per eliminare una connessione o un&#39;integrazione, [contattare il supporto tecnico](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) e includere il nome della connessione o dell&#39;integrazione da eliminare.

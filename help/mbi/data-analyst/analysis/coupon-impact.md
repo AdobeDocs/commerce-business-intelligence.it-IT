@@ -19,10 +19,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1382
-ht-degree: 1%
+source-wordcount: 1422
+ht-degree: 2%
 
 ---
 
@@ -63,8 +63,8 @@ Osserva alcuni dati di esempio per le metriche di acquisizione di cedole e non c
 
 | **Acquisizione cliente** | **Numero di nuovi clienti** | **Ricavi medi nel corso della vita** | **Numero di ordini ripetuti** | **Numero di ordini ripetuti con coupon** | **% di ordini ripetuti con coupon** |
 |-----|-----|-----|-----|-----|-----|
-| Coupon | 1.206 | 356,91 $ | 2.570 | 1.248 | 48,56% |
-| Non cedola | 11.561 | 498,30 $ | 20.145 | 3.251 | 16,14% |
+| Coupon | 1.206 | $356.91 | 2.570 | 1.248 | 48.56% |
+| Non cedola | 11.561 | $498.30 | 20.145 | 3.251 | 16.14% |
 
 {style="table-layout:auto"}
 
@@ -92,7 +92,7 @@ I clienti acquisiti senza cedola hanno una percentuale molto inferiore di ordini
 
 ## Analisi dei dettagli del primo ordine dalle acquisizioni di coupon {#firstorder}
 
-Questa sezione si concentra solo su **primi ordini da acquisizioni di cedole, segmentati per cedola.** Utilizza queste metriche nell&#39;analisi:
+Questa sezione si concentra solo su **primi ordini da acquisizioni coupon, segmentati per coupon.** Utilizza queste metriche nell’analisi:
 
 ### Numero di ordini/clienti
 
@@ -126,9 +126,9 @@ Ora, guarda un esempio che coinvolge tre diversi coupon utilizzati per il primo 
 
 | **Coupon** | **Nuovi ordini (FTO)** | **Ricavi lordi da FTO** | **Sconti applicati a FTO** | **Entrate nette da FTO** | **Valore medio ordine per FTO** |
 |-----|-----|-----|-----|-----|-----|
-| **25% di sconto di $100 o più** | 56 | 8.531,04 $ | 2.132,76 $ | 6.398,28 $ | 152,34 $ |
-| **$10 di sconto** | 87 | 3.707,07 $ | 426,10 $ | 3.280,97 $ | 42,61 $ |
-| **20% di sconto** | 145 | 10.975,05 $ | 2.195,01 $ | 8.780,04 $ | 75,69 $ |
+| **25% di sconto di $100 o più** | 56 | $8,531.04 | $2,132.76 | $6,398.28 | $152.34 |
+| **$10 di sconto** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
+| **20% di sconto** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
 
 {style="table-layout:auto"}
 
@@ -154,9 +154,9 @@ Dopo aver esaminato gli ordini, esaminare i clienti che utilizzano i coupon nei 
 
 | **Buono sconto primo cliente** | **Numero di clienti** | **Numero medio di ordini nel ciclo di vita** | **Ricavi medi nel corso della vita** |
 |-----|-----|-----|-----|
-| **25% di sconto di $100 o più** | 56 | 2,8 | 554,54 $ |
-| **$10 di sconto** | 87 | 1,9 | 115,50 $ |
-| **20% di sconto** | 145 | 1,3 | 103,75 $ |
+| **25% di sconto di $100 o più** | 56 | 2,8 | $554.54 |
+| **$10 di sconto** | 87 | 1,9 | $115.50 |
+| **20% di sconto** | 145 | 1,3 | $103.75 |
 
 {style="table-layout:auto"}
 
@@ -166,4 +166,4 @@ Il maggior numero di clienti è stato acquisito attraverso il coupon &quot;20% d
 
 ## Ritorno a capo {#wrapup}
 
-Sono disponibili numerose analisi che puoi creare per comprendere meglio come i tuoi clienti utilizzano i coupon. Hai mai pensato di analizzare in che modo i tuoi clienti utilizzano i coupon o il tempo necessario per utilizzarli? E per quanto riguarda la ricerca dell&#39;importo di sconto ottimale: quale importo incoraggia gli acquirenti ripetuti, un valore medio più alto dell&#39;ordine e maggiori ricavi nel corso della vita? Per informazioni su questi tipi di domande, [contatta l&#39;assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Sono disponibili numerose analisi che puoi creare per comprendere meglio come i tuoi clienti utilizzano i coupon. Hai mai pensato di analizzare in che modo i tuoi clienti utilizzano i coupon o il tempo necessario per utilizzarli? E per quanto riguarda la ricerca dell&#39;importo di sconto ottimale: quale importo incoraggia gli acquirenti ripetuti, un valore medio più alto dell&#39;ordine e maggiori ricavi nel corso della vita? Per informazioni su questi tipi di domande, [contatta l&#39;assistenza](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

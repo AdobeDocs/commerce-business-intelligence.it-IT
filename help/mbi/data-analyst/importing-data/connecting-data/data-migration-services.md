@@ -22,16 +22,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 685
+source-wordcount: 711
 ht-degree: 0%
 
 ---
 
 # Migrazione dei dati
 
-La migrazione a un nuovo schema di database, server o database di reporting non deve essere troppo complessa. Il [[!DNL Adobe] team dei servizi](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) offre assistenza per la migrazione.
+La migrazione a un nuovo schema di database, server o database di reporting non deve essere troppo complessa. Il [[!DNL Adobe] team dei servizi](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) offre assistenza per la migrazione.
 
 Per garantire una transizione quanto più fluida possibile, è necessario essere il più dettagliati possibile durante l’invio della richiesta di migrazione. Questo argomento contiene tutto il necessario per inviare una richiesta e iniziare a eseguire la migrazione. Fornendoci un quadro completo delle tue esigenze, assicurati che il tuo progetto abbia un ambito appropriato e che la stima sia accurata.
 
@@ -41,7 +41,7 @@ Prima di iniziare, è necessario conoscere le risposte alle seguenti domande:
 
 * **Il nuovo database si trova su un nuovo server?** Prima di inviare una richiesta, aggiornare le impostazioni della connessione dati in **[!UICONTROL Manage Data** > **Connections]**. Se è necessario un aggiornamento su come eseguire questa operazione, passare alla sezione [`Integrations`](../integrations/integrations.md) e trovare le istruzioni per il tipo di database utilizzato.
 
-* **Nel nuovo database sono presenti tutti i dati storici o è necessario eseguirne la migrazione?** È possibile consolidare i dati storici e i nuovi dati durante il processo di migrazione. Anche se non hai bisogno di un consolidamento, comunicaci nella tua richiesta.
+* **Nel nuovo database sono presenti tutti i dati storici o è necessario eseguirne la migrazione?** Puoi consolidare i dati storici e quelli nuovi durante il processo di migrazione. Anche se non hai bisogno di un consolidamento, comunicaci nella tua richiesta.
 
 Dopo aver ricevuto le risposte a quanto sopra, è necessario conoscere il tipo di migrazione. Il nuovo database avrà lo schema [`same`](#sameschema) o uno schema [`different`](#newschema)? Nelle discussioni seguenti trovi istruzioni dettagliate per ciascun tipo di migrazione.
 
@@ -85,7 +85,7 @@ Ecco un esempio:
 
 ## Come si invia una richiesta? {#submitreq}
 
-Puoi contattarci inviando [una richiesta di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Puoi contattarci inviando [una richiesta di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 Se hai seguito i passaggi della sezione precedente per creare il foglio di calcolo corrispondente alle colonne, non dimenticare di allegarlo.
 

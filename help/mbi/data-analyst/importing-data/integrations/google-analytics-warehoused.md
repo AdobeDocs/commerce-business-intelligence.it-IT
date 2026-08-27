@@ -24,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 489
+source-wordcount: 514
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Con l&#39;integrazione di [!DNL Google Analytics Live], invece, ogni grafico [!D
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] è un&#39;integrazione `Premium`. [Contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) se hai interesse ad aggiungere questa integrazione alla sottoscrizione.
+>[!DNL Google Analytics Warehoused] è un&#39;integrazione `Premium`. [Contatta il supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) se hai interesse ad aggiungere questa integrazione alla sottoscrizione.
 
 1. Passare alla pagina `Connections` in **[!UICONTROL Admin** > **Integrations]**.
 1. Fare clic su **[!UICONTROL Add an Integration]**, che si trova sul lato destro.
@@ -83,7 +83,7 @@ Per identificare l&#39;ID profilo [!DNL Google Analytics] di un particolare sito
 
 ## Documentazione correlata
 
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [Connessione in corso  [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analisi delle attività del sito web e dei tassi di conversione dei clienti](../../analysis/web-act-cust-conversion.md)
 * [Tieni traccia dei dati di acquisizione dell&#39;utente utilizzando  [!DNL Google Analytics] cookie](../../analysis/google-track-user-acq.md)

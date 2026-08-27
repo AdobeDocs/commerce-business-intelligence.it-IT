@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 179
+source-wordcount: 190
 ht-degree: 0%
 
 ---
@@ -54,9 +54,9 @@ Dopo aver fatto clic su **[!UICONTROL Connect to Quickbooks]**, accedi al tuo ac
 ![Pagina di integrazione QuickBooks App Store](../../../assets/QuickBooks_App_Store_1.jpg)
 
 1. Nel menu a discesa `Search for a company`, seleziona la tua azienda.
-1. Fare clic su **[!UICONTROL Next]**. Sei stato reindirizzato a [!DNL Commerce Intelligence] e la connessione a *è riuscita.Il messaggio* viene visualizzato nella parte superiore dello schermo.
+1. Fare clic su **[!UICONTROL Next]**. Sei stato reindirizzato a [!DNL Commerce Intelligence] e a una *Connessione riuscita!* Il messaggio viene visualizzato nella parte superiore dello schermo.
 
 ## Correlato
 
 * [Previsti [!DNL QuickBooks] dati](../integrations/quickbooks-data.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

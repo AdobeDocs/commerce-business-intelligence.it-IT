@@ -1,6 +1,6 @@
 ---
 title: Standardizzare i dati con le tabelle di mappatura
-description: Scopri come utilizzare le tabelle di mappatura.
+description: Standardizzare valori incoerenti, come i formati dello stato di fatturazione, utilizzando le tabelle di mappatura in Commerce Intelligence Data Warehouse Manager per mantenere accurati i rapporti.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 775
+source-wordcount: 788
 ht-degree: 0%
 
 ---

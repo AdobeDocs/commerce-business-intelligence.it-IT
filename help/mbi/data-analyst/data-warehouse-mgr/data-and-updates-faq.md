@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 32bcb9f48faa4e766972b0690f86c9813c6a9d53
 workflow-type: tm+mt
-source-wordcount: 481
+source-wordcount: 515
 ht-degree: 0%
 
 ---
@@ -63,8 +63,8 @@ Se è in corso un aggiornamento, è presente un collegamento nella pagina **[!UI
 
 ## Perché [!DNL Google ECommerce] dati sono diversi dal mio database? {#ecommdatabase}
 
-Le discrepanze tra [!DNL Google Analytics] e il database possono verificarsi per vari motivi. Il tracciamento non è abilitato correttamente, gli utenti che visitano in incognito e gli eventi di clic non funzionano correttamente sono solo alcuni esempi. Se le entrate e gli ordini non sembrano corretti, [consulta questo argomento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=it) per diagnosticare un problema.
+Le discrepanze tra [!DNL Google Analytics] e il database possono verificarsi per vari motivi. Il tracciamento non è abilitato correttamente, gli utenti che visitano in incognito e gli eventi di clic non funzionano correttamente sono solo alcuni esempi. Se le entrate e gli ordini non sembrano corretti, [consulta questo argomento](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies) per diagnosticare un problema.
 
 ## Come si risolve una discrepanza di dati? {#datadiscrepancy}
 
-Adobe sa che la visualizzazione di dati non coerenti può essere un’esperienza frustrante. Prova a utilizzare l&#39;[elenco di controllo per la discrepanza dei dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=it) o l&#39;[esercitazione sulle esportazioni dei dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=it) per diagnosticare il problema. Se sei ancora perplesso, [contatta l&#39;assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Adobe sa che la visualizzazione di dati non coerenti può essere un’esperienza frustrante. Prova a utilizzare l&#39;esercitazione [Esportazioni dati](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies) per diagnosticare il problema. Se sei ancora perplesso, [contatta l&#39;assistenza](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

@@ -1,6 +1,6 @@
 ---
 title: Eliminare un dashboard
-description: Scopri come eliminare una dashboard.
+description: Elimina un dashboard di Commerce Intelligence non è più necessario utilizzare uno dei due metodi disponibili, mantenendo l’elenco dei dashboard organizzato e privo di elementi ingombranti.
 exl-id: 27482dea-0593-46d6-8310-ad505ff9436a
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 114
+source-wordcount: 131
 ht-degree: 0%
 
 ---

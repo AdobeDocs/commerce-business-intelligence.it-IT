@@ -22,9 +22,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 911
+source-wordcount: 927
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Questo tipo di analisi è ciò che gli esperti di marketing delle aziende Fortun
 
 Il primo passaggio per segmentare le metriche in base alle dimensioni di cui sopra consiste nell’assicurarsi di tenere traccia di questi dati nel database. Se non viene tracciato, incontra il tuo team tecnico e trova un modo per iniziare a tracciare questi dati.
 
-Dopo aver confermato che i dati sono tracciati nel database, [contatta il team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per inviare le dimensioni alle metriche e ai grafici di [!DNL Commerce Intelligence]. È inoltre possibile utilizzare lo strumento *Gestione campi* per tenere traccia di questi campi in [!DNL Commerce Intelligence].
+Dopo aver confermato che i dati sono tracciati nel database, [contatta il team di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) per inviare le dimensioni alle metriche e ai grafici di [!DNL Commerce Intelligence]. È inoltre possibile utilizzare lo strumento *Gestione campi* per tenere traccia di questi campi in [!DNL Commerce Intelligence].
 
 ## Correlato
 

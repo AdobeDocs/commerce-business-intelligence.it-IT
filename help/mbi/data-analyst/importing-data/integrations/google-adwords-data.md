@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 436
+source-wordcount: 603
 ht-degree: 0%
 
 ---
@@ -107,4 +107,4 @@ Utilizzando questi dati, puoi iniziare a creare [metriche](../../../data-user/re
 
 Se non si dispone di una tabella consolidata e si crea un dashboard sulla tabella `adwords`, è necessario replicare il reporting o creare metriche duplicate per confrontare tali dati con i dati di [!DNL Facebook Ads]. L&#39;utilizzo di una tabella consolidata consente di incorporare senza problemi i dati di [!DNL Facebook Ads] con i rapporti di [!DNL Adwords] esistenti. Puoi anche segmentare per piattaforma di annunci.
 
-Se hai già sincronizzato i campi qui sopra, [contattaci](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per consolidare la spesa pubblicitaria.
+Se hai già sincronizzato i campi qui sopra, [contattaci](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) per consolidare la spesa pubblicitaria.

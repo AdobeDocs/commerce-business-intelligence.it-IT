@@ -1,6 +1,6 @@
 ---
 title: Ottimizzazione delle query SQL
-description: Scopri come ottimizzare le query SQL.
+description: Ottimizzare le query SQL in Commerce Intelligence SQL Report Builder. Scopri le best practice per ridurre i costi delle query ed evitare errori dovuti a risultati di dimensioni eccessive.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 826
+source-wordcount: 847
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 [!DNL SQL Report Builder] consente di eseguire e modificare le query in qualsiasi momento. Questa funzionalità è utile se è necessario aggiornare immediatamente una query, anziché attendere il completamento di un ciclo di aggiornamento prima di correggere una colonna o un report.
 
-Prima dell&#39;esecuzione di una query, [[!DNL Commerce Intelligence] ne stima il costo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=it). Il costo considera il tempo e il numero di risorse necessari per eseguire una query. Se il costo è ritenuto troppo elevato o se il numero di righe restituite supera i limiti di [!DNL Commerce Intelligence], la query non riesce. Per eseguire query su [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), in modo da garantire la scrittura di query il più possibile semplificate, Adobe consiglia quanto segue.
+Prima dell&#39;esecuzione di una query, [!DNL Commerce Intelligence] ne calcola il costo. Il costo considera il tempo e il numero di risorse necessari per eseguire una query. Se il costo è ritenuto troppo elevato o se il numero di righe restituite supera i limiti di [!DNL Commerce Intelligence], la query non riesce. Per eseguire query su [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), in modo da garantire la scrittura di query il più possibile semplificate, Adobe consiglia quanto segue.
 
 ## Utilizzo di SELECT o selezione di tutte le colonne
 

@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1329
+source-wordcount: 1353
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Ora puoi vedere quanto ha avuto un impatto ogni mese lo scorso anno:
 
 ## Confronto della stessa metrica tra intervalli di tempo diversi {#difftimerange}
 
-In questo esempio viene utilizzata una dimensione personalizzata denominata `Day number of the month`. Se desideri creare questo report e non hai già questa dimensione nel tuo Data Warehouse, [contatta il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) per assistenza.
+In questo esempio viene utilizzata una dimensione personalizzata denominata `Day number of the month`. Se desideri creare questo report e non hai già questa dimensione nel tuo Data Warehouse, [contatta il supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) per assistenza.
 
 I due esempi più comuni in questa categoria sono (1) il confronto delle metriche di crescita (ricavi su base annua o mese sul mese) e (2) una migliore comprensione delle recenti tendenze delle scorte o delle vendite di articoli.
 
@@ -137,11 +137,11 @@ Ricordati di impostare gli intervalli di tempo in base alle tue esigenze durante
    * Fare clic su **[!UICONTROL Apply]** per salvare le impostazioni dell&#39;intervallo e dell&#39;intervallo.
    * Duplica la metrica `Items sold last 28 days` e apri la nuova metrica `Time Options`. Impostare le opzioni come segue:
 
-      * `Time Interval`: lasciare `None`.
-      * `Time Range`: modificare l&#39;intervallo di date per allinearlo alla promozione desiderata facendo clic su **[!UICONTROL Specific Date Range]** e immettendo le date appropriate.
-      * Rinominare la metrica `Items sold during last promotion` o qualcosa di simile.
-      * Aggiungi la metrica `Units on hand`.
-      * È quindi necessario aggiungere i calcoli che mostrano le settimane disponibili, considerando l&#39;andamento delle vendite, per i periodi di tempo (`last 7 days`, `last 28 days` e `last promo`) che si stanno includendo nel report. Questa operazione deve essere eseguita una volta per ogni periodo di tempo.
+     * `Time Interval`: lasciare `None`.
+     * `Time Range`: modificare l&#39;intervallo di date per allinearlo alla promozione desiderata facendo clic su **[!UICONTROL Specific Date Range]** e immettendo le date appropriate.
+     * Rinominare la metrica `Items sold during last promotion` o qualcosa di simile.
+     * Aggiungi la metrica `Units on hand`.
+     * È quindi necessario aggiungere i calcoli che mostrano le settimane disponibili, considerando l&#39;andamento delle vendite, per i periodi di tempo (`last 7 days`, `last 28 days` e `last promo`) che si stanno includendo nel report. Questa operazione deve essere eseguita una volta per ogni periodo di tempo.
 
 Per creare le formule, scegliere **[!UICONTROL Add Formula]**. Immettere le formule seguenti e fare clic su **[!UICONTROL Apply Changes]** al termine. Ripetere questa operazione per ciascuno dei tre periodi di tempo:
 

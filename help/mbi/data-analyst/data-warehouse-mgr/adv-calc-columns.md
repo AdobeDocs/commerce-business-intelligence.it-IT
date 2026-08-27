@@ -22,10 +22,10 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 930
-ht-degree: 2%
+source-wordcount: 962
+ht-degree: 11%
 
 ---
 
@@ -57,11 +57,11 @@ Ecco un esempio:
 
 | **`event\_id`** | **`owner\_id`** | **`timestamp`** | **`Owner's event number`** |
 |-----|-----|-----|-----|
-| 1 | `A` | 00:00:00 01/01/2015 | 1 |
-| 2 | `B` | 00:30:00 01/01/2015 | 1 |
-| 3 | `A` | 01/01/02/00:00: | 2 |
-| 4 | `A` | 02/01/2015 13/00:00: | 3 |
-| 5 | `B` | 03/01/2015 13/0&rbrace;:00: | 2 |
+| 1 | `A` | 2015-01-01 00:00:00 | 1 |
+| 2 | `B` | 2015-01-01 00:30:00 | 1 |
+| 3 | `A` | 2015-01-01 02:00:00 | 2 |
+| 4 | `A` | 2015-01-02 13:00:00 | 3 |
+| 5 | `B` | 2015-01-03 13:00:00 | 2 |
 
 {style="table-layout:auto"}
 
@@ -87,8 +87,8 @@ Ecco un esempio:
 
 | `id` | `timestamp\_1` | `timestamp\_2` | `Seconds between timestamp\_2 and timestamp\_1` |
 |-----|-----|-----|-----|
-| `A` | 00:00:00 01/01/2015 | 01/01/2015 12/00:30: | 45000 |
-| `B` | 08:00:00 01/01/2015 | 01/01/2015 10/00:00: | 7200 |
+| `A` | 2015-01-01 00:00:00 | 2015-01-01 12:30:00 | 45000 |
+| `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200 |
 
 {style="table-layout:auto"}
 
@@ -111,11 +111,11 @@ Ecco un esempio:
 
 | **`event\_id`** | **`owner\_id`** | **`timestamp`** | **`Seconds since owner's previous event`** |
 |-----|-----|-----|-----|
-| 1 | `A` | 00:00:00 01/01/2015 | NULL |
-| 2 | `B` | 00:30:00 01/01/2015 | NULL |
-| 3 | `A` | 01/01/02/00:00: | 7720 |
-| 4 | `A` | 02/01/2015 13/00:00: | 126000 |
-| 5 | `B` | 03/01/2015 13/0&rbrace;:00: | 217800 |
+| 1 | `A` | 2015-01-01 00:00:00 | NULL |
+| 2 | `B` | 2015-01-01 00:30:00 | NULL |
+| 3 | `A` | 2015-01-01 02:00:00 | 7720 |
+| 4 | `A` | 2015-01-02 13:00:00 | 126000 |
+| 5 | `B` | 2015-01-03 13:00:00 | 217800 |
 
 {style="table-layout:auto"}
 
@@ -139,8 +139,8 @@ Ecco un esempio:
 
 | **`id`** | **`timestamp`** | **`transaction\_value\_EUR`** | **`transaction\_value\_USD`** |
 |-----|-----|-----|-----|
-| `1` | 00:00:00 01/01/2015 | 30 | 33,57 |
-| `2` | 00:00:00 02 015-01-02 | 50 | 55,93 |
+| `1` | 2015-01-01 00:00:00 | 30 | 33,57 |
+| `2` | 2015-01-02 00:00:00 | 50 | 55,93 |
 
 {style="table-layout:auto"}
 
@@ -161,8 +161,8 @@ Ecco un esempio:
 
 | **`id`** | **`timestamp\_UTC`** | **`timestamp\_ET`** |
 |-----|-----|-----|
-| `1` | 00:00:00 01/01/2015 | 31/12/2014 19/0:00: |
-| `2` | 01/01/2015 12/00:00: | 07:00:00 01/01/2015 |
+| `1` | 2015-01-01 00:00:00 | 2014-12-31 19:00:00 |
+| `2` | 2015-01-01 12:00:00 | 2015-01-01 07:00:00 |
 
 {style="table-layout:auto"}
 
@@ -179,7 +179,7 @@ Per creare questo tipo di colonna calcolata, è necessario conoscere:
 
 Non preoccuparti. Solo perché non è elencato qui non significa che non è possibile. Il team Adobe degli analisti Data Warehouse può aiutarti.
 
-Per definire una nuova colonna calcolata, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) con i dettagli su ciò che desideri compilare.
+Per definire una nuova colonna calcolata, [invia un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) con i dettagli su ciò che desideri compilare.
 
 ## Documentazione correlata
 

@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 507
+source-wordcount: 521
 ht-degree: 0%
 
 ---
@@ -64,4 +64,4 @@ Puoi anche scrivere query personalizzate ed esportare i risultati da confrontare
 
 >[!NOTE]
 >
->Se riscontri una discrepanza dopo aver controllato i dati, consulta l&#39;argomento di supporto [Contattare il supporto: discrepanze di dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=it) per ulteriori informazioni su come procedere.
+>Se riscontri una discrepanza dopo aver controllato i dati, consulta l&#39;argomento di supporto [Contattare il supporto: discrepanze di dati](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies) per ulteriori informazioni su come procedere.

@@ -20,23 +20,23 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 491
+source-wordcount: 511
 ht-degree: 0%
 
 ---
 
 # Esporta dati non elaborati
 
-Utilizzando le esportazioni di dati non elaborati, puoi esportare i record dal Data Warehouse per avere una visione più dettagliata di ciò che alimenta il dashboard. Inoltre, le esportazioni di dati non elaborati possono aiutarti a [individuare le discrepanze di dati](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=it).
+Utilizzando le esportazioni di dati non elaborati, puoi esportare i record dal Data Warehouse per avere una visione più dettagliata di ciò che alimenta il dashboard. Inoltre, le esportazioni di dati non elaborati possono aiutarti a [individuare le discrepanze di dati](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies).
 
 Le esportazioni di dati non elaborati consentono di accedere a colonne e dimensioni aggiuntive generate tramite la denormalizzazione e la preaggregazione di metriche rilevanti. `User's first order date`, ad esempio, è una dimensione che è possibile esportare per ogni utente in [!DNL Commerce Intelligence], mentre potrebbe non essere disponibile nel database.
 
 Questo tutorial tratta i seguenti argomenti:
 
 * [Selezione dei dati da esportare](#select)
-* [Download dell&#39;esportazione (](#download)
+* [Download dell&#39;esportazione (`.csv` file)](#download)
 * [Accesso alle esportazioni storiche](#historical)
 
 ## Passaggio 1: selezione dei dati da esportare {#select}

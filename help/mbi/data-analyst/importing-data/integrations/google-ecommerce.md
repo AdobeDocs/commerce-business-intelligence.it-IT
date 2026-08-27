@@ -1,6 +1,6 @@
 ---
 title: Connetti Google eCommerce
-description: Scopri i canali di riferimento più importanti.
+description: Collega i dati di Google Ecommerce a Commerce Intelligence per tenere traccia dei canali di riferimento più importanti e analizzare i ricavi insieme alle altre origini dati.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -22,9 +22,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 305
+source-wordcount: 341
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Per identificare l&#39;ID profilo [!DNL Google Analytics] di un particolare sito
 ## Correlato:
 
 * [Previsti [!DNL Google ECommerce] dati](../integrations/google-ecommerce-data.md)
-* [Nuova autenticazione delle integrazioni](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it)
-* [Configurazione [!DNL Google ECommerce] tracciamento](https://support.google.com/analytics/answer/1009612?hl=en)
+* [Reautenticazione delle integrazioni](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Impostazione del tracciamento  [!DNL Google ECommerce]  in corso](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Scopri le fonti e i canali di acquisizione più importanti](../../analysis/most-value-source-channel.md)
 * [Aumentare il ROI nelle campagne pubblicitarie](../../analysis/roi-ad-camp.md)

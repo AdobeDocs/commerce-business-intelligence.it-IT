@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1950
+source-wordcount: 1989
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->L’accesso a queste dashboard dipende dal tipo di account e dal livello di accesso. Se queste dashboard non vengono visualizzate, contatta il [supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+>L’accesso a queste dashboard dipende dal tipo di account e dal livello di accesso. Se queste dashboard non vengono visualizzate, contatta il [supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## Disponibilità del rapporto
 
@@ -152,7 +152,7 @@ Il pannello di controllo Ordini fornisce informazioni sul volume transazionale d
 
 ## Prodotti
 
-Il dashboard Prodotti mostra le prestazioni generali del prodotto in termini di prodotti ordinati, valore lordo delle merci (GMV, Gross Merchandise Value) e principali prodotti acquistati e rimborsati. Può aiutarti a bilanciare acquisti e restituzioni e a determinare il successo e la popolarità del prodotto. L&#39;archivio deve essere [configurato per tenere traccia dei rimborsi](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=it) per i grafici da compilare.
+Il dashboard Prodotti mostra le prestazioni generali del prodotto in termini di prodotti ordinati, valore lordo delle merci (GMV, Gross Merchandise Value) e principali prodotti acquistati e rimborsati. Può aiutarti a bilanciare acquisti e restituzioni e a determinare il successo e la popolarità del prodotto. L&#39;archivio deve essere [configurato per tenere traccia dei rimborsi](https://experienceleague.adobe.com/it/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure) per i grafici da compilare.
 
 >[!NOTE]
 >

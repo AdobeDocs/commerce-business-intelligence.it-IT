@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1397
+source-wordcount: 1448
 ht-degree: 0%
 
 ---
@@ -33,13 +33,13 @@ ht-degree: 0%
 >
 >Richiede le [autorizzazioni di amministratore](../../administrator/user-management/user-management.md) per creare e modificare i grafici SQL. `Standard` utenti possono riorganizzare questi grafici nei dashboard e `Read-only` utenti hanno la stessa esperienza dei grafici tradizionali. Inoltre, `Read-only` utenti non hanno accesso al testo della query.
 
-Per ulteriori informazioni, consulta il [video di formazione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=it).
+Per ulteriori informazioni, consulta il [video di formazione](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/mbi/sql-report-builder).
 
 [!DNL SQL], o linguaggio di query strutturato, è un linguaggio di programmazione utilizzato per comunicare con i database. In [!DNL Commerce Intelligence], [!DNL SQL] viene utilizzato per eseguire query o recuperare dati dal Data Warehouse. Osserva i report sul tuo dashboard: dietro le quinte, ciascuno è alimentato da una query [!DNL SQL].
 
 È possibile utilizzare [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) per eseguire direttamente query sul Data Warehouse, visualizzare i risultati e trasformarli in un grafico. È possibile iniziare a creare un report con [!DNL SQL Report Builder] facendo clic su **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]**.
 
-Per ulteriori informazioni, consulta il [video di formazione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=it).
+Per ulteriori informazioni, consulta il [video di formazione](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/mbi/sql-report-builder).
 
 [!DNL SQL Report Builder] ti consente di eseguire query dirette sul tuo Data Warehouse, visualizzare i risultati e trasformarli rapidamente in un grafico. La parte migliore sull&#39;utilizzo di [!DNL SQL] per generare i rapporti è che non è necessario attendere i cicli di aggiornamento per eseguire iterazioni sulle colonne create. Se i risultati non sono corretti, puoi modificare ed eseguire nuovamente la query in modo rapido fino a quando le cose non corrispondono alle tue aspettative.
 
@@ -149,7 +149,7 @@ Le colonne calcolate create utilizzando [!DNL SQL] non dipendono dai cicli di ag
 
 Nella maggior parte dei casi, le differenze nei risultati possono essere attribuite ai cicli di aggiornamento. Se [!DNL Commerce Intelligence] sta replicando i dati dal database al Data Warehouse, è possibile che vengano visualizzati risultati diversi anche quando si utilizza la stessa query.
 
-Anche i problemi di connessione possono causare discrepanze. Passare alla pagina `Connections` facendo clic su **[!DNL Manage Data** > **Connections]** per estrarla. Si è verificato un errore per l&#39;integrazione del database in questione? In tal caso, potrebbe essere necessario [autenticare nuovamente l&#39;integrazione](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=it) per rieseguire l&#39;esecuzione.
+Anche i problemi di connessione possono causare discrepanze. Passare alla pagina `Connections` facendo clic su **[!DNL Manage Data** > **Connections]** per estrarla. Si è verificato un errore per l&#39;integrazione del database in questione? In tal caso, potrebbe essere necessario [autenticare nuovamente l&#39;integrazione](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations) per rieseguire l&#39;esecuzione.
 
 Se tutte le integrazioni sono connesse correttamente e non sei nel bel mezzo di un ciclo di aggiornamento, qualcos’altro potrebbe non funzionare.
 

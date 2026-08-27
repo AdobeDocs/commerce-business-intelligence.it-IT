@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 135
+source-wordcount: 160
 ht-degree: 0%
 
 ---
@@ -40,6 +40,6 @@ Trovato qualcosa di strano in [[!DNL Google Adwords]](../integrations/google-adw
 
 1. Dopo aver aggiunto l&#39;account all&#39;editor [!DNL Google Adwords], selezionare **[!UICONTROL File** > **&#x200B; Esporta foglio di calcolo (CSV)**> **Esporta intero account]**
 
-In questo modo viene creato un file `.csv` contenente tutte le informazioni archiviate nell&#39;account [!DNL Google Adwords] corrente. A questo punto, invia un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) (assicurati di allegare questo file!) per esaminare più da vicino i tuoi dati. Se il file è troppo grande, condividerlo con il team [!DNL Commerce Intelligence] tramite [!DNL Dropbox] o [!DNL Google Drive].
+In questo modo viene creato un file `.csv` contenente tutte le informazioni archiviate nell&#39;account [!DNL Google Adwords] corrente. A questo punto, invia un [ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) (assicurati di allegare questo file!) in modo da poter esaminare più da vicino i dati. Se il file è troppo grande, condividerlo con il team [!DNL Commerce Intelligence] tramite [!DNL Dropbox] o [!DNL Google Drive].
 
 Per ulteriori informazioni sulle [!DNL Google Adwords] `.csv` esportazioni di file, consulta la [[!DNL Google Adwords] documentazione](https://support.google.com/google-ads/editor/answer/38657?hl=en) ufficiale.

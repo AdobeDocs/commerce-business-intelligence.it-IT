@@ -18,9 +18,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 245
+source-wordcount: 246
 ht-degree: 0%
 
 ---
@@ -55,4 +55,4 @@ Se devi inviare nuovamente l&#39;invito, nella [pagina di accesso](https://dashb
 
 >[!IMPORTANT]
 >
->Ogni account dispone di un numero contrattuale di licenze o di posti. Se raggiungi il limite o desideri saperne di più, [invia un ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+>Ogni account dispone di un numero contrattuale di licenze o di posti. Se raggiungi il limite o desideri saperne di più, [invia un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

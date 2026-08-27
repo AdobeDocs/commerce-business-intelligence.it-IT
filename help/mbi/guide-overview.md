@@ -25,9 +25,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 last-update: 2026-08-14
-source-git-commit: a02a389e329acf9bf10b85687e5f877cab992337
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 489
+source-wordcount: 492
 ht-degree: 2%
 
 ---
@@ -58,15 +58,15 @@ Oltre ai flussi di lavoro basati sui ruoli di cui sopra, questa guida contiene a
 
 ## Come visualizzare la Guida
 
-Contatta il [team di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) in caso di domande e desideri usufruire di alcuni servizi professionali o se riscontri problemi con il tuo account.
+Contatta il [team di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) in caso di domande e desideri usufruire di alcuni servizi professionali o se riscontri problemi con il tuo account.
 
 ### Criteri di servizio
 
-Visualizza un [elenco dei servizi forniti dal team di assistenza clienti](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it).
+Visualizza un [elenco dei servizi forniti dal team di assistenza clienti](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ### Invio di un ticket di supporto
 
-Hai bisogno di assistenza per creare una colonna calcolata avanzata? Si è verificato un difetto o un problema di connessione? Se devi contattare il team di supporto, Adobe ti chiede di utilizzare le [linee guida per i ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it). Queste linee guida descrivono le informazioni necessarie ad Adobe per risolvere il problema.
+Hai bisogno di assistenza per creare una colonna calcolata avanzata? Si è verificato un difetto o un problema di connessione? Se devi contattare il team di supporto, Adobe ti chiede di utilizzare le [linee guida per i ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies). Queste linee guida descrivono le informazioni necessarie ad Adobe per risolvere il problema.
 
 ## Documentazione disponibile
 

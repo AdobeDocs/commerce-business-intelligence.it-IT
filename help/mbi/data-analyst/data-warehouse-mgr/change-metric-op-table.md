@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 231
+source-wordcount: 244
 ht-degree: 0%
 
 ---
@@ -41,6 +41,6 @@ In alcuni casi, puoi decidere di modificare la tabella di dati utilizzata da una
 
    ![Menu a discesa di selezione tabella che mostra le tabelle disponibili](../../assets/change-metrics-2.png)
 
-1. Se nella nuova tabella non è presente una colonna corrispondente, è possibile **crearla nella tabella dati** o [contattare il supporto tecnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=it) se si tratta di una colonna di calcolo o di una dimensione creata da [!DNL Commerce Intelligence]. Puoi anche **eliminare la dimensione dalla metrica**. Per eliminare una dimensione non più necessaria, tornare all&#39;editor della metrica e selezionare le dimensioni da eliminare in `Dimensions`.
+1. Se nella nuova tabella non è presente una colonna corrispondente, è possibile **crearla nella tabella dati** o [contattare il supporto tecnico](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) se si tratta di una colonna di calcolo o di una dimensione creata da [!DNL Commerce Intelligence]. Puoi anche **eliminare la dimensione dalla metrica**. Per eliminare una dimensione non più necessaria, tornare all&#39;editor della metrica e selezionare le dimensioni da eliminare in `Dimensions`.
 
    ![Menu a discesa per la selezione delle colonne operative](../../assets/change-metrics-3.png)
