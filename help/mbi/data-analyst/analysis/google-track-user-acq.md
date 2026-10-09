@@ -4,26 +4,36 @@ description: Scopri come segmentare i dati per origine di acquisizione utente.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
-TQID: https://experienceleague.adobe.com/nqiC-AsuhdcOrxqFsW9ZqRZvlL8Ndu9xmNrTi-pvgv8
+TQID: 'https://experienceleague.adobe.com/nqiC-AsuhdcOrxqFsW9ZqRZvlL8Ndu9xmNrTi-pvgv8'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 751
-ht-degree: 1%
-
+source-wordcount: '791'
+ht-degree: 3%
 ---
-
 # Segmentazione per origine di acquisizione dell&#39;utente
 
 >[!NOTE]
@@ -80,11 +90,11 @@ Si supponga di utilizzare un database SQL e di disporre di una tabella `users` c
 
 | ID | EMAIL | JOIN_DATE | ACQ_SOURCE | ACQ_MEDIUM |
 |--- |--- |--- |--- |--- |
-| 1 | john@abc.com | 24/01/2012 | google | organico |
-| 2 | jim@abc.com | 24/01/2012 | google | cpc |
-| 3 | joe@def.com | 25/01/2012 | diretto | - |
-| 4 | jess@ghi.com | 26/01/2012 | referral | techcrunch.com |
-| 5 | jen@ghi.net | 30/01/2012 | altro | organico |
+| 1 | john@abc.com | 2012-01-24 | google | organico |
+| 2 | jim@abc.com | 2012-01-24 | google | cpc |
+| 3 | joe@def.com | 2012-01-25 | diretto | - |
+| 4 | jess@ghi.com | 2012-01-26 | referral | techcrunch.com |
+| 5 | jen@ghi.net | 2012-01-30 | altro | organico |
 | ... | ... | ... | ... | ... |
 
 Per iniziare, puoi contare il numero di utenti provenienti da ciascun canale di riferimento eseguendo la seguente query sul database:

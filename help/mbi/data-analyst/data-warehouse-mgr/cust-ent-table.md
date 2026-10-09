@@ -4,33 +4,51 @@ description: Scopri come accedere ai record di tutti gli account registrati.
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/iTzls4nEtW9ep-3s536ZnRCCr2TeMD6AsDecZc3Cdys
+TQID: 'https://experienceleague.adobe.com/iTzls4nEtW9ep-3s536ZnRCCr2TeMD6AsDecZc3Cdys'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: '604'
 ht-degree: 0%
-
 ---
-
 # tabella customer_entity
 
 La tabella `customer_entity` contiene i record di tutti gli account registrati. Un account viene considerato registrato se si iscrive a un account, indipendentemente dal fatto che abbia completato o meno un acquisto. Ogni riga corrisponde a un account registrato univoco, identificato dall&#39;account `entity_id` dell&#39;account.
@@ -45,7 +63,7 @@ Questa tabella non contiene i record dei clienti che effettuano un ordine tramit
 | `email` | Indirizzo e-mail associato all’account |
 | `entity_id` (PC) | Identificatore univoco della tabella, di solito utilizzato nei join di `customer_id` in altre tabelle dell&#39;istanza |
 | `group_id` | Chiave esterna associata alla tabella `customer_group`. Partecipa a `customer_group.customer_group_id` per determinare il gruppo di clienti associato all&#39;account registrato |
-| `store_id` | Chiave esterna associata alla tabella `store`. Partecipa a `store`.`store_id` per determinare quale visualizzazione archivio Commerce è associata all&#39;account registrato |
+| `store_id` | Chiave esterna associata alla tabella `store`. Partecipa a `store`.`store_id` per determinare quale visualizzazione di Commerce Store è associata all&#39;account registrato |
 
 {style="table-layout:auto"}
 
@@ -54,10 +72,10 @@ Questa tabella non contiene i record dei clienti che effettuano un ordine tramit
 | **Nome colonna** | **Descrizione** |
 |---|---|
 | `Customer's first 30 day revenue` | Somma il totale dei ricavi per tutti gli ordini effettuati dal cliente entro 30 giorni dalla data del primo ordine del cliente. Calcolato unendo `customer_entity.entity_id` a `sales_order.customer_id` e sommando il campo `base_grand_total` per tutti gli ordini in cui `sales_order.Seconds between customer's first order date and this order` ≤ 2592000, ovvero il numero di secondi in 30 giorni |
-| `Customer's first order date` | Timestamp del primo ordine effettuato da questo cliente. Calcolato unendo `customer_entity.entity_id` a `sales_order.customer_id` e restituendo il minimo `sales_order`.Valore `created_at` |
+| `Customer's first order date` | Timestamp del primo ordine effettuato da questo cliente. Calcolato unendo `customer_entity.entity_id` a `sales_order.customer_id` e restituendo il valore minimo di `sales_order`.`created_at` valore |
 | `Customer's first order's billing region` | Area di fatturazione associata al primo ordine del cliente. Calcolato unendo `customer_entity.entity_id` a `sales_order.customer_id` e restituendo `Billing address region` dove `sales_order.Customer's order number` = 1 |
 | `Customer's first order's coupon_code` | Codice coupon associato al primo ordine del cliente. Calcolato unendo `customer_entity.entity_id` a `sales_order.customer_id` e restituendo `sales_order.coupon_code` dove `sales_order.Customer's order number` = 1 |
-| `Customer's group code` | Nome del gruppo del cliente registrato. Calcolato unendo `customer_entity.group_id` a `customer_group`.`customer_group_id` e restituzione del campo `customer_group_code` |
+| `Customer's group code` | Nome del gruppo del cliente registrato. Calcolato unendo `customer_entity.group_id` a `customer_group`.`customer_group_id` e restituisce il campo `customer_group_code` |
 | `Customer's lifetime number of coupons` | Numero totale di coupon applicati a tutti gli ordini effettuati dal cliente. Calcolato unendo `customer_entity.entity_id` a `sales_order.customer_id` e contando il numero di ordini in cui `sales_order.coupon_code` non è `NULL` |
 | `Customer's lifetime number of orders` | Numero totale di ordini effettuati dal cliente. Calcolato unendo `customer_entity.entity_id` a `sales_order.customer_id` e contando il numero di righe nella tabella `sales_order` |
 | `Customer's lifetime revenue` | Somma il totale dei ricavi per tutti gli ordini effettuati dal cliente. Calcolato unendo `customer_entity.entity_id` a `sales_order.customer_id` e sommando il campo `base_grand_total` per tutti gli ordini effettuati da questo cliente |
@@ -84,9 +102,9 @@ Questa tabella non contiene i record dei clienti che effettuano un ordine tramit
 `customer_group`
 
 * Partecipa alla tabella `customer_group` per creare colonne che restituiscono il nome del gruppo di clienti dell&#39;account registrato.
-   * Percorso: `customer_entity.group_id` (molti) => `customer_group.customer_group_id` (uno)
+  * Percorso: `customer_entity.group_id` (molti) => `customer_group.customer_group_id` (uno)
 
 `store`
 
 * Partecipa alla tabella `store` per creare colonne che restituiscono dettagli relativi all&#39;archivio associato all&#39;account registrato.
-   * Percorso: `customer_entity.store_id` (molti) => `store.store_id` (uno)
+  * Percorso: `customer_entity.store_id` (molti) => `store.store_id` (uno)

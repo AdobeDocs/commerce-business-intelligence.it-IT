@@ -4,27 +4,37 @@ description: Scopri come impostare una dashboard per monitorare l’attività de
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
 role: Admin, User
 feature: Reports, Data Integration
-TQID: https://experienceleague.adobe.com/HcoHrBbXXjQGsd80DA06Dwq2dDmhUiuRbRLj-QONlw4
+TQID: 'https://experienceleague.adobe.com/HcoHrBbXXjQGsd80DA06Dwq2dDmhUiuRbRLj-QONlw4'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: '756'
 ht-degree: 0%
-
 ---
-
 # Analisi dell&#39;attività del sito Web
 
 [!DNL Adobe Commerce Intelligence] consente di integrare facilmente i dati relativi ai costi pubblicitari con il resto dei dati. Questo non solo ti consente di comprendere l’attività del sito web, ma ti consente anche di derivare la percentuale di visitatori del sito web che diventano un utente registrato o effettuano un acquisto.
@@ -93,25 +103,25 @@ Questa raccolta di rapporti viene creata utilizzando quanto segue:
 1. Aggiungi le metriche seguenti:
 
 * `New users`
-   * Fai clic su **[!UICONTROL Hide]** sotto il nome della metrica
+  * Fai clic su **[!UICONTROL Hide]** sotto il nome della metrica
 
 * `Number of orders`
-   * Aggiungi un filtro per `Customer's order number` = 1 e fai clic su **[!UICONTROL Apply]**
-   * Rinominare la metrica facendo clic sul nome della metrica, chiamandola `Number of first orders`, quindi fare clic su **[!UICONTROL Hide]**
+  * Aggiungi un filtro per `Customer's order number` = 1 e fai clic su **[!UICONTROL Apply]**
+  * Rinominare la metrica facendo clic sul nome della metrica, chiamandola `Number of first orders`, quindi fare clic su **[!UICONTROL Hide]**
 
 * `Number of orders`
-   * **[!UICONTROL Hide]** la metrica
+  * **[!UICONTROL Hide]** la metrica
 
 * `Users`
-   * **[!UICONTROL Hide]** la metrica
-   * Modificare il periodo di tempo in `24 months ago to now` e regolare l&#39;intervallo di tempo in `by month`.
-   * Aggiungere le formule seguenti facendo clic su **[!UICONTROL Formula]**.
-   * A/D quindi fare clic su **[!UICONTROL Apply]**
-   * Rinomina la formula `Registration conversion`
-   * B/D quindi fare clic su **[!UICONTROL Apply]**
-   * Rinomina la formula `First order conversion`
-   * C/D quindi fare clic su **[!UICONTROL Apply]**
-   * Rinomina la formula `Any order conversion`
+  * **[!UICONTROL Hide]** la metrica
+  * Modificare il periodo di tempo in `24 months ago to now` e regolare l&#39;intervallo di tempo in `by month`.
+  * Aggiungere le formule seguenti facendo clic su **[!UICONTROL Formula]**.
+  * A/D quindi fare clic su **[!UICONTROL Apply]**
+  * Rinomina la formula `Registration conversion`
+  * B/D quindi fare clic su **[!UICONTROL Apply]**
+  * Rinomina la formula `First order conversion`
+  * C/D quindi fare clic su **[!UICONTROL Apply]**
+  * Rinomina la formula `Any order conversion`
 
 * Assegnare un nome al report, ad esempio `Conversion by month`, quindi fare clic su **[!UICONTROL Save]**.
 

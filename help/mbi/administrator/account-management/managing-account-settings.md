@@ -6,26 +6,37 @@ role: Admin, User
 feature: Accounts
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b6935462-7263-4ced-a703-60de6a5aeb2d
+    internal-label: Administration
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: 9e444628-408e-5d74-8cd4-c552f0d5d47f
+    internal-label: Accounts
 subfeature_v2:
   - id: a763c1a2-1d0a-40d7-9617-8139636fd12e
+    internal-label: Access management
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+    internal-label: Administration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 349
+source-wordcount: '354'
 ht-degree: 0%
-
 ---
-
 # Personalizzazione delle impostazioni dell&#39;account
 
 >[!NOTE]
@@ -38,7 +49,7 @@ Nel tuo account [!DNL Commerce Intelligence], puoi personalizzare le impostazion
 
 * **[!UICONTROL Currency:]** Questa è la *valuta predefinita* per tutti i valori monetari nel tuo account. Ogni volta che un valore decimale o di valuta viene sincronizzato nel Data Warehouse, questa impostazione determina il simbolo posizionato prima di tale valore all’interno dei rapporti.
 
-* **[!UICONTROL Blackout Hours:]** Questa impostazione garantisce che, durante le ore selezionate della giornata, Data Warehouse non acceda ai database connessi. Tutte le ore sono espresse a ora zero e nell’ora solare orientale (EST). Se ad esempio non si desidera accedere al database di produzione tra le ore 9:00 a.m. EST e 1:00 a.m. EST, digitare la seguente matrice di cifre: **9, 10, 11, 12**.
+* **[!UICONTROL Blackout Hours:]** Questa impostazione garantisce che, durante le ore selezionate della giornata, Data Warehouse non acceda ai database connessi. Tutte le ore sono espresse a ora zero e nell’ora solare orientale (EST). Se ad esempio non si desidera accedere al database di produzione tra le ore 9:00 EST e le ore 13:00 EST, digitare la seguente matrice di cifre: **9, 10, 11, 12**.
 
 * **[!UICONTROL Forced update hours:]** Questa impostazione garantisce l&#39;avvio automatico di un aggiornamento di Data Warehouse nell&#39;account *durante le ore* specificate. Come per le ore di sospensione attività, anche queste sono in ET. Se ad esempio si desidera che gli aggiornamenti di Data Warehouse inizino automaticamente alle **mezzanotte** e alle **mezzogiorno** EST, digitare la seguente matrice di cifre: **0, 12**.
 
