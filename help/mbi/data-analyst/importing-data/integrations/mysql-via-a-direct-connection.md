@@ -43,7 +43,7 @@ ht-degree: 0%
 
 ## In questo argomento
 
-* [Consenti accesso all&#39;indirizzo IP  [!DNL Commerce Intelligence] ](#allowlist)
+* [Consenti accesso all&#39;indirizzo IP  [!DNL Commerce Intelligence] &#x200B;](#allowlist)
 * [Crea un  [!DNL MySQL]  utente per  [!DNL Commerce Intelligence]](#steptwo)
 * [Immetti le informazioni di connessione in  [!DNL Commerce Intelligence]](#stepthree)
 

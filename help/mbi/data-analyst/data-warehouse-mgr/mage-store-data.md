@@ -93,7 +93,7 @@ Poco dopo l&#39;aggiunta dei tre nuovi prodotti, un nuovo cliente, `Sammy Custom
 
 Al termine della creazione dell&#39;account, `Sammy Customer` è pronto per iniziare a effettuare un acquisto. Nel sito Web, il cliente aggiunge due coppie di `Throwback Bellbottoms` e una `V-Neck T-Shirt` al carrello. Soddisfatto delle selezioni, il cliente passa al pagamento e invia l&#39;ordine, creando la seguente voce nella [tabella ordini vendite a tariffa fissa](../data-warehouse-mgr/sales-flat-order-table.md):
 
-| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
+| **`entity id`** | **`customer id**` | &#x200B;**`subtotal`**&#x200B; | &#x200B;**`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94,85 | 2016/09/23 15:41:39 |
 

@@ -52,7 +52,7 @@ Colonne da creare
   * Seleziona [!UICONTROL table]: `sales_flat_order`
   * Seleziona [!UICONTROL column]: `created_at`
   * `sales_flat_order.customer_id = customer_entity.entity_id`
-  * [!UICONTROL Filter]: `Orders we count`
+  * [!UICONTROL Filter]&#x200B;: `Orders we count`
 
 * **`Seconds since customer's last order date`**
   * Seleziona [!UICONTROL definition]: `Age`
@@ -98,21 +98,21 @@ Colonne da creare
 
 * **Frequenza di abbandono**
   * [!UICONTROL Metric]: nuovi clienti (per data primo ordine)
-  * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-  * 
-    [!UICONTROL Perspective]: `Cumulative`
-  * [!UICONTROL Metric]: `New customers (by last order date)`
+  * [!UICONTROL Filter]&#x200B;: `Lifetime number of orders Greater Than 0`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: `Cumulative`
+  * [!UICONTROL Metric]&#x200B;: `New customers (by last order date)`
   * [!UICONTROL Filter]:
-  * Secondi trascorsi dall&#39;ultima data dell&#39;ordine del cliente >= [Limite predefinito per i clienti abbandonati ]**`^`**
+  * Secondi trascorsi dall&#39;ultima data dell&#39;ordine del cliente >= [Limite predefinito per i clienti abbandonati ]&#x200B;**`^`**
   * `Lifetime number of orders Greater Than 0`
 
-  * [!UICONTROL Metric]: `New customers (by last order date)`
-  * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-  * 
-    [!UICONTROL Perspective]: Cumulative
-  * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-  * 
-    [!UICONTROL Format]: Percentage
+  * [!UICONTROL Metric]&#x200B;: `New customers (by last order date)`
+  * [!UICONTROL Filter]&#x200B;: `Lifetime number of orders Greater Than 0`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: Cumulative
+  * [!UICONTROL Formula]&#x200B;: `(B / ((A + B) - C)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: Percentage
 
 * *Metrica `A`:`New customers cumulative`*
 * *Metrica `B`:`Churned customers by last order date`*

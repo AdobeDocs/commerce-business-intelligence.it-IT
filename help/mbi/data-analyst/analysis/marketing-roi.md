@@ -49,7 +49,7 @@ Se stai spendendo soldi per la pubblicità online, vuoi tenere traccia del tuo r
 
 ![Dashboard di marketing con metriche di ROI e prestazioni della campagna](../../assets/Marketing_dashboard_example.png)
 
-Prima di iniziare, connettere gli account [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md), [!DNL [Adwords]](../importing-data/integrations/google-adwords.md) e [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) e inserire eventuali dati aggiuntivi sulla spesa pubblicitaria online. Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-calc-columns.md).
+Prima di iniziare, connettere gli account [[!DNL [Facebook Ads]]](../importing-data/integrations/facebook-ads.md), [[!DNL [Adwords]]](../importing-data/integrations/google-adwords.md) e [[!DNL [Google Ecommerce]]](../importing-data/integrations/google-ecommerce.md) e inserire eventuali dati aggiuntivi sulla spesa pubblicitaria online. Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Tabelle consolidate
 
@@ -70,14 +70,14 @@ Colonne da creare
   * **`Order's GA campaign`**
     * Selezionare una definizione: `Joined Column`
     * [!UICONTROL Create Path]:
-    * 
-      [!UICONTROL Many]: `sales_flat_order.increment_id`
-    * 
-      [!UICONTROL One]: `ecommerce####.transaction_id`
+    * &#x200B;
+      [!UICONTROL Many]&#x200B;: `sales_flat_order.increment_id`
+    * &#x200B;
+      [!UICONTROL One]&#x200B;: `ecommerce####.transaction_id`
 
     * Seleziona [!UICONTROL table]: `ecommerce####`
     * Seleziona [!UICONTROL column]: `campaign`
-    * [!UICONTROL Path]: `sales_flat_order.increment_id = ecommerce#####.transactionID`
+    * [!UICONTROL Path]&#x200B;: `sales_flat_order.increment_id = ecommerce#####.transactionID`
 
   * **`Order's GA medium`**
     * Seleziona una definizione: Colonna unita
@@ -97,7 +97,7 @@ Colonne da creare
   * Selezionare una definizione: `Max`
   * Seleziona [!UICONTROL table]: `sales_flat_order`
   * Seleziona [!UICONTROL column]: `Order's GA campaign`
-  * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
+  * [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
   * [!UICONTROL Filter]:
     * `Orders we count`
     * `Customer's order number = 1`
@@ -115,7 +115,7 @@ Colonne da creare
   * Selezionare una definizione: `Max`
   * Seleziona [!UICONTROL table]: `sales_flat_order`
   * Seleziona [!UICONTROL column]: `Order's GA medium`
-  * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
+  * [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
   * [!UICONTROL Filter]:
     * `Orders we count`
     * `Customer's order number = 1`
@@ -125,19 +125,19 @@ Colonne da creare
   * Selezionare una definizione: `Joined Column`
   * Seleziona [!UICONTROL table]: `customer_entity`
   * Seleziona [!UICONTROL column]: `Customer's first order GA campaign`
-  * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
+  * [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
 
 * **`Customer's first order GA source`**
   * Seleziona una definizione: Colonna unita
   * Seleziona [!UICONTROL table]: `customer_entity`
   * Seleziona [!UICONTROL column]: `Customer's first order GA source`
-  * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
+  * [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
 
 * **`Customer's first order GA medium`**
   * Selezionare una definizione: `Joined Column`
   * Seleziona [!UICONTROL table]: `customer_entity`
   * Seleziona [!UICONTROL column]: `Customer's first order GA medium`
-  * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
+  * [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
 
 ## Metriche
 
@@ -169,14 +169,14 @@ Colonne da creare
   * [!UICONTROL Metric]: spesa annuncio
 
 * Metrica `A`: spesa annuncio
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart Type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 
 * **Acquisizioni di clienti annuncio (in qualsiasi momento)**
-  * [!UICONTROL Metric]: `New customers`
+  * [!UICONTROL Metric]&#x200B;: `New customers`
   * [!UICONTROL Filters]:
     * `User's first order's source LIKE %google%`
     * `User's first order's source LIKE %facebook%`
@@ -185,16 +185,16 @@ Colonne da creare
     * Logica filtro: ([`A`] O [`B`] O [`C`]) E [`D`]
 
 * Metrica `A`: `Ad customer acquisitions`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart Type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 
 * **ROI annuncio**
   * [!UICONTROL Metric]: spesa annuncio
 
-  * [!UICONTROL Metric]: `New customers`
+  * [!UICONTROL Metric]&#x200B;: `New customers`
   * [!UICONTROL Filters]:
     * `User's first order's source LIKE %google%`
     * `User's first order's source LIKE %facebook%`
@@ -210,35 +210,35 @@ Colonne da creare
     * `User's first order's medium IN cpc, ppc`
     * Logica filtro: ([`A`] O [`B`] O [`C`]) E [`D`]
 
-  * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
-  * 
-    [!UICONTROL Format]: `Percentage`
+  * [!UICONTROL Formula]&#x200B;: `((C - (A / B)) / (A / B))`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `Percentage`
 
 * Metrica `A`: `Ad Spend (hide)`
 * Metrica `B`: `Ad customer acquisitions (hide)`
 * Metrica `C`: `Average LTV (hide)`
-* [!UICONTROL Formula]: `Ads ROI`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart Type]: `Scalar`
+* [!UICONTROL Formula]&#x200B;: `Ads ROI`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 
 * **Ordini per mezzo ga**
-  * 
-    [!UICONTROL Metric]: `Orders`
+  * &#x200B;
+    [!UICONTROL Metric]&#x200B;: `Orders`
 
 * Metrica `A`: `Orders`
-* [!UICONTROL Time period]: `All time`
-* [!UICONTROL Interval]: `By Month`
-* [!UICONTROL Group by]: `Order's medium`
-* 
-  [!UICONTROL Chart Type]: `Area`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* [!UICONTROL Interval]&#x200B;: `By Month`
+* [!UICONTROL Group by]&#x200B;: `Order's medium`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Area`
 
 * **ROI annuncio per campagna**
-  * [!UICONTROL Metric]: `Ad Spend`
+  * [!UICONTROL Metric]&#x200B;: `Ad Spend`
 
-  * [!UICONTROL Metric]:`New customers`
+  * [!UICONTROL Metric]&#x200B;:`New customers`
   * [!UICONTROL Filters]:
     * `User's first order's source LIKE %google%`
     * `User's first order's source LIKE %facebook%`
@@ -262,51 +262,51 @@ Colonne da creare
     * `User's first order's medium IN cpc, ppc`
     * Logica filtro: ([`A`] O [`B`] O [`C`]) E [`D`]
 
-  * [!UICONTROL Formula]: `(A / B)`
-  * 
-    [!UICONTROL Format]: `Currency`
+  * [!UICONTROL Formula]&#x200B;: `(A / B)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `Currency`
 
-  * [!UICONTROL Formula]: `(C - (A / B))`
-  * 
-    [!UICONTROL Format]: `Currency`
+  * [!UICONTROL Formula]&#x200B;: `(C - (A / B))`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `Currency`
 
-  * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
-  * 
-    [!UICONTROL Format]: `Percentage`
+  * [!UICONTROL Formula]&#x200B;: `((C - (A / B)) / (A / B))`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `Percentage`
 
-  * [!UICONTROL Metric]: `Ad Clicks`
+  * [!UICONTROL Metric]&#x200B;: `Ad Clicks`
 
-  * [!UICONTROL Metric]: `Ad Impressions`
+  * [!UICONTROL Metric]&#x200B;: `Ad Impressions`
 
-  * [!UICONTROL Formula]: `(H / I)`
-  * 
-    [!UICONTROL Format]: `Percentage`
+  * [!UICONTROL Formula]&#x200B;: `(H / I)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `Percentage`
 
-  * [!UICONTROL Formula]: `(A / H)`
-  * 
-    [!UICONTROL Format]: `Currency`
+  * [!UICONTROL Formula]&#x200B;: `(A / H)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `Currency`
 
 * Metrica `A`: `Ad Spend` (nascondere)
 * Metrica `B`: `Ad customer acquisitions`
 * Metrica `C`: `Average LTV`
 * Metrica `D`: `Average lifetime # of orders`
-* 
-  [!UICONTROL Formula]: `CAC`
-* [!UICONTROL Formula]: `Avg return`
-* [!UICONTROL Formula]: `Ads ROI`
+* &#x200B;
+  [!UICONTROL Formula]&#x200B;: `CAC`
+* [!UICONTROL Formula]&#x200B;: `Avg return`
+* [!UICONTROL Formula]&#x200B;: `Ads ROI`
 * Metrica `H`: `adClicks`
 * Metrica `I`: `Impressions`
-* 
-  [!UICONTROL Formula]: `CTR`
-* 
-  [!UICONTROL Formula]: `CPC`
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
+  [!UICONTROL Formula]&#x200B;: `CTR`
+* &#x200B;
+  [!UICONTROL Formula]&#x200B;: `CPC`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
   [!UICONTROL Raggruppa per]: `campaign` (Utilizza la campagna &quot;Customer&#39;s first order&#39;s&quot; per le metriche della tabella di spesa non relative agli annunci)
-* 
-  [!UICONTROL Chart Type]: `Table`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Table`
 
 Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 

@@ -167,7 +167,7 @@ Per creare questo tipo di colonna calcolata, è necessario conoscere:
 
 ## Io sto provando a convertire i fusi orari. {#timezone}
 
-Una colonna calcolata per la conversione del fuso orario **** converte i timestamp per una particolare origine dati dal fuso orario registrato a un fuso orario di reporting.
+Una colonna calcolata per la conversione del fuso orario **&#x200B;**&#x200B;converte i timestamp per una particolare origine dati dal fuso orario registrato a un fuso orario di reporting.
 
 Ecco un esempio:
 

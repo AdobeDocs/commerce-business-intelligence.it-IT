@@ -74,41 +74,41 @@ Una volta creata la metrica, puoi **creare un dashboard** effettuando le seguent
 >Il **[!UICONTROL Time Period:]**, il periodo di tempo per ogni report è elencato come `All-time`. Puoi modificarlo in base alle tue esigenze di analisi. Adobe consiglia che tutti i rapporti in questo dashboard riguardino lo stesso periodo di tempo, ad esempio `All time`, `Year-to-date` o `Last 365 days`.
 
 * **[!UICONTROL Average LTV (all)]**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL Interval]: `None`
-  * [!UICONTROL Chart Type]: `Number (scalar)`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL Interval]&#x200B;: `None`
+  * [!UICONTROL Chart Type]&#x200B;: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
-  * [!UICONTROL Metric]: `Avg lifetime revenue`
+  * [!UICONTROL Metric]&#x200B;: `Avg lifetime revenue`
     * Aggiungi [!UICONTROL filters]:
       * [`A`] `Customer's group code` **Diverso Da** `Not Logged In`
       * [`B`] `Customer's lifetime number of orders` **Maggiore Di**`0`
 
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL Interval]: `None`
-  * [!UICONTROL Chart Type]: `Number (scalar)`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL Interval]&#x200B;: `None`
+  * [!UICONTROL Chart Type]&#x200B;: `Number (scalar)`
 
 * **[!UICONTROL Average and Median LTV]**
   * Metrica `1`: `Avg lifetime revenue`
   * Metrica `2`: `Median lifetime revenue`
-  * [!UICONTROL Time period]: `All time`
-  * [!UICONTROL Interval]: `By Month`
-  * 
-    [!UICONTROL Chart Type]: `Line`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * [!UICONTROL Interval]&#x200B;: `By Month`
+  * &#x200B;
+    [!UICONTROL Chart Type]&#x200B;: `Line`
   * Deseleziona `Multiple Y-Axes`
 
 * **LTV per numero di ordini a vita**
   * Metrica `1`: `Avg lifetime revenue`
   * Metrica `2`: `New customers`
-  * [!UICONTROL Time period]: `All time`
-  * 
-    [!UICONTROL Interval]: `None`
-  * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-  * 
-    [!UICONTROL Chart Type]: `Line`
+  * [!UICONTROL Time period]&#x200B;: `All time`
+  * &#x200B;
+    [!UICONTROL Interval]&#x200B;: `None`
+  * [!UICONTROL Group by]&#x200B;: `Customer's lifetime number of orders`
+  * &#x200B;
+    [!UICONTROL Chart Type]&#x200B;: `Line`
 
   >[!NOTE]
   >

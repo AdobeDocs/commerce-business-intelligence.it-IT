@@ -65,8 +65,8 @@ Colonne da creare
 * Seleziona una definizione: colonna unita
 * Seleziona [!UICONTROL table]: `customer_entity`
 * Seleziona [!UICONTROL column]: `Customer's lifetime number of orders`
-* [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
-* [!UICONTROL Filter]: `Orders we count`
+* [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
+* [!UICONTROL Filter]&#x200B;: `Orders we count`
 
 * `Seconds since created_at`
 * Selezionare una definizione: `Age`
@@ -90,65 +90,65 @@ Nessuna nuova metrica.
 
 * **Probabilità ordine di ripetizione iniziale**
 * Metrica A: Ordini ripetuti in qualsiasi momento
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * Metrica B: Ordini di tutti i tempi
 * [!UICONTROL Metric]: numero di ordini
 
 * [!UICONTROL Formula]: probabilità ordine di ripetizione iniziale
-* 
-  [!UICONTROL Formula]: `A/B`
-* 
-  [!UICONTROL Format]: `Percent`
+* &#x200B;
+  [!UICONTROL Formula]&#x200B;: `A/B`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Scalar`
 
 * **Probabilità di ripetizione ordine fornita mesi dall&#39;ordine**
 * Metrica A: ripetere gli ordini per mesi dall’ordine precedente (nascondere)
-* [!UICONTROL Metric]: `Number of orders`
-* 
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* &#x200B;
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * Metrica B: Ultimi ordini per mesi dall’ordine (nascondi)
-* [!UICONTROL Metric]: `Number of orders`
-* 
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* &#x200B;
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
 * Metrica C: Ordini ripetuti in qualsiasi momento (nascondi)
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
-* 
-  [!UICONTROL Raggruppa per]: `Independent`
+* &#x200B;
+  [!UICONTROL Raggruppa per]&#x200B;: `Independent`
 
 * Metrica D: Ultimi ordini in qualsiasi momento (nascondi)
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
-* 
-  [!UICONTROL Raggruppa per]: `Independent`
+* &#x200B;
+  [!UICONTROL Raggruppa per]&#x200B;: `Independent`
 
 * [!UICONTROL Formula]: probabilità ordine di ripetizione iniziale
-* 
-  [!UICONTROL Formula]: `(C-A)/(C+D-A-B)`
-* 
-  [!UICONTROL Format]: `Percent`
+* &#x200B;
+  [!UICONTROL Formula]&#x200B;: `(C-A)/(C+D-A-B)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Months since previous order`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Months since previous order`
 * Mostra top.bottom: prime 24 categorie, ordinate per nome di categoria
 
-* 
-  [!UICONTROL Chart type]: `Line`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Line`
 
 Il rapporto probabilità ordine ripetuto iniziale rappresenta il totale ordini ripetuti / totale ordini. Ogni ordine è un&#39;opportunità per fare un ordine ripetuto; il numero di ordini ripetuti è il sottoinsieme di quelli che effettivamente lo fanno.
 

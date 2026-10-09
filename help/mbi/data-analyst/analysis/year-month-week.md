@@ -74,7 +74,7 @@ Questa analisi contiene [colonne calcolate avanzate](../data-warehouse-mgr/adv-c
   * `created_at (month)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-mese&#39;)**
   * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;gg&#39;)**
   * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
-  * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
+  * **`created_at (hour of the day)` [!UICONTROL Calculation]: &#x200B;** to_char(A, &#39;hh24&#39;)**
     ![Creare un&#39;interfaccia colonna calcolata in Data Warehouse Manager](../../assets/new-arch-create-calc.png)
 
 ## Metriche
@@ -88,26 +88,26 @@ Nessuno.
 ## Rapporti
 
 * **Grafico YoY**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Time options]: `Time range (Custom)`: `2 years ago to 1 year ago`
 
   * [!UICONTROL Show top/bottom]: primi 100% in base a **`created_at (month-day)`***
 
 * Metrica `A`: `This year`
 * Metrica `B`: `Last year`
-* [!UICONTROL Time period]: `1 year ago to 0 years ago`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `created_at (month-day)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Time period]&#x200B;: `1 year ago to 0 years ago`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `created_at (month-day)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 * **Grafico MoM**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * Opzioni ora: `Time range (Custom)`: `2 months ago to 1 month ago`
 
   * Mostra in alto/in basso: primi 100% in base a **`created_at (day of month)`***
@@ -115,44 +115,44 @@ Nessuno.
 * Metrica `A`: questo mese*
 * Metrica `B`: ultimo mese*
 * [!UICONTROL Time period]: da un mese fa a 0 mesi fa
-* 
-  [!UICONTROL Interval]: None
-* [!UICONTROL Group by]: `created_at (day of month)`
-* 
-  [!UICONTROL Chart Type]: Line
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: None
+* [!UICONTROL Group by]&#x200B;: `created_at (day of month)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: Line
 
 * **Grafico W**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Time options]: `Time range (Custom)`: `2 weeks ago to 1 week ago`
 
   * [!UICONTROL Show top/bottom]: primi 100% ordinati per `created_at (day of week)`
 
 * Metrica `A`: `This week`
 * Metrica `B`: `Last week`
-* [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `created_at (day of week)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Time period]&#x200B;: `1 week ago to 0 weeks ago`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `created_at (day of week)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 * **Grafico DoD**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Time options]: `Time range (Custom)`: `2 days ago to 1 day ago`
 
   * [!UICONTROL Show top/bottom]: primi 100% ordinati per `created_at (hour of day)`
 
 * Metrica `A`: `Today`
 * Metrica B: `Yesterday`
-* [!UICONTROL Time period]: `1 day ago to 0 days ago`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `created_at (hour of day)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Time period]&#x200B;: `1 day ago to 0 days ago`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `created_at (hour of day)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile all’immagine nella parte superiore della pagina.
