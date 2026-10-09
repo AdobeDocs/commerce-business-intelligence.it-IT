@@ -4,32 +4,49 @@ description: Analizza i dati dell’help desk Zendesk in Commerce Intelligence p
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/2X87aaT7tJ-Rn6TK7g084p5OB-iML0vPaJlRUYAIesQ
+TQID: 'https://experienceleague.adobe.com/2X87aaT7tJ-Rn6TK7g084p5OB-iML0vPaJlRUYAIesQ'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 904
+source-wordcount: '904'
 ht-degree: 54%
-
 ---
-
 # Report helpdesk per [!DNL Zendesk]
 
 >[!NOTE]
@@ -96,7 +113,7 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 
 * Tabella **`[!DNL Zendesk] user's`**
   * `User is agent? (Yes/No) `
-  * &#x200B;
+  * 
     * `Column type` - `Same Table > Calculation`
 
     * `Input columns` - `role`, `email`
@@ -110,23 +127,23 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 * Tabella **`[!DNL Zendesk] audits_~_events`**
   * Selezionare una definizione: `Joined Column`
   * [!UICONTROL Create Path]:
-  * [!UICONTROL Many]&#x200B;: `[!DNL Zendesk] audits_~_events.author_id8`
-  * [!UICONTROL One]&#x200B;: `[!DNL Zendesk] users.id`
+  * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events.author_id8`
+  * [!UICONTROL One]: `[!DNL Zendesk] users.id`
 
   * Seleziona [!UICONTROL table]: `[!DNL Zendesk] users`
   * Seleziona [!UICONTROL column]: `User is agent? (Yes/No)`
-  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] audits_~_events.author_id = [!DNL Zendesk] users.id`
+  * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events.author_id = [!DNL Zendesk] users.id`
 
 * **`Author is agent? (Yes/No)`**
 
 * Tabella **`[!DNL Zendesk] audits`**
   * Selezionare una definizione: `Exists`
   * [!UICONTROL Create Path]:
-  * [!UICONTROL Many]&#x200B;: `[!DNL Zendesk] audits_~_events._id_of_parent`
-  * [!UICONTROL One]&#x200B;: `[!DNL Zendesk] audits._id`
+  * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events._id_of_parent`
+  * [!UICONTROL One]: `[!DNL Zendesk] audits._id`
 
   * Seleziona [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
-  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
+  * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
   * [!UICONTROL Filter]:
   * `field_name` = `status`
   * `type` = `Change`
@@ -134,8 +151,8 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 
   * Selezionare una definizione: `Exists`
   * Seleziona [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
-  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
-  * [!UICONTROL Filter]&#x200B;: `Author is agent? (Yes/No)`
+  * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
+  * [!UICONTROL Filter]: `Author is agent? (Yes/No)`
   * `type` = `Comment`
   * `public` = `1`
 
@@ -145,33 +162,33 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 * Tabella **`[!DNL Zendesk] Tickets`**
   * Selezionare una definizione: `Joined Column`
   * [!UICONTROL Create Path]:
-  * [!UICONTROL Many]&#x200B;: `[!DNL Zendesk] tickets.requester_id`
-  * [!UICONTROL One]&#x200B;: `[!DNL Zendesk] users.id`
+  * [!UICONTROL Many]: `[!DNL Zendesk] tickets.requester_id`
+  * [!UICONTROL One]: `[!DNL Zendesk] users.id`
 
   * Seleziona [!UICONTROL table]: `[!DNL Zendesk] users`
   * Seleziona [!UICONTROL column]: `email`
-  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
+  * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
   * Selezionare una definizione: `Joined Column`
   * Seleziona [!UICONTROL table]: `[!DNL Zendesk] users`
   * Seleziona [!UICONTROL column]: `role`
-  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
+  * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
   * Selezionare una definizione: `Max`
   * [!UICONTROL Create Path]:
-  * [!UICONTROL Many]&#x200B;: `[!DNL Zendesk] audits.ticket_id`
-  * [!UICONTROL One]&#x200B;: `[!DNL Zendesk] tickets.id`
+  * [!UICONTROL Many]: `[!DNL Zendesk] audits.ticket_id`
+  * [!UICONTROL One]: `[!DNL Zendesk] tickets.id`
 
   * Seleziona [!UICONTROL table]: `[!DNL Zendesk] audits`
   * Seleziona [!UICONTROL column]: `created_at`
-  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
+  * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
   * [!UICONTROL Filter]:
   * `status` è cambiato in `solved = 1`
 
   * Selezionare una definizione: `Min`
   * Seleziona [!UICONTROL table]: `[!DNL Zendesk] audits`
   * Seleziona [!UICONTROL column]: `created_at`
-  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
+  * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
   * [!UICONTROL Filter]:
   * `Is agent comment? = 1`
 
@@ -180,19 +197,19 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 * `Ticket's latest solved date`
 * `First agent response date`
 * `Seconds to resolution`
-  * &#x200B;
+  * 
     * `Column type` - `Same Table > Date Difference`
 
     * `Ticket's latest solved date` meno `created_at`
 
 * **`Seconds to first response`**
-  * &#x200B;
+  * 
     * `Column type` - `Same Table > Date Difference`
 
     * `First agent response date` meno `created_at`
 
 * **`Requester's ticket number`**
-  * &#x200B;
+  * 
     * `Column type` - `Same Table > Event Number`
 
     * `Event Owner` - `requester_id`
@@ -200,7 +217,7 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
     * `Event Rank` - `created_at`
 
 * **`Ticket created_at (hour of day)`**
-  * &#x200B;
+  * 
     * `Column type` - &quot;Stessa tabella > Calcolo&quot;
 
     * `Input columns` - `created_at`
@@ -210,7 +227,7 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
     * `Datatype` - Numero intero
 
 * **`Ticket created_at (day of week)`**
-  * &#x200B;
+  * 
     * `Column type` - &quot;Stessa tabella > Calcolo&quot;
 
     * `Input columns` - `created_at`
@@ -222,18 +239,18 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 * Tabella **`customer_entity`**
   * Selezionare una definizione: `Count`
   * [!UICONTROL Create Path]:
-  * [!UICONTROL Many]&#x200B;: `[!DNL Zendesk] tickets.email`
-  * &#x200B;
-    [!UICONTROL Uno]&#x200B;: `customer_entity.email`
+  * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
+  * 
+    [!UICONTROL Uno]: `customer_entity.email`
 
   * Seleziona [!UICONTROL table]: `[!DNL Zendesk] tickets`
-  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] tickets.email = customer_entity.email`
+  * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
   * [!UICONTROL Filter]:
   * `Tickets we count`
 
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
-  * &#x200B;
+  * 
     * `Column type` - &quot;Stessa tabella > Calcolo&quot;
 
     * `Input columns` - `User's lifetime number of support tickets requested`
@@ -246,7 +263,7 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
   * Selezionare una definizione: `Joined Column`
   * Seleziona [!UICONTROL table]: `customer_entity`
   * Seleziona [!UICONTROL column]: `User's lifetime number of support tickets requested`
-  * [!UICONTROL Path]&#x200B;: `[!DNL Zendesk] tickets.email = customer_entity.email`
+  * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
 
 * **`Requester's lifetime number of support tickets`**
 
@@ -307,7 +324,7 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 ### Rapporti
 
 * **[!UICONTROL New/Open/Pending tickets]**
-  * [!UICONTROL Metric]&#x200B;: `New Tickets`
+  * [!UICONTROL Metric]: `New Tickets`
   * [!UICONTROL Filter]:
   * Stato IN `new, open, pending`
 
@@ -317,7 +334,7 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 * `Chart Type`: `Scalar`
 
 * **[!UICONTROL Closed/Solved tickets]**
-  * [!UICONTROL Metric]&#x200B;: `New Tickets`
+  * [!UICONTROL Metric]: `New Tickets`
   * [!UICONTROL Filter]:
   * Stato IN `solved, closed`
 
@@ -327,7 +344,7 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 * `Chart Type`: `Scalar`
 
 * **[!UICONTROL Average time to first response]**
-  * [!UICONTROL Metric]&#x200B;: `Average time to first response`
+  * [!UICONTROL Metric]: `Average time to first response`
 
 * Metrica `A`: `Average time to first response`
 * `Time period`: `All time`
@@ -335,7 +352,7 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 * `Chart Type`: `Scalar`
 
 * **[!UICONTROL Average time to resolution]**
-  * [!UICONTROL Metric]&#x200B;: `Average time to resolution`
+  * [!UICONTROL Metric]: `Average time to resolution`
   * [!UICONTROL Filter]:
   * Stato IN `solved, closed`
 
@@ -345,7 +362,7 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 * `Chart Type`: `Scalar`
 
 * **[!UICONTROL Tickets by status]**
-  * [!UICONTROL Metric]&#x200B;: `New Tickets`
+  * [!UICONTROL Metric]: `New Tickets`
 
 * Metrica `A`: `New tickets`
 * `Time period`: `All time`
@@ -354,9 +371,9 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 * `Chart Type`: `Stacked Column`
 
 * **[!UICONTROL Number of new and solved tickets]**
-  * [!UICONTROL Metric]&#x200B;: `New Tickets`
+  * [!UICONTROL Metric]: `New Tickets`
 
-  * [!UICONTROL Metric]&#x200B;: `New Tickets`
+  * [!UICONTROL Metric]: `New Tickets`
 
 * Metrica `A`: `New tickets`
 * Metrica `B`: `Solved tickets`
@@ -365,7 +382,7 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 * `Chart Type`: `Line`
 
 * **[!UICONTROL Time to first response]**
-  * [!UICONTROL Metric]&#x200B;: `Average time to first response`
+  * [!UICONTROL Metric]: `Average time to first response`
 
 * Metrica `A`: `Average time to first response`
 * `Time period`: `All time`
@@ -373,7 +390,7 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Time to resolution]**
-  * [!UICONTROL Metric]&#x200B;: `Average time to resolution`
+  * [!UICONTROL Metric]: `Average time to resolution`
   * [!UICONTROL Filter]:
   * Stato IN `solved, closed`
 
@@ -383,7 +400,7 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Distinct users filing tickets]**
-  * [!UICONTROL Metric]&#x200B;: `Distinct users filing tickets`
+  * [!UICONTROL Metric]: `Distinct users filing tickets`
 
 * Metrica `A`: `Distinct users filing tickets`
 * `Time period`: `All time`
@@ -391,7 +408,7 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Peak ticket days]**
-  * [!UICONTROL Metric]&#x200B;: `New Tickets`
+  * [!UICONTROL Metric]: `New Tickets`
 
 * Metrica `A`: `New tickets`
 * `Time period`: `All time`
@@ -400,7 +417,7 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 * `Chart Type`: `Pie`
 
 * **[!UICONTROL Peak ticket hours]**
-  * [!UICONTROL Metric]&#x200B;:`New Tickets`
+  * [!UICONTROL Metric]:`New Tickets`
 
   * `Show top/bottom`: `Top 100% sorted by created_at (hour of the day)`
 
@@ -411,7 +428,7 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 * `Chart Type`: `Pie`
 
 * **[!UICONTROL Avg LTV of users who have and have not filed tickets]**
-  * [!UICONTROL Metric]&#x200B;: `Average lifetime revenue`
+  * [!UICONTROL Metric]: `Average lifetime revenue`
 
 * Metrica `A`: `Average lifetime revenue`
 * `Time period`: `All time`
@@ -420,8 +437,8 @@ Prima di iniziare, connettere [[!DNL Zendesk]](../integrations/zendesk.md). Ques
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
-  * &#x200B;
-    [!UICONTROL Metric]&#x200B;: Users
+  * 
+    [!UICONTROL Metric]: Users
 
 * Metrica `A`: `New users`
 * `Time period`: `All time`

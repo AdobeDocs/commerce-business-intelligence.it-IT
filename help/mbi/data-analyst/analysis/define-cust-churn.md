@@ -4,29 +4,41 @@ description: Scopri come impostare una dashboard che ti aiuti a definire l’abb
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-TQID: https://experienceleague.adobe.com/eDJBh7FlhuKjBa5ft4sqAfZavmBk4V9m-Iu-26cG2VI
+TQID: 'https://experienceleague.adobe.com/eDJBh7FlhuKjBa5ft4sqAfZavmBk4V9m-Iu-26cG2VI'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Troubleshooting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 593
+source-wordcount: '593'
 ht-degree: 16%
-
 ---
-
 # Abbandono dei clienti transazionali
 
 Questo argomento illustra come impostare una dashboard che ti aiuti a definire l’abbandono per i clienti transazionali.
@@ -53,8 +65,8 @@ Colonne da creare
 * Seleziona una definizione: colonna unita
 * Seleziona [!UICONTROL table]: `customer_entity`
 * Seleziona [!UICONTROL column]: `Customer's lifetime number of orders`
-* [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
-* [!UICONTROL Filter]&#x200B;: `Orders we count`
+* [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
+* [!UICONTROL Filter]: `Orders we count`
 
 * `Seconds since created_at`
 * Selezionare una definizione: `Age`
@@ -78,65 +90,65 @@ Nessuna nuova metrica.
 
 * **Probabilità ordine di ripetizione iniziale**
 * Metrica A: Ordini ripetuti in qualsiasi momento
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
-* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
+* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * Metrica B: Ordini di tutti i tempi
 * [!UICONTROL Metric]: numero di ordini
 
 * [!UICONTROL Formula]: probabilità ordine di ripetizione iniziale
-* &#x200B;
-  [!UICONTROL Formula]&#x200B;: `A/B`
-* &#x200B;
-  [!UICONTROL Format]&#x200B;: `Percent`
+* 
+  [!UICONTROL Formula]: `A/B`
+* 
+  [!UICONTROL Format]: `Percent`
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Interval]&#x200B;: `None`
-* &#x200B;
-  [!UICONTROL Chart type]&#x200B;: `Scalar`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Interval]: `None`
+* 
+  [!UICONTROL Chart type]: `Scalar`
 
 * **Probabilità di ripetizione ordine fornita mesi dall&#39;ordine**
 * Metrica A: ripetere gli ordini per mesi dall’ordine precedente (nascondere)
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
-* &#x200B;
-  [!UICONTROL Perspective]&#x200B;: `Cumulative`
-* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
+* [!UICONTROL Metric]: `Number of orders`
+* 
+  [!UICONTROL Perspective]: `Cumulative`
+* [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * Metrica B: Ultimi ordini per mesi dall’ordine (nascondi)
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
-* &#x200B;
-  [!UICONTROL Perspective]&#x200B;: `Cumulative`
-* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]: `Number of orders`
+* 
+  [!UICONTROL Perspective]: `Cumulative`
+* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * Metrica C: Ordini ripetuti in qualsiasi momento (nascondi)
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
-* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
+* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* &#x200B;
-  [!UICONTROL Raggruppa per]&#x200B;: `Independent`
+* 
+  [!UICONTROL Raggruppa per]: `Independent`
 
 * Metrica D: Ultimi ordini in qualsiasi momento (nascondi)
-* [!UICONTROL Metric]&#x200B;: `Number of orders`
-* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]: `Number of orders`
+* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* &#x200B;
-  [!UICONTROL Raggruppa per]&#x200B;: `Independent`
+* 
+  [!UICONTROL Raggruppa per]: `Independent`
 
 * [!UICONTROL Formula]: probabilità ordine di ripetizione iniziale
-* &#x200B;
-  [!UICONTROL Formula]&#x200B;: `(C-A)/(C+D-A-B)`
-* &#x200B;
-  [!UICONTROL Format]&#x200B;: `Percent`
+* 
+  [!UICONTROL Formula]: `(C-A)/(C+D-A-B)`
+* 
+  [!UICONTROL Format]: `Percent`
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Interval]&#x200B;: `None`
-* [!UICONTROL Group by]&#x200B;: `Months since previous order`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Interval]: `None`
+* [!UICONTROL Group by]: `Months since previous order`
 * Mostra top.bottom: prime 24 categorie, ordinate per nome di categoria
 
-* &#x200B;
-  [!UICONTROL Chart type]&#x200B;: `Line`
+* 
+  [!UICONTROL Chart type]: `Line`
 
 Il rapporto probabilità ordine ripetuto iniziale rappresenta il totale ordini ripetuti / totale ordini. Ogni ordine è un&#39;opportunità per fare un ordine ripetuto; il numero di ordini ripetuti è il sottoinsieme di quelli che effettivamente lo fanno.
 
@@ -148,4 +160,4 @@ Una volta creato il dashboard, la domanda più comune è: come si utilizza quest
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile all’immagine nella parte superiore della pagina
 
-Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

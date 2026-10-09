@@ -6,24 +6,42 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Troubleshooting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 540
+source-wordcount: '540'
 ht-degree: 38%
-
 ---
-
 # Analisi del valore del ciclo di vita previsto
 
 In questo argomento viene illustrato come impostare una dashboard che consenta di comprendere la crescita del valore del ciclo di vita del cliente e il valore atteso del ciclo di vita dei clienti.
@@ -38,54 +56,54 @@ Prima di iniziare, acquisisci familiarità con [Report Builder coorte.](../dev-r
 
 Colonne da creare nella tabella **orders** se si utilizzano **mesi di 30 giorni**:
 
-* [!UICONTROL Column name]&#x200B;: `Months between first order and this order`
-* [!UICONTROL Column type]&#x200B;: `Same Table`
-* &#x200B;
-  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
+* [!UICONTROL Column name]: `Months between first order and this order`
+* [!UICONTROL Column type]: `Same Table`
+* 
+  [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `Seconds between customer's first order date and this order`
-* &#x200B;
-  [!UICONTROL Datatype]&#x200B;: `Integer`
+* 
+  [!UICONTROL Datatype]: `Integer`
 * **Definizione:**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
 
-* [!UICONTROL Column name]&#x200B;: `Months since order`
-* [!UICONTROL Column type]&#x200B;: `Same Table`
-* &#x200B;
-  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
+* [!UICONTROL Column name]: `Months since order`
+* [!UICONTROL Column type]: `Same Table`
+* 
+  [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `created_at`
-* &#x200B;
-  [!UICONTROL Datatype]&#x200B;: `Integer`
+* 
+  [!UICONTROL Datatype]: `Integer`
 * Definizione: `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
 Colonne da creare nella tabella **`orders`** se si utilizza **calendario** mesi:
 
-* [!UICONTROL Column name]&#x200B;: `Calendar months between first order and this order`
-* [!UICONTROL Column type]&#x200B;: `Same Table`
-* &#x200B;
-  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
+* [!UICONTROL Column name]: `Calendar months between first order and this order`
+* [!UICONTROL Column type]: `Same Table`
+* 
+  [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column inputs]:
   * `A` = `created_at`
   * `B` = `Customer's first order date`
 
-* &#x200B;
-  [!UICONTROL Datatype]&#x200B;: `Integer`
+* 
+  [!UICONTROL Datatype]: `Integer`
 * Definizione: `case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
 
-* [!UICONTROL Column name]&#x200B;: `Calendar months since order`
-* [!UICONTROL Column type]&#x200B;: `Same Table`
-* &#x200B;
-  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
+* [!UICONTROL Column name]: `Calendar months since order`
+* [!UICONTROL Column type]: `Same Table`
+* 
+  [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: `A` = `created_at`
-* &#x200B;
-  [!UICONTROL Datatype]&#x200B;: `Integer`
+* 
+  [!UICONTROL Datatype]: `Integer`
 * **Definizione:**`case when A is null then null else ((date_part('year',current_timestamp::date) - date_part('year',A::date))*12 + date_part('month',current_timestamp::date) - date_part('month',A::date))::int end`
 
-* [!UICONTROL Column name]&#x200B;: `Is in current month? (Yes/No)`
-* [!UICONTROL Column type]&#x200B;: `Same Table`
-* &#x200B;
-  [!UICONTROL Column equation]&#x200B;: `CALCULATION`
+* [!UICONTROL Column name]: `Is in current month? (Yes/No)`
+* [!UICONTROL Column type]: `Same Table`
+* 
+  [!UICONTROL Column equation]: `CALCULATION`
 * [!UICONTROL Column input]: A = `created_at`
-* &#x200B;
-  [!UICONTROL Datatype]&#x200B;: `String`
+* 
+  [!UICONTROL Datatype]: `String`
 * Definizione: `case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
 
 ## Metriche
@@ -116,55 +134,55 @@ Metriche da creare
   * `Calendar months between first order and this order` `<= X` (Scegli un numero ragionevole per X, ad esempio, 24 mesi)
   * `Is in current month?` = `No`
 
-* &#x200B;
-  [!UICONTROL Metric]&#x200B;: `Revenue`
+* 
+  [!UICONTROL Metric]: `Revenue`
 * [!UICONTROL Filter]:
 
 * Metrica `B`: `All time customers (hide)`
   * `Is in current month?` = `No`
 
-* [!UICONTROL Metric]&#x200B;: `New customers by first order date`
+* [!UICONTROL Metric]: `New customers by first order date`
 * [!UICONTROL Filter]:
 
 * Metrica `C`: `All time customers by month since first order (hide)`
   * `Calendar months since order` `<= X`
   * `Is in current month?` = `No`
 
-* [!UICONTROL Metric]&#x200B;: `New customers by first order date`
+* [!UICONTROL Metric]: `New customers by first order date`
 * [!UICONTROL Filter]:
 
-* [!UICONTROL Formula]&#x200B;: `Expected revenue`
-* [!UICONTROL Formula]&#x200B;: `A / (B - C)`
-* &#x200B;
-  [!UICONTROL Format]&#x200B;: `Currency`
+* [!UICONTROL Formula]: `Expected revenue`
+* [!UICONTROL Formula]: `A / (B - C)`
+* 
+  [!UICONTROL Format]: `Currency`
 
 Altri dettagli grafico
 
-* [!UICONTROL Time period]&#x200B;: `All time`
+* [!UICONTROL Time period]: `All time`
 * Intervallo di tempo: `None`
 * [!UICONTROL Group by]: `Calendar months between first order and this order` - mostra tutto
 * Cambia `group by` per la metrica `All time customers` in Indipendente utilizzando l&#39;icona a forma di matita accanto a `group by`
 * Modificare i campi `Show top/bottom` come segue:
-  * [!UICONTROL Revenue]&#x200B;: `Top 24 sorted by Calendar months between first order and this order`
-  * [!UICONTROL All time customers]&#x200B;: `Top 24 sorted by All time customers`
-  * [!UICONTROL All time customers by month since first order]&#x200B;: `Top 24 sorted by All time customers by month since first order`
+  * [!UICONTROL Revenue]: `Top 24 sorted by Calendar months between first order and this order`
+  * [!UICONTROL All time customers]: `Top 24 sorted by All time customers`
+  * [!UICONTROL All time customers by month since first order]: `Top 24 sorted by All time customers by month since first order`
 
 **Ricavi medi al mese per coorte**
 
 * Metrica `A`: `Revenue`
-* &#x200B;
-  [!UICONTROL Metric view]&#x200B;: `Cohort`
-* [!UICONTROL Cohort date]&#x200B;: `Customer's first order date`
-* [!UICONTROL Perspective]&#x200B;: `Average value per cohort member`
+* 
+  [!UICONTROL Metric view]: `Cohort`
+* [!UICONTROL Cohort date]: `Customer's first order date`
+* [!UICONTROL Perspective]: `Average value per cohort member`
 
 **Ricavi medi cumulati al mese per coorte**
 
 * Metrica `A`: `Revenue`
-* &#x200B;
-  [!UICONTROL Metric view]&#x200B;: `Cohort`
-* [!UICONTROL Cohort date]&#x200B;: `Customer's first order date`
-* [!UICONTROL Perspective]&#x200B;: `Cumulative average value per cohort member`
+* 
+  [!UICONTROL Metric view]: `Cohort`
+* [!UICONTROL Cohort date]: `Customer's first order date`
+* [!UICONTROL Perspective]: `Cumulative average value per cohort member`
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile all’immagine nella parte superiore della pagina.
 
-Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

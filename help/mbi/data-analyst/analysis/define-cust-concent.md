@@ -4,30 +4,43 @@ description: Scopri come impostare una dashboard che ti aiuti a misurare come ve
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-TQID: https://experienceleague.adobe.com/kayq-ci-AiHHgNoaX09h6dqKQX14MudLvEqFmos3hQE
+TQID: 'https://experienceleague.adobe.com/kayq-ci-AiHHgNoaX09h6dqKQX14MudLvEqFmos3hQE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Troubleshooting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 640
+source-wordcount: '640'
 ht-degree: 11%
-
 ---
-
 # Concentrazione dei clienti
 
 In questo argomento viene illustrato come impostare una dashboard che consenta di misurare la distribuzione dei ricavi totali nella base clienti. Scopri la percentuale di clienti che contribuisce al fatturato e crea elenchi segmentati per ottimizzare il mercato e mantenere i clienti con un contributo elevato.
@@ -75,7 +88,7 @@ Colonne da creare
 * Percentile di ricavi del cliente
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **&#x200B; se A è null, allora null else (A/B)*100 end &#x200B;**
+* [!UICONTROL Calculation]: - ** se A è null, allora null else (A/B)*100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 * Tabella `Sales_flat_order`
@@ -93,7 +106,7 @@ Colonne da creare
 * Percentile di ricavi del cliente
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **&#x200B; se A è null, allora null else (A/B)*100 end &#x200B;**
+* [!UICONTROL Calculation]: - ** se A è null, allora null else (A/B)*100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
@@ -111,36 +124,36 @@ Colonne da creare
 ## Rapporti
 
 * **Concentrazione cliente**
-* [!UICONTROL Metric]&#x200B;: `Total customer lifetime value`
-* [!UICONTROL Filter]&#x200B;: `Customer's revenue percentile IS NOT NULL`
+* [!UICONTROL Metric]: `Total customer lifetime value`
+* [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
-* [!UICONTROL Metric]&#x200B;: `Total customer lifetime value`
-* [!UICONTROL Filter]&#x200B;: `Customer's revenue percentile IS NOT NULL`
+* [!UICONTROL Metric]: `Total customer lifetime value`
+* [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
-* &#x200B;
-  [!UICONTROL Raggruppa per]&#x200B;: `Independent`
+* 
+  [!UICONTROL Raggruppa per]: `Independent`
 * Metrica `A`: `Total customer lifetime revenue by percentile`
 * Metrica `B`: `Total customer lifetime revenue (ungrouped)`
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Interval]&#x200B;: `None`
-* [!UICONTROL Group by]&#x200B;: `Customer's revenue percentile`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Interval]: `None`
+* [!UICONTROL Group by]: `Customer's revenue percentile`
 * Mostra superiore/inferiore: `100% of Customer's revenue percentile Name`
-* &#x200B;
-  [!UICONTROL Chart type]&#x200B;: `Line`
+* 
+  [!UICONTROL Chart type]: `Line`
 
 * **Primi 10% di concentrazione**
-* [!UICONTROL Filter]&#x200B;: `Customer's revenue percentile <= 10`
+* [!UICONTROL Filter]: `Customer's revenue percentile <= 10`
 
 * Metrica `A`: `Total customer lifetime revenue`
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Interval]: `None`
 * Nascondi grafico
-* &#x200B;
-  [!UICONTROL Raggruppa per]&#x200B;: `Email`
-* &#x200B;
-  [!UICONTROL Chart type]&#x200B;: `Table`
+* 
+  [!UICONTROL Raggruppa per]: `Email`
+* 
+  [!UICONTROL Chart type]: `Table`
 
 * **Ultima concentrazione del 50% con un solo acquisto**
 
@@ -149,28 +162,28 @@ Colonne da creare
 * `Customer's lifetime number of orders = 1`
 * [!UICONTROL Filter]:
 
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Interval]: `None`
 * Nascondi grafico
-* &#x200B;
-  [!UICONTROL Raggruppa per]&#x200B;: `Email`
-* &#x200B;
-  [!UICONTROL Chart type]&#x200B;: `Table`
+* 
+  [!UICONTROL Raggruppa per]: `Email`
+* 
+  [!UICONTROL Chart type]: `Table`
 
 * **Concentrazione inferiore del 10%**
-* [!UICONTROL Filter]&#x200B;: `Customer's revenue percentile > 90`
+* [!UICONTROL Filter]: `Customer's revenue percentile > 90`
 
 * Metrica `A`: `Total customer lifetime revenue`
-* [!UICONTROL Time period]&#x200B;: `All time`
-* &#x200B;
-  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Time period]: `All time`
+* 
+  [!UICONTROL Interval]: `None`
 * Nascondi grafico
-* &#x200B;
-  [!UICONTROL Raggruppa per]&#x200B;: `Email`
-* &#x200B;
-  [!UICONTROL Chart type]&#x200B;: `Table`
+* 
+  [!UICONTROL Raggruppa per]: `Email`
+* 
+  [!UICONTROL Chart type]: `Table`
 
 Dopo aver compilato tutti i rapporti, puoi organizzarli nel dashboard come desideri. Il risultato potrebbe essere simile al dashboard di esempio riportato sopra.
 
-Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Per qualsiasi domanda durante la creazione di questa analisi, o semplicemente per coinvolgere il team Professional Services, [contatta il supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

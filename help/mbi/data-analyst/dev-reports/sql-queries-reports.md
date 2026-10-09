@@ -4,33 +4,48 @@ description: Scopri come le query SQL vengono convertite nelle colonne calcolate
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-TQID: https://experienceleague.adobe.com/-VQfwFZeSlEcD053XRQ4mWF51jnTGaV04tUAqLu7-U8
+TQID: 'https://experienceleague.adobe.com/-VQfwFZeSlEcD053XRQ4mWF51jnTGaV04tUAqLu7-U8'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Reporting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 942
+source-wordcount: '942'
 ht-degree: 0%
-
 ---
-
 # Tradurre le query SQL in Commerce Intelligence
 
-Ti sei mai chiesto come vengono tradotte le query SQL nelle [colonne calcolate](../data-warehouse-mgr/creating-calculated-columns.md), [metriche](../../data-user/reports/ess-manage-data-metrics.md) e [report](../../tutorials/using-visual-report-builder.md) che utilizzi in [!DNL Commerce Intelligence]? Se sei un utente SQL pesante, comprendere come SQL viene tradotto in [!DNL Commerce Intelligence] ti consente di lavorare in modo più intelligente in [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) e ottenere il massimo dalla piattaforma [!DNL Commerce Intelligence].
+Ti sei mai chiesto come vengono tradotte le query SQL nelle [colonne calcolate](../data-warehouse-mgr/creating-calculated-columns.md), [metriche](../../data-user/reports/ess-manage-data-metrics.md) e [report](../../tutorials/using-visual-report-builder.md) che utilizzi in [!DNL Commerce Intelligence]? Se si è un utente SQL pesante, la comprensione della traduzione di SQL in [!DNL Commerce Intelligence] consente di lavorare in modo più intelligente in [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) e di ottenere il massimo dalla piattaforma [!DNL Commerce Intelligence].
 
 Alla fine di questo argomento, è disponibile una **matrice di traduzione** per clausole di query SQL e [!DNL Commerce Intelligence] elementi.
 
@@ -70,7 +85,7 @@ Osservare un esempio specifico di come una metrica `Total Revenue` potrebbe esse
 | `email NOT LIKE '%@magento.com'` | Metrica `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | Metrica `timestamp` (e reporting `time range`) |
 
-Passare al generatore di metriche facendo clic su **[!UICONTROL Manage Data** > **&#x200B; Metriche &#x200B;**> **Crea nuova metrica]**, è innanzitutto necessario selezionare la tabella `source` appropriata, che in questo caso è la tabella `orders`. La metrica viene quindi impostata come mostrato di seguito:
+Passare al generatore di metriche facendo clic su **[!UICONTROL Manage Data** > ** Metriche **> **Crea nuova metrica]**, è innanzitutto necessario selezionare la tabella `source` appropriata, che in questo caso è la tabella `orders`. La metrica viene quindi impostata come mostrato di seguito:
 
 ![Aggregazione metrica](../../assets/Metric_aggregation.png)
 
@@ -92,7 +107,7 @@ La query per questa aggregazione potrebbe essere simile alla seguente:
 
 La configurazione in [!DNL Commerce Intelligence] richiede l&#39;utilizzo di Data Warehouse Manager, dove si crea un percorso tra la tabella `orders` e `customers` e quindi si crea una colonna denominata `Customer LTV` nella tabella del cliente.
 
-Verificare come stabilire un nuovo percorso tra `customers` e `orders`. L&#39;obiettivo finale è la creazione di una nuova colonna aggregata nella tabella `customers`. Passare quindi alla tabella `customers` nel Data Warehouse, quindi fare clic su **[!UICONTROL Create a Column** > **&#x200B; Seleziona una definizione &#x200B;**> **SOMMA]**.
+Verificare come stabilire un nuovo percorso tra `customers` e `orders`. L&#39;obiettivo finale è la creazione di una nuova colonna aggregata nella tabella `customers`. Passare quindi alla tabella `customers` nel Data Warehouse, quindi fare clic su **[!UICONTROL Create a Column** > ** Seleziona una definizione **> **SOMMA]**.
 
 Successivamente, è necessario selezionare la tabella di origine. Se esiste un percorso per la tabella `orders`, selezionalo semplicemente dal menu a discesa. Tuttavia, se stai creando un nuovo percorso, fai clic su **[!UICONTROL Create new path]** e viene visualizzata la schermata seguente:
 
@@ -134,7 +149,7 @@ Inizia con la query seguente:
 
 >[!NOTE]
 >
->L’unica differenza rispetto alla query avviata in precedenza è l’aggiunta del &quot;coupon\_code&quot; come raggruppamento._
+>L&#39;unica differenza rispetto alla query avviata in precedenza è l&#39;aggiunta del &#39;coupon\_code&#39; come raggruppamento._
 
 Utilizzando la stessa metrica `Total Revenue` creata in precedenza, ora puoi creare il tuo report dei ricavi segmentati per codice coupon. Osserva il file gif qui sotto che mostra come impostare questo rapporto visivo con dati di settembre a novembre:
 

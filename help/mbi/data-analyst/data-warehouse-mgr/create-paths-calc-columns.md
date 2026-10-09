@@ -4,30 +4,43 @@ description: Scopri come definire un percorso che descriva il modo in cui la tab
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-TQID: https://experienceleague.adobe.com/UXIfQT9NxvKnefTMVWxjTYEMDpmCRITyzlFpNcU-y90
+TQID: 'https://experienceleague.adobe.com/UXIfQT9NxvKnefTMVWxjTYEMDpmCRITyzlFpNcU-y90'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1032
+source-wordcount: '1032'
 ht-degree: 0%
-
 ---
-
 # Creare o eliminare percorsi per colonne calcolate
 
 ## Aggiornamento colonne calcolate
@@ -37,7 +50,7 @@ Quando [crei colonne calcolate](../data-warehouse-mgr/creating-calculated-column
 1. Correlazione tra le tabelle dei database
 1. Chiavi primarie ed esterne che definiscono questa relazione
 
-Se si conoscono queste informazioni, è possibile creare facilmente un percorso seguendo le istruzioni riportate in questo argomento. Potresti chiedere a un esperto tecnico della tua organizzazione o contattare il [team Servizi professionali](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Se si conoscono queste informazioni, è possibile creare facilmente un percorso seguendo le istruzioni riportate in questo argomento. Potresti chiedere a un esperto tecnico della tua organizzazione o contattare il [team Servizi professionali](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## Aggiornamenti relativi alle relazioni tra tabelle e ai tipi di chiave {#refresher}
 
@@ -96,7 +109,7 @@ Ora puoi creare il percorso.
 
 * **[!DNL Commerce Intelligence]non riesce a indovinare le relazioni chiave primaria/esterna**. Non desideri introdurre dati errati nell’account, pertanto la creazione dei percorsi deve essere eseguita manualmente.
 
-* **Al momento è possibile specificare percorsi solo tra due tabelle diverse**. La logica che si sta tentando di ricreare coinvolge più di due tabelle? Potrebbe quindi essere utile (1) unire le colonne prima a una tabella intermedia, quindi alla tabella &quot;destinazione finale&quot;, oppure (2) consultare il [team Professional Services](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) per trovare il miglior approccio ai tuoi obiettivi.
+* **Al momento è possibile specificare percorsi solo tra due tabelle diverse**. La logica che si sta tentando di ricreare coinvolge più di due tabelle? Potrebbe quindi essere utile (1) unire le colonne prima a una tabella intermedia, quindi alla tabella &quot;destinazione finale&quot;, oppure (2) consultare il [team Professional Services](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) per trovare il miglior approccio ai tuoi obiettivi.
 
 * **Una colonna può essere solo il riferimento di chiave esterna per UN percorso alla volta**. Ad esempio, se `order_items.order_id` punta a `orders.id`, `order_items.order_id` non può puntare ad altro.
 
